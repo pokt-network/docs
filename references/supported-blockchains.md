@@ -4,7 +4,7 @@
 
 Pocket works out-of-the-box with any network \(RelayChain\) that uses RPC \(which is basically everything, since RPC is a standard like HTTP\). 
 
-The difficult part is not integrating a network but deploying the RelayChain nodes that you'll be connecting the Pocket node to. 
+The difficult part is not integrating a network but deploying the RelayChain nodes that you'll be connecting the Pocket node to.
 
 When asking yourself how easy it would be to integrate a network with Pocket, ask yourself how easy it is for someone to deploy, sync, and maintain a node. How helpful is the documentation? How long does it take to sync a node from scratch? How stable are the nodes?
 
