@@ -355,8 +355,14 @@ pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 ["0001",
 {% endtab %}
 {% endtabs %}
 
+{% hint style="warning" %}
+#### Bad Behavior Warning: Pre-staking
+
+Pre-staking is the act of a node runner staking on a RelayChainID prior to spinning up the RelayChain node. This behavior has an extremely negative impact on the quality of service for new chains due to apps being matched in sessions with Pocket nodes that don't actually have RelayChain nodes connected to them. If you do this, your node will be challenged and slashed. You should always deploy your RelayChain node and simulate relays before staking your Pocket node for the RelayChainID.
+{% endhint %}
+
 {% hint style="danger" %}
-If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum \(e.g. 15,100-16,000\), so that minor slashing doesn't result in loss of the entire stake.
+If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum \(e.g. 15,100-16,000\) so that minor slashing doesn't result in loss of the entire stake.
 {% endhint %}
 
 {% hint style="success" %}
