@@ -32,24 +32,24 @@ July 5th:
 
 | Name | Portal API Prefix | RelayChainID | Generates Revenue |
 | :--- | :--- | :--- | :--- |
-| Avalanche | avax-mainnet | 0003 | - |
-| Binance Smart Chain | bsc-mainnet | 0004 | - |
-| Binance Smart Chain Archival | bsc-archival | 0010 | - |
+| Avalanche | avax-mainnet | 0003 | July 5th |
+| Binance Smart Chain | bsc-mainnet | 0004 | July 5th |
+| Binance Smart Chain Archival | bsc-archival | 0010 | July 5th |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
 | Bitcoin | btc-mainnet | 0002 | - |
 | Ethereum | eth-mainnet | 0021 | Y |
-| Ethereum Archival | eth-archival | 0022 | - |
-| Ethereum Archival Trace | eth-archival-trace | 0028 | - |
-| Ethereum Goerli | poa-goerli | 0026 | - |
-| Ethereum Kovan | poa-kovan | 0024 | - |
-| Ethereum Rinkeby | poa-rinkeby | 0025 | - |
-| Ethereum Ropsten | eth-ropsten | 0023 | - |
-| FUSE | fuse-mainnet | 0005 | - |
+| Ethereum Archival | eth-archival | 0022 | July 5th |
+| Ethereum Archival Trace | eth-archival-trace | 0028 | July 5th |
+| Ethereum Goerli | poa-goerli | 0026 | July 5th |
+| Ethereum Kovan | poa-kovan | 0024 | July 5th |
+| Ethereum Rinkeby | poa-rinkeby | 0025 | July 5th |
+| Ethereum Ropsten | eth-ropsten | 0023 | July 5th |
+| FUSE | fuse-mainnet | 0005 | July 5th |
 | FUSE Archival | fuse-archival | 000A | - |
 | Pocket Network | mainnet | 0001 | Y |
 | Polygon | matic-mainnet | 0009 | - |
 | Solana | sol-mainnet | 0006 | - |
-| xDAI | poa-xdai | 0027 | - |
+| xDAI | poa-xdai | 0027 | July 5th |
 
 ## Testnet RelayChains
 
