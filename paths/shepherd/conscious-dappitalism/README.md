@@ -24,6 +24,8 @@ description: >-
 
 \*\*\*\*[**EarniFi**](https://earni.fi/)\*\*\*\*
 
+\*\*\*\*[**Dark Forest**](https://zkga.me/)\*\*\*\*
+
 ### Multi-chain Applications
 
 \*\*\*\*[**Centaur's Hadar Wallet**](https://medium.com/centaur/the-hadar-multi-asset-multi-address-multi-purpose-wallet-is-now-live-d63a0500cae)\*\*\*\*
