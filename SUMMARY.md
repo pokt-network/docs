@@ -42,6 +42,7 @@
   * [🚀 Conscious DAppitalism](paths/shepherd/conscious-dappitalism/README.md)
     * [MetaMask](paths/shepherd/conscious-dappitalism/metamask.md)
     * [MyCrypto](paths/shepherd/conscious-dappitalism/mycrypto.md)
+    * [Dark Forest](paths/shepherd/conscious-dappitalism/dark-forest.md)
 * [👩‍🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
