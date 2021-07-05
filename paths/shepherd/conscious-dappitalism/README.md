@@ -24,7 +24,7 @@ description: >-
 
 \*\*\*\*[**EarniFi**](https://earni.fi/)\*\*\*\*
 
-\*\*\*\*[**Dark Forest**](https://zkga.me/)\*\*\*\*
+\*\*\*\*[**Dark Forest**](https://bit.ly/DF_POKTendpoint)\*\*\*\*
 
 ### Multi-chain Applications
 
