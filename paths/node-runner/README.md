@@ -344,13 +344,13 @@ Stake the account to participate in the Network as a Validator. Staking a Valida
 {% tabs %}
 {% tab title="Command" %}
 ```text
-pocket nodes stake <address> <amount> <relay_chains> <serviceURI> mainnet 10000 true
+pocket nodes stake <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
 ```
 {% endtab %}
 
 {% tab title="Example" %}
 ```
-pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks mainnet 10000 true
+pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks mainnet 10000 false
 ```
 {% endtab %}
 {% endtabs %}
