@@ -69,7 +69,7 @@ Visit this [forum post](https://forum.pokt.network/t/secondary-markets-for-pokt/
 
 The initial supply of POKT is 650M, which is divided according to the following genesis distribution:
 
-![](../.gitbook/assets/initial_distribution.jpeg)
+![](../../.gitbook/assets/initial_distribution.jpeg)
 
 The vast majority of these tokens are non-transferable and subject to use restrictions by the holders, starting from mainnet launch.  __
 
@@ -86,7 +86,7 @@ The vast majority of these tokens are non-transferable and subject to use restri
 
 This all results in the following circulating supply schedule:
 
-![](../.gitbook/assets/circulating_supply_schedule.jpeg)
+![](../../.gitbook/assets/circulating_supply_schedule.jpeg)
 
 ### Fully Diluted Supply
 
@@ -94,9 +94,9 @@ While the initial total supply of POKT is 650M, Pocket Network uses minting to c
 
 The growth of the POKT supply is directly proportional to the number of relays being processed by nodes. Below we have modeled out 3 different growth scenarios \(Default = conservative growth scenario, Medium = a mid growth scenario, and High = an aggressive growth scenario\).
 
-![](../.gitbook/assets/projected_relays.jpeg)
+![](../../.gitbook/assets/projected_relays.jpeg)
 
-![](../.gitbook/assets/projected_total_pokt.jpeg)
+![](../../.gitbook/assets/projected_total_pokt.jpeg)
 
 The Growth Phase of the network is characterized by relatively high rewards and an increase in the POKT supply designed to subsidize the bootstrapping of the network from a node and application perspective. During the Growth Phase of the network, the mint rate is one of the primary drivers that keep the amount of POKT \(and nodes\) in check, decreasing by 10x from .01 to .001 and .0001 when total supply reaches 1B POKT and 2B POKT respectively. In reality, the mint rate decreases over time at the discretion of the DAO. For example, if the DAO believes there is a glut of nodes on the network, it may choose to decrease rewards \(by chainID\) to control the number of nodes on the network. Conversely, the DAO may increase node rewards to encourage network bootstrapping. Decreasing the mint rate will reduce node margins which will impact the number of nodes on the network. Because of this, the mint rate can only be reduced to a certain point.
 

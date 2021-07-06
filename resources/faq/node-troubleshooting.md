@@ -2,7 +2,7 @@
 
 ## Why is my node not earning POKT?
 
-{% page-ref page="../paths/node-runner/maximize-your-pokt-earnings.md" %}
+{% page-ref page="../../paths/node-runner/maximize-your-pokt-earnings.md" %}
 
 ## How do I check my Pocket node status?
 

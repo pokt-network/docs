@@ -74,65 +74,65 @@ These are the applications available to support in the genesis wPOKT farm! Pleas
 
 [**Fuse**](https://www.fuse.io/)
 
-![](../.gitbook/assets/fuse.png)
+![](../../.gitbook/assets/fuse.png)
 
 [**Razor**](https://razor.network/)
 
-![](../.gitbook/assets/razor.png)
+![](../../.gitbook/assets/razor.png)
 
 [**MyCrypto**](https://mycrypto.com/)
 
-![](../.gitbook/assets/mycrypto.png)
+![](../../.gitbook/assets/mycrypto.png)
 
 [**Centaur**](https://cntr.finance/)
 
-![](../.gitbook/assets/centaur.png)
+![](../../.gitbook/assets/centaur.png)
 
 [**EthersJS**](https://github.com/ethers-io)
 
-![](../.gitbook/assets/ethersjs.png)
+![](../../.gitbook/assets/ethersjs.png)
 
 [**Faculty Group**](https://www.faculty.group/)
 
-![](../.gitbook/assets/facultygroup.png)
+![](../../.gitbook/assets/facultygroup.png)
 
 [**Snowball**](https://www.snowball.money/)
 
-![](../.gitbook/assets/snowball.png)
+![](../../.gitbook/assets/snowball.png)
 
 [**Streamr**](https://streamr.network/)
 
-![](../.gitbook/assets/streamr.png)
+![](../../.gitbook/assets/streamr.png)
 
 [**Seascape**](https://game.seascape.network/)
 
-![](../.gitbook/assets/seascape.png)
+![](../../.gitbook/assets/seascape.png)
 
 [**PLOTx**](https://plotx.io/)
 
-![](../.gitbook/assets/plotx.png)
+![](../../.gitbook/assets/plotx.png)
 
 [**Finance.Vote**](https://www.finance.vote/)
 
-![](../.gitbook/assets/financevote.png)
+![](../../.gitbook/assets/financevote.png)
 
 [**API3**](https://api3.org/)
 
-![](../.gitbook/assets/api3.png)
+![](../../.gitbook/assets/api3.png)
 
 [**DApp\[.\]com**](https://www.dapp.com/)\*\*\*\*
 
-![](../.gitbook/assets/dappcom.png)
+![](../../.gitbook/assets/dappcom.png)
 
 [**Ferrum**](https://ferrum.network/)
 
-![](../.gitbook/assets/ferrum.png)
+![](../../.gitbook/assets/ferrum.png)
 
 [**Mask Network**](https://mask.io/)\*\*\*\*
 
-![](../.gitbook/assets/mask.png)
+![](../../.gitbook/assets/mask.png)
 
 [**EarniFi**](https://earni.fi/)\*\*\*\*
 
-![](../.gitbook/assets/earnifi.png)
+![](../../.gitbook/assets/earnifi.png)
 

@@ -35,9 +35,9 @@ You might be interested in these areas:
 
 {% page-ref page="main-concepts/economics/" %}
 
-{% page-ref page="references/supported-blockchains.md" %}
+{% page-ref page="resources/references/supported-blockchains.md" %}
 
-{% page-ref page="community-content.md" %}
+{% page-ref page="resources/community-content.md" %}
 
 ## Want to Build With Us?
 

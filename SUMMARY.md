@@ -51,23 +51,21 @@
 
 ## 📚 Resources
 
----
-
-* [❓ FAQ](faq/README.md)
-  * [📲 App Integration](faq/app-integration.md)
-  * [⚙️ Node Configuration](faq/node-configuration.md)
-  * [❌ Node Troubleshooting](faq/node-troubleshooting.md)
-  * [💰 Pricing & Economics](faq/pricing-and-economics.md)
-  * [🎁 wPOKT](faq/wpokt.md)
-  * [⚖️ Product Comparisons](faq/product-comparisons.md)
-* [🗂 References](references/README.md)
-  * [✅ Supported Blockchains](references/supported-blockchains.md)
-  * [🎚 Protocol Parameters](references/protocol-parameters.md)
+* [❓ FAQ](resources/faq/README.md)
+  * [📲 App Integration](resources/faq/app-integration.md)
+  * [⚙️ Node Configuration](resources/faq/node-configuration.md)
+  * [❌ Node Troubleshooting](resources/faq/node-troubleshooting.md)
+  * [💰 Pricing & Economics](resources/faq/pricing-and-economics.md)
+  * [🎁 wPOKT](resources/faq/wpokt.md)
+  * [⚖️ Product Comparisons](resources/faq/product-comparisons.md)
+* [🗂 References](resources/references/README.md)
+  * [✅ Supported Blockchains](resources/references/supported-blockchains.md)
+  * [🎚 Protocol Parameters](resources/references/protocol-parameters.md)
   * [🐚 CLI](https://docs.pokt.network/core/specs/cli)
-  * [🔟 POKT Denominations](references/pokt-denominations.md)
-  * [🌱 Seeds](references/seeds.md)
-* [📣 Community Content](community-content.md)
-* [💬 Contact Us](contact-us.md)
+  * [🔟 POKT Denominations](resources/references/pokt-denominations.md)
+  * [🌱 Seeds](resources/references/seeds.md)
+* [📣 Community Content](resources/community-content.md)
+* [💬 Contact Us](resources/contact-us.md)
 * [⛑ Ask for Help](https://forum.pokt.network/c/help/support-requests/54)
 * [🗃 Other Resources](https://forum.pokt.network/c/resources)
 

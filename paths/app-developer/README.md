@@ -96,7 +96,7 @@ curl -X POST \\
 
 All endpoints have a similar structure, as they all have:
 
-* The network prefix; see the RelayChainIDs [here](../../references/supported-blockchains.md)
+* The network prefix; see the RelayChainIDs [here](../../resources/references/supported-blockchains.md)
 * The main URL \(`gateway.pokt.network/v1/`\)
 * If its a load-balanced endpoint, it will also have the LB prefix \(`/lb/`\)
 * The Gateway ID.

@@ -9,7 +9,7 @@ description: >-
 
 ## My node is functional but doesn't seem to be earning POKT - is it configured incorrectly?
 
-There are a couple of reasons why your node may not be rewarding you with POKT. There are many great community members and Pocket teammates that are eager to help you triage this, but first, ask yourself, “is your node configured correctly?”. Don’t assume it is. Check using [this](../../faq/node-troubleshooting.md).
+There are a couple of reasons why your node may not be rewarding you with POKT. There are many great community members and Pocket teammates that are eager to help you triage this, but first, ask yourself, “is your node configured correctly?”. Don’t assume it is. Check using [this](../../resources/faq/node-troubleshooting.md).
 
 The next thing to check is if your node is offline or [jailed](../../main-concepts/glossary.md#jail)...or both. Reasons include:
 
@@ -30,7 +30,7 @@ Checking the block height is the easiest way to know if you’re synced up to th
 pocket query height
 ```
 
-The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](../../references/supported-blockchains.md) \(referred to on this page as blockchain data nodes\) that you're serving to apps. You should make sure these are also synced up to their respective networks.
+The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](../../resources/references/supported-blockchains.md) \(referred to on this page as blockchain data nodes\) that you're serving to apps. You should make sure these are also synced up to their respective networks.
 
 For example, you can check the block height of your Geth Ethereum node by submitting this query to your node, which returns the latest height of geth-mainnet known by the node.
 

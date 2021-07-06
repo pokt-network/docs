@@ -3,7 +3,7 @@
 ## Halt! Check your map 🗺
 
 {% hint style="warning" %}
-#### Are you headed down the right path? 
+#### Are you headed down the right path?
 
 This trail is designed for intermediate node runners, who are familiar with running full nodes and have the knowledge required to avoid getting lost. You might be better served following one of the other trails below.
 {% endhint %}
@@ -70,7 +70,7 @@ git checkout tags/<release tag>
 {% endtab %}
 
 {% tab title="Example" %}
-```
+```text
 git checkout tags/RC-0.6.3
 ```
 {% endtab %}
@@ -86,7 +86,7 @@ echo $GOPATH
 {% endtab %}
 
 {% tab title="Response \(Mac\)" %}
-```
+```text
 /Users/<your username>/go
 ```
 {% endtab %}
@@ -102,7 +102,7 @@ go build -o <$GOPATH/bin directory> <source code directory>/...
 {% endtab %}
 
 {% tab title="Example" %}
-```
+```text
 go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
 ```
 {% endtab %}
@@ -118,7 +118,7 @@ pocket version
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```text
 > RC 0.6.3
 ```
 {% endtab %}
@@ -152,7 +152,7 @@ pocket version
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```text
 > RC-0.6.3
 ```
 {% endtab %}
@@ -196,7 +196,7 @@ pocket accounts create
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```text
 > Enter Passphrase
 > Account generated successfully:
 > Address: <address>
@@ -224,7 +224,7 @@ pocket accounts export <address> --path <path>
 {% endtab %}
 
 {% tab title="Example" %}
-```
+```text
 pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path /$HOME/super-secret-dir
 ```
 {% endtab %}
@@ -272,7 +272,7 @@ pocket util generate-chains
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```text
 > Enter the chain of the network identifier:
 <Relay Chain ID> (Example: 0001)
 > Enter the URL of the network identifier:
@@ -289,13 +289,13 @@ RelayChainIDs can be found [here](https://docs.pokt.network/references/supported
 
 ### Test your node
 
-Test your node is configured correctly by simulating a relay. 
+Test your node is configured correctly by simulating a relay.
 
 ```text
 pocket start --simulateRelay
 ```
 
-Then send a curl request to your validator URL  `http://<your node>:<your pocket rpc port>/v1/client/sim` to test if your node responds.
+Then send a curl request to your validator URL `http://<your node>:<your pocket rpc port>/v1/client/sim` to test if your node responds.
 
 ```text
 curl -X POST --data '{"relay_network_id":"<relay chain ID from chains.json>","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' <your node URL>:8081/v1/client/sim
@@ -321,7 +321,7 @@ pocket start --seeds=<seeds> --mainnet
 {% endtab %}
 
 {% tab title="Example" %}
-```
+```text
 pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pokt.network:21656" --mainnet
 ```
 {% endtab %}
@@ -349,7 +349,7 @@ pocket nodes stake <address> <amount> <relay_chains> <serviceURI> mainnet 10000 
 {% endtab %}
 
 {% tab title="Example" %}
-```
+```text
 pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks mainnet 10000 false
 ```
 {% endtab %}
@@ -465,7 +465,7 @@ docker pull poktnetwork/pocket-core:RC-0.6.3
 {% endtab %}
 
 {% tab title="Option 2" %}
-```
+```text
 docker pull poktnetwork/pocket:RC-0.6.3
 ```
 {% endtab %}
