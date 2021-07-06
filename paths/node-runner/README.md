@@ -243,7 +243,7 @@ If your stake falls below `15,000 POKT` your node will be force-unstake burned. 
 Send POKT with the following command:
 
 ```text
-pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "" true
+pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "" false
 ```
 
 You won't be able to send POKT using your CLI until you have a Validator set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
