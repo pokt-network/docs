@@ -12,7 +12,7 @@ These docs will provide you with all of the information you need to get started 
 {% tab title="✈️ The Shortcut" %}
 | 🛣Path | 🪄Magic | 🛠DIY |
 | :--- | :--- | :--- |
-| **🧑‍💻App** | [🔗Get an Endpoint](https://dashboard.pokt.network) | [🧩Use PocketJS](https://docs.pokt.network/js/guides/quickstart) |
+| **🧑‍💻App** | [🔗Get an Endpoint](https://portal.pokt.network) | [🧩Use PocketJS](https://docs.pokt.network/js/guides/quickstart) |
 | **🤖Node** | [🛩Node Pilot](https://decentralized-authority.gitbook.io/node-pilot/) | [🧱Quickstart Build](https://docs.pokt.network/core/guides/quickstart) |
 {% endtab %}
 
