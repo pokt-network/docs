@@ -30,7 +30,7 @@
 ## 🛣 Paths
 
 * [🧑‍💻 App Developer](paths/app-developer/README.md)
-  * [🔗 Get an Endpoint](https://dashboard.pokt.network)
+  * [🔗 Get an Endpoint](https://portal.pokt.network)
   * [🧩 Use PocketJS](https://docs.pokt.network/js/guides/quickstart)
   * [♦️ Use EthersJS](paths/app-developer/use-ethersjs.md)
 * [🤖 Node Runner](paths/node-runner/README.md)

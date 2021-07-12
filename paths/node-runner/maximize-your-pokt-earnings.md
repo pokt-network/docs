@@ -70,7 +70,7 @@ Here is an illustration:
 
 ![](../../.gitbook/assets/pokt_worl-map.jpg)
 
-In this example, the Pocket nodes \(pink\) are on the other side of the US from the Blockchain data nodes \(orange\). The end-user is using the [Dashboard](https://dashboard.pokt.network) \(referred to as Portal in this diagram\) to communicate with the network. The path the end-user's request must take is: `End-user → Portal → Pocket Node → Blockchain Data Node → Pocket Node → Portal → End-user`
+In this example, the Pocket nodes \(pink\) are on the other side of the US from the Blockchain data nodes \(orange\). The end-user is using the [Portal](https://portal.pokt.network) to communicate with the network. The path the end-user's request must take is: `End-user → Portal → Pocket Node → Blockchain Data Node → Pocket Node → Portal → End-user`
 
 The end-user's request must hop back and forth across the US 4 times and that's not including the hops between the user and the Portal. As a result, it may take up to 1 second for a user to receive something as simple as a balance query. That’s not very good service.
 
@@ -86,9 +86,9 @@ Your node will likely be in a different datacenter, where even a couple of hops 
 
 ## Why does the latency matter?
 
-While Pocket Network doesn’t discriminate \(yet\) between the speed of requests, the [Dashboard](https://dashboard.pokt.network) \(labeled Gateway in the diagram\) does. The Dashboard filters out slow nodes to ensure the protocol is providing the best service possible to apps.
+While Pocket Network doesn’t discriminate \(yet\) between the speed of requests, the [Portal](https://portal.pokt.network) does. The Portal filters out slow nodes to ensure the protocol is providing the best service possible to apps.
 
-The vast majority of the requests on the network today come through the Dashboard. This means that faster nodes = more POKT. 
+The vast majority of the requests on the network today come through the Portal. This means that faster nodes = more POKT. 
 
 In the long run, your setup matters not only for your earnings but also for ensuring a quality service for end-users \(which will ultimately be crucial for the growth of the network\).
 
@@ -98,7 +98,7 @@ In the long run, your setup matters not only for your earnings but also for ensu
 
 The following are some best practices that will give you an edge over the majority of node runners.
 
-* Know where the users are located… and locate your nodes accordingly. The Pocket Dashboard is currently in US-West-2, US-East-2, EU-West-1, AP-SE-1. The most underserved geographic area on Pocket is currently the Asia Pacific region.
+* Know where the users are located… and locate your nodes accordingly. The Pocket Portal is currently in US-West-2, US-East-2, EU-West-1, AP-SE-1. The most underserved geographic area on Pocket is currently the Asia Pacific region.
 * Minimize the distance between your Pocket Nodes and your blockchain data nodes. Having your blockchain data nodes next to your Pocket nodes in the same rack is ideal.
 * Load-balance your blockchain data nodes.
 * Use a Peering Tower to reduce P2P gossip on the network. Visit the 🤖node-runner channel on [Discord](https://discord.gg/GSUDdhqtQ3) for more information.

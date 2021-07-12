@@ -2,13 +2,13 @@
 
 ## I just want an endpoint, where can I get one?
 
-## How does the Pocket Dashboard work?
+## How does the Pocket Portal work?
 
-The Pocket Dashboard is tasked with connecting to the Pocket Network through PocketJS on your behalf—essentially doing the integration work for you. The only thing that changes here is the layer of abstraction between you, the developer, and the nodes. You are still ultimately being served by a decentralized network of thousands of nodes.
+The Pocket Portal is tasked with connecting to the Pocket Network through PocketJS on your behalf—essentially doing the integration work for you. The only thing that changes here is the layer of abstraction between you, the developer, and the nodes. You are still ultimately being served by a decentralized network of thousands of nodes.
 
 ## Is there a more "decentralized" solution?
 
-Yes! You can integrate with PocketJS directly, which would be the most censorship-resistant way to connect to our network of full nodes. All of the functionality we built into the Pocket Dashboard, including "load-balanced" endpoints, are 100% reproducible using only PocketJS. In fact, we anticipate competing dashboards to emerge. Get started with PocketJS at the link below:
+Yes! You can integrate with PocketJS directly, which would be the most censorship-resistant way to connect to our network of full nodes. All of the functionality we built into the Pocket Portal, including "load-balanced" endpoints, are 100% reproducible using only PocketJS. In fact, we anticipate competing dashboards to emerge. Get started with PocketJS at the link below:
 
 ## What does it mean for an endpoint to be "load-balanced"?
 

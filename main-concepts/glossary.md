@@ -12,7 +12,7 @@ An Application Authentication Token \(AAT\) is needed for each client to authori
 
 AAT’s are similar in function to JSON Web Tokens \(JWT\) and provides security guarantees for the use of the service.
 
-An AAT is generated after a client acquires & stakes POKT for an application. Currently, the way to acquire and stake an application for use of the Pocket Network is through the Pocket Dashboard.
+An AAT is generated after a client acquires & stakes POKT for an application.
 
 There are two design patterns recommended for AAT usage:
 

@@ -57,7 +57,7 @@ While it's true that the supply \(nodes\) of Pocket's two-sided market should re
 
 Nodes are paid proportionally to the relays they process, so if the number of staked apps remains constant while the relays the submit increases, the node supply will grow in response to growing revenue opportunities.
 
-Many apps use the [Pocket Dashboard](https://dashboard.pokt.network) to connect to the network, which stakes and integrates with [PocketJS](https://docs.pokt.network/js) on their behalf. The Dashboard can divide the throughput it has staked for across multiple URLs, which means we don't need to stake a new account for every new app that uses the Dashboard.
+Many apps use the [Pocket Portal](https://dashboard.pokt.network) to connect to the network, which stakes and integrates with [PocketJS](https://docs.pokt.network/js) on their behalf. The Dashboard can divide the throughput it has staked for across multiple URLs, which means we don't need to stake a new account for every new app that uses the Dashboard.
 
 ## How do I buy POKT?
 

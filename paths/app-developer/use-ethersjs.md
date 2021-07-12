@@ -6,11 +6,11 @@ description: >-
 
 # ♦️ Use EthersJS
 
-First, you need to get an endpoint from the Pocket Dashboard.
+First, you need to get an endpoint from the Pocket Portal.
 
 Then you need to get the Gateway ID
 
-![](../../.gitbook/assets/portal_snapshot_gatewayid.png)
+![](../../.gitbook/assets/portal_app.png)
 
 and insert it like so
 
