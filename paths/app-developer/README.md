@@ -8,7 +8,7 @@ The Portal lets you create an endpoint for the chain you want in just a few clic
 
 ## Setup Guide
 
-Go to the [Pocket Portal](https://mainnet.dashboard.pokt.network/#/), sign up and verify your email.
+Go to the [Pocket Portal](https://portal.pokt.network), sign up and verify your email.
 
 ![](../../.gitbook/assets/portal_login.png)
 

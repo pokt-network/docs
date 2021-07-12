@@ -3,7 +3,7 @@
 ## App Integration
 
 * [I just want an endpoint, where can I get one?](app-integration.md#i-just-want-an-endpoint-where-can-i-get-one)
-* [How does the Pocket Dashboard work?](app-integration.md#how-does-the-pocket-dashboard-work)
+* [How does the Pocket Portal work?](app-integration.md#how-does-the-pocket-dashboard-work)
 * [Is there a more "decentralized" solution?](app-integration.md#is-there-a-more-decentralized-solution)
 * [What does it mean for an endpoint to be "load-balanced"?](app-integration.md#what-does-it-mean-for-an-endpoint-to-be-load-balanced)
 * [What can I do if I exceed my allotted requests?](app-integration.md#what-can-i-do-if-i-exceed-my-allotted-requests)
