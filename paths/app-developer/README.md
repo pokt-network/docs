@@ -52,7 +52,7 @@ Turning on notifications is a great way to stay up to date with your app. We res
 * Click on the "Notifications" button on your app's dashboard, and you'll see the notifications screen.
 * Turn on any notifications you're interested in receiving, and then click "Save changes" when you're done.
 
-![](../../.gitbook/assets/portal_notifications%20%281%29.png)
+![](../../.gitbook/assets/portal_notifications.png)
 
 ## Securing your Application
 
