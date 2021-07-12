@@ -8,13 +8,13 @@ The Dashboard lets you create an endpoint for the chain you want in just a few c
 
 ## Setup Guide
 
-Go to the [Pocket Dashboard](https://mainnet.dashboard.pokt.network/#/), sign up and verify your email.
+Go to the [Pocket Portal](https://mainnet.dashboard.pokt.network/#/), sign up and verify your email.
 
-![](../../.gitbook/assets/dashboard-sign-in.png)
+![](../../.gitbook/assets/portal_login.png)
 
 Once you've done so, log in and you'll be greeted by the Network Overview section.
 
-![](../../.gitbook/assets/portal_network_overview.png)
+![](../../.gitbook/assets/portal_network.png)
 
 {% hint style="info" %}
 In this section, you'll see all the important parts of the network: how many relays are being served daily, the overall success rate of the network, and the number of apps, nodes, and POKT staked. A summary of chains being served by the network is also available.
@@ -22,7 +22,7 @@ In this section, you'll see all the important parts of the network: how many rel
 
 Head over to the "My Apps" section and create your app.
 
-![](../../.gitbook/assets/portal_application_setup.png)
+![](../../.gitbook/assets/portal_app_setup.png)
 
 {% hint style="info" %}
 In this section, you'll be able to select one of the available chains that are currently available. More will be made available depending on demand.
@@ -30,7 +30,7 @@ In this section, you'll be able to select one of the available chains that are c
 
 Once you've hit "Launch Application", all is done and you can start using your endpoint! You should be greeted by the main dashboard screen, which will show all the metrics, which as soon as you start relaying requests, should start appearing.
 
-![](../../.gitbook/assets/portal_snapshot.png)
+![](../../.gitbook/assets/portal_app.png)
 
 The view you see is the main view for your application. Here, you'll see key details:
 
@@ -52,7 +52,7 @@ Turning on notifications is a great way to stay up to date with your app. We res
 * Click on the "Notifications" button on your app's dashboard, and you'll see the notifications screen.
 * Turn on any notifications you're interested in receiving, and then click "Save changes" when you're done.
 
-![](../../.gitbook/assets/portal_notifications.png)
+![](../../.gitbook/assets/portal_notifications%20%281%29.png)
 
 ## Securing your Application
 
