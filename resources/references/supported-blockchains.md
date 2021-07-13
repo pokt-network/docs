@@ -14,29 +14,29 @@ To incentivize node runners to support a new RelayChain at scale, the RelayChain
 
 Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field. In this interest, below is a list of all upcoming revenue activation events.
 
-_No upcoming events for now._
+* ~July 28th: Polygon \(0009\)
 
 ## Mainnet RelayChains
 
 | Name | Portal API Prefix | RelayChainID | Generates Revenue |
 | :--- | :--- | :--- | :--- |
-| Avalanche | avax-mainnet | 0003 | Y |
+| Avalanche Mainnet | avax-mainnet | 0003 | Y |
 | Binance Smart Chain | bsc-mainnet | 0004 | Y |
 | Binance Smart Chain Archival | bsc-archival | 0010 | Y |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
 | Bitcoin | btc-mainnet | 0002 | - |
-| Ethereum | eth-mainnet | 0021 | Y |
+| Ethereum Mainnet | eth-mainnet | 0021 | Y |
 | Ethereum Archival | eth-archival | 0022 | Y |
 | Ethereum Archival Trace | eth-archival-trace | 0028 | Y |
 | Ethereum Goerli | poa-goerli | 0026 | Y |
 | Ethereum Kovan | poa-kovan | 0024 | Y |
 | Ethereum Rinkeby | poa-rinkeby | 0025 | Y |
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
-| FUSE | fuse-mainnet | 0005 | Y |
+| FUSE Mainnet | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | - |
-| Pocket Network | mainnet | 0001 | Y |
-| Polygon | matic-mainnet | 0009 | - |
-| Solana | sol-mainnet | 0006 | - |
+| Pocket Network Mainnet | mainnet | 0001 | Y |
+| Polygon Mainnet | matic-mainnet | 0009 | ~July 28th |
+| Solana Mainnet | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 
 ## Testnet RelayChains
