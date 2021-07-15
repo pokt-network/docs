@@ -36,6 +36,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | FUSE Archival | fuse-archival | 000A | - |
 | Pocket Network Mainnet | mainnet | 0001 | Y |
 | Polygon Mainnet | matic-mainnet | 0009 | ~July 28th |
+| Polygon Archival | matic-archival | 000B | ~July 28th |
 | Solana Mainnet | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 
