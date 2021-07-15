@@ -29,7 +29,7 @@ Maintaining a balance between both sides of the market will be critical to the l
 * [wPOKT Green Paper](https://forum.pokt.network/t/wpokt-green-paper/400)
 * [POKT Economics Node Operators](https://medium.com/pocket-network/pocket-economics-for-node-runners-4f812cc0c18d)
 * [POKT Economics App Developers](https://medium.com/pocket-network/pocket-economics-for-app-developers-487a6ce290c2)
-* [Interactive Economic Model](https://www.pokt.network/economic-model/)
+* [Interactive Economic Model](https://my.causal.app/models/2475)
 
 
 
