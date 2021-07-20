@@ -1,8 +1,10 @@
 # MetaMask
 
+## Ethereum
+
 {% embed url="https://youtu.be/8ruuz3u2V2E" %}
 
-We have created an Ethreum RPC endpoint with up to 10M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized infra.
+We have created an Ethereum RPC endpoint with up to 10M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized infra.
 
 To get started connecting to Pocket's infrastructure for Ethereum, do the following:
 
@@ -18,6 +20,8 @@ To get started connecting to Pocket's infrastructure for Ethereum, do the follow
 If you receive this error message from MetaMask `Invalid number. Enter a decimal or '0x'-prefixed hexadecimal number` then leave the optional fields blank.
 {% endhint %}
 
+## Avalanche
+
 {% embed url="https://youtu.be/9SNGe2tfmmw" %}
 
 To get started connecting to Pocket's infrastructure for Avalanche C-Chain, do the following:
@@ -27,6 +31,18 @@ To get started connecting to Pocket's infrastructure for Avalanche C-Chain, do t
 3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://avax-mainnet.gateway.pokt.network/v1/lb/605238bf6b986eea7cf36d5e/ext/bc/C/rpc`
 4. Put the hexadecimal **0xa86a** in the ChainID field
 5. Write **AVAX** as the Symbol
+6. Add `https://cchain.explorer.avax.network/` as the Block Explorer URL
+7. **Don’t forget to save**
+
+## xDAI
+
+To get started with connecting to Pocket's decentralized infrastructure for xDAI, do the following:
+
+1. Click on the Networks drop-down menu, then press **Custom RPC**
+2. Under the Network Name field, write **xDAI Pocket Portal**
+3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://poa-xdai.gateway.pokt.network/v1/lb/60e99f2897c986003460ec4d`
+4. Put the decimal **100** or hexadecimal **0x64** in the ChainID field
+5. Write **xDAI** as the Symbol
 6. Add `https://cchain.explorer.avax.network/` as the Block Explorer URL
 7. **Don’t forget to save**
 
