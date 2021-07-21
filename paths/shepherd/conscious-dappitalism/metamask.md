@@ -43,6 +43,6 @@ To get started with connecting to Pocket's decentralized infrastructure for xDAI
 3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://poa-xdai.gateway.pokt.network/v1/lb/60e99f2897c986003460ec4d`
 4. Put the decimal **100** or hexadecimal **0x64** in the ChainID field
 5. Write **xDAI** as the Symbol
-6. Add `https://cchain.explorer.avax.network/` as the Block Explorer URL
+6. Add `https://blockscout.com/poa/xdai` as the Block Explorer URL
 7. **Don’t forget to save**
 
