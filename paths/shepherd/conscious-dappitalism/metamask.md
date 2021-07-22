@@ -46,3 +46,17 @@ To get started with connecting to Pocket's decentralized infrastructure for xDAI
 6. Add `https://blockscout.com/poa/xdai` as the Block Explorer URL
 7. **Don’t forget to save**
 
+## **Fuse**
+
+To get started with connecting to Pocket's decentralized infrastructure for Fuse, do the following:
+
+1. Click on the Networks drop-down menu, then press **Custom RPC**
+2. Under the Network Name field, write **Fuse Pocket Portal**
+3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://fuse-rpc.gateway.pokt.network/`
+4. Put the decimal hexadecimal **0x7a** in the ChainID field
+5. Write **Fuse** as the Symbol
+6. Add `https://explorer.fuse.io` as the Block Explorer URL
+7. **Don’t forget to save**
+
+This public endpoint supports up to 3M relays per day!
+
