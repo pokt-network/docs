@@ -48,6 +48,8 @@ To get started with connecting to Pocket's decentralized infrastructure for xDAI
 
 ## **Fuse**
 
+{% embed url="https://youtu.be/sSg8QWgR\_T8" %}
+
 To get started with connecting to Pocket's decentralized infrastructure for Fuse, do the following:
 
 1. Click on the Networks drop-down menu, then press **Custom RPC**
