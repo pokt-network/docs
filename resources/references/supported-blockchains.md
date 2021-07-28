@@ -12,9 +12,7 @@ Due to Pocket Network's permissionless nature, any RelayChainID can be claimed b
 
 To incentivize node runners to support a new RelayChain at scale, the RelayChainID must be added to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn[`RelaysToTokensMultiplier`](protocol-parameters.md#relaystotokensmultiplier) POKT for every request that they relay for the RelayChain. The Generates Revenue column below highlights whether or not the RelayChain has been added to the SupportedBlockchains parameter.
 
-Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field. In this interest, below is a list of all upcoming revenue activation events.
-
-* ~July 28th: Polygon \(0009\)
+Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field. To stay notified of upcoming new chains, follow the [PIP-6.2 thread](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027).
 
 ## Mainnet RelayChains
 
