@@ -33,10 +33,10 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Ethereum Rinkeby | poa-rinkeby | 0025 | Y |
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
 | FUSE Mainnet | fuse-mainnet | 0005 | Y |
-| FUSE Archival | fuse-archival | 000A | - |
+| FUSE Archival | fuse-archival | 000A | ~Aug 4th |
 | Pocket Network Mainnet | mainnet | 0001 | Y |
-| Polygon Mainnet | matic-mainnet | 0009 | ~July 28th |
-| Polygon Archival | matic-archival | 000B | ~July 28th |
+| Polygon Mainnet | matic-mainnet | 0009 | Y |
+| Polygon Archival | matic-archival | 000B | ~Aug 4th |
 | Solana Mainnet | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 
