@@ -55,10 +55,24 @@ To get started with connecting to Pocket's decentralized infrastructure for Fuse
 1. Click on the Networks drop-down menu, then press **Custom RPC**
 2. Under the Network Name field, write **Fuse Pocket Portal**
 3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://fuse-rpc.gateway.pokt.network/`
-4. Put the decimal hexadecimal **0x7a** in the ChainID field
+4. Put the hexadecimal **0x7a** in the ChainID field
 5. Write **Fuse** as the Symbol
 6. Add `https://explorer.fuse.io` as the Block Explorer URL
 7. **Don’t forget to save**
 
 This public endpoint supports up to 3M relays per day!
+
+## Polygon
+
+To get started with connecting to Pocket's decentralized infrastructure for Polygon, do the following:
+
+1. Click on the Networks drop-down menu, then press **Custom RPC**
+2. Under the Network Name field, write **Polygon Pocket Portal**
+3. Within the New RPC URL field, **copy** and **paste** this endpoint URL `https://poly-rpc.gateway.pokt.network/`
+4. Put the decimal **137** in the ChainID field
+5. Write **Matic** as the Symbol
+6. Add `https://polygonscan.com` as the Block Explorer URL
+7. **Don’t forget to save**
+
+This public endpoint supports up to 5M relays per day!
 
