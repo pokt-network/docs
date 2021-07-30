@@ -64,6 +64,8 @@ This public endpoint supports up to 3M relays per day!
 
 ## Polygon
 
+{% embed url="https://youtu.be/C0jDq20pBYQ" %}
+
 To get started with connecting to Pocket's decentralized infrastructure for Polygon, do the following:
 
 1. Click on the Networks drop-down menu, then press **Custom RPC**
