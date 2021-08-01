@@ -24,7 +24,7 @@ Are you familiar with all of these concepts?
 
 If not, you're likely to get lost. You're welcome to learn, of course, and we'd be happy to help you on your journey, but in the meantime you might want to consider using a third-party node hosting service. While they will be taking a cut of your revenue, they'll generate more revenue for you overall.
 
-If you're determined to learn by doing, we highly recommend using Node Pilot, an automated Docker-powered node deployment GUI maintained by Pocket Network community members. If you're familiar with Ubuntu and know how to use a CLI, this will at least automate the node deployments for you.
+If you're determined to learn by doing, we recommend using Node Pilot, an automated Docker-powered node deployment GUI maintained by Pocket Network community members. If you're familiar with Ubuntu and know how to use a CLI, this will at least automate the node deployments for you.
 
 ## Prepare Your Kit
 
