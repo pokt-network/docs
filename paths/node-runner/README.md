@@ -513,5 +513,5 @@ And you'll need to unlock 5 out of 7 of the following 👾POKT Arcade achievemen
 
 For more details on how to join the DAO, go here:
 
-{% page-ref page="../governor/claim-your-vote.md" %}
+{% page-ref page="../governor/claim-your-vote/" %}
 

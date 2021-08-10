@@ -16,7 +16,7 @@ A PEP is a type of proposal that requests a POKT grant from the DAO treasury. Yo
 
 For more details on submitting your proposal, follow the link below:
 
-{% page-ref page="governor/submit-a-proposal.md" %}
+{% page-ref page="governor/submit-a-proposal/" %}
 
 
 

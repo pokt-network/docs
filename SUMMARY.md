@@ -46,8 +46,15 @@
 * [👩‍🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
-  * [🗳 Claim Your Vote](paths/governor/claim-your-vote.md)
-  * [📥 Submit a Proposal](paths/governor/submit-a-proposal.md)
+  * [🗳 Claim Your Vote](paths/governor/claim-your-vote/README.md)
+    * [👾 App Developer Path](paths/governor/claim-your-vote/app-developer-path.md)
+    * [👾 Node Runner Path](paths/governor/claim-your-vote/node-runner-path.md)
+    * [👾 Community Shepherd Path](paths/governor/claim-your-vote/community-shepherd-path.md)
+    * [👾 Governor Path](paths/governor/claim-your-vote/governor-path.md)
+  * [📥 Submit a Proposal](paths/governor/submit-a-proposal/README.md)
+    * [🦾 PIP  – Pocket Improvement Proposal](paths/governor/submit-a-proposal/pip-pocket-improvement-proposal.md)
+    * [💰 PEP – Pocket Ecosystem Proposal](paths/governor/submit-a-proposal/pep-pocket-ecosystem-proposal.md)
+    * [🎚 PUP – Parameter Update Proposal](paths/governor/submit-a-proposal/pup-parameter-update-proposal.md)
 
 ## 📚 Resources
 

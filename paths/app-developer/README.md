@@ -126,7 +126,7 @@ Next, you'll need to unlock 5 of the following 👾POKT Arcade achievements to q
 
 For more details on how to join the DAO, go here:
 
-{% page-ref page="../governor/claim-your-vote.md" %}
+{% page-ref page="../governor/claim-your-vote/" %}
 
 
 

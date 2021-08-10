@@ -11,5 +11,5 @@ In fact, Shepherds can even earn a vote in the DAO by doing things like:
 
 To learn more about how to earn your vote in the DAO, go here:
 
-{% page-ref page="../governor/claim-your-vote.md" %}
+{% page-ref page="../governor/claim-your-vote/" %}
 
