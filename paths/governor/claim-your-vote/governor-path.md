@@ -34,15 +34,15 @@ We're impressed with your augmentation capabilities, but to truly become a Cybor
 
 ### Cybernetic\_Arm
 
-Author a successful PIP \(independent of the Anode quest\).
+Author a successful [PIP](../submit-a-proposal/pip-pocket-improvement-proposal.md) \(independent of the Anode quest\).
 
 ### Cybernetic\_Leg
 
-Author a successful PUP \(independent of the Anode quest\).
+Author a successful [PUP](../submit-a-proposal/pup-parameter-update-proposal.md) \(independent of the Anode quest\).
 
 ### Implanted\_Rebreather
 
-Author a successful PEP \(independent of the Anode quest\).
+Author a successful [PEP](../submit-a-proposal/pep-pocket-ecosystem-proposal.md) \(independent of the Anode quest\).
 
 ### Feedback\_Loop
 
@@ -72,15 +72,15 @@ So you have ventured where few still dare to go. Your current augments allow for
 
 ### Nanobots
 
-Author 3 successful PEPs \(independent of previous quests\).
+Author 3 successful [PEPs](../submit-a-proposal/pep-pocket-ecosystem-proposal.md) \(independent of previous quests\).
 
 ### Machine\_Learning
 
-Author 3 successful PUPs \(independent of previous quests\).
+Author 3 successful [PUPs](../submit-a-proposal/pup-parameter-update-proposal.md) \(independent of previous quests\).
 
 ### Artificial\_Intelligence
 
-Author 3 successful PIPs \(independent of previous quests\).
+Author 3 successful [PIPs](../submit-a-proposal/pip-pocket-improvement-proposal.md) \(independent of previous quests\).
 
 ### Quantum\_Resistance
 

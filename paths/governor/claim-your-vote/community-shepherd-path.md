@@ -8,7 +8,11 @@ Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture t
 
 ### Seed\_Pouch
 
-Swap the endpoints on your wallets with Pocket.
+Swap the RPC endpoints on your wallets with Pocket. 
+
+See the MetaMask page below for a walkthrough of how to do this:
+
+{% page-ref page="../../shepherd/conscious-dappitalism/metamask.md" %}
 
 {% hint style="info" %}
 To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.
@@ -98,7 +102,7 @@ Create meaningful content about Pocket Network, vouched for by 3 \(BrightID\) Ve
 
 ### Topographics
 
-Translate content on pocket's website, blog or docs.
+Translate content on Pocket's website, blog or docs.
 
 ### Wool\_Clipper
 
@@ -114,7 +118,7 @@ Successfully onboard 5 node runners into Pocket Network.
 
 ### Seed\_Fund
 
-Submit a community-orientated PEP and receive a POKT grant from the DAO.
+Submit a community-orientated [PEP](../submit-a-proposal/pep-pocket-ecosystem-proposal.md) and receive a POKT grant from the DAO.
 
 ### Assurance
 

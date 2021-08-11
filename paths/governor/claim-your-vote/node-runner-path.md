@@ -8,7 +8,7 @@ Greetings aspiring Node Runner, we have heard your call to join us in the battle
 
 ### Server
 
-Stake your node successfully in Pocket testnet or mainnet.
+[Stake your node](../../node-runner/#stake-the-validator) successfully in Pocket testnet or mainnet.
 
 {% hint style="info" %}
 To verify that you own the account, you must sign a message using the following CLI command, removing the `<>` and keeping the `""`
@@ -26,7 +26,7 @@ Successfully submit a proof transaction in Pocket testnet or mainnet.
 
 ### Jailbreak
 
-Avoid getting jailed for 7 days \(672 consecutive blocks\) in Pocket testnet or mainnet.
+Avoid getting [jailed](../../../main-concepts/glossary.md#jail) for 7 days \(672 consecutive blocks\) in Pocket testnet or mainnet.
 
 ## Nodemad
 
@@ -90,7 +90,7 @@ Submit successful proof transactions of 1M relays in Pocket mainnet.
 
 ### Infrared
 
-Submit an infrastructure-oriented PEP and receive a POKT grant from the DAO.
+Submit an infrastructure-oriented [PEP](../submit-a-proposal/pep-pocket-ecosystem-proposal.md) and receive a POKT grant from the DAO.
 
 ### Testkit
 

@@ -91,7 +91,7 @@ Well done Savant, we recognize the trials you have taken on and the skills you h
 
 ### Token\_Handler
 
-Build tooling for AAT management and have 3 \(BrightID\) Verified Savants or Pocket core team members vouch for the tool's quality.
+Build tooling for [AAT](../../../main-concepts/glossary.md#application-authentication-token-aat) management and have 3 \(BrightID\) Verified Savants or Pocket core team members vouch for the tool's quality.
 
 ### Optimizer
 
@@ -103,5 +103,5 @@ Create or take ownership of an application, SDK, or tool that is vouched for by 
 
 ### Ventured
 
-Submit an application-oriented PEP and receive a POKT grant from the DAO.
+Submit an application-oriented [PEP](../submit-a-proposal/pep-pocket-ecosystem-proposal.md) and receive a POKT grant from the DAO.
 
