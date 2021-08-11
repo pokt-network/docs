@@ -36,6 +36,8 @@ To get started connecting to Pocket's infrastructure for Avalanche C-Chain, do t
 
 ## xDAI
 
+{% embed url="https://youtu.be/9nfL7l6YtkU" %}
+
 To get started with connecting to Pocket's decentralized infrastructure for xDAI, do the following:
 
 1. Click on the Networks drop-down menu, then press **Custom RPC**
