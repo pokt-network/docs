@@ -4,7 +4,7 @@ Pocket Network is a pioneer in a new era of democratically-governed digital publ
 
 Pocket uses off-chain governance because it’s the most flexible and future-proof way for us to organize our DAO. For more on our reasoning behind this, check out our [Lean Governance Thesis](https://github.com/pokt-network/governance/blob/master/constitution/The%20Lean%20Governance%20Thesis.pdf).
 
-To learn how to earn a vote in the DAO, go here:
+To learn how to earn a vote in the DAO and decide the future of Pocket Network, go here:
 
 {% page-ref page="claim-your-vote/" %}
 
