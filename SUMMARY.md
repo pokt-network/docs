@@ -46,6 +46,7 @@
 * [👩‍🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
+  * [📜 Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md)
   * [🗳 Claim Your Vote](paths/governor/claim-your-vote/README.md)
     * [👾 App Developer Path](paths/governor/claim-your-vote/app-developer-path.md)
     * [👾 Node Runner Path](paths/governor/claim-your-vote/node-runner-path.md)

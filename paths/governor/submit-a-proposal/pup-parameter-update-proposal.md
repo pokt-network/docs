@@ -1,17 +1,17 @@
 # 🎚 PUP – Parameter Update Proposal
 
-Parameter Update Proposals \(PUPs\) include any proposals to modify the value of the parameters listed here:
+**Parameter Update Proposals \(PUPs\)** include any proposals to modify the value of the parameters listed here:
 
 {% page-ref page="../../../resources/references/protocol-parameters.md" %}
 
-You will need the following details for your proposal:
+PUP votes will last 7 days and pass with Majority Approval \(50% yes votes by participating voters\) unless otherwise specified in the Constitution.
 
-* **Current Value**: What is the current value of the parameter? For whitelists, just leave this field blank.
-* **New Value**: What is the proposed value of the parameter? For whitelists, just list the addresses/IDs you wish to add or remove.
-* **Summary**: Layman-friendly 2 sentence description.
-* **Abstract**: ~200 word description of the parameter value being proposed and why.
-* **Motivation**: Explain in detail why the new parameter value is better than the current parameter value. What is the intended effect of changing the parameter value?
-* **Rationale**: Provide detailed justification behind why the specific value was selected.
-* **Dissenting Opinions**: Acknowledge all opinions which disagree with the rationale of this proposal.
-* **Analyst\(s\)**: Where relevant, provide details of the analyst\(s\) whose work leads to the recommended value. How are they qualified?
+To submit a PUP, head to the forum [here](https://forum.pokt.network/c/governance/pup/30), then click New Topic to generate a template for your proposal.
+
+The following parameters are delegated to the Foundation to manage the parameter on the DAO's behalf:
+
+* [SupportedBlockchains](../../../resources/references/protocol-parameters.md#supportedblockchains) \([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)\)
+* [MaxApplications](../../../resources/references/protocol-parameters.md#maxapplications) \([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)\)
+* [BaseRelaysPerPOKT](../../../resources/references/protocol-parameters.md#baserelaysperpokt)
+* [StabilityAdjustment](../../../resources/references/protocol-parameters.md#stabilityadjustment)
 
