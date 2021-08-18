@@ -8,6 +8,14 @@
 This trail is designed for intermediate node runners, who are familiar with running full nodes and have the knowledge required to avoid getting lost. You might be better served following one of the other trails below.
 {% endhint %}
 
+### Evaluating Profitability First
+
+Wanting to understand the economics of running a node before you dive in? Check out these links:
+
+{% page-ref page="../../main-concepts/economics/pokt-token-economics/node-economics/" %}
+
+{% page-ref page="../../resources/faq/pricing-and-economics.md" %}
+
 ### Advanced
 
 This trail might be a little too scenic for you. For a no-frills quickstart guide, you should head over to the Pocket Core docs:
