@@ -18,25 +18,29 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 
 | Name | Portal API Prefix | RelayChainID | Generates Revenue |
 | :--- | :--- | :--- | :--- |
-| Avalanche Mainnet | avax-mainnet | 0003 | Y |
+| Algorand | algorand-mainnet | 0029 | - |
+| Algorand Archival | algorand-archival | 000D | - |
+| Arweave | arweave-mainnet | 0030 | - |
+| Avalanche | avax-mainnet | 0003 | Y |
 | Binance Smart Chain | bsc-mainnet | 0004 | Y |
 | Binance Smart Chain Archival | bsc-archival | 0010 | Y |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
 | Bitcoin | btc-mainnet | 0002 | - |
-| Ethereum Mainnet | eth-mainnet | 0021 | Y |
+| Ethereum | eth-mainnet | 0021 | Y |
 | Ethereum Archival | eth-archival | 0022 | Y |
 | Ethereum Archival Trace | eth-archival-trace | 0028 | Y |
 | Ethereum Goerli | poa-goerli | 0026 | Y |
 | Ethereum Kovan | poa-kovan | 0024 | Y |
 | Ethereum Rinkeby | poa-rinkeby | 0025 | Y |
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
-| FUSE Mainnet | fuse-mainnet | 0005 | Y |
+| FUSE | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | Y |
-| Pocket Network Mainnet | mainnet | 0001 | Y |
-| Polygon Mainnet | matic-mainnet | 0009 | Y |
+| Pocket Network | mainnet | 0001 | Y |
+| Polygon | matic-mainnet | 0009 | Y |
 | Polygon Archival | matic-archival | 000B | Y |
-| Solana Mainnet | sol-mainnet | 0006 | - |
+| Solana | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
+| xDAI Archival | poa-xdai-archival | 000C | - |
 
 ## Testnet RelayChains
 
