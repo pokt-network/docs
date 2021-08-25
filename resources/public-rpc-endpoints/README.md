@@ -23,7 +23,7 @@ To change your endpoint in MetaMask, do the following, **filling in the fields f
 If you receive this error message from MetaMask `Invalid number. Enter a decimal or '0x'-prefixed hexadecimal number` then leave the optional fields blank.
 {% endhint %}
 
-{% embed url="https://youtu.be/8ruuz3u2V2E" %}
+{% embed url="https://www.youtube.com/watch?v=8ruuz3u2V2E&list=PLYpSL-5AOmwq4x0Kxw\_p4v93mEYLmT5HJ" %}
 
 ## Endpoints
 
