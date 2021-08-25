@@ -77,6 +77,8 @@ curl --user :YOUR-SECRET-KEY \\
   https://<network>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
 ```
 
+This is a truncated example of a call that does not actually send a request. See below for a more detailed example.
+
 ## Testing your Endpoint
 
 Once you've set up your endpoint as per your liking, you can test it however you'd like. In the main application view of the dashboard, you'll be able to see and copy your endpoint to the clipboard. The way endpoints are used in terms of content sent in the body will depend on the chain.
