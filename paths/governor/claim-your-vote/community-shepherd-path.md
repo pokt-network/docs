@@ -12,7 +12,7 @@ Swap the RPC endpoints on your wallets with Pocket.
 
 See the MetaMask page below for a walkthrough of how to do this:
 
-{% page-ref page="../../shepherd/conscious-dappitalism/metamask.md" %}
+{% page-ref page="../../shepherd/metamask.md" %}
 
 {% hint style="info" %}
 To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.

@@ -4,7 +4,7 @@ description: >-
   Pocket-powered apps
 ---
 
-# 🚀 Conscious DAppitalism
+# Conscious DAppitalism
 
 ### Ethereum Applications
 
