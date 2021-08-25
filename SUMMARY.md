@@ -39,7 +39,7 @@
   * [⛑ Pay Someone to Run Your Node](https://forum.pokt.network/t/recommended-node-hosting-services/366)
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
 * [🧙 Shepherd](paths/shepherd/README.md)
-  * [Public RPC Endpoints](paths/shepherd/metamask.md)
+  * [Public RPC Endpoints](paths/shepherd/public-rpc-endpoints.md)
   * [Conscious DAppitalism](paths/shepherd/conscious-dappitalism/README.md)
     * [MyCrypto](paths/shepherd/conscious-dappitalism/mycrypto.md)
     * [Dark Forest](paths/shepherd/conscious-dappitalism/dark-forest.md)
