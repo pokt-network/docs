@@ -12,7 +12,7 @@ Swap the RPC endpoints on your wallets with Pocket.
 
 See the MetaMask page below for a walkthrough of how to do this:
 
-{% page-ref page="../../shepherd/public-rpc-endpoints.md" %}
+{% page-ref page="../../../resources/public-rpc-endpoints/" %}
 
 {% hint style="info" %}
 To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.
@@ -34,7 +34,7 @@ Identify and share 3 relevant \(unshared\) tweets that other Farmhands can respo
 
 Confirm that you have used at least 2 of the apps listed here:
 
-{% page-ref page="../../shepherd/conscious-dappitalism/" %}
+{% page-ref page="../../shepherd/conscious-dappitalism.md" %}
 
 {% hint style="info" %}
 To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.

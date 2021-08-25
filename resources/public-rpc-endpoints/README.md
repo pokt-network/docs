@@ -5,7 +5,7 @@ description: >-
   you use a custom endpoint.
 ---
 
-# Public RPC Endpoints
+# 📡 Public RPC Endpoints
 
 ## How to Customize Your Endpoint \(e.g. MetaMask\)
 
