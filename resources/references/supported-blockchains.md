@@ -40,7 +40,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Polygon Archival | matic-archival | 000B | Y |
 | Solana | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
-| xDAI Archival | poa-xdai-archival | 000C | - |
+| xDAI Archival | poa-xdai-archival | 000C | Y |
 
 ## Testnet RelayChains
 
