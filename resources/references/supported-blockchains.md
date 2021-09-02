@@ -22,6 +22,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Algorand Archival | algorand-archival | 000D | - |
 | Arweave | arweave-mainnet | 0030 | - |
 | Avalanche | avax-mainnet | 0003 | Y |
+| Avalanche Fuji  | avax-fuji  | 000E | - |
 | Binance Smart Chain | bsc-mainnet | 0004 | Y |
 | Binance Smart Chain Archival | bsc-archival | 0010 | Y |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
@@ -38,6 +39,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Pocket Network | mainnet | 0001 | Y |
 | Polygon | matic-mainnet | 0009 | Y |
 | Polygon Archival | matic-archival | 000B | Y |
+| Polygon Mumbai | matic-mumbai | 000F | - |
 | Solana | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 | xDAI Archival | poa-xdai-archival | 000C | Y |
