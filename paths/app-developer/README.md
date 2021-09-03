@@ -4,6 +4,8 @@
 
 While a direct integration with [PocketJS](https://docs.pokt.network/js) is the best way to optimize for reliability and censorship-resistance, we understand the need to build an MVP. Most teams need to move fast and build prototypes quickly—and making sure these integrations are failsafe can take some time. Sometimes you just need an endpoint to query data or send transactions. This is what the Pocket Portal provides, an abstraction layer that integrates with PocketJS on your behalf and generates the endpoint you need.
 
+[https://www.portal.pokt.network/](https://www.portal.pokt.network/#1)
+
 The Portal lets you create an endpoint for the chain you want in just a few clicks and provides you with the features you've come to expect in centralized API services, such as usage/uptime metrics and notifications/alerts.
 
 ## Setup Guide
