@@ -26,6 +26,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Binance Smart Chain | bsc-mainnet | 0004 | Y |
 | Binance Smart Chain Archival | bsc-archival | 0010 | Y |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
+| Binance Smart Chain Testnet Archival | bsc-testnet-archival | 0012 | - |
 | Bitcoin | btc-mainnet | 0002 | - |
 | Ethereum | eth-mainnet | 0021 | Y |
 | Ethereum Archival | eth-archival | 0022 | Y |
@@ -40,6 +41,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Polygon | matic-mainnet | 0009 | Y |
 | Polygon Archival | matic-archival | 000B | Y |
 | Polygon Mumbai | matic-mumbai | 000F | - |
+| Polygon Mumbai Archival | matic-mumbai-archival | 00AF | - |
 | Solana | sol-mainnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 | xDAI Archival | poa-xdai-archival | 000C | Y |
