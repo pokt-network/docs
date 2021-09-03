@@ -20,7 +20,7 @@ Wanting to understand the economics of running a node before you dive in? Check 
 
 This trail might be a little too scenic for you. For a no-frills quickstart guide, you should head over to the Pocket Core docs:
 
-https://docs.pokt.network/core/
+[https://docs.pokt.network/core/](https://docs.pokt.network/core/)
 
 ### Beginners
 
