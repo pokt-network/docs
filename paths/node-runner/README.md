@@ -18,9 +18,7 @@ Wanting to understand the economics of running a node before you dive in? Check 
 
 ### Advanced
 
-This trail might be a little too scenic for you. For a no-frills quickstart guide, you should head over to the Pocket Core docs:
-
-[https://docs.pokt.network/core/](https://docs.pokt.network/core/)
+This trail might be a little too scenic for you. For a no-frills quickstart guide, you should head over to the [Pocket Core docs](https://docs.pokt.network/core/).
 
 ### Beginners
 
@@ -32,9 +30,9 @@ Are you familiar with all of these concepts?
 * SSL certs
 * Port forwarding
 
-If not, you're likely to get lost. You're welcome to learn, of course, and we'd be happy to help you on your journey, but in the meantime you might want to consider using a third-party node hosting service. While they will be taking a cut of your revenue, they'll generate more revenue for you overall.
+If not, you're likely to get lost. You're welcome to learn, of course, and we'd be happy to help you on your journey, but in the meantime you might want to consider using a [third-party node hosting service](https://forum.pokt.network/t/recommended-node-hosting-services/366). While they will be taking a cut of your revenue, they'll generate more revenue for you overall.
 
-If you're determined to learn by doing, we recommend using Node Pilot, an automated Docker-powered node deployment GUI maintained by Pocket Network community members. If you're familiar with Ubuntu and know how to use a CLI, this will at least automate the node deployments for you.
+If you're determined to learn by doing, we recommend using [Node Pilot](https://docs.decentralizedauthority.com), an automated Docker-powered node deployment GUI maintained by Pocket Network community members. If you're familiar with Ubuntu and know how to use a CLI, this will at least automate the node deployments for you.
 
 ## Prepare Your Kit
 

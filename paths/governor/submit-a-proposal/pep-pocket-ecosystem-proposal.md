@@ -14,7 +14,7 @@
 The DAO earns continuous revenue in the form of the [DAOAllocation](../../../resources/references/protocol-parameters.md#daoallocation), which is a % that the DAO receives for every [RelaysToTokensMultiplier](../../../resources/references/protocol-parameters.md#relaystotokensmultiplier) minted in the block reward. This is proportional to the number of relays being processed for app developers, which means the more traction Pocket Network gets, the more wealthy the DAO becomes!
 {% endhint %}
 
-PEP votes will last 7 days and pass with Majority Approval \(50% yes votes by participating voters\) unless otherwise specified in the Constitution. 
+PEP votes will last 7 days and pass with Majority Approval \(50% yes votes by participating voters\) unless otherwise specified in the [Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md). 
 
 To submit a PEP, head to the forum [here](https://forum.pokt.network/c/governance/pep/29), then click New Topic to generate a template for your proposal.
 

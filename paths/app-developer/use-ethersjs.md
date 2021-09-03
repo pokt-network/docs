@@ -6,7 +6,7 @@ description: >-
 
 # ♦️ Use EthersJS
 
-First, you need to get an endpoint from the Pocket Portal.
+First, you need to get an endpoint from the [Pocket Portal](https://www.portal.pokt.network/).
 
 Then you need to get the Gateway ID
 
