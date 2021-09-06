@@ -20,6 +20,8 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | :--- | :--- | :--- | :--- |
 | Algorand | algorand-mainnet | 0029 | - |
 | Algorand Archival | algorand-archival | 000D | - |
+| Algorand Testnet | algorand-testnet | 000G | - |
+| Algorand Testnet Archival | algorand-testnet-archival | 00AG | - |
 | Arweave | arweave-mainnet | 0030 | - |
 | Avalanche | avax-mainnet | 0003 | Y |
 | Avalanche Fuji  | avax-fuji  | 000E | - |
@@ -38,11 +40,12 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | FUSE | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | Y |
 | Pocket Network | mainnet | 0001 | Y |
-| Polygon | matic-mainnet | 0009 | Y |
-| Polygon Archival | matic-archival | 000B | Y |
-| Polygon Mumbai | matic-mumbai | 000F | - |
-| Polygon Mumbai Archival | matic-mumbai-archival | 00AF | - |
+| Polygon | poly-mainnet | 0009 | Y |
+| Polygon Archival | poly-archival | 000B | Y |
+| Polygon Mumbai | poly-mumbai | 000F | - |
+| Polygon Mumbai Archival | poly-mumbai-archival | 00AF | - |
 | Solana | sol-mainnet | 0006 | - |
+| Solana Testnet | sol-testnet | 0006 | - |
 | xDAI | poa-xdai | 0027 | Y |
 | xDAI Archival | poa-xdai-archival | 000C | Y |
 
