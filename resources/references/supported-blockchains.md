@@ -24,7 +24,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Algorand Testnet Archival | algorand-testnet-archival | 00AG | - |
 | Arweave | arweave-mainnet | 0030 | - |
 | Avalanche | avax-mainnet | 0003 | Y |
-| Avalanche Fuji  | avax-fuji  | 000E | - |
+| Avalanche Fuji | avax-fuji | 000E | - |
 | Binance Smart Chain | bsc-mainnet | 0004 | Y |
 | Binance Smart Chain Archival | bsc-archival | 0010 | Y |
 | Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
