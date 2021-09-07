@@ -4,7 +4,7 @@
 
 ![](../../../.gitbook/assets/community_banner1.png)
 
-Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**,  providing evidence in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
+Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**,  providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
 
 ### Seed\_Pouch
 
@@ -15,7 +15,7 @@ See the MetaMask page below for a walkthrough of how to do this:
 {% page-ref page="../../../resources/public-rpc-endpoints/" %}
 
 {% hint style="info" %}
-To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.
+To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
 {% endhint %}
 
 ### Quick\_Repair
@@ -37,7 +37,7 @@ Confirm that you have used at least 2 of the apps listed here:
 {% page-ref page="../../shepherd/conscious-dappitalism.md" %}
 
 {% hint style="info" %}
-To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to 🏆achievement\_unlocked when you report the quest completion.
+To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
 {% endhint %}
 
 ### Seedling
@@ -56,7 +56,7 @@ Purchase Discord Nitro and boost Pocket Network's community server.
 
 ![](../../../.gitbook/assets/community_banner2.png)
 
-At this point you have now familiarized yourself with the ways of the Farmers. Your studies at this level will seek to align you more deeply with the vision and mission that has brought us together. **Completing 4/6 of the following jobs** will earn you a flight to the Shepherd's station. Provide proof of your work in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-shepherd` command.
+At this point you have now familiarized yourself with the ways of the Farmers. Your studies at this level will seek to align you more deeply with the vision and mission that has brought us together. **Completing 4/6 of the following jobs** will earn you a flight to the Shepherd's station. Provide proof of your work in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-shepherd` command.
 
 ### Infolink
 

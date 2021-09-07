@@ -4,7 +4,7 @@
 
 ![](../../../.gitbook/assets/daoist_banner1.png)
 
-Greetings fledgling DAOist and aspiring Biohacker. It is now time to augment your skills via the cybernetic system, Pocket DAO, to truly enhance this community's mission. You will be considered a true Biohacker if you **acquire 2/3 of the following augments**, providing evidence in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-biohacker` command.
+Greetings fledgling DAOist and aspiring Biohacker. It is now time to augment your skills via the cybernetic system, Pocket DAO, to truly enhance this community's mission. You will be considered a true Biohacker if you **acquire 2/3 of the following augments**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-biohacker` command.
 
 ### Anode
 
@@ -30,7 +30,7 @@ This quest can't be completed currently because our proposal challenge system is
 
 ![](../../../.gitbook/assets/daoist_banner2.png)
 
-We're impressed with your augmentation capabilities, but to truly become a Cyborg you'll need to **acquire 3/5 of these augments**, providing evidence in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-cyborg` command.
+We're impressed with your augmentation capabilities, but to truly become a Cyborg you'll need to **acquire 3/5 of these augments**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-cyborg` command.
 
 ### Cybernetic\_Arm
 
