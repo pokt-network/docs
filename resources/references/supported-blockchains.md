@@ -45,7 +45,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Polygon Mumbai | poly-mumbai | 000F | - |
 | Polygon Mumbai Archival | poly-mumbai-archival | 00AF | - |
 | Solana | sol-mainnet | 0006 | - |
-| Solana Testnet | sol-testnet | 0006 | - |
+| Solana Testnet | sol-testnet | 0031 | - |
 | xDAI | poa-xdai | 0027 | Y |
 | xDAI Archival | poa-xdai-archival | 000C | Y |
 
