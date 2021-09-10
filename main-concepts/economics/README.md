@@ -18,6 +18,10 @@ While paying upfront for infrastructure appears to be burdensome at first glance
 
 Node Providers also stake POKT but do so on a per-node basis. The minimum stake required to run a single node is 15,000 POKT, but as with the developer stake, the minimum stake per node can be adjusted by governance mechanisms. In exchange for servicing relays for applications, nodes are compensated in POKT. Unlike most traditional block rewards, Pocket Network’s is dynamic; POKT rewards are directly proportional to the number of relays and transaction fees in a given block. At the network launch, Nodes receive .0089 POKT per relay fulfilled and proved. In addition, the block producer receives 1% of the entire block reward. All nodes in the network have an opportunity to produce a block, but their chances are proportional to their stake.
 
+{% hint style="danger" %}
+The absolute minimum node stake \(15,000 POKT\) is not _practical_ for real-world usage. 15,100 is a reasonable buffer against operational slashes which can occur on _seemingly properly_ configured nodes as well as misconfigured and misbehaving ones.
+{% endhint %}
+
 Because of the way that nodes are incentivized, the Pocket Network economic model is inflationary during the Growth Phase, where the monetary is intentionally designed to encourage adoption. At network maturity, the Maturity Phase, a burn rate will initiate for application stakes that will offset the creation of newly minted POKT, stabilizing the total supply of POKT. This economic model encourages early network participation and reduces coordination costs.
 
 At launch, the optimal economic strategy for node operators is to replicate as many nodes as possible with the amount of POKT held. By spreading their stake across multiple nodes, node operators maximize their chances of being chosen in as many sessions as possible, providing them with the most opportunity to serve relays within the network. These incentives promote further decentralization, redundancy, and increases the number of nodes available for each blockchain network supported by Pocket Network.

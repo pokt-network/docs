@@ -245,7 +245,7 @@ To stake a Validator in Pocket Network, the account must have a balance above th
 `15,000 POKT` or `15,000,000,000 uPOKT`
 
 {% hint style="danger" %}
-If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum \(e.g. 15,100-16,000\), so that minor slashing doesn't result in loss of the entire stake.
+The absolute minimum node stake \(15,000 POKT\) is not _practical_ for real-world usage. 15,100 is a reasonable buffer against operational slashes which can occur on _seemingly properly_ configured nodes as well as misconfigured and misbehaving ones.
 {% endhint %}
 
 Send POKT with the following command:
