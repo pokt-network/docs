@@ -74,6 +74,7 @@
   * [Ethereum \(ETH\) MetaMask](resources/public-rpc-endpoints/ethereum-eth-metamask.md)
   * [xDAI MetaMask](resources/public-rpc-endpoints/xdai-metamask.md)
   * [Fuse MetaMask](resources/public-rpc-endpoints/fuse-metamask.md)
+  * [Polygon MetaMask](resources/public-rpc-endpoints/polygon-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
 * [🍻 Integrations](resources/integrations/README.md)
