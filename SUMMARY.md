@@ -75,6 +75,7 @@
   * [xDAI MetaMask](resources/public-rpc-endpoints/xdai-metamask.md)
   * [Fuse MetaMask](resources/public-rpc-endpoints/fuse-metamask.md)
   * [Polygon MetaMask](resources/public-rpc-endpoints/polygon-metamask.md)
+  * [Binance Smart Chain \(BSC\) MetaMask](resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
 * [🍻 Integrations](resources/integrations/README.md)
