@@ -29,9 +29,9 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 
 | **Network Name** | RPC URL | ChainID | Symbol | Explorer URL |
 | :--- | :--- | :--- | :--- | :--- |
-| [Ethereum Mainnet](https://youtu.be/8ruuz3u2V2E) | https://eth-mainnet.gateway.pokt.network/v1/5f3453978e354ab992c4da79 | 1 | ETH | https://etherscan.io |
+| [Ethereum Mainnet](https://youtu.be/8ruuz3u2V2E) | https://eth-rpc.gateway.pokt.network | 1 | ETH | https://etherscan.io |
 | [Avalanche](https://youtu.be/9SNGe2tfmmw) | https://avax-mainnet.gateway.pokt.network/v1/lb/605238bf6b986eea7cf36d5e/ext/bc/C/rpc | 0xa86a | AVAX | https://cchain.explorer.avax.network/ |
-| [xDAI](https://youtu.be/9nfL7l6YtkU) | https://poa-xdai.gateway.pokt.network/v1/lb/60e99f2897c986003460ec4d | 0x64 | xDAI | https://blockscout.com/poa/xdai |
+| [xDAI](https://youtu.be/9nfL7l6YtkU) | https://xdai-rpc.gateway.pokt.network | 0x64 | xDAI | https://blockscout.com/poa/xdai |
 | [Fuse](https://youtu.be/sSg8QWgR_T8) | https://fuse-rpc.gateway.pokt.network/ | 0x7a | Fuse | https://explorer.fuse.io |
 | [Polygon](https://youtu.be/C0jDq20pBYQ) | https://poly-rpc.gateway.pokt.network/ | 137 | Matic | https://polygonscan.com |
 | [BSC](https://youtu.be/fLTvtBtOEg0) | [https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d](https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d) | 56 | BNB | [https://bscscan.com](https://bscscan.com) |
