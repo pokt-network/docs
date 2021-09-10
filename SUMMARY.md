@@ -70,6 +70,7 @@
   * [🔟 POKT Denominations](resources/references/pokt-denominations.md)
   * [🌱 Seeds](resources/references/seeds.md)
 * [📡 Public RPC Endpoints](resources/public-rpc-endpoints/README.md)
+  * [Avalanche \(AVAX\) MetaMask](resources/public-rpc-endpoints/avalanche-avax-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
 * [🍻 Integrations](resources/integrations/README.md)
