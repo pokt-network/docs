@@ -39,6 +39,14 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
 | FUSE | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | Y |
+| Harmony Shard 0 | harmony-0 | 0040 | N |
+| Harmony Shard 0 Archival | harmony-0-archival | 0A40 | N |
+| Harmony Shard 1 | harmony-1 | 0041 | N |
+| Harmony Shard 1 Archival | harmony-1-archival | 0A41 | N |
+| Harmony Shard 2 | harmony-2 | 0042 | N |
+| Harmony Shard 2 Archival | harmony-2-archival | 0A42 | N |
+| Harmony Shard 3 | harmony-3 | 0043 | N |
+| Harmony Shard 3 Archival | harmony-3-archival | 0A43 | N |
 | Pocket Network | mainnet | 0001 | Y |
 | Polygon | poly-mainnet | 0009 | Y |
 | Polygon Archival | poly-archival | 000B | Y |
