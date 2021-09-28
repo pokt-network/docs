@@ -33,9 +33,9 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Ethereum | eth-mainnet | 0021 | Y |
 | Ethereum Archival | eth-archival | 0022 | Y |
 | Ethereum Archival Trace | eth-archival-trace | 0028 | Y |
-| Ethereum Goerli | poa-goerli | 0026 | Y |
+| Ethereum Goerli | eth-goerli | 0026 | Y |
 | Ethereum Kovan | poa-kovan | 0024 | Y |
-| Ethereum Rinkeby | poa-rinkeby | 0025 | Y |
+| Ethereum Rinkeby | eth-rinkeby | 0025 | Y |
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
 | FUSE | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | Y |
