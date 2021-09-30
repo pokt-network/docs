@@ -78,6 +78,7 @@
   * [Binance Smart Chain \(BSC\) MetaMask](resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
+  * [Rotki](resources/public-rpc-endpoints/rotki.md)
 * [🍻 Integrations](resources/integrations/README.md)
   * [🔮 API3 Airnode](resources/integrations/api3-airnode.md)
   * [🚀 Rocket Pool](resources/integrations/rocket-pool.md)
