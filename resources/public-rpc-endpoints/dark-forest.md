@@ -2,7 +2,7 @@
 
 {% embed url="https://youtu.be/jxfOc4XjJaw" %}
 
-We have issued an xDAI RPC endpoint that grants up to 10M requests per day just for Dark Forest players!
+We have issued an xDAI RPC endpoint that grants up to 25M requests per day \(& 125 nodes per hour\) just for Dark Forest players!
 
 To get started connecting to Pocket's node infrastructure for xDAI in Dark Forest, do the following:
 
