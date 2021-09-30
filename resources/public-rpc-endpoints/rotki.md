@@ -18,7 +18,7 @@ To get started connecting to Pocket's censorship-resistant infrastructure for Et
 
 2. Toggle to account, then open settings. 
 
-![](../../.gitbook/assets/rotki-step-2.png)
+![](../../.gitbook/assets/rotki-step-2%20%281%29.png)
 
 3. Scroll down to the Local Nodes section, then delete the default RPC endpoint.
 
