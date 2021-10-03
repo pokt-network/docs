@@ -42,7 +42,7 @@ To verify that you used the app, screen record yourself submitting an on-chain a
 
 ### Seedling
 
-Generate 1 unique idea for future iterations of Pocket Arcade.
+Generate 1 unique idea for future iterations of the trophy system.
 
 ### Leaflet
 
