@@ -107,28 +107,17 @@ All endpoints have a similar structure, as they all have:
 
 If you ever need to switch chains for your endpoint, you have the ability to do so once a week. Click on the "Switch chains" button to do so.
 
-## Play the Arcade, Join the DAO
+## Earn Trophies, Join the DAO
 
 You can earn a vote in the DAO and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as the cost of a relay.
 
-Once you've sent 1k relays through the Portal, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel.
+Once you've sent 1k relays through the Portal, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
 
-Next, you'll need to unlock 5 of the following 👾POKT Arcade achievements to qualify for your vote:
+This is your first trophy on the path to earning a vote in the DAO:
 
-1. `partition`: show an integration that uses at least 3 different application stakes
-2. `maintenance`: build your own tooling or have an approved PR on existing pocket-related open source application tooling 
-3. `loadtest`: participate in load testing nodes with at least 1m relays in pocket testnets 
-4. `qa`: create or contribute \(non-grammatical\) improvements to pocket application technical documentation or open source application tooling documentation
-5. `bootcamp_dev`: create or contribute \(non-grammatical\) improvements to a guide on how to use pocket for application developers 
-6. `mentor`: help another 🧑‍💻Developer set up their app
-7. `torrent1`: send 2.5m relays
-8. `torrent2`: send 5m relays
-9. `torrent3`: send 7.5m relays
-10. `torrent4`: send 10m relays
+{% page-ref page="../governor/claim-your-vote/app-developer-path.md" %}
 
 For more details on how to join the DAO, go here:
 
 {% page-ref page="../governor/claim-your-vote/" %}
-
-
 

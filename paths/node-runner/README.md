@@ -497,27 +497,15 @@ Start `pocket` running again.
 pocket start
 ```
 
-## Play the Arcade, Join the DAO
+## Earn Trophies, Join the DAO
 
 You can earn a vote in the DAO and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as node revenue.
 
-Once you've staked your node successfully, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆achievement-unlocked](https://discord.com/channels/553741558869131266/763504639299289138) channel.
+Once you've staked your node successfully, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
 
-To qualify for a vote, you'll need to unlock all of the following 👾POKT Arcade achievements:
+This is your first trophy on the path to earning a vote in the DAO:
 
-1. `server`: stake your node successfully in a pocket testnet or mainnet
-2. `transmission`: successfully submit a proof transaction in a pocket testnet or mainnet
-3. `jailbreak`: avoid getting jailed for 7 days \(672 consecutive blocks\) in a pocket testnet or mainnet
-
-And you'll need to unlock 5 out of 7 of the following 👾POKT Arcade achievements:
-
-* `datacenter`: avoid getting jailed for 1 month \(2880 consecutive blocks\) in pocket mainnet
-* `broadcast`: submit successful proof transactions of 50k relays in pocket mainnet
-* `overseer`: help another 🤖Node set up their node
-* `toolkit`: build and open source your own tooling or have an approved pr on existing pocket related open source node tooling
-* `betakey`: participate in beta testing for a new pocket core version and submit at least one status report with logs and resource usage, using [this template](https://github.com/pokt-network/organization/blob/main/.github/QA_TEMPLATE/cert_feedback.md)
-* `document`: create or contribute \(non-grammatical\) improvements to pocket node technical documentation or open source node tooling documentation
-* `bootcamp_node`: create or contribute \(non-grammatical\) improvements to a guide on how to run a pocket node
+{% page-ref page="../governor/claim-your-vote/node-runner-path.md" %}
 
 For more details on how to join the DAO, go here:
 

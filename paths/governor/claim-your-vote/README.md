@@ -6,7 +6,7 @@ The steps for obtaining a vote are as follows...
 
 ## 1. Get Qualified
 
-First, you need to prove your knowledge of and participation in the Pocket Network by playing the Pocket Arcade 👾.
+First, you need to prove your knowledge of and participation in the Pocket Network by earning trophies.
 
 There are four paths that you can take on this journey:
 

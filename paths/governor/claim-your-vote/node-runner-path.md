@@ -1,4 +1,4 @@
-# 👾 Node Runner Path
+# 🏆 Node Runner Path
 
 ## Nodégé
 

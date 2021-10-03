@@ -1,4 +1,4 @@
-# 👾 Community Shepherd Path
+# 🏆 Community Shepherd Path
 
 ## Farmer
 

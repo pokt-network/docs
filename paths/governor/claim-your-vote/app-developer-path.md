@@ -1,4 +1,4 @@
-# 👾 App Developer Path
+# 🏆 App Developer Path
 
 ## Netizen
 
