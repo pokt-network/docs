@@ -34,5 +34,6 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | [xDAI](https://youtu.be/9nfL7l6YtkU) | https://xdai-rpc.gateway.pokt.network | 0x64 | xDAI | https://blockscout.com/poa/xdai |
 | [Fuse](https://youtu.be/sSg8QWgR_T8) | https://fuse-rpc.gateway.pokt.network/ | 0x7a | Fuse | https://explorer.fuse.io |
 | [Polygon](https://youtu.be/C0jDq20pBYQ) | https://poly-rpc.gateway.pokt.network/ | 137 | Matic | https://polygonscan.com |
-| [BSC](https://youtu.be/fLTvtBtOEg0) | [https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d](https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d) | 56 | BNB | [https://bscscan.com](https://bscscan.com) |
+| [BSC](https://youtu.be/fLTvtBtOEg0) | https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d | 56 | BNB | https://bscscan.com |
+| Harmony | https://harmony-0-rpc.gateway.pokt.network | 1666600000 | ONE | https://explorer.harmony.one |
 
