@@ -76,6 +76,7 @@
   * [Fuse MetaMask](resources/public-rpc-endpoints/fuse-metamask.md)
   * [Polygon MetaMask](resources/public-rpc-endpoints/polygon-metamask.md)
   * [Binance Smart Chain \(BSC\) MetaMask](resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask.md)
+  * [Harmony MetaMask](resources/public-rpc-endpoints/harmony-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
   * [Rotki](resources/public-rpc-endpoints/rotki.md)
