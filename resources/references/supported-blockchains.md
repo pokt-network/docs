@@ -38,7 +38,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Ethereum Kovan | poa-kovan | 0024 | Y |
 | Ethereum Rinkeby | eth-rinkeby | 0025 | Y |
 | Ethereum Ropsten | eth-ropsten | 0023 | Y |
-| Evmos | evmos-mainnet | 0046 | N |
+| Evmos | evmos-mainnet | 0046 | - |
 | FUSE | fuse-mainnet | 0005 | Y |
 | FUSE Archival | fuse-archival | 000A | Y |
 | Harmony Shard 0 | harmony-0 | 0040 | Y |
