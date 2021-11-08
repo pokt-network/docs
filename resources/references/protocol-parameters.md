@@ -24,7 +24,7 @@ The minimum stake required of an app, denominated in [StakeDenom](protocol-param
 
 ### AppUnstakingTime
 
-**Current Value:** 1814000000000000
+**Current Value:** 1814400
 
 The time, in seconds, that an app must wait after initiating an unstake before they can use the POKT for anything else.
 
