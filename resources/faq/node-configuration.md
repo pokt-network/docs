@@ -1,8 +1,8 @@
 ---
-description: 'Crashing, errors, etc.'
+description: Crashing, errors, etc.
 ---
 
-# ⚙️ Node Configuration
+# ⚙ Node Configuration
 
 ## Does my blockchain node need to be synced before I start my Pocket node?
 
@@ -22,7 +22,9 @@ Unstake your node, add the new RelayChainIDs to your chains.json file, then rest
 
 Find the RelayChainIDs here:
 
-{% page-ref page="../references/supported-blockchains.md" %}
+{% content-ref url="../references/supported-blockchains.md" %}
+[supported-blockchains.md](../references/supported-blockchains.md)
+{% endcontent-ref %}
 
 ## Can I continue earning POKT while I'm unstaking?
 
@@ -58,7 +60,7 @@ Breakdown:
 
 You will need to increase your ulimit to the calculated number. To do so, go into your .bashrc in your $HOME dir and enter:
 
-```text
+```
 ulimit -Sn 16384
 ```
 
@@ -69,4 +71,3 @@ Once you save your file, enter:
 ## What do I do if my node needs to go down for an extended period, such as during a machine migration?
 
 To opt out of being selected for work, you should deliberately jail your node, which lets the network know you are not ready to receive any relays. Once the machine is back up and running, you can unjail your node again.
-

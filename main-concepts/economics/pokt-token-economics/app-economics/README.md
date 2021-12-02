@@ -2,39 +2,39 @@
 description: An overview of Pocket Network application economics.
 ---
 
-# 🧑‍💻 App Economics
+# 👩💻 App Economics
 
 ### Important Initial Application Parameters
 
-| Item | Initial Parameter |
-| :--- | :--- |
-| Minimum Application Stake | 1 POKT |
-| Minimum Unbonding Period \(Apps\) | 21 days |
-| BaseRelaysPerPOKT | 1.67 relays per session |
-| Stability Adjustment | 0 |
-| Participation Rate Active | False |
-| Block Time | 10 minutes |
-| Session Time  | 6 blocks \(60 minutes\) |
-| Session Node Count | 5 nodes |
-| Max Chains per Stake | 15 |
+| Item                            | Initial Parameter       |
+| ------------------------------- | ----------------------- |
+| Minimum Application Stake       | 1 POKT                  |
+| Minimum Unbonding Period (Apps) | 21 days                 |
+| BaseRelaysPerPOKT               | 1.67 relays per session |
+| Stability Adjustment            | 0                       |
+| Participation Rate Active       | False                   |
+| Block Time                      | 15 minutes              |
+| Session Time                    | 4 blocks (60 minutes)   |
+| Session Node Count              | 5 nodes                 |
+| Max Chains per Stake            | 15                      |
 
 ### Application Economics
 
-Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol \(assuming they don’t change their throughput\), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain. 
+Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol (assuming they don’t change their throughput), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain.&#x20;
 
-The protocol limits the number of Relays an Application may access based on the number of POKT staked in relation to the Protocol Throttling Formula \(as defined below\). Once an Application stakes POKT, the Maximum Relays \(`MaxRelays`\) it can use is locked in perpetuity unless the Application re-stakes that POKT or their stake is burned.
+The protocol limits the number of Relays an Application may access based on the number of POKT staked in relation to the Protocol Throttling Formula (as defined below). Once an Application stakes POKT, the Maximum Relays (`MaxRelays`) it can use is locked in perpetuity unless the Application re-stakes that POKT or their stake is burned.
 
-Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays. 
+Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays.&#x20;
 
 We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the real price borne by Applications is within a relatively stable and acceptable range. This $USDPerRelay Target is not an on-chain variable, but a publicly agreed price that the DAO will target with its monetary policy, by adjusting variables in the Protocol Throttling Formula.
 
 ### Calculating Throughput
 
-When Applications stake POKT, their rate for the number of Relays they may access \(MaxRelays\) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays. 
+When Applications stake POKT, their rate for the number of Relays they may access (MaxRelays) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays.&#x20;
 
 We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the real price borne by Applications is within a relatively stable and acceptable range. This $USDPerRelay Target is not an on-chain variable, but a publicly agreed price that the DAO will target with its monetary policy, by adjusting variables in the Protocol Throttling Formula.
 
-When Applications stake POKT, their rate for the number of Relays they may access \(MaxRelays\) is locked in for the entire length of the stake. We use the following simple formula to calculate the amount of Relays Applications are entitled to per Session.
+When Applications stake POKT, their rate for the number of Relays they may access (MaxRelays) is locked in for the entire length of the stake. We use the following simple formula to calculate the amount of Relays Applications are entitled to per Session.
 
 $$
 MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
@@ -46,9 +46,14 @@ To keep the real $USDPerRelay price as close to the $USDPerRelay Target as possi
 
 Learn more about each variable:
 
-{% page-ref page="stability-adjustment.md" %}
+{% content-ref url="stability-adjustment.md" %}
+[stability-adjustment.md](stability-adjustment.md)
+{% endcontent-ref %}
 
-{% page-ref page="participation-rate.md" %}
+{% content-ref url="participation-rate.md" %}
+[participation-rate.md](participation-rate.md)
+{% endcontent-ref %}
 
-{% page-ref page="base-throughput.md" %}
-
+{% content-ref url="base-throughput.md" %}
+[base-throughput.md](base-throughput.md)
+{% endcontent-ref %}

@@ -4,17 +4,16 @@ description: >-
   Ethereum library
 ---
 
-# ♦️ Use EthersJS
+# ♦ Use EthersJS
 
-First, you need to get an endpoint from the [Pocket Portal](https://www.portal.pokt.network/).
+First, you need to get an endpoint from the [Pocket Portal](https://www.portal.pokt.network).
 
 Then you need to get the Gateway ID
 
-![](../../.gitbook/assets/portal_app.png)
+![](../../.gitbook/assets/Portal\_App.png)
 
 and insert it like so
 
-```text
+```
 ethers.providers.PocketProvider('homestead', process.env.GatewayID)
 ```
-

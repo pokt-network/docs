@@ -2,42 +2,46 @@
 
 ## Farmer
 
-![](../../../.gitbook/assets/community_banner1.png)
+![](../../../.gitbook/assets/community\_banner1.png)
 
 Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**,  providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
 
 ### Seed\_Pouch
 
-Swap the RPC endpoints on your wallets with Pocket. 
+Swap the RPC endpoints on your wallets with Pocket.&#x20;
 
 See the MetaMask page below for a walkthrough of how to do this:
 
-{% page-ref page="../../../resources/public-rpc-endpoints/" %}
+{% content-ref url="../../../resources/public-rpc-endpoints/" %}
+[public-rpc-endpoints](../../../resources/public-rpc-endpoints/)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
+To verify that you used the app, screen record yourself submitting an on-chain action (e.g. submitting a transaction or querying chain data), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
 {% endhint %}
 
 ### Quick\_Repair
 
-Highlight \(and fix where possible\) inconsistencies/bugs or other improvements in Pocket's website, documentation, social channels or content.
+Highlight (and fix where possible) inconsistencies/bugs or other improvements in Pocket's website, documentation, social channels or content.
 
 ### Bird\_Seed
 
-Tweet about Pocket in a meaningful way, retweeted by 3 \(BrightID\) Verified Shepherd's or Pocket core team members.
+Tweet about Pocket in a meaningful way, retweeted by 3 (BrightID) Verified Shepherd's or Pocket core team members.
 
 ### Swarm
 
-Identify and share 3 relevant \(unshared\) tweets that other Farmhands can respond to.
+Identify and share 3 relevant (unshared) tweets that other Farmhands can respond to.
 
 ### Dogfood
 
 Confirm that you have used at least 2 of the apps listed here:
 
-{% page-ref page="../../shepherd/conscious-dappitalism.md" %}
+{% content-ref url="../../shepherd/conscious-dappitalism.md" %}
+[conscious-dappitalism.md](../../shepherd/conscious-dappitalism.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-To verify that you used the app, screen record yourself submitting an on-chain action \(e.g. submitting a transaction or querying chain data\), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
+To verify that you used the app, screen record yourself submitting an on-chain action (e.g. submitting a transaction or querying chain data), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
 {% endhint %}
 
 ### Seedling
@@ -46,7 +50,7 @@ Generate 1 unique idea for future iterations of the trophy system.
 
 ### Leaflet
 
-Create a Pocket meme and get at least 5 dab reacts from \(BrightID\) Verified Shepherd's or Pocket core team members.
+Create a Pocket meme and get at least 5 dab reacts from (BrightID) Verified Shepherd's or Pocket core team members.
 
 ### Fertilizer
 
@@ -54,7 +58,7 @@ Purchase Discord Nitro and boost Pocket Network's community server.
 
 ## Shepherd
 
-![](../../../.gitbook/assets/community_banner2.png)
+![](../../../.gitbook/assets/community\_banner2.png)
 
 At this point you have now familiarized yourself with the ways of the Farmers. Your studies at this level will seek to align you more deeply with the vision and mission that has brought us together. **Completing 4/6 of the following jobs** will earn you a flight to the Shepherd's station. Provide proof of your work in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-shepherd` command.
 
@@ -88,17 +92,15 @@ Create educational content for Pocket.
 ### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
-
-{% page-ref page="./" %}
 {% endhint %}
 
-![](../../../.gitbook/assets/community_banner3.png)
+![](../../../.gitbook/assets/community\_banner3.png)
 
 “De lo mio”, Shepherd. In our homeland, this term of endearment means “one of mine”. Because you have made it here, we consider you to be one of our closest allies in a mission yet unfulfilled. But there is little time for frivolities, the enemy has expanded into the farthest reaches of Web3 and we must continue to cultivate the lands upon which our node and dev allies will fight them. The work of Shepherds requires the softest of touches, as you will be venturing out to guide others towards the regenerative path of true decentralization. **Complete every job in all ranks of the Community Shepherd path** then submit the `!become-regen` command to earn enlightenment in the pantheon of Regens.
 
 ### Telepathy
 
-Create meaningful content about Pocket Network, vouched for by 3 \(BrightID\) Verified Shepherd's or Pocket core team members.
+Create meaningful content about Pocket Network, vouched for by 3 (BrightID) Verified Shepherd's or Pocket core team members.
 
 ### Topographics
 
@@ -123,4 +125,3 @@ Submit a community-orientated [PEP](../submit-a-proposal/pep-pocket-ecosystem-pr
 ### Assurance
 
 QA and document a Pocket library, product or pre-release.
-

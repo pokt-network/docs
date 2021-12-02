@@ -2,7 +2,7 @@
 
 Pocket Network is a decentralized blockchain API built for Web3 apps, relaying data to and from any blockchain through a network of thousands of nodes. The Pocket Network protocol validates all relayed data and proportionally rewards the participating nodes with POKT.
 
-![](.gitbook/assets/mainet_architecture.png)
+![](.gitbook/assets/Mainet\_Architecture.png)
 
 These docs will provide you with all of the information you need to get started in the Pocket Network ecosystem.
 
@@ -10,20 +10,28 @@ These docs will provide you with all of the information you need to get started 
 
 {% tabs %}
 {% tab title="✈️ The Shortcut" %}
-| 🛣Path | 🪄Magic | 🛠DIY |
-| :--- | :--- | :--- |
-| **🧑‍💻App** | [🔗Get an Endpoint](https://portal.pokt.network) | [🧩Use PocketJS](https://docs.pokt.network/js/guides/quickstart) |
-| **🤖Node** | [🛩Node Pilot](https://decentralized-authority.gitbook.io/node-pilot/) | [🧱Quickstart Build](https://docs.pokt.network/core/guides/quickstart) |
+| 🛣Path       | 🪄Magic                                                                | 🛠DIY                                                                  |
+| ------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **🧑‍💻App** | [🔗Get an Endpoint](https://portal.pokt.network)                       | [🧩Use PocketJS](https://docs.pokt.network/js/guides/quickstart)       |
+| **🤖Node**   | [🛩Node Pilot](https://decentralized-authority.gitbook.io/node-pilot/) | [🧱Quickstart Build](https://docs.pokt.network/core/guides/quickstart) |
 {% endtab %}
 
 {% tab title="🏔 The Scenic Route" %}
-{% page-ref page="paths/app-developer/" %}
+{% content-ref url="paths/app-developer/" %}
+[app-developer](paths/app-developer/)
+{% endcontent-ref %}
 
-{% page-ref page="paths/node-runner/" %}
+{% content-ref url="paths/node-runner/" %}
+[node-runner](paths/node-runner/)
+{% endcontent-ref %}
 
-{% page-ref page="paths/shepherd/" %}
+{% content-ref url="paths/shepherd/" %}
+[shepherd](paths/shepherd/)
+{% endcontent-ref %}
 
-{% page-ref page="paths/wpokt-farmer.md" %}
+{% content-ref url="paths/wpokt-farmer.md" %}
+[wpokt-farmer.md](paths/wpokt-farmer.md)
+{% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
 
@@ -31,21 +39,33 @@ These docs will provide you with all of the information you need to get started 
 
 You might be interested in these areas:
 
-{% page-ref page="main-concepts/protocol/" %}
+{% content-ref url="main-concepts/protocol/" %}
+[protocol](main-concepts/protocol/)
+{% endcontent-ref %}
 
-{% page-ref page="main-concepts/economics/" %}
+{% content-ref url="main-concepts/economics/" %}
+[economics](main-concepts/economics/)
+{% endcontent-ref %}
 
-{% page-ref page="resources/references/supported-blockchains.md" %}
+{% content-ref url="resources/references/supported-blockchains.md" %}
+[supported-blockchains.md](resources/references/supported-blockchains.md)
+{% endcontent-ref %}
 
-{% page-ref page="resources/community-content.md" %}
+{% content-ref url="resources/community-content.md" %}
+[community-content.md](resources/community-content.md)
+{% endcontent-ref %}
 
 ## Want to Build With Us?
 
 Follow these paths to help shape the future of Pocket Network:
 
-{% page-ref page="paths/contributor.md" %}
+{% content-ref url="paths/contributor.md" %}
+[contributor.md](paths/contributor.md)
+{% endcontent-ref %}
 
-{% page-ref page="paths/governor/" %}
+{% content-ref url="paths/governor/" %}
+[governor](paths/governor/)
+{% endcontent-ref %}
 
 ## Steps to Find What You're Looking For
 
@@ -53,4 +73,3 @@ Follow these paths to help shape the future of Pocket Network:
 2. **Search the** [**forum**](https://forum.pokt.network)**.** If it's not in the docs yet, there's a good chance someone already asked in the forum.
 3. **Ask in the forum.** If no one else has asked, use the [Support Request category](https://forum.pokt.network/c/help/support-requests/54) to ask for help. We automatically forward all requests to Discord, so don't worry about people noticing it.
 4. **Ask in** [**Discord**](https://discord.gg/uCZZkHTQjV)**.** Only once you've done the above steps should you ask your question in Discord.
-

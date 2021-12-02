@@ -20,7 +20,7 @@ How long the DAO wants it to take for the USD/relay price to be achieved, since 
 
 **Current Value:** 1000000
 
-The minimum stake required of an app, denominated in [StakeDenom](protocol-parameters.md#stakedenom). This does not have the same economic security requirements as a node's [minimum stake](protocol-parameters.md#stakeminimum) because an app's access to the network \(relay throughput\) is already proportional to the stake.
+The minimum stake required of an app, denominated in [StakeDenom](protocol-parameters.md#stakedenom). This does not have the same economic security requirements as a node's [minimum stake](protocol-parameters.md#stakeminimum) because an app's access to the network (relay throughput) is already proportional to the stake.
 
 ### AppUnstakingTime
 
@@ -30,15 +30,14 @@ The time, in seconds, that an app must wait after initiating an unstake before t
 
 ### BaseRelaysPerPOKT
 
-**Current Value:** 526
+**Current Value:** 1337
 
-The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100. 
+The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100.
 
 The formula for calculating the `MaxRelays` an app is entitled to is
 
 $$
-MaxRelays = StabilityAdjustment + (ParticipationRate *
-                         BaseThroughput)
+MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
 $$
 
 Where `BaseThroughput` is
@@ -67,11 +66,10 @@ An app can only be configured for up to this many chains on one stake.
 
 **Current Value:** false
 
-The protocol may adjust an application's `MaxRelays` at the time of staking according to network-wide stake rates, where the ParticipationRate acts as a proxy for utilization of the network on a block by block basis. 
+The protocol may adjust an application's `MaxRelays` at the time of staking according to network-wide stake rates, where the ParticipationRate acts as a proxy for utilization of the network on a block by block basis.
 
 $$
-MaxRelays = StabilityAdjustment + (ParticipationRate *
-                         BaseThroughput)
+MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
 $$
 
 This parameter was set to `false` at genesis and will only be activated if the DAO decides.
@@ -83,13 +81,12 @@ This parameter was set to `false` at genesis and will only be activated if the D
 The DAO may manually adjust an application's `MaxRelays` at the time of staking to correct for short-term fluctuations in the price of POKT, which may not be reflected in ParticipationRate.
 
 $$
-MaxRelays = StabilityAdjustment + (ParticipationRate *
-                         BaseThroughput)
+MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
 $$
 
 When this parameter is set to `0`, no adjustment is being made.
 
-## PoS \(Node\) Module
+## PoS (Node) Module
 
 ### BlocksPerSession
 
@@ -113,13 +110,13 @@ The account which has the permission to submit governance transactions on behalf
 
 **Current Value:** 3600000000000
 
-The amount of time \(in nanoseconds\) before a node can unjail and resume service.
+The amount of time (in nanoseconds) before a node can unjail and resume service.
 
 ### MaxEvidenceAge
 
 **Current Value:** 120000000000
 
-The amount of time  \(in nanoseconds\) a node has to submit their Tendermint evidence in memory before it expires.
+The amount of time (in nanoseconds) a node has to submit their Tendermint evidence in memory before it expires.
 
 ### MaximumChains
 
@@ -131,10 +128,10 @@ A node can only be configured for up to this many chains on one stake.
 
 **Current Value:** 37960
 
-The amount of time \(in blocks\) a node has to unjail before being force unstaked and slashed.
+The amount of time (in blocks) a node has to unjail before being force unstaked and slashed.
 
 {% hint style="danger" %}
-Warning: Reaching MaxJailedBlocks will result in a node's entire stake being slashed. 
+Warning: Reaching MaxJailedBlocks will result in a node's entire stake being slashed.
 {% endhint %}
 
 ### MaxValidators
@@ -193,7 +190,9 @@ The % of a node's stake that is burned for downtime, where 1 is 100%.
 
 POKT amounts are defined by the protocol in this denomination as defined by:
 
-{% page-ref page="pokt-denominations.md" %}
+{% content-ref url="pokt-denominations.md" %}
+[pokt-denominations.md](pokt-denominations.md)
+{% endcontent-ref %}
 
 ### StakeMinimum
 
@@ -213,7 +212,7 @@ The time, in seconds, that a node must wait after initiating an unstake before t
 
 **Current Value:** 120
 
-The amount of time \(in blocks\) a node has to submit a proof for an already existing claim.
+The amount of time (in blocks) a node has to submit a proof for an already existing claim.
 
 ### MinimumNumberOfProofs
 
@@ -225,7 +224,7 @@ The minimum number of relays a node must have for a claim and proof to be payabl
 
 **Current Value:** 3
 
-The minimum amount of time \(in Sessions\) a node must wait to submit a proof for an existing claim.
+The minimum amount of time (in Sessions) a node must wait to submit a proof for an existing claim.
 
 ### ReplayAttackBurnMultiplier
 
@@ -241,7 +240,9 @@ The number of nodes an app will be matched with in a session.
 
 ### SupportedBlockchains
 
-{% page-ref page="supported-blockchains.md" %}
+{% content-ref url="supported-blockchains.md" %}
+[supported-blockchains.md](supported-blockchains.md)
+{% endcontent-ref %}
 
 Only blockchains with sybil-resistant demand from apps are whitelisted to generate revenue for nodes.
 
@@ -264,4 +265,3 @@ The character limit of transaction memos.
 **Current Value:** 8
 
 The maximum number of signatures that a multi-sig account can have.
-

@@ -24,17 +24,17 @@ Checking your node status is one of the first steps towards maximizing your POKT
 
 ## Conversely, how will I know if my node is working correctly?
 
-Checking the block height is the easiest way to know if you’re synced up to the network. You can simply query your node to get this height and compare it to the latest block displayed on the [Explorer](https://explorer.pokt.network/).
+Checking the block height is the easiest way to know if you’re synced up to the network. You can simply query your node to get this height and compare it to the latest block displayed on the [Explorer](https://explorer.pokt.network).
 
-```text
+```
 pocket query height
 ```
 
-The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](../../resources/references/supported-blockchains.md) \(referred to on this page as blockchain data nodes\) that you're serving to apps. You should make sure these are also synced up to their respective networks.
+The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](../../resources/references/supported-blockchains.md) (referred to on this page as blockchain data nodes) that you're serving to apps. You should make sure these are also synced up to their respective networks.
 
 For example, you can check the block height of your Geth Ethereum node by submitting this query to your node, which returns the latest height of geth-mainnet known by the node.
 
-```text
+```
 curl --request POST --header 'Content-Type: application/json' --data-raw '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}' --user [authentication] [GETH NODE URL]
 ```
 
@@ -42,17 +42,17 @@ curl --request POST --header 'Content-Type: application/json' --data-raw '{"json
 
 To check if you’re earning rewards, you can simply monitor the balance of your node.
 
-```text
+```
 pocket query balance <address>
 ```
 
-This way is very manual and you would need to track your balance over time to understand the change in the amounts. 
+This way is very manual and you would need to track your balance over time to understand the change in the amounts.&#x20;
 
 The good news is there are several options for tracking your node rewards such as [POKT ROKT](https://github.com/BenVanGithub/POKT-ROKT), which tracks the last 24 hours of earnings in its CLI dashboard, or [Sandwalker](https://sandwalker.sbrk.org/explorer) which tracks historical rewards by day and month.
 
-## Why don’t I just connect my Pocket node to \[insert third-party provider here\]?
+## Why don’t I just connect my Pocket node to \[insert third-party provider here]?
 
-On the surface, this seems like a great idea. Use a free tier of another service \(e.g. Infura\) and you don’t have to pay for any blockchain data node costs.
+On the surface, this seems like a great idea. Use a free tier of another service (e.g. Infura) and you don’t have to pay for any blockchain data node costs.
 
 ![](../../.gitbook/assets/0.gif)
 
@@ -64,13 +64,13 @@ Plus, that doesn’t jive with our ethos now, does it?
 
 Using third-party providers slows you down. Slower nodes make less revenue.
 
-Why does the third-party slow you down? Increasing the distance between your Pocket node and the third-party blockchain data node increases the number and length of hops that an end-user's request has to make. 
+Why does the third-party slow you down? Increasing the distance between your Pocket node and the third-party blockchain data node increases the number and length of hops that an end-user's request has to make.&#x20;
 
 Here is an illustration:
 
-![](../../.gitbook/assets/pokt_worl-map.jpg)
+![](../../.gitbook/assets/POKT\_Worl-Map.jpg)
 
-In this example, the Pocket nodes \(pink\) are on the other side of the US from the Blockchain data nodes \(orange\). The end-user is using the [Portal](https://portal.pokt.network) to communicate with the network. The path the end-user's request must take is: `End-user → Portal → Pocket Node → Blockchain Data Node → Pocket Node → Portal → End-user`
+In this example, the Pocket nodes (pink) are on the other side of the US from the Blockchain data nodes (orange). The end-user is using the [Portal](https://portal.pokt.network) to communicate with the network. The path the end-user's request must take is: `End-user → Portal → Pocket Node → Blockchain Data Node → Pocket Node → Portal → End-user`
 
 The end-user's request must hop back and forth across the US 4 times and that's not including the hops between the user and the Portal. As a result, it may take up to 1 second for a user to receive something as simple as a balance query. That’s not very good service.
 
@@ -86,11 +86,11 @@ Your node will likely be in a different datacenter, where even a couple of hops 
 
 ## Why does the latency matter?
 
-While Pocket Network doesn’t discriminate \(yet\) between the speed of requests, the [Portal](https://portal.pokt.network) does. The Portal filters out slow nodes to ensure the protocol is providing the best service possible to apps.
+While Pocket Network doesn’t discriminate (yet) between the speed of requests, the [Portal](https://portal.pokt.network) does. The Portal filters out slow nodes to ensure the protocol is providing the best service possible to apps.
 
-The vast majority of the requests on the network today come through the Portal. This means that faster nodes = more POKT. 
+The vast majority of the requests on the network today come through the Portal. This means that faster nodes = more POKT.&#x20;
 
-In the long run, your setup matters not only for your earnings but also for ensuring a quality service for end-users \(which will ultimately be crucial for the growth of the network\).
+In the long run, your setup matters not only for your earnings but also for ensuring a quality service for end-users (which will ultimately be crucial for the growth of the network).
 
 ![](../../.gitbook/assets/2.gif)
 
@@ -105,4 +105,3 @@ The following are some best practices that will give you an edge over the majori
 * Use physical hardware at home or data centers; you will have faster nodes and lower costs over time by owning your hardware and co-locating it.
 * Monitor your nodes for both health and sync -- being online is only the first step, you must keep your blockchain data nodes in sync or they will not service relays.
 * Use services like the [Performance Explorer](https://c0d3r.org/PerfExplorer) to monitor your node’s performance in comparison to other nodes.
-

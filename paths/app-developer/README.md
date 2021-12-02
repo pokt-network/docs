@@ -1,8 +1,8 @@
-# 🧑‍💻 App Developer
+# 👩💻 App Developer
 
 ## Pocket Portal
 
-While a direct integration with [PocketJS](https://docs.pokt.network/js) is the best way to optimize for reliability and censorship-resistance, we understand the need to build an MVP. Most teams need to move fast and build prototypes quickly—and making sure these integrations are failsafe can take some time. Sometimes you just need an endpoint to query data or send transactions. This is what the Pocket Portal provides, an abstraction layer that integrates with PocketJS on your behalf and [generates the endpoint you need](https://www.portal.pokt.network/).
+While a direct integration with [PocketJS](https://docs.pokt.network/js) is the best way to optimize for reliability and censorship-resistance, we understand the need to build an MVP. Most teams need to move fast and build prototypes quickly—and making sure these integrations are failsafe can take some time. Sometimes you just need an endpoint to query data or send transactions. This is what the Pocket Portal provides, an abstraction layer that integrates with PocketJS on your behalf and [generates the endpoint you need](https://www.portal.pokt.network).
 
 The Portal lets you create an endpoint for the chain you want in just a few clicks and provides you with the features you've come to expect in centralized API services, such as usage/uptime metrics and notifications/alerts.
 
@@ -10,11 +10,11 @@ The Portal lets you create an endpoint for the chain you want in just a few clic
 
 Go to the [Pocket Portal](https://portal.pokt.network), sign up and verify your email.
 
-![](../../.gitbook/assets/portal_login.png)
+![](../../.gitbook/assets/Portal\_Login.png)
 
 Once you've done so, log in and you'll be greeted by the Network Overview section.
 
-![](../../.gitbook/assets/portal_network.png)
+![](../../.gitbook/assets/Portal\_Network.png)
 
 {% hint style="info" %}
 In this section, you'll see all the important parts of the network: how many relays are being served daily, the overall success rate of the network, and the number of apps, nodes, and POKT staked. A summary of chains being served by the network is also available.
@@ -22,7 +22,7 @@ In this section, you'll see all the important parts of the network: how many rel
 
 Head over to the "My Apps" section and create your app.
 
-![](../../.gitbook/assets/portal_app_setup.png)
+![](../../.gitbook/assets/Portal\_App\_Setup.png)
 
 {% hint style="info" %}
 In this section, you'll be able to select one of the available chains that are currently available. More will be made available depending on demand.
@@ -30,7 +30,7 @@ In this section, you'll be able to select one of the available chains that are c
 
 Once you've hit "Launch Application", all is done and you can start using your endpoint! You should be greeted by the main application screen, which will show all the metrics, which as soon as you start submitting requests, should start appearing.
 
-![](../../.gitbook/assets/portal_app.png)
+![](../../.gitbook/assets/Portal\_App.png)
 
 The view you see is the main view for your application. Here, you'll see key details:
 
@@ -52,7 +52,7 @@ Turning on notifications is a great way to stay up to date with your app. We res
 * Click on the "Notifications" button on your app's dashboard, and you'll see the notifications screen.
 * Turn on any notifications you're interested in receiving, and then click "Save changes" when you're done.
 
-![](../../.gitbook/assets/portal_notifications.png)
+![](../../.gitbook/assets/Portal\_Notifications.png)
 
 ## Securing your Application
 
@@ -72,7 +72,7 @@ For origins, we support wildcard domains as well as normal domains. An example U
 
 Every application has a secret key associated with it, which can be enabled so that every request has to send it using [HTTP Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) to be accepted. An example cURL request with the secret key enabled would be:
 
-```text
+```
 curl --user :YOUR-SECRET-KEY \\
   https://<network>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
 ```
@@ -83,11 +83,11 @@ This is a truncated example of a call that does not actually send a request. See
 
 Once you've set up your endpoint as per your liking, you can test it however you'd like. In the main application view of the dashboard, you'll be able to see and copy your endpoint to the clipboard. The way endpoints are used in terms of content sent in the body will depend on the chain.
 
-For EVM-based chains \(Ethereum, BSC, and others\), which see the majority of traffic in Pocket Network, you can refer to the official [JSON-RPC](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) specification. Below we have a few examples of requests for Pocket compatible chains.
+For EVM-based chains (Ethereum, BSC, and others), which see the majority of traffic in Pocket Network, you can refer to the official [JSON-RPC](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods) specification. Below we have a few examples of requests for Pocket compatible chains.
 
 ### Ethereum, BSC and EVM-based chains
 
-```text
+```
 curl -X POST \\
 -H "Content-Type: application/json" \\
 --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \\
@@ -99,8 +99,8 @@ curl -X POST \\
 All endpoints have a similar structure, as they all have:
 
 * The network prefix; see the RelayChainIDs [here](../../resources/references/supported-blockchains.md)
-* The main URL \(`gateway.pokt.network/v1/`\)
-* If it's a load-balanced endpoint, it will also have the LB prefix \(`/lb/`\)
+* The main URL (`gateway.pokt.network/v1/`)
+* If it's a load-balanced endpoint, it will also have the LB prefix (`/lb/`)
 * The Gateway ID.
 
 ## Switching Chains
@@ -115,9 +115,12 @@ Once you've sent 1k relays through the Portal, join our [Discord](https://discor
 
 This is your first trophy on the path to earning a vote in the DAO:
 
-{% page-ref page="../governor/claim-your-vote/app-developer-path.md" %}
+{% content-ref url="../governor/claim-your-vote/app-developer-path.md" %}
+[app-developer-path.md](../governor/claim-your-vote/app-developer-path.md)
+{% endcontent-ref %}
 
 For more details on how to join the DAO, go here:
 
-{% page-ref page="../governor/claim-your-vote/" %}
-
+{% content-ref url="../governor/claim-your-vote/" %}
+[claim-your-vote](../governor/claim-your-vote/)
+{% endcontent-ref %}

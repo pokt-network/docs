@@ -8,33 +8,32 @@ description: >-
 
 ### Ethereum Applications
 
-\*\*\*\*[**MetaMask**](https://bit.ly/MetaMaskDecentralized)\*\*\*\*
+****[**MetaMask**](https://bit.ly/MetaMaskDecentralized)****
 
-\*\*\*\*[**MyCrypto**](https://bit.ly/MyCryptoDecentralized)\*\*\*\*
+****[**MyCrypto**](https://bit.ly/MyCryptoDecentralized)****
 
-\*\*\*\*[**MyCrypto Beta**](https://bit.ly/MyCryptoAddsSupportForPocket)\*\*\*\*
+****[**MyCrypto Beta**](https://bit.ly/MyCryptoAddsSupportForPocket)****
 
-\*\*\*\*[**Saturn Network**](https://www.saturn.network/)\*\*\*\*
+****[**Saturn Network**](https://www.saturn.network)****
 
-\*\*\*\*[**TokenLog**](https://tokenlog.xyz/)\*\*\*\*
+****[**TokenLog**](https://tokenlog.xyz)****
 
-\*\*\*\*[**ERCGraph**](https://ercgraph.live/)\*\*\*\*
+****[**ERCGraph**](https://ercgraph.live)****
 
-\*\*\*\*[**Snowball**](https://www.snowball.money/)\*\*\*\*
+****[**Snowball**](https://www.snowball.money)****
 
-\*\*\*\*[**EarniFi**](https://earni.fi/)\*\*\*\*
+****[**EarniFi**](https://earni.fi)****
 
-\*\*\*\*[**Dark Forest**](https://bit.ly/DF_POKTendpoint)\*\*\*\*
+****[**Dark Forest**](https://bit.ly/DF\_POKTendpoint)****
 
 ### Multi-chain Applications
 
-\*\*\*\*[**Centaur's Hadar Wallet**](https://medium.com/centaur/the-hadar-multi-asset-multi-address-multi-purpose-wallet-is-now-live-d63a0500cae)\*\*\*\*
+****[**Centaur's Hadar Wallet**](https://medium.com/centaur/the-hadar-multi-asset-multi-address-multi-purpose-wallet-is-now-live-d63a0500cae)****
 
-\*\*\*\*[**Fuse&lt;&gt;Eth Token Bridge**](https://bit.ly/FUSEintegratesPOCKET)
+****[**Fuse<>Eth Token Bridge**](https://bit.ly/FUSEintegratesPOCKET)
 
 ### Pocket Network Applications
 
 [**Pocket Block Explorer**](https://bit.ly/PocketExplorer)
 
 [**Pocket Wallet**](https://bit.ly/POKTWallet)
-
