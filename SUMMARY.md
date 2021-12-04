@@ -78,6 +78,7 @@
   * [Binance Smart Chain (BSC) MetaMask](resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask.md)
   * [Harmony MetaMask](resources/public-rpc-endpoints/harmony-metamask.md)
   * [IoTeX MetaMask](resources/public-rpc-endpoints/iotex-metamask.md)
+  * [Evmos Metamask](resources/public-rpc-endpoints/evmos-metamask.md)
   * [Dark Forest](resources/public-rpc-endpoints/dark-forest.md)
   * [MyCrypto](resources/public-rpc-endpoints/mycrypto.md)
   * [Rotki](resources/public-rpc-endpoints/rotki.md)
