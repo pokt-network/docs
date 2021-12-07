@@ -136,9 +136,9 @@ Warning: Reaching MaxJailedBlocks will result in a node's entire stake being sla
 
 ### MaxValidators
 
-**Current Value:** 50,000
+**Current Value:** 1,000
 
-The number of staked nodes that the protocol allows.
+The number of staked nodes that are eligible to be selected for producing blocks. Any staked nodes outside of the top `MaxValidators` staked validators will still be eligible to service relays.
 
 ### MinSignedPerWindow
 
