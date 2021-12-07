@@ -12,9 +12,13 @@ This trail is designed for intermediate node runners, who are familiar with runn
 
 Wanting to understand the economics of running a node before you dive in? Check out these links:
 
-{% page-ref page="../../main-concepts/economics/pokt-token-economics/node-economics/" %}
+{% content-ref url="../../main-concepts/economics/pokt-token-economics/node-economics/" %}
+[node-economics](../../main-concepts/economics/pokt-token-economics/node-economics/)
+{% endcontent-ref %}
 
-{% page-ref page="../../resources/faq/pricing-and-economics.md" %}
+{% content-ref url="../../resources/faq/pricing-and-economics.md" %}
+[pricing-and-economics.md](../../resources/faq/pricing-and-economics.md)
+{% endcontent-ref %}
 
 ### Advanced
 
@@ -38,7 +42,7 @@ If you're determined to learn by doing, we recommend using [Node Pilot](https://
 
 ### Hardware
 
-**Hardware Requirements:** 4 CPU’s \(or vCPU’s\) \| 4 GB RAM \| 100GB Disk
+**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 8 GB RAM | 200GB Disk
 
 {% hint style="info" %}
 These are just the hardware requirements for your Pocket node. You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that surpass Pocket's.
@@ -53,18 +57,18 @@ There are three ways to install the software you need to run Pocket Network.
 Install your dependencies
 
 * [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
+* [go environment](https://golang.org/doc/gopath\_code.html#Workspaces) GOPATH & GOBIN
 * [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 Create source code directory
 
-```text
+```
 mkdir -p $GOPATH/src/github.com/pokt-network && cd $GOPATH/src/github.com/pokt-network
 ```
 
 Download the source code
 
-```text
+```
 git clone https://github.com/pokt-network/pocket-core.git && cd pocket-core
 ```
 
@@ -72,13 +76,13 @@ Checkout the [latest release](https://github.com/pokt-network/pocket-core/releas
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 git checkout tags/<release tag>
 ```
 {% endtab %}
 
 {% tab title="Example" %}
-```text
+```
 git checkout tags/RC-0.6.3
 ```
 {% endtab %}
@@ -88,13 +92,13 @@ Make sure you have $GOPATH setup
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 echo $GOPATH
 ```
 {% endtab %}
 
-{% tab title="Response \(Mac\)" %}
-```text
+{% tab title="Response (Mac)" %}
+```
 /Users/<your username>/go
 ```
 {% endtab %}
@@ -104,13 +108,13 @@ Build your binary and put it in the $GOPATH/bin directory
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 go build -o <$GOPATH/bin directory> <source code directory>/...
 ```
 {% endtab %}
 
 {% tab title="Example" %}
-```text
+```
 go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
 ```
 {% endtab %}
@@ -120,13 +124,13 @@ Test your installation
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket version
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 > RC 0.6.3
 ```
 {% endtab %}
@@ -141,12 +145,12 @@ Check your version number against the latest release [here](https://github.com/p
 Install your dependencies
 
 * [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
-* Homebrew \([Mac](https://brew.sh/) or [Linux](https://docs.brew.sh/Homebrew-on-Linux)\)
+* [go environment](https://golang.org/doc/gopath\_code.html#Workspaces) GOPATH & GOBIN
+* Homebrew ([Mac](https://brew.sh) or [Linux](https://docs.brew.sh/Homebrew-on-Linux))
 
 Install using Homebrew
 
-```text
+```
 brew tap pokt-network/pocket-core && brew install pokt-network/pocket-core/pocket
 ```
 
@@ -154,13 +158,13 @@ Test your installation
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket version
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 > RC-0.6.3
 ```
 {% endtab %}
@@ -173,12 +177,12 @@ See [pokt-network/pocket-core-deployments](https://github.com/pokt-network/pocke
 ### Environment
 
 * **Reverse Proxy:** For SSL termination and request management
-* **Ports:** Expose Pocket RPC \(Default :8081\) and P2P port \(Default: 26656\)
+* **Ports:** Expose Pocket RPC (Default :8081) and P2P port (Default: 26656)
 * **SSL Cert:** Required for **Validator's serviceURI**
 
 #### Set your Open Files Limit
 
-```text
+```
 ulimit -Sn 16384
 ```
 
@@ -198,13 +202,13 @@ An account is needed to participate at any level of the network.
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket accounts create
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 > Enter Passphrase
 > Account generated successfully:
 > Address: <address>
@@ -213,10 +217,10 @@ pocket accounts create
 {% endtabs %}
 
 {% hint style="info" %}
-Alternatively, you can create your account using the [Wallet app](https://wallet.pokt.network/), then use the encrypted import command to import the account into your node environment:
+Alternatively, you can create your account using the [Wallet app](https://wallet.pokt.network), then use the encrypted import command to import the account into your node environment:
 {% endhint %}
 
-```text
+```
 pocket accounts import-armored </path/to/ppk.json>
 ```
 
@@ -226,13 +230,13 @@ Backup your private key to an encrypted and ASCII armored json file, to the spec
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket accounts export <address> --path <path>
 ```
 {% endtab %}
 
 {% tab title="Example" %}
-```text
+```
 pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path /$HOME/super-secret-dir
 ```
 {% endtab %}
@@ -245,22 +249,22 @@ To stake a Validator in Pocket Network, the account must have a balance above th
 `15,000 POKT` or `15,000,000,000 uPOKT`
 
 {% hint style="danger" %}
-The absolute minimum node stake \(15,000 POKT\) is not _practical_ for real-world usage. 15,100 is a reasonable buffer against operational slashes which can occur on _seemingly properly_ configured nodes as well as misconfigured and misbehaving ones.
+The absolute minimum node stake (15,000 POKT) is not _practical_ for real-world usage. 15,100 is a reasonable buffer against operational slashes which can occur on _seemingly properly_ configured nodes as well as misconfigured and misbehaving ones.
 {% endhint %}
 
 Send POKT with the following command:
 
-```text
+```
 pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "" false
 ```
 
 You won't be able to send POKT using your CLI until you have a Validator set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
 
-If you're using the testnet, you can fund your account using the [Testnet Faucet](https://faucet.pokt.network/).
+If you're using the testnet, you can fund your account using the [Testnet Faucet](https://faucet.pokt.network).
 
 ### Set the account as Validator
 
-```text
+```
 pocket accounts set-validator <address>
 ```
 
@@ -274,13 +278,13 @@ A Relay Chain is the blockchain that Validators are running full nodes for in se
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket util generate-chains
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-```text
+```
 > Enter the chain of the network identifier:
 <Relay Chain ID> (Example: 0001)
 > Enter the URL of the network identifier:
@@ -299,13 +303,13 @@ RelayChainIDs can be found [here](https://docs.pokt.network/references/supported
 
 Test your node is configured correctly by simulating a relay.
 
-```text
+```
 pocket start --simulateRelay
 ```
 
 Then send a curl request to your validator URL `http://<your node>:<your pocket rpc port>/v1/client/sim` to test if your node responds.
 
-```text
+```
 curl -X POST --data '{"relay_network_id":"<relay chain ID from chains.json>","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' <your node URL>:8081/v1/client/sim
 ```
 
@@ -323,13 +327,13 @@ Finally, stop your node. If you don't, you'll be leaving --simulateRelay running
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket start --seeds=<seeds> --mainnet
 ```
 {% endtab %}
 
 {% tab title="Example" %}
-```text
+```
 pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pokt.network:21656" --mainnet
 ```
 {% endtab %}
@@ -339,7 +343,9 @@ pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pok
 Using the Pocket Core flags `--mainnet` or `--testnet` automatically pulls the `genesis.json` file, which is located at `$HOME/.pocket/config/genesis.json`
 {% endhint %}
 
-{% page-ref page="../../resources/references/seeds.md" %}
+{% content-ref url="../../resources/references/seeds.md" %}
+[seeds.md](../../resources/references/seeds.md)
+{% endcontent-ref %}
 
 {% hint style="warning" %}
 Ensure the node is all the way synced before proceeding to the next step.
@@ -351,13 +357,13 @@ Stake the account to participate in the Network as a Validator. Staking a Valida
 
 {% tabs %}
 {% tab title="Command" %}
-```text
+```
 pocket nodes stake <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
 ```
 {% endtab %}
 
 {% tab title="Example" %}
-```text
+```
 pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks:443 mainnet 10000 false
 ```
 {% endtab %}
@@ -370,7 +376,7 @@ Pre-staking is the act of a node runner staking on a RelayChainID prior to spinn
 {% endhint %}
 
 {% hint style="danger" %}
-If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum \(e.g. 15,100-16,000\) so that minor slashing doesn't result in loss of the entire stake.
+If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum (e.g. 15,100-16,000) so that minor slashing doesn't result in loss of the entire stake.
 {% endhint %}
 
 {% hint style="success" %}
@@ -389,21 +395,21 @@ Each release may have specific modifications you need to make. This is just a ge
 
 Stop your Pocket Core instance running by submitting the shutdown command.
 
-```text
+```
 pocket stop
 ```
 
 {% hint style="warning" %}
-Once you shutdown Pocket Core, you will have 4 blocks \(60 minutes\) to complete the upgrade and start Pocket Core again before your node gets jailed for downtime.
+Once you shutdown Pocket Core, you will have 4 blocks (60 minutes) to complete the upgrade and start Pocket Core again before your node gets jailed for downtime.
 {% endhint %}
 
 ### 2. Backup Your Blockchain Data
 
 Backing up your blockchain data will ensure a faster resync when you restart your node.
 
-Navigate inside your `$HOME/.pocket/` dir and save `data/` \(the entire directory\):
+Navigate inside your `$HOME/.pocket/` dir and save `data/` (the entire directory):
 
-```text
+```
 cp -r ~/.pocket/data ~/backup/data
 ```
 
@@ -417,7 +423,7 @@ If you don't have a backup, a temporary backup datadir may be provided alongside
 
 Check your golang version. The release notes will specify which version it should be.
 
-```text
+```
 go version
 ```
 
@@ -425,7 +431,7 @@ If you need to upgrade, use [this guide](https://gist.github.com/nikhita/432436d
 
 Alternatively, if you use `g`, you can just run
 
-```text
+```
 sudo apt-get update
 g install <version number>
 ```
@@ -436,20 +442,20 @@ g install <version number>
 
 Navigate into `pocket-core` directory
 
-```text
+```
 cd ~/go/src/github.com/pokt-network/pocket-core
 ```
 
 Checkout the [latest release](https://github.com/pokt-network/pocket-core/releases)
 
-```text
+```
 git pull
 git checkout tags/<release tag>
 ```
 
 Rebuild the binary
 
-```text
+```
 go build -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 ```
 
@@ -457,7 +463,7 @@ go build -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 
 Pull the latest tap
 
-```text
+```
 brew upgrade pokt-network/pocket-core/pocket
 ```
 
@@ -467,13 +473,13 @@ Pull the latest container image
 
 {% tabs %}
 {% tab title="Option 1" %}
-```text
+```
 docker pull poktnetwork/pocket-core:RC-0.6.3
 ```
 {% endtab %}
 
 {% tab title="Option 2" %}
-```text
+```
 docker pull poktnetwork/pocket:RC-0.6.3
 ```
 {% endtab %}
@@ -481,9 +487,9 @@ docker pull poktnetwork/pocket:RC-0.6.3
 
 ### 5. Upgrade Your config.json
 
-Run the update-configs command, which creates a new config file \(`DATADIR/config/config.json`\) and backs up the old config file \(`DATADIR/config/config.json.bk`\).
+Run the update-configs command, which creates a new config file (`DATADIR/config/config.json`) and backs up the old config file (`DATADIR/config/config.json.bk`).
 
-```text
+```
 pocket util update-configs
 ```
 
@@ -493,7 +499,7 @@ You'll need to manually compare your backup file with the new file to copy over 
 
 Start `pocket` running again.
 
-```text
+```
 pocket start
 ```
 
@@ -505,9 +511,12 @@ Once you've staked your node successfully, join our [Discord](https://discord.gg
 
 This is your first trophy on the path to earning a vote in the DAO:
 
-{% page-ref page="../governor/claim-your-vote/node-runner-path.md" %}
+{% content-ref url="../governor/claim-your-vote/node-runner-path.md" %}
+[node-runner-path.md](../governor/claim-your-vote/node-runner-path.md)
+{% endcontent-ref %}
 
 For more details on how to join the DAO, go here:
 
-{% page-ref page="../governor/claim-your-vote/" %}
-
+{% content-ref url="../governor/claim-your-vote/" %}
+[claim-your-vote](../governor/claim-your-vote/)
+{% endcontent-ref %}
