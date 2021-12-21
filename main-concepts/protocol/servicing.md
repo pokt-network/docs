@@ -125,7 +125,7 @@ In order to participate in the network economic incentive mechanism, the Validat
 
 1. **Claim Transaction**
    * Merkle Root of Relay Evidence
-   * Number of  \(Relays serviced
+   * Number of Relays serviced
    * Evidence Type \(Relay or Challenge\)
 2. **Proof Transaction**
    * Selected Relay
@@ -138,7 +138,7 @@ Upon successful completion of BOTH transactions, the Validator is minted reward 
 
 Pocket Network requires a specific merkle tree implementation that ensures no two leafs of the merkle tree are identical \(for Relay replay protection\). [Plasma-Core's](https://plasma-core.readthedocs.io/en/latest/specs/sum-tree.html) merkle sum tree satisfies this property.
 
-By using the hash of the Relay data \(integrity is validated by verifying the Application Client Signature\) in conjunction with the replay protection from the Plasma tree, Pocket Network can proabalistically guarentee work completed without the Validator actually transmitting the entirety of its Relay Evidence to the rest of the network.
+By using the hash of the Relay data \(integrity is validated by verifying the Application Client Signature\) in conjunction with the replay protection from the Plasma tree, Pocket Network can probabilistically guarantee work completed without the Validator actually transmitting the entirety of its Relay Evidence to the rest of the network.
 
 A fancier name for this is a _Zero Knowledge Range Proof_.
 
@@ -153,4 +153,3 @@ In order to complete a successful ZKRP in Pocket Network, the following steps mu
 5. The protocol verifies the merkle proof against the previously submitted merkle root \(in the **Claim Transaction**\), verifies the session \(proper app/node pair, not overserviced etc.\), and then verifies the client signature against the **Proof of Relay** \(integrity check\)
 6. All of the Validators confirm the validity of the **Proof Transaction**, completing the **Zero Knowledge Range Proof**
 7. Tokens are minted to the address of the Validator proportional to the amount of Relays served.
-
