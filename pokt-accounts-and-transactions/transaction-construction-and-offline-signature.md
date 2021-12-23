@@ -1,2 +1,0 @@
-# Transaction Construction & Offline Signature
-

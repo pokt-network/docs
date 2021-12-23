@@ -56,10 +56,10 @@
 
 ## 🍻 Integrations
 
-* [👛 POKT Accounts & Transactions](pokt-accounts-and-transactions/README.md)
-  * [Address Generation & Validation](pokt-accounts-and-transactions/address-generation-and-validation.md)
-  * [Deposit Processing and Verification](pokt-accounts-and-transactions/deposit-processing-and-verification.md)
-  * [Transaction Construction & Offline Signature](pokt-accounts-and-transactions/transaction-construction-and-offline-signature.md)
+* [POKT Accounts and Transactions](pokt-accounts-and-transactions/README.md)
+  * [Account Generation and Validation](integrations/pokt-accounts-and-transactions/account-generation-and-validation.md)
+  * [Transaction Construction](integrations/pokt-accounts-and-transactions/transaction-construction.md)
+  * [Transaction Verification](integrations/pokt-accounts-and-transactions/transaction-verification.md)
 
 ## 📚 Resources
 
