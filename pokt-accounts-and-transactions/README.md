@@ -2,7 +2,7 @@
 
 ### The Native POKT Blockchain Token
 
-POKT is the native token of the Pocket Blockchain. Its lowest, indivisible unit is an uPOKT.&#x20;
+POKT is the native token of the Pocket Blockchain. Its lowest, indivisible unit is uPOKT.&#x20;
 
 ### POKT and uPOKT
 
@@ -12,6 +12,6 @@ All numbers displayed through RPC calls on the Pocket blockchain are displayed i
 
 ### Generating Accounts and Sending Transactions
 
-* [Account Generation and Validation](../integrations/pokt-accounts-and-transactions/account-generation-and-validation.md)
-* [Transaction Construction](../integrations/pokt-accounts-and-transactions/transaction-construction.md)
-* [Transaction Verification](../integrations/pokt-accounts-and-transactions/transaction-verification.md)
+* [Account Generation and Validation](address-generation-and-validation.md)
+* [Transaction Construction](transaction-construction-and-offline-signature.md)
+* [Transaction Verification](deposit-processing-and-verification.md)
