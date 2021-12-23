@@ -29,7 +29,7 @@
 
 ## 🛣 Paths
 
-* [👩💻 App Developer](paths/app-developer/README.md)
+* [💻 App Developer](paths/app-developer/README.md)
   * [🔗 Get an Endpoint](https://portal.pokt.network)
   * [🧩 Use PocketJS](https://docs.pokt.network/js/guides/quickstart)
   * [♦ Use EthersJS](paths/app-developer/use-ethersjs.md)
@@ -40,7 +40,7 @@
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
 * [🧙 Shepherd](paths/shepherd/README.md)
   * [Conscious DAppitalism](paths/shepherd/conscious-dappitalism.md)
-* [🧑🌾 wPOKT Farmer](paths/wpokt-farmer.md)
+* [🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
   * [📜 Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md)
@@ -56,7 +56,7 @@
 
 ## 🍻 Integrations
 
-* 👛 [POKT Accounts & Transactions](pokt-accounts-and-transactions/README.md)
+* [👛 POKT Accounts & Transactions](pokt-accounts-and-transactions/README.md)
   * [Address Generation & Validation](pokt-accounts-and-transactions/address-generation-and-validation.md)
   * [Deposit Processing and Verification](pokt-accounts-and-transactions/deposit-processing-and-verification.md)
   * [Transaction Construction & Offline Signature](pokt-accounts-and-transactions/transaction-construction-and-offline-signature.md)
