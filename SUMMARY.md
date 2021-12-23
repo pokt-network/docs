@@ -54,9 +54,9 @@
     * [💰 PEP – Pocket Ecosystem Proposal](paths/governor/submit-a-proposal/pep-pocket-ecosystem-proposal.md)
     * [🎚 PUP – Parameter Update Proposal](paths/governor/submit-a-proposal/pup-parameter-update-proposal.md)
 
-***
+## 🍻 Integrations
 
-* [POKT Accounts & Transactions](pokt-accounts-and-transactions/README.md)
+* 👛 [POKT Accounts & Transactions](pokt-accounts-and-transactions/README.md)
   * [Address Generation & Validation](pokt-accounts-and-transactions/address-generation-and-validation.md)
   * [Deposit Processing and Verification](pokt-accounts-and-transactions/deposit-processing-and-verification.md)
   * [Transaction Construction & Offline Signature](pokt-accounts-and-transactions/transaction-construction-and-offline-signature.md)
