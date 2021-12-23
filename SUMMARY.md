@@ -14,7 +14,7 @@
   * [💸 Decentralizing Infrastructure](main-concepts/economics/decentralizing-infrastructure.md)
   * [🪙 POKT Token Economics](main-concepts/economics/pokt-token-economics/README.md)
     * [🌱 Token Staking](main-concepts/economics/pokt-token-economics/token-staking.md)
-    * [👩💻 App Economics](main-concepts/economics/pokt-token-economics/app-economics/README.md)
+    * [👩💻 👩💻 App Economics](main-concepts/economics/pokt-token-economics/app-economics/README.md)
       * [Base Throughput](main-concepts/economics/pokt-token-economics/app-economics/base-throughput.md)
       * [Stability Adjustment](main-concepts/economics/pokt-token-economics/app-economics/stability-adjustment.md)
       * [Participation Rate](main-concepts/economics/pokt-token-economics/app-economics/participation-rate.md)
@@ -29,7 +29,7 @@
 
 ## 🛣 Paths
 
-* [💻 App Developer](paths/app-developer/README.md)
+* [👩💻 App Developer](paths/app-developer/README.md)
   * [🔗 Get an Endpoint](https://portal.pokt.network)
   * [🧩 Use PocketJS](https://docs.pokt.network/js/guides/quickstart)
   * [♦ Use EthersJS](paths/app-developer/use-ethersjs.md)
@@ -40,7 +40,7 @@
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
 * [🧙 Shepherd](paths/shepherd/README.md)
   * [Conscious DAppitalism](paths/shepherd/conscious-dappitalism.md)
-* [🌾 wPOKT Farmer](paths/wpokt-farmer.md)
+* [🧑🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
   * [📜 Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md)
