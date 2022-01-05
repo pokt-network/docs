@@ -92,7 +92,7 @@ const txSignerWithSendTransaction = txSigner.send(
   '10000000'
 )
 
-// Generate offline raw transaction bytes
+// Generate offline signed send transaction
 const sendTx = await txSignerWithSendTransaction.createTransaction(
   'mainnet',
   // The transaction fee is always 10,000 uPOKT
