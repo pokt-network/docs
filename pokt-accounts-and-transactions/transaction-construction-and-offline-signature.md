@@ -23,6 +23,9 @@ const POCKET_RPC = 'https://mainnet-1.nodes.pokt.network:4201'
 
 const pocket = new Pocket(POCKET_DISPATCHER, POCKET_RPC)
 
+// If you are using Pocket Mainnet, make sure to disable legacyCodec
+pocket.configuration.useLegacyTxCodec = false;
+
 // Create a transaction signer using the `withPrivateKey` method:
 const txSigner = pocket.withPrivateKey(
   SENDER_PRIVATE_KEY
@@ -34,11 +37,11 @@ const transactionResponse = await txSigner.send(
   // Receiver address
   RECEIVER_ADDRESS,
   // 10 POKT
-  "10000000"
+  '10000000'
   ).submit(
-    "mainnet",
+    'mainnet',
     // The transaction fee is always 10,000 uPOKT
-    "10000"
+    '10000'
   )
 
 // Check if the transaction returned an error:
@@ -71,6 +74,9 @@ const PASSPHRASE = 'foobar'
 const POCKET_DISPATCHER = 'https://dispatch-1.nodes.pokt.network:4201'
 const pocket = new Pocket(POCKET_DISPATCHER)
 
+// If you are using Pocket Mainnet, make sure to disable legacyCodec
+pocket.configuration.useLegacyTxCodec = false;
+
 // Create a transaction signer using the `withPrivateKey` method:
 const txSigner = pocket.withPrivateKey(
   SENDER_PRIVATE_KEY
@@ -83,13 +89,57 @@ const txSignerWithSendTransaction = txSigner.send(
   // Receiver address
   RECEIVER_ADDRESS,
   // 10 POKT
-  "10000000"
+  '10000000'
 )
 
-// Send the transaction on POKT mainnet:
-const sendTx = await txSignerWithSendTransaction.submit(
-  "mainnet",
+// Generate offline raw transaction bytes
+const sendTx = await txSignerWithSendTransaction.createTransaction(
+  'mainnet',
   // The transaction fee is always 10,000 uPOKT
-  "10000"
+  '10000'
 )
+
+console.log('Offline signed send transaction:', sendTx)
+```
+
+After calling `.sendTransaction()`, you will get back a response with this format:
+
+```json
+RawTxRequest {
+  address: "1e829f34ce5533c913638310408632242f6fbd43",
+  txHex: "d1010a4....bf8970d"
+}
+```
+
+### Calculate transaction hash from raw transaction bytes
+
+```javascript
+const crypto = require('crypto');
+
+// This is the raw transaction bytes obtained from offline signed transaction
+const txHex = 'd1010a4....bf8970d'
+
+const txHash = crypto.createHash('sha256').update(Buffer.from(txHex, 'hex')).digest('hex');
+
+console.log(txHash)
+```
+
+### Deserialize offline signed SEND transaction
+
+You can also decode the raw transaction bytes generated offline (only works for SEND transactions):
+
+```javascript
+
+// Only supported for versions >= 0.7.1
+const { ProtoTxDecoder } = require('@pokt-network/pocket-js')
+
+const ENCODED_TX_BYTES = Buffer.from('d1010a4....bf8970d', 'hex')
+
+const protoTxDecoder = await pocket.withProtoTxDecoder()
+
+const protoStdTx = await protoTxDecoder.unmarshalStdTx(ENCODED_TX_BYTES)
+  
+const data = await protoTxDecoder.decodeStdTxData(protoStdTx)
+
+console.log('Deserialized transaction:', data)
 ```
