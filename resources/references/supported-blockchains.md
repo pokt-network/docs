@@ -2,7 +2,7 @@
 
 ## Integrating New RelayChains
 
-Pocket works out-of-the-box with any network/blockchain \(RelayChain\) that uses the RPC standard. The effort required is not in integrating the RelayChain but in our community of node runners deploying the RelayChain's nodes.
+Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses the RPC standard. The effort required is not in integrating the RelayChain but in our community of node runners deploying the RelayChain's nodes.
 
 When asking yourself how easy it would be to integrate a RelayChain with Pocket, ask yourself how easy it is for someone to deploy, sync, and maintain a node. How helpful is the documentation? How long does it take to sync a node from scratch? How stable are the nodes? These will be the factors determining how quickly Pocket's community of node runners can support the RelayChain.
 
@@ -12,60 +12,17 @@ Due to Pocket Network's permissionless nature, any RelayChainID can be claimed b
 
 To incentivize node runners to support a new RelayChain at scale, the RelayChainID must be added to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn[`RelaysToTokensMultiplier`](protocol-parameters.md#relaystotokensmultiplier) POKT for every request that they relay for the RelayChain. The Generates Revenue column below highlights whether or not the RelayChain has been added to the SupportedBlockchains parameter.
 
-Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field. To stay notified of upcoming new chains, follow the [PIP-6.2 thread](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027).
+Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field.
 
 ## Mainnet RelayChains
 
-| Name | Portal API Prefix | RelayChainID | Generates Revenue |
-| :--- | :--- | :--- | :--- |
-| Algorand | algorand-mainnet | 0029 | - |
-| Algorand Archival | algorand-archival | 000D | - |
-| Algorand Testnet | algorand-testnet | 0045 | - |
-| Algorand Testnet Archival | algorand-testnet-archival | 0A45 | - |
-| Arweave | arweave-mainnet | 0030 | - |
-| Avalanche | avax-mainnet | 0003 | Y |
-| Avalanche Archival | avax-archival | 00A3 | Y |
-| Avalanche Fuji | avax-fuji | 000E | - |
-| Binance Smart Chain | bsc-mainnet | 0004 | Y |
-| Binance Smart Chain Archival | bsc-archival | 0010 | Y |
-| Binance Smart Chain Testnet | bsc-testnet | 0011 | - |
-| Binance Smart Chain Testnet Archival | bsc-testnet-archival | 0012 | - |
-| Bitcoin | btc-mainnet | 0002 | - |
-| Ethereum | eth-mainnet | 0021 | Y |
-| Ethereum Archival | eth-archival | 0022 | Y |
-| Ethereum Archival Trace | eth-archival-trace | 0028 | Y |
-| Ethereum Goerli | eth-goerli | 0026 | Y |
-| Ethereum Kovan | poa-kovan | 0024 | Y |
-| Ethereum Rinkeby | eth-rinkeby | 0025 | Y |
-| Ethereum Ropsten | eth-ropsten | 0023 | Y |
-| Evmos | evmos-mainnet | 0046 | - |
-| FUSE | fuse-mainnet | 0005 | Y |
-| FUSE Archival | fuse-archival | 000A | Y |
-| Harmony Shard 0 | harmony-0 | 0040 | Y |
-| Harmony Shard 0 Archival | harmony-0-archival | 0A40 | - |
-| Harmony Shard 1 | harmony-1 | 0041 | - |
-| Harmony Shard 1 Archival | harmony-1-archival | 0A41 | - |
-| Harmony Shard 2 | harmony-2 | 0042 | - |
-| Harmony Shard 2 Archival | harmony-2-archival | 0A42 | - |
-| Harmony Shard 3 | harmony-3 | 0043 | - |
-| Harmony Shard 3 Archival | harmony-3-archival | 0A43 | - |
-| IoTeX | iotex-mainnet | 0044 | Y |
-| Pocket Network | mainnet | 0001 | Y |
-| Polygon | poly-mainnet | 0009 | Y |
-| Polygon Archival | poly-archival | 000B | Y |
-| Polygon Mumbai | poly-mumbai | 000F | - |
-| Polygon Mumbai Archival | poly-mumbai-archival | 00AF | - |
-| Solana | sol-mainnet | 0006 | Y |
-| Solana Testnet | sol-testnet | 0031 | - |
-| xDAI | poa-xdai | 0027 | Y |
-| xDAI Archival | poa-xdai-archival | 000C | Y |
+<table><thead><tr><th>Name</th><th>Portal API Prefix</th><th>RelayChainID</th><th data-type="checkbox">Generates Revenue</th></tr></thead><tbody><tr><td>Algorand</td><td>algorand-mainnet</td><td>0029</td><td>false</td></tr><tr><td>Algorand Archival</td><td>algorand-archival</td><td>000D</td><td>false</td></tr><tr><td>Algorand Testnet</td><td>algorand-testnet</td><td>0045</td><td>false</td></tr><tr><td>Algorand Testnet Archival</td><td>algorand-testnet-archival</td><td>0A45</td><td>false</td></tr><tr><td>Arweave</td><td>arweave-mainnet</td><td>0030</td><td>false</td></tr><tr><td>Avalanche</td><td>avax-mainnet</td><td>0003</td><td>true</td></tr><tr><td>Avalanche Archival</td><td>avax-archival</td><td>00A3</td><td>true</td></tr><tr><td>Avalanche Fuji</td><td>avax-fuji</td><td>000E</td><td>false</td></tr><tr><td>Binance Smart Chain</td><td>bsc-mainnet</td><td>0004</td><td>true</td></tr><tr><td>Binance Smart Chain Archival</td><td>bsc-archival</td><td>0010</td><td>true</td></tr><tr><td>Binance Smart Chain Testnet</td><td>bsc-testnet</td><td>0011</td><td>false</td></tr><tr><td>Binance Smart Chain Testnet Archival</td><td>bsc-testnet-archival</td><td>0012</td><td>false</td></tr><tr><td>Bitcoin</td><td>btc-mainnet</td><td>0002</td><td>false</td></tr><tr><td>Ethereum</td><td>eth-mainnet</td><td>0021</td><td>true</td></tr><tr><td>Ethereum Archival</td><td>eth-archival</td><td>0022</td><td>true</td></tr><tr><td>Ethereum Archival Trace</td><td>eth-archival-trace</td><td>0028</td><td>true</td></tr><tr><td>Ethereum Goerli</td><td>eth-goerli</td><td>0026</td><td>true</td></tr><tr><td>Ethereum Kovan</td><td>poa-kovan</td><td>0024</td><td>true</td></tr><tr><td>Ethereum Rinkeby</td><td>eth-rinkeby</td><td>0025</td><td>true</td></tr><tr><td>Ethereum Ropsten</td><td>eth-ropsten</td><td>0023</td><td>true</td></tr><tr><td>Evmos</td><td>evmos-mainnet</td><td>0046</td><td>false</td></tr><tr><td>FUSE</td><td>fuse-mainnet</td><td>0005</td><td>true</td></tr><tr><td>FUSE Archival</td><td>fuse-archival</td><td>000A</td><td>true</td></tr><tr><td>Harmony Shard 0</td><td>harmony-0</td><td>0040</td><td>true</td></tr><tr><td>Harmony Shard 0 Archival</td><td>harmony-0-archival</td><td>0A40</td><td>false</td></tr><tr><td>Harmony Shard 1</td><td>harmony-1</td><td>0041</td><td>false</td></tr><tr><td>Harmony Shard 1 Archival</td><td>harmony-1-archival</td><td>0A41</td><td>false</td></tr><tr><td>Harmony Shard 2</td><td>harmony-2</td><td>0042</td><td>false</td></tr><tr><td>Harmony Shard 2 Archival</td><td>harmony-2-archival</td><td>0A42</td><td>false</td></tr><tr><td>Harmony Shard 3</td><td>harmony-3</td><td>0043</td><td>false</td></tr><tr><td>Harmony Shard 3 Archival</td><td>harmony-3-archival</td><td>0A43</td><td>false</td></tr><tr><td>IoTeX</td><td>iotex-mainnet</td><td>0044</td><td>true</td></tr><tr><td>Pocket Network</td><td>mainnet</td><td>0001</td><td>true</td></tr><tr><td>Polygon</td><td>poly-mainnet</td><td>0009</td><td>true</td></tr><tr><td>Polygon Archival</td><td>poly-archival</td><td>000B</td><td>true</td></tr><tr><td>Polygon Mumbai</td><td>poly-mumbai</td><td>000F</td><td>false</td></tr><tr><td>Polygon Mumbai Archival</td><td>poly-mumbai-archival</td><td>00AF</td><td>false</td></tr><tr><td>Solana</td><td>sol-mainnet</td><td>0006</td><td>true</td></tr><tr><td>Solana Testnet</td><td>sol-testnet</td><td>0031</td><td>false</td></tr><tr><td>xDAI</td><td>poa-xdai</td><td>0027</td><td>true</td></tr><tr><td>xDAI Archival</td><td>poa-xdai-archival</td><td>000C</td><td>true</td></tr></tbody></table>
 
 ## Testnet RelayChains
 
-| Name | RelayChainID |
-| :--- | :--- |
-| Ethereum Goerli | 0020 |
-| Ethereum Rinkeby | 0022 |
-| Ethereum Ropsten | 0023 |
-| Pocket Network Testnet | 0002 |
-
+| Name                   | RelayChainID |
+| ---------------------- | ------------ |
+| Ethereum Goerli        | 0020         |
+| Ethereum Rinkeby       | 0022         |
+| Ethereum Ropsten       | 0023         |
+| Pocket Network Testnet | 0002         |
