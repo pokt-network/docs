@@ -72,7 +72,7 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ### Exchanges
 
-POKT will soon be available to purchase on several exchanges. Follow [this DAO proposal](https://forum.pokt.network/t/pep-4-pokt-listing/496) for updates on future listings.
+POKT will soon be available to purchase on exchanges. Follow [this DAO proposal](https://forum.pokt.network/t/pep-4-pokt-listing/496) for updates on future listings.
 
 Note that you can’t stake POKT from exchanges. To stake your POKT you would need to [withdraw to your wallet](buy-store-and-stake-pokt.md#transfer-pokt-to-your-wallet).
 
