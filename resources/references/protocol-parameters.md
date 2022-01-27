@@ -24,9 +24,9 @@ The minimum stake required of an app, denominated in [StakeDenom](protocol-param
 
 ### AppUnstakingTime
 
-**Current Value:** 1814400
+**Current Value:** 1814400000000000
 
-The time, in seconds, that an app must wait after initiating an unstake before they can use the POKT for anything else.
+The time, in nanoseconds, that an app must wait after initiating an unstake before they can use the POKT for anything else.
 
 ### BaseRelaysPerPOKT
 
@@ -204,7 +204,7 @@ The minimum stake required of a node, denominated in [StakeDenom](protocol-param
 
 **Current Value:** 1814000000000000
 
-The time, in seconds, that a node must wait after initiating an unstake before they can use the POKT for anything else.
+The time, in nanoseconds, that a node must wait after initiating an unstake before they can use the POKT for anything else.
 
 ## Pocket Core Module
 
