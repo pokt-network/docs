@@ -202,7 +202,7 @@ The minimum stake required of a node, denominated in [StakeDenom](protocol-param
 
 ### UnstakingTime
 
-**Current Value:** 1814000000000000
+**Current Value:** 1814400
 
 The time, in seconds, that a node must wait after initiating an unstake before they can use the POKT for anything else.
 
