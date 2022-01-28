@@ -98,8 +98,8 @@ Once the growth rate of relays begins to decrease because Pocket Network has sat
 
 You can read more about these topics below:
 
-{% content-ref url="../../main-concepts/economics/monetary-policy/" %}
-[monetary-policy](../../main-concepts/economics/monetary-policy/)
+{% content-ref url="../../v0/economics/monetary-policy/" %}
+[monetary-policy](../../v0/economics/monetary-policy/)
 {% endcontent-ref %}
 
 ##

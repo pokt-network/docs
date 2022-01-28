@@ -89,7 +89,7 @@ Well done Savant, we recognize the trials you have taken on and the skills you h
 
 ### Token\_Handler
 
-Build tooling for [AAT](../../../main-concepts/glossary.md#application-authentication-token-aat) management and have 3 (BrightID) Verified Savants or Pocket core team members vouch for the tool's quality.
+Build tooling for [AAT](../../../v0/glossary.md#application-authentication-token-aat) management and have 3 (BrightID) Verified Savants or Pocket core team members vouch for the tool's quality.
 
 ### Optimizer
 

@@ -74,8 +74,14 @@ Pocket Network solves this critical flaw in the Web3 stack by incentivizing a ne
 
 Learn more about Pocket Network's protocol here:
 
-{% content-ref url="main-concepts/protocol/" %}
-[protocol](main-concepts/protocol/)
+{% content-ref url="v0/protocol/" %}
+[protocol](v0/protocol/)
+{% endcontent-ref %}
+
+Learn more about the future of Pocket Network's protocol, with v1.0, here:
+
+{% content-ref url="v0/v1.0-overview.md" %}
+[v1.0-overview.md](v0/v1.0-overview.md)
 {% endcontent-ref %}
 
 ### How POKT Incentivizes RPC Nodes
@@ -97,6 +103,12 @@ Once the POKT ecosystem is mature, when apps can frictionlessly top-up their sta
 
 Learn more about Pocket Network's economics here:
 
-{% content-ref url="main-concepts/economics/" %}
-[economics](main-concepts/economics/)
+{% content-ref url="v0/economics/" %}
+[economics](v0/economics/)
+{% endcontent-ref %}
+
+Learn more about the future of Pocket Network's economics, with v1.0, here:
+
+{% content-ref url="v0/utility.md" %}
+[utility.md](v0/utility.md)
 {% endcontent-ref %}

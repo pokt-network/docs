@@ -11,12 +11,12 @@ description: >-
 
 There are a couple of reasons why your node may not be rewarding you with POKT. There are many great community members and Pocket teammates that are eager to help you triage this, but first, ask yourself, “is your node configured correctly?”. Don’t assume it is. Check using [this](../../resources/faq/node-troubleshooting.md).
 
-The next thing to check is if your node is offline or [jailed](../../main-concepts/glossary.md#jail)...or both. Reasons include:
+The next thing to check is if your node is offline or [jailed](../../v0/glossary.md#jail)...or both. Reasons include:
 
 * Returning incorrect data
 * Missing blocks
 * Being offline
-* [serviceURI](../../main-concepts/glossary.md#serviceuri) is not publicly reachable
+* [serviceURI](../../v0/glossary.md#serviceuri) is not publicly reachable
 
 If you suspect that this may be happening to your node, you can do a historical search on your nodes. We have a great community member who created [this](https://forum.pokt.network/t/jailcounter-script/663) script to help you determine how long you were jailed for a specific period of time.
 

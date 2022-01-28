@@ -12,8 +12,8 @@ This trail is designed for intermediate node runners, who are familiar with runn
 
 Wanting to understand the economics of running a node before you dive in? Check out these links:
 
-{% content-ref url="../../main-concepts/economics/pokt-token-economics/node-economics/" %}
-[node-economics](../../main-concepts/economics/pokt-token-economics/node-economics/)
+{% content-ref url="../../v0/economics/pokt-token-economics/node-economics/" %}
+[node-economics](../../v0/economics/pokt-token-economics/node-economics/)
 {% endcontent-ref %}
 
 {% content-ref url="../../resources/faq/pricing-and-economics.md" %}

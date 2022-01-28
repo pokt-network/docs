@@ -26,7 +26,7 @@ Successfully submit a proof transaction in Pocket testnet or mainnet.
 
 ### Jailbreak
 
-Avoid getting [jailed](../../../main-concepts/glossary.md#jail) for 7 days (672 consecutive blocks) in Pocket testnet or mainnet.
+Avoid getting [jailed](../../../v0/glossary.md#jail) for 7 days (672 consecutive blocks) in Pocket testnet or mainnet.
 
 ## Nodemad
 
