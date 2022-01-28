@@ -2,8 +2,6 @@
 
 * [👋 Welcome](README.md)
 * [💰 Buy, Store & Stake POKT](buy-store-and-stake-pokt.md)
-* [pocket-core](https://docs.pokt.network/core/)
-* [pocket-js](https://docs.pokt.network/js/)
 
 ## 💭 How It Works (v0) <a href="#v0" id="v0"></a>
 
@@ -15,7 +13,7 @@
   * [💸 Decentralizing Infrastructure](v0/economics/decentralizing-infrastructure.md)
   * [🪙 POKT Token Economics](v0/economics/pokt-token-economics/README.md)
     * [🌱 Token Staking](v0/economics/pokt-token-economics/token-staking.md)
-    * [💻 App Economics](v0/economics/pokt-token-economics/app-economics/README.md)
+    * [👩💻 👩💻 App Economics](v0/economics/pokt-token-economics/app-economics/README.md)
       * [Base Throughput](v0/economics/pokt-token-economics/app-economics/base-throughput.md)
       * [Stability Adjustment](v0/economics/pokt-token-economics/app-economics/stability-adjustment.md)
       * [Participation Rate](v0/economics/pokt-token-economics/app-economics/participation-rate.md)
@@ -30,7 +28,7 @@
 
 ## 🚀 How It Will Work (v1.0) <a href="#v1" id="v1"></a>
 
-* [👀 v1.0 Overview](v1/v1-overview.md)
+* [👀 v1.0 Overview](v1/v1.0-overview.md)
 * [🪙 Utility](v1/utility.md)
 * [🤝 Consensus](v1/consensus.md)
 * [💬 Peer to Peer](v1/peer-to-peer.md)
@@ -43,13 +41,13 @@
   * [🛩 Node Pilot](https://nodepilot.tech)
   * [⛑ Pay Someone to Run Your Node](https://forum.pokt.network/t/recommended-node-hosting-services/366)
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
-* [💻 App Developer](paths/app-developer/README.md)
+* [👩💻 👩💻 App Developer](paths/app-developer/README.md)
   * [🔗 Get an Endpoint](https://portal.pokt.network)
   * [🧩 Use PocketJS](https://docs.pokt.network/js/guides/quickstart)
   * [♦ Use EthersJS](paths/app-developer/use-ethersjs.md)
 * [🧙 Shepherd](paths/shepherd/README.md)
   * [Conscious DAppitalism](paths/shepherd/conscious-dappitalism.md)
-* [🌾 wPOKT Farmer](paths/wpokt-farmer.md)
+* [🧑🌾 🧑🌾 wPOKT Farmer](paths/wpokt-farmer.md)
 * [🦸 Contributor](paths/contributor.md)
 * [👑 Governor](paths/governor/README.md)
   * [📜 Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md)
@@ -72,6 +70,9 @@
 
 ## 📚 Resources
 
+* [pocket-core](https://docs.pokt.network/core/)
+* [pocket-js](https://docs.pokt.network/js/)
+* [Pocket v1.0](https://docs.pokt.network/v1/)
 * [❓ FAQ](resources/faq/README.md)
   * [📲 App Integration](resources/faq/app-integration.md)
   * [⚙ Node Configuration](resources/faq/node-configuration.md)
