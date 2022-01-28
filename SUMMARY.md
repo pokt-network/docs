@@ -28,7 +28,7 @@
 
 ## 🚀 How It Will Work (v1.0) <a href="#v1" id="v1"></a>
 
-* [👀 v1.0 Overview](v1/v1.0-overview.md)
+* [👀 v1.0 Overview](v1/v1-overview.md)
 * [🪙 Utility](v1/utility.md)
 * [🤝 Consensus](v1/consensus.md)
 * [💬 Peer to Peer](v1/peer-to-peer.md)
