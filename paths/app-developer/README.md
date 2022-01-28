@@ -1,4 +1,4 @@
-# 👩💻 App Developer
+# 💻 App Developer
 
 ## Pocket Portal
 

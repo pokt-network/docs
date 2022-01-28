@@ -2,7 +2,7 @@
 description: An overview of Pocket Network application economics.
 ---
 
-# 👩💻 App Economics
+# 💻 App Economics
 
 ### Important Initial Application Parameters
 

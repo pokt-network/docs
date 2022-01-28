@@ -80,8 +80,8 @@ Learn more about Pocket Network's protocol here:
 
 Learn more about the future of Pocket Network's protocol, with v1.0, here:
 
-{% content-ref url="v0/v1.0-overview.md" %}
-[v1.0-overview.md](v0/v1.0-overview.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### How POKT Incentivizes RPC Nodes
@@ -109,6 +109,6 @@ Learn more about Pocket Network's economics here:
 
 Learn more about the future of Pocket Network's economics, with v1.0, here:
 
-{% content-ref url="v0/utility.md" %}
-[utility.md](v0/utility.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
