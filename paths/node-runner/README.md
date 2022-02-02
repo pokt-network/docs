@@ -194,6 +194,10 @@ The required `ulimit` can be calculated using this formula:
 
 `({ulimit -Sn} >= {MaxNumInboundPeers} + {MaxNumOutboundPeers} + {GRPCMaxOpenConnections} + {MaxOpenConnections} + {Desired Concurrent Pocket RPC connections} + {100 (Constant number of wal, db and other open files)}`
 
+#### Secure your Server
+
+Make sure the server that hosts your node is protected by up-to-date anti-virus and anti-malware software. Protect your node with a firewall but make sure to maintain login access for yourself and keep the above ports open.
+
 ## Deploy Your Validator & Full Nodes
 
 ### Create an account
@@ -241,6 +245,16 @@ pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path /$HOME/su
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="warning" %}
+Do not use your node's account as your personal account address. Since the node's private key is stored in plaintext on the server, the key is as secure as your server is. Regularly sweep your node's rewards and transfer them to a more secure account stored offline.
+{% endhint %}
+
+For more details on securely managing your POKT accounts, see here:
+
+{% content-ref url="../buy-store-and-stake-pokt/" %}
+[buy-store-and-stake-pokt](../buy-store-and-stake-pokt/)
+{% endcontent-ref %}
 
 ### Fund the account
 
