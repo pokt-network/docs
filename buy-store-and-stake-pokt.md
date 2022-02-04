@@ -46,15 +46,15 @@ Never reveal your Private Key to anyone. If someone has access to your Private K
 
 ### Backup Wallet
 
-It is important that you backup your Key File, passphrase, and private key securely. There are two considerations when choosing a backup method:
-* **Theft Prevention**: making sure no-one else can access your Key File, passphrase, or private key
-* **Loss Prevention**: making sure you don't lose access to your Key File, passphrase, or private key
+It is important that you back up your Key File, passphrase, and private key securely. There are two considerations when choosing a backup method:
+* **Theft Prevention**: make sure no-one else can access your Key File, passphrase, or private key
+* **Loss Prevention**: make sure you don't lose access to your Key File, passphrase, or private key
 
 The most secure way to prevent theft is to store your Key File, passphrase, and private key on a USB drive (or other secure external drive), disconnected from any online "cloud" service or internet-connected computer that can be hacked. 
 
 {% hint style="info" %} POKT will soon have Ledger support, which provides a little more advanced functionality than a USB drive, but there is no ETA on this. {% endhint %}
 
-For extra-secure theft prevention, you should split the Key File, passphrase and private key across separate drives and password-protect these drives so that anyone who gets their hands on a drive can't access the contents. For extra loss prevention, you should make multiple copies of these drives and store them in different locations, such as a personal safe, the safe of a trusted family member, and a bank's safety-deposit box.
+For extra-secure theft prevention, you should split the Key File, passphrase and private key across separate drives and password-protect these drives so that anyone who gets their hands on a drive can't access the contents. For extra loss prevention, you should make multiple copies of these drives and store them in different locations, such as a personal safe, the safe of a trusted family member, and a bank safety deposit box.
 
 Once you have created your backups, delete all traces of the Key File, passphrase and private key from the hard drive of the computer you used for account setup. To ensure deletion, consider using software such as sDelete (Windows) or shred followed by rm (Linux).
 
