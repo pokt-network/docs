@@ -11,7 +11,7 @@ description: >-
 
 To change your endpoint in MetaMask, do the following, **filling in the fields from the table below**:
 
-1. Click on the Networks drop-down menu, then press **Custom RPC**
+1. Click on the Networks drop-down menu, then press **Add Network**
 2. Under the Network Name field, write **`<Network Name> Pocket Portal`**
 3. Within the New RPC URL field, **copy** and **paste** **`<RPC URL>`**
 4. (Optional) Put **`<ChainID>`** in the ChainID field
