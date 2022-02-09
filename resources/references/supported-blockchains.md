@@ -29,7 +29,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Binance Smart Chain                  | bsc-mainnet               | 0004         | Y                 |
 | Binance Smart Chain Archival         | bsc-archival              | 0010         | Y                 |
 | Binance Smart Chain Testnet          | bsc-testnet               | 0011         | -                 |
-| Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         | Y                 |
+| Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         | -                 |
 | Bitcoin                              | btc-mainnet               | 0002         | -                 |
 | Ethereum                             | eth-mainnet               | 0021         | Y                 |
 | Ethereum Archival                    | eth-archival              | 0022         | Y                 |
