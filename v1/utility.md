@@ -4,8 +4,8 @@ Pocket Network has always been designed to do one thing and do it well: provide 
 
 This means optimizing how effectively we coordinate Web3 access, which can be broken down into two categories:
 
-* **Relay Quality**: RPC node (Servicer) incentives should be as tightly-coupled as possible to relay quality, so that Pocket Network’s service not only matches centralized providers’ but provides a level of quality, unique to Pocket’s architecture, that can’t be matched
-* **Relay Scalability:** our protocol should be as scalable as possible, to maximize the number of relays that the network can process and optimize the efficiency (and thus cost) of the service
+- **Relay Quality**: RPC node (Servicer) incentives should be as tightly-coupled as possible to relay quality, so that Pocket Network’s service not only matches centralized providers’ but provides a level of quality, unique to Pocket’s architecture, that can’t be matched
+- **Relay Scalability:** our protocol should be as scalable as possible, to maximize the number of relays that the network can process and optimize the efficiency (and thus cost) of the service
 
 ## Relay Quality
 
@@ -29,9 +29,9 @@ To solve this in a manner compatible with our trustless vision, the protocol nee
 
 Fishermen measure the quality of relays across three key metrics according to a standardized sampling protocol:
 
-* **Availability:** Since Fishermen, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
-* **Latency:** The time it takes for the Fisherman to receive a signed response from the Servicer (i.e. Round Trip Time) is another metric that is tracked. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
-* **Consistency:** In addition to time-based sampling, it is mandatory for Fishermen to sample all Servicers in a session at once. The Fishermen can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
+- **Availability:** Since Fishermen, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
+- **Latency:** The time it takes for the Fisherman to receive a signed response from the Servicer (i.e. Round Trip Time) is another metric that is tracked. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
+- **Consistency:** In addition to time-based sampling, it is mandatory for Fishermen to sample all Servicers in a session at once. The Fishermen can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
 
 ![The Fisherman sends sampling requests to all Servicers to collect data about all 3 quality metrics](../.gitbook/assets/Fisherman1.png)
 
@@ -83,8 +83,8 @@ By switching to an optimistic model, we reduce both the frequency and size of pr
 
 In v0, until recently, Validators and Servicers were bundled together. This meant that the scalability of Servicers was bound by Validators, for two reasons:
 
-* Validators are subject to the scalability of the BFT consensus algorithm, which is arguably the least scalable component of our protocol by design
-* Servicers are burdened with performing expensive Validator tasks, even though these aren’t necessary to perform Servicer tasks
+- Validators are subject to the scalability of the BFT consensus algorithm, which is arguably the least scalable component of our protocol by design
+- Servicers are burdened with performing expensive Validator tasks, even though these aren’t necessary to perform Servicer tasks
 
 We have already begun moving away from this model with the separation of Validators and Servicers in v0.7. Limiting Validators to the top 1,000 by stake has allowed our Servicer count to grow to almost 25,000 without impacting the health of our blockchain. v1.0 will take this a step further.
 
@@ -119,3 +119,9 @@ To read more details about the v1.0 Utility module spec, follow the link below:
 {% content-ref url="https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/" %}
 [Pocket v1.0](https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/)
 {% endcontent-ref %}
+
+## Overview
+
+The following is a high-level overview of the difference between how a relay is handeled and measured for quality between V0 and V1.
+
+![We only need to submit a subset of test scores and prove a subset of samples](../.gitbook/assets/utility_before_and_after.png)
