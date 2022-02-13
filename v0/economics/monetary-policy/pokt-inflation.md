@@ -1,5 +1,5 @@
 ---
-description: An overview of DAO options of how to approach and manage inflation.
+description: An overview of how the DAO manages inflation.
 ---
 
 # 📈 POKT Inflation
