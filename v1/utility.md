@@ -19,6 +19,8 @@ To address this, we included a simple client-side validation mechanism known as 
 
 The Portal is our gateway drug. It is a web application that stakes Pocket Apps on behalf of developers, and allows us to provide the simple RPC endpoints that apps have come to expect from centralized providers. Currently, the Portal administers the majority of the protocol’s App stakes to ensure service quality while we bootstrap new chains. In 2021 we developed various layer-2 [cherry-picking methods](https://forum.pokt.network/t/cherry-picker-improvements-dec-2021/1332) through the Portal to ensure that Apps receive service from the highest-quality Servicers available in each Session. These methods have laid the groundwork for the on-chain quality enforcement that we will be introducing in v1.0.
 
+![Utility V0 High Level Overview](../.gitbook/assets/utility_v0.png)
+
 #### v1.0 – On-chain Enforcement
 
 The Portal is a service that builds on the Pocket Network, managing app stakes on behalf of Apps and providing quality of service checks. Maintaining this core service has shown us how critical quality assurance is to our core utility, so we decided to take these lessons and move them on-chain.
@@ -36,6 +38,8 @@ Fishermen measure the quality of relays across three key metrics according to a 
 ![The Fisherman sends sampling requests to all Servicers to collect data about all 3 quality metrics](../.gitbook/assets/Fisherman1.png)
 
 Fishermen compile these samples into test scores for each Servicer, which are averaged out across Fishermen over time, ultimately determining the proportion of block rewards that Servicers receive. Fishermen are not incentivized to influence test scores because they are paid based on the quantity and completeness of their reports, not the content of the metrics being reported.
+
+![Utility V1 High Level Overview](../.gitbook/assets/utility_v1.png)
 
 ### Quality Incentives
 
@@ -119,9 +123,3 @@ To read more details about the v1.0 Utility module spec, follow the link below:
 {% content-ref url="https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/" %}
 [Pocket v1.0](https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/)
 {% endcontent-ref %}
-
-## Overview
-
-The following is a high-level overview of the difference between how a relay is handeled and measured for quality between V0 and V1.
-
-![We only need to submit a subset of test scores and prove a subset of samples](../.gitbook/assets/utility_before_and_after.png)
