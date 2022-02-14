@@ -30,7 +30,7 @@ The time, in nanoseconds, that an app must wait after initiating an unstake befo
 
 ### BaseRelaysPerPOKT
 
-**Current Value:** 3509
+**Current Value:** 7014
 
 The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100.
 
