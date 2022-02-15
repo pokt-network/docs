@@ -4,8 +4,8 @@ Pocket Network has always been designed to do one thing and do it well: provide 
 
 This means optimizing how effectively we coordinate Web3 access, which can be broken down into two categories:
 
-* **Relay Quality**: RPC node (Servicer) incentives should be as tightly-coupled as possible to relay quality, so that Pocket Network’s service not only matches centralized providers’ but provides a level of quality, unique to Pocket’s architecture, that can’t be matched
-* **Relay Scalability:** our protocol should be as scalable as possible, to maximize the number of relays that the network can process and optimize the efficiency (and thus cost) of the service
+- **Relay Quality**: RPC node (Servicer) incentives should be as tightly-coupled as possible to relay quality, so that Pocket Network’s service not only matches centralized providers’ but provides a level of quality, unique to Pocket’s architecture, that can’t be matched
+- **Relay Scalability:** our protocol should be as scalable as possible, to maximize the number of relays that the network can process and optimize the efficiency (and thus cost) of the service
 
 ## Relay Quality
 
@@ -19,6 +19,8 @@ To address this, we included a simple client-side validation mechanism known as 
 
 The Portal is our gateway drug. It is a web application that stakes Pocket Apps on behalf of developers, and allows us to provide the simple RPC endpoints that apps have come to expect from centralized providers. Currently, the Portal administers the majority of the protocol’s App stakes to ensure service quality while we bootstrap new chains. In 2021 we developed various layer-2 [cherry-picking methods](https://forum.pokt.network/t/cherry-picker-improvements-dec-2021/1332) through the Portal to ensure that Apps receive service from the highest-quality Servicers available in each Session. These methods have laid the groundwork for the on-chain quality enforcement that we will be introducing in v1.0.
 
+![Utility V0 High Level Overview](../.gitbook/assets/utility_v0.png)
+
 #### v1.0 – On-chain Enforcement
 
 The Portal is a service that builds on the Pocket Network, managing app stakes on behalf of Apps and providing quality of service checks. Maintaining this core service has shown us how critical quality assurance is to our core utility, so we decided to take these lessons and move them on-chain.
@@ -29,13 +31,15 @@ To solve this in a manner compatible with our trustless vision, the protocol nee
 
 Fishermen measure the quality of relays across three key metrics according to a standardized sampling protocol:
 
-* **Availability:** Since Fishermen, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
-* **Latency:** Another implication of time-based sampling is that the time it takes for the Fisherman to receive a signed response from the Servicer can be used as a measure of latency. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
-* **Consistency:** In addition to time-based sampling, it is mandatory for Fishermen to sample all Servicers in a session at once. The Fishermen can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
+- **Availability:** Since Fishermen, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
+- **Latency:** The time it takes for the Fisherman to receive a signed response from the Servicer (i.e. Round Trip Time) is another metric that is tracked. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
+- **Consistency:** In addition to time-based sampling, it is mandatory for Fishermen to sample all Servicers in a session at once. The Fishermen can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
 
 ![The Fisherman sends sampling requests to all Servicers to collect data about all 3 quality metrics](../.gitbook/assets/Fisherman1.png)
 
 Fishermen compile these samples into test scores for each Servicer, which are averaged out across Fishermen over time, ultimately determining the proportion of block rewards that Servicers receive. Fishermen are not incentivized to influence test scores because they are paid based on the quantity and completeness of their reports, not the content of the metrics being reported.
+
+![Utility V1 High Level Overview](../.gitbook/assets/utility_v1.png)
 
 ### Quality Incentives
 
@@ -83,8 +87,8 @@ By switching to an optimistic model, we reduce both the frequency and size of pr
 
 In v0, until recently, Validators and Servicers were bundled together. This meant that the scalability of Servicers was bound by Validators, for two reasons:
 
-* Validators are subject to the scalability of the BFT consensus algorithm, which is arguably the least scalable component of our protocol by design
-* Servicers are burdened with performing expensive Validator tasks, even though these aren’t necessary to perform Servicer tasks
+- Validators are subject to the scalability of the BFT consensus algorithm, which is arguably the least scalable component of our protocol by design
+- Servicers are burdened with performing expensive Validator tasks, even though these aren’t necessary to perform Servicer tasks
 
 We have already begun moving away from this model with the separation of Validators and Servicers in v0.7. Limiting Validators to the top 1,000 by stake has allowed our Servicer count to grow to almost 25,000 without impacting the health of our blockchain. v1.0 will take this a step further.
 
