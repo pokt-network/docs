@@ -391,7 +391,7 @@ pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pok
 {% endtabs %}
 
 {% hint style="info" %}
-Using the Pocket Core flags `--mainnet` or `--testnet` automatically pulls the `genesis.json` file, which is located at `$HOME/.pocket/config/genesis.json`
+
 {% endhint %}
 
 {% content-ref url="../../resources/references/seeds.md" %}
