@@ -3,7 +3,7 @@
 ## Halt! Check your map 🗺
 
 {% hint style="warning" %}
-#### Are you headed down the right path?
+**Are you headed down the right path?**
 
 This trail is designed for intermediate node runners, who are familiar with running full nodes and have the knowledge required to avoid getting lost. You might be better served following one of the other trails below.
 {% endhint %}
@@ -313,6 +313,31 @@ n
 RelayChainIDs can be found [here](https://docs.pokt.network/references/supported-blockchains).
 {% endhint %}
 
+### Setup the Genesis Configuration File
+
+Genesis files can be found here:
+
+* [Mainnet Genesis File](https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json)
+* [Testnet Genesis File](https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json)
+
+The appropriate genesis file should be placed at `$HOME/.pocket/config/genesis.json`
+
+{% tabs %}
+{% tab title="Mainnet Setup" %}
+```
+mkdir -p "$HOME"/.pocket/config
+curl -o "$HOME"/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
+```
+{% endtab %}
+
+{% tab title="Testnet Setup" %}
+```
+mkdir -p "$HOME"/.pocket/config
+curl -o "$HOME"/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
+```
+{% endtab %}
+{% endtabs %}
+
 ### Test your node
 
 Test your node is configured correctly by simulating a relay.
@@ -336,6 +361,18 @@ curl -X POST --data '{"relay_network_id":"<relay chain ID from chains.json>","pa
 {% endhint %}
 
 Finally, stop your node. If you don't, you'll be leaving --simulateRelay running, which means anyone will have unfiltered access to your node.
+
+### Download the Latest Snapshot
+
+Downloading from the latest snapshot will drastically shorten the time it takes to sync the blockchain. The easiest way is by downloading with `wget` and extracting as the archive as it downloads.
+
+```
+mkdir -p "$HOME"/.pocket/data
+cd "$HOME"/.pocket/data
+wget -qO- https://link.us1.storjshare.io/raw/jwspuut4dzrdsms2t732ee4fuheq/pocket-public-blockchains/pocket-network-data-1216-rc-0.6.3.6.tar | tar xvf -
+```
+
+Other options for downloading the latest snapshot can be found in the [pocket-snapshots repo](https://github.com/pokt-network/pocket-snapshots).
 
 ### Sync the blockchain
 
@@ -384,7 +421,7 @@ pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,000
 {% endtabs %}
 
 {% hint style="warning" %}
-#### Bad Behavior Warning: Pre-staking
+**Bad Behavior Warning: Pre-staking**
 
 Pre-staking is the act of a node runner staking on a RelayChainID prior to spinning up the RelayChain node. This behavior has an extremely negative impact on the quality of service for new chains due to apps being matched in sessions with Pocket nodes that don't actually have RelayChain nodes connected to them. If you do this, your node will be challenged and slashed. You should always deploy your RelayChain node and simulate relays before staking your Pocket node for the RelayChainID.
 {% endhint %}
@@ -394,7 +431,7 @@ If your stake falls below `15,000 POKT` your node will be force-unstake burned. 
 {% endhint %}
 
 {% hint style="success" %}
-### 🏆 Achievement Unlocked
+#### 🏆 Achievement Unlocked
 
 If you staked your node successfully, you just earned your first trophy. See [here](https://docs.pokt.network/home/paths/node-runner#earn-trophies-join-the-dao) to find out how earning more trophies will ultimately earn you a vote in our DAO.
 {% endhint %}
