@@ -55,6 +55,8 @@ The total salary for Servicers is still proportional to the volume of relays per
 
 These incentives enable Pocket Network to probabilistically guarantee a Service Level Agreement for applications.
 
+![image](https://user-images.githubusercontent.com/55156619/154539548-91731703-3f23-4a27-b758-7d7268c50df4.png)
+
 ## Relay Scalability
 
 ### Proving Relays
