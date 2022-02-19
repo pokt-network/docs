@@ -42,11 +42,40 @@ If you're determined to learn by doing, we recommend using [Node Pilot](https://
 
 ### Hardware
 
-**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 8 GB RAM | 200GB Disk
+**Hardware Requirements:** 4 CPUs (or vCPUs) | 8 GB RAM | 200GB Disk
 
-{% hint style="info" %}
-These are just the hardware requirements for your Pocket node. You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that surpass Pocket's.
-{% endhint %}
+Plan hardware for 4 vCPUs per Pocket node, but when creating the node allocate 16. This will allow nodes extra resources to close app large sessions.
+
+Since the Pocket node is a continuously running blockchain, new data is always being stored on it. As 200GB might suffice only for about six months, consider having much more storage than minimally required.  
+
+**NOTE**: You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that exceed Pocket's. 
+
+The blockchains, i.e., relay chains, you wish to support will determine the vCPU, RAM and disk space you’ll need for the server hosting them. A guide is available [here]: (https://docs.decentralizedauthority.com/hardware-recommendations)
+
+If you plan to run the relay chains on the same machine as your Pocket node, make sure you have enough resources to support them.
+
+TIP: Take the minimum required disk space you calculated for your blockchain node and triple it. This will accommodate potential rapid blockchain growth. As chains and validators tend to get hungrier, e.g., due to unforeseen bugs or natural growth, additional vCPU and RAM may be required later. {: .alert .alert-info}
+
+**OS**: Pocket is officially supported/tested currently on Linux (x86 and aarm) and MacOS. While Pocket nodes are not dependent on the Linux kernel, setting up on the latest Linux LTS release is preferable. 
+
+**SSD** required (get the fastest NVMe possible). Pick a Raid 0 configuration to maximize disk space.
+
+TIP: Chains require constant read/write so this may be your biggest bottleneck. The faster the disk, the better. 
+{: .alert .alert-info}
+
+TIP: Your chains should be as close to your nodes as possible to reduce latency, preferably on the same server. If you’re using multiple servers, have the chains in the same data centre, or at least in the same city.
+{: .alert .alert-info}
+
+When configuring chains - especially on the same server - keep in mind the ports used by each chain and possible conflicts with other chains in your setup. For example, Ethereum clients typically use the same ports as Tendermint-based chains. 
+
+For VPS or Dedicated Servers, you may not have your choice of hardware. So select the closest to the required specifications. You will want as dedicated a server as possible without "noisy neighbours" or shared resources to achieve maximum performance.
+
+**HOST**: Pick a reliable host or data centre. Remember: if they go down - you go down.
+
+**REGION**: Host as close as possible to one of the Pocket network portals. For a list of portal locations see: [insert info or link here]
+
+**Pocket Nodes per Relay Chain**: A single relay-chain can be connected to multiple Pocket nodes. The maximum number depends on the hardware and bandwidth limitations of the chain node and the number of RPC requests it will receive at a time. How to check if you’ve reached your limit: trial and error.
+
 
 ### Software
 
@@ -274,7 +303,7 @@ Check that it worked with `pocket accounts get-validator`
 
 ### Set Relay Chains
 
-A Relay Chain is the blockchain that Validators are running full nodes for in service of Applications. Apps access Relay Chains through the `serviceURI`, the endpoint where Validators publicly expose the Pocket API.
+Relay chains are the blockchain nodes that Pocket node-runners operate to serve Applications. Apps access Relay Chains through the `serviceURI`, the endpoint where Validators publicly expose the Pocket API.
 
 {% tabs %}
 {% tab title="Command" %}
@@ -296,12 +325,12 @@ n
 {% endtabs %}
 
 {% hint style="info" %}
-RelayChainIDs can be found [here](https://docs.pokt.network/references/supported-blockchains).
+RelayChainIDs can be found [here](https://docs.pokt.network/references/supported-blockchains). For imminent revenue-producing chains, check announcements on the Pocket Discord server.
 {% endhint %}
 
 ### Test your node
 
-Test your node is configured correctly by simulating a relay.
+Test your node is configured correctly by simulating a relay. 
 
 ```
 pocket start --simulateRelay
@@ -322,6 +351,36 @@ curl -X POST --data '{"relay_network_id":"<relay chain ID from chains.json>","pa
 {% endhint %}
 
 Finally, stop your node. If you don't, you'll be leaving --simulateRelay running, which means anyone will have unfiltered access to your node.
+
+**Send RPC Requests for all Your Relay Chains**: To test if your Pocket node is relaying data correctly, run it with simulateRelay enabled. This opens the Pocket node to RPC calls from anywhere, and then you can send an RPC request to your Pocket node for all of your supported chains. For each chain, different RPC data needs to be sent. Here are commands to send to simulate relays for various chains: 
+
+NOTE: Addresses below in params are random from the explorer, but you should get a hash in the result that represents some value other than 0x0.
+
+Etherum full node:
+curl -X POST --data '{"relay_network_id":"0021","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xD45C4950741A023a6Bd426EB11178AeF943728a0\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
+Pocket full node:
+curl -X POST --data '{"relay_network_id":"0001","payload":{"data":"{}","method":"POST","path":"v1/query/height","headers":{}}}' localhost:8082/v1/client/sim
+
+Fuse archival:
+curl -X POST --data '{"relay_network_id":"000A","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0x73EbE7df3700af92b04A81D5Cc60fB4a541F81Ca\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
+Fuse full:
+curl -X POST --data '{"relay_network_id":"0005","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0x73EbE7df3700af92b04A81D5Cc60fB4a541F81Ca\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
+Avalanche full:
+curl -X POST --data '{"relay_network_id":"0003","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"info.getBlockchainID\",\"params\":{\"alias\":\"X\"},\"id\":1}","method":"POST","path":"ext/info","headers":{}}}' localhost:8082/v1/client/sim
+
+Polygon full:
+curl -X POST --data '{"relay_network_id":"0009","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0x2e6b032dfc7fedf39d9a34b421131e617b985b4a\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
+xDAI full:
+curl -X POST --data '{"relay_network_id":"0021","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0x092d537737e767dae48c28ae509f34094496f030\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
+
+Harmony Shard 0
+curl -d '{"relay_network_id":"0040","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"hmyv2_getBalance\",\"params\":[\"one15vlc8yqstm9algcf6e94dxqx6y04jcsqjuc3gt\"],\"id\":1}","method":"POST","path":"","headers":{}}}' localhost:8082/v1/client/sim
+
 
 ### Sync the blockchain
 
