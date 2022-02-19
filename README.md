@@ -56,7 +56,7 @@ Learn how to become a member of the DAO:
 
 ### Get Help with Something Else
 
-**Ask in the** [**`forum`**](https://forum.pokt.network)**.** If no one else has asked, use the [Support Request category](https://forum.pokt.network/c/help/support-requests/54) to ask for help. We automatically forward all requests to [Discord](https://discord.gg/pokt), so don't worry about people noticing it.
+For help with using Pocket, please visit the [Pocket Forum](https://forum.pokt.network).  Search the posts to see if your question has been asked, and if it hasn't, use the [Support Request category](https://forum.pokt.network/c/help/support-requests/54) to ask for help.
 
 ## Learn More
 
