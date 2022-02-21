@@ -72,10 +72,23 @@ For origins, we support wildcard domains as well as normal domains. An example U
 
 Every application has a secret key associated with it, which can be enabled so that every request has to send it using [HTTP Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) to be accepted. An example cURL request with the secret key enabled would be:
 
+{% tabs %}
+{% tab title="macOS/Linux" %}
 ```
 curl --user :YOUR-SECRET-KEY \\
-  https://<network>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
+...
+https://<NETWORK>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
 ```
+{% endtab %}
+
+{% tab title="Windows" %}
+```
+curl --user :YOUR-SECRET-KEY ^
+...
+https://<NETWORK>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
+```
+{% endtab %}
+{% endtabs %}
 
 This is a truncated example of a call that does not actually send a request. See below for a more detailed example.
 
@@ -87,12 +100,25 @@ For EVM-based chains (Ethereum, BSC, and others), which see the majority of traf
 
 ### Ethereum, BSC and EVM-based chains
 
+{% tabs %}
+{% tab title="macOS/Linux" %}
 ```
 curl -X POST \\
 -H "Content-Type: application/json" \\
 --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \\
 "https://<NETWORK>.gateway.pokt.network/v1/<YOUR-GATEWAY-ID>"
 ```
+{% endtab %}
+
+{% tab title="Windows" %}
+```
+curl -X POST ^
+-H "Content-Type: application/json" ^
+--data "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_blockNumber\", \"params\": []}" ^
+"https://<NETWORK>.gateway.pokt.network/v1/<YOUR-GATEWAY-ID>"
+```
+{% endtab %}
+{% endtabs %}
 
 ### How Endpoints are Constructed
 
