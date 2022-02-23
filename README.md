@@ -2,7 +2,7 @@
 
 Pocket Network is the TCP/IP of Web3 node infrastructure – a multi-chain relay protocol that incentivizes RPC nodes to provide DApps and their users with unstoppable Web3 access.
 
-![](.gitbook/assets/Mainet\_Architecture.png)
+![](.gitbook/assets/POKT\_Graphic\_Portal\_2.png)
 
 {% content-ref url="resources/references/supported-blockchains.md" %}
 [supported-blockchains.md](resources/references/supported-blockchains.md)
