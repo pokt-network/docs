@@ -18,7 +18,7 @@ Data farming is a bootstrapping program for Pocket Network. It’s designed to d
 
 We anticipate that the rewards for node running will remain at a premium to data farming due to the technical hurdles and inherent costs involved. We will be creating pools designed to maintain this balance.
 
-The data farming program has been designed to open up channels of inclusivity that otherwise hadn’t previously existed in Pocket Network by creating a low-barrier way to contribute. We believe this program to be additive and non-competitive with node running rewards. In order to ensure there’s no vampiric conflict between the two systems, we’ll be closely monitoring the impact of data farming on node running. If there is a substantially negative impact on the service that Pocket Network the farming program will be changed accordingly.
+The data farming program has been designed to open up channels of inclusivity that otherwise hadn’t previously existed in Pocket Network by creating a low-barrier way to contribute. We believe this program to be additive and non-competitive with node running rewards. In order to ensure there’s no vampiric conflict between the two systems, we’ll be closely monitoring the impact of data farming on node running. If there is a substantially negative impact on the service that Pocket Network is providing, the farming program will be changed accordingly.
 
 ## Who holds the staked wPOKT?
 

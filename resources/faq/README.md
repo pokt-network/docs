@@ -23,7 +23,7 @@
 
 * [Why is my node not earning POKT?](node-troubleshooting.md#why-is-my-node-not-earning-pokt)
 * [How do I check my Pocket node status?](node-troubleshooting.md#how-do-i-check-my-pocket-node-status)
-* [I keep getting "too many open files" when my nodes is syncing? What does this mean?](node-troubleshooting.md#i-keep-getting-too-many-open-files-when-my-nodes-is-syncing-what-does-this-mean)
+* [I keep getting "too many open files" when my node is syncing? What does this mean?](node-troubleshooting.md#i-keep-getting-too-many-open-files-when-my-nodes-is-syncing-what-does-this-mean)
 * [Why does my node keep crashing?](node-troubleshooting.md#why-does-my-node-keep-crashing)
 * [Will my node be slashed for downtime?](node-troubleshooting.md#will-my-node-be-slashed-for-downtime)
 

@@ -57,7 +57,7 @@ Example Output:
 }
 ```
 
-## I keep getting "too many open files" when my nodes is syncing? What does this mean?
+## I keep getting "too many open files" when my node is syncing? What does this mean?
 
 This means that your `ulimit` is set too low on your node. Find instructions on how to set your `ulimit` [here](node-configuration.md#how-do-i-set-my-ulimit).
 
