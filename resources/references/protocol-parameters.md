@@ -52,7 +52,7 @@ In practice, this means if the `BaseRelaysPerPOKT` parameter is 100 then the bas
 
 ### MaxApplications
 
-**Current Value:** 2000
+**Current Value:** 2295
 
 The number of staked applications that the protocol allows.
 
