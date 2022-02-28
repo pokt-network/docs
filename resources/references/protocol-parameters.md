@@ -158,7 +158,7 @@ Block proposers earn this % of the POKT block reward.
 
 ### RelaysToTokensMultiplier
 
-**Current Value:** 10000
+**Current Value:** 8461
 
 The amount of POKT, denominated in [StakeDenom](protocol-parameters.md#stakedenom), that is minted as block rewards per relay.
 
