@@ -10,7 +10,7 @@ Application’s stake POKT into the protocol in order to access the decentralize
 
 An Application Authentication Token (AAT) is needed for each client to authorize the use of an allocated “throughput.”
 
-AAT’s are similar in function to JSON Web Tokens (JWT) and provide security guarantees for the use of the service.
+Application Authentication Tokens are similar in function to JSON Web Tokens (JWT) and provide security guarantees for the use of the service.
 
 An AAT is generated after a client acquires & stakes POKT for an application.
 
