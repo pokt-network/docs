@@ -32,7 +32,7 @@ For more information on the Growth Phase, please see:
 
 While the Growth Phase is inflationary, designed to incentivize active participation and supply-side staking for the security of the network, the Maturity Phase is designed to ensure the long-term sustainability of Pocket. The Maturity Phase is defined as the point in which Pocket Network has crossed equilibrium and the growth in inflation begins outpacing growth in the total staked supply of POKT. 
 
-This shift to long-term sustainability revolves around burning POKT to ensure the POKT supply is stable doesn’t lose its value as a form of consideration to Service Nodes. In this phase, Pocket becomes similar to traditional Software as a Service pricing models, where Applications must "top up" their stakes periodically to avoid going below their needed Relay limit. 
+This shift to long-term sustainability revolves around burning POKT to ensure the POKT supply is stable and doesn’t lose its value as a form of consideration to Service Nodes. In this phase, Pocket becomes similar to traditional Software as a Service pricing models, where Applications must "top up" their stakes periodically to avoid going below their needed Relay limit.
 
 This should result in a decline in the `ParticipationRate` and Service Node margins due to an imbalance from more supply than demand for POKT.
 

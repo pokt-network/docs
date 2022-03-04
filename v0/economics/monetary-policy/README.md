@@ -1,5 +1,5 @@
 ---
-description: An overivew of the monetary policy of POKT.
+description: An overview of the monetary policy of POKT.
 ---
 
 # 🏦 Monetary Policy

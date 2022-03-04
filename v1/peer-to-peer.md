@@ -6,11 +6,11 @@ In v1.0, the P2P module will transition from random communication to structured 
 
 ## A Primer on P2P <a href="#a-primer-on-p2p" id="a-primer-on-p2p"></a>
 
-There are three primary components of the P2P system that all contribute to the reliability and speed of the network. Those components include Event Dissemination which handles how nodes will be paired to communicate with each other, Membership and Churn which handles knowing when nodes either either come online or go offline, and the Transport Layer which controls the mechanism used to actually send and receive messages between peers. Some of these problems are problems that can apply to networking across the board, while others are unique to P2P networks specifically. The requirements of building an effective P2P communication network include:
+There are three primary components of the P2P system that all contribute to the reliability and speed of the network. Those components include Event Dissemination which handles how nodes will be paired to communicate with each other, Membership and Churn which handles knowing when nodes either come online or go offline, and the Transport Layer which controls the mechanism used to actually send and receive messages between peers. Some of these problems are problems that can apply to networking across the board, while others are unique to P2P networks specifically. The requirements of building an effective P2P communication network include:
 
 1. **Efficiency and Scalability** – making sure that more peers can connect without a major impact to the network performance
 2. **Fault and Partition Tolerance** – despite any number of breakdowns that happen between nodes, the network can continue to operate
-3. **anaging Membership and Churn** – effectively communicating when a peer both joins and leaves the network.
+3. **Managing Membership and Churn** – effectively communicating when a peer both joins and leaves the network.
 
 While there are a large variety of existing P2P implementations out in the wild, each implementation has made design decisions based on specific needs that don't translate to the needs of Pocket. In choosing the design for the v1.0 implementation, it was important to understand the fundamental needs of Pocket Network. There are three types of communications that are fundamental to how Pocket Network operates.
 
@@ -27,13 +27,13 @@ From these three main types of communication, we can specifically say that the P
 
 ### v0 – Random Gossip
 
-Currently, Pocket Network communicates information about blocks and transactions through random gossip. When a node learns of a new piece of information, they pass that information along randomly to other nodes in the network. This random process ensures that the data can make its way though the network, regardless of failures between certain pairs of nodes. This process, while ensuring redundancy, does so in a way that requires nodes to spend bandwidth and resources receiving the same message multiple times.
+Currently, Pocket Network communicates information about blocks and transactions through random gossip. When a node learns of a new piece of information, they pass that information along randomly to other nodes in the network. This random process ensures that the data can make its way through the network, regardless of failures between certain pairs of nodes. This process, while ensuring redundancy, does so in a way that requires nodes to spend bandwidth and resources receiving the same message multiple times.
 
 Building on this, because nodes randomly select other nodes to share this information with, nodes will share and receive information regardless of whether that is information they need. Gossip about the consensus process is only relevant to nodes who are acting as Validators. Gossiping with every Servicer and Archival node about the validation process not only takes away resources from those nodes but it slows down the gossip phase of the consensus process.
 
 ### v1.0 – Structured Gossip
 
-RainTree is a gossip protocol that leverages the efficiency that Binary Trees provide for lookups of sorted, randomly-distributed data. RainTree provides mechanism to ensure delivery, offer redundancy against non-participation without needing retries or acknowledgements, and perform a cleanup to ensure 100% message propagation in all cases.
+RainTree is a gossip protocol that leverages the efficiency that Binary Trees provide for lookups of sorted, randomly-distributed data. RainTree provides the mechanism to ensure delivery, offer redundancy against non-participation without needing retries or acknowledgements, and perform a cleanup to ensure 100% message propagation in all cases.
 
 The process starts with a node that wishes to gossip a message to all other peers in the network. Once the node has a sorted list of all other peers in the network, it needs to:
 
@@ -43,7 +43,7 @@ The process starts with a node that wishes to gossip a message to all other peer
 
 The peers on the left and right branches then build their own subsections of the tree using the above, and the process continues. This third branch is there to add redundancy. When the node begins gossiping down the tree, it will, eventually, reach the point where it has to send itself the message. Once it has reached this point, the node is able to send it to not just the left and right as expected but also every other node in the originally sorted list.
 
-Since networks are venerable to nodes dropping out at any point, if one of the branches does not acknowledge that it received the message, the node that tried to communicate with them will then readjust and send the message to the children that would have received the message from the unresponsive parent.
+Since networks are vulnerable to nodes dropping out at any point, if one of the branches does not acknowledge that it received the message, the node that tried to communicate with them will then readjust and send the message to the children that would have received the message from the unresponsive parent.
 
 ![A successful transmission to the left and right nodes.](../.gitbook/assets/good\_node\_delivery.png)
 

@@ -340,7 +340,7 @@ curl -o "$HOME"/.pocket/config/genesis.json https://raw.githubusercontent.com/po
 
 ### Test your node
 
-Test your node is configured correctly by simulating a relay.
+Test that your node is configured correctly by simulating a relay.
 
 ```
 pocket start --simulateRelay
@@ -364,7 +364,7 @@ Finally, stop your node. If you don't, you'll be leaving --simulateRelay running
 
 ### Download the Latest Snapshot
 
-Downloading from the latest snapshot will drastically shorten the time it takes to sync the blockchain. The easiest way is by downloading with `wget` and extracting as the archive as it downloads.
+Downloading from the latest snapshot will drastically shorten the time it takes to sync the blockchain. The easiest way is by downloading with `wget` and extracting the archive as it downloads.
 
 ```
 mkdir -p "$HOME"/.pocket/data
