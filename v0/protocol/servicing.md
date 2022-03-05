@@ -10,7 +10,7 @@ The Pocket Network’s Servicing layer is comprised of 2 main actors: Applicatio
 2. The amount of the sanctioned throughput \(per request\) is determined by the amount the Application stakes in the network.
 3. To _register_ to provide decentralized infrastructure, a Validator must stake the native cryptocurrency POKT in the network.
 4. After the subsequent staking, an Application is paired with Validator\(s\), during which time the servicing interaction takes place.
-5. For providing the decentralized infrastructure, Validator receive an amount of the native cryptocurrency POKT proportional to the amount of throughput \(in requests\) served.
+5. For providing the decentralized infrastructure, Validator receives an amount of the native cryptocurrency POKT proportional to the amount of throughput \(in requests\) served.
 6. Once an Application or Validator unstakes, they are _unregistered_ from Pocket Network and the stake is returned to their account.
 
 ## Sessions
@@ -29,9 +29,9 @@ Equally distributed sessions are generated with _pseudorandom_ seed data:
 
 * **BlockHash**: Hash of the last Session Block
 * **AppPubKey**: The Application's public key
-* **RelayChain**: The identifer of the Relay Chain
+* **RelayChain**: The identifier of the Relay Chain
 
-The result of using this seed data, is unique sessions for every Relay Chain of Application at any given Session period.
+The result of using this seed data is unique sessions for every Relay Chain of Application at any given Session period.
 
 The Validators over time that will serve each Application at any given time are extrapolated using this data, meaning any actor with the following blockchain data is able to generate the proper serving Validators.
 
@@ -43,7 +43,7 @@ Tumbling is the act of regenerating a Session with new seed data.
 
 Sessions are _tumbled_ periodically every predetermined \(by governance\) quantity of blocks.
 
-The tumbling mechanism, allows for much greater Application security, as the same Validator\(s\) will only service the Application for a certain amount of time.
+The tumbling mechanism allows for much greater Application security, as the same Validator\(s\) will only service the Application for a certain amount of time.
 
 ### Throughput
 
@@ -136,7 +136,7 @@ Upon successful completion of BOTH transactions, the Validator is minted reward 
 
 ### Merkle Tree
 
-Pocket Network requires a specific merkle tree implementation that ensures no two leafs of the merkle tree are identical \(for Relay replay protection\). [Plasma-Core's](https://plasma-core.readthedocs.io/en/latest/specs/sum-tree.html) merkle sum tree satisfies this property.
+Pocket Network requires a specific Merkle tree implementation that ensures no two leafs of the Merkle tree are identical \(for Relay replay protection\). [Plasma-Core's](https://plasma-core.readthedocs.io/en/latest/specs/sum-tree.html) Merkle sum tree satisfies this property.
 
 By using the hash of the Relay data \(integrity is validated by verifying the Application Client Signature\) in conjunction with the replay protection from the Plasma tree, Pocket Network can probabilistically guarantee work completed without the Validator actually transmitting the entirety of its Relay Evidence to the rest of the network.
 
@@ -147,9 +147,9 @@ A fancier name for this is a _Zero Knowledge Range Proof_.
 In order to complete a successful ZKRP in Pocket Network, the following steps must be executed by each Validator for each Session:
 
 1. Generate the Merkle Tree using the SHA3-256 hash of the Relay Evidence as the leafs
-2. Submit a **Claim Transaction** to preserve the integrity of the local merkle tree and corresponding Relay Evidence, as well as inform the protocol of the _range_ or number of leafs possible to select from
+2. Submit a **Claim Transaction** to preserve the integrity of the local Merkle tree and corresponding Relay Evidence, as well as inform the protocol of the _range_ or number of leafs possible to select from
 3. After a protocol wide waiting period \(determined by governance\), the Validator  generates the selected leaf \(using the latest block hash as _pseudorandom entropy_ to prevent knowledge of the selection during claim generation\) and subsequently creates a **Merkle Proof** \(branch\) for the _pseudorandomly selected_ leaf.
 4. The Validator  submits a **Proof Transaction** containing the selected leaf \(Relay Evidence\) and the corresponding **Merkle Proof** \(branch\)
-5. The protocol verifies the merkle proof against the previously submitted merkle root \(in the **Claim Transaction**\), verifies the session \(proper app/node pair, not overserviced etc.\), and then verifies the client signature against the **Proof of Relay** \(integrity check\)
+5. The protocol verifies the Merkle proof against the previously submitted Merkle root \(in the **Claim Transaction**\), verifies the session \(proper app/node pair, not overserviced etc.\), and then verifies the client signature against the **Proof of Relay** \(integrity check\)
 6. All of the Validators confirm the validity of the **Proof Transaction**, completing the **Zero Knowledge Range Proof**
 7. Tokens are minted to the address of the Validator proportional to the amount of Relays served.

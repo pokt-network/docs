@@ -16,7 +16,7 @@ Both Applications and Service Nodes must stake POKT to access or provide work to
 
 ### Useful Proofs of Work
 
-Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the umbrella of generalized mining or "useful proofs of work." Submitting proofs of work mints POKT in proportion to the amount of work completed increasing the overall supply of POKT. How this effects the overall supply is determined by the monetary policy.
+Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the umbrella of generalized mining or "useful proofs of work." Submitting proofs of work mints POKT in proportion to the amount of work completed increasing the overall supply of POKT. How this affects the overall supply is determined by the monetary policy.
 
 Our current monetary policy is broken down into two phases: the Growth Phase and the Maturity Phase. During the Growth Phase, applications stake just once to access the protocol (assuming they don’t change their throughput) attracting new applications to use the service due to the low cost of service - only paying through their initial stake and through inflation. At network maturity (the Maturity Phase), Pocket will become a simple fee market with the demand side (Applications) stakes are burned in proportion to the amount of POKT minted by the supply side (Nodes) - eliminating the growth in total supply of POKT. This allows for the transfer of value without using direct fees and incurring further costs of coordination. For more information, visit:
 

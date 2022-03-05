@@ -4,7 +4,7 @@
 
 MyCrypto is an open-source, client-side tool for generating Ethereum wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. Developed by and for the community since 2015, they’re focused on building awesome products that put the power in people’s hands.
 
-This is why we want to give users an opportunity to connect to our own infrastructure on us!
+This is why we want to give users an opportunity to connect to our own infrastructure!
 
 1. Open the MyCrypto desktop application, if you don’t have it yet, then download it here: `https://download.mycrypto.com`
 2. Find **“Change Network”** on the bottom left-hand side of the menu, then **click on it**.

@@ -14,7 +14,7 @@ Pocket achieves this through an incentive design that rewards Service Nodes for 
 
 ### Load balancing at the protocol level
 
-Due to the protocol using pseudo-random mechanisms to load balance work evenly across all nodes in the network, the optimal deployment strategy for node providers is to horizontally scale the number of Service Nodes they run (rather than to scale vertically by increasing the POKT stake of the Service Nodes they already have) to increase the probability that they’ll receive work. By decreasing the average work per Service Node, participants of all scales are encouraged to provision their compute to Pocket Network. This aspect of Pocket’s system design means Pocket Network’s node counts will increase as it scales.&#x20;
+Due to the protocol using pseudo-random mechanisms to load balance work evenly across all nodes in the network, the optimal deployment strategy for node providers is to horizontally scale the number of Service Nodes they run (rather than to scale vertically by increasing the POKT stake of the Service Nodes they already have) to increase the probability that they’ll receive work. By decreasing the average work per Service Node, participants of all scales are encouraged to provision their computing power to Pocket Network. This aspect of Pocket’s system design means Pocket Network’s node counts will increase as it scales.&#x20;
 
 To minimize the marginal cost of each Service Node, it will ultimately become more profitable to run nodes out of homes and local data centers, which will, over time, create a lower-cost, more efficient decentralized network.
 

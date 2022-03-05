@@ -20,7 +20,7 @@ description: An overview of Pocket Network application economics.
 
 ### Application Economics
 
-Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol (assuming they don’t change their throughput), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain.&#x20;
+Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly-minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol (assuming they don’t change their throughput), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain.&#x20;
 
 The protocol limits the number of Relays an Application may access based on the number of POKT staked in relation to the Protocol Throttling Formula (as defined below). Once an Application stakes POKT, the Maximum Relays (`MaxRelays`) it can use is locked in perpetuity unless the Application re-stakes that POKT or their stake is burned.
 
