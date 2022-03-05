@@ -16,11 +16,11 @@ For the network as a whole, these changes will enable more consistent block time
 
 ## A Primer on Consensus
 
-The two most popular types of consensus algorithms are Nakomoto and Byzantine Fault Tolerance (BFT).
+The two most popular types of consensus algorithms are Nakamoto and Byzantine Fault Tolerance (BFT).
 
-### Nakomoto
+### Nakamoto
 
-In Nakomoto consensus, the network chooses to follow the longest chain. This is the consensus mechanism that Bitcoin, Ethereum 1.0, and most Proof of Work chains currently use. As long as someone can submit a valid proof of work, they can add a block to the chain.
+In Nakamoto consensus, the network chooses to follow the longest chain. This is the consensus mechanism that Bitcoin, Ethereum 1.0, and most Proof of Work chains currently use. As long as someone can submit a valid proof of work, they can add a block to the chain.
 
 In case the block added was fraudulent, whether maliciously or accidentally, whoever submits the next block can choose to do so from whichever point they wish, creating a fork in the chain. If the network adopts this new chain enough that it becomes the longest, this results in what's known as a chain reorganization. This is why applications that make transactions on these chains often wait for a number of "confirmations", because the chain can potentially reorganize at any point. This process of waiting for transactions accomplishes something called probabilistic finality.
 

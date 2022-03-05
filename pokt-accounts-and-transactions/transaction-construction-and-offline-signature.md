@@ -82,7 +82,7 @@ const txSigner = pocket.withPrivateKey(
   SENDER_PRIVATE_KEY
 )
 
-// Now use the tranasaction signer to create a signed SEND transaction
+// Now use the transaction signer to create a signed SEND transaction
 const txSignerWithSendTransaction = txSigner.send(
   // Origin address for the send
   SENDER_ADDRESS, 

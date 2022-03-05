@@ -96,11 +96,11 @@ Participate in beta testing for 3 Pocket Core versions (excluding the one you di
 
 ### Satellite
 
-Maintain a dispatch node and have 3 (BrightID) Verified Netizens or Pocket core team members vouch that they have included in their dispatch list.
+Maintain a dispatch node and have 3 (BrightID) Verified Netizens or Pocket core team members vouch that they have included you in their dispatch list.
 
 ### Seedbank
 
-Maintain a seed node and have 3 (BrightID) Verified Nodégés or Pocket core team members vouch that they have included in their seed list.
+Maintain a seed node and have 3 (BrightID) Verified Nodégés or Pocket core team members vouch that they have included you in their seed list.
 
 ### Relay\_Station
 
