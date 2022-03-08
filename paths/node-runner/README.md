@@ -390,10 +390,6 @@ pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pok
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-
-{% endhint %}
-
 {% content-ref url="../../resources/references/seeds.md" %}
 [seeds.md](../../resources/references/seeds.md)
 {% endcontent-ref %}
@@ -420,6 +416,14 @@ pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,000
 {% endtab %}
 {% endtabs %}
 
+**You should leave 1 POKT liquid (unstaked) to pay the transaction fees for your node's claim and proof transactions.**
+
+All node runners must always maintain a liquid (unstaked) balance of at least 0.02 POKT in order to submit the claim and proof transactions (which each have a transaction fee of 0.01 POKT) that generate their rewards. If a node successfully submits both the claim and proof, they will earn enough POKT to submit the next claims and proofs, and so on. However, if a node falls below a liquid balance of 0.02 POKT, their revenue will be halted.&#x20;
+
+Claim transactions have 3 sessions, the `ClaimSubmissionWindow`, to be successfully submitted after the conclusion of the session in which the work was done, otherwise they are lost. If a claim transaction fails, Pocket Core will auto-repeat the transaction once in each new session, until the claim is lost. This means your node will automatically take 3 attempts to submit the claim. There is a claim submission window because the global secret key that determines the required proof leaf is revealed once that window closes. Extending the claim submission window would delay the time at which the corresponding proof can be sent and rewards earned.&#x20;
+
+If you manage to successfully submit the claim transaction, you then have 120 blocks, the `ClaimExpiration` period, to submit the corresponding proof transaction, otherwise the pending claim expires. There is a claim expiration date because otherwise the claims would remain in the state and bloat the blockchain.
+
 {% hint style="warning" %}
 **Bad Behavior Warning: Pre-staking**
 
@@ -431,7 +435,7 @@ If your stake falls below `15,000 POKT` your node will be force-unstake burned. 
 {% endhint %}
 
 {% hint style="success" %}
-#### 🏆 Achievement Unlocked
+**🏆 Achievement Unlocked**
 
 If you staked your node successfully, you just earned your first trophy. See [here](https://docs.pokt.network/home/paths/node-runner#earn-trophies-join-the-dao) to find out how earning more trophies will ultimately earn you a vote in our DAO.
 {% endhint %}

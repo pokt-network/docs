@@ -214,17 +214,17 @@ The time, in nanoseconds, that a node must wait after initiating an unstake befo
 
 The amount of time (in blocks) a node has to submit a proof for an already existing claim.
 
+### ClaimSubmissionWindow
+
+**Current Value:** 3
+
+The window of time (in Sessions) a node can submit a claimTx for RelayEvidence collected in the most recently ended session, before the claimTx expires. In addition, it is also the minimum amount of time a node must wait to submit a proof for an existing claim.
+
 ### MinimumNumberOfProofs
 
 **Current Value:** 10
 
 The minimum number of relays a node must have for a claim and proof to be payable.
-
-### ProofWaitingPeriod
-
-**Current Value:** 3
-
-The minimum amount of time (in Sessions) a node must wait to submit a proof for an existing claim.
 
 ### ReplayAttackBurnMultiplier
 
