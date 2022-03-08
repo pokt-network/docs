@@ -89,7 +89,7 @@
 * [📡 Public RPC Endpoints](resources/public-rpc-endpoints/README.md)
   * [Avalanche (AVAX) MetaMask](resources/public-rpc-endpoints/avalanche-avax-metamask.md)
   * [Ethereum (ETH) MetaMask](resources/public-rpc-endpoints/ethereum-eth-metamask.md)
-  * [xDAI MetaMask](resources/public-rpc-endpoints/xdai-metamask.md)
+  * [Gnosis MetaMask](resources/public-rpc-endpoints/xdai-metamask.md)
   * [Fuse MetaMask](resources/public-rpc-endpoints/fuse-metamask.md)
   * [Polygon MetaMask](resources/public-rpc-endpoints/polygon-metamask.md)
   * [Binance Smart Chain (BSC) MetaMask](resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask.md)
