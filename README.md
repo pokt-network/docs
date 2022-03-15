@@ -16,8 +16,8 @@ Using Pocket Network is as easy as any other RPC. If you're already using a cent
 
 Get a public RPC URL for your wallet:
 
-{% content-ref url="resources/public-rpc-endpoints/" %}
-[public-rpc-endpoints](resources/public-rpc-endpoints/)
+{% content-ref url="resources/public-rpc-endpoints" %}
+[public-rpc-endpoints](resources/public-rpc-endpoints)
 {% endcontent-ref %}
 
 Create a private RPC URL for your DApp:
@@ -68,7 +68,7 @@ Blockchains enable unstoppable validation of transactions by incentivizing valid
 
 Many blockchain communities have [debated incentivizing the RPC nodes](https://ethresear.ch/t/incentives-for-running-full-ethereum-nodes/1239) that provide this access to the blockchain. Facing quite a complex challenge though, they have [rejected on-chain solutions](https://eips.ethereum.org/EIPS/eip-908), expecting that altruists would run RPC nodes for the good of the network.
 
-However, in the name of convenience, as RPC nodes have grown more expensive to maintain and developers more specialized, Web3 RPC access has consolidated around centralized gatekeepers. When you use MetaMask to sign transactions in your favorite game or NFT marketplace, assuming you haven't already [switched your custom RPC to Pocket Network](resources/public-rpc-endpoints/), your data is flowing through a centralized cluster of RPC nodes. This means you are vulnerable to [outages](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/).
+However, in the name of convenience, as RPC nodes have grown more expensive to maintain and developers more specialized, Web3 RPC access has consolidated around centralized gatekeepers. When you use MetaMask to sign transactions in your favorite game or NFT marketplace, assuming you haven't already [switched your custom RPC to Pocket Network](resources/public-rpc-endpoints), your data is flowing through a centralized cluster of RPC nodes. This means you are vulnerable to [outages](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/).
 
 Pocket Network solves this critical flaw in the Web3 stack by incentivizing a network of RPC nodes to relay your data to any blockchain. DApps send their RPC requests to the nodes, who relay the requests and use Zero-Knowledge Range Proofs to validate the Relay Evidence that determines their POKT block reward. As well as making Web3 access unstoppable, this has the side effect of making Web3 infrastructure cheaper, by eliminating rent-seeking intermediaries, and more private, since each RPC node relays only a fraction of your data.
 

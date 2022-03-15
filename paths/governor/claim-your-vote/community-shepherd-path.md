@@ -12,8 +12,8 @@ Swap the RPC endpoints on your wallets with Pocket.&#x20;
 
 See the MetaMask page below for a walkthrough of how to do this:
 
-{% content-ref url="../../../resources/public-rpc-endpoints/" %}
-[public-rpc-endpoints](../../../resources/public-rpc-endpoints/)
+{% content-ref url="../../../resources/public-rpc-endpoints" %}
+[public-rpc-endpoints](../../../resources/public-rpc-endpoints)
 {% endcontent-ref %}
 
 {% hint style="info" %}
