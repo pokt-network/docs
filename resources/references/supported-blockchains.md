@@ -52,7 +52,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Harmony Shard 3                      | harmony-3                 | 0043         | -                 |
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         | -                 |
 | IoTeX                                | iotex-mainnet             | 0044         | Y                 |
-| OKExChain                            | oec-mainnet               | 0047         |                   |
+| OKExChain                            | oec-mainnet               | 0047         | Y                 |
 | Pocket Network                       | mainnet                   | 0001         | Y                 |
 | Polygon                              | poly-mainnet              | 0009         | Y                 |
 | Polygon Archival                     | poly-archival             | 000B         | Y                 |
