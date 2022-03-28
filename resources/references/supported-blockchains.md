@@ -31,6 +31,7 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 | Binance Smart Chain Testnet          | bsc-testnet               | 0011         | -                 |
 | Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         | -                 |
 | Bitcoin                              | btc-mainnet               | 0002         | -                 |
+| Boba                                 | boba-mainnet              | 0048         | Y                 |
 | Ethereum                             | eth-mainnet               | 0021         | Y                 |
 | Ethereum Archival                    | eth-archival              | 0022         | Y                 |
 | Ethereum Archival Trace              | eth-archival-trace        | 0028         | Y                 |
