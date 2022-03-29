@@ -1,20 +1,10 @@
 # ✅ Supported Blockchains
 
-## Integrating New RelayChains
-
-Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses the RPC standard. The effort required is not in integrating the RelayChain but in our community of node runners deploying the RelayChain's nodes.
-
-When asking yourself how easy it would be to integrate a RelayChain with Pocket, ask yourself how easy it is for someone to deploy, sync, and maintain a node. How helpful is the documentation? How long does it take to sync a node from scratch? How stable are the nodes? These will be the factors determining how quickly Pocket's community of node runners can support the RelayChain.
-
-## RelayChains Generating Revenue Soon
-
-Due to Pocket Network's permissionless nature, any RelayChainID can be claimed by adding it to the list below and apps/nodes staking on it will be matched together in [sessions](../../v0/protocol/servicing.md#sessions). However, the nodes will not earn POKT for their work.
-
-To incentivize node runners to support a new RelayChain at scale, the RelayChainID must be added to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn[`RelaysToTokensMultiplier`](protocol-parameters.md#relaystotokensmultiplier) POKT for every request that they relay for the RelayChain. The Generates Revenue column below highlights whether or not the RelayChain has been added to the SupportedBlockchains parameter.
-
-Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027)', the Pocket Network Foundation controls the SupportedBlockchains parameter on behalf of the DAO. Before adding new RelayChainIDs to the SupportedBlockchains parameter, the Foundation aims to give the community of node runners enough notice to deploy their nodes, to ensure a level playing field.
+Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses the RPC standard.
 
 ## Mainnet RelayChains
+
+The following table shows the full list of currently-supported mainnet RelayChains, including whether they are revenue-generating or not.
 
 | Name                                 | Portal API Prefix         | RelayChainID | Generates Revenue |
 | ------------------------------------ | ------------------------- | ------------ | ----------------- |
@@ -64,9 +54,25 @@ Following '[PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-
 
 ## Testnet RelayChains
 
+The following table shows the full list of currently-suppported testnet blockchains.
+
 | Name                   | RelayChainID |
 | ---------------------- | ------------ |
 | Ethereum Goerli        | 0020         |
 | Ethereum Rinkeby       | 0022         |
 | Ethereum Ropsten       | 0023         |
 | Pocket Network Testnet | 0002         |
+
+## Integrating New RelayChains
+
+In order to integrate a RelayChain with Pocket, the node running community needs to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the community supporting the chain.
+
+## How RelayChains Generate Revenue
+
+Due to Pocket Network's permissionless nature, any RelayChainID can be claimed by adding it to the list above. Apps and nodes staking on the RelayChain will be matched together in [sessions](../../v0/protocol/servicing.md#sessions), but nodes will not necessarily earn POKT.
+
+The Pocket Network Foundation determines which RelayChains are revenue-generating on behalf of the DAO. Before setting RelayChains to be revenue-generating, the Foundation aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
+
+Once the determination has been made to support a new RelayChain at scale, the RelayChainID will be added to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](protocol-parameters.md#relaystotokensmultiplier) parameter. The Generates Revenue column in the table above highlights whether or not the RelayChain has been added to the SupportedBlockchains parameter.
+
+For more information, please see [PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027).
