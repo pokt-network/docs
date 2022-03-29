@@ -4,21 +4,7 @@ description: An overview of Pocket Network node economics.
 
 # 🤖 Node Economics
 
-### Important Initial Node Parameters
-
-| Item                               | Initial Parameter                                                  |
-| ---------------------------------- | ------------------------------------------------------------------ |
-| Mint rate                          | 0.01 POKT per validated Relay                                      |
-| Minimum Service Node Stake         | 15,000 POKT                                                        |
-| Minimum Unbonding Period (Nodes)   | 21 days                                                            |
-| Double Signing Penalty             | [Tombstoned](https://github.com/tendermint/tendermint/issues/2839) |
-| Missed Block Penalty               | 10 blocks before jailing                                           |
-| Fraudulent Relay Batch Penalty     | 100% slash of node stake and jailed                                |
-| Minimum Number of Proofs Per Claim | 10                                                                 |
-| Claim Expiration                   | 120 blocks                                                         |
-| Proof Waiting Period               | 3 Blocks                                                           |
-
-### Node Economics
+### Overview
 
 Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the umbrella of generalized mining or useful proofs of work, where inflation is directly tied to work validated by the network.&#x20;
 

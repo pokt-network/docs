@@ -31,12 +31,3 @@ Our current monetary policy is broken down into two phases: the Growth Phase and
 ### Transactions
 
 Leader-elected nodes are rewarded for facilitating P2P transfers of POKT on the Pocket blockchain via a transaction fee. This is required for the security of the network in order to prevent spam or “dust” attacks. A transaction fee is paid by the individual or entity making a transaction, 99% of which is burned, and the remaining 1% is awarded to the leader-elected node for including transactions in the relevant block. The 1% fee provides an incentive for block producers to include transactions in the next block.
-
-## Initial Economic Parameters
-
-| Item         | Initial Parameter             |
-| ------------ | ----------------------------- |
-| Total Supply | 650,000,000 POKT              |
-| Mint rate    | 0.01 POKT per validated Relay |
-| Block Time   | 15 minutes                    |
-| Session Time | 4 blocks (60 minutes)         |

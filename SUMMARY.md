@@ -20,10 +20,7 @@
     * [🤖 Node Economics](v0/economics/pokt-token-economics/node-economics/README.md)
       * [Cost to Nodes](v0/economics/pokt-token-economics/node-economics/cost-to-nodes.md)
       * [Economic Security](v0/economics/pokt-token-economics/node-economics/economic-security.md)
-  * [🏦 Monetary Policy](v0/economics/monetary-policy/README.md)
-    * [⏱ Monetary Phases](v0/economics/monetary-policy/monetary-phases.md)
-    * [🔥 Application Burn Rate](v0/economics/monetary-policy/application-burn-rate.md)
-    * [📈 POKT Inflation](v0/economics/monetary-policy/pokt-inflation.md)
+  * [🏦 Monetary Policy](v0/economics/monetary-policy.md)
 * [📖 Glossary](v0/glossary.md)
 
 ## 🚀 How It Will Work (v1.0) <a href="#v1" id="v1"></a>

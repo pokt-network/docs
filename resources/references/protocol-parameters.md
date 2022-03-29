@@ -98,7 +98,7 @@ The number of blocks allowed before a Session tumbles.
 
 **Current Value:** 10
 
-The DAO treasury earns this % of all POKT block rewards.
+The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerAllocation](protocol-parameters.md#proposerallocation) for another beneficiary of the block reward.
 
 ### DAOOwner
 
@@ -154,13 +154,17 @@ If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can
 
 **Current Value:** 1
 
-Block proposers earn this % of the POKT block reward.
+Block proposers earn this proportion of the total POKT block reward. Value is a percentage. See also [DAOAllocation](protocol-parameters.md#daoallocation) for another beneficiary of the block reward.
 
 ### RelaysToTokensMultiplier
 
 **Current Value:** 8461
 
 The amount of POKT, denominated in [StakeDenom](protocol-parameters.md#stakedenom), that is minted as block rewards per relay.
+
+{% hint style="danger" %}
+This value will change over time. Please see the section on [POKT Inflation](../../v0/economics/monetary-policy.md#poktinflation) for more information.
+{% endhint %}
 
 ### SignedBlocksWindow
 
