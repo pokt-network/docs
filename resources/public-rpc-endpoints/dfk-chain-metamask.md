@@ -4,11 +4,11 @@ description: >-
   Pocket-powered RPC Endpoint
 ---
 
-# DFK Chain
+# DFK Chain MetaMask
 
 We have created a public DFK Chain RPC endpoint that give players who play DeFi Kingdoms the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
-To get started connecting to Pocket's infrastructure for Avalanche C-Chain, do the following:
+To get started connecting to Pocket's infrastructure for DFK Chain subnet, do the following:
 
 1. Click on the Networks drop-down menu, then press Custom RPC
 2. Under the Network Name field, write **DFK Chain POKT**
