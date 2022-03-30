@@ -10,7 +10,7 @@ An Application submits Relays, or API requests meant to be routed to any public 
 
 The mechanism the Network uses to regulate the interactions between Applications and Nodes are Sessions. Sessions are a data structure that are generated following the established Session Generation Algorithm, which uses data from the finality storage layer of the network to pseudo-randomly group one Application with a set of Nodes which will provide service to it for a limited timeframe.
 
-![](../../.gitbook/assets/Mainet\_Architecture.png)
+![](../../.gitbook/assets/mainet\_architecture.png)
 
 To dive deeper, start by learning more about Sessions in:
 

@@ -68,7 +68,7 @@ Why does the third-party slow you down? Increasing the distance between your Poc
 
 Here is an illustration:
 
-![](../../.gitbook/assets/POKT\_Worl-Map.jpg)
+![](../../.gitbook/assets/pokt\_worl-map.jpg)
 
 In this example, the Pocket nodes (pink) are on the other side of the US from the Blockchain data nodes (orange). The end-user is using the [Portal](https://portal.pokt.network) to communicate with the network. The path the end-user's request must take is: `End-user → Portal → Pocket Node → Blockchain Data Node → Pocket Node → Portal → End-user`
 

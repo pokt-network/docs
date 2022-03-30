@@ -85,7 +85,7 @@
   * [🌱 Seeds](resources/references/seeds.md)
 * [📡 Public RPC Endpoints](resources/public-rpc-endpoints/README.md)
   * [Avalanche (AVAX) MetaMask](resources/public-rpc-endpoints/avalanche-avax-metamask.md)
-  * [DFK Chain](resources/public-rpc-endpoints/dfk-chain.md)
+  * [DFK Chain MetaMask](resources/public-rpc-endpoints/dfk-chain-metamask.md)
   * [Ethereum (ETH) MetaMask](resources/public-rpc-endpoints/ethereum-eth-metamask.md)
   * [Gnosis MetaMask](resources/public-rpc-endpoints/xdai-metamask.md)
   * [Fuse MetaMask](resources/public-rpc-endpoints/fuse-metamask.md)

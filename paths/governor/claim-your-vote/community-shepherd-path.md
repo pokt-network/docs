@@ -4,16 +4,16 @@
 
 ![](../../../.gitbook/assets/community\_banner1.png)
 
-Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**,  providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
+Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
 
 ### Seed\_Pouch
 
-Swap the RPC endpoints on your wallets with Pocket.&#x20;
+Swap the RPC endpoints on your wallets with Pocket.
 
 See the MetaMask page below for a walkthrough of how to do this:
 
-{% content-ref url="../../../resources/public-rpc-endpoints" %}
-[public-rpc-endpoints](../../../resources/public-rpc-endpoints)
+{% content-ref url="../../../resources/public-rpc-endpoints/" %}
+[public-rpc-endpoints](../../../resources/public-rpc-endpoints/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
@@ -89,7 +89,7 @@ Create educational content for Pocket.
 ## Regen
 
 {% hint style="success" %}
-### Qualified!
+#### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}

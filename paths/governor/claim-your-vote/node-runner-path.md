@@ -69,7 +69,7 @@ Upgrade your node before the DAO’s chosen upgrade height.
 ## Node Runner
 
 {% hint style="success" %}
-### Qualified!
+#### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
