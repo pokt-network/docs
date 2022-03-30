@@ -22,6 +22,7 @@ The following table shows the full list of currently-supported mainnet RelayChai
 | Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         | -                 |
 | Bitcoin                              | btc-mainnet               | 0002         | -                 |
 | Boba                                 | boba-mainnet              | 0048         | Y                 |
+| DFKchain Subnet                      | dfk-mainnet               | 03DF         | Y                 |
 | Ethereum                             | eth-mainnet               | 0021         | Y                 |
 | Ethereum Archival                    | eth-archival              | 0022         | Y                 |
 | Ethereum Archival Trace              | eth-archival-trace        | 0028         | Y                 |
