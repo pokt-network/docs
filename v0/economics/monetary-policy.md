@@ -89,7 +89,7 @@ For more information and to read the actual DAO proposals on inflation managemen
 
 The DAO's currently approved inflation management framework is called the Weighted Annual Gross Max Inflation rate (WAGMI).
 
-A WAGMI target of 100% was implemented on Feb 28, 2022, which corresponds to a per-node reward of 0.0084 POKT/relay. It was previously set to 0.01 POKT/relay.
+A WAGMI target of 100% was implemented on Feb 28, 2022, which corresponds to a per-node reward of 0.008461 POKT/relay. It was previously set to 0.01 POKT/relay.
 
 WAGMI targets will be stepped down to 50% over the following five months as follows:
 
@@ -102,7 +102,7 @@ WAGMI targets will be stepped down to 50% over the following five months as foll
 | Jun 24, 2022 | 60% |
 | Jul 24, 2022 | 50% |
 
-The per-mode reward (also known by its parameter value `RelaysToTokensMultiplier`) is calculated using:
+The per-node reward (also known by its parameter value [RelaysToTokensMultiplier](../../../resources/references/protocol-parameters.md#relaystotokensmultiplier)) is calculated using:
 
 * The 30-day trailing average of daily relays at the time of each adjustment
 * The total supply at the time of the proposal passing ("Total Supply Baseline"):
@@ -111,15 +111,14 @@ $$
 \text{Mint rate} = \frac{\text{Total Supply Baseline} \times \text{Inflation rate}}{\text{30-day trailing average of daily relays} \times \text{365 days}}
 $$
 
-The timestamp of the proposal was Feb 24, 2022, 6:37 GMT (block height: 51909).
-The Total Supply Baseline was approximately 945,000,000 POKT, and the 30-day trailing average of daily relays was approximately 306,000,000, so an inflation target of 100% yields:
+The timestamp of the proposal was Feb 24, 2022, 6:37 GMT (block height: 51909), and the Total Supply Baseline was 945,014,989 POKT.
 
-$$
-\text{Mint rate} = \frac{945,000,000 \times 100%}{306,000,000 \times 365}
-$$
+| Date         | Target inflation rate | 30-day trailing avg. of daily relays | Mint rate | RelaysToTokensMultiplier |
+| :----------- | :---------------------| :----------------------------------- | :-------- | :----------------------- |
+| Feb 24, 2022 | 100%                  | ~306,000,000                         | 0.008461  | 8461                     |
+| Mar 25, 2022 | 90%                   | 310,792,714                          | 0.007498  | 7498                     |
 
-$$
-\text{Mint rate} = 0.008461 \text{ POKT/relay}
-$$
+Further determinations of the mint rate may will be made on the above dates when the 30-day trailing average of daily relays can be recalculated.
 
-Further determinations of the mint rate will be made on the above dates when the 30-day trailing average of daily relays can be recalculated.
+Also note that the DAO is empowered to recalculate the mint rate more frequently than the above monthly schedule in times of sharp increases or decreases in the amount of relays. In this case, a weekly recalculation may occur. 
+
