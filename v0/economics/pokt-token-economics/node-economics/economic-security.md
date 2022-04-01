@@ -4,11 +4,11 @@ description: An overview of node penalties for bad acting or poor service.
 
 # Economic Security
 
-The initial amount of POKT needed to stake as a Service Node is not dynamic, but can be raised or lowered by the Pocket DAO to ensure a stable barrier to entry.&#x20;
+The initial amount of POKT needed to stake as a Service Node is not dynamic, but can be raised or lowered by the Pocket DAO to ensure a stable barrier to entry.
 
 ### Jailing and Slashing
 
-* &#x20;_Jailing_ a Validator removes them from both protocol service and consensus.
+* _Jailing_ a Validator removes them from both protocol service and consensus.
 * _Slashing_ a Validator burns a percentage of the 'Staked Tokens'
 
 A Validator is jailed and subsequently slashed for not signing (or incorrectly signing) block proposals. More often than not, this is the reason why Validators are jailed.
@@ -32,20 +32,20 @@ If a Pocket Validator Node is left jailed for `max_jailed_blocks` blocks, it wil
 
 #### Double Sign Penalties
 
-[0.0001% percentage](https://forum.pokt.network/t/pup-1-change-slashfractiondoublesign-to-0-000001/273) of the validator's stake that will be slashed upon reporting of double vote Evidence type from Tendermint, where a double vote on a block is/can be a submission for two differing states, transactions, apphashes, etc. and result in a forked network.&#x20;
+[0.0001% percentage](https://forum.pokt.network/t/pup-1-change-slashfractiondoublesign-to-0-000001/273) of the validator's stake that will be slashed upon reporting of double vote Evidence type from Tendermint, where a double vote on a block is/can be a submission for two differing states, transactions, apphashes, etc. and result in a forked network.
 
 ### Relay Challenges
 
-In order to participate in the network economic incentive mechanism, the Validator must first **Claim** and then **Prove** the completed work.&#x20;
+In order to participate in the network economic incentive mechanism, the Validator must first **Claim** and then **Prove** the completed work.
 
 ### Burning for Bad Fraud Proofs
 
-&#x20;If a Service Node submits a fraudulent Relay batch, 100% of their stake will be slashed.
+If a Service Node submits a fraudulent Relay batch, 100% of their stake will be slashed.
 
 ### **Economic Incentives**
 
-For providing infrastructure access to applications, Validators are rewarded proportional to the work they provide. Pocket Core attempts to send a _Claim_ and subsequent _Proof_ transaction automatically after the `proof_waiting_period` elapses. If both transactions are successful, Tokens are minted to the address of the Validator.&#x20;
+For providing infrastructure access to applications, Validators are rewarded proportional to the work they provide. Pocket Core attempts to send a _Claim_ and subsequent _Proof_ transaction automatically after the `proof_waiting_period` elapses. If both transactions are successful, Tokens are minted to the address of the Validator.
 
-{% content-ref url="../../../monetary-policy.md" %}
-[monetary-phases.md](../../../monetary-policy.md)
+{% content-ref url="../../monetary-policy.md" %}
+[monetary-policy.md](../../monetary-policy.md)
 {% endcontent-ref %}
