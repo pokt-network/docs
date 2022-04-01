@@ -46,6 +46,6 @@ In order to participate in the network economic incentive mechanism, the Validat
 
 For providing infrastructure access to applications, Validators are rewarded proportional to the work they provide. Pocket Core attempts to send a _Claim_ and subsequent _Proof_ transaction automatically after the `proof_waiting_period` elapses. If both transactions are successful, Tokens are minted to the address of the Validator.&#x20;
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../../monetary-policy.md" %}
+[monetary-phases.md](../../../monetary-policy.md)
 {% endcontent-ref %}
