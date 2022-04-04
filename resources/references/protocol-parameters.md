@@ -24,13 +24,13 @@ The minimum stake required of an app, denominated in [StakeDenom](protocol-param
 
 ### AppUnstakingTime
 
-**Current Value:** 1814400000000000
+**Current Value:** 1814000000000000
 
 The time, in nanoseconds, that an app must wait after initiating an unstake before they can use the POKT for anything else.
 
 ### BaseRelaysPerPOKT
 
-**Current Value:** 7014
+**Current Value:** 200000
 
 The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100.
 
@@ -64,7 +64,7 @@ An app can only be configured for up to this many chains on one stake.
 
 ### ParticipationRateOn
 
-**Current Value:** false
+**Current Value:** False
 
 The protocol may adjust an application's `MaxRelays` at the time of staking according to network-wide stake rates, where the ParticipationRate acts as a proxy for utilization of the network on a block by block basis.
 
@@ -130,13 +130,15 @@ A node can only be configured for up to this many chains on one stake.
 
 The amount of time (in blocks) a node has to unjail before being force unstaked and slashed.
 
+
 {% hint style="danger" %}
 Warning: Reaching MaxJailedBlocks will result in a node's entire stake being slashed.
 {% endhint %}
 
+
 ### MaxValidators
 
-**Current Value:** 1,000
+**Current Value:** 1000
 
 The number of staked nodes that are eligible to be selected for producing blocks. Any staked nodes outside of the top `MaxValidators` staked validators will still be eligible to service relays.
 
@@ -146,9 +148,11 @@ The number of staked nodes that are eligible to be selected for producing blocks
 
 The minimum proportion of the [SignedBlocksWindow](protocol-parameters.md#signedblockswindow) that a node must sign to stay out of jail.
 
+
 {% hint style="info" %}
 If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can miss up to 4 blocks out of every 10 blocks before it is jailed.
 {% endhint %}
+
 
 ### ProposerAllocation
 
@@ -158,13 +162,15 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 ### RelaysToTokensMultiplier
 
-**Current Value:** 7498
+**Current Value:** 5776
 
 The amount of POKT, denominated in [StakeDenom](protocol-parameters.md#stakedenom), that is minted as block rewards per relay.
+
 
 {% hint style="danger" %}
 This value will change over time. Please see the section on [POKT Inflation](../../v0/economics/monetary-policy.md#poktinflation) for more information.
 {% endhint %}
+
 
 ### SignedBlocksWindow
 
@@ -172,9 +178,11 @@ This value will change over time. Please see the section on [POKT Inflation](../
 
 The number of consecutive blocks within which the [MinSignedPerWindow](protocol-parameters.md#minsignedperwindow) proportion of blocks must be signed by a node to stay out of jail.
 
+
 {% hint style="info" %}
 If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can miss up to 4 blocks out of every 10 blocks before it is jailed.
 {% endhint %}
+
 
 ### SlashFractionDoubleSign
 
@@ -194,9 +202,11 @@ The % of a node's stake that is burned for downtime, where 1 is 100%.
 
 POKT amounts are defined by the protocol in this denomination as defined by:
 
+
 {% content-ref url="pokt-denominations.md" %}
 [pokt-denominations.md](pokt-denominations.md)
 {% endcontent-ref %}
+
 
 ### StakeMinimum
 
@@ -214,7 +224,7 @@ The time, in nanoseconds, that a node must wait after initiating an unstake befo
 
 ### ClaimExpiration
 
-**Current Value:** 120
+**Current Value:** 24
 
 The amount of time (in blocks) a node has to submit a proof for an already existing claim.
 
@@ -244,9 +254,11 @@ The number of nodes an app will be matched with in a session.
 
 ### SupportedBlockchains
 
+
 {% content-ref url="supported-blockchains.md" %}
 [supported-blockchains.md](supported-blockchains.md)
 {% endcontent-ref %}
+
 
 Only blockchains with sybil-resistant demand from apps are whitelisted to generate revenue for nodes.
 
