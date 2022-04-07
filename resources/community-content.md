@@ -2,7 +2,7 @@
 
 ## Community Calls
 
-[Pocket Community Call \#1](https://youtu.be/rf3jIiVT96U?list=PLYpSL-5AOmwp2MmzAAchX27_6sPy-SCo8)
+[Pocket Community Call #1](https://youtu.be/rf3jIiVT96U?list=PLYpSL-5AOmwp2MmzAAchX27\_6sPy-SCo8)
 
 [Running Pocket In Production - Infra Community Call](https://youtu.be/kUDSD3z7Dvw)
 
@@ -26,17 +26,17 @@
 
 [BlockHash Podcast Episode 114 - Pocket Network with Michael O'Rourke](http://bit.ly/BHEP114)
 
-[The Future of Social Media, \#BTC is Getting Fat, & Nodes for the Rich?](https://open.spotify.com/episode/3rnmlTrSuJ5AFTU8gcgAXe)
+[The Future of Social Media, #BTC is Getting Fat, & Nodes for the Rich?](https://open.spotify.com/episode/3rnmlTrSuJ5AFTU8gcgAXe)
 
-[POKT Network - Giving Blockchain Devs a Serious Helping Hand](https://bit.ly/POKT_TheDeFiDownload)
+[POKT Network - Giving Blockchain Devs a Serious Helping Hand](https://bit.ly/POKT\_TheDeFiDownload)
 
-[DeFi By Design EP \#29: Is POKT The Missing Piece of Web3.0?](http://bit.ly/DeFiByDesign29_POKT)
+[DeFi By Design EP #29: Is POKT The Missing Piece of Web3.0?](http://bit.ly/DeFiByDesign29\_POKT)
 
-[Bitcoin Stories: Michael O'Rourke, Cofounder and CEO at Pocket Network](http://bit.ly/BitcoinStories91_POKT)
+[Bitcoin Stories: Michael O'Rourke, Cofounder and CEO at Pocket Network](http://bit.ly/BitcoinStories91\_POKT)
 
-[3rd RSK Ecosystem Update: Pocket Network](http://bit.ly/3rdRSKeco_POKT)
+[3rd RSK Ecosystem Update: Pocket Network](http://bit.ly/3rdRSKeco\_POKT)
 
-[Michael O'Rourke, CEO of Pocket Network: The Need for Better Crypto Developer Tools](http://bit.ly/BlockchainVC_POKT)
+[Michael O'Rourke, CEO of Pocket Network: The Need for Better Crypto Developer Tools](http://bit.ly/BlockchainVC\_POKT)
 
 [The Future of Node Ecosystems](https://youtu.be/yyYny45qZk0)
 
@@ -48,11 +48,11 @@
 
 [The BOSI Stack](https://medium.com/pocket-network/the-bosi-stack-b67c7baa6d00)
 
-[Moderating a DAO](https://medium.com/pocket-network/moderating-a-dao-e84a107348f5?source=collection_archive---------3-----------------------)
+[Moderating a DAO](https://medium.com/pocket-network/moderating-a-dao-e84a107348f5?source=collection\_archive---------3-----------------------)
 
 ### Tweetstorms
 
-[Pocket Network Useful Proofs of Work](https://twitter.com/o_rourke/status/1263847357122326530)
+[Pocket Network Useful Proofs of Work](https://twitter.com/o\_rourke/status/1263847357122326530)
 
 [Pocket Network High-Level Overview](https://twitter.com/luyzdeleon/status/1296466513977892864?s=20)
 
@@ -70,7 +70,7 @@
 
 [OG Web3 Interface MyCrypto adds support for decentralized infra provider Pocket Network](https://medium.com/pocket-network/og-web3-interface-mycrypto-adds-support-for-decentralized-infra-provider-pocket-network-3968b215ce25)
 
-[EthersJS \(Ethers.io\) adds Pocket Network as a default infrastructure API](https://bit.ly/EthersPocket)
+[EthersJS (Ethers.io) adds Pocket Network as a default infrastructure API](https://bit.ly/EthersPocket)
 
 [Announcing the API3 Partnership and Token Swap With Pocket Network](https://medium.com/api3/announcing-the-api3-partnership-and-token-swap-with-pocket-network-f45420790b6c)
 
@@ -88,7 +88,7 @@
 
 [Algorand to Provide Native Support of the Pocket Network’s Next-Generation Decentralized Infrastructure](https://www.algorand.com/resources/news/algorand-provides-native-support-for-pocket-network)
 
-[Pocket’s Incentivized Testnet Comes to DAppNode](https://medium.com/pocket-network/pockets-incentivized-testnet-comes-to-dappnode-9e6ed6ebfb2d?source=collection_archive---------5-----------------------)
+[Pocket’s Incentivized Testnet Comes to DAppNode](https://medium.com/pocket-network/pockets-incentivized-testnet-comes-to-dappnode-9e6ed6ebfb2d?source=collection\_archive---------5-----------------------)
 
 [Building Lightweight Block Explorers](https://medium.com/the-arcadia-media-group/building-lightweight-block-explorers-using-pokt-46baf668625e)
 
@@ -106,6 +106,10 @@
 
 ## Industry Analysis
 
+[Pocket Network: The Decentralized Marketplace for Blockchain Connectivity - Delphi Digital](https://members.delphidigital.io/reports/pocket-network-the-decentralized-marketplace-for-blockchain-connectivity/)
+
+[Pocket Network: A Decentralized Solution to Access Handling - Messari Research](https://messari.io/article/pocket-network-a-decentralized-solution-to-access-handling)
+
 [Infrastructure Lego: The Middleware Thesis](https://insights.deribit.com/market-research/infrastructure-lego-the-middleware-thesis/)
 
 [The Race Is On to Replace Ethereums Most Centralized Layer](https://www.coindesk.com/the-race-is-on-to-replace-ethereums-most-centralized-layer)
@@ -114,11 +118,10 @@
 
 [Infura and Ethereum’s Node Infrastructure as a Service Landscape](https://twitter.com/ResearchCircle/status/1145727182418972674)
 
-[Degrees of Architectural \(De\)centralization to Infura and Beyond](https://web.archive.org/web/20191022201900/https://research.circle.com/insights/degrees-of-architectural-decentralization-to-infura-and-beyond)
+[Degrees of Architectural (De)centralization to Infura and Beyond](https://web.archive.org/web/20191022201900/https://research.circle.com/insights/degrees-of-architectural-decentralization-to-infura-and-beyond)
 
-[State of Crypto Adoption 2019/2020 - Decentral Park Capital](https://www.stateofcrypto.report/)
+[State of Crypto Adoption 2019/2020 - Decentral Park Capital](https://www.stateofcrypto.report)
 
-[The State of Digital Asset Data and Infrastructure Landscape](https://www.theblockcrypto.com/post/63689/research-report-the-state-of-the-digital-asset-data-and-infrastructure-commissioned-by-blockset) \([pdf](https://www.tbstat.com/wp/uploads/2020/05/The-State-of-the-Digital-Asset-Data-and-Infrastructure-Landscape-1.pdf)\) \([tweetstorm](https://twitter.com/lawmaster/status/1261312276855955457)\)
+[The State of Digital Asset Data and Infrastructure Landscape](https://www.theblockcrypto.com/post/63689/research-report-the-state-of-the-digital-asset-data-and-infrastructure-commissioned-by-blockset) ([pdf](https://www.tbstat.com/wp/uploads/2020/05/The-State-of-the-Digital-Asset-Data-and-Infrastructure-Landscape-1.pdf)) ([tweetstorm](https://twitter.com/lawmaster/status/1261312276855955457))
 
-[A Decentralized Staking Doomsday Scenario](https://chris.mirror.xyz/CFkCGbVLm2pB6UwiCY_qq4tjr8AnKtK9v_VQZ8pTUp4)
-
+[A Decentralized Staking Doomsday Scenario](https://chris.mirror.xyz/CFkCGbVLm2pB6UwiCY\_qq4tjr8AnKtK9v\_VQZ8pTUp4)
