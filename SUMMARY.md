@@ -35,6 +35,7 @@
 
 * [🤖 Node Runner](paths/node-runner/README.md)
   * [🧱 Quickstart Build](https://docs.pokt.network/core/guides/quickstart)
+  * [✈️ Zero To Node](paths/node-runner/zero-to-node/README.md)
   * [🛩 Node Pilot](https://nodepilot.tech)
   * [⛑ Pay Someone to Run Your Node](https://forum.pokt.network/t/recommended-node-hosting-services/366)
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
