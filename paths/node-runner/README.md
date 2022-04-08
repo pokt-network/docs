@@ -368,11 +368,10 @@ Downloading from the latest snapshot will drastically shorten the time it takes 
 
 ```
 mkdir -p "$HOME"/.pocket/data
-cd "$HOME"/.pocket/data
-wget -qO- https://link.us1.storjshare.io/raw/jwspuut4dzrdsms2t732ee4fuheq/pocket-public-blockchains/pocket-network-data-1216-rc-0.6.3.6.tar | tar xvf -
+wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C "$HOME"/.pocket/data
 ```
 
-Other options for downloading the latest snapshot can be found in the [pocket-snapshots repo](https://github.com/pokt-network/pocket-snapshots).
+Other options for downloading the latest snapshot can be found in the [pocket-snapshotter repo](https://github.com/pokt-foundation/pocket-snapshotter).
 
 ### Sync the blockchain
 
