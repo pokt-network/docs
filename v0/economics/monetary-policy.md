@@ -119,6 +119,7 @@ The timestamp of the proposal was Feb 24, 2022, 6:37 GMT (block height: 51909), 
 | Feb 24, 2022 | 100%                  | 306,000,000                                  | 0.008461  | 8461                     |
 | Mar 25, 2022 | 90%                   | 311,000,000                                  | 0.007498  | 7498                     |
 | Apr 1, 2022  | 90%                   | 403,000,000                                  | 0.005776  | 5776                     |
+| Apr 8, 2022  | 90%                   | 481,000,000                                  | 0.004847  | 4847                     |
 
 Further determinations of the mint rate may will be made on the above dates when the 30-day trailing average of daily relays can be recalculated.
 
