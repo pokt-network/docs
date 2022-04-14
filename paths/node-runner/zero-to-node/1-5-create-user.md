@@ -5,7 +5,7 @@ For security reasons it's best not to use the root user. Instead, it's better to
 Also, by default, the Pocket CLI will place the data directory for the node in the user's home directory. So, when you create a new user, you'll want to make sure the home directory is on a volume that has plenty of room for the data directory.
 
 {% hint style="warning" %}
-At the time of writing, Pocket requires ~200GB. The following user setup process assumes that the location of your user's home directory is on a volume with enough room for the pocket data with room to grow.
+At the time of writing, Pocket requires ~200GB for its blockchain data. The following user setup steps assumes that the location of your user's home directory is on a volume with enough room for the pocket data.
 {% endhint %}
 
 ## Creating a new user

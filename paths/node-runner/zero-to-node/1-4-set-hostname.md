@@ -1,8 +1,10 @@
 # 1-4: Set the hostname
 
-In a previous step we set the DNS hostname of the node. Now we'll use the same name for the hostname on the server.
+At this point you should be logged into your node as the `root` user.
 
-At this point you should be logged into your node as the `root` user. To set the server hostname use the following steps:
+In a previous step we set the DNS name for the node. Now we'll use the same name for the hostname on the server.
+
+To set the server hostname use the following steps:
 
 1. Open the `/etc/hostname` file with the following command:
     ```bash
