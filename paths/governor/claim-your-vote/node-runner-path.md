@@ -2,7 +2,7 @@
 
 ## Nodégé
 
-![](../../../.gitbook/assets/node\_banner1.png)
+![](broken-reference)
 
 Greetings aspiring Node Runner, we have heard your call to join us in the battle against the corporate node overlords. In order to earn the Nodégé rank, you must **complete 3/3 of the following assignments**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-nodege` command.
 
@@ -30,7 +30,7 @@ Avoid getting [jailed](../../../v0/glossary.md#jail) for 7 days (672 consecutive
 
 ## Nodemad
 
-![](../../../.gitbook/assets/node\_banner2.png)
+![](broken-reference)
 
 Congratulations Nodégé, lesser nodes have not made it this far, we are pleased with your progress. To earn the Nodemad rank, you must **complete 5/8 of the following assignments**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-nodemad` command.
 
@@ -74,7 +74,7 @@ Upgrade your node before the DAO’s chosen upgrade height.
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
 
-![](../../../.gitbook/assets/node\_banner3.png)
+![](broken-reference)
 
 You've proven yourself a key member of our node army. **Complete all assignments from every rank of the Node Runner path** then submit the `!become-node-runner` command to cement your legacy in the pantheon of our greatest Node Runners.
 

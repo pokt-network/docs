@@ -2,7 +2,7 @@
 
 ## Farmer
 
-![](../../../.gitbook/assets/community\_banner1.png)
+![](broken-reference)
 
 Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture this community into one that is regenerative and ripe with autonomous agents. While our allies in the Node Runner and App Developer paths are fortifying our outposts and advancing our objectives, the jobs on this ranch serve to replenish our ecosystem. To join the rank of Farmers, **complete 6/8 of the following jobs**, providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-farmer` command.
 
@@ -58,7 +58,7 @@ Purchase Discord Nitro and boost Pocket Network's community server.
 
 ## Shepherd
 
-![](../../../.gitbook/assets/community\_banner2.png)
+![](broken-reference)
 
 At this point you have now familiarized yourself with the ways of the Farmers. Your studies at this level will seek to align you more deeply with the vision and mission that has brought us together. **Completing 4/6 of the following jobs** will earn you a flight to the Shepherd's station. Provide proof of your work in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, then submit the `!become-shepherd` command.
 
@@ -94,7 +94,7 @@ Create educational content for Pocket.
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
 
-![](../../../.gitbook/assets/community\_banner3.png)
+![](broken-reference)
 
 “De lo mio”, Shepherd. In our homeland, this term of endearment means “one of mine”. Because you have made it here, we consider you to be one of our closest allies in a mission yet unfulfilled. But there is little time for frivolities, the enemy has expanded into the farthest reaches of Web3 and we must continue to cultivate the lands upon which our node and dev allies will fight them. The work of Shepherds requires the softest of touches, as you will be venturing out to guide others towards the regenerative path of true decentralization. **Complete every job in all ranks of the Community Shepherd path** then submit the `!become-regen` command to earn enlightenment in the pantheon of Regens.
 

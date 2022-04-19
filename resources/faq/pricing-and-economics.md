@@ -69,7 +69,7 @@ Visit this [forum post](https://forum.pokt.network/t/secondary-markets-for-pokt/
 
 The initial supply of POKT is 650M, which is divided according to the following genesis distribution:
 
-![](../../.gitbook/assets/initial\_distribution.jpeg)
+![](broken-reference)
 
 The vast majority of these tokens are non-transferable and subject to use restrictions by the holders, starting from mainnet launch. __&#x20;
 
@@ -86,7 +86,7 @@ The vast majority of these tokens are non-transferable and subject to use restri
 
 This all results in the following circulating supply schedule:
 
-![](../../.gitbook/assets/circulating\_supply\_schedule.jpeg)
+![](broken-reference)
 
 ### Fully Diluted Supply
 
