@@ -19,7 +19,7 @@ To address this, we included a simple client-side validation mechanism known as 
 
 The Portal is our gateway drug. It is a web application that stakes Pocket Apps on behalf of developers, and allows us to provide the simple RPC endpoints that apps have come to expect from centralized providers. Currently, the Portal administers the majority of the protocol’s App stakes to ensure service quality while we bootstrap new chains. In 2021 we developed various layer-2 [cherry-picking methods](https://forum.pokt.network/t/cherry-picker-improvements-dec-2021/1332) through the Portal to ensure that Apps receive service from the highest-quality Servicers available in each Session. These methods have laid the groundwork for the on-chain quality enforcement that we will be introducing in v1.0.
 
-![Utility V0 High Level Overview](broken-reference)
+![Utility V0 High Level Overview](../.gitbook/assets/utility\_v0.png)
 
 #### v1.0 – On-chain Enforcement
 
@@ -39,7 +39,7 @@ Fishermen measure the quality of relays across three key metrics according to a 
 
 Fishermen compile these samples into test scores for each Servicer, which are averaged out across Fishermen over time, ultimately determining the proportion of block rewards that Servicers receive. Fishermen are not incentivized to influence test scores because they are paid based on the quantity and completeness of their reports, not the content of the metrics being reported.
 
-![Utility V1 High Level Overview](broken-reference)
+![Utility V1 High Level Overview](../.gitbook/assets/utility\_v1.png)
 
 ### Quality Incentives
 
@@ -54,6 +54,9 @@ v1.0 prioritizes quality over quantity; block rewards are distributed to Service
 The total salary for Servicers is still proportional to the volume of relays performed on aggregate. However, this is divided between Servicers in proportion to their test scores. Each Servicer above the MinimumReportCardThreshold is eligible for an equal salary from the total pool for their RelayChain or GeoZone but has their allocation burned by the difference between their ReportCard% and 100%.
 
 ![This diagram illustrates how service rewards are divided equally then burned by the difference between their ReportCard% and 100%, assuming a burn coefficient of 1.](https://user-images.githubusercontent.com/55156619/154539548-91731703-3f23-4a27-b758-7d7268c50df4.png)
+<!---
+Image was generated using the following link from diagrams.net: https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=POKT%20V1.0%20Utility%20Rewards%20XML.drawio#R7VzbcuI4EP0aqnYfQlm%2B85iQbDK7sztTYasmeVSwAM8ayyOLAPn6kWwZXyTALGBzmYcQqyXL4pxWd6vbScfoTxePBEaTv7GHgo6ueYuOcd%2FRdccC7JMLlqnAsO1UMCa%2Bl4pALhj4H0gINSGd%2BR6KSwMpxgH1o7JwiMMQDWlJBgnB8%2FKwEQ7KT43gGEmCwRAGsvSb79FJKnUtLZc%2FIX88yZ4MNNEzhdlgIYgn0MPzgsh46Bh9gjFNr6aLPgo4dhku6X1%2FrOldLYygkNa54c%2BXUf%2B78dV9GL5akILl8nN4eyNmeYfBTHxhsVi6zBBAoXfLgWStEIdMeDeh04C1ALskeBZ6iD9BYy15SWJ%2B5JVQFgt8RHiKKFmyAfMc2wzaSQHWTEZQAKn%2FXuYGCorHq%2BlWT%2FiKfbYSXRPaqFvpHZkumlp5hhjPyBCJm4pQVuZxt01EIRkjKk3ELgrfOhclTO3Ami6x9q5JvFG0oGWyYkrwf6iPA0xyMkd%2BEFREMPDHIWsOGY2Iye%2FeEaE%2B2xO3omPqex5%2FzN184lM0iOCQP3PODICkEiMcUrGrgblJRfgz0GKjkoheQyuBn%2BlGQYVshQoZ2nptKfGzKxmGTAboXhEd1b1gO%2B3yYdYwaUHA%2FMc6xAoUwThKncrIX3AMJfyKdHV04w143kiTuGU9QHOMHjoM4gDo3TLott3NaCjADgwF7uBowGeevQg0s%2FsD0cSETvAYhzB4yKUV9czHfMY4EiR8R5QuBehwRnGZIrTw6Yu4nV%2B%2F8msGT9q6XxS67peKXQA2cZI6hE2W2Kjp4Pb0XMBxKpTrWrM%2Bx%2B61yS7YgV1GIlm%2B5AN58zWbgzfy25LW8bQipWTDQKt3aPWpu4NHofEB%2F%2Fr0ZfbvF%2Bg8xk9Pz9%2BiG%2BtcNvD%2FpViJ9uE4VoLaKqOtmuQmNm0bjOoNMbpxlZvimwNHNSPoOXCoimreTNvSDhXW9%2FIgJvNxQI7t3VXsU4xqcunhAZcDygEi7z4DV9ee0RwS73qCfVOT4hBDGXs2G%2FKrYn47oAKDEjf2jxnOOm7iBJ1bNgCAaJF3sqsx%2F%2F2MIoJiBle6sXUNj%2FhkfjgOUvYDuOxPoB%2FyLsI%2BGGI3H5xJXbuNIvY5QHHs4zABh2HDvjz7uZsRLuljNBr5Qx8lS0ymBtm6GQ7p0tOFnIGGbUwA1dcwKdC1TdkIOHqT6mXZ6ywAic%2BAGDPp5SqM%2BSw3vQMxVTHWpt7ywd9yftG0PV0GFD61WZp62wOYM0%2FQ2LpkxJiTtCXcm07QyHnjxIPFiZ8i7xxA7gu5wbUyR%2FRGcmeYxDrFISe%2FqTae43fIuOlSbAqAOuemKePT43Eqhz5KTvlSt3AqhlwLp7YJlJwqtmke9B6a0%2FUZg1M3kBLQCjrWhw62tJ%2BatpDrT%2FYXjbxpqVxT%2B7UDOauhNmPbXZN%2BXa5Jd%2Byu69YzY27XadQ3WfVIBdt9E7gu32Q61aB9TbBhHI1RpX10L94%2BAlApZ7vycalhp9Rq4W3%2FsuquuXl1SGSoWdu3rOqW95kF8g11%2BLqq%2BpvJr4pcWInm6GpRpwhn7ak%2F%2BwX0oE2OT7ewuienbqucKlzfZe3bVjjttcrpCddW94pqFLVVS89dXUPlVTXmF1Ze3e90DirxSIMvt27wmxcd8duVAgmL%2BLsaaDvoB3LNUXVCjpgPYaP6%2BUFZU2dIRMn5GVKUDqyRSDm7M%2Fd%2BJ79qPdNQ6wFodP%2FJNc1aauDU1AJjuxqAJGF4RYpgm9XXq1WlbaA1WhK4%2FMyLbufpydMyxWdRsN4v7rAlH9g26tkbPrtavl5NywdqOED9yiyfzvZbVonZaPry00Qj1m%2BVQN9RF9yaunCRVaX9DIJzej4wM7un%2FJbn%2Bb%2B8uZfaVNLphia7kaO9uqnWGVVG5xA6U7Qh7Bvx%2B1fZCu0fxFBkv78S7M2GiIt%2B60M%2B%2FuHHDPJFs2nglFMiFESc237vsstPfCCd%2BLxMihZsGNfCfmdVBE3VM8JM5d4SBSXJc%2FnwOSIonV0sly%2BTP7%2Bw%2FF8aWtBQWz%2BehrJm%2Ftf9abko%2FxcJxsNP
+-->
 
 These incentives enable Pocket Network to probabilistically guarantee a Service Level Agreement for applications.
 

@@ -2,7 +2,7 @@
 
 ## Netizen
 
-![](broken-reference)
+![](../../../.gitbook/assets/dev\_banner1.png)
 
 So you want to be a full-fledged Cyberpunk? Joining our elite is not for the faint of heart. You must first prove your worth as a **Netizen** by **completing the following bounty** and by providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel on Discord.
 
@@ -18,7 +18,7 @@ To verify the number of relays sent by you through the Portal, you need to send 
 
 ## Savant
 
-![](broken-reference)
+![](../../../.gitbook/assets/dev\_banner2.png)
 
 So you aren’t a poser! Now let’s see if you're worthy to join the ranks of the Savants. To earn this title, you must **complete at least 5 out of 9 of the following bounties**, once again providing evidence in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel on Discord.
 
@@ -61,7 +61,7 @@ This bounty is split into 4 parts, each worth 1 point towards your 5/9 target:
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
 
-![](broken-reference)
+![](../../../.gitbook/assets/dev\_banner3.png)
 
 Well done Savant, we recognize the trials you have taken on and the skills you have acquired to reach this point. The bounties at this point are the ones that will build lasting resilience and autonomy for the future we seek to create. **Complete all bounties from every rank of the App Developer path** then submit the `!become-cyberpunk` command to enter the elite of the elite, the pantheon of Cyberpunks.
 

@@ -10,7 +10,7 @@ First, you need to get an endpoint from the [Pocket Portal](https://www.portal.p
 
 Then you need to get the Gateway ID
 
-![](broken-reference)
+![](../../.gitbook/assets/portal\_app.png)
 
 and insert it like so
 
