@@ -44,6 +44,8 @@ The following table shows the full list of currently-supported mainnet RelayChai
 | Harmony Shard 3                      | harmony-3                 | 0043         | -                 |
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         | -                 |
 | IoTeX                                | iotex-mainnet             | 0044         | Y                 |
+| Moonbeam                            | moonbeam-mainnet               | 0050         | -                 |
+| Moonriver                           | moonriver-mainnet               | 0051         | -                 |
 | OKExChain                            | oec-mainnet               | 0047         | Y                 |
 | Pocket Network                       | mainnet                   | 0001         | Y                 |
 | Polygon                              | poly-mainnet              | 0009         | Y                 |
