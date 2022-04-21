@@ -45,7 +45,7 @@ The Tendermint BFT consensus algorithm has served Pocket Network well but will h
 
 We will be solving these issues in v1.0 by switching to our own implementation of the HotStuff BFT consensus algorithm: HotPocket. The biggest advantage of this algorithm is that it uses validator-specific structured gossip and optimistic responsiveness to significantly reduce communication complexity.
 
-![](broken-reference)
+![](../.gitbook/assets/hot\_stuff.png)
 
 * **Validator-Specific Structured Gossip:** HotPocket selects a small group of nodes to be responsible for listening for messages and then broadcasting gossip to everyone. This means instead of sharing messages with everyone, nodes only have to share with the selected listeners, which allows communication bandwidth to scale exponentially with the number of Validators.
 * **Optimistic Progress:** HotPocket introduces a new phase in the consensus process. During this phase, Validators must acknowledge that they have seen the block proposal going up for a vote. When it comes to the voting phase, any Validators who did not acknowledge the proposal can be dismissed and the chain can move on with majority consensus as long as the present Validators approve it. Along with this, we have a custom pacemaker module that ensures consistent block times, which are critical for the time-synced mechanisms in the Utility module.
