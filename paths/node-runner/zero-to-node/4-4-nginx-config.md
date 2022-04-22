@@ -18,7 +18,7 @@ To configure nginx, do the following:
     ```bash
     sudo nano /etc/nginx/sites-available/pocket
     ```
-3 Add the following code but change the hostname values (`pokt001.pokt.run`) to your node's DNS hostname:
+3. Add the following code but change the hostname values (`pokt001.pokt.run`) to your node's DNS hostname:
     ```nginx {27,36-37}
     server {
         listen 80 default_server;
