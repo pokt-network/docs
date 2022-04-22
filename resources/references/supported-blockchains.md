@@ -62,7 +62,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Avalanche Fuji                       | avax-fuji                 | 000E         |
 | Binance Smart Chain Testnet          | bsc-testnet               | 0011         |
 | Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         |
-| Bitcoin                              | btc-mainnet               | 0002         |
 | Evmos                                | evmos-mainnet             | 0046         |
 | Harmony Shard 0 Archival             | harmony-0-archival        | 0A40         |
 | Harmony Shard 1                      | harmony-1                 | 0041         |
