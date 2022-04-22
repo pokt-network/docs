@@ -21,6 +21,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Ethereum Kovan                       | poa-kovan                 | 0024         |
 | Ethereum Rinkeby                     | eth-rinkeby               | 0025         |
 | Ethereum Ropsten                     | eth-ropsten               | 0023         |
+| Fantom                               | fantom-mainnet            | 0049         |
 | FUSE                                 | fuse-mainnet              | 0005         |
 | FUSE Archival                        | fuse-archival             | 000A         |
 | Gnosis Chain                         | gnosischain-mainnet       | 0027         |
@@ -72,6 +73,7 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
 | Moonbeam                             | moonbeam-mainnet          | 0050         |
 | Moonriver                            | moonriver-mainnet         | 0051         |
+| NEAR                                 | near-mainnet              | 0052         |
 | Polygon Mumbai                       | poly-mumbai               | 000F         |
 | Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
 | Solana Testnet                       | sol-testnet               | 0031         |
