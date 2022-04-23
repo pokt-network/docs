@@ -3,7 +3,7 @@
 The [Secure Shell Protocol](https://en.wikipedia.org/wiki/Secure_Shell) (SSH) is a secure way to connect to your Linode instance from a remote machine - like your local computer. We'll be using SSH to complete the remainder of setup process.
 
 ## SSH from Mac or Linux
-If you're using a Mac, or Linux, on your local machine, you can SSH into your node by doing the following:
+If you're using a Mac, or Linux, on your local computer, you can SSH into your node by doing the following:
 
 - Open a terminal
 - SSH into your node using the following command:
