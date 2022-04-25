@@ -22,7 +22,7 @@ To download and install Pocket Core, do the following:
     ```
 5. Checkout the latest version
     ```bash
-    sudo git checkout tags/RC-0.7.1
+    sudo git checkout tags/RC-0.8.2
     ```
 6. Build project code
     ```bash

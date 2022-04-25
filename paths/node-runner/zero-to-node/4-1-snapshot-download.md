@@ -16,14 +16,16 @@ Here are the steps for download the snapshot using the `wget` command:
     ```bash
     mkdir data && cd data
     ```
-3. Go to the [Pocket Snapshots Repository](https://github.com/pokt-network/pocket-snapshots) and copy the command that begins with `wget -qO- ` and run it while in the `data` directory.
+3. Download the latest snapshot using the following command:
+    ```bash
+    wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar xvfz -
+    ```
+4. Make the pocket user the owner of the `data` directory.
+    ```bash
+    sudo chown -R pocket ~/.pocket/data
+    ```
 
 > NOTE: This process can take a few hours depending on your internet connection.
 
-After the snapshot is downloaded, se permissions on the `data` directory to allow the `pocket` user to read and write to the directory.
-
-```bash
-sudo chown -R pocket ~/.pocket/data
-```
 
 Next, we'll configure the Pocket service using systemd.
