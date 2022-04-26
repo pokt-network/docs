@@ -404,7 +404,7 @@ Stake the account to participate in the Network as a Validator. Staking a Valida
 {% tabs %}
 {% tab title="Command" %}
 ```
-pocket nodes stake custodial <address> <amount> <relay_chains> <serviceURI> mainnet 10000 true
+pocket nodes stake custodial <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
 ```
 {% endtab %}
 
