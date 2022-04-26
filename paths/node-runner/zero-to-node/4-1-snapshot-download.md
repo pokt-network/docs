@@ -27,5 +27,4 @@ Here are the steps for download the snapshot using the `wget` command:
 
 > NOTE: This process can take a few hours depending on your internet connection.
 
-
 Next, we'll configure the Pocket service using systemd.
