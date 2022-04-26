@@ -22,17 +22,15 @@ Also keep it mind that there is a cost for every transaction you send. At the mo
     ```bash
     pocket query balance YourValidatorAddress
     ```
-    > Note: This should be at least 15,051 POKT. You'll want 15,050 to stake and a bit more for network fees.
+    > Note: This should be at least 15,101 POKT. You'll want 15,100 to stake and a bit more for network fees.
 4. Stake your node
     ```bash
-    pocket nodes stake YourValidatorAddress 15050000000 YourChainIds https://YourNodeDnsName:443 mainnet 10000
+    pocket nodes stake custodial YourValidatorAddress 15100000000 YourChainIds https://YourNodeDnsName:443 mainnet 10000 true
     ```
 
-    :::tip
-
-    The `YourChainIds` placeholder above should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only setup `0001`, but if you were relaying to multiple chains each id would be separated by a comma. For example, `0001,0022,0040`.
-
-    :::
+    {% hint style="info" %}
+    The `YourChainIds` placeholder above should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only setup `0001`, but if you were relaying to multiple chains each id would be separated by a comma. For example, `0001,0022,0040`. Also, as of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
+    {% endhint %}
 
 After you send the stake command, you'll be prompted for your `passphrase`, then you should see something like this:
 
