@@ -6,33 +6,33 @@ Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses t
 
 The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter.
 
-| Name                                 | Portal API Prefix         | RelayChainID |
-| ------------------------------------ | ------------------------- | ------------ |
-| Algorand                             | algorand-mainnet          | 0029         |
-| Avalanche                            | avax-mainnet              | 0003         |
-| Binance Smart Chain                  | bsc-mainnet               | 0004         |
-| Binance Smart Chain Archival         | bsc-archival              | 0010         |
-| Boba                                 | boba-mainnet              | 0048         |
-| DFKchain Subnet                      | dfk-mainnet               | 03DF         |
-| Ethereum                             | eth-mainnet               | 0021         |
-| Ethereum Archival                    | eth-archival              | 0022         |
-| Ethereum Archival Trace              | eth-archival-trace        | 0028         |
-| Ethereum Goerli                      | eth-goerli                | 0026         |
-| Ethereum Kovan                       | poa-kovan                 | 0024         |
-| Ethereum Rinkeby                     | eth-rinkeby               | 0025         |
-| Ethereum Ropsten                     | eth-ropsten               | 0023         |
-| Fantom                               | fantom-mainnet            | 0049         |
-| FUSE                                 | fuse-mainnet              | 0005         |
-| FUSE Archival                        | fuse-archival             | 000A         |
-| Gnosis Chain                         | gnosischain-mainnet       | 0027         |
-| Gnosis Chain Archival                | gnosischain-archival      | 000C         |
-| Harmony Shard 0                      | harmony-0                 | 0040         |
-| IoTeX                                | iotex-mainnet             | 0044         |
-| OKExChain                            | oec-mainnet               | 0047         |
-| Pocket Network                       | mainnet                   | 0001         |
-| Polygon                              | poly-mainnet              | 0009         |
-| Polygon Archival                     | poly-archival             | 000B         |
-| Solana                               | sol-mainnet               | 0006         |
+| Name                         | Portal API Prefix    | RelayChainID |
+| ---------------------------- | -------------------- | ------------ |
+| Algorand                     | algo-mainnet         | 0029         |
+| Avalanche                    | avax-mainnet         | 0003         |
+| Binance Smart Chain          | bsc-mainnet          | 0004         |
+| Binance Smart Chain Archival | bsc-archival         | 0010         |
+| Boba                         | boba-mainnet         | 0048         |
+| DFKchain Subnet              | dfk-mainnet          | 03DF         |
+| Ethereum                     | eth-mainnet          | 0021         |
+| Ethereum Archival            | eth-archival         | 0022         |
+| Ethereum Archival Trace      | eth-archival-trace   | 0028         |
+| Ethereum Goerli              | eth-goerli           | 0026         |
+| Ethereum Kovan               | poa-kovan            | 0024         |
+| Ethereum Rinkeby             | eth-rinkeby          | 0025         |
+| Ethereum Ropsten             | eth-ropsten          | 0023         |
+| Fantom                       | fantom-mainnet       | 0049         |
+| FUSE                         | fuse-mainnet         | 0005         |
+| FUSE Archival                | fuse-archival        | 000A         |
+| Gnosis Chain                 | gnosischain-mainnet  | 0027         |
+| Gnosis Chain Archival        | gnosischain-archival | 000C         |
+| Harmony Shard 0              | harmony-0            | 0040         |
+| IoTeX                        | iotex-mainnet        | 0044         |
+| OKExChain                    | oec-mainnet          | 0047         |
+| Pocket Network               | mainnet              | 0001         |
+| Polygon                      | poly-mainnet         | 0009         |
+| Polygon Archival             | poly-archival        | 000B         |
+| Solana                       | sol-mainnet          | 0006         |
 
 ## Pocket Testnet RelayChains
 
