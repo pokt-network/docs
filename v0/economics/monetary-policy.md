@@ -113,6 +113,10 @@ $$
 
 The timestamp of the proposal was Feb 24, 2022, 6:37 GMT (block height: 51909), and the Total Supply Baseline was 945,014,989 POKT.
 
+Also note that the DAO is empowered to recalculate the mint rate more frequently than the above monthly schedule in times of sharp increases or decreases in the amount of relays. In this case, a weekly recalculation may occur.
+
+Recent recalculations:
+
 | Date         | Target inflation rate | Approx. 30-day trailing avg. of daily relays | Mint rate | RelaysToTokensMultiplier |
 | :----------- | :---------------------| :------------------------------------------- | :-------- | :----------------------- |
 | [Initial]    | N/A                   | N/A                                          | 0.010000  | 10000                    |
@@ -120,8 +124,4 @@ The timestamp of the proposal was Feb 24, 2022, 6:37 GMT (block height: 51909), 
 | Mar 25, 2022 | 90%                   | 311,000,000                                  | 0.007498  | 7498                     |
 | Apr 1, 2022  | 90%                   | 403,000,000                                  | 0.005776  | 5776                     |
 | Apr 8, 2022  | 90%                   | 481,000,000                                  | 0.004847  | 4847                     |
-
-Further determinations of the mint rate may will be made on the above dates when the 30-day trailing average of daily relays can be recalculated.
-
-Also note that the DAO is empowered to recalculate the mint rate more frequently than the above monthly schedule in times of sharp increases or decreases in the amount of relays. In this case, a weekly recalculation may occur. 
-
+| Apr 25, 2022 | 80%                   | 693,000,000                                  | 0.002988  | 2988
