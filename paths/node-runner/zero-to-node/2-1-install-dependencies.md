@@ -1,6 +1,6 @@
 # 2-1: Install dependencies
 
-At this point you should be logged in via SSH as the `pocket` user that we setup in the previous step. 
+At this point you should be logged in via SSH as the `pocket` user that we set up in the previous step.
 
 Before we install the Pocket software, there are a few dependencies we'll need to add. But before we install anything, we'll update the existing system packages first.
 
@@ -19,7 +19,7 @@ After the update completes, we're ready to install the dependencies.
 
 ## Installing dependencies
 
-There are a handful of dependencies but installing them won't take long. Also, some might already be installed. So if one of the dependencies exists, you can just move on the the next one.
+There are a handful of dependencies but installing them won't take long. Also, some might already be installed. So if one of the dependencies exists, you can just move on to the next one.
 
 ### git
 

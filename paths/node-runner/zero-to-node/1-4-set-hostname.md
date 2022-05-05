@@ -10,7 +10,7 @@ To set the server hostname use the following steps:
     ```bash
     nano /etc/hostname
     ```
-2. Change the `localhost` value to the fully qualified hostname of for your node (for example, `pokt001.pokt.run`). 
+2. Change the `localhost` value to the fully qualified hostname of your node (for example, `pokt001.pokt.run`).
 3. Save the file with <kbd>Ctrl+O</kbd> and then <kbd>return</kbd>.
 4. Exit nano with <kbd>Ctrl+X</kbd>.
 5. Reboot the node with the following command:

@@ -1,6 +1,6 @@
 # Introduction
 
-This is a step-by-step guid for setting up a Pocket validator node. The goal is to provide as much detail as possible while also keeping things clear and easy follow. 
+This is a step-by-step guide for setting up a Pocket validator node. The goal is to provide as much detail as possible while also keeping things clear and simple to follow.
 
 This guide is broken down into five sections:
 

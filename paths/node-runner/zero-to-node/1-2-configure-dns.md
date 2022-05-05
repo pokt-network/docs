@@ -4,7 +4,7 @@ description: Pocket nodes require a DNS name.
 
 # 1-2: Configure DNS
 
-Pocket nodes require a DNS name. DNS ([Domain Name Service](https://www.cloudflare.com/learning/dns/what-is-dns/)) names are used to map an IP address to more human-friendly names. So rather than rather than referencing a server with an address like `134.23.153.21` we can use a name like `pokt001.pokt.run`. 
+Pocket nodes require a DNS name. DNS ([Domain Name Service](https://www.cloudflare.com/learning/dns/what-is-dns/)) names are used to map an IP address to more human-friendly names. So rather than referencing a server with an address like `134.23.153.21` we can use a name like `pokt001.pokt.run`.
 
 {% hint style="info" %}
  Most domain registrars allow you to add DNS records. The steps are similar but refer to the DNS setup documentation for your provider.

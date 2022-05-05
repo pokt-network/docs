@@ -1,5 +1,5 @@
 ---
-description: First, we'll setup a Linux server.
+description: First, we'll set up a Linux server.
 ---
 
 # 1-1: Setup a server
@@ -29,5 +29,5 @@ To create a Linode instance, do the following:
 For a more detailed guide on setting up a Linode instance, see the [Linode docs](https://www.linode.com/docs/guides/getting-started/). Also, note that the `Atlanta, GA` region was selected for this guide because it supports [NVMe storage](https://www.linode.com/products/block-storage/#nvme-block-storage) which is preferable for running nodes. Most other regions also support NVMe storage but [check here to make sure](https://www.linode.com/blog/cloud-storage/nvme-block-storage-global-rollout/) if you'd like to use another region.
 {% endhint %}
 
-Now that the Linode instance is created and running, you'll need to setup a DNS record that points to the IP address of the Linode instance.
+Now that the Linode instance is created and running, you'll need to set up a DNS record that points to the IP address of the Linode instance.
 

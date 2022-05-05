@@ -2,7 +2,7 @@
 
 Nginx is a web server. We installed it in step 2 but we need to do some additional configuration. 
 
-Nginx uses config files to define servers and routes for incoming requests. For Pocket nodes, nginx needs to relay public requests to a a local http server that pocket core is running. This is referred to as the proxy. We'll also need to proxy requests made by the pocket CLI. For example, when we run the command `pocket query height`, the CLI makes an http request to the node's local http server.
+Nginx uses config files to define servers and routes for incoming requests. For Pocket nodes, nginx needs to relay public requests to a local http server that pocket core is running. This is referred to as the proxy. We'll also need to proxy requests made by the pocket CLI. For example, when we run the command `pocket query height`, the CLI makes an http request to the node's local http server.
 
 ## Config Files
 

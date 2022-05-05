@@ -43,7 +43,7 @@ Another way to see if your node is fully synced is to check the status with the 
 curl http://127.0.0.1:26657/status
 ```
 
-The result should look something like the following. Note the highlighted property `catching_up` which indicates if the node is catching up with the blockchain or fully synced. In example below, the node is fully synced.
+The result should look something like the following. Note the highlighted property `catching_up` which indicates if the node is catching up with the blockchain or fully synced. In the example below, the node is fully synced.
 
 ```json {31}
 {
@@ -90,11 +90,11 @@ The result should look something like the following. Note the highlighted proper
 }
 ```
 
-These commands let you know the node running and connected to the network but you'll also want to make sure your node is accessible other nodes.
+These commands let you know the node running and connected to the network but you'll also want to make sure your node is accessible to other nodes.
 
 ## Make sure your node is visible to other nodes
 
-To test and confirm you node is visible to other nodes on the public network, you'll make an HTTP request using the public DNS name for the node. You can use the following command to make that request. Just change the `pokt001.pokt.run` and to the DNS name for your node. 
+To test and confirm your node is visible to other nodes on the public network, you'll make an HTTP request using the public DNS name for the node. You can use the following command to make that request. Just change the `pokt001.pokt.run` and to the DNS name for your node.
 
 ```bash
 curl https://pokt001.pokt.run:8081/v1

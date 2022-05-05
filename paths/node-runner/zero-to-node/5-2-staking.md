@@ -1,6 +1,6 @@
 # 5-2: Staking your node
 
-To earn POKT rewards, you'll need to stake at least 15,000 POKT. But you should stake at least 15,050 POKT or more to safe. This provides a little room in case your node get slashed (penalized) for some reason.
+To earn POKT rewards, you'll need to stake at least 15,000 POKT. But you should stake at least 15,050 POKT or more to be safe. This provides a little room in case your node gets slashed (penalized) for some reason.
 
 {% hint style="warning" %}
 It's important that you understand the risks associated with staking POKT and running a Pocket node.
@@ -29,7 +29,7 @@ Also keep it mind that there is a cost for every transaction you send. At the mo
     ```
 
     {% hint style="info" %}
-    The `YourChainIds` placeholder above should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only setup `0001`, but if you were relaying to multiple chains each id would be separated by a comma. For example, `0001,0022,0040`. Also, as of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
+    The `YourChainIds` placeholder above should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only set up `0001`, but if you were relaying to multiple chains each id would be separated by a comma. For example, `0001,0022,0040`. Also, as of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
     {% endhint %}
 
 After you send the stake command, you'll be prompted for your `passphrase`, then you should see something like this:
@@ -42,7 +42,7 @@ http://localhost:8082/v1/client/rawtx
 }
 ```
 
-The actual time it takes to stake will very depending when the last block was processed. But generally, it should take less than 15 minutes.
+The actual time it takes to stake will vary depending when the last block was processed. But generally, it should take less than 15 minutes.
 
 ## Confirm your node is live
 

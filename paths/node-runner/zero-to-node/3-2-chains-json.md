@@ -31,4 +31,4 @@ This will prompt you for the following information:
 When you're prompted to add another chain, enter `n` for now.
 
 
-Now we have a chain.json file setup so we can move on test our node.
+Now we have a chain.json file set up, so we can move on to test our node.

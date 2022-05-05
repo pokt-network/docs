@@ -77,7 +77,7 @@ To setup a systemd service for Pocket, do the following:
     ```bash
     sudo systemctl list-units --type=mount
     ```
-    Note: If your pocket data is on a separate partition, you can use the following command to in the `pocket.service` file to mount it before the pocket service starts.
+    Note: If your pocket data is on a separate partition, you can use the following command in the `pocket.service` file to mount it before the pocket service starts.
 
     ```
     After=network.target mnt-data.mount

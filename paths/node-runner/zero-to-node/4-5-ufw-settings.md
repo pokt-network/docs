@@ -1,6 +1,6 @@
 # 4-5: Enable UFW
 
-We're almost done. But before we finish we'll make our server more secure by setting firewall rules to limit network exposure. The [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) (UFW) is a security tool that make configuring the firewall pretty simple. We'll use it to disable unnecessary ports.
+We're almost done. But before we finish we'll make our server more secure by setting firewall rules to limit network exposure. The [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) (UFW) is a security tool that makes configuring the firewall pretty simple. We'll use it to disable unnecessary ports.
 
 ## Ports you need to open
 

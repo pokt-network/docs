@@ -27,7 +27,7 @@ The output from this command should confirm that the certificate was successfull
 
 ## Testing your certificate
 
-There is a command that certbot provides to test your certificate. It's used for testing the auto-renwal of the certificate but it also confirms that the certificate is working. You can run it using the following command:
+There is a command that certbot provides to test your certificate. It's used for testing the auto-renewal of the certificate but it also confirms that the certificate is working. You can run it using the following command:
 ```bash
 sudo certbot renew --dry-run
 ```
