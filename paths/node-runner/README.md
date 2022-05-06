@@ -42,7 +42,7 @@ If you're determined to learn by doing, we recommend using [Node Pilot](https://
 
 ### Hardware
 
-**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 8 GB RAM | 200GB Disk
+**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 16 GB RAM | 200GB Disk
 
 {% hint style="info" %}
 These are just the hardware requirements for your Pocket node. You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that surpass Pocket's.
