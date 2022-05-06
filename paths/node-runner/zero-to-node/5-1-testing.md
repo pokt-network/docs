@@ -1,6 +1,8 @@
 # 5-1: Test everything
 
-At this point your Pocket Node is up and running, but you'll want to test it to confirm. The following are some of the things you can do to test your Pocket Node.
+At this point your Pocket node should be up and running!
+
+But you'll want to test it to confirm. The following are some of the things you can do to test your Pocket Node.
 
 ## Make sure the Pocket process is running
 
@@ -16,11 +18,9 @@ You should see output similar to the following:
   44871 root      20   0 1018268  33948  21448 S   0.0   0.4   0:00.17 pocket
 ```
 
-Next you'll want to check that the node is fully synced with the Pocket blockchain. 
-
 ## Block Height
 
-You can check to see if your node is fully synced a few ways. The easiest way is to run the following command:
+You'll want to check that the node is fully synced with the Pocket blockchain. The easiest way is to run the following command:
 
 
 ```bash
@@ -45,7 +45,7 @@ curl http://127.0.0.1:26657/status
 
 The result should look something like the following. Note the highlighted property `catching_up` which indicates if the node is catching up with the blockchain or fully synced. In the example below, the node is fully synced.
 
-```json {31}
+```json
 {
   "jsonrpc": "2.0",
   "id": -1,
@@ -90,20 +90,21 @@ The result should look something like the following. Note the highlighted proper
 }
 ```
 
-These commands let you know the node running and connected to the network but you'll also want to make sure your node is accessible to other nodes.
-
 ## Make sure your node is visible to other nodes
 
-To test and confirm your node is visible to other nodes on the public network, you'll make an HTTP request using the public DNS name for the node. You can use the following command to make that request. Just change the `pokt001.pokt.run` and to the DNS name for your node.
+You'll also want to make sure your node is accessible to other nodes.
+
+To test and confirm your node is visible to other nodes on the public network, you'll make an HTTP request using the public DNS name for the node. You can use the following command to make that request:
 
 ```bash
 curl https://pokt001.pokt.run:8081/v1
 ```
+{% hint style="info" %}
+As always, don't forget to change `pokt001.pokt.run` to the DNS name for your node.
+{% endhint %}
 
 This should return something like the following. This is the version of pocket-core that is running.
 
 ```bash
-"RC-0.7.0.1"
+"RC-0.8.2"
 ```
-
-

@@ -2,7 +2,7 @@
 
 This is a step-by-step guide for setting up a Pocket validator node. The goal is to provide as much detail as possible while also keeping things clear and simple to follow.
 
-This guide is broken down into five sections:
+This guide is broken down into five parts:
 
 1. Server setup
 2. Software installation
@@ -10,21 +10,22 @@ This guide is broken down into five sections:
 4. Proxy configuration
 5. Going live
 
-The main utility of a Pocket node is to relay transactions to other blockchains. So, Pocket nodes need access to nodes for the blockchains they'll be relaying to. However, the focus of this guide is just on setting up a Pocket node that will relay to the Pocket network - essentially, through itself. So, setting up nodes for other blockchains is beyond the scope of this guide.
+## Background
 
-After completing the steps outlined here, you'll have a fully functional Pocket node up and running. If you choose, you can also opt to stake your node and earn rewards. We'll cover that in this guide but staking is not required unless you want to earn rewards.
+The main utility of a Pocket node is to relay transactions to other blockchains. So, Pocket nodes need access to other nodes for the blockchains they'll be relaying to. However, the focus of this guide is just on setting up a Pocket node that will relay to the Pocket network - essentially, through itself. *Setting up nodes for other blockchains, such as Harmony or Ethereum or any of the other [supported blockchains](../../../resources/references/supported-blockchains.md) is beyond the scope of this guide.*
+
+After completing the steps outlined here, you'll have a fully functional Pocket node up and running. If you choose, you can also opt to stake your node and earn rewards. We'll cover that here, but staking is not required unless you want to earn rewards.
 
 ## Who is this guide for?
 
-This guide is for anyone interested in running Pocket nodes. While the goal is to keep things simple, the assumption is that you have some general blockchain and computer networking knowledge. 
+This guide is for anyone interested in running Pocket nodes. While the goal is to keep things simple, the assumption is that you have some general blockchain and computer networking knowledge, and some Linux terminal experience.
 
-If you're brand new to the concept of blockchain nodes, you've never setup a Linux server, or you're not familiar with Pocket, this guide probably isn't for you.
-
-## What you'll need to complete this guide
+## What you'll need
 
 In order to complete this guide, you'll need:
 
-1. A domain name
-2. The ability to add DNS records for your domain
-3. 15,100 POKT (if you want to stake your node)
-4. About 2-4 hours to complete and test everything
+1. A server connected to the internet
+2. A domain name
+3. The ability to add DNS records for your domain
+4. 15,100 POKT (if you want to stake your node)
+5. About 2-4 hours to complete and test everything
