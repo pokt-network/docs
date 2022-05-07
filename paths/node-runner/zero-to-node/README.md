@@ -4,11 +4,11 @@ Welcome to Zero To Node! This is a step-by-step guide for setting up a Pocket va
 
 This guide is broken down into five parts:
 
-1. Server setup
-2. Software installation
-3. Pocket configuration
-4. Proxy configuration
-5. Going live
+* **[Part 1: Server setup](server-setup.md)**
+* **[Part 2: Software installation](software-install.md)**
+* **[Part 3: Pocket configuration](pocket-config.md)**
+* **[Part 4: Proxy configuration](proxy-config.md)**
+* **[Part 5: Going live](going-live.md)**
 
 ## Background
 

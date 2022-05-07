@@ -2,7 +2,7 @@
 description: Install all the necessary software for your node. Part 2 of 5 in the Zero to Node tutorial.
 ---
 
-# Software installation
+# Part 2: Software installation
 
 This section will help you install all the necessary software for your node.
 

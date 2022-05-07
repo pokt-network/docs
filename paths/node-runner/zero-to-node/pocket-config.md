@@ -2,7 +2,7 @@
 description: Configure your Pocket node. Part 3 of 5 in the Zero to Node tutorial.
 ---
 
-# Pocket configuration
+# Part 3: Pocket configuration
 
 This section will help you configure your instance of Pocket.
 

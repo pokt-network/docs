@@ -2,7 +2,7 @@
 description: Final steps for going live with your node. Part 5 of 5 in the Zero to Node tutorial.
 ---
 
-# Going live
+# Part 5: Going live
 
 This section will details the final steps in going live with your node.
 

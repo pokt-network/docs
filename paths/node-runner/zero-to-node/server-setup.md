@@ -2,7 +2,7 @@
 description: Set up a server to prepare it for being a Pocket node. Part 1 of 5 in the Zero to Node tutorial.
 ---
 
-# Server setup
+# Part 1: Server setup
 
 This section will help you set up and configure a server to prepare it for being a Pocket node.
 

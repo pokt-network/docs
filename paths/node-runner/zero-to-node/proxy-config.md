@@ -2,7 +2,7 @@
 description: Configure the proxy for your node. Part 4 of 5 in the Zero to Node tutorial.
 ---
 
-# Proxy configuration
+# Part 4: Proxy configuration
 
 This section will help you set up the proxy setting on your node.
 
