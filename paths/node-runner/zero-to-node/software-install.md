@@ -86,18 +86,18 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     ```bash
     wget https://dl.google.com/go/go1.17.7.linux-amd64.tar.gz
     ```
+
     {% hint style="info" %}
     Make sure to change the link to point to the latest version of Go you find at the above URL.
     {% endhint %}
-
 3. Extract the archive:
     ```bash
     sudo tar -xvf go1.17.7.linux-amd64.tar.gz
     ```
+
     {% hint style="info" %}
     Make sure to change the command to point to the version of Go you downloaded in the previous step.
     {% endhint %}
-
 4. Set permissions on the extracted files:
     ```bash
     sudo chown -R pocket ./go
@@ -125,6 +125,7 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     ```bash
     go version go1.17.7 linux/amd64
     ```
+
     {% hint style="info" %}
     Make sure the version number matches the version you downloaded.
     {% endhint %}
@@ -166,6 +167,7 @@ To download and install Pocket Core, do the following:
     ```bash
     sudo git checkout tags/RC-0.8.2
     ```
+    
     {% hint style="info" %}
     You can find the latest tag by going here: https://github.com/pokt-network/pocket-core/tags
     {% endhint %}

@@ -311,7 +311,7 @@ To use UFW to configure the firewall:
     sudo ufw enable
     ```
     {% hint style="info" %}
-    Type `y` to confirm.
+    Type "y" to confirm.
     {% endhint %}
 
 2. Set the default to deny all incoming connections:

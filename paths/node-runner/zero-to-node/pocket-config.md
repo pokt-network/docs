@@ -96,6 +96,7 @@ Ubuntu and other UNIX-like systems have a `ulimit` shell command that's used to 
     ```bash
     ulimit -Sn 16384
     ```
+
     {% hint style="info" %}
     The `-Sn` option is for setting the soft limit on the number of open files.
     {% endhint %}
@@ -103,6 +104,7 @@ Ubuntu and other UNIX-like systems have a `ulimit` shell command that's used to 
     ```bash
     ulimit -n
     ```
+    
     {% hint style="info" %}
     The `-n` option is for getting the limit for just the number of open files.
     {% endhint %}

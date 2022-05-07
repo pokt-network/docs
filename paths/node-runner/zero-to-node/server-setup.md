@@ -91,9 +91,10 @@ If you're using a Mac, or Linux, on your local computer, you can SSH into your n
     ```bash
     ssh root@pokt001.pokt.run
     ```
-    {% hint style="info" %}
-    Don't forget to replace `pokt001.pokt.run` with your DNS name.
-    {% endhint %}
+
+{% hint style="info" %}
+Don't forget to replace `pokt001.pokt.run` with your DNS name.
+{% endhint %}
 
 You'll be prompted for your password. This is the root password that you set when you created your Linode.
 
@@ -103,10 +104,9 @@ Windows 10 and later have a built-in SSH client. You can use SSH on Windows by d
 
 - Open the Windows terminal
 - SSH into your node using the following command:
-
-```bash
-ssh root@pokt001.pokt.run
-```
+    ```bash
+    ssh root@pokt001.pokt.run
+    ```
 
 {% hint style="info" %}
 Don't forget to replace `pokt001.pokt.run` with your DNS name.
@@ -155,6 +155,7 @@ To create a new user and home directory, enter the following commands:
     ```bash
     useradd -m -g sudo -s /bin/bash pocket && passwd pocket
     ```
+    
     {% hint style="warning" %}
     If you want to specify the location of the home directory, you can use the `-d` option followed by the path to the home directory.
     {% endhint %}
