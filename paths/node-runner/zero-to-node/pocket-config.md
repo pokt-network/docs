@@ -49,13 +49,10 @@ This will prompt you for the following information:
     ```
     0001
     ```
-- Enter the URL of the network identifier:
+- Enter the URL of the network identifier. Use `http://127.0.0.1:8081/` if you're not running a validator node:
     ```
     http://127.0.0.1:8082/
     ```
-    {% hint style="info" %}
-    Use `http://127.0.0.1:8081/` if you're not running a validator node.
-    {% endhint %}
 
 When you're prompted to add another chain, enter `n` for now.
 
@@ -70,7 +67,7 @@ Now that we have a `chains.json` file set up, so we can move on to test our node
 
 When you start a Pocket node for the first time, it will need to find other nodes (peers) to connect with. To do that we use a file named `genesis.json` with details about peers the node should connect to get on the network.
 
-To create a json file with the genesis information:
+To create a JSON file with the genesis information:
 
 1. Change to the `.pocket/config` directory:
     ```bash
@@ -92,22 +89,14 @@ Ubuntu and other UNIX-like systems have a `ulimit` shell command that's used to 
     ```bash
     ulimit -n
     ```
-2. Increase the ulimit to 16384:
+2. Increase the ulimit to 16384. The `-Sn` option is for setting the soft limit on the number of open files:
     ```bash
     ulimit -Sn 16384
     ```
-
-    {% hint style="info" %}
-    The `-Sn` option is for setting the soft limit on the number of open files.
-    {% endhint %}
-3. Check the new ulimit to confirm that it was set correctly:
+3. Check the new ulimit to confirm that it was set correctly. The `-n` option is for getting the limit for just the number of open files:
     ```bash
     ulimit -n
     ```
-    
-    {% hint style="info" %}
-    The `-n` option is for getting the limit for just the number of open files.
-    {% endhint %}
 
 ### Permanent settings
 

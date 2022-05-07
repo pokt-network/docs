@@ -82,22 +82,14 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     ```bash
     cd ~
     ```
-2. Find the latest version of Go from https://golang.org/dl/ then download it with the following command:
+2. Find the latest version of Go from https://golang.org/dl/ then download it with the following command. (Make sure to change the link below to point to the correct version of Go.)
     ```bash
     wget https://dl.google.com/go/go1.17.7.linux-amd64.tar.gz
     ```
-
-    {% hint style="info" %}
-    Make sure to change the link to point to the latest version of Go you find at the above URL.
-    {% endhint %}
 3. Extract the archive:
     ```bash
     sudo tar -xvf go1.17.7.linux-amd64.tar.gz
     ```
-
-    {% hint style="info" %}
-    Make sure to change the command to point to the version of Go you downloaded in the previous step.
-    {% endhint %}
 4. Set permissions on the extracted files:
     ```bash
     sudo chown -R pocket ./go
@@ -125,13 +117,7 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     ```bash
     go version go1.17.7 linux/amd64
     ```
-
-    {% hint style="info" %}
-    Make sure the version number matches the version you downloaded.
-    {% endhint %}
-    {% hint style="info" %}
-    If the `go version` command doesn't work, try logging out and logging back in.
-    {% endhint %}
+    Make sure the version number matches the version you downloaded. If the `go version` command doesn't work, try logging out and logging back in.
 9. Verify the `GOPATH` and `GOBIN` variables are set correctly:
     ```bash
     go env
@@ -163,14 +149,10 @@ To download and install Pocket Core, do the following:
     ```bash
     cd pocket-core
     ```
-5. Checkout the latest version:
+5. Checkout the latest version. You can find the latest tag by going to https://github.com/pokt-network/pocket-core/tags.
     ```bash
     sudo git checkout tags/RC-0.8.2
     ```
-    
-    {% hint style="info" %}
-    You can find the latest tag by going here: https://github.com/pokt-network/pocket-core/tags
-    {% endhint %}
 6. Build project code:
     ```bash
     go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go

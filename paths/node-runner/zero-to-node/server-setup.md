@@ -151,15 +151,10 @@ At the time of writing, Pocket requires ~200GB for its blockchain data. The foll
 
 To create a new user and home directory, enter the following commands:
 
-1. Create a new user named `pocket`, add it to the `sudo` group, and set the default shell to `bash`:
+1. Create a new user named `pocket`, add it to the `sudo` group, and set the default shell to `bash`. If you want to specify the location of the home directory, you can use the `-d` option followed by the path to the home directory:
     ```bash
     useradd -m -g sudo -s /bin/bash pocket && passwd pocket
     ```
-    
-    {% hint style="warning" %}
-    If you want to specify the location of the home directory, you can use the `-d` option followed by the path to the home directory.
-    {% endhint %}
-
 2. For the rest of this guide, we'll be using the `pocket` user. So now that the `pocket` user is created, you can switch from using `root` to the `pocket` user with the following command:
 
     ```bash

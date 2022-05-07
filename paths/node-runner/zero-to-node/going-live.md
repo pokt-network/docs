@@ -149,13 +149,13 @@ Also keep in mind that there is a cost for every transaction you send. At the mo
     pocket nodes stake custodial {YourValidatorAddress} 15100000000 {ChainIDs} https://{hostname}:443 mainnet 10000 true
     ```
 
-    {% hint style="info" %}
-    The `{ChainIDs}` placeholder should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only set up `0001`, but if you were relaying to multiple chains, each id would be separated by a comma. For example, `0001,0022,0040`.
-    {% endhint %}
-    
-    {% hint style="info" %}
-    As of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
-    {% endhint %}
+{% hint style="info" %}
+The `{ChainIDs}` placeholder should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only set up `0001`, but if you were relaying to multiple chains, each id would be separated by a comma. For example, `0001,0022,0040`.
+{% endhint %}
+
+{% hint style="info" %}
+As of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
+{% endhint %}
 
 After you send the stake command, you'll be prompted for your `passphrase`, then you should see something like this:
 

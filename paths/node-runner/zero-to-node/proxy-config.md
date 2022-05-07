@@ -306,14 +306,10 @@ For running a Pocket node, you'll need to open the following ports:
 
 To use UFW to configure the firewall:
 
-1. Enable UFW:
+1. Enable UFW. When prompted, press `y` to confirm:
     ```bash
     sudo ufw enable
     ```
-    {% hint style="info" %}
-    Type "y" to confirm.
-    {% endhint %}
-
 2. Set the default to deny all incoming connections:
     ```bash
     sudo ufw default deny
