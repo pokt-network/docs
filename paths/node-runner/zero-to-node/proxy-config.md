@@ -6,152 +6,6 @@ description: Configure the proxy for your node. Part 4 of 5 in the Zero to Node 
 
 This section will help you set up the proxy setting on your node.
 
-
-## Download snapshot
-
-Rather than synchronizing your Pocket node from block zero (which could take weeks), you can use a snapshot. A snapshot of the Pocket blockchain is taken every 12 hours and can be downloaded using the instructions on the [Pocket Snapshots Repository](https://github.com/pokt-network/pocket-snapshots) README page. 
-
-{% hint style="info" %}
-As of this writing, the snapshots are refreshed every 12 hours. In the GitHub repo you can look at when the `README.md` file was last updated to determine when the last snapshot was taken. It's best to download the snapshot that is less than a few hours old.
-{% endhint %}
-
-Here are the steps for download the snapshot using the `wget` command:
-
-1. Change into the `.pocket` directory.
-    ```bash
-    cd ~/.pocket
-    ```
-2. Make a directory named `data` and change into it.
-    ```bash
-    mkdir data && cd data
-    ```
-3. Download the latest snapshot using the following command:
-    ```bash
-    wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar xvfz -
-    ```
-4. Make the `pocket` user the owner of the `data` directory.
-    ```bash
-    sudo chown -R pocket ~/.pocket/data
-    ```
-
-{% hint style="warning" %}
-This process can take a few hours depending on your internet connection.
-{% endhint %}
-
-
-## Configure systemd
-
-Next, we'll configure the Pocket service using [systemd](https://en.wikipedia.org/wiki/Systemd), a Linux service manager. This will enable the Pocket node to run and restart even when we're not logged in.
-
-### Creating a systemd service in Linux
-
-To setup a systemd service for Pocket, do the following:
-
-1. Open nano and create a new file called `pocket.service`:
-    ```bash
-    sudo nano /etc/systemd/system/pocket.service
-    ```
-2. Add the following lines to the file:
-
-    ```ini
-    [Unit]
-    Description=Pocket service
-    After=network.target
-    Wants=network-online.target systemd-networkd-wait-online.service
-
-    [Service]
-    User=pocket
-    Group=sudo
-    ExecStart=/home/pocket/go/bin/pocket start
-    ExecStop=/home/pocket/go/bin/pocket stop
-
-    [Install]
-    WantedBy=default.target
-    ```
-3. Make sure the `User` is set to the user that will run the Pocket service.
-4. Make sure the `ExecStart` and `ExecStop` paths are set to the path for the Pocket binary.
-5. Save the file with `Ctrl+O` and then `return`.
-6. Exit nano with `Ctrl+X`.
-7. Reload the service files to include the pocket service:
-    ```bash
-    sudo systemctl daemon-reload
-    ```
-8. Start the pocket service:
-    ```bash
-    sudo systemctl start pocket.service
-    ```
-9. Verify the service is running:
-    ```bash
-    sudo systemctl status pocket.service
-    ```
-10. Stop the pocket service:
-    ```bash
-    sudo systemctl stop pocket.service
-    ```
-11. Verify the service is stopped:
-    ```bash
-    sudo systemctl status pocket.service
-    ```
-12. Set the service to start on boot:
-    ```bash
-    sudo systemctl enable pocket.service
-    ```
-13. Verify the service is set to start on boot:
-    ```bash
-    sudo systemctl list-unit-files --type=service
-    ```
-14. Start the pocket service:
-    ```bash
-    sudo systemctl start pocket.service
-    ```
-
-### Other systemctl commands
-
-- To restart the service:
-    ```bash
-    sudo systemctl restart pocket.service
-    ```
-- To prevent the service from starting on boot:
-    ```bash
-    sudo systemctl disable pocket.service
-    ```
-- To see mounted volumes:
-    ```bash
-    sudo systemctl list-units --type=mount
-    ```
-    {% hint style="info" %}
-    If your pocket data is on a separate partition, you can use the following command in the `pocket.service` file to mount it before the pocket service starts.
-        ```
-        After=network.target mnt-data.mount
-        ```
-    {% endhint %}
-
-    This ensures that the network is up and the volume is mounted before the pocket service starts.
-
-
-### Viewing the logs
-
-To view the logs for the pocket service:
-
-```bash
-sudo journalctl -u pocket.service
-```
-
-To view just the last 100 lines of the logs (equivalent to the `tail -f` command):
-
-```bash
-sudo journalctl -u pocket.service -n 100 --no-pager
-```
-
-### Finding Errors
-
-You can use `grep` to find errors in the logs.
-
-```bash
-sudo journalctl -u pocket.service | grep -i error
-```
-
-
 ## Setup SSL
 
 Pocket requires that nodes have an SSL certificate for secure communications. SSL ([Secure Sockets Layer](https://www.cloudflare.com/learning/ssl/what-is-ssl/)) is a layer of security that sits on top of TCP/IP. It's used to encrypt the data sent between a client and a server. To use SSL, you need to have a certificate and a key. Thankfully, getting an SSL certificate is straightforward and free.
@@ -187,7 +41,6 @@ There is a command that certbot provides to test your certificate. It's used for
 sudo certbot renew --dry-run
 ```
 The resulting output should confirm that the certificate is working.
-
 
 ## Configure Nginx
 
@@ -287,7 +140,6 @@ To configure nginx:
     sudo systemctl start nginx
     ```
 
-
 ## Enable UFW
 
 We're almost done, but before we finish we'll make our server more secure by setting firewall rules to limit network exposure. The [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) (UFW) is a security tool that makes configuring the firewall reasonably simple. We'll use it to disable unnecessary ports.
@@ -346,4 +198,4 @@ That's it for the UFW setup. Let's just check the status to confirm the ports ar
 sudo ufw status
 ```
 
-After confirming only the necessary ports are open, you can move on to the next step.
+After confirming only the necessary ports are open, you can move on to the final steps.
