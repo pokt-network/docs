@@ -10,13 +10,21 @@ First, you need to prove your knowledge of and participation in the Pocket Netwo
 
 There are four paths that you can take on this journey:
 
-{% page-ref page="app-developer-path.md" %}
+{% content-ref url="app-developer-path.md" %}
+[app-developer-path.md](app-developer-path.md)
+{% endcontent-ref %}
 
-{% page-ref page="node-runner-path.md" %}
+{% content-ref url="node-runner-path.md" %}
+[node-runner-path.md](node-runner-path.md)
+{% endcontent-ref %}
 
-{% page-ref page="community-shepherd-path.md" %}
+{% content-ref url="community-shepherd-path.md" %}
+[community-shepherd-path.md](community-shepherd-path.md)
+{% endcontent-ref %}
 
-{% page-ref page="governor-path.md" %}
+{% content-ref url="governor-path.md" %}
+[governor-path.md](governor-path.md)
+{% endcontent-ref %}
 
 You will complete a series of quests and report your completion of these quests in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel in Discord. Follow the path guides above to see which quests are up next and how many you need to evolve.
 
@@ -24,14 +32,14 @@ Once you have evolved to the 3rd level of any path, you have qualified for a vot
 
 ## 2. Get Verified
 
-You also need to prove that you are a unique human being by verifying with BrightID. 
+You also need to prove that you are a unique human being by verifying with BrightID.&#x20;
 
 {% hint style="info" %}
 You don’t need to wait until getting Qualified to do this, these can and should be done in parallel.
 {% endhint %}
 
-1. Download the BrightID app on the [iOS](https://apps.apple.com/us/app/brightid/id1428946820) or [Android](https://play.google.com/store/apps/details?id=org.brightid) app stores and connect with Pocket Network community members until the app says you're Verified
-2. Get sponsored by [1Hive](https://faucet.1hive.org/#/) \(we’re working on becoming a sponsor soon\)
+1. Download the BrightID app on the [iOS](https://apps.apple.com/us/app/brightid/id1428946820) or [Android](https://play.google.com/store/apps/details?id=org.brightid) app stores and connect with Pocket Network community members
+2. Get sponsored by [IDchain](https://idchain.one/begin/)
 3. Link your Discord account to your BrightID account by typing `!verify` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, following the instructions sent to you by the BrightID Discord bot, then typing `!me` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel
 
 {% hint style="info" %}
@@ -42,7 +50,7 @@ BrightID doesn’t record or store your personal data. It is a social identity n
 
 Type `!claim-vote` in [t](https://discord.com/channels/553741558869131266/735829050240532561)he [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel. This will only work if you got both Qualified and Verified.
 
-Then type `!airdrop` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel. 
+Then type `!airdrop` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.&#x20;
 
 A bot called called Collab.Land will DM you with a link. Follow this link then sign in using your MetaMask wallet. Collab.Land will then airdrop you the POKTDAO token that represents your vote.
 
@@ -52,6 +60,5 @@ The token is non-transferable so you should choose a wallet that you're happy ho
 
 ## 4. Vote and Subscribe
 
-1. Vote in our [governance dashboard](https://gov.pokt.network/) by connecting the wallet you chose for your POKTDAO airdrop.
-2. Subscribe to 📥proposals \(click Follow\) to make sure you don't miss anything!
-
+1. Vote in our [governance dashboard](https://gov.pokt.network) by connecting the wallet you chose for your POKTDAO airdrop.
+2. Subscribe to 📥proposals (click Follow) to make sure you don't miss anything!
