@@ -1,11 +1,5 @@
 root: ./
 
-​structure:
+structure:
     readme: README.md
-    summary: SUMMARY.md​
-
-redirects:
-    v0/economics/monetary-policy/README: ./v0/economics/monetary-policy.md
-    v0/economics/monetary-policy/monetary-phases: ./v0/economics/monetary-policy.md
-    v0/economics/monetary-policy/application-burn-rate: ./v0/economics/monetary-policy.md
-    v0/economics/monetary-policy/pokt-inflation: ./v0/economics/monetary-policy.md
+    summary: SUMMARY.md
