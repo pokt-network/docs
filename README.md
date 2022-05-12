@@ -1,4 +1,4 @@
-# 👋 Pocket Network Docs Refactor
+# Welcome
 
 The following file hierarchy is to test the new structure of the Pocket Network documentation.
 
