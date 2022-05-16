@@ -33,6 +33,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Polygon                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
 | Solana                       | sol-mainnet          | 0006         |
+| Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
 ## Pocket Testnet RelayChains
 
