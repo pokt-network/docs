@@ -74,8 +74,6 @@ If the IP address matches the IP address of your Linode instance, you're all set
 It can sometimes take longer than a minute for the DNS to propagate. So, be patient if things don't seem to work right away.
 {% endhint %}
 
-
-
 ## Login with SSH
 
 Now that we have a DNS record setup, we will look at using SSH to log in and continue the setup process.
@@ -136,7 +134,6 @@ To set the server hostname use the following steps:
     ```
 6. Wait for the server to reboot then ssh back in as the `root` user before continuing on.
 
-
 ## Create a user
 
 For security reasons it's best not to use the `root` user. Instead, it's better to create a new user and add the user to the `sudo` group.
@@ -160,5 +157,91 @@ To create a new user and home directory, enter the following commands:
     ```bash
     su - pocket
     ```
+
+### Configure SSH Key Login (Optional):
+
+While not required, using an SSH key provides a more secure means of accessing your server.
+
+Using an SSH key removes the ability for credentials to be sniffed in the login process, and removes the pitfalls that can often come with user generated passwords since the key will truly be random.
+
+One important thing to understand, is that without access to the ssh key, you won't be able to log into your node. If you intend on accessing your node from multiple computers, it's recommended that you repeat the Generate Key and Upload Key steps from each computer that you intend to access your node from before moving on to the Disable Root Login and Password Authentication step.
+
+1. Log Out
+
+    At the terminal you'll need to enter the `logout` command twice. The first logout logs you out of the pocket user, back to the root user, and the second logout logs you out of the server and back to your terminal.
+
+2. Generate Key
+
+    Next, we'll generate an ssh key. To do that you'll run the ssh-keygen command. You'll be prompted to specify the file you want to save the key to, and for a password. Specifying a password means that if someone has access to your key, they'd still need to know the password to be able to use it to login. To create the key, do the following:
+
+    - Run the ssh-keygen command
+
+        ```bash
+        ssh-keygen -t rsa -b 4096
+        ```
+    - Enter file in which to save the key (~/.ssh/id_rsa)
+    - Enter a passphrase (empty for no passphrase)
+    - Enter same passphrase again
+
+    The results should looking something like the following:
+
+    ```bash
+    The key fingerprint is:
+    SHA256:jr2MLXIha188wYsp/bNflN9BuqQ3LWCAXJNTtHO7sWk
+    The key's randomart image is:
+    +---[RSA 4096]----+
+    |         o+o     |
+    |      . oo. .    |
+    |       o ..o . . |
+    |       .  . o.+  |
+    |        S  oo= . |
+    |    ...B o..+.B..|
+    |    .o=.B  ..E...|
+    |    +.o*.o .o o  |
+    |   . +o.*+.      |
+    +----[SHA256]-----+
+    ```
+
+3. Upload Key
+
+    Now we're going to upload the key so that we can use it to log into the pocket user. If you choose a different path for the ssh key, it's important to replace the ~/.ssh/id_rsa with the key you used.
+
+    ```bash
+    ssh-copy-id -i ~/.ssh/id_rsa pocket@pokt001.pokt.run
+    ```
+
+4. Disable Root Login and Password Authentication
+
+    Now we're now going to configure ssh to no longer allow root logins, and to not allow any password based login attempts. Meaning without access to the ssh key for the pocket user, no one will be able to log into the server.
+
+    First we'll need to log back into the server:
+
+    ```bash
+    ssh pocket@pokt001.pokt.run
+    ```
+
+    From there, we'll want to open the /etc/ssh/sshd_config file to make some changes to the default configuration:
+
+    ```bash
+    sudo nano /etc/ssh/sshd_config
+    ```
+
+    Once there, we'll need to find and change the following lines:
+
+    - #PermitRootLogin prohibit-password -> PermitRootLogin no
+    - #PubkeyAuthentication yes -> PubkeyAuthentication yes
+    - #PasswordAuthentication yes -> PasswordAuthentication no
+
+    Once changed, Ctrl-O followed by Enter will save the changes, and Ctrl-X will exit nano back to the terminal.
+
+    Then we'll need to restart the ssh server for these changes to take effect:
+
+    ```bash
+    sudo systemctl restart sshd.service
+    ```
+
+5. Verify Everything Works
+
+    The last step is to log out of the server, and try logging back in. If you're no longer prompted for a password, then everything is working as expected.
 
 That's it for the server setup! Continue on to install the necessary software.
