@@ -158,7 +158,7 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 ### RelaysToTokensMultiplier
 
-**Current Value:** 8461
+**Current Value:** 2988
 
 The amount of POKT, denominated in [StakeDenom](protocol-parameters.md#stakedenom), that is minted as block rewards per relay.
 
@@ -238,7 +238,7 @@ The multiplier slash factor for submitting a replay attack. The base slash is di
 
 ### SessionNodeCount
 
-**Current Value:** 5
+**Current Value:** 24
 
 The number of nodes an app will be matched with in a session.
 

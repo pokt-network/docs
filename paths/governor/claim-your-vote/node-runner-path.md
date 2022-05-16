@@ -11,7 +11,7 @@ Greetings aspiring Node Runner, we have heard your call to join us in the battle
 [Stake your node](../../node-runner/#stake-the-validator) successfully in Pocket testnet or mainnet.
 
 {% hint style="info" %}
-To verify that you own the account, you must sign a message using the following CLI command, removing the `<>` and keeping the `""`
+To verify that you own the account, you must sign a message using the following CLI command, removing the `<>` and the `""`
 
 ```
 pocket accounts sign <account address> "account address"

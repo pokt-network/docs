@@ -42,7 +42,7 @@ If you're determined to learn by doing, we recommend using [Node Pilot](https://
 
 ### Hardware
 
-**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 8 GB RAM | 200GB Disk
+**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 16 GB RAM | 200GB Disk
 
 {% hint style="info" %}
 These are just the hardware requirements for your Pocket node. You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that surpass Pocket's.
@@ -83,7 +83,7 @@ git checkout tags/<release tag>
 
 {% tab title="Example" %}
 ```
-git checkout tags/RC-0.6.3
+git checkout tags/RC-0.8.2
 ```
 {% endtab %}
 {% endtabs %}
@@ -131,7 +131,7 @@ pocket version
 
 {% tab title="Response" %}
 ```
-> RC 0.6.3
+> RC-0.8.2
 ```
 {% endtab %}
 {% endtabs %}
@@ -165,7 +165,7 @@ pocket version
 
 {% tab title="Response" %}
 ```
-> RC-0.6.3
+> RC-0.8.2
 ```
 {% endtab %}
 {% endtabs %}
@@ -269,7 +269,7 @@ The absolute minimum node stake (15,000 POKT) is not _practical_ for real-world 
 Send POKT with the following command:
 
 ```
-pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "" false
+pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 ""
 ```
 
 You won't be able to send POKT using your CLI until you have a Validator set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
@@ -368,11 +368,10 @@ Downloading from the latest snapshot will drastically shorten the time it takes 
 
 ```
 mkdir -p "$HOME"/.pocket/data
-cd "$HOME"/.pocket/data
-wget -qO- https://link.us1.storjshare.io/raw/jwspuut4dzrdsms2t732ee4fuheq/pocket-public-blockchains/pocket-network-data-1216-rc-0.6.3.6.tar | tar xvf -
+wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C "$HOME"/.pocket/data
 ```
 
-Other options for downloading the latest snapshot can be found in the [pocket-snapshots repo](https://github.com/pokt-network/pocket-snapshots).
+Other options for downloading the latest snapshot can be found in the [pocket-snapshotter repo](https://github.com/pokt-foundation/pocket-snapshotter).
 
 ### Sync the blockchain
 
@@ -405,22 +404,22 @@ Stake the account to participate in the Network as a Validator. Staking a Valida
 {% tabs %}
 {% tab title="Command" %}
 ```
-pocket nodes stake <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
+pocket nodes stake custodial <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
 ```
 {% endtab %}
 
 {% tab title="Example" %}
 ```
-pocket nodes stake 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks:443 mainnet 10000 false
+pocket nodes stake custodial 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks:443 mainnet 10000 true
 ```
 {% endtab %}
 {% endtabs %}
 
 **You should leave 1 POKT liquid (unstaked) to pay the transaction fees for your node's claim and proof transactions.**
 
-All node runners must always maintain a liquid (unstaked) balance of at least 0.02 POKT in order to submit the claim and proof transactions (which each have a transaction fee of 0.01 POKT) that generate their rewards. If a node successfully submits both the claim and proof, they will earn enough POKT to submit the next claims and proofs, and so on. However, if a node falls below a liquid balance of 0.02 POKT, their revenue will be halted.&#x20;
+All node runners must always maintain a liquid (unstaked) balance of at least 0.02 POKT in order to submit the claim and proof transactions (which each have a transaction fee of 0.01 POKT) that generate their rewards. If a node successfully submits both the claim and proof, they will earn enough POKT to submit the next claims and proofs, and so on. However, if a node falls below a liquid balance of 0.02 POKT, their revenue will be halted.
 
-Claim transactions have 3 sessions, the `ClaimSubmissionWindow`, to be successfully submitted after the conclusion of the session in which the work was done, otherwise they are lost. If a claim transaction fails, Pocket Core will auto-repeat the transaction once in each new session, until the claim is lost. This means your node will automatically take 3 attempts to submit the claim. There is a claim submission window because the global secret key that determines the required proof leaf is revealed once that window closes. Extending the claim submission window would delay the time at which the corresponding proof can be sent and rewards earned.&#x20;
+Claim transactions have 3 sessions, the `ClaimSubmissionWindow`, to be successfully submitted after the conclusion of the session in which the work was done, otherwise they are lost. If a claim transaction fails, Pocket Core will auto-repeat the transaction once in each new session, until the claim is lost. This means your node will automatically take 3 attempts to submit the claim. There is a claim submission window because the global secret key that determines the required proof leaf is revealed once that window closes. Extending the claim submission window would delay the time at which the corresponding proof can be sent and rewards earned.
 
 If you manage to successfully submit the claim transaction, you then have 120 blocks, the `ClaimExpiration` period, to submit the corresponding proof transaction, otherwise the pending claim expires. There is a claim expiration date because otherwise the claims would remain in the state and bloat the blockchain.
 
@@ -529,13 +528,13 @@ Pull the latest container image
 {% tabs %}
 {% tab title="Option 1" %}
 ```
-docker pull poktnetwork/pocket-core:RC-0.6.3
+docker pull poktnetwork/pocket-core:RC-0.8.2
 ```
 {% endtab %}
 
 {% tab title="Option 2" %}
 ```
-docker pull poktnetwork/pocket:RC-0.6.3
+docker pull poktnetwork/pocket:RC-0.8.2
 ```
 {% endtab %}
 {% endtabs %}
