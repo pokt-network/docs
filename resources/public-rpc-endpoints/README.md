@@ -37,3 +37,4 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | [BSC](https://youtu.be/fLTvtBtOEg0)                     | https://bsc-mainnet.gateway.pokt.network/v1/lb/6136201a7bad1500343e248d               | 56         | BNB    | https://bscscan.com                   |
 | [Harmony Mainnet Shard 0](https://youtu.be/w9ZziTu0ROo) | https://harmony-0-rpc.gateway.pokt.network                                            | 1666600000 | ONE    | https://explorer.harmony.one          |
 | EVMos                                                   | https://evmos-testnet.gateway.pokt.network/v1/lb/61aabb3495d548003aebfd1c             | 9000       | PHOTON | https://evm.evmos.org/                |
+| Swimmer Network Mainnet                                 | https://avax-cra-rpc.gateway.pokt.network/                                            | 73772      | TUS    | https://explorer.swimmer.network/     |
