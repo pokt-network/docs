@@ -35,6 +35,12 @@
 
 * [🤖 Node Runner](paths/node-runner/README.md)
   * [🧱 Quickstart Build](https://docs.pokt.network/core/guides/quickstart)
+  * [✈️ Zero To Node](paths/node-runner/zero-to-node/README.md)
+    * [Part 1: Server setup](paths/node-runner/zero-to-node/server-setup.md)
+    * [Part 2: Software installation](paths/node-runner/zero-to-node/software-install.md)
+    * [Part 3: Pocket configuration](paths/node-runner/zero-to-node/pocket-config.md)
+    * [Part 4: Proxy configuration](paths/node-runner/zero-to-node/proxy-config.md)
+    * [Part 5: Going live](paths/node-runner/zero-to-node/going-live.md)
   * [🛩 Node Pilot](https://nodepilot.tech)
   * [⛑ Pay Someone to Run Your Node](https://forum.pokt.network/t/recommended-node-hosting-services/366)
   * [🤑 Maximize your POKT Earnings](paths/node-runner/maximize-your-pokt-earnings.md)
