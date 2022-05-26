@@ -49,7 +49,7 @@ The tumbling mechanism allows for much greater Application security, as the same
 
 The max Application throughput \(in number of requests\) is proportional to the amount staked.
 
-The maximum a Validator in a Session can service for a certain Application is determined using the following formula:
+The maximum a Servicer in a Session can service for a certain Application is determined using the following formula:
 
 `max_app_relays = base_throughput / (# of Servicers in Session * # of relay_chains staked for)`
 
