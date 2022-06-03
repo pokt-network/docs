@@ -66,9 +66,9 @@ Create or contribute (non-grammatical) improvements to a guide on how to run a P
 
 Upgrade your node before the DAO’s chosen upgrade height.
 
+{% hint style="success" %}
 ## Node Runner
 
-{% hint style="success" %}
 #### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
