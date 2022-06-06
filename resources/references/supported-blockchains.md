@@ -29,6 +29,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Harmony Shard 0              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
 | Moonbeam                     | moonbeam-mainnet     | 0050         |
+| Moonriver                    | moonriver-mainnet    | 0051         |
 | NEAR                         | near-mainnet         | 0052         |
 | OKExChain                    | oec-mainnet          | 0047         |
 | Pocket Network               | mainnet              | 0001         |
@@ -74,7 +75,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Harmony Shard 2 Archival             | harmony-2-archival        | 0A42         |
 | Harmony Shard 3                      | harmony-3                 | 0043         |
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
-| Moonriver                            | moonriver-mainnet         | 0051         |
 | Polygon Mumbai                       | poly-mumbai               | 000F         |
 | Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
 | Solana Testnet                       | sol-testnet               | 0031         |
