@@ -37,6 +37,7 @@ redirects:
     pokt-accounts-and-transactions/deposit-processing-and-verification/: ./integrate/accounts-transactions/transaction-verification.md
     pokt-accounts-and-transactions/transaction-construction-and-offline-signature/: ./integrate/accounts-transactions/transaction-construction.md
     resources/references/pokt-denominations/: ./learn/economics/token-economics.md
+    paths/node-runner/: ./node/README.md
     paths/node-runner/zero-to-node/: ./node/tutorials/zero-to-node/README.md
     paths/node-runner/zero-to-node/server-setup/: ./node/tutorials/zero-to-node/server-setup.md
     paths/node-runner/zero-to-node/software-install/: ./node/tutorials/zero-to-node/software-install.md
@@ -44,9 +45,25 @@ redirects:
     paths/node-runner/zero-to-node/proxy-config/: ./node/tutorials/zero-to-node/proxy-config.md
     paths/node-runner/zero-to-node/going-live/: ./node/tutorials/zero-to-node/going-live.md
     paths/node-runner/maximize-your-pokt-earnings/: ./node/faq.md
+    resources/contact-us/: ./more-info.md
     resources/faq/pricing-and-economics/: ./learn/economics/faq.md
     resources/faq/node-configuration/: ./node/faq.md
     resources/faq/node-troubleshooting/: ./node/faq.md
     resources/faq/wpokt/: ./pokt/wpokt.md
     resources/references/seeds/: ./node/seeds.md
     resources/references/protocol-parameters/: ./learn/protocol-parameters.md
+    resources/public-rpc-endpoints/: ./use/public-rpc/README.md
+    resources/public-rpc-endpoints/avalanche-avax-metamask/: ./use/public-rpc/avax.md
+    resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask/: ./use/public-rpc/bsc.md
+    resources/public-rpc-endpoints/dfk-chain-metamask/: ./use/public-rpc/dfk-chain.md
+    resources/public-rpc-endpoints/ethereum-eth-metamask/: ./use/public-rpc/ethereum.md
+    resources/public-rpc-endpoints/evmos-metamask/: ./use/public-rpc/evmos.md
+    resources/public-rpc-endpoints/fuse-metamask/: ./use/public-rpc/fuse.md
+    resources/public-rpc-endpoints/harmony-metamask/: ./use/public-rpc/harmony.md
+    resources/public-rpc-endpoints/iotex-metamask/: ./use/public-rpc/iotex.md
+    resources/public-rpc-endpoints/polygon-metamask/: ./use/public-rpc/polygon.md
+    resources/public-rpc-endpoints/xdai-metamask/: ./use/public-rpc/gnosis-chain.md
+    resources/public-rpc-endpoints/conquest.eth/: ./use/dapps/conquest.eth.md
+    resources/public-rpc-endpoints/dark-forest/: ./use/dapps/dark-forest.md
+    resources/public-rpc-endpoints/mycrypto/: ./use/dapps/mycrypto.md
+    resources/public-rpc-endpoints/rotki/: ./use/dapps/rotki.md
