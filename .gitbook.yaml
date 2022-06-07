@@ -33,7 +33,7 @@ redirects:
     v1/persistence/: ./learn/future/persistence.md
     v1/utility/: ./learn/future/utility.md
     pokt-accounts-and-transactions/: ./integrate/README.md
-    pokt-accounts-and-transactions/address-generation-and-validation: ./integrate/account-generation-validation.md
-    pokt-accounts-and-transactions/deposit-processing-and-verification: ./integrate/transaction-verification.md
-    pokt-accounts-and-transactions/transaction-construction-and-offline-signature: ./integrate/transaction-construction.md
+    pokt-accounts-and-transactions/address-generation-and-validation/: ./integrate/accounts-transactions/account-generation-validation.md
+    pokt-accounts-and-transactions/deposit-processing-and-verification/: ./integrate/accounts-transactions/transaction-verification.md
+    pokt-accounts-and-transactions/transaction-construction-and-offline-signature/: ./integrate/accounts-transactions/transaction-construction.md
     resources/references/pokt-denominations/: ./learn/economics/token-economics.md
