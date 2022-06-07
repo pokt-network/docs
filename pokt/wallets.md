@@ -8,11 +8,11 @@ You can use the [official wallet web app](https://wallet.pokt.network) to create
 
 1. Click 'Create'.
 
-![](assets/ClickCreate.png)
+![](../assets/ClickCreate.png)
 
 2\. Enter a unique passphrase.
 
-![](assets/CreatePassword.png)
+![](../assets/CreatePassword.png)
 
 {% hint style="warning" %}
 The passphrase unlocks/decrypts an encrypted version of the private key that is stored in a Key File. Make sure to store your passphrase safely, if you lose it you will not be able to unlock your Key File.
@@ -20,7 +20,7 @@ The passphrase unlocks/decrypts an encrypted version of the private key that is 
 
 2\. Download the Key File by clicking the blue download icon and click Continue to open your account.
 
-![](assets/CreateSaveKeyFile.png)
+![](../assets/CreateSaveKeyFile.png)
 
 If you accidentally click Back, as long as you downloaded your Key File and saved your passphrase, you will now be able to import your new wallet.
 
@@ -30,9 +30,9 @@ Make sure to store your Key File safely, if you lose it you will only be able to
 
 3\. Click “Reveal Private Key” then enter your passphrase again to reveal the Private Key for your wallet.
 
-![](assets/ClickRevealKey.png)
+![](../assets/ClickRevealKey.png)
 
-![Private Key obfuscated for security](assets/CreateRevealPrivateKey.png)
+![Private Key obfuscated for security](../assets/CreateRevealPrivateKey.png)
 
 {% hint style="warning" %}
 Store your Private Key safely. This will be a second method for you to import your wallet in the event that you lose your Key File or passphrase. However, this is also less secure than the Key File since the Key File is encrypted by your passphrase.
@@ -67,7 +67,7 @@ For more convenience, you may consider using a password manager that can store e
 
 The [official wallet web app](https://wallet.pokt.network) has two methods of importing your wallet. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase.
 
-![](assets/ClickImport.png)
+![](../assets/ClickImport.png)
 
 ### Key File Import
 
@@ -77,7 +77,7 @@ Enter your Key File passphrase, which you specified when creating the wallet.
 
 Click Import.
 
-![](assets/ImportKeyFile.png)
+![](../assets/ImportKeyFile.png)
 
 ### Private Key Import
 
@@ -85,4 +85,4 @@ Enter your Private Key.
 
 Create a temporary passphrase that will secure your session until you log out of the wallet. This is a measure to prevent anyone with access to your computer from stealing your funds.
 
-![](assets/ImportPrivateKey.png)
+![](../assets/ImportPrivateKey.png)

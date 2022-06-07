@@ -5,7 +5,7 @@ structure:
     summary: SUMMARY.md
 
 redirects:
-    buy-store-and-stake-pokt.md: ./pokt/README.md
+    buy-store-and-stake-pokt: ./pokt/README.md
     resources/references/supported-blockchains: ./supported-blockchains.md
     v0/glossary: ./learn/glossary.md
     v0/protocol/README: ./learn/protocol/README.md
