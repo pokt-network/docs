@@ -37,3 +37,16 @@ redirects:
     pokt-accounts-and-transactions/deposit-processing-and-verification/: ./integrate/accounts-transactions/transaction-verification.md
     pokt-accounts-and-transactions/transaction-construction-and-offline-signature/: ./integrate/accounts-transactions/transaction-construction.md
     resources/references/pokt-denominations/: ./learn/economics/token-economics.md
+    paths/node-runner/zero-to-node/: ./node/tutorials/zero-to-node/README.md
+    paths/node-runner/zero-to-node/server-setup/: ./node/tutorials/zero-to-node/server-setup.md
+    paths/node-runner/zero-to-node/software-install/: ./node/tutorials/zero-to-node/software-install.md
+    paths/node-runner/zero-to-node/pocket-config/: ./node/tutorials/zero-to-node/pocket-config.md
+    paths/node-runner/zero-to-node/proxy-config/: ./node/tutorials/zero-to-node/proxy-config.md
+    paths/node-runner/zero-to-node/going-live/: ./node/tutorials/zero-to-node/going-live.md
+    paths/node-runner/maximize-your-pokt-earnings/: ./node/faq.md
+    resources/faq/pricing-and-economics/: ./learn/economics/faq.md
+    resources/faq/node-configuration/: ./node/faq.md
+    resources/faq/node-troubleshooting/: ./node/faq.md
+    resources/faq/wpokt/: ./pokt/wpokt.md
+    resources/references/seeds/: ./node/seeds.md
+    resources/references/protocol-parameters/: ./learn/protocol-parameters.md
