@@ -162,9 +162,7 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 The amount of POKT, denominated in [StakeDenom](protocol-parameters.md#stakedenom), that is minted as block rewards per relay.
 
-{% hint style="danger" %}
-This value will change over time. Please see the section on [POKT Inflation](../../v0/economics/monetary-policy.md#poktinflation) for more information.
-{% endhint %}
+Note that this value will change over time. Please see the section on [POKT inflation](economics/monetary-policy.md#poktinflation) for more information.
 
 ### SignedBlocksWindow
 
@@ -192,11 +190,7 @@ The % of a node's stake that is burned for downtime, where 1 is 100%.
 
 **Current Value:** upokt
 
-POKT amounts are defined by the protocol in this denomination as defined by:
-
-{% content-ref url="pokt-denominations.md" %}
-[pokt-denominations.md](pokt-denominations.md)
-{% endcontent-ref %}
+POKT amounts are defined by the protocol. Read more about [POKT denominations](economics/token.md#POKT-denominations).
 
 ### StakeMinimum
 
@@ -244,9 +238,7 @@ The number of nodes an app will be matched with in a session.
 
 ### SupportedBlockchains
 
-{% content-ref url="supported-blockchains.md" %}
-[supported-blockchains.md](supported-blockchains.md)
-{% endcontent-ref %}
+[List of currently supported blockchains](../supported-blockchains.md)
 
 Only blockchains with sybil-resistant demand from apps are whitelisted to generate revenue for nodes.
 

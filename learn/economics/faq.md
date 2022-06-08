@@ -47,9 +47,9 @@ The following formula:
 
 There is no advantage.
 
-All nodes with the minimum stake have an equal chance of being selected to serve an app during a session. Therefore, to maximize the work you are being selected for, you should split your stake across as many nodes as possible, accounting for the minimum stake plus a buffer as described in [What is the minimum staking amount for a node?](pricing-and-economics.md#what-is-the-minimum-staking-amount-for-a-node)
+All nodes with the minimum stake have an equal chance of being selected to serve an app during a session. Therefore, to maximize the work you are being selected for, you should split your stake across as many nodes as possible, accounting for the minimum stake plus a buffer as described in [What is the minimum staking amount for a node?](faq.md#what-is-the-minimum-staking-amount-for-a-node)
 
-Similarly, tickets for block production are weighted according to POKT staked in comparison to the average, based on the formula [above](pricing-and-economics.md#what-determines-my-odds-of-being-selected-to-validate-a-block), however it makes no difference to you whether this POKT is all staked on one node or across multiple.
+Similarly, tickets for block production are weighted according to POKT staked in comparison to the average, based on the formula [above](faq.md#what-determines-my-odds-of-being-selected-to-validate-a-block), however it makes no difference to you whether this POKT is all staked on one node or across multiple.
 
 ## Why is the number of staked nodes growing faster than the number of staked apps?
 

@@ -10,14 +10,14 @@ Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the
 
 Service Nodes batch all requests received in a session to one Pocket blockchain transaction, a “Proof-of-Relay” that Applications can validate client-side and other nodes can validate in block production, removing the need for Applications to pay constant transaction fees for this work. Once those Proofs-of-Relays are validated by the network, a new block is confirmed, then POKT is minted and issued to the relevant Service Nodes as a reward for their work.
 
-Service Nodes are pseudo-randomly assigned to a Session. Every Service Node who has staked the required node security deposit has an equal chance of being chosen in every available Session within the protocol regardless of how much POKT they have staked. New Sessions get created every 25 blocks with a new, pseudo-random set of Service Nodes.&#x20;
+Service Nodes are pseudo-randomly assigned to a Session. Every Service Node who has staked the required node security deposit has an equal chance of being chosen in every available Session within the protocol regardless of how much POKT they have staked. New Sessions get created every 25 blocks with a new, pseudo-random set of Service Nodes.
 
 ## Node Staking
 
-Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [RC-0.7.0](https://forum.pokt.network/t/pip-7-consensus-rule-change-validator-servicer-split-validator-consolidation), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes on the network. Validator Nodes can claim the 1% block reward for submitting the block.&#x20;
+Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [RC-0.7.0](https://forum.pokt.network/t/pip-7-consensus-rule-change-validator-servicer-split-validator-consolidation), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes on the network. Validator Nodes can claim the 1% block reward for submitting the block.
 
 {% hint style="danger" %}
-While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice.&#x20;
+While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice.
 {% endhint %}
 
 ## **Distribution of Service Nodes**
@@ -107,6 +107,4 @@ If a Service Node submits a fraudulent Relay batch, 100% of their stake will be 
 
 For providing infrastructure access to applications, Validators are rewarded proportional to the work they provide. Pocket Core attempts to send a _Claim_ and subsequent _Proof_ transaction automatically after the `proof_waiting_period` elapses. If both transactions are successful, Tokens are minted to the address of the Validator.
 
-{% content-ref url="monetary-policy.md" %}
-[monetary-policy.md](monetary-policy.md)
-{% endcontent-ref %}
+Read more about [Pocket monetary policy](monetary-policy.md).

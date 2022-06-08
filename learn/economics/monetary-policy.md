@@ -13,11 +13,11 @@ For each Relay served and validated by the protocol, POKT is added to the next b
 | Participant | Parameter Name | Current Allocation |
 | :--- | :--- | :--- |
 | Service Nodes | N/A | 89% |
-| Block Producer | [ProposerAllocation](../../resources/references/protocol-parameters.md#proposerallocation) | 1% |
-| DAO | [DAOAllocation](../../resources/references/protocol-parameters.md#daoallocation) | 10% |
+| Block Producer | [ProposerAllocation](../protocol-parameters.md#proposerallocation) | 1% |
+| DAO | [DAOAllocation](../protocol-parameters.md#daoallocation) | 10% |
 
 {% hint style="info" %}
-Current values of these parameters (and all others) can be found on the [Protocol Parameters](../../resources/references/protocol-parameters.md) page.
+Current values of these parameters (and all others) can be found on the [Protocol Parameters](../protocol-parameters.md) page.
 {% endhint %}
 
 As part of the Proof-of-Stake consensus, each Service Node has a weighted chance of being selected to be the block producer for any given block based on the total amount staked for that given node. The block producer receives a portion of the entire block reward, as does the Pocket DAO, which provides continuous and sustainable funding for supporting the continued adoption and utility of Pocket Network.
@@ -102,7 +102,7 @@ WAGMI targets will be stepped down to 50% over the following five months as foll
 | Jun 24, 2022 | 60% |
 | Jul 24, 2022 | 50% |
 
-The per-node reward (also known by its parameter value [RelaysToTokensMultiplier](../../../resources/references/protocol-parameters.md#relaystotokensmultiplier)) is calculated using:
+The per-node reward (also known by its parameter value [RelaysToTokensMultiplier](../protocol-parameters.md#relaystotokensmultiplier)) is calculated using:
 
 * The 30-day trailing average of daily relays at the time of each adjustment
 * The total supply at the time of the proposal passing ("Total Supply Baseline"):

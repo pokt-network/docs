@@ -15,17 +15,17 @@ Pocket Network uses a native cryptocurrency (POKT) to create a permissionless, t
 Developers, requiring reliable infrastructure and relay amounts for their applications, stake POKT a single time for a guaranteed amount of relays per session for the life of the stake. The amount of POKT required to be staked is directly proportional to the number of relays required. The number of relays allowed per session can be adjusted for price fluctuations of the POKT token through governance mechanisms.
 
 {% hint style="info" %}
-The current price per relay is called `BaseRelaysPerPOKT`, and you can find the current value on the [Protocol Parameters](../../resources/references/protocol-parameters.md#baserelaysperpokt) page.
+The current price per relay is called `BaseRelaysPerPOKT`, and you can find the current value on the [Protocol Parameters](../protocol-parameters.md#baserelaysperpokt) page.
 {% endhint %}
 
-While paying upfront for infrastructure appears to be burdensome at first glance, it has strong advantages and stickiness that help grow network adoption. The use of a token eliminates recurring payments to legacy infrastructure providers, vastly reducing the cost of infrastructure over the lifecycle of an application - _bringing your cost-basis closer to zero the longer the service is used_. Further, the upfront purchase of POKT can be viewed as a recoverable expense because the stake can be sold to another user if the service is no longer required helping to recover any costs associated with the network's use. Instead of recurring payments, developers’ stakes are diluted over time through the inflation of the supply of POKT.&#x20;
+While paying upfront for infrastructure appears to be burdensome at first glance, it has strong advantages and stickiness that help grow network adoption. The use of a token eliminates recurring payments to legacy infrastructure providers, vastly reducing the cost of infrastructure over the lifecycle of an application - _bringing your cost-basis closer to zero the longer the service is used_. Further, the upfront purchase of POKT can be viewed as a recoverable expense because the stake can be sold to another user if the service is no longer required helping to recover any costs associated with the network's use. Instead of recurring payments, developers’ stakes are diluted over time through the inflation of the supply of POKT.
 
 Node Providers also stake POKT but do so on a per-node basis. In exchange for servicing relays for applications, nodes are compensated in POKT. Unlike most traditional block rewards, Pocket Network’s is dynamic; POKT rewards are directly proportional to the number of relays and transaction fees in a given block. A node receives a certain amount of POKT per relay fulfilled and proved, minus certain percentages for both the block producer and the DAO.
 
 {% hint style="info" %}
-The current block producer percentage is called `ProposerAllocation`, and you can find the current value on the [Protocol Parameters](../../resources/references/protocol-parameters.md#proposerallocation) page.
+The current block producer percentage is called `ProposerAllocation`, and you can find the current value on the [Protocol Parameters](../protocol-parameters.md#proposerallocation) page.
 
-Furthermore, the DAO allocation of block rewards is called `DAOAllocation`, and that also can be found on the [Protocol Parameters](../../resources/references/protocol-parameters.md#daoallocation) page.
+Furthermore, the DAO allocation of block rewards is called `DAOAllocation`, and that also can be found on the [Protocol Parameters](../protocol-parameters.md#daoallocation) page.
 {% endhint %}
 
 All nodes in the network have an opportunity to produce a block, but their chances are proportional to their stake.

@@ -45,13 +45,13 @@ The peers on the left and right branches then build their own subsections of the
 
 Since networks are vulnerable to nodes dropping out at any point, if one of the branches does not acknowledge that it received the message, the node that tried to communicate with them will then readjust and send the message to the children that would have received the message from the unresponsive parent.
 
-![A successful transmission to the left and right nodes.](/assets/good\_node\_delivery.png)
+![A successful transmission to the left and right nodes.](../../assets/good-node-delivery.png)
 
-![An unresponsive right node means that the children of that node need to be notified directly](/assets/bad\_node\_delivery.png)
+![An unresponsive right node means that the children of that node need to be notified directly](../../assets/bad-node-delivery.png)
 
 To be 100% certain that all functional nodes received the message, the Double-Daisy-Chain (DDC) cleanup layer provides a reliability mechanism that's used in other gossip algorithms, including epidemic communications. Once the message propagation has reached the next to last layer of the tree, the nodes in the final layer are sent a special "I Got You Want?" (IGYM) message that expects either a Yes/No answer. If the answer is a Yes, the node is forwarded along the full message and they continue said process. If the answer is No, or there is no answer, that node is skipped and the next node in the chain is selected for the same process.
 
-![DDC Cleanup Layer](/assets/ddc.png)
+![DDC Cleanup Layer](../../assets/ddc.png)
 
 ## Gossip Restrictions
 
@@ -65,8 +65,4 @@ The gossip protocol in the Consensus module is a specialized version of RainTree
 
 ## More Details
 
-To read more details about the v1.0 Peer to Peer module spec, follow the link below:
-
-{% content-ref url="https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/" %}
-[Pocket v1.0](https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/)
-{% endcontent-ref %}
+Read more details about the [v1.0 Peer To Peer module spec](https://docs.pokt.network/v1/p2p).

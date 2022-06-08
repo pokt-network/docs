@@ -58,14 +58,10 @@ Some of the examples that node runners now have access to include:
 * Connecting multiple `pocket-core` processes that represent at least two nodes in close physical proximity to the same database.
 * Connecting multiple `pocket-core` process that represent multiple nodes to a database cluster to allow a collection of nodes to efficiently scale-up storage needs
 
-![Some example deployment configurations available when allowing for a Client Server architecture](/assets/PersistenceClientServer.jpg)
+![Some example deployment configurations available when allowing for a Client Server architecture](../../assets/PersistenceClientServer.jpg)
 
 Since nodes know the maximum amount of relays that the applications it's serving can request, this gives node runners the ability to save costs by allocating resources only as needed.
 
 ## More Details
 
-To read more details about the v1.0 Persistence module spec, follow the link below:
-
-{% content-ref url="https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/" %}
-[Pocket v1.0](https://app.gitbook.com/o/-MVU655bEpKMcmpTxlOG/s/sC7vRmj1fRzIvz4vDUe3/)
-{% endcontent-ref %}
+Read more details about the [v1.0 Persistence module spec](https://docs.pokt.network/v1/persistence).
