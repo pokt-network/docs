@@ -2,7 +2,9 @@
 
 Pocket Network is the TCP/IP of Web3 node infrastructure – a multi-chain relay protocol that incentivizes RPC nodes to provide DApps and their users with unstoppable Web3 access.
 
-Pocket supports [dozens of blockchains](supported-blockchains.md), with more being added all the time.
+Pocket supports dozens of blockchains, with more being added all the time.
+
+[**View the list of supported blockchains**](supported-blockchains.md)
 
 ![](assets/pocket_network_overview.png)
 
@@ -17,7 +19,7 @@ Using Pocket Network is as easy as any other RPC. If you're already using a cent
 
 ### Run a POKT Node
 
-* [Learn the basics of staking POKT](pokt/stake.md)
+* [Learn the basics of managing POKT](pokt/README.md)
 * [Learn how to run your own node](node/README.md)
 
 ### Shape Pocket Network's Future
