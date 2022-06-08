@@ -6,7 +6,7 @@ description: Generate and validate accounts on the native POKT blockchain.
 
 The simplest way to generate new accounts, or addresses, on the POKT blockchain is to use the official Pocket client, [PocketJS](https://github.com/pokt-network/pocket-js).
 
-### Creating a New Account
+## Creating a New Account
 
 To create a new account on the POKT blockchain and export it:
 
@@ -47,7 +47,7 @@ const exportedPPK = await pocket.keybase.exportPPK(
 console.log(exportedPPK)
 ```
 
-### Importing an Existing Account
+## Importing an Existing Account
 
 To import an existing account using either the raw private key or the encrypted JSON PPK:
 
@@ -82,7 +82,7 @@ const importedPPKAccount = await pocket.keybase.importPPK(
 )
 ```
 
-### Verifying an Address
+## Verifying an Address
 
 To verify a POKT blockchain address, public key, or raw private key:
 

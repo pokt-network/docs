@@ -69,7 +69,7 @@
     * [pypocket](https://github.com/pokt-foundation/pypocket)
     * [pocket-go](https://github.com/pokt-foundation/pocket-go)
   * [Accounts and Transactions](integrate/accounts-transactions/README.md)
-    * [Account Generation and Validation](integrate/accounts-transactions/account-generation-and-validation.md)
+    * [Account Generation and Validation](integrate/accounts-transactions/account-generation-validation.md)
     * [Transaction Construction](integrate/accounts-transactions/transaction-construction.md)
     * [Transaction Verification](integrate/accounts-transactions/transaction-verification.md)
 * [Join Us](community/README.md)
