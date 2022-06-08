@@ -45,7 +45,10 @@ redirects:
     paths/node-runner/zero-to-node/proxy-config/: ./node/tutorials/zero-to-node/proxy-config.md
     paths/node-runner/zero-to-node/going-live/: ./node/tutorials/zero-to-node/going-live.md
     paths/node-runner/maximize-your-pokt-earnings/: ./node/faq.md
+    paths/app-developer/: ./use/get-endpoint.md
+    paths/app-developer/use-ethersjs: ./use/get-endpoint.md
     resources/contact-us/: ./more-info.md
+    resources/faq/app-integration/: ./use/get-endpoint.md
     resources/faq/pricing-and-economics/: ./learn/economics/faq.md
     resources/faq/node-configuration/: ./node/faq.md
     resources/faq/node-troubleshooting/: ./node/faq.md
@@ -67,3 +70,4 @@ redirects:
     resources/public-rpc-endpoints/dark-forest/: ./use/dapps/dark-forest.md
     resources/public-rpc-endpoints/mycrypto/: ./use/dapps/mycrypto.md
     resources/public-rpc-endpoints/rotki/: ./use/dapps/rotki.md
+    
