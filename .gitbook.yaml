@@ -47,6 +47,12 @@ redirects:
     paths/node-runner/maximize-your-pokt-earnings/: ./node/faq.md
     paths/app-developer/: ./use/get-endpoint.md
     paths/app-developer/use-ethersjs: ./use/get-endpoint.md
+    paths/contributor/: ./community/contribute/README.md
+    paths/governor/claim-your-vote/: ./community/trophies/README.md
+    paths/governor/claim-your-vote/app-developer-path/: ./community/trophies/add-developers.md
+    paths/governor/claim-your-vote/community-shepherd-path/: ./community/trophies/community-shepherds.md
+    paths/governor/claim-your-vote/governor-path/: ./community/trophies/contributors.md
+    paths/governor/claim-your-vote/node-runner-path/: ./community/trophies/node-runners.md
     resources/contact-us/: ./more-info.md
     resources/faq/app-integration/: ./use/get-endpoint.md
     resources/faq/pricing-and-economics/: ./learn/economics/faq.md
