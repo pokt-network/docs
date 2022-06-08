@@ -53,6 +53,10 @@ redirects:
     paths/governor/claim-your-vote/community-shepherd-path/: ./community/trophies/community-shepherds.md
     paths/governor/claim-your-vote/governor-path/: ./community/trophies/contributors.md
     paths/governor/claim-your-vote/node-runner-path/: ./community/trophies/node-runners.md
+    paths/governor/submit-a-proposal/: ./community/governance/proposals.md
+    paths/governor/submit-a-proposal/pip-pocket-improvement-proposal/: ./community/governance/proposals.md
+    paths/governor/submit-a-proposal/pep-pocket-ecosystem-proposal/: ./community/governance/proposals.md
+    paths/governor/submit-a-proposal/pup-parameter-update-proposal/: ./community/governance/proposals.md
     resources/contact-us/: ./more-info.md
     resources/faq/app-integration/: ./use/get-endpoint.md
     resources/faq/pricing-and-economics/: ./learn/economics/faq.md
