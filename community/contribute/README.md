@@ -14,9 +14,4 @@ To submit an RFP, head to the [RFP forum category](https://forum.pokt.network/c/
 
 A PEP is a type of proposal that requests a POKT grant from the DAO treasury. You could get a POKT grant for contributions to the Pocket Network ecosystem.
 
-For more details on submitting your proposal, follow the link below:
-
-{% page-ref page="governor/submit-a-proposal/" %}
-
-
-
+Read more about [submitting a proposal](../governance/proposals.md).

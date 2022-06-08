@@ -8,11 +8,7 @@ Greetings fledgling DAOist and aspiring Biohacker. It is now time to augment you
 
 ### Anode
 
-Author any successful proposal.
-
-{% content-ref url="../submit-a-proposal/" %}
-[submit-a-proposal](../governance/proposals.md)
-{% endcontent-ref %}
+Author any successful [proposal](../governance/proposals.md)
 
 ### Neurolink
 

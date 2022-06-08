@@ -13,7 +13,6 @@
   * [Protocol](learn/protocol/README.md)
     * [Servicing](learn/protocol/servicing.md)
     * [Security](learn/protocol/security.md)
-    * [POKT Denominations](learn/protocol/pokt-denominations.md)
   * [Economics](learn/economics/README.md)
     * [Token Economics](learn/economics/token.md)
     * [App Economics](learn/economics/apps.md)
