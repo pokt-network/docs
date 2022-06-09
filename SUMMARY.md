@@ -62,7 +62,7 @@
       * [Going live](node/tutorials/zero-to-node/going-live.md)
   * [Automated Deployments](node/automated-deployments.md)
   * [Node-Hosting Services](node/hosting-services.md)
-  * [FAQ](node/faq.md)
+  * [Node FAQ](node/faq.md)
 * [Integrate](integrate/README.md)
   * [SDKs](integrate/sdk/README.md)
     * [PocketJS](https://github.com/pokt-foundation/pocket-js)

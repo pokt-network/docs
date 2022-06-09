@@ -191,9 +191,7 @@ pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pok
 {% endtab %}
 {% endtabs %}
 
-{% content-ref url="../../resources/references/seeds.md" %}
-[seeds.md](seeds.md)
-{% endcontent-ref %}
+See the section on [seeds](seeds.md) for more details.
 
 {% hint style="warning" %}
 Ensure the node is all the way synced before proceeding to the next step.
@@ -365,14 +363,5 @@ You can earn a vote in the DAO and help shape the future of Pocket Network, incl
 
 Once you've staked your node successfully, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
 
-This is your first trophy on the path to earning a vote in the DAO:
+This is your first trophy on the path to [earning a vote in the DAO](../community/trophies/README.md). Learn more on the [Node Runners](../community/trophies/node-runners.md) page.
 
-{% content-ref url="../governor/claim-your-vote/node-runner-path.md" %}
-[node-runner-path.md](../governor/claim-your-vote/node-runner-path.md)
-{% endcontent-ref %}
-
-For more details on how to join the DAO, go here:
-
-{% content-ref url="../governor/claim-your-vote/" %}
-[claim-your-vote](../governor/claim-your-vote/)
-{% endcontent-ref %}
