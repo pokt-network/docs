@@ -16,6 +16,3 @@ To get started connecting to Pocket's node infrastructure for xDAI in Dark Fores
 4. Copy and paste this endpoint URL into the text box[`https://poa-xdai.gateway.pokt.network/v1/lb/60b13899d3279c22da2a444d`](https://poa-xdai.gateway.pokt.network/v1/lb/60b13899d3279c22da2a444d)``
 5. Click "Change RPC URL" to Save
 6. Make a move!
-
-
-

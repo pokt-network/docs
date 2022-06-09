@@ -22,7 +22,7 @@ Be sure to start in the 👋welcome channel, where you can choose the topics you
 
 You can find us on the following sites:
 
-* [Twitter](twitter.com/poktnetwork)
+* [Twitter](https://twitter.com/poktnetwork)
 * [YouTube](https://www.youtube.com/pocketnetwork)
-* [Twitch](twitch.tv/poktnetwork)
+* [Twitch](https://twitch.tv/poktnetwork)
 * [Pocket Blog](https://www.blog.pokt.network)

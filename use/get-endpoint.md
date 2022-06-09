@@ -122,7 +122,7 @@ curl -X POST ^
 
 All endpoints have a similar structure, as they all have:
 
-* The network prefix; see the RelayChainIDs [here](../../resources/references/supported-blockchains.md)
+* The network prefix; see the RelayChainIDs [here](../supported-blockchains.md)
 * The main URL (`gateway.pokt.network/v1/`)
 * If it's a load-balanced endpoint, it will also have the LB prefix (`/lb/`)
 * The Gateway ID.
@@ -133,21 +133,11 @@ If you ever need to switch chains for your endpoint, you have the ability to do 
 
 ### Earn Trophies, Join the DAO
 
-You can earn a vote in the DAO and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as the cost of a relay.
+You can earn a [vote in the DAO](../community/governance/README.md) and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as the cost of a relay.
 
 Once you've sent 1k relays through the Portal, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
 
-This is your first trophy on the path to earning a vote in the DAO:
-
-{% content-ref url="../governor/claim-your-vote/app-developer-path.md" %}
-[app-developer-path.md](../governor/claim-your-vote/app-developer-path.md)
-{% endcontent-ref %}
-
-For more details on how to join the DAO, go here:
-
-{% content-ref url="../governor/claim-your-vote/" %}
-[claim-your-vote](../governor/claim-your-vote/)
-{% endcontent-ref %}
+This is your first trophy on the path to earning a vote in the DAO on the [App Developer path](../node/trophies/app-developers.md):
 
 
 ## ♦ Use EthersJS
