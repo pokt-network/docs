@@ -26,7 +26,7 @@ Highlight (and fix where possible) inconsistencies/bugs or other improvements in
 
 ### Bird\_Seed
 
-Tweet about Pocket in a meaningful way, retweeted by 3 (BrightID) Verified Shepherd's or Pocket core team members.
+Tweet about Pocket in a meaningful way, retweeted by 3 Verified Shepherd's or Pocket core team members.
 
 ### Swarm
 
@@ -50,7 +50,7 @@ Generate 1 unique idea for future iterations of the trophy system.
 
 ### Leaflet
 
-Create a Pocket meme and get at least 5 dab reacts from (BrightID) Verified Shepherd's or Pocket core team members.
+Create a Pocket meme and get at least 5 dab reacts from Verified Shepherd's or Pocket core team members.
 
 ### Fertilizer
 
@@ -86,13 +86,13 @@ Mentor anyone into achieving the Farmer rank.
 
 Create educational content for Pocket.
 
-## Regen
-
 {% hint style="success" %}
 #### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
+
+## Regen
 
 ![](../../../.gitbook/assets/community\_banner3.png)
 
@@ -100,7 +100,7 @@ You're now qualified for a vote in our DAO. Follow the rest of the steps outline
 
 ### Telepathy
 
-Create meaningful content about Pocket Network, vouched for by 3 (BrightID) Verified Shepherd's or Pocket core team members.
+Create meaningful content about Pocket Network, vouched for by 3 Verified Shepherd's or Pocket core team members.
 
 ### Topographics
 
