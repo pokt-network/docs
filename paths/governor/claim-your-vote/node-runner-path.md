@@ -66,13 +66,13 @@ Create or contribute (non-grammatical) improvements to a guide on how to run a P
 
 Upgrade your node before the DAO’s chosen upgrade height.
 
-## Node Runner
-
 {% hint style="success" %}
 #### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
+
+## Node Runner
 
 ![](../../../.gitbook/assets/node\_banner3.png)
 
@@ -96,11 +96,11 @@ Participate in beta testing for 3 Pocket Core versions (excluding the one you di
 
 ### Satellite
 
-Maintain a dispatch node and have 3 (BrightID) Verified Netizens or Pocket core team members vouch that they have included you in their dispatch list.
+Maintain a dispatch node and have 3 Verified Netizens or Pocket core team members vouch that they have included you in their dispatch list.
 
 ### Seedbank
 
-Maintain a seed node and have 3 (BrightID) Verified Nodégés or Pocket core team members vouch that they have included you in their seed list.
+Maintain a seed node and have 3 Verified Nodégés or Pocket core team members vouch that they have included you in their seed list.
 
 ### Relay\_Station
 
