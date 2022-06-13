@@ -53,13 +53,13 @@ This bounty is split into 4 parts, each worth 1 point towards your 5/9 target:
 3. Send **7.5 million relays**
 4. Send **10 million relays**
 
-## Cyberpunk
-
 {% hint style="success" %}
 ### Qualified!
 
 You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
 {% endhint %}
+
+## Cyberpunk
 
 ![](../../../.gitbook/assets/dev\_banner3.png)
 
@@ -67,15 +67,15 @@ Well done Savant, we recognize the trials you have taken on and the skills you h
 
 ### Token\_Handler
 
-Build tooling for [AAT](../../../v0/glossary.md#application-authentication-token-aat) management and have 3 (BrightID) Verified Savants or Pocket core team members vouch for the tool's quality.
+Build tooling for [AAT](../../../v0/glossary.md#application-authentication-token-aat) management and have 3 Verified Savants or Pocket core team members vouch for the tool's quality.
 
 ### Optimizer
 
-Build tooling for optimizing app stake prices and have 3 (BrightID) Verified Savants or Pocket core team members vouch for the tool's quality.
+Build tooling for optimizing app stake prices and have 3 Verified Savants or Pocket core team members vouch for the tool's quality.
 
 ### Founded
 
-Create or take ownership of an application, SDK, or tool that is vouched for by at least 3 (BrightID) Verified Savants or Pocket core team members.
+Create or take ownership of an application, SDK, or tool that is vouched for by at least 3 Verified Savants or Pocket core team members.
 
 ### Ventured
 
