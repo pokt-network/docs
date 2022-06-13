@@ -28,34 +28,32 @@ There are four paths that you can take on this journey:
 
 You will complete a series of quests and report your completion of these quests in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel in Discord. Follow the path guides above to see which quests are up next and how many you need to evolve.
 
-Once you have evolved to the 3rd level of any path, you have qualified for a vote in the DAO. Type `!qualify` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
+Once you have evolved to the 3rd level of any path, you have qualified for a vote in the DAO. Type `!qualify` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel to obtain the Qualified role.
 
 ## 2. Get Verified
 
-You also need to prove that you are a unique human being by verifying with BrightID.&#x20;
+If you want to be verified by our existing Voters, and obtain the Verified role, you must do both of the following:
 
-{% hint style="info" %}
-You don’t need to wait until getting Qualified to do this, these can and should be done in parallel.
-{% endhint %}
+1. Post a selfie to the #✅verify channel holding a piece of paper with your Discord username (e.g. username#1234) and the day's date
+2. Post a message to the #✅verify channel with the following template:
 
-1. Download the BrightID app on the [iOS](https://apps.apple.com/us/app/brightid/id1428946820) or [Android](https://play.google.com/store/apps/details?id=org.brightid) app stores and connect with Pocket Network community members
-2. Get sponsored by [IDchain](https://idchain.one/begin/)
-3. Link your Discord account to your BrightID account by typing `!verify` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel, following the instructions sent to you by the BrightID Discord bot, then typing `!me` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel
+> !verify
+> 
+> My favorite thing about Pocket Network:
+> 
+> Why I want to be a Voter:
+> 
 
-{% hint style="info" %}
-BrightID doesn’t record or store your personal data. It is a social identity network that measures the likelihood that someone has duplicate accounts through the creation and analysis of the social graph. Read the [whitepaper](https://www.brightid.org/whitepaper) for more details.
-{% endhint %}
+Once you have done this, if existing Voters are comfortable you are not a malicious agent, they will approve you. If 33% of existing Voters approve you in the next 7 days, you'll be officially verified and one step closer to obtaining your own vote in our DAO.
 
 ## 3. Claim Your Vote
 
-Type `!claim-vote` in [t](https://discord.com/channels/553741558869131266/735829050240532561)he [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel. This will only work if you got both Qualified and Verified.
+Type `!claim-vote` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel. This will only work if you got both the Qualified and Verified roles.
 
-Then type `!airdrop` in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.&#x20;
-
-A bot called called Collab.Land will DM you with a link. Follow this link then sign in using your MetaMask wallet. Collab.Land will then airdrop you the POKTDAO token that represents your vote.
+Then DM jackal to claim your POKTDAO token airdrop (our airdrop bot is currently out of commission). 
 
 {% hint style="info" %}
-The token is non-transferable so you should choose a wallet that you're happy holding the token in forever.
+The token is non-transferable so you should choose a MetaMask our WalletConnect wallet that you're happy holding the token in forever.
 {% endhint %}
 
 ## 4. Vote and Subscribe
