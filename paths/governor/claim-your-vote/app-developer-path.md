@@ -56,7 +56,7 @@ This bounty is split into 4 parts, each worth 1 point towards your 5/9 target:
 {% hint style="success" %}
 ### Qualified!
 
-You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
+Once you've reached Savant, you're now qualified for a vote in our DAO.
 {% endhint %}
 
 ## Cyberpunk
