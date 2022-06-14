@@ -79,7 +79,7 @@ Create educational content for Pocket.
 {% hint style="success" %}
 #### Qualified!
 
-You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
+Once you've reached Shepherd, you're now qualified for a vote in our DAO.
 {% endhint %}
 
 ## Regen

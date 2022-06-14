@@ -69,7 +69,7 @@ Upgrade your node before the DAO’s chosen upgrade height.
 {% hint style="success" %}
 #### Qualified!
 
-You're now qualified for a vote in our DAO. Follow the rest of the steps outlined here to claim your vote:
+Once you've reached Nodemad, you're now qualified for a vote in our DAO.
 {% endhint %}
 
 ## Node Runner
