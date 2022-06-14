@@ -6,34 +6,34 @@ Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses t
 
 The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](protocol-parameters.md#supportedblockchains) parameter.
 
-| Name                         | Portal API Prefix    | RelayChainID |
+| Name (Docs linked)                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
-| Algorand                     | algo-mainnet         | 0029         |
-| Avalanche                    | avax-mainnet         | 0003         |
-| Binance Smart Chain          | bsc-mainnet          | 0004         |
+| [Algorand](https://developer.algorand.org/docs/run-a-node/setup/install/)                     | algo-mainnet         | 0029         |
+| [Avalanche](https://docs.avax.network/nodes/build/run-avalanche-node-manually/)                    | avax-mainnet         | 0003         |
+| [Binance Smart Chain](https://docs.binance.org/smart-chain/developer/fullnode.html)          | bsc-mainnet          | 0004         |
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
-| Boba                         | boba-mainnet         | 0048         |
-| DFKchain Subnet              | dfk-mainnet          | 03DF         |
-| Ethereum                     | eth-mainnet          | 0021         |
+| [Boba](https://docs.boba.network/user-docs/boba-node)                   | boba-mainnet         | 0048         |
+| [DFKchain Subnet](https://docs.avax.network/subnets/setup-dfk-node/)              | dfk-mainnet          | 03DF         |
+| [Ethereum](https://github.com/ledgerwatch/erigon)                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
 | Ethereum Archival Trace      | eth-archival-trace   | 0028         |
 | Ethereum Goerli              | eth-goerli           | 0026         |
 | Ethereum Kovan               | poa-kovan            | 0024         |
 | Ethereum Rinkeby             | eth-rinkeby          | 0025         |
 | Ethereum Ropsten             | eth-ropsten          | 0023         |
-| Fantom                       | fantom-mainnet       | 0049         |
-| FUSE                         | fuse-mainnet         | 0005         |
+| [Fantom](https://docs.fantom.foundation/node/run-a-read-only-node)                       | fantom-mainnet       | 0049         |
+| [FUSE](https://www.xdaichain.com/for-developers/install-xdai-client)                         | fuse-mainnet         | 0005         |
 | FUSE Archival                | fuse-archival        | 000A         |
-| Gnosis Chain                 | gnosischain-mainnet  | 0027         |
+| [Gnosis Chain](https://www.xdaichain.com/for-developers/install-xdai-client)                 | gnosischain-mainnet  | 0027         |
 | Gnosis Chain Archival        | gnosischain-archival | 000C         |
-| Harmony Shard 0              | harmony-0            | 0040         |
+| [Harmony Shard 0](https://docs.harmony.one/home/network/validators/node-setup)              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
 | NEAR                         | near-mainnet         | 0052         |
 | OKExChain                    | oec-mainnet          | 0047         |
 | Pocket Network               | mainnet              | 0001         |
-| Polygon                      | poly-mainnet         | 0009         |
+| [Polygon](https://docs.polygon.technology/docs/integrate/full-node-deployment/)                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
-| Solana                       | sol-mainnet          | 0006         |
+| [Solana](https://chainstack.com/how-to-run-a-solana-node/)                       | sol-mainnet          | 0006         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
 ## Pocket Testnet RelayChains
