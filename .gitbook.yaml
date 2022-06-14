@@ -32,7 +32,7 @@ redirects:
     v1/peer-to-peer: learn/future/peer-to-peer.md
     v1/persistence: learn/future/persistence.md
     v1/utility: learn/future/utility.md
-    pokt-accounts-and-transactions: integrate/README.md
+    pokt-accounts-and-transactions: integrate/accounts-transactions/README.md
     pokt-accounts-and-transactions/address-generation-and-validation: integrate/accounts-transactions/account-generation-validation.md
     pokt-accounts-and-transactions/deposit-processing-and-verification: integrate/accounts-transactions/transaction-verification.md
     pokt-accounts-and-transactions/transaction-construction-and-offline-signature: integrate/accounts-transactions/transaction-construction.md
@@ -66,7 +66,7 @@ redirects:
     resources/faq/wpokt: pokt/wpokt.md
     resources/references/seeds: node/seeds.md
     resources/references/protocol-parameters: learn/protocol-parameters.md
-    resources/references/pokt-denominations: learn/economics/token-economics.md
+    resources/references/pokt-denominations: learn/economics/token.md#pokt-denominations
     resources/public-rpc-endpoints: use/public-rpc/README.md
     resources/public-rpc-endpoints/avalanche-avax-metamask: use/public-rpc/avax.md
     resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask: use/public-rpc/bsc.md
@@ -78,7 +78,7 @@ redirects:
     resources/public-rpc-endpoints/iotex-metamask: use/public-rpc/iotex.md
     resources/public-rpc-endpoints/polygon-metamask: use/public-rpc/polygon.md
     resources/public-rpc-endpoints/xdai-metamask: use/public-rpc/gnosis-chain.md
-    resources/public-rpc-endpoints/conquest.eth: use/dapps/conquest.eth.md
+    resources/public-rpc-endpoints/conquest.eth: use/dapps/conquest-eth.md
     resources/public-rpc-endpoints/dark-forest: use/dapps/dark-forest.md
     resources/public-rpc-endpoints/mycrypto: use/dapps/mycrypto.md
     resources/public-rpc-endpoints/rotki: use/dapps/rotki.md
