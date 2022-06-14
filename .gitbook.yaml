@@ -66,7 +66,7 @@ redirects:
     resources/faq/wpokt: pokt/wpokt.md
     resources/references/seeds: node/seeds.md
     resources/references/protocol-parameters: learn/protocol-parameters.md
-    resources/references/pokt-denominations: learn/economics/token.md#pokt-denominations
+    resources/references/pokt-denominations: learn/economics/token.md
     resources/public-rpc-endpoints: use/public-rpc/README.md
     resources/public-rpc-endpoints/avalanche-avax-metamask: use/public-rpc/avax.md
     resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask: use/public-rpc/bsc.md
