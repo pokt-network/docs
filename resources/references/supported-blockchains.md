@@ -14,6 +14,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
 | Boba                         | boba-mainnet         | 0048         |
 | DFKchain Subnet              | dfk-mainnet          | 03DF         |
+| Evmos                        | evmos-mainnet        | 0046         |
 | Ethereum                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
 | Ethereum Archival Trace      | eth-archival-trace   | 0028         |
@@ -67,7 +68,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Avalanche Fuji                       | avax-fuji                 | 000E         |
 | Binance Smart Chain Testnet          | bsc-testnet               | 0011         |
 | Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         |
-| Evmos                                | evmos-mainnet             | 0046         |
 | Harmony Shard 0 Archival             | harmony-0-archival        | 0A40         |
 | Harmony Shard 1                      | harmony-1                 | 0041         |
 | Harmony Shard 1 Archival             | harmony-1-archival        | 0A41         |
