@@ -33,6 +33,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Moonriver                    | moonriver-mainnet    | 0051         |
 | NEAR                         | near-mainnet         | 0052         |
 | OKExChain                    | oec-mainnet          | 0047         |
+| Optimism                     | optimism-mainnet     | 0053         |
 | Pocket Network               | mainnet              | 0001         |
 | Polygon                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
