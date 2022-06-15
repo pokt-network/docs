@@ -14,6 +14,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
 | Boba                         | boba-mainnet         | 0048         |
 | DFKchain Subnet              | dfk-mainnet          | 03DF         |
+| Evmos                        | evmos-mainnet        | 0046         |
 | Ethereum                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
 | Ethereum Archival Trace      | eth-archival-trace   | 0028         |
@@ -28,6 +29,8 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Gnosis Chain Archival        | gnosischain-archival | 000C         |
 | Harmony Shard 0              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
+| Moonbeam                     | moonbeam-mainnet     | 0050         |
+| Moonriver                    | moonriver-mainnet    | 0051         |
 | NEAR                         | near-mainnet         | 0052         |
 | OKExChain                    | oec-mainnet          | 0047         |
 | Pocket Network               | mainnet              | 0001         |
@@ -65,7 +68,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Avalanche Fuji                       | avax-fuji                 | 000E         |
 | Binance Smart Chain Testnet          | bsc-testnet               | 0011         |
 | Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         |
-| Evmos                                | evmos-mainnet             | 0046         |
 | Harmony Shard 0 Archival             | harmony-0-archival        | 0A40         |
 | Harmony Shard 1                      | harmony-1                 | 0041         |
 | Harmony Shard 1 Archival             | harmony-1-archival        | 0A41         |
@@ -73,8 +75,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Harmony Shard 2 Archival             | harmony-2-archival        | 0A42         |
 | Harmony Shard 3                      | harmony-3                 | 0043         |
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
-| Moonbeam                             | moonbeam-mainnet          | 0050         |
-| Moonriver                            | moonriver-mainnet         | 0051         |
 | Polygon Mumbai                       | poly-mumbai               | 000F         |
 | Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
 | Solana Testnet                       | sol-testnet               | 0031         |
