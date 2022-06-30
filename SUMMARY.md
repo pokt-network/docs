@@ -46,6 +46,7 @@
 * [Run Nodes](node/README.md)
   * [Environment Setup](node/environment.md)
   * [Pocket Node Setup](node/setup.md)
+  * [Custodial and Non-Custodial Staking](node/staking.md)
   * [Seeds](node/seeds.md)
   * [Tutorials](node/tutorials/README.md)
     * [Zero To Node](node/tutorials/zero-to-node/README.md)

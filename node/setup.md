@@ -215,6 +215,10 @@ pocket nodes stake custodial 3ee61299d5bbbd2974cddcc194d9b547c7629546 2000000000
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+Read more about [custodial versus non-custodial staking](staking.md).
+{% endhint %}
+
 **You should leave 1 POKT liquid (unstaked) to pay the transaction fees for your node's claim and proof transactions.**
 
 All node runners must always maintain a liquid (unstaked) balance of at least 0.02 POKT in order to submit the claim and proof transactions (which each have a transaction fee of 0.01 POKT) that generate their rewards. If a node successfully submits both the claim and proof, they will earn enough POKT to submit the next claims and proofs, and so on. However, if a node falls below a liquid balance of 0.02 POKT, their revenue will be halted.

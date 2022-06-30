@@ -6,4 +6,6 @@ These details are mostly for "intermediate" node runners, who are familiar with 
 
 Want to understand the economics of running a node before you dive in? Read about [Node Economics](../learn/economics/nodes.md).
 
-For a no-frills quickstart guide, you should head over to the [Pocket Core docs](https://docs.pokt.network/core/).
+Read our guide to decide whether you want your nodes to be operated with [custodial staking or non-custodial staking](staking.md).
+
+For a no-frills guide to commands, you should head over to the [Pocket Core docs](https://docs.pokt.network/core/).
