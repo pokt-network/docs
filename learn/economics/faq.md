@@ -23,9 +23,9 @@ Each time a block is validated, POKT is minted according to the [`RelaysToTokens
 
 This mint is then divided according to the following percentages:
 
-* `1-`[`ProposerAllocation`](../protocol-parameters.md#proposerallocation)`-`[`DAOAllocation`](../protocol-parameters.md#daoallocation) to all the nodes who did #1, proportional to the number of relays they did
-* [`ProposerAllocation`](../protocol-parameters.md#proposerallocation)to the node who validated the block (#2)
-* [`DAOAllocation`](../protocol-parameters.md#daoallocation)to the DAO
+* `1 -(`[`ProposerAllocation`](../protocol-parameters.md#proposerallocation)` + `[`DAOAllocation`](../protocol-parameters.md#daoallocation)`)` to all the nodes who did #1, proportional to the number of relays they did
+* [`ProposerAllocation`](../protocol-parameters.md#proposerallocation) to the node who validated the block (#2)
+* [`DAOAllocation`](../protocol-parameters.md#daoallocation) to the DAO
 
 So what does this mean in practice?
 

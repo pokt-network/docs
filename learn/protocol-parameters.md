@@ -152,7 +152,7 @@ If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can
 
 ### ProposerAllocation
 
-**Current Value:** 1
+**Current Value:** 5
 
 Block proposers earn this proportion of the total POKT block reward. Value is a percentage. See also [DAOAllocation](protocol-parameters.md#daoallocation) for another beneficiary of the block reward.
 
