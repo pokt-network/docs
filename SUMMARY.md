@@ -71,6 +71,7 @@
   * [Governance](community/governance/README.md)
     * [Proposals](community/governance/proposals.md)
   * [Contribute](community/contribute/README.md)
+    * [Scholarships](community/contribute/scholarships.md)
     * [Jobs](https://angel.co/company/pocket-network)
   * [Trophies](community/trophies/README.md)
     * [App Developers](community/trophies/app-developers.md)
