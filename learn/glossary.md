@@ -2,13 +2,11 @@
 
 ## Application
 
-The base consumer of the decentralized infrastructure of Pocket Network.
-
-Application’s stake POKT into the protocol in order to access the decentralized infrastructure.
+The base consumer of the decentralized infrastructure of Pocket Network. Applications stake POKT into the protocol in order to access the decentralized infrastructure. Applications then submit relays to the network, which are then routed to one of the thousands of nodes in the network for processing.
 
 ## Application Authentication Token (AAT)
 
-An Application Authentication Token (AAT) is needed for each client to authorize the use of an allocated “throughput.”
+An Application Authentication Token (AAT) is needed for each client to authorize the use of an allocated "throughput".
 
 Application Authentication Tokens are similar in function to JSON Web Tokens (JWT) and provide security guarantees for the use of the service.
 
@@ -19,28 +17,70 @@ There are two design patterns recommended for AAT usage:
 * **Optimizing for Safety:** __ A simple backend server that distributes signed AAT’s using the clients Pocket Account. Though this pattern is of higher effort for the Application, it provides the highest security guarantee around their AAT
 * **Optimizing for Performance:** Embed a token production system within the Application code. This guarantees the smoothest UX for the clients and easiest setup for the Application. However, reverse engineering a source code level token generator can be trivial if obfuscation methods are not applied. The upside to this approach is not having the need to have an additional component in the Application that generates the AAT dynamically while keeping the Application private key secure.
 
+## Application Burn Rate (ABR)
+
+Proposed mechanism that would burn developer's stakes based on application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy](economics/monetary-policy.md).
+
 ## Block Hash
 
-The SHA3-256 hash of a Block.
+SHA3-256 hash of a Block.
+
+## Endpoint
+
+A URL that can receive RPC requests to a blockchain. Pocket Network allows you to mint endpoints that can be used with any of the [supported blockchains](../supported-blockchains.md). An application can contain multiple endpoints (for multiple chains).
 
 ## Jail
 
-A Pocket Validator Node can be `Jailed` for 1 of 2 reasons:
+Situation where a Pocket node is denied the ability to serve relays.
 
-1. Fails to produce `min_signed_per_window` amount of blocks over a `signed_blocks_window`. When jailed because of this reason, a Pocket Validator Node is `Slashed` a `slash_fraction_downtime`% of their `Stake`.
-2. For `Double Signing` a `Block`. When jailed because of this reason, a Pocket Validator Node is `Slashed` a `slash_fraction_double_sign`% of their `Stake`.
+A node can be jailed for either of two reasons:
 
-When a Pocket Validator Node becomes `Jailed`, it remains in the `Staked` list of Pocket Validator Nodes, however it becomes ineligible to be selected for `Block Production` or participating in `Sessions`. In order to become `Unjailed` again, and after waiting `downtime_jail_duration` nano-seconds, a `Node Unjail` transaction must be sent to the `Pocket Network`, and upon approval, the Pocket Validator Node will become `Unjailed` again.
+1. Fails to produce `min_signed_per_window` amount of blocks over a `signed_blocks_window`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_downtime`% of their `Stake`.
+2. For `Double Signing` a `Block`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_double_sign`% of their `Stake`.
 
-If a Pocket Validator Node is left jailed for `max_jailed_blocks` blocks, it will be `Force Unstaked`.
+When a node becomes `Jailed`, it remains in the `Staked` list of nodes, however it becomes ineligible to be selected for block production or participating in sessions. In order to become unjailed again, the node must wait `downtime_jail_duration` nano-seconds, and then submit a `Node Unjail` transaction, which must then be approved.
+
+If a node is left jailed for `max_jailed_blocks` blocks, it will be `Force Unstaked`.
+
+## PEP
+
+Pocket Ecosystem Proposal. This is submitted to the Pocket DAO to distribute funds to or form agreements with contributors to the Pocket Network ecosystem. PEP categories include: Imbursements, Reimbursements, Bounties, Transfers, and Agreements. Each PEP is given a unique number as a suffix (such as [PEP-13](https://forum.pokt.network/t/pep-13-poktscan-app/)).
+
+## PIP
+
+Pocket Improvement Proposal. This is submitted to the Pocket DAO to upgrade any facet of Pocket Network, including protocol and governance updates. Each PIP is given a unique number as a suffix (such as [PIP-11](https://forum.pokt.network/t/pip-11-implementing-an-on-chain-rev-share-mechanism/)).
 
 ## POKT
 
-The native cryptocurrency to Pocket Network.
+Native cryptocurrency that underpins Pocket. Node runners stake POKT in order to earn rewards (also in POKT) from servicing relays from apps that utilize the Pocket Network. For example: "If you stake a Pocket node, you can earn POKT for every successful relay."
+
+## Portal
+
+A [browser-based interface](https://www.portal.pokt.network/) where developers can create ("mint") a Pocket endpoint for use in their applications, utilizing a generous free tier of relays and scaling up as needed. Portal users can also monitor network performance.
+
+## Portal ID
+
+Unique identifier for a collection of endpoints generated by the Pocket Portal. It is included as part of the URL of each endpoint.
+
+## Private RPC
+
+RPC server that requires credentials for access.
+
+## Public Key
+
+Unique identifier for a given application that will allow you to inspect the application on-chain.
+
+## Public RPC
+
+RPC server that is accessible to the network without requiring credentials for access.
+
+## PUP
+
+Parameter Update Proposal. This is submitted to the Pocket DAO to change the value of a given protocol parameter, either on-chain or in various tools or platforms. Each PUP is given a unique number as a suffix (such as [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/))
 
 ## Relay
 
-A **Relay** is a blockchain API request and response transmitted through the Pocket Network.
+Blockchain API request and response transmitted through the Pocket Network.
 
 A **Relay Request** is broken down into 3 sections:
 
@@ -53,17 +93,33 @@ A **Relay Response** is broken down into 2 sections:
 * Response Payload
 * Servicer Signature
 
-Requests are signed by the Client of the Application and responses are signed by the servicing Validator.
+Requests are signed by the client of the application and responses are signed by the servicing validator.
 
-This 1 for 1 signature scheme enables the protocol to validate all parties that participate in the _servicing_ cycle.
+This one-to-one signature scheme enables the protocol to validate all parties that participate in the servicing cycle.
 
 ## Relay Chain
 
-A single database instance, typically a blockchain, provided by a Validator that makes up the Pocket Network decentralized infrastructure.
+Single database instance, typically a blockchain, provided by a Validator that makes up the Pocket Network decentralized infrastructure.
 
 ## Relay Evidence
 
 Provable evidence of a Relay completed, backed by digital signatures from an Application client.
+
+## RelaysToTokensMultiplier
+
+[On-chain parameter](protocol-parameters.md#relaystotokensmultiplier) that signifies the amount of POKT that is awarded to a node for a single successful relay. This value is periodically adjusted in line with Pocket Network' [monetary policy](economics/monetary-policy.md).
+
+## Remote Procedure Call (RPC)
+
+Standardized process where one computer on a network sends a synchronous request to another. An advantage to an RPC is that the client issuing the request need not know much about the server. Many blockchains communicate by means of RPC. An RPC server may either be public or private.
+
+## Secret Key
+
+Security feature for applications created in the Pocket Portal. If "Private Secret Key Required" is selected in the Pocket Portal, then the Secret Key will need to be sent along with the request using HTTP Basic Authentication.
+
+## Servicer
+
+Any node which is eligible to serve RPC requests from applications. By default, a node is a Servicer.
 
 ## ServiceURI
 
@@ -73,16 +129,62 @@ A static URI (or IP) that you have assigned to your node, which applications can
 
 ## Session
 
-The relationship between an Application and the Validator(s) that service it at any point in time.
+A data structure which uses data from the finality storage layer of the network to pseudo-randomly group one application with a set of nodes to provide service for a limited time. A session lasts for 4 blocks, for a total of one hour.
 
-Every Application will only have one single **Session** per Relay Chain it is staked for. Meaning following an Application stake event, there will _always_ be a corresponding **Session** for the Application for each Relay Chain until it unstakes.
+Every application will only have one single session per relay chain it is staked for. Meaning, following an application stake event, there will always be a corresponding session for the application for each relay chain until it unstakes.
 
 ## Session Block
 
 Some number of blocks, marking session beginning/ends.
 
+## Stickiness
+
+A feature that lets you connect to the same node for a set period of time. With stickiness all the relays are sent to the same node, ensuring more consistent relays.
+
+## Trophy
+
+Achievement earned for proving knowledge of and participation in the Pocket Network ecosystem. These can be collected and used to earn a vote in the Pocket DAO. There are [four distinct paths to a vote](https://docs.pokt.network/home/community/trophies), each with different trophies: App Developers, Node Runners, Community Shepherds, and Governors/Contributors.
+
+## v0
+
+Current active iteration of the Pocket protocol. Often used in contrast to the upcoming v1 update.
+
+## v1
+
+Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network protocol](future/README.md), including a departure from Tendermint. v1 will allow Pocket to build its own network from the ground up, optimized for its specific use case, rather than being restricted by any limitations that come with building on Tendermint. v1 will bring major changes to four different "modules": Utility, Consensus, Peer-to-Peer, and Persistence.
+
 ## Validator
 
-**Validators** are responsible for committing new blocks in the blockchain. These **validators** participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each **validator’s** private key.
+Special nodes that are responsible for committing new blocks in the blockchain. Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
 
-Validators stake POKT into the protocol to participate in Servicing and Consensus.
+Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerAllocation](protocol-parameters.md#proposerallocation) parameter.
+
+A Servicer that is in the top 1,000 node stakes on the network may be a Validator.
+
+## WAGMI
+
+Weighted Annual Gross Max Inflation (WAGMI) is an inflation control mechanism for the Pocket Network that was established via [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/), and further defined via [PUP-13](https://forum.pokt.network/t/pup-13-initial-wagmi-parameters/). Together, these proposals established a target annual inflation rate, or WAGMI rate, in POKT, from which the [RelaysToTokensMultiplier](protocol-parameters.md#relaystotokensmultiplier) parameter (which determines the amount of POKT earned per relay serviced) is adjusted dynamically. The proposals also laid out a step-down in target inflation rate from 100% to 50% over a period of time.
+
+## Whitelisted Chains
+
+In the Pocket Portal, a list of the blockchains that an application can connect to. For example, if four chains are whitelisted, there will be four endpoints generated in that application.
+
+## Whitelisted Contracts
+
+In the Pocket Portal, a list of smart contract addresses that can access an application endpoint. Note that this is only available for EVM-compatible chains.
+
+## Whitelisted Methods
+
+In the Pocket Portal, a list of smart contract methods that can be used when accessing an application endpoint. Note that this is only available for EVM-compatible chains.
+
+## Whitelisted Origins
+
+In the Pocket Portal, a list of the HTTP Origin request headers that are allowed to make requests to the endpoint.
+
+## Whitelisted User-Agents
+
+In the Pocket Portal, a list of HTTP User-Agent request headers that are allowed to make requests to the endpoint.
+
+## wPOKT
+
+Wrapped POKT (wPOKT) is an ERC-20 token backed by the native POKT cryptocurrency on the Pocket Network blockchain and held by a set of POKT multisig signers for verification. wPOKT standardizes POKT to the ERC-20 standard, enabling better interoperability, greater liquidity, and access to smart contracts.
