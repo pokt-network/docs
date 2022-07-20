@@ -2,7 +2,9 @@
 
 ## Application
 
-The base consumer of the decentralized infrastructure of Pocket Network. Applications stake POKT into the protocol in order to access the decentralized infrastructure. Applications then submit relays to the network, which are then routed to one of the thousands of nodes in the network for processing.
+Computer program that needs to read data from and/or send transactions to an external blockchain. Applications stake POKT into the Pocket Network Protocol in order to gain read/send access to the independent blockchain(s) that they need.
+
+Applications are paired with groups of independent blockchain service providers, selected from Pocket's decentralized network of thousands of service nodes. Applications can submit relays to the Servicers in this group to perform the needed read/send operations.
 
 ## Application Authentication Token (AAT)
 
@@ -10,16 +12,16 @@ An Application Authentication Token (AAT) is needed for each client to authorize
 
 Application Authentication Tokens are similar in function to JSON Web Tokens (JWT) and provide security guarantees for the use of the service.
 
-An AAT is generated after a client acquires & stakes POKT for an application.
+An AAT is generated after a client acquires & stakes POKT for an Application.
 
 There are two design patterns recommended for AAT usage:
 
-* **Optimizing for Safety:** __ A simple backend server that distributes signed AAT’s using the clients Pocket Account. Though this pattern is of higher effort for the Application, it provides the highest security guarantee around their AAT
+* **Optimizing for Safety:** __ A simple server that distributes signed AAT’s using the clients Pocket Account. Though this pattern is of higher effort for the Application, it provides the highest security guarantee around their AAT
 * **Optimizing for Performance:** Embed a token production system within the Application code. This guarantees the smoothest UX for the clients and easiest setup for the Application. However, reverse engineering a source code level token generator can be trivial if obfuscation methods are not applied. The upside to this approach is not having the need to have an additional component in the Application that generates the AAT dynamically while keeping the Application private key secure.
 
 ## Application Burn Rate (ABR)
 
-Proposed mechanism that would burn developer's stakes based on application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy](economics/monetary-policy.md).
+Proposed mechanism that would burn developer's stakes based on Application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy](economics/monetary-policy.md).
 
 ## Block Hash
 
@@ -27,18 +29,18 @@ SHA3-256 hash of a Block.
 
 ## Endpoint
 
-A URL that can receive RPC requests to a blockchain. Pocket Network allows you to mint endpoints that can be used with any of the [supported blockchains](../supported-blockchains.md). An application can contain multiple endpoints (for multiple chains).
+In the Pocket Portal, a URL that can receive RPC requests to a blockchain. Pocket allows you to "mint" endpoints that can be used with any of its [supported blockchains](../supported-blockchains.md). An Application can contain multiple endpoints (for multiple chains).
 
 ## Jail
 
 Situation where a Pocket node is denied the ability to serve relays.
 
-A node can be jailed for either of two reasons:
+A node can be jailed for one of two reasons:
 
-1. Fails to produce `min_signed_per_window` amount of blocks over a `signed_blocks_window`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_downtime`% of their `Stake`.
-2. For `Double Signing` a `Block`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_double_sign`% of their `Stake`.
+1. A node is not actively participating in consensus, for reasons such as being offline. More technically, this may occur if the node fails to produce `min_signed_per_window` amount of blocks over a `signed_blocks_window`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_downtime`% of their `Stake`.
+2. A node "double signs" a block. Double signing is when a Validator node submits multiple signatures for the same block, which makes it more difficult for the network to come to consensus. When jailed because of this reason, a node is `Slashed` a `slash_fraction_double_sign`% of their `Stake`.
 
-When a node becomes `Jailed`, it remains in the `Staked` list of nodes, however it becomes ineligible to be selected for block production or participating in sessions. In order to become unjailed again, the node must wait `downtime_jail_duration` nano-seconds, and then submit a `Node Unjail` transaction, which must then be approved.
+When a node becomes jailed, it remains in the `Staked` list of nodes, however it becomes ineligible to be selected for block production or to participate in Sessions. In order to become unjailed, the node must wait `downtime_jail_duration` nano-seconds, and then submit a `Node Unjail` transaction, which must then be approved.
 
 If a node is left jailed for `max_jailed_blocks` blocks, it will be `Force Unstaked`.
 
@@ -68,7 +70,7 @@ RPC server that requires credentials for access.
 
 ## Public Key
 
-Unique identifier for a given application that will allow you to inspect the application on-chain.
+Unique identifier for a given Application that will allow you to inspect the Application on-chain.
 
 ## Public RPC
 
@@ -93,13 +95,13 @@ A **Relay Response** is broken down into 2 sections:
 * Response Payload
 * Servicer Signature
 
-Requests are signed by the client of the application and responses are signed by the servicing validator.
+Requests are signed by the client of the Application and responses are signed by the servicing Validator.
 
 This one-to-one signature scheme enables the protocol to validate all parties that participate in the servicing cycle.
 
 ## Relay Chain
 
-Single database instance, typically a blockchain, provided by a Validator that makes up the Pocket Network decentralized infrastructure.
+Database instance, typically a blockchain, provided by a Servicer node to serve Applications. Also can refer to both the database and the client that keeps the database updated and can accept read/send operations to that database.
 
 ## Relay Evidence
 
@@ -111,31 +113,32 @@ Provable evidence of a Relay completed, backed by digital signatures from an App
 
 ## Remote Procedure Call (RPC)
 
-Standardized process where one computer on a network sends a synchronous request to another. An advantage to an RPC is that the client issuing the request need not know much about the server. Many blockchains communicate by means of RPC. An RPC server may either be public or private.
+Standardized process where one computer on a network is able to send a request to another computer on the network, to execute a command as if it were called locally from the computer. Many blockchains communicate by means of RPC.
 
 ## Secret Key
 
-Security feature for applications created in the Pocket Portal. If "Private Secret Key Required" is selected in the Pocket Portal, then the Secret Key will need to be sent along with the request using HTTP Basic Authentication.
+Security feature for Applications created in the Pocket Portal. If "Private Secret Key Required" is selected in the Pocket Portal, then the Secret Key will need to be sent along with the request using HTTP Basic Authentication.
 
 ## Servicer
 
-Any node which is eligible to serve RPC requests from applications. By default, a node is a Servicer.
+Any node which is eligible to serve RPC requests for Applications. By default, a node is a Servicer.
 
 ## ServiceURI
 
-The endpoint where Validators host the Pocket RPC.
-
-A static URI (or IP) that you have assigned to your node, which applications can use to send relays to your node, **NOT** your blockchain node URL.
+The endpoint that Servicers expose to provide Applications the functionality they need to send relays via the Pocket Network RPC to said Servicer.
 
 ## Session
 
-A data structure which uses data from the finality storage layer of the network to pseudo-randomly group one application with a set of nodes to provide service for a limited time. A session lasts for 4 blocks, for a total of one hour.
+A data structure which uses data from the finality storage layer of the network to pseudo-randomly group one Application with a set of nodes to provide service for a limited time. A Session lasts for 4 blocks, for a total of one hour.
 
-Every application will only have one single session per relay chain it is staked for. Meaning, following an application stake event, there will always be a corresponding session for the application for each relay chain until it unstakes.
+Every Application will only have one single Session per relay chain it is staked for. Meaning, following an Application stake event, there will always be a corresponding Session for the Application for each relay chain until it unstakes.
+
+
+List of Servicers that an Application is able to send requests to for a period of time. The Pocket blockchain periodically updates the Sessions so Applications receive a new, pseudo-randomly selected set of Servicers every four (4) blocks (determined by the [BlocksPerSession](protocol-parameters.md#blockspersession) parameter), or approximately one hour, for each Relay Chain that the Application is staked for. During this period of time, the Servicers will only be rewarded POKT for servicing Applications if they have been matched in a Session. The amount of Servicers in a Session is currently 24 (determined by the [SessionNodeCount](protocol-parameters.md#sessionnodecount) parameter).
 
 ## Session Block
 
-Some number of blocks, marking session beginning/ends.
+Some number of blocks, marking Session beginning/ends.
 
 ## Stickiness
 
@@ -155,11 +158,11 @@ Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network prot
 
 ## Validator
 
-Special nodes that are responsible for committing new blocks in the blockchain. Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
+Special nodes that are responsible for committing new blocks in the blockchain, in addition to Servicing. Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each Validator's private key.
 
 Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerAllocation](protocol-parameters.md#proposerallocation) parameter.
 
-A Servicer that is in the top 1,000 node stakes on the network may be a Validator.
+Only the top 1,000 Servicers ordered by total POKT staked are considered Validators.
 
 ## WAGMI
 
@@ -167,23 +170,23 @@ Weighted Annual Gross Max Inflation (WAGMI) is an inflation control mechanism fo
 
 ## Whitelisted Chains
 
-In the Pocket Portal, a list of the blockchains that an application can connect to. For example, if four chains are whitelisted, there will be four endpoints generated in that application.
+In the Pocket Portal, an exclusive list of the blockchains that an Application can connect to. For example, if four chains are whitelisted, there will be four endpoints generated in that Application.
 
 ## Whitelisted Contracts
 
-In the Pocket Portal, a list of smart contract addresses that can access an application endpoint. Note that this is only available for EVM-compatible chains.
+In the Pocket Portal, an exclusive list of smart contract addresses that can access an Application endpoint. Note that this is only available for EVM-compatible chains.
 
 ## Whitelisted Methods
 
-In the Pocket Portal, a list of smart contract methods that can be used when accessing an application endpoint. Note that this is only available for EVM-compatible chains.
+In the Pocket Portal, an exclusive list of smart contract methods that can be used when accessing an Application endpoint. Note that this is only available for EVM-compatible chains.
 
 ## Whitelisted Origins
 
-In the Pocket Portal, a list of the HTTP Origin request headers that are allowed to make requests to the endpoint.
+In the Pocket Portal, an exclusive list of the HTTP Origin request headers that are allowed to make requests to the endpoint.
 
 ## Whitelisted User-Agents
 
-In the Pocket Portal, a list of HTTP User-Agent request headers that are allowed to make requests to the endpoint.
+In the Pocket Portal, an exclusive list of HTTP User-Agent request headers that are allowed to make requests to the endpoint.
 
 ## wPOKT
 
