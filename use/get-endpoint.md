@@ -95,28 +95,24 @@ Once you've logged in you'll be taken to the Network Overview section.
 
 ![](../assets/portal-networkoverview.png)
 
-In this section, you'll see all the important parts of the network: how many relays are being served daily, the overall success rate of the network, and the number of apps, nodes, and POKT staked. A summary of chains being served by the network is also available.
+In this section, you'll see all the important parts of the network: how many relays are being served daily, network performance, the latest block details, and a summary of chains being served by the network is also available.
 
-Head over to the "Apps" section and click **Create** to create your app. You'll be able to select one of any of the [supported blockchains](../supported-blockchains.md) to start, but you can add other chains after your Application is created..
+Click the **Apps** link on the left and then click **Create** to create a new Application. You'll be able to select one of any of the [supported blockchains](../supported-blockchains.md) to start, but you can add other chains after your Application is created.
 
 ![](../assets/portal-app-setup.png)
 
-Once you've hit "Launch Application", all is done and you can start using your endpoint! You should be greeted by the main application screen, which will show all the metrics, which as soon as you start submitting requests, should start appearing.
+Once you've hit "Launch Application", your endpoint is ready! You should be greeted by the main application screen, which will show all the metrics, which should will start being populated as soon as you start submitting requests.
 
 ![](../assets/portal-app.png)
 
 The view you see is the main view for your application. Here, you'll see key details:
 
-* On the top left, you'll see and will be able to copy your endpoint URL.
-* On the right, first you'll see key information about your Pocket application:
-  * The **app status**, which indicates if the app is currently staked or unstaked. The app must be staked in order to be eligible for service.
-  * The **amount of POKT** staked, which will be enough to add up to the free tier.
-  * The **max amount of relays you can send per day,** which currently is 1M as per the free tier.
-* On the bottom right, you'll see important identifying information:
-  * The **Gateway ID,** used by the Dashboard to fetch your app's information. It's part of your endpoint URL as well.
-  * The **App's public key**, which will let you inspect your application on-chain.
-  * The **Secret Key**, which is a security feature you can use to make your Pocket Dashboard endpoint more secure.
-* On the left side, you'll see all the metrics available for your app.
+* **Endpoint URL**: The endpoint for the chain you selected during creation. Click **Add New** to add new endpoints for different chains that will also be included in this Application. 
+* **Portal ID**: The unique identifier for your Application. It is always part of the URL structure for all endpoints.
+* **Secret Key**: A security feature you can use to make your endpoint more secure.
+* **Public Key**: A key that will let you inspect your application on-chain.
+* **Success metrics**: Relay success rate, error rate, and total requests.
+* **Usage**: Percentage of how many relays have been utilized against the maximum (currently one million per day).
 
 ## Setting Up Notifications
 
@@ -129,7 +125,9 @@ Turning on notifications is a great way to stay up to date with your app. We res
 
 ## Securing your Application
 
-For securing your endpoint, you can go to the "App Security" section of the Portal. This section of the app contains all the security settings you'll have at your disposal for security. We provide whitelisting for both origins and user agents and also let you enable and disable secret key usage.
+For securing your endpoint, click the **App Security**"** button. This section contains all the security settings you'll have at your disposal for security. We provide whitelisting for both origins and user agents and also let you enable and disable secret key usage.
+
+![](../assets/portal-appsecurity.png)
 
 ### Whitelisting User Agents
 
@@ -150,7 +148,7 @@ Every application has a secret key associated with it, which can be enabled so t
 ```
 curl --user :YOUR-SECRET-KEY \\
 ...
-https://<NETWORK>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
+https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>
 ```
 {% endtab %}
 
@@ -158,7 +156,7 @@ https://<NETWORK>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
 ```
 curl --user :YOUR-SECRET-KEY ^
 ...
-https://<NETWORK>.gateway.pokt.network/v1/YOUR-GATEWAY-ID
+https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>
 ```
 {% endtab %}
 {% endtabs %}
@@ -179,7 +177,7 @@ For EVM-based chains (Ethereum, BSC, and others), which see the majority of traf
 curl -X POST \\
 -H "Content-Type: application/json" \\
 --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \\
-"https://<NETWORK>.gateway.pokt.network/v1/<YOUR-GATEWAY-ID>"
+"https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>"
 ```
 {% endtab %}
 
@@ -188,7 +186,7 @@ curl -X POST \\
 curl -X POST ^
 -H "Content-Type: application/json" ^
 --data "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_blockNumber\", \"params\": []}" ^
-"https://<NETWORK>.gateway.pokt.network/v1/<YOUR-GATEWAY-ID>"
+"https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>"
 ```
 {% endtab %}
 {% endtabs %}
@@ -197,10 +195,10 @@ curl -X POST ^
 
 All endpoints have a similar structure, as they all have:
 
-* The network prefix; see the RelayChainIDs [here](../supported-blockchains.md)
+* The network prefix, based on the RelayChainIDs. You can find them on the list of [supported blockchains](../supported-blockchains.md) in the column **Portal API Prefix**. For example, Ethereum Mainnet is `eth-mainnet`.
 * The main URL (`gateway.pokt.network/v1/`)
 * If it's a load-balanced endpoint, it will also have the LB prefix (`/lb/`)
-* The Gateway ID.
+* The Portal ID, which is unique to your Application.
 
 
 ## Use EthersJS
@@ -209,11 +207,7 @@ You can use Pocket as your node provider with this complete and compact Ethereum
 
 First, you need to get an endpoint from the [Pocket Portal](https://www.portal.pokt.network).
 
-Then you need to get the Gateway ID
-
-![](../assets/portal-app.png)
-
-and insert it like so
+Then you need to get the Portal ID and use it like this:
 
 ```
 ethers.providers.PocketProvider('homestead', process.env.GatewayID)
