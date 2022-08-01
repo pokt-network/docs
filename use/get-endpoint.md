@@ -8,7 +8,7 @@ The [Pocket Portal](https://www.portal.pokt.network) is a free, browser-based ap
 
 In this way, the Pocket Portal provides similar functionality to more centralized API services, all while retaining the decentralization that Pocket Network is built on.
 
-Through the Pocket Portal, you can get information about your application usage at a glance, along with network usage. uptime metrics and notifications/alerts.
+Through the Pocket Portal, you can get information about your application usage at a glance, along with network usage, uptime metrics and notifications/alerts.
 
 The Portal is free to use up to one million relays per day.
 
@@ -18,7 +18,7 @@ The Portal is free to use up to one million relays per day.
 
 To use the Pocket Portal, you must first create an account.
 
-The Portal accepts three different methods of account creation and authentication: using your email address, your Google Account, or your GitHub account.
+The Portal accepts two different methods of account creation and authentication: using your email address or your GitHub account.
 
 Once you have an account with one method, you can't switch to another login method with that account, so make sure you choose the method that works best for you.
 
@@ -54,24 +54,6 @@ From the main [Pocket Portal](https://www.portal.pokt.network) page:
 
 Continue below at **Exploring the Portal**.
 
-### Sign up with Google
-
-You can log in to the Portal using your existing Google Account.
-
-1. Click **Get started** at the bottom of the page. Alternatively, you can click **Log In** and then click **Sign Up**.
-
-2. Click **Continue with Google**.
-
-   ![](../assets/portal-signup-google.png)
-
-3. On the next screen, click **Accept** to authorize the app to allow access to your Google account.
-
-   ![](../assets/portal-authorize.png)
-
-4. You will then be logged in and taken to the Network Overview page. You will also receive an email confirming your registration.
-
-Continue below at Exploring the Portal.
-
 ### Sign up with GitHub
 
 You can also log in the Portal using your existing GitHub account
@@ -82,11 +64,13 @@ You can also log in the Portal using your existing GitHub account
 
    ![](../assets/portal-signup-github.png)
 
-3. On the next screen, click **Accept** to authorize the app to allow access to your Google account.
+3. On the next screen, click **Accept** to authorize the app to allow access to your GitHub account.
 
    ![](../assets/portal-authorize.png)
 
 4. You will then be logged in and taken to the Network Overview page. You will also receive an email confirming your registration.
+
+Continue below at **Exploring the Portal**.
 
 
 ## Exploring the Portal
