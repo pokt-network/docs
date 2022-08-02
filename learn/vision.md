@@ -63,3 +63,27 @@ Pocket's staking and inflation mechanisms enable a more efficient resource alloc
 The marginal cost of running an individual Service Node is only as high as your electricity and bandwidth costs, ensuring a low barrier to entry for new Service Node operators. Because work is load balanced evenly across the protocol, the stake, size, or capabilities of the Service Node does not increase the probability of receiving work, which enables hobbyists and small providers to participate and contribute alongside major infrastructure providers. As smaller Service Node operators scale up, they can then choose to bear the costs of hardware, equipment, and salaries needed to add more Service Nodes to their operation.
 
 While the bulk of work will most likely be serviced by professional infrastructure providers, Pocket also enables a long tail of individuals to participate and increase the resilience of the protocol, with potential for upward mobility for those who choose to purchase more Service Nodes.
+
+## Product Comparisons
+
+### Indexers
+
+*Examples: The Graph, Covalent*
+
+Indexers are complementary services.
+
+Indexers organize data, but they still need nodes to communicate with the blockchain. They could either run their own nodes, use a centralized API like Infura or Alchemy, or use Pocket Network's decentralized API for an extra layer of redundancy. Outsourcing node management to a decentralized API is likely to be more cost-efficient for indexers because it will enable them to focus on optimizing their indexing setups.
+
+For apps, while indexers are useful for more efficiently querying the chain (read), they don't provide the RPC access needed to submit transactions to the chain (write). Not all apps will need an indexer, but they will need an API (either Pocket's decentralized API or a centralized alternative).
+
+### Centralized APIs
+
+*Examples: Infura, Alchemy*
+
+Pocket Network is a protocol; centralized API providers are businesses.
+
+Pocket Network connects you to a network of thousands of nodes, run by a variety of operators on a variety of hardware. Centralized API providers connect you to the hardware that they own and operate.
+
+The key differentiator between these arrangements is that Pocket has an inherent diversity at scale that makes its service more resilient and less likely to face downtime.
+
+For example, in November 2020, there was a consensus bug that affected specific versions of Geth, a client that Infura relied on heavily. As a result, Infura "[experienced its most severe service interruption in our four years of operation](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/)". Pocket Network, being more inherently diverse in its architecture, experienced no such outage.
