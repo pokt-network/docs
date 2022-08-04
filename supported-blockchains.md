@@ -37,6 +37,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Pocket Network               | mainnet              | 0001         |
 | Polygon                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
+| Polygon Mumbai               | poly-mumbai          | 000F         |
 | Solana                       | sol-mainnet          | 0006         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
@@ -76,7 +77,6 @@ These blockchains are not supported or revenue-generating, and presence on this 
 | Harmony Shard 2 Archival             | harmony-2-archival        | 0A42         |
 | Harmony Shard 3                      | harmony-3                 | 0043         |
 | Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
-| Polygon Mumbai                       | poly-mumbai               | 000F         |
 | Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
 | Solana Testnet                       | sol-testnet               | 0031         |
 
