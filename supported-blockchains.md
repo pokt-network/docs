@@ -37,7 +37,7 @@ The following table shows the full list of supported, revenue-generating RelayCh
 | Pocket Network               | mainnet              | 0001         |
 | Polygon                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
-| Polygon Mumbai               | poly-mumbai          | 000F         |
+| Polygon Mumbai               | polygon-mumbai       | 000F         |
 | Solana                       | sol-mainnet          | 0006         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
