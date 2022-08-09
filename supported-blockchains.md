@@ -1,10 +1,10 @@
-# ✅ Supported Blockchains
+# Supported Blockchains
 
-Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses the RPC standard.
+Pocket can be made to work with any network/blockchain (RelayChain) that uses the RPC standard.
 
 ## Current RelayChains
 
-The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
+The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the on-chain [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
 
 | Name                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
@@ -54,40 +54,22 @@ The following table shows the full list of currently-supported blockchains on th
 | Ethereum Ropsten       | 0023         |
 | Pocket Network Testnet | 0002         |
 
-## Claimed RelayChains
-
-The following table shows the full list of RelayChains that are known to have been claimed.
-
-Due to Pocket Network's permissionless nature, any RelayChainID can be claimed by adding it to this list. Apps and nodes staking on the RelayChain will be matched together in [sessions](learn/protocol/servicing.md), but nodes will not earn POKT.
-
-These blockchains are not supported or revenue-generating, and presence on this table does not imply that they will be supported or revenue-generating in the future.
-
-| Name                                 | Portal API Prefix         | RelayChainID |
-| ------------------------------------ | ------------------------- | ------------ |
-| Algorand Archival                    | algorand-archival         | 000D         |
-| Algorand Testnet                     | algorand-testnet          | 0045         |
-| Algorand Testnet Archival            | algorand-testnet-archival | 0A45         |
-| Arweave                              | arweave-mainnet           | 0030         |
-| Avalanche Archival                   | avax-archival             | 00A3         |
-| Avalanche Fuji                       | avax-fuji                 | 000E         |
-| Binance Smart Chain Testnet          | bsc-testnet               | 0011         |
-| Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         |
-| Harmony Shard 0 Archival             | harmony-0-archival        | 0A40         |
-| Harmony Shard 1                      | harmony-1                 | 0041         |
-| Harmony Shard 1 Archival             | harmony-1-archival        | 0A41         |
-| Harmony Shard 2                      | harmony-2                 | 0042         |
-| Harmony Shard 2 Archival             | harmony-2-archival        | 0A42         |
-| Harmony Shard 3                      | harmony-3                 | 0043         |
-| Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
-| Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
-| Solana Testnet                       | sol-testnet               | 0031         |
-
 ## Integrating New RelayChains
 
-In order to integrate a RelayChain with Pocket, the node running community needs to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the community supporting the chain.
+Pocket Network is expandable, and is continually adding support for new chains.
 
-The Pocket Network Foundation determines which RelayChains are supported (revenue-generating) on behalf of the DAO. Before making this determination, the Foundation aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
+### Adding a New RelayChain
 
-Once the determination has been made to support a new RelayChain at scale, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
+While it is not currently possible for a community member to add a chain to the list, they can advocate for chains to be considered by reaching out on Discord and posting a suggestion to our team. [Join our Discord](https://discord.gg/pokt).
 
-For more information, please see [PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027).
+In order for a RelayChain to be successfully deployed with Pocket, the node running community will need to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the chain being approved.
+
+Pocket Network also has a initiative, called **"Triforce", which seeks to launch new chains collaboratively with the community**, increasing efficiency through diversifying resources in people and infrastructure, and giving community members more responsibility. [Learn more about Triforce](https://pocketnetwork.notion.site/pocketnetwork/Triforce-49f3eea55671409fb532caabd46719b1).
+
+### Deploying a New RelayChain
+
+Pocket Network determines which RelayChains are supported on behalf of the DAO, and aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
+
+Once the determination has been made to support a new RelayChain, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
+
+For more information, please see [PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/).
