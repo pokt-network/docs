@@ -4,7 +4,7 @@ Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses t
 
 ## Current RelayChains
 
-The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
+The following table shows the full list of supported, reward-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
 
 | Name                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
@@ -60,7 +60,7 @@ The following table shows the full list of RelayChains that are known to have be
 
 Due to Pocket Network's permissionless nature, any RelayChainID can be claimed by adding it to this list. Apps and nodes staking on the RelayChain will be matched together in [sessions](learn/protocol/servicing.md), but nodes will not earn POKT.
 
-These blockchains are not supported or revenue-generating, and presence on this table does not imply that they will be supported or revenue-generating in the future.
+These blockchains are not supported or reward-generating, and presence on this table does not imply that they will be supported or reward-generating in the future.
 
 | Name                                 | Portal API Prefix         | RelayChainID |
 | ------------------------------------ | ------------------------- | ------------ |
@@ -86,7 +86,7 @@ These blockchains are not supported or revenue-generating, and presence on this 
 
 In order to integrate a RelayChain with Pocket, the node running community needs to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the community supporting the chain.
 
-The Pocket Network Foundation determines which RelayChains are supported (revenue-generating) on behalf of the DAO. Before making this determination, the Foundation aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
+The Pocket Network Foundation determines which RelayChains are supported (reward-generating) on behalf of the DAO. Before making this determination, the Foundation aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
 
 Once the determination has been made to support a new RelayChain at scale, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
 
