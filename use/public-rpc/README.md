@@ -41,7 +41,7 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | Ethereum Kovan                                      | https://eth-kovan-rpc.gateway.pokt.network            | 42         | ETH    | https://kovan.etherscan.io            |
 | Ethereum Rinkeby                                    | https://eth-rinkeby-rpc.gateway.pokt.network          | 4          | ETH    | https://rinkeby.etherscan.io          |
 | Ethereum Ropsten                                    | https://eth-ropsten-rpc.gateway.pokt.network          | 3          | ETH    | https://ropsten.etherscan.io          |
-| Ethereum Trace                                      | https://eth-trace-rpc.gateway.pokt.network            |            | ETH    |                                       |
+| Ethereum Trace                                      | https://eth-trace-rpc.gateway.pokt.network            | 1          | ETH    |                                       |
 | Evmos                                               | https://evmos-rpc.gateway.pokt.network                | 9001       | EVMOS  | https://evm.evmos.org                 |
 | Fantom                                              | https://fantom-rpc.gateway.pokt.network               | 250        | FTM    | https://ftmscan.com                   |
 | [FUSE](https://youtu.be/sSg8QWgR\_T8)               | https://fuse-rpc.gateway.pokt.network                 | 122        | FUSE   | https://explorer.fuse.io              |
@@ -60,6 +60,6 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | Pocket Network                                      | https://pokt-rpc.gateway.pokt.network                 |            | POKT   | https://explorer.pokt.network         |
 | [Polygon](https://youtu.be/C0jDq20pBYQ)             | https://poly-rpc.gateway.pokt.network                 | 137        | MATIC  | https://polygonscan.com               |
 | Polygon Archival                                    | https://poly-archival-rpc.gateway.pokt.network        | 137        | MATIC  |                                       |
-| Polygon Mumbai                                      | https://polygon-mumbai-rpc.gateway.pokt.network       |            | MATIC  |                                       |
+| Polygon Mumbai                                      | https://polygon-mumbai-rpc.gateway.pokt.network       | 80001      | MATIC  |                                       |
 | Solana                                              | https://solana-mainnet-rpc.gateway.pokt.network       |            | SOL    |                                       |
 | Swimmer Network Mainnet                             | https://avax-cra-rpc.gateway.pokt.network             | 73772      | TUS    | https://explorer.swimmer.network      |
