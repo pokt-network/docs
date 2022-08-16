@@ -54,21 +54,15 @@ The following table shows the full list of currently-supported blockchains on th
 | Ethereum Ropsten       | 0023         |
 | Pocket Network Testnet | 0002         |
 
-## Integrating New RelayChains
+## Adding a New RelayChain
 
 Pocket Network is expandable, and is continually adding support for new chains.
 
-### Adding a New RelayChain
+Individuals interested in bringing a new RelayChain to Pocket Network are encouraged to advocate for chains to be considered by reaching out on Discord and posting a suggestion to our team. [Join our Discord](https://discord.gg/pokt).
 
-While it is not currently possible for a community member to add a chain to the list, they can advocate for chains to be considered by reaching out on Discord and posting a suggestion to our team. [Join our Discord](https://discord.gg/pokt).
+Pocket Network also has a initiative called "Triforce", which seeks to launch new chains collaboratively with the community, increasing efficiency through diversifying resources in people and infrastructure, and giving community members more responsibility. [Learn more about Triforce](https://pocketnetwork.notion.site/pocketnetwork/Triforce-49f3eea55671409fb532caabd46719b1).
 
-In order for a RelayChain to be successfully deployed with Pocket, the node running community will need to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the chain being approved.
-
-Pocket Network also has a initiative, called **"Triforce", which seeks to launch new chains collaboratively with the community**, increasing efficiency through diversifying resources in people and infrastructure, and giving community members more responsibility. [Learn more about Triforce](https://pocketnetwork.notion.site/pocketnetwork/Triforce-49f3eea55671409fb532caabd46719b1).
-
-### Deploying a New RelayChain
-
-Pocket Network determines which RelayChains are supported on behalf of the DAO, and aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
+In order for a RelayChain to be successfully deployed with Pocket, the node running community will need to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the chain being approved. Pocket Network aims to give the community of node runners sufficient notice to deploy their nodes with that chain to ensure a level playing field before making a determination to support the chain.
 
 Once the determination has been made to support a new RelayChain, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
 
