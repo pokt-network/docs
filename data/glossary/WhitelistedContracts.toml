@@ -1,0 +1,4 @@
+Name = "Whitelisted Contracts"
+Description = """
+In the Pocket Portal, an exclusive list of smart contract addresses that can access an Application endpoint. Note that this is only available for EVM-compatible chains.
+"""

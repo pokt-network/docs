@@ -1,0 +1,4 @@
+Name = "Portal"
+Description = """
+A [browser-based interface](https://www.portal.pokt.network/) where developers can create ("mint") a Pocket endpoint for use in their applications, utilizing a generous free tier of relays and scaling up as needed. Portal users can also monitor network performance.
+"""

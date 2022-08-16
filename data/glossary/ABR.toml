@@ -1,0 +1,4 @@
+Name = "Application Burn Rate (ABR)"
+Description = """
+Proposed mechanism that would burn developer's stakes based on Application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy](economics/monetary-policy.md).
+"""

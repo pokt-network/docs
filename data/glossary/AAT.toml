@@ -1,0 +1,13 @@
+Name = "Application Authentication Token (AAT)"
+Description = """
+An Application Authentication Token (AAT) is needed for each client to authorize the use of an allocated "throughput".
+
+Application Authentication Tokens are similar in function to JSON Web Tokens (JWT) and provide security guarantees for the use of the service.
+
+An AAT is generated after a client acquires & stakes POKT for an Application.
+
+There are two design patterns recommended for AAT usage:
+
+* **Optimizing for Safety:** __ A simple server that distributes signed AAT’s using the clients Pocket Account. Though this pattern is of higher effort for the Application, it provides the highest security guarantee around their AAT
+* **Optimizing for Performance:** Embed a token production system within the Application code. This guarantees the smoothest UX for the clients and easiest setup for the Application. However, reverse engineering a source code level token generator can be trivial if obfuscation methods are not applied. The upside to this approach is not having the need to have an additional component in the Application that generates the AAT dynamically while keeping the Application private key secure.
+"""

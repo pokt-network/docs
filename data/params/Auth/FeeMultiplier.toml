@@ -1,0 +1,6 @@
+Name = "FeeMultiplier"
+Value = ""
+ManagedBy = "DAO"
+Description = """
+The multiplier factor for each transaction type. The base transaction fee is universally set at 10,000 uPOKT.
+"""

@@ -1,0 +1,5 @@
+Name = "Endpoint"
+Description = """
+In the Pocket Portal, a URL that can receive RPC requests to a blockchain. Pocket allows you to "mint" endpoints that can be used with any of its [supported blockchains](../supported-blockchains.md). An Application can contain multiple endpoints (for multiple chains).
+"""
+

@@ -1,0 +1,4 @@
+Name = "POKT"
+Description = """
+Native cryptocurrency that underpins Pocket. Node runners stake POKT in order to earn rewards (also in POKT) from servicing relays from apps that utilize the Pocket Network. For example: "If you stake a Pocket node, you can earn POKT for every successful relay."
+"""

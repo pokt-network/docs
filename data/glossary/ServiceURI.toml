@@ -1,0 +1,4 @@
+Name = "ServiceURI"
+Description = """
+The endpoint that Servicers expose to provide Applications the functionality they need to send relays via the Pocket Network RPC to said Servicer.
+"""

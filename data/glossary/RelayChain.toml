@@ -1,0 +1,4 @@
+Name = "Relay Chain"
+Description = """
+Database instance, typically a blockchain, provided by a Servicer node to serve Applications. Also can refer to both the database and the client that keeps the database updated and can accept read/send operations to that database.
+"""

@@ -1,0 +1,4 @@
+Name = "PIP"
+Description = """
+Pocket Improvement Proposal. This is submitted to the Pocket DAO to upgrade any facet of Pocket Network, including protocol and governance updates. Each PIP is given a unique number as a suffix (such as [PIP-11](https://forum.pokt.network/t/pip-11-implementing-an-on-chain-rev-share-mechanism/)).
+"""

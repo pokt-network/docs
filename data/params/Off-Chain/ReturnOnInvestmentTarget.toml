@@ -1,0 +1,6 @@
+Name = "ReturnOnInvestmentTarget"
+Value = "10 months"
+ManagedBy = "Pocket Network Foundation"
+Description = """
+How long the DAO wants it to take for the USD/relay price to be achieved, since the cost basis of a relay decreases over the lifetime of an app stake.
+"""

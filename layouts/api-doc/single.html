@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="/js/web-components.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="stylesheet" href="/css/apiDoc.css" />
+    <script src="/js/apiDoc.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/">Docs</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="getChains()">
+          Relay Chain:
+          {{ .Params.name }}<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="chainDropdown">
+          {{ range (where .Site.RegularPages.ByTitle "Section" "api-docs" ) }}
+          <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <elements-api id="docs" basePath={{ .Page.RelPermalink }}
+    {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
+    {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
+    {{ end }}/>
+  </body>
+  <script>
+    (async () => {
+        const docs = document.getElementById('docs');
+        const data = await fetch({{ .Params.spec_url }}).then(res => res.json());
+        console.log(data.servers)
+        data.servers = [{ "url": "https://{{ .Params.portal_prefix }}.gateway.pokt.network/v1/lb/{PortalID}",
+            "description": "Pocket Portal",
+            "variables": {
+                "PortalID": {
+                    "default": "REQUIRED",
+                    "description": "Found after registering an app with the Pocket Portal.",
+                }},
+        }];
+        docs.apiDescriptionDocument = JSON.stringify(data);
+       })();
+  </script>
+</html>

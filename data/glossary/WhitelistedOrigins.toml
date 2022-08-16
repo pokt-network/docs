@@ -1,0 +1,4 @@
+Name = "Whitelisted Origins"
+Description = """
+In the Pocket Portal, an exclusive list of the HTTP Origin request headers that are allowed to make requests to the endpoint.
+"""

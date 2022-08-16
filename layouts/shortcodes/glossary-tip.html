@@ -1,0 +1,9 @@
+{{ $data := index $.Site.Data.glossary (index .Params 0)}}
+<div class="tooltip">
+{{ if .Inner }}
+  {{ .Inner }}
+{{ else }}
+ {{ $data.Name | markdownify }}
+{{ end }}
+  <span class="tooltiptext">{{ $data.Description | markdownify }} </span>
+</div>

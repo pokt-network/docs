@@ -1,0 +1,4 @@
+Name = "V1"
+Description = """
+Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network protocol](future/README.md), including a departure from Tendermint. v1 will allow Pocket to build its own network from the ground up, optimized for its specific use case, rather than being restricted by any limitations that come with building on Tendermint. v1 will bring major changes to four different "modules": Utility, Consensus, Peer-to-Peer, and Persistence.
+"""

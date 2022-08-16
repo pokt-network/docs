@@ -1,0 +1,6 @@
+Name = "ClaimExpiration"
+Value = ""
+ManagedBy = "DAO"
+Description = """
+The amount of time (in blocks) a node has to submit a proof for an already existing claim.
+"""

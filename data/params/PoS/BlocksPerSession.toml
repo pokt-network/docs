@@ -1,0 +1,7 @@
+Name = "BlocksPerSession"
+Value = ""
+ManagedBy = "DAO"
+Description = """
+The number of blocks allowed before a Session tumbles.
+"""
+

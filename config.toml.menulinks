@@ -1,0 +1,35 @@
+[[menu.shortcuts]]
+name = "PocketJS"
+url = "https://github.com/pokt-foundation/pocket-js"
+weight = 27
+
+
+[[menu.shortcuts]]
+name = "pypocket"
+url = "https://github.com/pokt-foundation/pypocket"
+weight = 28
+
+
+[[menu.shortcuts]]
+name = "pocket-go"
+url = "https://github.com/pokt-foundation/pocket-go"
+weight = 29
+
+
+[[menu.shortcuts]]
+name = "Jobs"
+url = "https://angel.co/company/pocket-network"
+weight = 35
+
+
+[[menu.shortcuts]]
+name = "Forum"
+url = "https://forum.pokt.network"
+weight = 27
+
+
+[[menu.shortcuts]]
+name = "Discord"
+url = "https://discord.gg/pokt"
+weight = 28
+

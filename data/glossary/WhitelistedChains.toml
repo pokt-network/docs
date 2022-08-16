@@ -1,0 +1,4 @@
+Name = "Whitelisted Chains"
+Description = """
+In the Pocket Portal, an exclusive list of the blockchains that an Application can connect to. For example, if four chains are whitelisted, there will be four endpoints generated in that Application.
+"""

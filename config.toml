@@ -1,0 +1,129 @@
+baseURL = 'https://docs.pokt.network/'
+languageCode = 'en-us'
+title = 'Pocket Network'
+theme = 'relearn'
+
+# Theme specific parameters
+[params]
+  # This controls whether submenus will be expanded (true), or collapsed (false) in the
+  # menu; if no setting is given, the first menu level is set to false, all others to true;
+  # this can be overridden in the pages frontmatter
+  alwaysopen = false
+  # Prefix URL to edit current page. Will display an "Edit" button on top right hand corner of every page.
+  # Useful to give opportunity to people to create merge request for your doc.
+  # See the config.toml file from this documentation site to have an example.
+  editURL = ""
+  # Author of the site, will be used in meta information
+  author = ""
+  # Description of the site, will be used in meta information
+  description = ""
+  # Shows a checkmark for visited pages on the menu
+  showVisitedLinks = false
+  # Disable search function. It will hide search bar
+  disableSearch = false
+  # Disable search in hidden pages, otherwise they will be shown in search box
+  disableSearchHiddenPages = false
+  # Disables hidden pages from showing up in the sitemap and on Google (et all), otherwise they may be indexed by search engines
+  disableSeoHiddenPages = false
+  # Disables hidden pages from showing up on the tags page although the tag term will be displayed even if all pages are hidden
+  disableTagHiddenPages = false
+  # Javascript and CSS cache are automatically busted when new version of site is generated.
+  # Set this to true to disable this behavior (some proxies don't handle well this optimization)
+  disableAssetsBusting = false
+  # Set this to true to disable copy-to-clipboard button for inline code.
+  disableInlineCopyToClipBoard = false
+  # A title for shortcuts in menu is set by default. Set this to true to disable it.
+  disableShortcutsTitle = false
+  # If set to false, a Home button will appear below the search bar on the menu.
+  # It is redirecting to the landing page of the current language if specified. (Default is "/")
+  disableLandingPageButton = false
+  # When using mulitlingual website, disable the switch language button.
+  disableLanguageSwitchingButton = false
+  # Hide breadcrumbs in the header and only show the current page title
+  disableBreadcrumb = true
+  # If set to true, hide table of contents menu in the header of all pages
+  disableToc = false
+  # If set to false, load the MathJax module on every page regardless if a MathJax shortcode is present
+  disableMathJax = false
+  # Specifies the remote location of the MathJax js
+  customMathJaxURL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  # Initialization parameter for MathJax, see MathJax documentation
+  mathJaxInitialize = "{ \"chtml\": { \"displayAlign\": \"left\" } }"
+  # If set to false, load the Mermaid module on every page regardless if a Mermaid shortcode or Mermaid codefence is present
+  disableMermaid = false
+  # Specifies the remote location of the Mermaid js
+  customMermaidURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
+  # Initialization parameter for Mermaid, see Mermaid documentation
+  mermaidInitialize = "{ \"theme\": \"default\" }"
+  # If set to false, load the Swagger module on every page regardless if a Swagger shortcode is present
+  disableSwagger = true
+  # Specifies the remote location of the RapiDoc js
+  customSwaggerURL = "https://unpkg.com/rapidoc/dist/rapidoc-min.js"
+  # Initialization parameter for Swagger, see RapiDoc documentation
+  swaggerInitialize = "{ \"theme\": \"light\" }"
+  # Hide Next and Previous page buttons normally displayed full height beside content
+  disableNextPrev = false
+  # Order sections in menu by "weight" or "title". Default to "weight";
+  # this can be overridden in the pages frontmatter
+  ordersectionsby = "weight"
+  # Change default color scheme with a variant one. Eg. can be "red", "blue", "green" or an array like [ "blue", "green" ].
+  themeVariant = "blue"
+  # Change the title separator. Default to "::".
+  titleSeparator = "-"
+  # If set to true, the menu in the sidebar will be displayed in a collapsible tree view.
+  collapsibleMenu = true
+  # If a single page can contain content in multiple languages, add those here
+  additionalContentLanguage = [ "en" ]
+
+[outputs]
+  home = ["HTML", "RSS", "PRINT", "JSON"]
+  section = ["HTML", "RSS", "PRINT"]
+  page = ["HTML", "RSS", "PRINT"]
+
+[markup]
+  [markup.highlight]
+  guessSyntax = false
+
+[[menu.shortcuts]]
+name = "API Docs"
+url = "/api-docs/pokt"
+weight = 25
+
+[[menu.shortcuts]]
+name = "PocketJS"
+url = "https://github.com/pokt-foundation/pocket-js"
+weight = 27
+
+
+[[menu.shortcuts]]
+name = "pypocket"
+url = "https://github.com/pokt-foundation/pypocket"
+weight = 28
+
+
+[[menu.shortcuts]]
+name = "pocket-go"
+url = "https://github.com/pokt-foundation/pocket-go"
+weight = 29
+
+
+[[menu.shortcuts]]
+name = "Jobs"
+url = "https://angel.co/company/pocket-network"
+weight = 35
+
+
+[[menu.shortcuts]]
+name = "Forum"
+url = "https://forum.pokt.network"
+weight = 27
+
+
+[[menu.shortcuts]]
+name = "Discord"
+url = "https://discord.gg/pokt"
+weight = 28
+
+[Languages]
+[Languages.en]
+landingPageName = "👋 Welcome"

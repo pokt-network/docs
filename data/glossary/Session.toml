@@ -1,0 +1,9 @@
+Name = "Session"
+Description = """
+A data structure which uses data from the finality storage layer of the network to pseudo-randomly group one Application with a set of nodes to provide service for a limited time. A Session lasts for 4 blocks, for a total of one hour.
+
+Every Application will only have one single Session per relay chain it is staked for. Meaning, following an Application stake event, there will always be a corresponding Session for the Application for each relay chain until it unstakes.
+
+
+List of Servicers that an Application is able to send requests to for a period of time. The Pocket blockchain periodically updates the Sessions so Applications receive a new, pseudo-randomly selected set of Servicers every four (4) blocks (determined by the [BlocksPerSession](protocol-parameters.md#blockspersession) parameter), or approximately one hour, for each Relay Chain that the Application is staked for. During this period of time, the Servicers will only be rewarded POKT for servicing Applications if they have been matched in a Session. The amount of Servicers in a Session is currently 24 (determined by the [SessionNodeCount](protocol-parameters.md#sessionnodecount) parameter).
+"""

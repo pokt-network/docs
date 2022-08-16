@@ -1,0 +1,4 @@
+Name = "WAGMI"
+Description = """
+Weighted Annual Gross Max Inflation (WAGMI) is an inflation control mechanism for the Pocket Network that was established via [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/), and further defined via [PUP-13](https://forum.pokt.network/t/pup-13-initial-wagmi-parameters/). Together, these proposals established a target annual inflation rate, or WAGMI rate, in POKT, from which the [RelaysToTokensMultiplier](protocol-parameters.md#relaystotokensmultiplier) parameter (which determines the amount of POKT earned per relay serviced) is adjusted dynamically. The proposals also laid out a step-down in target inflation rate from 100% to 50% over a period of time.
+"""
