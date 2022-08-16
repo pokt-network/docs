@@ -61,6 +61,7 @@ redirects:
     resources/contact-us: more-info.md
     resources/faq/app-integration: use/get-endpoint.md
     resources/faq/pricing-and-economics: learn/economics/faq.md
+    resources/faq/product-comparisons: learn/vision.md
     resources/faq/node-configuration: node/faq.md
     resources/faq/node-troubleshooting: node/faq.md
     resources/faq/wpokt: pokt/wpokt.md
@@ -82,6 +83,3 @@ redirects:
     resources/public-rpc-endpoints/dark-forest: use/dapps/dark-forest.md
     resources/public-rpc-endpoints/mycrypto: use/dapps/mycrypto.md
     resources/public-rpc-endpoints/rotki: use/dapps/rotki.md
-    test1: supported-blockchains.md
-    test2: ./supported-blockchains.md
-    test3: ./home/supported-blockchains.md
