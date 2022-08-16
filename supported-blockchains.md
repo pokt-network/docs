@@ -1,6 +1,6 @@
-# ✅ Supported Blockchains
+# Supported Blockchains
 
-Pocket works out-of-the-box with any network/blockchain (RelayChain) that uses the RPC standard.
+Pocket can be made to work with any network/blockchain (RelayChain) that uses the RPC standard.
 
 ## Current RelayChains
 
@@ -54,40 +54,16 @@ The following table shows the full list of currently-supported blockchains on th
 | Ethereum Ropsten       | 0023         |
 | Pocket Network Testnet | 0002         |
 
-## Claimed RelayChains
+## Adding a New RelayChain
 
-The following table shows the full list of RelayChains that are known to have been claimed.
+Pocket Network is expandable, and is continually adding support for new chains.
 
-Due to Pocket Network's permissionless nature, any RelayChainID can be claimed by adding it to this list. Apps and nodes staking on the RelayChain will be matched together in [sessions](learn/protocol/servicing.md), but nodes will not earn POKT.
+Individuals interested in bringing a new RelayChain to Pocket Network are encouraged to advocate for chains to be considered by reaching out on Discord and posting a suggestion to our team. [Join our Discord](https://discord.gg/pokt).
 
-These blockchains are not supported or reward-generating, and presence on this table does not imply that they will be supported or reward-generating in the future.
+Pocket Network also has a initiative called "Triforce", which seeks to launch new chains collaboratively with the community, increasing efficiency through diversifying resources in people and infrastructure, and giving community members more responsibility. [Learn more about Triforce](https://pocketnetwork.notion.site/pocketnetwork/Triforce-49f3eea55671409fb532caabd46719b1).
 
-| Name                                 | Portal API Prefix         | RelayChainID |
-| ------------------------------------ | ------------------------- | ------------ |
-| Algorand Archival                    | algorand-archival         | 000D         |
-| Algorand Testnet                     | algorand-testnet          | 0045         |
-| Algorand Testnet Archival            | algorand-testnet-archival | 0A45         |
-| Arweave                              | arweave-mainnet           | 0030         |
-| Avalanche Archival                   | avax-archival             | 00A3         |
-| Avalanche Fuji                       | avax-fuji                 | 000E         |
-| Binance Smart Chain Testnet          | bsc-testnet               | 0011         |
-| Binance Smart Chain Testnet Archival | bsc-testnet-archival      | 0012         |
-| Harmony Shard 0 Archival             | harmony-0-archival        | 0A40         |
-| Harmony Shard 1                      | harmony-1                 | 0041         |
-| Harmony Shard 1 Archival             | harmony-1-archival        | 0A41         |
-| Harmony Shard 2                      | harmony-2                 | 0042         |
-| Harmony Shard 2 Archival             | harmony-2-archival        | 0A42         |
-| Harmony Shard 3                      | harmony-3                 | 0043         |
-| Harmony Shard 3 Archival             | harmony-3-archival        | 0A43         |
-| Polygon Mumbai Archival              | poly-mumbai-archival      | 00AF         |
-| Solana Testnet                       | sol-testnet               | 0031         |
+In order for a RelayChain to be successfully deployed with Pocket, the node running community will need to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the chain being approved. Pocket Network aims to give the community of node runners sufficient notice to deploy their nodes with that chain to ensure a level playing field before making a determination to support the chain.
 
-## Integrating New RelayChains
+Once the determination has been made to support a new RelayChain, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
 
-In order to integrate a RelayChain with Pocket, the node running community needs to support the chain. So a chain that is easier to deploy, sync, and maintain, has helpful documentation, and provides stable nodes, will all tend to increase the likelihood of the community supporting the chain.
-
-The Pocket Network Foundation determines which RelayChains are supported (reward-generating) on behalf of the DAO. Before making this determination, the Foundation aims to give the community of node runners enough notice to deploy their nodes to ensure a level playing field.
-
-Once the determination has been made to support a new RelayChain at scale, the RelayChainID will be added to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains) parameter, meaning that nodes will earn POKT for every request that they relay for the RelayChain based on the [`RelaysToTokensMultiplier`](learn/protocol-parameters.md#relaystotokensmultiplier) parameter.
-
-For more information, please see [PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027).
+For more information, please see [PIP-6.2: Settlers of New Chains](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/).
