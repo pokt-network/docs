@@ -4,7 +4,7 @@ Pocket can be made to work with any network/blockchain (RelayChain) that uses th
 
 ## Current RelayChains
 
-The following table shows the full list of supported, revenue-generating RelayChains. This list should be identical to the on-chain [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
+The following table shows the full list of supported, reward-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](learn/protocol-parameters.md#supportedblockchains.md) parameter.
 
 | Name                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
