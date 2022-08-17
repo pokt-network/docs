@@ -13,13 +13,13 @@ Blockchains enable unstoppable validation of transactions by incentivizing valid
 
 Many blockchain communities have [debated incentivizing the RPC nodes](https://ethresear.ch/t/incentives-for-running-full-ethereum-nodes/1239) that provide this access to the blockchain. Facing quite a complex challenge though, they have [rejected on-chain solutions](https://eips.ethereum.org/EIPS/eip-908), expecting that altruists would run RPC nodes for the good of the network.
 
-However, in the name of convenience, as RPC nodes have grown more expensive to maintain and developers more specialized, Web3 RPC access has consolidated around centralized gatekeepers. When you use MetaMask to sign transactions in your favorite game or NFT marketplace, assuming you haven't already [switched your custom RPC to Pocket Network](../use/public-rpc), your data is flowing through a centralized cluster of RPC nodes. This means you are vulnerable to [outages](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/).
+However, in the name of convenience, as RPC nodes have grown more expensive to maintain and developers more specialized, Web3 RPC access has consolidated around centralized gatekeepers. When you use MetaMask to sign transactions in your favorite game or NFT marketplace, assuming you haven't already [switched your custom RPC to Pocket Network](/use/public-rpc/), your data is flowing through a centralized cluster of RPC nodes. This means you are vulnerable to [outages](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/).
 
 Pocket Network solves this critical flaw in the Web3 stack by incentivizing a network of RPC nodes to relay your data to any blockchain. DApps send their RPC requests to the nodes, who relay the requests and use Zero-Knowledge Range Proofs to validate the Relay Evidence that determines their POKT block reward. As well as making Web3 access unstoppable, this has the side effect of making Web3 infrastructure cheaper, by eliminating rent-seeking intermediaries, and more private, since each RPC node relays only a fraction of your data.
 
-[**Learn more about Pocket Network's current protocol**]({{< relref "protocol/" >}}).
+[**Learn more about Pocket Network's current protocol**](/learn/protocol/).
 
-[**Learn more about v1**]({{< relref "future/" >}}), the future of Pocket Network's protocol.
+[**Learn more about v1**](/learn/future/), the future of Pocket Network's protocol.
 
 
 ## How POKT Incentivizes RPC Nodes
@@ -35,7 +35,7 @@ This economic model has the following benefits:
 
 Once the POKT ecosystem is mature, when apps can frictionlessly top-up their stakes, and we no longer need bootstrapping incentives, the protocol has a dormant burning mechanism that the DAO can activate to burn app stakes proportional to the number of relays they request. This will have the effect of transforming Pocket Network's business model into a standard credit system and making POKT deflationary.
 
-Learn more about [Pocket Network's economics](economics/README.md) and also [the future of Pocket with v1]({{< relref "future/" >}}).
+Learn more about [Pocket Network's economics](/learn/economics/) and also [the future of Pocket with v1](/learn/future/).
 
 ## 💸 Decentralizing Infrastructure
 

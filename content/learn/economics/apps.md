@@ -52,7 +52,7 @@ Learn more about each variable below.
 
 ## Stability Adjustment
 
-The `StabilityAdjustment` parameter helps smooth out pricing for applications because there is a [menu cost](https://en.m.wikipedia.org/wiki/Menu_cost) associated with changing `BaseRelaysPerPOKT` too often. Applications will be reliant on a relatively stable real `$USDPerRelay` price to access throughput. Community resources and consistent communication will help them make decisions about how much POKT to stake at any given moment.
+The `StabilityAdjustment` parameter helps smooth out pricing for applications because there is a [menu cost](https://en.wikipedia.org/wiki/Menu_cost) associated with changing `BaseRelaysPerPOKT` too often. Applications will be reliant on a relatively stable real `$USDPerRelay` price to access throughput. Community resources and consistent communication will help them make decisions about how much POKT to stake at any given moment.
 
 Pocket's price target optimization problem will rely on off-chain data about a given currency's current exchange rate with POKT, e.g. using `$USDPerPOKT` to measure how close the real `$USDPerRelay` price is to the DAO's current `$USDPerRelay` Target. Short-term fluctuations will therefore be arbitrary depending on which currency has been chosen to anchor the DAO's price target against and what is happening day-to-day in the crypto and FOREX markets; today `$USDPerPOKT` might change by 5% but `€EURPerPOKT` only changes by 1%. It is important that we don't let short-term fluctuations impact the stability and accessibility of the network.
 

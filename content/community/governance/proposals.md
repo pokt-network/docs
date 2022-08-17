@@ -40,7 +40,7 @@ To submit a PIP, head to the forum [here](https://forum.pokt.network/c/governanc
 {{% notice style="info" %}}
 How is the DAO funded?
 
-The DAO earns continuous revenue in the form of the [DAOAllocation](../../learn/protocol-parameters.md#daoallocation), which is a % that the DAO receives for every [RelaysToTokensMultiplier]({{< relref "../../learn/protocol-parameters#relaystotokensmultiplier" >}}) minted in the block reward. This is proportional to the number of relays being processed for app developers, which means the more traction Pocket Network gets, the more wealthy the DAO becomes!
+The DAO earns continuous revenue in the form of the [DAOAllocation](/learn/protocol-parameters/#daoallocation), which is a % that the DAO receives for every [RelaysToTokensMultiplier](/learn/protocol-parameters/#relaystotokensmultiplier) minted in the block reward. This is proportional to the number of relays being processed for app developers, which means the more traction Pocket Network gets, the more wealthy the DAO becomes!
 {{% /notice %}}
 
 PEP votes will last 7 days and pass with Majority Approval (50% yes votes by participating voters) unless otherwise specified in the [Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md).
@@ -57,7 +57,7 @@ To submit a PUP, head to the forum [here](https://forum.pokt.network/c/governanc
 
 The following parameters are delegated to the Foundation to manage the parameter on the DAO's behalf:
 
-* [SupportedBlockchains](../../learn/protocol-parameters.md#supportedblockchains) ([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027))
-* [MaxApplications](../../learn/protocol-parameters.md#maxapplications) ([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027))
-* [BaseRelaysPerPOKT]({{< relref "../../learn/protocol-parameters#baserelaysperpokt" >}})
-* [StabilityAdjustment]({{< relref "../../learn/protocol-parameters#stabilityadjustment" >}})
+* [SupportedBlockchains](/learn/protocol-parameters/#supportedblockchains) ([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027))
+* [MaxApplications](/learn/protocol-parameters/#maxapplications) ([PIP-6.2](https://forum.pokt.network/t/pip-6-2-settlers-of-new-chains/1027))
+* [BaseRelaysPerPOKT](/learn/protocol-parameters/#baserelaysperpokt)
+* [StabilityAdjustment](/learn/protocol-parameters/#stabilityadjustment)

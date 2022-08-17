@@ -36,7 +36,7 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | [Binance Smart Chain](https://youtu.be/fLTvtBtOEg0) | https://bsc-rpc.gateway.pokt.network                  | 56         | BNB    | https://bscscan.com                   |
 | Binance Smart Chain Archival                        | https://bsc-archival-rpc.gateway.pokt.network         | 56         | BNB    |                                       |
 | Boba                                                | https://boba-rpc.gateway.pokt.network                 | 288        | ETH    | https://blockexplorer.boba.network    |
-| DFK Chain                                           | https://avax-dfk-rpc.gateway.pokt.network             | 53935      | JEWEL  | https://explorer.dfkchain.com         |
+| DFK Chain                                           | https://avax-dfk-rpc.gateway.pokt.network             | 53935      | JEWEL  | https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer         |
 | [Ethereum](https://youtu.be/8ruuz3u2V2E)            | https://eth-rpc.gateway.pokt.network                  | 1          | ETH    | https://etherscan.io                  |
 | Ethereum Archival                                   | https://eth-archival-rpc.gateway.pokt.network         | 1          | ETH    |                                       |
 | Ethereum Goerli                                     | https://eth-goerli-rpc.gateway.pokt.network           | 5          | ETH    | https://goerli.etherscan.io           |

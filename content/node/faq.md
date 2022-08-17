@@ -15,7 +15,7 @@ Yes. Every node on the Pocket Network needs to have the most up to date informat
 
 ### How many blockchains can one node support?
 
-Your node can support up to the number of chains defined by the [`MaximumChains`]({{< relref "../learn/protocol-parameters#maximumchains-1" >}}) parameter. This limit is not definitive and can be changed by the DAO.
+Your node can support up to the number of chains defined by the [`MaximumChains`](/learn/protocol-parameters/#maximumchains-1) parameter. This limit is not definitive and can be changed by the DAO.
 
 ### Can I add a load balancer address in my chains.json if I have multiple blockchains under one domain?
 
@@ -25,11 +25,11 @@ Yes you can! Just make sure you have the necessary ports open to be able to succ
 
 Unstake your node, add the new RelayChainIDs to your chains.json file, then restake your node.
 
-[Find the RelayChainIDs here]({{< relref "../supported-blockchains" >}})
+[Find the RelayChainIDs here](/supported-blockchains).
 
 ### Can I continue earning POKT while I'm unstaking?
 
-No, for the duration of the unstaking process as determined by the [`UnstakingTime`]({{< relref "../learn/protocol-parameters#unstakingtime" >}}) parameter, your node will not be eligible for sessions.
+No, for the duration of the unstaking process as determined by the [`UnstakingTime`](/learn/protocol-parameters/#unstakingtime) parameter, your node will not be eligible for sessions.
 
 ### Do each of my nodes need a unique IP address?
 
@@ -44,7 +44,7 @@ As a best practice, do not use `root` to run the pocket process. When you set th
 {{% notice style="warning" %}}
 Make sure that you're setting the ulimit for the specific account that's running the `pocket` process.
 
-Configuring the ulimit system-wide might vary depending on your OS. Here's a basic tutorial on setting them for linux: [https://rtcamp.com/tutorials/linux/increase-open-files-limit/](https://rtcamp.com/tutorials/linux/increase-open-files-limit/)
+Configuring the ulimit system-wide might vary depending on your OS. Here's a basic tutorial on [increasing the open files limit on Linux](https://rtcamp.com/tutorials/linux/increase-open-files-limit/).
 {{% /notice %}}
 
 #### How to calculate the `ulimit`
@@ -61,13 +61,15 @@ Breakdown:
 
 You will need to increase your ulimit to the calculated number. To do so, go into your .bashrc in your $HOME dir and enter:
 
-```
+```code
 ulimit -Sn 16384
 ```
 
 Once you save your file, enter:
 
-`source ~/.bashrc`
+```code
+source ~/.bashrc
+```
 
 ### What do I do if my node needs to go down for an extended period, such as during a machine migration?
 
@@ -154,9 +156,7 @@ Make sure your node meets the minimum hardware requirements for both a Pocket no
 
 ### Will my node be slashed for downtime?
 
-There are negligible burns at this stage of the network, determined by the [`SlashFractionDowntime`]({{< relref "../learn/protocol-parameters#slashfractiondowntime" >}}) parameter. As the network matures, the rate will probably be increased to push for better service.
-
-
+There are negligible burns at this stage of the network, determined by the [`SlashFractionDowntime`](/learn/protocol-parameters/#slashfractiondowntime) parameter. As the network matures, the rate will probably be increased to push for better service.
 
 ## 🤑 Maximizing your Pocket earnings
 
@@ -166,12 +166,12 @@ So you've spun up your Pocket node but you're not earning as much as you thought
 
 There are a couple of reasons why your node may not be rewarding you with POKT. There are many great community members and Pocket teammates that are eager to help you triage this, but first, ask yourself, “is your node configured correctly?”. Don't assume it is. Use the troubleshooting steps listed above.
 
-The next thing to check is if your node is offline or [jailed]({{< relref "../learn/glossary#jail" >}})...or both. Reasons include:
+The next thing to check is if your node is offline or [jailed](/learn/glossary/#jail)...or both. Reasons include:
 
 * Returning incorrect data
 * Missing blocks
 * Being offline
-* [serviceURI]({{< relref "../learn/glossary#serviceuri" >}}) is not publicly reachable
+* [serviceURI](/learn/glossary/#serviceuri) is not publicly reachable
 
 If you suspect that this may be happening to your node, you can do a historical search on your nodes. We have a great community member who created [this](https://forum.pokt.network/t/jailcounter-script/663) script to help you determine how long you were jailed for a specific period of time.
 
@@ -185,7 +185,7 @@ Checking the block height is the easiest way to know if you're synced up to the 
 pocket query height
 ```
 
-The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](../supported-blockchains.md) (referred to on this page as blockchain data nodes) that you're serving to apps. You should make sure these are also synced up to their respective networks.
+The above command tells you if your Pocket node is synced up, but you're probably running at least one other node for the [external blockchains](/supported-blockchains/) (referred to on this page as blockchain data nodes) that you're serving to apps. You should make sure these are also synced up to their respective networks.
 
 For example, you can check the block height of your Geth Ethereum node by submitting this query to your node, which returns the latest height of geth-mainnet known by the node.
 
@@ -251,7 +251,7 @@ The following are some best practices that will give you an edge over the majori
 * Know where the users are located… and locate your nodes accordingly. The Pocket Portal is currently in US-West-2, US-East-2, EU-West-1, AP-SE-1. The most underserved geographic area on Pocket is currently the Asia Pacific region.
 * Minimize the distance between your Pocket Nodes and your blockchain data nodes. Having your blockchain data nodes next to your Pocket nodes in the same rack is ideal.
 * Load-balance your blockchain data nodes.
-* Use a Peering Tower to reduce P2P gossip on the network. Visit the 🤖node-runner channel on [Discord](https://discord.gg/GSUDdhqtQ3) for more information.
+* Use a Peering Tower to reduce P2P gossip on the network. Visit the 🤖node-runner channel on [Discord](https://discord.gg/pokt) for more information.
 * Use physical hardware at home or data centers; you will have faster nodes and lower costs over time by owning your hardware and co-locating it.
 * Monitor your nodes for both health and sync -- being online is only the first step, you must keep your blockchain data nodes in sync or they will not service relays.
 * Use services like the [Performance Explorer](https://c0d3r.org/PerfExplorer) to monitor your node's performance in comparison to other nodes.

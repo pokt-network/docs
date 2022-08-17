@@ -15,11 +15,11 @@ For each Relay served and validated by the protocol, POKT is added to the next b
 | Participant | Parameter Name | Current Allocation |
 | :--- | :--- | :--- |
 | Service Nodes | N/A | 85% |
-| Block Producer | [ProposerAllocation]({{< relref "../protocol-parameters#proposerallocation" >}}) | 5% |
-| DAO | [DAOAllocation]({{< relref "../protocol-parameters#daoallocation" >}}) | 10% |
+| Block Producer | [ProposerAllocation](/learn/protocol-parameters/#proposerallocation) | 5% |
+| DAO | [DAOAllocation](/learn/protocol-parameters/#daoallocation) | 10% |
 
 {{% notice style="info" %}}
-Current values of these parameters (and all others) can be found on the [Protocol Parameters]({{< relref "../protocol-parameters" >}}) page.
+Current values of these parameters (and all others) can be found on the [Protocol Parameters](/learn/protocol-parameters/) page.
 {{% /notice %}}
 
 {{% notice style="info" %}}
@@ -108,7 +108,7 @@ WAGMI targets will be stepped down to 50% over the following five months as foll
 | Jun 24, 2022 | 60% |
 | Jul 24, 2022 | 50% |
 
-The per-node reward (also known by its parameter value [RelaysToTokensMultiplier]({{< relref "../protocol-parameters#relaystotokensmultiplier)" >}}) is calculated using:
+The per-node reward (also known by its parameter value [RelaysToTokensMultiplier](/learn/protocol-parameters/#relaystotokensmultiplier) is calculated using:
 
 * The 30-day trailing average of daily relays at the time of each adjustment
 * The total supply at the time of the proposal passing ("Total Supply Baseline"):

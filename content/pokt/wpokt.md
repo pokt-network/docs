@@ -67,7 +67,7 @@ Each individual stake amount marks the beginning of its own period. So if you st
 
 ## What's an LBP?
 
-LBP \(Liquidity Bootstrapping Pool\) is an adjustable Balancer smart pool that is used for initial distribution and price discovery of tokens. It continually changes the weights of the assets in the pool which has the effect of suppressing the price of the distributed token if there is no demand. These mechanisms are designed to distribute wPOKT as fairly as possible while encouraging price discovery. You can learn more about LBPs [here](https://medium.com/balancer-protocol/building-liquidity-into-token-distribution-a49d4286e0d4) and [here](https://docs.balancer.finance/smart-contracts/smart-pools/liquidity-bootstrapping-faq).
+LBP \(Liquidity Bootstrapping Pool\) is an adjustable Balancer smart pool that is used for initial distribution and price discovery of tokens. It continually changes the weights of the assets in the pool which has the effect of suppressing the price of the distributed token if there is no demand. These mechanisms are designed to distribute wPOKT as fairly as possible while encouraging price discovery. You can learn more about LBPs [here](https://medium.com/balancer-protocol/building-liquidity-into-token-distribution-a49d4286e0d4).
 
 The LBP will be a limited-time distribution event and afterward, liquidity will be moved to Uniswap or another viable DEX.
 

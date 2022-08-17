@@ -12,7 +12,7 @@ Greetings aspiring Node Runner, we have heard your call to join us in the battle
 
 ### Server
 
-[Stake your node]({{< relref "../../node/setup" >}}) successfully in Pocket testnet or mainnet.
+[Stake your node](/node/setup/) successfully in Pocket testnet or mainnet.
 
 {{% notice style="info" %}}
 To verify that you own the account, you must sign a message using the following CLI command, removing the `<>` and the `""`
@@ -30,7 +30,7 @@ Successfully submit a proof transaction in Pocket testnet or mainnet.
 
 ### Jailbreak
 
-Avoid getting [jailed](../../learn/glossary.md#jail) for 7 days (672 consecutive blocks) in Pocket testnet or mainnet.
+Avoid getting [jailed](/learn/glossary/#jail) for 7 days (672 consecutive blocks) in Pocket testnet or mainnet.
 
 ## Nodemad
 
@@ -90,7 +90,7 @@ Submit successful proof transactions of 1M relays in Pocket mainnet.
 
 ### Infrared
 
-Submit an infrastructure-oriented [PEP]({{< relref "../governance/proposals" >}}) and receive a POKT grant from the DAO.
+Submit an infrastructure-oriented [PEP](/community/governance/proposals/) and receive a POKT grant from the DAO.
 
 ### Testkit
 

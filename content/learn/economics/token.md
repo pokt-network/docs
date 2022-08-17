@@ -22,7 +22,7 @@ Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the
 
 Our current monetary policy is broken down into two phases: the Growth Phase and the Maturity Phase. During the Growth Phase, applications stake just once to access the protocol (assuming they don’t change their throughput) attracting new applications to use the service due to the low cost of service - only paying through their initial stake and through inflation. At network maturity (the Maturity Phase), Pocket will become a simple fee market with the demand side (Applications) stakes are burned in proportion to the amount of POKT minted by the supply side (Nodes) - eliminating the growth in total supply of POKT. This allows for the transfer of value without using direct fees and incurring further costs of coordination.
 
-For more information, read our page on Pocket [monetary policy]({{< relref "monetary-policy" >}}).
+For more information, read our page on Pocket [monetary policy](/learn/economics/monetary-policy/).
 
 ## Transactions
 
@@ -40,7 +40,7 @@ The protocol limits the number of Relays an Application may access based on the 
 
 ### Node Staking
 
-Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [R.C.0.6.0](https://forum.pokt.network/t/pip-4-consensus-rule-change-0-6-0/834), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes \(subject to change on DAO parameter vote\) on the network. Validator Nodes can claim the block reward for submitting the block which is equal to the value of the [`ProposerAllocation`]({{< ref "/learn/protocol-parameters" >}}) parameter. 
+Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [R.C.0.6.0](https://forum.pokt.network/t/pip-4-consensus-rule-change-0-6-0/834), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes \(subject to change on DAO parameter vote\) on the network. Validator Nodes can claim the block reward for submitting the block which is equal to the value of the [`ProposerAllocation`](/learn/protocol-parameters/#proposerallocation) parameter. 
 
 {{% notice style="danger" %}}
 While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice. 

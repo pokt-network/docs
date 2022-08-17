@@ -12,7 +12,7 @@ Namaste aspiring Shepherd, we kindly thank you for your willingness to nurture t
 
 ### Seed-Pouch
 
-Swap the RPC endpoints on your wallets with Pocket. ([Find your network information here.](../../use/public-rpc/))
+Swap the RPC endpoints on your wallets with Pocket. ([Find your network information here.](/use/public-rpc/))
 
 {{% notice style="info" %}}
 To verify that you used the app, screen record yourself submitting an on-chain action (e.g. submitting a transaction or querying chain data), with your Discord username somewhere on the screen, then share the screen recording to [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) when you report the quest completion.
@@ -112,7 +112,7 @@ Successfully onboard 5 node runners into Pocket Network.
 
 ### Seed-Fund
 
-Submit a community-orientated [PEP]({{< relref "../governance/proposals" >}}) and receive a POKT grant from the DAO.
+Submit a community-orientated [PEP](/community/governance/proposals/) and receive a POKT grant from the DAO.
 
 ### Assurance
 

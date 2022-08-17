@@ -16,7 +16,7 @@ Service Nodes are pseudo-randomly assigned to a Session. Every Service Node who 
 
 ## Node Staking
 
-Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [RC-0.7.0](https://forum.pokt.network/t/pip-7-consensus-rule-change-validator-servicer-split-validator-consolidation), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes on the network. Validator Nodes can claim a block reward percentage for submitting the block equal to the value of the [`ProposerAllocation`]({{< ref "/learn/protocol-parameters" >}}) parameter.
+Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [RC-0.7.0](https://forum.pokt.network/t/pip-7-consensus-rule-change-validator-servicer-split-validator-consolidation), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes on the network. Validator Nodes can claim a block reward percentage for submitting the block equal to the value of the [`ProposerAllocation`](/learn/protocol-parameters/) parameter.
 
 {{% notice style="danger" %}}
 While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice.
@@ -109,4 +109,4 @@ If a Service Node submits a fraudulent Relay batch, 100% of their stake will be 
 
 For providing infrastructure access to applications, Validators are rewarded proportional to the work they provide. Pocket Core attempts to send a _Claim_ and subsequent _Proof_ transaction automatically after the `proof_waiting_period` elapses. If both transactions are successful, Tokens are minted to the address of the Validator.
 
-Read more about [Pocket monetary policy]({{< relref "monetary-policy" >}}).
+Read more about [Pocket monetary policy](/learn/economics/monetary-policy/).

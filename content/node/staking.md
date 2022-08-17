@@ -33,7 +33,7 @@ In addition, this output account has much the same authority over the node as th
 ![](/images/non-custodial-staking.png)
 ## Benefits of non-custodial staking
 
-An operator address must reside in a "hot" wallet on the node. This could potentially represent a security risk when the server is operated by a third-party. As [third-party node hosting is common]({{< relref "hosting-services" >}}), there has arisen a need to have the recipient wallet for rewards not be on the same server as the node.
+An operator address must reside in a "hot" wallet on the node. This could potentially represent a security risk when the server is operated by a third-party. As [third-party node hosting is common](/node/hosting-services/), there has arisen a need to have the recipient wallet for rewards not be on the same server as the node.
 
 Non-custodial staking allows for this. All you need to specify is the wallet ("output") address, which is denoted when staking the node. The wallet can reside off the server.
 

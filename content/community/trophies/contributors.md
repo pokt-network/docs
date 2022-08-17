@@ -12,7 +12,7 @@ Greetings fledgling DAOist and aspiring Biohacker. It is now time to augment you
 
 ### Anode
 
-Author any successful [proposal]({{< relref "../governance/proposals" >}})
+Author any successful [proposal](/community/governance/proposals/)
 
 ### Neurolink
 
@@ -33,15 +33,15 @@ We're impressed with your augmentation capabilities, but to truly become a Cybor
 
 ### Cybernetic-Arm
 
-Author a successful [PIP](../governance/proposals.md) (independent of the Anode quest).
+Author a successful [PIP](/community/governance/proposals/) (independent of the Anode quest).
 
 ### Cybernetic-Leg
 
-Author a successful [PUP](../governance/proposals.md) (independent of the Anode quest).
+Author a successful [PUP](/community/governance/proposals/) (independent of the Anode quest).
 
 ### Implanted-Rebreather
 
-Author a successful [PEP](../governance/proposals.md) (independent of the Anode quest).
+Author a successful [PEP](/community/governance/proposals/) (independent of the Anode quest).
 
 ### Feedback-Loop
 
@@ -68,15 +68,15 @@ So you have ventured where few still dare to go. Your current augments allow for
 
 ### Nanobots
 
-Author 3 successful [PEPs](../governance/proposals.md) (independent of previous quests).
+Author 3 successful [PEPs](/community/governance/proposals/) (independent of previous quests).
 
 ### Machine-Learning
 
-Author 3 successful [PUPs](../governance/proposals.md) (independent of previous quests).
+Author 3 successful [PUPs](/community/governance/proposals/) (independent of previous quests).
 
 ### Artificial-Intelligence
 
-Author 3 successful [PIPs](../governance/proposals.md) (independent of previous quests).
+Author 3 successful [PIPs](/community/governance/proposals/) (independent of previous quests).
 
 ### Quantum-Resistance
 

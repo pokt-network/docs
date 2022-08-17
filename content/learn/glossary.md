@@ -26,7 +26,7 @@ There are two design patterns recommended for AAT usage:
 
 ## Application Burn Rate (ABR)
 
-Proposed mechanism that would burn developer's stakes based on Application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy]({{< relref "economics/monetary-policy" >}}).
+Proposed mechanism that would burn developer's stakes based on Application usage, and at a rate that offsets future inflation of the POKT cryptocurrency. Implementing ABR could help cap the total amount of POKT and promote network equilibrium where mint rate and burn rates are equal. For more information, see [Monetary Policy](/learn/economics/monetary-policy/).
 
 ## Block Hash
 
@@ -34,7 +34,7 @@ SHA3-256 hash of a Block.
 
 ## Endpoint
 
-In the Pocket Portal, a URL that can receive RPC requests to a blockchain. Pocket allows you to "mint" endpoints that can be used with any of its [supported blockchains](../supported-blockchains.md). An Application can contain multiple endpoints (for multiple chains).
+In the Pocket Portal, a URL that can receive RPC requests to a blockchain. Pocket allows you to "mint" endpoints that can be used with any of its [supported blockchains](/supported-blockchains/). An Application can contain multiple endpoints (for multiple chains).
 
 ## Jail
 
@@ -114,7 +114,7 @@ Provable evidence of a Relay completed, backed by digital signatures from an App
 
 ## RelaysToTokensMultiplier
 
-[On-chain parameter](protocol-parameters.md#relaystotokensmultiplier) that signifies the amount of POKT that is awarded to a node for a single successful relay. This value is periodically adjusted in line with Pocket Network' [monetary policy]({{< relref "economics/monetary-policy" >}}).
+[On-chain parameter](/learn/protocol-parameters/#relaystotokensmultiplier) that signifies the amount of POKT that is awarded to a node for a single successful relay. This value is periodically adjusted in line with Pocket Network' [monetary policy](/learn/economics/monetary-policy/).
 
 ## Remote Procedure Call (RPC)
 
@@ -139,7 +139,7 @@ A data structure which uses data from the finality storage layer of the network 
 Every Application will only have one single Session per relay chain it is staked for. Meaning, following an Application stake event, there will always be a corresponding Session for the Application for each relay chain until it unstakes.
 
 
-List of Servicers that an Application is able to send requests to for a period of time. The Pocket blockchain periodically updates the Sessions so Applications receive a new, pseudo-randomly selected set of Servicers every four (4) blocks (determined by the [BlocksPerSession](protocol-parameters.md#blockspersession) parameter), or approximately one hour, for each Relay Chain that the Application is staked for. During this period of time, the Servicers will only be rewarded POKT for servicing Applications if they have been matched in a Session. The amount of Servicers in a Session is currently 24 (determined by the [SessionNodeCount]({{< relref "protocol-parameters#sessionnodecount) parameter" >}}).
+List of Servicers that an Application is able to send requests to for a period of time. The Pocket blockchain periodically updates the Sessions so Applications receive a new, pseudo-randomly selected set of Servicers every four (4) blocks (determined by the [BlocksPerSession](/learn/protocol-parameters/#blockspersession) parameter), or approximately one hour, for each Relay Chain that the Application is staked for. During this period of time, the Servicers will only be rewarded POKT for servicing Applications if they have been matched in a Session. The amount of Servicers in a Session is currently 24 (determined by the [SessionNodeCount](/learn/protocol-parameters/#sessionnodecount) parameter).
 
 ## Session Block
 
@@ -159,19 +159,19 @@ Current active iteration of the Pocket protocol. Often used in contrast to the u
 
 ## v1
 
-Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network protocol]({{< relref "future/" >}}), including a departure from Tendermint. v1 will allow Pocket to build its own network from the ground up, optimized for its specific use case, rather than being restricted by any limitations that come with building on Tendermint. v1 will bring major changes to four different "modules": Utility, Consensus, Peer-to-Peer, and Persistence.
+Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network protocol](/learn/future/), including a departure from Tendermint. v1 will allow Pocket to build its own network from the ground up, optimized for its specific use case, rather than being restricted by any limitations that come with building on Tendermint. v1 will bring major changes to four different "modules": Utility, Consensus, Peer-to-Peer, and Persistence.
 
 ## Validator
 
 Special nodes that are responsible for committing new blocks in the blockchain, in addition to Servicing. Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each Validator's private key.
 
-Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerAllocation]({{< relref "protocol-parameters#proposerallocation" >}}) parameter.
+Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerAllocation](/learn/protocol-parameters/#proposerallocation) parameter.
 
 Only the top 1,000 Servicers ordered by total POKT staked are considered Validators.
 
 ## WAGMI
 
-Weighted Annual Gross Max Inflation (WAGMI) is an inflation control mechanism for the Pocket Network that was established via [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/), and further defined via [PUP-13](https://forum.pokt.network/t/pup-13-initial-wagmi-parameters/). Together, these proposals established a target annual inflation rate, or WAGMI rate, in POKT, from which the [RelaysToTokensMultiplier](protocol-parameters.md#relaystotokensmultiplier) parameter (which determines the amount of POKT earned per relay serviced) is adjusted dynamically. The proposals also laid out a step-down in target inflation rate from 100% to 50% over a period of time.
+Weighted Annual Gross Max Inflation (WAGMI) is an inflation control mechanism for the Pocket Network that was established via [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/), and further defined via [PUP-13](https://forum.pokt.network/t/pup-13-initial-wagmi-parameters/). Together, these proposals established a target annual inflation rate, or WAGMI rate, in POKT, from which the [RelaysToTokensMultiplier](/learn/protocol-parameters/#relaystotokensmultiplier) parameter (which determines the amount of POKT earned per relay serviced) is adjusted dynamically. The proposals also laid out a step-down in target inflation rate from 100% to 50% over a period of time.
 
 ## Whitelisted Chains
 

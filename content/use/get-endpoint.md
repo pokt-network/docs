@@ -78,7 +78,7 @@ Once you've logged in you'll be taken to the Network Overview section.
 ![](/images/portal-networkoverview.png)
 In this section, you'll see all the important parts of the network: how many relays are being served daily, network performance, the latest block details, and a summary of chains being served by the network is also available.
 
-Click the **Apps** link on the left and then click **Create** to create a new Application. You'll be able to select one of any of the [supported blockchains]({{< relref "../supported-blockchains" >}}) to start, but you can add other chains after your Application is created.
+Click the **Apps** link on the left and then click **Create** to create a new Application. You'll be able to select one of any of the [supported blockchains](/supported-blockchains/) to start, but you can add other chains after your Application is created.
 
 ![](/images/portal-app-setup.png)
 Once you've hit "Launch Application", your endpoint is ready! You should be greeted by the main application screen, which will show all the metrics, which should will start being populated as soon as you start submitting requests.
@@ -172,7 +172,7 @@ curl -X POST ^
 
 All endpoints have a similar structure, as they all have:
 
-* The network prefix, based on the RelayChainIDs. You can find them on the list of [supported blockchains]({{< relref "../supported-blockchains" >}}) in the column **Portal API Prefix**. For example, Ethereum Mainnet is `eth-mainnet`.
+* The network prefix, based on the RelayChainIDs. You can find them on the list of [supported blockchains](/supported-blockchains) in the column **Portal API Prefix**. For example, Ethereum Mainnet is `eth-mainnet`.
 * The main URL (`gateway.pokt.network/v1/`)
 * If it's a load-balanced endpoint, it will also have the LB prefix (`/lb/`)
 * The Portal ID, which is unique to your Application.

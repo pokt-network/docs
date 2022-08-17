@@ -25,7 +25,7 @@ How long the DAO wants it to take for the USD/relay price to be achieved, since 
 
 **Current Value:** 1000000
 
-The minimum stake required of an app, denominated in [StakeDenom](protocol-parameters.md#stakedenom). This does not have the same economic security requirements as a node's [minimum stake](protocol-parameters.md#stakeminimum) because an app's access to the network (relay throughput) is already proportional to the stake.
+The minimum stake required of an app, denominated in [StakeDenom](#stakedenom). This does not have the same economic security requirements as a node's [minimum stake](#stakeminimum) because an app's access to the network (relay throughput) is already proportional to the stake.
 
 ### AppUnstakingTime
 
@@ -111,7 +111,7 @@ The number of blocks allowed before a Session tumbles.
 
 **Current Value:** 10
 
-The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerAllocation]({{< relref "protocol-parameters#proposerallocation" >}}) for another beneficiary of the block reward.
+The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerAllocation](#proposerallocation) for another beneficiary of the block reward.
 
 ### DAOOwner
 
@@ -157,7 +157,7 @@ The number of staked nodes that are eligible to be selected for producing blocks
 
 **Current Value:** 0.6
 
-The minimum proportion of the [SignedBlocksWindow]({{< relref "protocol-parameters#signedblockswindow" >}}) that a node must sign to stay out of jail.
+The minimum proportion of the [SignedBlocksWindow](#signedblockswindow) that a node must sign to stay out of jail.
 
 {{% notice style="info" %}}
 If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can miss up to 4 blocks out of every 10 blocks before it is jailed.
@@ -167,21 +167,21 @@ If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can
 
 **Current Value:** 5
 
-Block proposers earn this proportion of the total POKT block reward. Value is a percentage. See also [DAOAllocation]({{< relref "protocol-parameters#daoallocation" >}}) for another beneficiary of the block reward.
+Block proposers earn this proportion of the total POKT block reward. Value is a percentage. See also [DAOAllocation](#daoallocation) for another beneficiary of the block reward.
 
 ### RelaysToTokensMultiplier
 
 **Current Value:** 1371
 
-The amount of POKT, denominated in [StakeDenom]({{< relref "protocol-parameters#stakedenom" >}}), that is minted as block rewards per relay.
+The amount of POKT, denominated in [StakeDenom](#stakedenom), that is minted as block rewards per relay.
 
-Note that this value will change over time. Please see the section on [POKT inflation]({{< relref "economics/monetary-policy#poktinflation" >}}) for more information.
+Note that this value will change over time. Please see the section on [POKT inflation](/learn/economics/monetary-policy/#poktinflation) for more information.
 
 ### SignedBlocksWindow
 
 **Current Value:** 10
 
-The number of consecutive blocks within which the [MinSignedPerWindow]({{< relref "protocol-parameters#minsignedperwindow" >}}) proportion of blocks must be signed by a node to stay out of jail.
+The number of consecutive blocks within which the [MinSignedPerWindow](#minsignedperwindow) proportion of blocks must be signed by a node to stay out of jail.
 
 {{% notice style="info" %}}
 If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can miss up to 4 blocks out of every 10 blocks before it is jailed.
@@ -203,13 +203,13 @@ The % of a node's stake that is burned for downtime, where 1 is 100%.
 
 **Current Value:** upokt
 
-POKT amounts are defined by the protocol. Read more about [POKT denominations]({{< relref "economics/token#POKT-denominations" >}}).
+POKT amounts are defined by the protocol. Read more about [POKT denominations](/learn/economics/token/#POKT-denominations).
 
 ### StakeMinimum
 
 **Current Value:** 15000000000
 
-The minimum stake required of a node, denominated in [StakeDenom]({{< relref "protocol-parameters#stakedenom" >}}), for the economic security of the protocol.
+The minimum stake required of a node, denominated in [StakeDenom](#stakedenom), for the economic security of the protocol.
 
 ### UnstakingTime
 
@@ -251,7 +251,7 @@ The number of nodes an app will be matched with in a session.
 
 ### SupportedBlockchains
 
-[List of currently supported blockchains]({{< relref "../supported-blockchains" >}})
+[List of currently supported blockchains](/supported-blockchains/)
 
 Only blockchains with sybil-resistant demand from apps are whitelisted to generate revenue for nodes.
 

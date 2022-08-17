@@ -57,9 +57,8 @@ pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path /$HOME/su
 Do not use your node's account as your personal account address. Since the node's private key is stored in plaintext on the server, the key is as secure as your server is. Regularly sweep your node's rewards and transfer them to a more secure account stored offline.
 {{% /notice %}}
 
-For more details on securely managing your POKT accounts, see here:
+Learn more about [securely managing your POKT accounts](/pokt/).
 
-**[Buy Store and Stake]()**[buy-store-and-stake-pokt](../buy-store-and-stake-pokt/)
 
 ### Fund the account
 
@@ -115,7 +114,7 @@ n
 {{< /tabs >}}
 
 {{% notice style="info" %}}
-RelayChainIDs can be found [here](../supported-blockchains).
+RelayChainIDs can be found [here](/supported-blockchains/).
 {{% /notice %}}
 
 ### Setup the Genesis Configuration File
@@ -194,7 +193,7 @@ pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pok
 {{% /tab %}}
 {{< /tabs >}}
 
-See the section on [seeds]({{< relref "seeds" >}}) for more details.
+See the section on [seeds](/node/seeds/) for more details.
 
 {{% notice style="warning" %}}
 Ensure the node is all the way synced before proceeding to the next step.
@@ -219,7 +218,7 @@ pocket nodes stake custodial 3ee61299d5bbbd2974cddcc194d9b547c7629546 2000000000
 {{< /tabs >}}
 
 {{% notice style="info" %}}
-Read more about [custodial versus non-custodial staking]({{< relref "staking" >}}).
+Read more about [custodial versus non-custodial staking](/node/staking/).
 {{% /notice %}}
 
 **You should leave 1 POKT liquid (unstaked) to pay the transaction fees for your node's claim and proof transactions.**
@@ -368,7 +367,7 @@ pocket start
 
 You can earn a vote in the DAO and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as node revenue.
 
-Once you've staked your node successfully, join our [Discord](https://discord.gg/uCZZkHTQjV) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
+Once you've staked your node successfully, join our [Discord](https://discord.gg/pokt) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
 
-This is your first trophy on the path to [earning a vote in the DAO](../community/trophies/README.md). Learn more on the [Node Runners]({{< relref "../community/trophies/node-runners" >}}) page.
+This is your first trophy on the path to [earning a vote in the DAO](/community/trophies/). Learn more on the [Node Runners](/community/trophies/node-runners/) page.
 

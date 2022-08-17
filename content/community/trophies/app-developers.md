@@ -69,7 +69,7 @@ Well done Savant, we recognize the trials you have taken on and the skills you h
 
 ### Token-Handler
 
-Build tooling for [AAT]({{< ref "/learn/glossary" >}}) management and have 3 Verified Savants or Pocket core team members vouch for the tool's quality.
+Build tooling for [AAT](/learn/glossary/) management and have 3 Verified Savants or Pocket core team members vouch for the tool's quality.
 
 ### Optimizer
 
@@ -81,4 +81,4 @@ Create or take ownership of an application, SDK, or tool that is vouched for by 
 
 ### Ventured
 
-Submit an application-oriented [PEP]({{< relref "../governance/proposals" >}}) and receive a POKT grant from the DAO.
+Submit an application-oriented [PEP](/community/governance/proposals/) and receive a POKT grant from the DAO.
