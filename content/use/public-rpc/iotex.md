@@ -2,6 +2,11 @@
 title: IoTeX
 menuTitle: IoTeX
 weight: 20
+aliases:
+  - resources/public-rpc-endpoints/iotex-metamask
+  - home/resources/public-rpc-endpoints/iotex-metamask
+  - use/public-rpc/iotex.md
+  - home/use/public-rpc/iotex.md
 description: How to add the IoTeX network in MetaMask with a Pocket-powered RPC Endpoint
 ---
 

@@ -2,6 +2,15 @@
 title: Get An Endpoint
 menuTitle: Get an Endpoint
 weight: 11
+aliases:
+  - resources/faq/app-integration
+  - home/resources/faq/app-integration
+  - paths/app-developer/use-ethersjs
+  - home/paths/app-developer/use-ethersjs
+  - paths/app-developer
+  - home/paths/app-developer
+  - use/get-endpoint.md
+  - home/use/get-endpoint.md
 ---
 
 

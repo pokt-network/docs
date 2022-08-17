@@ -2,6 +2,11 @@
 title: Part 4 –  Proxy configuration
 menuTitle: Proxy configuration
 weight: 4
+aliases:
+  - paths/node-runner/zero-to-node/proxy-config
+  - home/paths/node-runner/zero-to-node/proxy-config
+  - node/tutorials/zero-to-node/proxy-config.md
+  - home/node/tutorials/zero-to-node/proxy-config.md
 description: Configure the proxy for your node. Part 4 of 5 in the Zero to Node tutorial.
 ---
 

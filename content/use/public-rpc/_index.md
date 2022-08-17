@@ -3,6 +3,11 @@ archetype: chapter
 title: Public RPC Endpoints
 menuTitle: Public RPC Endpoints
 weight: 12
+aliases:
+  - resources/public-rpc-endpoints
+  - home/resources/public-rpc-endpoints
+  - use/public-rpc/README.md
+  - home/use/public-rpc/README.md
 description: >-
   We've staked POKT on your behalf to provide public RPC endpoints for all of
   the networks that Pocket supports. Use these endpoints in any DApp that lets

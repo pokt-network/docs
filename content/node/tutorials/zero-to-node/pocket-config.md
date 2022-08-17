@@ -2,6 +2,11 @@
 title: Part 3 –  Pocket configuration
 menuTitle: Pocket configuration
 weight: 3
+aliases:
+  - paths/node-runner/zero-to-node/pocket-config
+  - home/paths/node-runner/zero-to-node/pocket-config
+  - node/tutorials/zero-to-node/pocket-config.md
+  - home/node/tutorials/zero-to-node/pocket-config.md
 description: Configure your Pocket node. Part 3 of 5 in the Zero to Node tutorial.
 ---
 

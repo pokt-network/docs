@@ -2,6 +2,11 @@
 title: 🪙 Utility
 menuTitle: Utility
 weight: 8
+aliases:
+  - v1/utility
+  - home/v1/utility
+  - learn/future/utility.md
+  - home/learn/future/utility.md
 ---
 
 

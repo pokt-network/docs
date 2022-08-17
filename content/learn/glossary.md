@@ -2,6 +2,11 @@
 title: Glossary
 menuTitle: Glossary
 weight: 10
+aliases:
+  - v0/glossary
+  - home/v0/glossary
+  - learn/glossary.md
+  - home/learn/glossary.md
 ---
 
 

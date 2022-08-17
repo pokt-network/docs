@@ -2,6 +2,13 @@
 title: 🏆 Governor/Contributors
 menuTitle: Contributors
 weight: 39
+aliases:
+  - paths/governor/claim-your-vote/governor-path
+  - home/paths/governor/claim-your-vote/governor-path
+  - paths/contributor
+  - home/paths/contributor
+  - community/trophies/contributors.md
+  - home/community/trophies/contributors.md
 ---
 
 

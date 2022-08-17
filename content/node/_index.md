@@ -3,6 +3,11 @@ archetype: chapter
 title: Run Nodes
 menuTitle: Run Nodes
 weight: 6
+aliases:
+  - paths/node-runner
+  - home/paths/node-runner
+  - node/README.md
+  - home/node/README.md
 ---
 
 

@@ -2,6 +2,11 @@
 title: Part 1 –  Server setup
 menuTitle: Server setup
 weight: 1
+aliases:
+  - paths/node-runner/zero-to-node/server-setup
+  - home/paths/node-runner/zero-to-node/server-setup
+  - node/tutorials/zero-to-node/server-setup.md
+  - home/node/tutorials/zero-to-node/server-setup.md
 description: >-
   Set up a server to prepare it for being a Pocket node. Part 1 of 5 in the Zero
   to Node tutorial.

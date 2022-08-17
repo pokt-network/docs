@@ -2,6 +2,11 @@
 title: 💬 More Information
 menuTitle: More Info
 weight: 9
+aliases:
+  - resources/contact-us
+  - home/resources/contact-us
+  - more-info.md
+  - home/more-info.md
 ---
 
 

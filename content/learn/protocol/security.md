@@ -2,6 +2,11 @@
 title: 🛡 Security
 menuTitle: Security
 weight: 2
+aliases:
+  - v0/protocol/security
+  - home/v0/protocol/security
+  - learn/protocol/security.md
+  - home/learn/protocol/security.md
 ---
 
 

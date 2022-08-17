@@ -2,6 +2,11 @@
 title: Transaction Construction
 menuTitle: Transaction Construction
 weight: 31
+aliases:
+  - pokt-accounts-and-transactions/transaction-construction-and-offline-signature
+  - home/pokt-accounts-and-transactions/transaction-construction-and-offline-signature
+  - integrate/accounts-transactions/transaction-construction.md
+  - home/integrate/accounts-transactions/transaction-construction.md
 ---
 
 

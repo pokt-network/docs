@@ -2,6 +2,11 @@
 title: 🤝 Consensus
 menuTitle: Consensus
 weight: 9
+aliases:
+  - v1/consensus
+  - home/v1/consensus
+  - learn/future/consensus.md
+  - home/learn/future/consensus.md
 ---
 
 

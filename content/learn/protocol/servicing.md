@@ -2,6 +2,11 @@
 title: 🤝 Servicing
 menuTitle: Servicing
 weight: 1
+aliases:
+  - v0/protocol/servicing
+  - home/v0/protocol/servicing
+  - learn/protocol/servicing.md
+  - home/learn/protocol/servicing.md
 ---
 
 

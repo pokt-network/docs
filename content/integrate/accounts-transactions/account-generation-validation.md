@@ -2,6 +2,11 @@
 title: Account Generation and Validation
 menuTitle: Account Generation and Validation
 weight: 30
+aliases:
+  - pokt-accounts-and-transactions/address-generation-and-validation
+  - home/pokt-accounts-and-transactions/address-generation-and-validation
+  - integrate/accounts-transactions/account-generation-validation.md
+  - home/integrate/accounts-transactions/account-generation-validation.md
 description: Generate and validate accounts on the native POKT blockchain.
 ---
 

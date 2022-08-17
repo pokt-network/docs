@@ -2,6 +2,11 @@
 title: Evmos
 menuTitle: Evmos
 weight: 16
+aliases:
+  - resources/public-rpc-endpoints/evmos-metamask
+  - home/resources/public-rpc-endpoints/evmos-metamask
+  - use/public-rpc/evmos.md
+  - home/use/public-rpc/evmos.md
 description: How to add the Evmos network in MetaMask with a Pocket-powered RPC Endpoint
 ---
 

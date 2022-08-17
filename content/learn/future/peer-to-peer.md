@@ -2,6 +2,11 @@
 title: 💬 Peer to Peer
 menuTitle: Peer To Peer
 weight: 10
+aliases:
+  - v1/peer-to-peer
+  - home/v1/peer-to-peer
+  - learn/future/peer-to-peer.md
+  - home/learn/future/peer-to-peer.md
 ---
 
 

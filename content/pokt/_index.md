@@ -3,6 +3,11 @@ archetype: chapter
 title: 💰 Get POKT
 menuTitle: Own POKT
 weight: 3
+aliases:
+    - buy-store-and-stake-pokt
+    - home/buy-store-and-stake-pokt
+    - pokt/README.md
+    - home/pokt/README.md
 ---
 
 

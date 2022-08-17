@@ -3,6 +3,11 @@ archetype: chapter
 title: Introduction
 menuTitle: Zero To Node
 weight: 26
+aliases:
+  - paths/node-runner/zero-to-node
+  - home/paths/node-runner/zero-to-node
+  - node/tutorials/zero-to-node/README.md
+  - home/node/tutorials/zero-to-node/README.md
 ---
 
 

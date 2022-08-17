@@ -2,6 +2,11 @@
 title: Harmony
 menuTitle: Harmony
 weight: 19
+aliases:
+  - resources/public-rpc-endpoints/harmony-metamask
+  - home/resources/public-rpc-endpoints/harmony-metamask
+  - use/public-rpc/harmony.md
+  - home/use/public-rpc/harmony.md
 description: >-
   How to add Harmony Mainnet Shard 0 in MetaMask with a Pocket-powered RPC
   Endpoint

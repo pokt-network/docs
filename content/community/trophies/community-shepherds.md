@@ -2,6 +2,13 @@
 title: 🏆 Community Shepherds
 menuTitle: Community Shepherds
 weight: 38
+aliases:
+  - paths/governor/claim-your-vote/community-shepherd-path
+  - home/paths/governor/claim-your-vote/community-shepherd-path
+  - paths/shepherd
+  - home/paths/shepherd
+  - community/trophies/community-shepherds.md
+  - home/community/trophies/community-shepherds.md
 ---
 
 

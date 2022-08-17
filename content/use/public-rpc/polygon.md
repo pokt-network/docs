@@ -2,6 +2,11 @@
 title: Polygon
 menuTitle: Polygon
 weight: 21
+aliases:
+  - resources/public-rpc-endpoints/polygon-metamask
+  - home/resources/public-rpc-endpoints/polygon-metamask
+  - use/public-rpc/polygon.md
+  - home/use/public-rpc/polygon.md
 description: How to add the Polygon network in MetaMask with a Pocket-powered RPC Endpoint
 ---
 

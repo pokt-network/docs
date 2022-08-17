@@ -3,6 +3,13 @@ archetype: chapter
 title: 🪙 Economics
 menuTitle: Economics
 weight: 7
+aliases:
+  - v0/economics/the-web3-infra-trap
+  - home/v0/economics/the-web3-infra-trap
+  - v0/economics
+  - home/v0/economics
+  - learn/economics/README.md
+  - home/learn/economics/README.md
 description: An overview of the economics of Pocket Network
 ---
 

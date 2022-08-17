@@ -2,6 +2,11 @@
 title: 🎚 Protocol Parameters
 menuTitle: Parameters
 weight: 9
+aliases:
+  - resources/references/protocol-parameters
+  - home/resources/references/protocol-parameters
+  - learn/protocol-parameters.md
+  - home/learn/protocol-parameters.md
 ---
 
 

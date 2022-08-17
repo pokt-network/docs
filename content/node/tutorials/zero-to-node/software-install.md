@@ -2,6 +2,11 @@
 title: Part 2 –  Software installation
 menuTitle: Software installation
 weight: 2
+aliases:
+  - paths/node-runner/zero-to-node/software-install
+  - home/paths/node-runner/zero-to-node/software-install
+  - node/tutorials/zero-to-node/software-install.md
+  - home/node/tutorials/zero-to-node/software-install.md
 description: Install all the necessary software for your node. Part 2 of 5 in the Zero to Node tutorial.
 ---
 

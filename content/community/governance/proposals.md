@@ -2,6 +2,17 @@
 title: Proposals
 menuTitle: Proposals
 weight: 33
+aliases:
+  - paths/governor/submit-a-proposal/pup-parameter-update-proposal
+  - home/paths/governor/submit-a-proposal/pup-parameter-update-proposal
+  - paths/governor/submit-a-proposal/pep-pocket-ecosystem-proposal
+  - home/paths/governor/submit-a-proposal/pep-pocket-ecosystem-proposal
+  - paths/governor/submit-a-proposal/pip-pocket-improvement-proposal
+  - home/paths/governor/submit-a-proposal/pip-pocket-improvement-proposal
+  - paths/governor/submit-a-proposal
+  - home/paths/governor/submit-a-proposal
+  - community/governance/proposals.md
+  - home/community/governance/proposals.md
 ---
 
 

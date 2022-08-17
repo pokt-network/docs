@@ -2,6 +2,15 @@
 title: Node FAQ
 menuTitle: Node FAQ
 weight: 21
+aliases:
+  - resources/faq/node-troubleshooting
+  - home/resources/faq/node-troubleshooting
+  - resources/faq/node-configuration
+  - home/resources/faq/node-configuration
+  - paths/node-runner/maximize-your-pokt-earnings
+  - home/paths/node-runner/maximize-your-pokt-earnings
+  - node/faq.md
+  - home/node/faq.md
 ---
 
 

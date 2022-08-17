@@ -2,6 +2,17 @@
 title: 💻 App Economics
 menuTitle: App Economics
 weight: 4
+aliases:
+  - v0/economics/pokt-token-economics/app-economics/base-throughput
+  - home/v0/economics/pokt-token-economics/app-economics/base-throughput
+  - v0/economics/pokt-token-economics/app-economics/participation-rate
+  - home/v0/economics/pokt-token-economics/app-economics/participation-rate
+  - v0/economics/pokt-token-economics/app-economics/stability-adjustment
+  - home/v0/economics/pokt-token-economics/app-economics/stability-adjustment
+  - v0/economics/pokt-token-economics/app-economics
+  - home/v0/economics/pokt-token-economics/app-economics
+  - learn/economics/apps.md
+  - home/learn/economics/apps.md
 description: An overview of Pocket Network application economics.
 ---
 

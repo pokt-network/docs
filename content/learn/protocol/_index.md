@@ -3,6 +3,11 @@ archetype: chapter
 title: ⛓ Protocol
 menuTitle: Protocol
 weight: 6
+aliases:
+  - v0/protocol
+  - home/v0/protocol
+  - learn/protocol/README.md
+  - home/learn/protocol/README.md
 description: Protocol Introduction
 ---
 

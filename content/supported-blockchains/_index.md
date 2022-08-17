@@ -2,6 +2,11 @@
 title: ✅ Supported Blockchains
 menuTitle: Supported Blockchains
 weight: 2
+aliases:
+  - resources/references/supported-blockchains
+  - home/resources/references/supported-blockchains
+  - supported-blockchains.md
+  - home/supported-blockchains.md
 ---
 
 

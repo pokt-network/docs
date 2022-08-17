@@ -2,6 +2,17 @@
 title: 🏦 Monetary Policy
 menuTitle: Monetary Policy
 weight: 6
+aliases:
+  - v0/economics/monetary-policy/pokt-inflation
+  - home/v0/economics/monetary-policy/pokt-inflation
+  - learn/economics/monetary-policy.md
+  - home/learn/economics/monetary-policy.md
+  - v0/economics/monetary-policy/application-burn-rate
+  - home/v0/economics/monetary-policy/application-burn-rate
+  - v0/economics/monetary-policy/monetary-phases
+  - home/v0/economics/monetary-policy/monetary-phases
+  - v0/economics/monetary-policy
+  - home/v0/economics/monetary-policy
 description: An overview of the monetary policy of POKT, including monetary phases and inflation.
 ---
 

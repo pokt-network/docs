@@ -2,6 +2,11 @@
 title: Vision
 menuTitle: Vision
 weight: 5
+aliases:
+  - v0/economics/decentralizing-infrastructure
+  - home/v0/economics/decentralizing-infrastructure
+  - learn/vision.md
+  - home/learn/vision.md
 ---
 
 

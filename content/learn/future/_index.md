@@ -3,6 +3,11 @@ archetype: chapter
 title: 👀 Future (v1)
 menuTitle: Future
 weight: 8
+aliases:
+  - v1/v1-overview
+  - home/v1/v1-overview
+  - learn/future/README.md
+  - home/learn/future/README.md
 ---
 
 

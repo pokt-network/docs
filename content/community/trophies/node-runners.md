@@ -2,6 +2,11 @@
 title: 🏆 Node Runners
 menuTitle: Node Runners
 weight: 37
+aliases:
+  - paths/governor/claim-your-vote/node-runner-path
+  - home/paths/governor/claim-your-vote/node-runner-path
+  - community/trophies/node-runners.md
+  - home/community/trophies/node-runners.md
 ---
 
 

@@ -2,6 +2,11 @@
 title: MyCrypto
 menuTitle: MyCrypto
 weight: 24
+aliases:
+  - resources/public-rpc-endpoints/mycrypto
+  - home/resources/public-rpc-endpoints/mycrypto
+  - use/dapps/mycrypto.md
+  - home/use/dapps/mycrypto.md
 ---
 
 

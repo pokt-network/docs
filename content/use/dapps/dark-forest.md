@@ -2,6 +2,11 @@
 title: Dark Forest
 menuTitle: Dark Forest
 weight: 23
+aliases:
+  - resources/public-rpc-endpoints/dark-forest
+  - home/resources/public-rpc-endpoints/dark-forest
+  - use/dapps/dark-forest.md
+  - home/use/dapps/dark-forest.md
 description: How to add Pocket-powered xDAI RPC endpoint in the Dark Forest blockchain game
 ---
 

@@ -2,6 +2,11 @@
 title: Conquest.eth
 menuTitle: Conquest.eth
 weight: 22
+aliases:
+  - resources/public-rpc-endpoints/conquest.eth
+  - home/resources/public-rpc-endpoints/conquest.eth
+  - use/dapps/conquest-eth.md
+  - home/use/dapps/conquest-eth.md
 description: How to connect Görli network in MetaMask with a Pocket-powered RPC endpoint
 ---
 

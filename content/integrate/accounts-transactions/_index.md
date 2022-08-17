@@ -3,6 +3,11 @@ archetype: chapter
 title: Accounts and Transactions
 menuTitle: Accounts and Transactions
 weight: 23
+aliases:
+  - pokt-accounts-and-transactions
+  - home/pokt-accounts-and-transactions
+  - integrate/accounts-transactions/README.md
+  - home/integrate/accounts-transactions/README.md
 ---
 
 

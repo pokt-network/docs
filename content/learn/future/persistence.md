@@ -2,6 +2,11 @@
 title: 🗄 Persistence
 menuTitle: Persistence
 weight: 11
+aliases:
+  - v1/persistence
+  - home/v1/persistence
+  - learn/future/persistence.md
+  - home/learn/future/persistence.md
 ---
 
 

@@ -3,6 +3,13 @@ archetype: chapter
 title: 🗳 Trophies
 menuTitle: Trophies
 weight: 26
+aliases:
+  - paths/governor/claim-your-vote
+  - home/paths/governor/claim-your-vote
+  - paths/governor
+  - home/paths/governor
+  - community/trophies/README.md
+  - home/community/trophies/README.md
 ---
 
 
