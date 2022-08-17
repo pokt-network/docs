@@ -16,8 +16,6 @@ To get started connecting to Pocket's infrastructure for Görli testnet, do the 
 4. Put the decimal **5** in the ChainID field
 5. Don’t forget to save
 
-For instructions on how to get started with Conquest, check out their [documentation](https://knowledge.conquest.etherplay.io) and video:
-
-{% embed url="https://www.loom.com/share/787e5abf99384cbd8546ad40bd30a4bc" %}
+For instructions on how to get started with Conquest, check out their [documentation](https://knowledge.conquest.etherplay.io) and [video](https://www.loom.com/share/787e5abf99384cbd8546ad40bd30a4bc).
 
 [Join Etherplay's discord](https://discord.gg/Qb4gr2ekfr) for early alpha access to the Conquest game!
