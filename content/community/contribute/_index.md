@@ -3,6 +3,8 @@ archetype: chapter
 title: 🦸 Contribute
 menuTitle: Contribute
 weight: 25
+aliases:
+    - home/community/contribute/README.md
 ---
 
 

@@ -3,6 +3,8 @@ title: Vision
 menuTitle: Vision
 weight: 5
 aliases:
+  - resources/faq/product-comparisons
+  - home/resources/faq/product-comparisons
   - v0/economics/decentralizing-infrastructure
   - home/v0/economics/decentralizing-infrastructure
   - learn/vision.md

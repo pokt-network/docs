@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 💰 Get POKT
 menuTitle: Own POKT
 weight: 3

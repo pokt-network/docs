@@ -2,6 +2,8 @@ baseURL = 'https://docs.pokt.network/'
 languageCode = 'en-us'
 title = 'Pocket Network'
 theme = 'relearn'
+googleAnalytics = '304969019'
+summaryLength = 20
 
 # Theme specific parameters
 [params]
@@ -12,11 +14,11 @@ theme = 'relearn'
   # Prefix URL to edit current page. Will display an "Edit" button on top right hand corner of every page.
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
-  editURL = ""
+  editURL = "https://github.com/pokt-foundation/docs/edit/hugo/content/"
   # Author of the site, will be used in meta information
-  author = ""
+  author = "Pocket Network"
   # Description of the site, will be used in meta information
-  description = ""
+  description = "Documentation for Pocket Network"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar
@@ -74,6 +76,7 @@ theme = 'relearn'
   collapsibleMenu = true
   # If a single page can contain content in multiple languages, add those here
   additionalContentLanguage = [ "en" ]
+  # google anayltics
 
 [outputs]
   home = ["HTML", "RSS", "PRINT", "JSON"]

@@ -3,6 +3,8 @@ archetype: chapter
 title: 👑 Governance
 menuTitle: Governance
 weight: 24
+aliases:
+    - home/community/governance/README.md
 ---
 
 

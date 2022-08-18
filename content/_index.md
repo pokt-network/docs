@@ -3,6 +3,8 @@ archetype: home
 title: Welcome
 menuTitle: Welcome
 weight: 1
+aliases:
+  - /home
 ---
 
 
@@ -12,7 +14,7 @@ Pocket supports dozens of blockchains, with more being added all the time.
 
 [**View the list of supported blockchains**](/supported-blockchains/)
 
-![](/images/pocket_network_overview.png)
+![Overview of Pocket Network's Nodes, Sessions, and Applications](/images/pocket_network_overview.png)
 ## Get Started
 
 ### Use Pocket Network's RPC

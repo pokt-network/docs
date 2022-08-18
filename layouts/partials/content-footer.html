@@ -1,3 +1,8 @@
+{{- if .IsSection }}
+<div>
+  {{ partial "section-list.html" . }}
+</div>
+{{- end }}
 <hr>
 <div>
 {{- $showPrevNext := (and (not .Params.disableNextPrev) (not .Site.Params.disableNextPrev)) }}
@@ -27,3 +32,4 @@
   </div>
 {{- end }}
 </div>
+
