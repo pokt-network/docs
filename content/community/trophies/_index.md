@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 🗳 Trophies
 menuTitle: Trophies
 weight: 26

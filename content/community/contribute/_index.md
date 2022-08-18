@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 🦸 Contribute
 menuTitle: Contribute
 weight: 25

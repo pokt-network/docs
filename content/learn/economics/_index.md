@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 🪙 Economics
 menuTitle: Economics
 weight: 7

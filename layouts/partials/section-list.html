@@ -1,7 +1,0 @@
-<ul class="postlist">
-    {{ range .Sections.ByTitle }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ partial "recursive.html" . }}
-      </li>
-</ul>

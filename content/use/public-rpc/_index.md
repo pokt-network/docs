@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: Public RPC Endpoints
 menuTitle: Public RPC Endpoints
 weight: 12

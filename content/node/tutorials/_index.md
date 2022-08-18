@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: Node Tutorials
 menuTitle: Tutorials
 weight: 18

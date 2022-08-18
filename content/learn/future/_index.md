@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 👀 Future (v1)
 menuTitle: Future
 weight: 8

@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: Introduction
 menuTitle: Zero To Node
 weight: 26

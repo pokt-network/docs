@@ -1,6 +1,7 @@
 {{- if .IsSection }}
+<h3>Section Contents</h3>
 <div>
-  {{ partial "section-list.html" . }}
+  {{ partial "recursive-section.html" . }}
 </div>
 {{- end }}
 <hr>

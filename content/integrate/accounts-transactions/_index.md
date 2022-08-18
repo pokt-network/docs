@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: Accounts and Transactions
 menuTitle: Accounts and Transactions
 weight: 23

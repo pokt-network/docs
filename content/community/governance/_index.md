@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: 👑 Governance
 menuTitle: Governance
 weight: 24

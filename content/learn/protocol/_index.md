@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: ⛓ Protocol
 menuTitle: Protocol
 weight: 6

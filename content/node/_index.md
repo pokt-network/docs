@@ -1,5 +1,4 @@
 ---
-archetype: chapter
 title: Run Nodes
 menuTitle: Run Nodes
 weight: 6
