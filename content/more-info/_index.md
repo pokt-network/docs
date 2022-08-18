@@ -2,6 +2,7 @@
 title: 💬 More Information
 menuTitle: More Info
 weight: 9
+ignore_contents: true
 aliases:
   - resources/contact-us
   - home/resources/contact-us
