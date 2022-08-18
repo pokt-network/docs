@@ -1,7 +1,7 @@
 ---
 title: 🎚 Protocol Parameters
 menuTitle: Parameters
-weight: 9
+weight: 50
 aliases:
   - resources/references/protocol-parameters
   - home/resources/references/protocol-parameters

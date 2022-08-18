@@ -1,7 +1,7 @@
 ---
 title: Glossary
 menuTitle: Glossary
-weight: 10
+weight: 60
 aliases:
   - v0/glossary
   - home/v0/glossary

@@ -1,7 +1,7 @@
 ---
 title: Accounts and Transactions
 menuTitle: Accounts and Transactions
-weight: 23
+weight: 20
 aliases:
   - pokt-accounts-and-transactions
   - home/pokt-accounts-and-transactions

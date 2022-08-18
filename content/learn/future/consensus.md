@@ -1,7 +1,7 @@
 ---
 title: 🤝 Consensus
 menuTitle: Consensus
-weight: 9
+weight: 20
 aliases:
   - v1/consensus
   - home/v1/consensus

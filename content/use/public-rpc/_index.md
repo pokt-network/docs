@@ -1,7 +1,7 @@
 ---
 title: Public RPC Endpoints
 menuTitle: Public RPC Endpoints
-weight: 12
+weight: 20
 aliases:
   - resources/public-rpc-endpoints
   - home/resources/public-rpc-endpoints

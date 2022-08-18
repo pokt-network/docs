@@ -1,7 +1,7 @@
 ---
 title: 🏆 Node Runners
 menuTitle: Node Runners
-weight: 37
+weight: 20
 aliases:
   - paths/governor/claim-your-vote/node-runner-path
   - home/paths/governor/claim-your-vote/node-runner-path

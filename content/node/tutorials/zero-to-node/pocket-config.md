@@ -1,7 +1,7 @@
 ---
 title: Part 3 –  Pocket configuration
 menuTitle: Pocket configuration
-weight: 3
+weight: 30
 aliases:
   - paths/node-runner/zero-to-node/pocket-config
   - home/paths/node-runner/zero-to-node/pocket-config

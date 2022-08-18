@@ -1,7 +1,7 @@
 ---
 title: Node FAQ
 menuTitle: Node FAQ
-weight: 21
+weight: 80
 aliases:
   - resources/faq/node-troubleshooting
   - home/resources/faq/node-troubleshooting

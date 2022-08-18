@@ -1,7 +1,7 @@
 ---
 title: Community
 menuTitle: Join Us
-weight: 8
+weight: 80
 ---
 
 

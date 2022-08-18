@@ -1,7 +1,7 @@
 ---
 title: Fuse
 menuTitle: Fuse
-weight: 17
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/fuse-metamask
   - home/resources/public-rpc-endpoints/fuse-metamask

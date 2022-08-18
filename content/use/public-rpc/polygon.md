@@ -1,7 +1,7 @@
 ---
 title: Polygon
 menuTitle: Polygon
-weight: 21
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/polygon-metamask
   - home/resources/public-rpc-endpoints/polygon-metamask

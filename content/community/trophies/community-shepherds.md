@@ -1,7 +1,7 @@
 ---
 title: 🏆 Community Shepherds
 menuTitle: Community Shepherds
-weight: 38
+weight: 30
 aliases:
   - paths/governor/claim-your-vote/community-shepherd-path
   - home/paths/governor/claim-your-vote/community-shepherd-path

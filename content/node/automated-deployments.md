@@ -1,7 +1,7 @@
 ---
 title: Automated Deployments
 menuTitle: Automated Deployments
-weight: 19
+weight: 60
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Connecting MetaMask to DFK Chain
 menuTitle: DFK Chain
-weight: 14
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/dfk-chain-metamask
   - home/resources/public-rpc-endpoints/dfk-chain-metamask

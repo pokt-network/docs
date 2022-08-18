@@ -2,7 +2,7 @@
 archetype: home
 title: Welcome
 menuTitle: Welcome
-weight: 1
+weight: 10
 aliases:
   - /home
 ---

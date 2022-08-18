@@ -1,7 +1,7 @@
 ---
 title: Node Setup
 menuTitle: Pocket Node Setup
-weight: 15
+weight: 20
 ---
 
 

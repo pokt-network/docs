@@ -1,7 +1,7 @@
 ---
 title: Part 5 –  Going live
 menuTitle: Going live
-weight: 5
+weight: 50
 aliases:
   - paths/node-runner/zero-to-node/going-live
   - home/paths/node-runner/zero-to-node/going-live

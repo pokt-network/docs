@@ -1,7 +1,7 @@
 ---
 title: Conquest.eth
 menuTitle: Conquest.eth
-weight: 22
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/conquest.eth
   - home/resources/public-rpc-endpoints/conquest.eth

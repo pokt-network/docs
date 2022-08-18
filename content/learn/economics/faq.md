@@ -1,7 +1,7 @@
 ---
 title: 💰 Pricing & Economics FAQ
 menuTitle: FAQ
-weight: 7
+weight: 50
 aliases:
   - resources/faq/pricing-and-economics
   - home/resources/faq/pricing-and-economics

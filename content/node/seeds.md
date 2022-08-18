@@ -1,7 +1,7 @@
 ---
 title: 🌱 Seeds
 menuTitle: Seeds
-weight: 17
+weight: 40
 aliases:
   - resources/references/seeds
   - home/resources/references/seeds

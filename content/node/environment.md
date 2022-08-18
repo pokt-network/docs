@@ -1,7 +1,7 @@
 ---
 title: Environment Setup
 menuTitle: Environment Setup
-weight: 14
+weight: 10
 ---
 
 

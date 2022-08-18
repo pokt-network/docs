@@ -1,7 +1,7 @@
 ---
 title: 👑 Governance
 menuTitle: Governance
-weight: 24
+weight: 10
 aliases:
     - home/community/governance/README.md
 ---

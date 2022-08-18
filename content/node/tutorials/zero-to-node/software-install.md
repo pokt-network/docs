@@ -1,7 +1,7 @@
 ---
 title: Part 2 –  Software installation
 menuTitle: Software installation
-weight: 2
+weight: 20
 aliases:
   - paths/node-runner/zero-to-node/software-install
   - home/paths/node-runner/zero-to-node/software-install

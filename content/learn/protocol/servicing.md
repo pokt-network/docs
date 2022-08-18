@@ -1,7 +1,7 @@
 ---
 title: 🤝 Servicing
 menuTitle: Servicing
-weight: 1
+weight: 10
 aliases:
   - v0/protocol/servicing
   - home/v0/protocol/servicing

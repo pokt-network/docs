@@ -1,7 +1,7 @@
 ---
 title: Introduction
 menuTitle: Zero To Node
-weight: 26
+weight: 10
 aliases:
   - paths/node-runner/zero-to-node
   - home/paths/node-runner/zero-to-node

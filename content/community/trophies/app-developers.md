@@ -1,7 +1,7 @@
 ---
 title: 🏆 App Developers
 menuTitle: App Developers
-weight: 36
+weight: 10
 aliases:
   - paths/governor/claim-your-vote/app-developer-path
   - home/paths/governor/claim-your-vote/app-developer-path

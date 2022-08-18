@@ -1,7 +1,7 @@
 ---
 title: Avalanche \(AVAX\)
 menuTitle: Avalanche
-weight: 12
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/avalanche-avax-metamask
   - home/resources/public-rpc-endpoints/avalanche-avax-metamask

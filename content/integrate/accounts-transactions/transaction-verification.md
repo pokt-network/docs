@@ -1,7 +1,7 @@
 ---
 title: Transaction Verification
 menuTitle: Transaction Verification
-weight: 32
+weight: 30
 aliases:
   - pokt-accounts-and-transactions/deposit-processing-and-verification
   - home/pokt-accounts-and-transactions/deposit-processing-and-verification

@@ -1,7 +1,7 @@
 ---
 title: Dark Forest
 menuTitle: Dark Forest
-weight: 23
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/dark-forest
   - home/resources/public-rpc-endpoints/dark-forest
