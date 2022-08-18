@@ -1,7 +1,7 @@
 ---
 title: ⛓ Protocol
 menuTitle: Protocol
-weight: 6
+weight: 20
 aliases:
   - v0/protocol
   - home/v0/protocol

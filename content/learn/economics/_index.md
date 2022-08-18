@@ -1,7 +1,7 @@
 ---
 title: 🪙 Economics
 menuTitle: Economics
-weight: 7
+weight: 30
 aliases:
   - v0/economics/the-web3-infra-trap
   - home/v0/economics/the-web3-infra-trap

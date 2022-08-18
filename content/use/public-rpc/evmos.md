@@ -1,7 +1,7 @@
 ---
 title: Evmos
 menuTitle: Evmos
-weight: 16
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/evmos-metamask
   - home/resources/public-rpc-endpoints/evmos-metamask

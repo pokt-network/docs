@@ -1,7 +1,7 @@
 ---
 title: Scholarships
 menuTitle: Scholarships
-weight: 34
+weight: 10
 aliases:
     - home/community/contribute/README.md
 ---

@@ -1,7 +1,7 @@
 ---
 title: Manage POKT
 menuTitle: Manage POKT
-weight: 1
+weight: 10
 ---
 
 

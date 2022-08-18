@@ -1,7 +1,7 @@
 ---
 title: 🎁 Wrapped POKT (wPOKT)
 menuTitle: Wrapped POKT (wPOKT)
-weight: 4
+weight: 40
 aliases:
   - resources/faq/wpokt
   - home/resources/faq/wpokt

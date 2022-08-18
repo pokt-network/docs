@@ -1,7 +1,7 @@
 ---
 title: Gnosis Chain (xDAI)
 menuTitle: Gnosis Chain (fka xDAI)
-weight: 18
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/xdai-metamask
   - home/resources/public-rpc-endpoints/xdai-metamask

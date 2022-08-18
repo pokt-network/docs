@@ -1,7 +1,7 @@
 ---
 title: Account Generation and Validation
 menuTitle: Account Generation and Validation
-weight: 30
+weight: 10
 aliases:
   - pokt-accounts-and-transactions/address-generation-and-validation
   - home/pokt-accounts-and-transactions/address-generation-and-validation

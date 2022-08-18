@@ -1,7 +1,7 @@
 ---
 title: 🤖 Node Economics
 menuTitle: Node Economics
-weight: 5
+weight: 30
 aliases:
   - v0/economics/pokt-token-economics/node-economics/economic-security
   - home/v0/economics/pokt-token-economics/node-economics/economic-security

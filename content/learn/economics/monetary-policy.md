@@ -1,7 +1,7 @@
 ---
 title: 🏦 Monetary Policy
 menuTitle: Monetary Policy
-weight: 6
+weight: 40
 aliases:
   - v0/economics/monetary-policy/pokt-inflation
   - home/v0/economics/monetary-policy/pokt-inflation

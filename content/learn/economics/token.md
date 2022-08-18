@@ -1,7 +1,7 @@
 ---
 title: 🪙 Token Economics
 menuTitle: Token Economics
-weight: 3
+weight: 10
 aliases:
   - resources/references/pokt-denominations
   - home/resources/references/pokt-denominations

@@ -1,7 +1,7 @@
 ---
 title: ✅ Supported Blockchains
 menuTitle: Supported Blockchains
-weight: 2
+weight: 20
 ignore_contents: true
 aliases:
   - resources/references/supported-blockchains

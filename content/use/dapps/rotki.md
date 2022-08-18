@@ -1,7 +1,7 @@
 ---
 title: Rotki
 menuTitle: Rotki
-weight: 25
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/rotki
   - home/resources/public-rpc-endpoints/rotki

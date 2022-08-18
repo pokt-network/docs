@@ -1,7 +1,7 @@
 ---
 title: 💻 App Economics
 menuTitle: App Economics
-weight: 4
+weight: 20
 aliases:
   - v0/economics/pokt-token-economics/app-economics/base-throughput
   - home/v0/economics/pokt-token-economics/app-economics/base-throughput

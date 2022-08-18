@@ -1,7 +1,7 @@
 ---
 title: 🗳 Trophies
 menuTitle: Trophies
-weight: 26
+weight: 30
 aliases:
   - paths/governor/claim-your-vote
   - home/paths/governor/claim-your-vote

@@ -1,7 +1,7 @@
 ---
 title: MyCrypto
 menuTitle: MyCrypto
-weight: 24
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/mycrypto
   - home/resources/public-rpc-endpoints/mycrypto

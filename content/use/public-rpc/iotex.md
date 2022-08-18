@@ -1,7 +1,7 @@
 ---
 title: IoTeX
 menuTitle: IoTeX
-weight: 20
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/iotex-metamask
   - home/resources/public-rpc-endpoints/iotex-metamask

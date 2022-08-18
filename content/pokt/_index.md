@@ -1,7 +1,7 @@
 ---
 title: 💰 Get POKT
 menuTitle: Own POKT
-weight: 3
+weight: 30
 aliases:
     - buy-store-and-stake-pokt
     - home/buy-store-and-stake-pokt

@@ -1,7 +1,7 @@
 ---
 title: Harmony
 menuTitle: Harmony
-weight: 19
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/harmony-metamask
   - home/resources/public-rpc-endpoints/harmony-metamask

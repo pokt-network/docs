@@ -1,7 +1,7 @@
 ---
 title: Transaction Construction
 menuTitle: Transaction Construction
-weight: 31
+weight: 20
 aliases:
   - pokt-accounts-and-transactions/transaction-construction-and-offline-signature
   - home/pokt-accounts-and-transactions/transaction-construction-and-offline-signature
@@ -43,7 +43,7 @@ const txSigner = pocket.withPrivateKey(
 
 const transactionResponse = await txSigner.send(
   // Origin address for the send
-  SENDER_ADDRESS, 
+  SENDER_ADDRESS,
   // Receiver address
   RECEIVER_ADDRESS,
   // 10 POKT
@@ -59,7 +59,7 @@ if (typeGuard(transactionResponse, RpcError)) {
   throw new Error(transactionResponse.message)
 }
 
-// You will be able to look up this transaction through this hash after the 
+// You will be able to look up this transaction through this hash after the
 // next block clears.
 const { hash } = transactionResponse
 
@@ -95,7 +95,7 @@ const txSigner = pocket.withPrivateKey(
 // Now use the transaction signer to create a signed SEND transaction
 const txSignerWithSendTransaction = txSigner.send(
   // Origin address for the send
-  SENDER_ADDRESS, 
+  SENDER_ADDRESS,
   // Receiver address
   RECEIVER_ADDRESS,
   // 10 POKT
@@ -148,7 +148,7 @@ const ENCODED_TX_BYTES = Buffer.from('d1010a4....bf8970d', 'hex')
 const protoTxDecoder = await pocket.withProtoTxDecoder()
 
 const protoStdTx = await protoTxDecoder.unmarshalStdTx(ENCODED_TX_BYTES)
-  
+
 const data = await protoTxDecoder.decodeStdTxData(protoStdTx)
 
 console.log('Deserialized transaction:', data)

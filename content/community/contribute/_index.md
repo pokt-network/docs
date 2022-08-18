@@ -1,7 +1,7 @@
 ---
 title: 🦸 Contribute
 menuTitle: Contribute
-weight: 25
+weight: 20
 aliases:
     - home/community/contribute/README.md
 ---

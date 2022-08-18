@@ -1,7 +1,7 @@
 ---
 title: 🛡 Security
 menuTitle: Security
-weight: 2
+weight: 20
 aliases:
   - v0/protocol/security
   - home/v0/protocol/security

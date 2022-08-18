@@ -1,7 +1,7 @@
 ---
 title: Vision
 menuTitle: Vision
-weight: 5
+weight: 10
 aliases:
   - resources/faq/product-comparisons
   - home/resources/faq/product-comparisons

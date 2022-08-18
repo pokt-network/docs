@@ -1,7 +1,7 @@
 ---
 title: Pocket-Powered dApps
 menuTitle: Pocket-Powered dApps
-weight: 13
+weight: 30
 ---
 
 

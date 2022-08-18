@@ -1,7 +1,7 @@
 ---
 title: Part 1 –  Server setup
 menuTitle: Server setup
-weight: 1
+weight: 10
 aliases:
   - paths/node-runner/zero-to-node/server-setup
   - home/paths/node-runner/zero-to-node/server-setup

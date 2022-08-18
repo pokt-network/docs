@@ -1,7 +1,7 @@
 ---
 title: Run Nodes
 menuTitle: Run Nodes
-weight: 6
+weight: 60
 aliases:
   - paths/node-runner
   - home/paths/node-runner

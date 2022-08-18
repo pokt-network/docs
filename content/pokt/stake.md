@@ -1,7 +1,7 @@
 ---
 title: Stake POKT
 menuTitle: Stake POKT
-weight: 3
+weight: 30
 ---
 
 

@@ -90,42 +90,42 @@ summaryLength = 20
 [[menu.shortcuts]]
 name = "API Docs"
 url = "/api-docs/pokt"
-weight = 25
+weight = 10
 
 [[menu.shortcuts]]
 name = "PocketJS"
 url = "https://github.com/pokt-foundation/pocket-js"
-weight = 27
+weight = 20
 
 
 [[menu.shortcuts]]
 name = "pypocket"
 url = "https://github.com/pokt-foundation/pypocket"
-weight = 28
+weight = 30
 
 
 [[menu.shortcuts]]
 name = "pocket-go"
 url = "https://github.com/pokt-foundation/pocket-go"
-weight = 29
+weight = 40
 
 
 [[menu.shortcuts]]
 name = "Jobs"
 url = "https://angel.co/company/pocket-network"
-weight = 35
+weight = 50
 
 
 [[menu.shortcuts]]
 name = "Forum"
 url = "https://forum.pokt.network"
-weight = 27
+weight = 60
 
 
 [[menu.shortcuts]]
 name = "Discord"
 url = "https://discord.gg/pokt"
-weight = 28
+weight = 70
 
 [Languages]
 [Languages.en]

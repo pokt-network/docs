@@ -1,7 +1,7 @@
 ---
 title: Learn Pocket
 menuTitle: Learn Pocket
-weight: 4
+weight: 40
 aliases:
     - learn/README.md
     - home/learn/README.md

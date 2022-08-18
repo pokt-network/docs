@@ -1,7 +1,7 @@
 ---
 title: Binance Smart Chain \(BSC\)
 menuTitle: Binance Smart Chain
-weight: 13
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask
   - home/resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask

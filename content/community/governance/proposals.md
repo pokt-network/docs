@@ -1,7 +1,7 @@
 ---
 title: Proposals
 menuTitle: Proposals
-weight: 33
+weight: 10
 aliases:
   - paths/governor/submit-a-proposal/pup-parameter-update-proposal
   - home/paths/governor/submit-a-proposal/pup-parameter-update-proposal

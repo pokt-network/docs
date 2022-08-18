@@ -1,7 +1,7 @@
 ---
 title: Custodial and non-custodial staking
 menuTitle: Custodial and Non-Custodial Staking
-weight: 16
+weight: 30 
 description: With non-custodial staking, node runners have additional options for managing nodes and rewards.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Part 4 –  Proxy configuration
 menuTitle: Proxy configuration
-weight: 4
+weight: 40
 aliases:
   - paths/node-runner/zero-to-node/proxy-config
   - home/paths/node-runner/zero-to-node/proxy-config

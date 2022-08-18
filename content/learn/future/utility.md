@@ -1,7 +1,7 @@
 ---
 title: 🪙 Utility
 menuTitle: Utility
-weight: 8
+weight: 10
 aliases:
   - v1/utility
   - home/v1/utility

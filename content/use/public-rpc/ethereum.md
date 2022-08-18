@@ -1,7 +1,7 @@
 ---
 title: Ethereum \(ETH\)
 menuTitle: Ethereum
-weight: 15
+weight: 1
 aliases:
   - resources/public-rpc-endpoints/ethereum-eth-metamask
   - home/resources/public-rpc-endpoints/ethereum-eth-metamask

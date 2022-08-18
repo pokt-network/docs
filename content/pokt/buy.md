@@ -1,7 +1,7 @@
 ---
 title: Buy POKT
 menuTitle: Buy POKT
-weight: 2
+weight: 20
 ---
 
 

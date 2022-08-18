@@ -1,7 +1,7 @@
 ---
 title: 🗄 Persistence
 menuTitle: Persistence
-weight: 11
+weight: 40
 aliases:
   - v1/persistence
   - home/v1/persistence
