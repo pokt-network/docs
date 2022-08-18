@@ -1,5 +1,5 @@
 ---
-title: 🌱 Seeds
+title: Seeds
 menuTitle: Seeds
 weight: 40
 aliases:

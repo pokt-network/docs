@@ -1,5 +1,5 @@
 ---
-title: 💬 More Information
+title: More Information
 menuTitle: More Info
 weight: 90
 ignore_contents: true
@@ -17,7 +17,7 @@ Pocket Network is an open-source multi-stakeholder community. Therefore, the bes
 
 You can [join our Discord](https://discord.gg/pokt). We recommend doing this if you want to keep your finger on the pulse.
 
-Be sure to start in the 👋welcome channel, where you can choose the topics you're interested in.
+Be sure to start in the #👋welcome channel, where you can choose the topics you're interested in.
 
 ## Discourse (Pocket Forum)
 

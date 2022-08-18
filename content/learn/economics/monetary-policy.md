@@ -1,5 +1,5 @@
 ---
-title: 🏦 Monetary Policy
+title: Monetary Policy
 menuTitle: Monetary Policy
 weight: 40
 aliases:

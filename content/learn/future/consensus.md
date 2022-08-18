@@ -1,5 +1,5 @@
 ---
-title: 🤝 Consensus
+title: Consensus
 menuTitle: Consensus
 weight: 20
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: 🪙 Economics
+title: Economics
 menuTitle: Economics
 weight: 30
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: 💬 Peer to Peer
+title: Peer to Peer
 menuTitle: Peer To Peer
 weight: 30
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: 🗳 Trophies
+title: Trophies
 menuTitle: Trophies
 weight: 30
 aliases:

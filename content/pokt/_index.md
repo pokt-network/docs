@@ -1,5 +1,5 @@
 ---
-title: 💰 Get POKT
+title: Get POKT
 menuTitle: Own POKT
 weight: 30
 aliases:

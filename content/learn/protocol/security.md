@@ -1,5 +1,5 @@
 ---
-title: 🛡 Security
+title: Security
 menuTitle: Security
 weight: 20
 aliases:

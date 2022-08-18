@@ -1,5 +1,5 @@
 ---
-title: ⛓ Protocol
+title: Protocol
 menuTitle: Protocol
 weight: 20
 aliases:

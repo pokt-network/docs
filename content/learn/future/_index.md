@@ -1,6 +1,6 @@
 ---
-title: 👀 Future (v1)
-menuTitle: Future
+title: Future (v1)
+menuTitle: Future (v1)
 weight: 40
 aliases:
   - v1/v1-overview

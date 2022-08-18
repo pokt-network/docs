@@ -1,5 +1,5 @@
 ---
-title: 🏆 Governor/Contributors
+title: Governor/Contributors
 menuTitle: Contributors
 weight: 40
 aliases:

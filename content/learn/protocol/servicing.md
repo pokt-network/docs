@@ -1,5 +1,5 @@
 ---
-title: 🤝 Servicing
+title: Servicing
 menuTitle: Servicing
 weight: 10
 aliases:

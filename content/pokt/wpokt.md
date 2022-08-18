@@ -1,5 +1,5 @@
 ---
-title: 🎁 Wrapped POKT (wPOKT)
+title: Wrapped POKT (wPOKT)
 menuTitle: Wrapped POKT (wPOKT)
 weight: 40
 aliases:

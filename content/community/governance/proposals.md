@@ -26,7 +26,7 @@ There are 3 types of proposals:
 
 Posting your proposal to Discourse puts it up for consideration and debate by the DAO. To kickstart a vote, you need a voter to submit it to our [governance dashboard](https://gov.pokt.network) on your behalf.
 
-## 🦾 PIP – Pocket Improvement Proposal
+## PIP – Pocket Improvement Proposal
 
 **Pocket Improvement Proposals (PIPs)** include any proposals that aim to level up the Pocket Network ecosystem, through:
 
@@ -38,7 +38,7 @@ PIP votes will last 7 days and pass with Majority Approval (50% yes votes by par
 
 To submit a PIP, head to the forum [here](https://forum.pokt.network/c/governance/pip/28), then click New Topic to generate a template for your proposal.
 
-## 💰 PEP – Pocket Ecosystem Proposal
+## PEP – Pocket Ecosystem Proposal
 
 **Pocket Ecosystem Proposals (PEPs)** include proposals to distribute funds to or form agreements with Contributors to the Pocket Network ecosystem, in the form of:
 
@@ -58,7 +58,7 @@ PEP votes will last 7 days and pass with Majority Approval (50% yes votes by par
 
 To submit a PEP, head to the forum [here](https://forum.pokt.network/c/governance/pep/29), then click New Topic to generate a template for your proposal.
 
-## 🎚 PUP – Parameter Update Proposal
+## PUP – Parameter Update Proposal
 
 **Parameter Update Proposals (PUPs)** include any proposals to modify the value of the [protocol parameters](/learn/protocol-parameters/).
 

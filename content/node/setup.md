@@ -240,7 +240,8 @@ If your stake falls below `15,000 POKT` your node will be force-unstake burned. 
 {{% /notice %}}
 
 {{% notice style="success" %}}
-**🏆 Achievement Unlocked**
+
+** Achievement Unlocked**
 
 If you staked your node successfully, you just earned your first trophy. See [here](https://docs.pokt.network/home/paths/node-runner#earn-trophies-join-the-dao) to find out how earning more trophies will ultimately earn you a vote in our DAO.
 {{% /notice %}}

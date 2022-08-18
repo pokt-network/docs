@@ -1,5 +1,5 @@
 ---
-title: 🦸 Contribute
+title: Contribute
 menuTitle: Contribute
 weight: 20
 aliases:

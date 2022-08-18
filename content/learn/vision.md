@@ -44,7 +44,7 @@ Once the POKT ecosystem is mature, when apps can frictionlessly top-up their sta
 
 Learn more about [Pocket Network's economics](/learn/economics/) and also [the future of Pocket with v1](/learn/future/).
 
-## 💸 Decentralizing Infrastructure
+## Decentralizing Infrastructure
 
 We posit that application-specific blockchains like Pocket Network have the ability to design greater cost efficiencies at the base protocol layer of the Web3 stack while enhancing security and censorship resistance.
 

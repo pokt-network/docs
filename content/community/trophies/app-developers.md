@@ -1,5 +1,5 @@
 ---
-title: 🏆 App Developers
+title: App Developers
 menuTitle: App Developers
 weight: 10
 aliases:

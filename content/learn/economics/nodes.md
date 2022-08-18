@@ -1,5 +1,5 @@
 ---
-title: 🤖 Node Economics
+title: Node Economics
 menuTitle: Node Economics
 weight: 30
 aliases:

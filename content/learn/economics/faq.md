@@ -1,5 +1,5 @@
 ---
-title: 💰 Pricing & Economics FAQ
+title: Pricing & Economics FAQ
 menuTitle: FAQ
 weight: 50
 aliases:

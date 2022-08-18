@@ -1,5 +1,5 @@
 ---
-title: 🪙 Utility
+title: Utility
 menuTitle: Utility
 weight: 10
 aliases:

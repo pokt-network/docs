@@ -1,5 +1,5 @@
 ---
-title: ✅ Supported Blockchains
+title: Supported Blockchains
 menuTitle: Supported Blockchains
 weight: 20
 ignore_contents: true

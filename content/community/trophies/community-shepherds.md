@@ -1,5 +1,5 @@
 ---
-title: 🏆 Community Shepherds
+title: Community Shepherds
 menuTitle: Community Shepherds
 weight: 30
 aliases:

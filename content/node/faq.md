@@ -16,7 +16,7 @@ aliases:
 
 The following pages contains common questions regarding running nodes.
 
-## ⚙ Node Configuration
+## Node Configuration
 
 ### Does my blockchain node need to be synced before I start my Pocket node?
 
@@ -85,7 +85,7 @@ source ~/.bashrc
 To opt out of being selected for work, you should deliberately jail your node, which lets the network know you are not ready to receive any relays. Once the machine is back up and running, you can unjail your node again.
 
 
-## ❌ Node Troubleshooting
+## Node Troubleshooting
 
 ### Why is my node not earning POKT?
 
@@ -167,7 +167,7 @@ Make sure your node meets the minimum hardware requirements for both a Pocket no
 
 There are negligible burns at this stage of the network, determined by the [`SlashFractionDowntime`](/learn/protocol-parameters/#slashfractiondowntime) parameter. As the network matures, the rate will probably be increased to push for better service.
 
-## 🤑 Maximizing your Pocket earnings
+## Maximizing your Pocket earnings
 
 So you've spun up your Pocket node but you're not earning as much as you thought you would. On this page, we debunk some common misconceptions and explain how to maximize your earnings.
 

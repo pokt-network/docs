@@ -1,5 +1,5 @@
 ---
-title: 🗄 Persistence
+title: Persistence
 menuTitle: Persistence
 weight: 40
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: 🎚 Protocol Parameters
+title: Protocol Parameters
 menuTitle: Parameters
 weight: 50
 aliases:

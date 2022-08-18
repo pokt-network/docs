@@ -1,5 +1,5 @@
 ---
-title: 🏆 Node Runners
+title: Node Runners
 menuTitle: Node Runners
 weight: 20
 aliases:

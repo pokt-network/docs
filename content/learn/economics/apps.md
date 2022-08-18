@@ -1,5 +1,5 @@
 ---
-title: 💻 App Economics
+title: App Economics
 menuTitle: App Economics
 weight: 20
 aliases:

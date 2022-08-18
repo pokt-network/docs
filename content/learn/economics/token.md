@@ -1,5 +1,5 @@
 ---
-title: 🪙 Token Economics
+title: Token Economics
 menuTitle: Token Economics
 weight: 10
 aliases:
@@ -37,7 +37,7 @@ For more information, read our page on Pocket [monetary policy](/learn/economics
 
 Leader-elected nodes are rewarded for facilitating P2P transfers of POKT on the Pocket blockchain via a transaction fee. This is required for the security of the network in order to prevent spam or “dust” attacks. A transaction fee is paid by the individual or entity making a transaction, 99% of which is burned, and the remaining 1% is awarded to the leader-elected node for including transactions in the relevant block. The 1% fee provides an incentive for block producers to include transactions in the next block.
 
-## 🌱 Token Staking
+## Token Staking
 
 There are two distinct types of stake functions within Pocket: `StakeApp()` and `StakeNode()`. Both stake functions use the POKT cryptocurrency. 
 
@@ -55,7 +55,7 @@ Like with applications, when nodes invoke the `StakeNode()` function, the minimu
 While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice. 
 {{% /notice %}}
 
-## 🔟 POKT Denominations
+## POKT Denominations
 
 {{% notice style="info" %}}
 The current denomination used by the protocol is defined by the `StakeDenom` parameter. When using the Pocket CLI or PocketJS library to send transactions to the network, you will need to use this denomination.

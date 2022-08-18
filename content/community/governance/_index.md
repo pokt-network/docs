@@ -1,5 +1,5 @@
 ---
-title: 👑 Governance
+title: Governance
 menuTitle: Governance
 weight: 10
 aliases:
