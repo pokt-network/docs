@@ -18,13 +18,13 @@ We have come to realize that, to reach our true vision of unstoppable Web3 infra
 
 v1 will contain 4 specialized modules that are optimized for Pocket Network’s core utility:
 
-* [Utility]({{< relref "utility" >}})
-* [Consensus]({{< relref "consensus" >}})
-* [Peer-to-Peer]({{< relref "peer-to-peer" >}})
-* [Persistence]({{< relref "persistence" >}})
+* [Utility](/learn/future/utility/)
+* [Consensus](/learn/future/consensus/)
+* [Peer-to-Peer](/learn/future/peer-to-peer/)
+* [Persistence](/learn/future/persistence/)
 
 v1 will also be the catalyst for an enhanced engineering process that is more inclusive of the community, with robust laboratory infrastructure for responsive experimentation, QA, visibility, tooling and tighter development feedback loops. This is an R\&D project with at least 1 year of work anticipated before the launch of v1.0 mainnet. We are revealing our vision to the community at this stage to empower everyone to get involved in our new development cycle:
 
-* You can follow along the R\&D cycle in [GitHub](https://github.com/pokt-network/pocket).
+* You can follow along the R&D cycle in [GitHub](https://github.com/pokt-network/pocket).
 * You can post your research ideas in the [Pocket Forum](https://forum.pokt.network/c/research/47).
-* You can chat about anything v1 in [Discord](https://discord.gg/Bk7J4Cy6CC).
+* You can chat about anything v1 in [Discord](https://discord.gg/pokt).

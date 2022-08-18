@@ -14,15 +14,15 @@ Welcome to Zero To Node! This is a step-by-step guide for setting up a Pocket va
 
 This guide is broken down into five parts:
 
-* **[Part 1: Server setup]({{< relref "server-setup" >}})**
-* **[Part 2: Software installation]({{< relref "software-install" >}})**
-* **[Part 3: Pocket configuration]({{< relref "pocket-config" >}})**
-* **[Part 4: Proxy configuration]({{< relref "proxy-config" >}})**
-* **[Part 5: Going live]({{< relref "going-live" >}})**
+* **[Part 1: Server setup](/node/tutorials/zero-to-node/server-setup/)**
+* **[Part 2: Software installation](/node/tutorials/zero-to-node/software-install/)**
+* **[Part 3: Pocket configuration](/node/tutorials/zero-to-node/pocket-config/)**
+* **[Part 4: Proxy configuration](/node/tutorials/zero-to-node/proxy-config/)**
+* **[Part 5: Going live](/node/tutorials/zero-to-node/going-live/)**
 
 ## Background
 
-The main utility of a Pocket node is to relay transactions to other blockchains. So, Pocket nodes need access to other nodes for the blockchains they'll be relaying to. However, the focus of this guide is just on setting up a Pocket node that will relay to the Pocket network, essentially, through itself. **Setting up nodes for other blockchains such as Harmony, Ethereum, or any of the other [supported blockchains]({{< relref "../../../supported-blockchains" >}}) is beyond the scope of this guide.**
+The main utility of a Pocket node is to relay transactions to other blockchains. So, Pocket nodes need access to other nodes for the blockchains they'll be relaying to. However, the focus of this guide is just on setting up a Pocket node that will relay to the Pocket network, essentially, through itself. **Setting up nodes for other blockchains such as Harmony, Ethereum, or any of the other [supported blockchains](/supported-blockchains/) is beyond the scope of this guide.**
 
 After completing the steps outlined here, you'll have a fully functional Pocket node up and running. If you choose, you can also opt to stake your node and earn rewards. We'll cover that here, but staking is not required unless you want to earn rewards.
 

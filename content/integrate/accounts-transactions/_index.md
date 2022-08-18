@@ -22,6 +22,6 @@ All numbers displayed through RPC calls on the Pocket blockchain are displayed i
 
 ## Generating Accounts and Sending Transactions
 
-* [Account Generation and Validation]({{< relref "account-generation-validation" >}})
-* [Transaction Construction]({{< relref "transaction-construction" >}})
-* [Transaction Verification]({{< relref "transaction-verification" >}})
+* [Account Generation and Validation](/integrate/account-generation-validation/)
+* [Transaction Construction](/integrate/transaction-construction/)
+* [Transaction Verification](/integrate/transaction-verification/)

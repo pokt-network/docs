@@ -24,10 +24,10 @@ First, you need to prove your knowledge of and participation in the Pocket Netwo
 
 There are four paths that you can take on this journey:
 
-* [**App Developers**]({{< relref "app-developers" >}})
-* [**Node Runners**]({{< relref "node-runners" >}})
-* [**Community Shepherds**]({{< relref "community-shepherds" >}})
-* [**Governor/Contributors**]({{< relref "contributors" >}})
+* [**App Developers**](/community/trophies/app-developers/)
+* [**Node Runners**](/community/trophies/node-runners/)
+* [**Community Shepherds**](/community/trophies/community-shepherds/)
+* [**Governor/Contributors**](/community/trophies/contributors/)
 
 
 You will complete a series of quests and report your completion of these quests in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel in Discord. Follow the path guides above to see which quests are up next and how many you need to evolve.

@@ -12,7 +12,7 @@ aliases:
 
 POKT is the native cryptocurrency that powers Pocket. In this section, we'll go over how to store your POKT safely, as well as buying and staking.
 
-* [Manage POKT]({{< relref "wallets" >}})
-* [Buy POKT]({{< relref "buy" >}})
-* [Stake POKT]({{< relref "stake" >}})
-* [Wrapped POKT (wPOKT)]({{< relref "wpokt" >}})
+* [Manage POKT](/pokt/wallets/)
+* [Buy POKT](/pokt/buy/)
+* [Stake POKT](/pokt/stake/)
+* [Wrapped POKT (wPOKT)](/pokt/wpokt/)

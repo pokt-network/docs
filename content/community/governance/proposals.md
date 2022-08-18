@@ -60,7 +60,7 @@ To submit a PEP, head to the forum [here](https://forum.pokt.network/c/governanc
 
 ## 🎚 PUP – Parameter Update Proposal
 
-**Parameter Update Proposals (PUPs)** include any proposals to modify the value of the \[protocol parameters]\(({{< relref "../../learn/protocol-parameters" >}}).
+**Parameter Update Proposals (PUPs)** include any proposals to modify the value of the [protocol parameters](/learn/protocol-parameters/).
 
 PUP votes will last 7 days and pass with Majority Approval (50% yes votes by participating voters) unless otherwise specified in the [Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md).
 
