@@ -3,9 +3,6 @@
   {{ range $child_pages.ByWeight }}
   <li>
 	  <span><a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a> – {{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ if .Truncated }}...{{ end }}{{ end }}</span>
-    {{ if or (.Sections) (.Pages) }}
-    {{ partial "recursive-section.html" . }}
-    {{ end }}
   </li>
   {{ end }}
 </ul>
