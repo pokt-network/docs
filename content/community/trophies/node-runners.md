@@ -7,6 +7,7 @@ aliases:
   - home/paths/governor/claim-your-vote/node-runner-path
   - community/trophies/node-runners.md
   - home/community/trophies/node-runners.md
+description: Claim a vote in the DAO as a node runner.
 ---
 
 

@@ -7,6 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/mycrypto
   - use/dapps/mycrypto.md
   - home/use/dapps/mycrypto.md
+description: Add a Pocket-powered Ethereum RPC endpoint within your local MyCrypto application.
 ---
 
 

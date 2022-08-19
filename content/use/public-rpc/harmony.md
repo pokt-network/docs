@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/harmony-metamask
   - use/public-rpc/harmony.md
   - home/use/public-rpc/harmony.md
-description: >-
-  How to add Harmony Mainnet Shard 0 in MetaMask with a Pocket-powered RPC
-  Endpoint
+description: Add the Harmony Mainnet Shard 0 network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

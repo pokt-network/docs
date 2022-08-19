@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Zero To Node
 menuTitle: Zero To Node
 weight: 10
 aliases:
@@ -7,10 +7,11 @@ aliases:
   - home/paths/node-runner/zero-to-node
   - node/tutorials/zero-to-node/README.md
   - home/node/tutorials/zero-to-node/README.md
+description: Zero To Node is a step-by-step guide for setting up a Pocket node, with a focus on keeping things simple and with a minimum of steps, while still focusing on security and stability.
 ---
 
 
-Welcome to Zero To Node! This is a step-by-step guide for setting up a Pocket validator node. While there are many different ways to set up a node, the focus of this tutorial is on keeping things simple and with the minimum of steps, while still focusing on security and stability.
+Welcome to Zero To Node! This is a step-by-step guide for setting up a Pocket node. While there are many different ways to set up a node, the focus of this tutorial is on keeping things simple and with the minimum of steps, while still focusing on security and stability.
 
 This guide is broken down into five parts:
 

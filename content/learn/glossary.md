@@ -7,6 +7,7 @@ aliases:
   - home/v0/glossary
   - learn/glossary.md
   - home/learn/glossary.md
+description: Reference for all terms that are specific to and used by Pocket.
 ---
 
 

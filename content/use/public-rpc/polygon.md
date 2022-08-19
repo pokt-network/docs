@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/polygon-metamask
   - use/public-rpc/polygon.md
   - home/use/public-rpc/polygon.md
-description: How to add the Polygon network in MetaMask with a Pocket-powered RPC Endpoint
+description: Add the Polygon network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

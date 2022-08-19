@@ -9,6 +9,7 @@ aliases:
   - home/paths/contributor
   - community/trophies/contributors.md
   - home/community/trophies/contributors.md
+description: Claim a vote in the DAO as a contributor.
 ---
 
 

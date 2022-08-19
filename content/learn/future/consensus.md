@@ -7,6 +7,7 @@ aliases:
   - home/v1/consensus
   - learn/future/consensus.md
   - home/learn/future/consensus.md
+description: The Consensus module in v1 will replace Tendermint with a new consensus mechanism, as well as provide a blind, pseudorandom leader selection process, enabling more consistent block times and more effeicient use of resources.
 ---
 
 

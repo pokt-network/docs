@@ -2,6 +2,7 @@
 title: Stake POKT
 menuTitle: Stake POKT
 weight: 30
+description: POKT can only be staked on a node that is relaying RPC requests. You can run a node yourself, pay someone to run a node for you, or join a staking pool.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/paths/node-runner/zero-to-node/going-live
   - node/tutorials/zero-to-node/going-live.md
   - home/node/tutorials/zero-to-node/going-live.md
-description: Final steps for going live with your node. Part 5 of 5 in the Zero to Node tutorial.
+description: Final steps for going live with your node. Part 5 of 5 in the Zero To Node tutorial.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/dark-forest
   - use/dapps/dark-forest.md
   - home/use/dapps/dark-forest.md
-description: How to add Pocket-powered xDAI RPC endpoint in the Dark Forest blockchain game
+description: Add a Pocket-powered xDAI RPC endpoint in the Dark Forest blockchain game.
 ---
 
 

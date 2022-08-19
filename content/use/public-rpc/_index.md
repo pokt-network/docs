@@ -7,10 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints
   - use/public-rpc/README.md
   - home/use/public-rpc/README.md
-description: >-
-  We've staked POKT on your behalf to provide public RPC endpoints for all of
-  the networks that Pocket supports. Use these endpoints in any DApp that lets
-  you use a custom endpoint.
+description: We've staked POKT on your behalf to provide public RPC endpoints for all of the networks that Pocket supports. Use these endpoints in any DApp that lets you use a custom endpoint.
 ---
 
 

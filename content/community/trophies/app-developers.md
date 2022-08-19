@@ -7,6 +7,7 @@ aliases:
   - home/paths/governor/claim-your-vote/app-developer-path
   - community/trophies/app-developers.md
   - home/community/trophies/app-developers.md
+description: Claim a vote in the DAO as an app developer.
 ---
 
 

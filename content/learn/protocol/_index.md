@@ -7,7 +7,7 @@ aliases:
   - home/v0/protocol
   - learn/protocol/README.md
   - home/learn/protocol/README.md
-description: Protocol Introduction
+description: Learn about the protocol that powers Pocket.
 ---
 
 

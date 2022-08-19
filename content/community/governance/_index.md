@@ -4,10 +4,11 @@ menuTitle: Governance
 weight: 10
 aliases:
     - home/community/governance/README.md
+description: Learn about the Pocket DAO and how proposals are created and managed.
 ---
 
 
-Pocket Network is a pioneer in a new era of democratically-governed digital public goods. Our Decentralized Autonomous Organization \(DAO\) means that you, our community, will control all aspects of our protocol and ecosystem.
+Pocket Network is a pioneer in a new era of democratically-governed digital public goods. Our Decentralized Autonomous Organization (DAO) means that you, our community, will control all aspects of our protocol and ecosystem.
 
 Pocket uses off-chain governance because it’s the most flexible and future-proof way for us to organize our DAO. For more on our reasoning behind this, check out our [Lean Governance Thesis](https://github.com/pokt-network/governance/blob/master/constitution/The%20Lean%20Governance%20Thesis.pdf).
 

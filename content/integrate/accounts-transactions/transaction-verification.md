@@ -7,6 +7,7 @@ aliases:
   - home/pokt-accounts-and-transactions/deposit-processing-and-verification
   - integrate/accounts-transactions/transaction-verification.md
   - home/integrate/accounts-transactions/transaction-verification.md
+description: Verify a transaction on the Pocket blockchain.
 ---
 
 

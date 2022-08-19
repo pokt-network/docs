@@ -7,6 +7,7 @@ aliases:
     - home/buy-store-and-stake-pokt
     - pokt/README.md
     - home/pokt/README.md
+description: POKT is the native cryptocurrency that powers Pocket.
 ---
 
 

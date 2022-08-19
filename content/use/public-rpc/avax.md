@@ -1,5 +1,5 @@
 ---
-title: Avalanche \(AVAX\)
+title: Avalanche (AVAX)
 menuTitle: Avalanche
 weight: 1
 aliases:
@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/avalanche-avax-metamask
   - use/public-rpc/avax.md
   - home/use/public-rpc/avax.md
-description: >-
-  How to add the Avalanche (AVAX) network in MetaMask with a Pocket-powered RPC
-  Endpoint
+description: Add the Avalanche (AVAX) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

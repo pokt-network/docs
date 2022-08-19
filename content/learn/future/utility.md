@@ -7,6 +7,7 @@ aliases:
   - home/v1/utility
   - learn/future/utility.md
   - home/learn/future/utility.md
+description: The Utility module in v1 will provide optimal quality and scalability for Web3 relays.
 ---
 
 

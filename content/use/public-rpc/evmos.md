@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/evmos-metamask
   - use/public-rpc/evmos.md
   - home/use/public-rpc/evmos.md
-description: How to add the Evmos network in MetaMask with a Pocket-powered RPC Endpoint
+description: Add the Evmos network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

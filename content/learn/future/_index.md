@@ -7,6 +7,7 @@ aliases:
   - home/v1/v1-overview
   - learn/future/README.md
   - home/learn/future/README.md
+description: Learn about v1 and all of the upcoming improvements to the Pocket protocol.
 ---
 
 

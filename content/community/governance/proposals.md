@@ -13,6 +13,7 @@ aliases:
   - home/paths/governor/submit-a-proposal
   - community/governance/proposals.md
   - home/community/governance/proposals.md
+description: The different kinds of Pocket proposals, and how to submit one.
 ---
 
 

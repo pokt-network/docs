@@ -7,6 +7,7 @@ aliases:
   - home/resources/references/seeds
   - node/seeds.md
   - home/node/seeds.md
+description: Seed nodes enable newly configured nodes to find peers on the network and store them in their local address book.
 ---
 
 

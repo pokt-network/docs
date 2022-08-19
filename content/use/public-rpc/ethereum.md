@@ -1,5 +1,5 @@
 ---
-title: Ethereum \(ETH\)
+title: Ethereum (ETH)
 menuTitle: Ethereum
 weight: 1
 aliases:
@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/ethereum-eth-metamask
   - use/public-rpc/ethereum.md
   - home/use/public-rpc/ethereum.md
-description: >-
-  How to add the Ethereum (ETH) network in MetaMask with a Pocket-powered RPC
-  Endpoint
+description: Add the Ethereum (ETH) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/paths/node-runner/zero-to-node/software-install
   - node/tutorials/zero-to-node/software-install.md
   - home/node/tutorials/zero-to-node/software-install.md
-description: Install all the necessary software for your node. Part 2 of 5 in the Zero to Node tutorial.
+description: Install all the necessary software for your node. Part 2 of 5 in the Zero To Node tutorial.
 ---
 
 

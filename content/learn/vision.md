@@ -9,6 +9,7 @@ aliases:
   - home/v0/economics/decentralizing-infrastructure
   - learn/vision.md
   - home/learn/vision.md
+description: Learn about how Pocket enables the decentralization of Web3 infrastructure.
 ---
 
 

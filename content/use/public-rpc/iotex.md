@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/iotex-metamask
   - use/public-rpc/iotex.md
   - home/use/public-rpc/iotex.md
-description: How to add the IoTeX network in MetaMask with a Pocket-powered RPC Endpoint
+description: Add the IoTeX network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

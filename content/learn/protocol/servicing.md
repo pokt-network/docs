@@ -7,6 +7,7 @@ aliases:
   - home/v0/protocol/servicing
   - learn/protocol/servicing.md
   - home/learn/protocol/servicing.md
+description: Learn about the Servicing Layer and how Sessions work in Pocket.
 ---
 
 

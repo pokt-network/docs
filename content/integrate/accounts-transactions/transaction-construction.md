@@ -7,6 +7,7 @@ aliases:
   - home/pokt-accounts-and-transactions/transaction-construction-and-offline-signature
   - integrate/accounts-transactions/transaction-construction.md
   - home/integrate/accounts-transactions/transaction-construction.md
+description: Construct a transaction on the Pocket blockchain.
 ---
 
 

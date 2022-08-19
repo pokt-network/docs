@@ -2,6 +2,7 @@
 title: Buy POKT
 menuTitle: Buy POKT
 weight: 20
+description: POKT is available for purchase on multiple global exchanges and OTC markets.
 ---
 
 

@@ -11,6 +11,7 @@ aliases:
   - home/paths/node-runner/maximize-your-pokt-earnings
   - node/faq.md
   - home/node/faq.md
+description: Frequently asked questions about running nodes.
 ---
 
 

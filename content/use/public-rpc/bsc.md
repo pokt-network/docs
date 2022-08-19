@@ -1,5 +1,5 @@
 ---
-title: Binance Smart Chain \(BSC\)
+title: Binance Smart Chain (BSC)
 menuTitle: Binance Smart Chain
 weight: 1
 aliases:
@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/binance-smart-chain-bsc-metamask
   - use/public-rpc/bsc.md
   - home/use/public-rpc/bsc.md
-description: >-
-  How to add Binance Smart Chain (BSC) in MetaMask with a Pocket-powered RPC
-  Endpoint
+description: Add the Binance Smart Chain (BSC) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

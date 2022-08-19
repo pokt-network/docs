@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/dfk-chain-metamask
   - use/public-rpc/dfk-chain.md
   - home/use/public-rpc/dfk-chain.md
-description: >-
-  How to add the DeFi Kingdoms blockchain subnet in MetaMask with a
-  Pocket RPC endpoint
+description: Add the DeFi Kingdoms blockchain subnet in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

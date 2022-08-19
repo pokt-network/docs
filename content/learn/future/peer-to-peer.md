@@ -1,12 +1,13 @@
 ---
-title: Peer to Peer
-menuTitle: Peer To Peer
+title: Peer-to-Peer
+menuTitle: Peer-To-Peer
 weight: 30
 aliases:
   - v1/peer-to-peer
   - home/v1/peer-to-peer
   - learn/future/peer-to-peer.md
   - home/learn/future/peer-to-peer.md
+description: The Peer-To-Peer module in v1 will transition from random communication to structured communication, which will result in a significant reduction in bandwidth usage.
 ---
 
 

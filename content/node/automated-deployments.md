@@ -2,6 +2,7 @@
 title: Automated Deployments
 menuTitle: Automated Deployments
 weight: 60
+description: Listing of services that can help you automate your node deployments.
 ---
 
 

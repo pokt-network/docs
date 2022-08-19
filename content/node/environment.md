@@ -2,6 +2,7 @@
 title: Environment Setup
 menuTitle: Environment Setup
 weight: 10
+description: This section will detail the hardware and software needed to run a Pocket node.
 ---
 
 

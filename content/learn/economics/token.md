@@ -11,7 +11,7 @@ aliases:
   - home/v0/economics/pokt-token-economics
   - learn/economics/token.md
   - home/learn/economics/token.md
-description: An overview of Pocket Network Economics.
+description: An overview of Pocket Network economics.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/fuse-metamask
   - use/public-rpc/fuse.md
   - home/use/public-rpc/fuse.md
-description: How to Add the network FUSE in MetaMask with a Pocket-powered RPC Endpoint
+description: Add the FUSE network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

@@ -9,6 +9,8 @@ aliases:
   - home/paths/governor
   - community/trophies/README.md
   - home/community/trophies/README.md
+description: Claim your vote in the DAO! The DAO onboarding process has been designed to assign governance powers to the most engaged, knowledgeable, and experienced members of the Pocket Network community.
+
 ---
 
 

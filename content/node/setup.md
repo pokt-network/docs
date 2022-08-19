@@ -2,6 +2,7 @@
 title: Node Setup
 menuTitle: Pocket Node Setup
 weight: 20
+description: This section will detail how to set up your Pocket node.
 ---
 
 

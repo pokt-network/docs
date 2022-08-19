@@ -9,7 +9,7 @@ aliases:
   - home/v0/economics
   - learn/economics/README.md
   - home/learn/economics/README.md
-description: An overview of the economics of Pocket Network
+description: Learn about the economics of Pocket Network.
 ---
 
 

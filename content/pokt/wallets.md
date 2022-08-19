@@ -2,6 +2,7 @@
 title: Manage POKT
 menuTitle: Manage POKT
 weight: 10
+description: Learn about the Pocket Wallet and how to store your POKT safely.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/conquest.eth
   - use/dapps/conquest-eth.md
   - home/use/dapps/conquest-eth.md
-description: How to connect Görli network in MetaMask with a Pocket-powered RPC endpoint
+description: Add the Görli network in MetaMask with a Pocket-powered RPC endpoint to explore the Conquest metaverse.
 ---
 
 

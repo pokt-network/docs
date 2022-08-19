@@ -7,10 +7,11 @@ aliases:
   - home/v0/protocol/security
   - learn/protocol/security.md
   - home/learn/protocol/security.md
+description: Learn about how the protocol is able to ensure proper behavior in both nodes and applications.
 ---
 
 
-By enforcing POKT to be staked from both the Applications and the Validators, the protocol is able to economically penalize either actor participating in servicing
+By enforcing POKT to be staked from both the Applications and the Validators, the protocol is able to economically penalize either actor participating in servicing.
 
 ## Session Security
 

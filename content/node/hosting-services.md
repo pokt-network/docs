@@ -2,6 +2,7 @@
 title: Node-Hosting Services
 menuTitle: Node-Hosting Services
 weight: 70
+description: How to have your node operated by a third-party.
 ---
 
 

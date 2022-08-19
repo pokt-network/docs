@@ -1,12 +1,13 @@
 ---
-title: Wrapped POKT (wPOKT)
-menuTitle: Wrapped POKT (wPOKT)
+title: Wrapped POKT
+menuTitle: Wrapped POKT
 weight: 40
 aliases:
   - resources/faq/wpokt
   - home/resources/faq/wpokt
   - pokt/wpokt.md
   - home/pokt/wpokt.md
+description: Wrapped POKT (wPOKT) is a proposed ERC-20 token to be backed 1:1 by POKT on the Pocket blockchain.
 ---
 
 

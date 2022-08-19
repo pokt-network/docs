@@ -7,6 +7,7 @@ aliases:
   - home/pokt-accounts-and-transactions
   - integrate/accounts-transactions/README.md
   - home/integrate/accounts-transactions/README.md
+description: Information on account generation and validation, transaction construction, and transaction validation.
 ---
 
 

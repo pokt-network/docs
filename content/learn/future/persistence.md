@@ -7,6 +7,7 @@ aliases:
   - home/v1/persistence
   - learn/future/persistence.md
   - home/learn/future/persistence.md
+description: The Persistence module in v1 will include improvements such as moving to an SQL-based Tamper Proof Hybrid Mutable database, as well as decoupling the persistence layer to allow for a client-server architecture.
 ---
 
 

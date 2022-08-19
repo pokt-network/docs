@@ -7,7 +7,7 @@ aliases:
   - home/resources/faq/pricing-and-economics
   - learn/economics/faq.md
   - home/learn/economics/faq.md
-description: Token economics, app/node staking, node profitability, dilution.
+description: Frequently asked questions on token economics, app/node staking, node profitability, dilution, and more.
 ---
 
 

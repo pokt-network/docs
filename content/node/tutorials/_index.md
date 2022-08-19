@@ -2,9 +2,10 @@
 title: Node Tutorials
 menuTitle: Tutorials
 weight: 50
+description: Tutorials for various actions a typical node user may wish to undertake.
 ---
 
 
-This section contain tutorials for various actions a typical user may wish to undertake.
+This section contains tutorials for various actions a typical node user may wish to undertake.
 
 The following tutorial, [Zero To Node](/node/tutorials/zero-to-node/), wlil show you a step-by-step way to set up a Pocket Node on hosted hardware.

@@ -7,9 +7,7 @@ aliases:
   - home/resources/public-rpc-endpoints/rotki
   - use/dapps/rotki.md
   - home/use/dapps/rotki.md
-description: >-
-  How to add a Pocket-powered Ethereum RPC endpoint within your local Rotki
-  application
+description: Add a Pocket-powered Ethereum RPC endpoint within your local Rotki application.
 ---
 
 

@@ -7,7 +7,7 @@ aliases:
   - home/paths/node-runner/zero-to-node/pocket-config
   - node/tutorials/zero-to-node/pocket-config.md
   - home/node/tutorials/zero-to-node/pocket-config.md
-description: Configure your Pocket node. Part 3 of 5 in the Zero to Node tutorial.
+description: Configure your Pocket node. Part 3 of 5 in the Zero To Node tutorial.
 ---
 
 

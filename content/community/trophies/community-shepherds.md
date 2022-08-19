@@ -9,6 +9,7 @@ aliases:
   - home/paths/shepherd
   - community/trophies/community-shepherds.md
   - home/community/trophies/community-shepherds.md
+description: Claim a vote in the DAO as a community shepherd.
 ---
 
 
