@@ -1,4 +1,4 @@
-baseURL = 'https://docs.pokt.network/'
+baseURL = 'https://d2k365pcpresha.cloudfront.net/' #'https://docs.pokt.network/'
 languageCode = 'en-us'
 title = 'Pocket Network'
 theme = 'relearn'
