@@ -24,7 +24,7 @@ v1 will contain 4 specialized modules that are optimized for Pocket Network’s 
 * [Peer-to-Peer](/learn/future/peer-to-peer/)
 * [Persistence](/learn/future/persistence/)
 
-v1 will also be the catalyst for an enhanced engineering process that is more inclusive of the community, with robust laboratory infrastructure for responsive experimentation, QA, visibility, tooling and tighter development feedback loops. This is an R\&D project with at least 1 year of work anticipated before the launch of v1.0 mainnet. We are revealing our vision to the community at this stage to empower everyone to get involved in our new development cycle:
+v1 will also be the catalyst for an enhanced engineering process that is more inclusive of the community, with robust laboratory infrastructure for responsive experimentation, QA, visibility, tooling and tighter development feedback loops. This is an R&D project with at least 1 year of work anticipated before the launch of v1.0 mainnet. We are revealing our vision to the community at this stage to empower everyone to get involved in our new development cycle:
 
 * You can follow along the R&D cycle in [GitHub](https://github.com/pokt-network/pocket).
 * You can post your research ideas in the [Pocket Forum](https://forum.pokt.network/c/research/47).

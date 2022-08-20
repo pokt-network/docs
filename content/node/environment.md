@@ -25,7 +25,7 @@ There are three ways to install the software you need to run Pocket Network.
 Install your dependencies
 
 * [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath\_code.html#Workspaces) GOPATH & GOBIN
+* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
 * [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 Create source code directory
@@ -113,7 +113,7 @@ Check your version number against the latest release [here](https://github.com/p
 Install your dependencies
 
 * [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath\_code.html#Workspaces) GOPATH & GOBIN
+* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
 * Homebrew ([Mac](https://brew.sh) or [Linux](https://docs.brew.sh/Homebrew-on-Linux))
 
 Install using Homebrew

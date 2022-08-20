@@ -38,7 +38,7 @@ While Pocket Network will depend on professional infrastructure providers to pro
 * Continuing to lower the barrier to entry for non-technical users to run full nodes by providing clear documentation as well as technical support in the bootstrapping days of the network
 * Ensuring that the minimum stake to become a Service Node within Pocket is kept low enough to maximize the number of nodes within the network
 
-Additional efforts to prevent stagnation include supporting distribution channels such as local mining pools through data centers, run-your-own node distribution partners and the Pocket DAO’s R\&D efforts.
+Additional efforts to prevent stagnation include supporting distribution channels such as local mining pools through data centers, run-your-own node distribution partners and the Pocket DAO’s R&D efforts.
 
 Incentivizing the long tail of individuals running Service Nodes and keeping barriers to entry low is important to keep large node providers honest, and to minimize the odds of having an entire set of Service Nodes in a Session owned by one entity, which could lead to collusion attempts.
 
@@ -53,11 +53,11 @@ The optimal economic strategy for node operators is to replicate as many Service
 There are two initial costs to becoming a Service Node:
 
 * Minimum Node Stake
-* Hardware \(if chosen\)
+* Hardware (if chosen)
 
 ### Hardware
 
-Pocket Network is neutral to the hardware utilized by Service Nodes, meaning that hardware can be a physical server that is run in a home or a local data center, or computing power can be purchased through popular cloud providers. The specs required for a Service Node’s hardware is dependent on the blockchain\(s\) that a Service Node chooses to support. For example, if a Service Node were to choose to support Ethereum, the server would need to have at least 1TB of storage \(as of writing\) to support an archival node for Ethereum.
+Pocket Network is neutral to the hardware utilized by Service Nodes, meaning that hardware can be a physical server that is run in a home or a local data center, or computing power can be purchased through popular cloud providers. The specs required for a Service Node’s hardware is dependent on the blockchain(s) that a Service Node chooses to support. For example, if a Service Node were to choose to support Ethereum, the server would need to have at least 1TB of storage (as of writing) to support an archival node for Ethereum.
 
 ### Stake
 

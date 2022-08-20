@@ -20,9 +20,8 @@ This is why we want to give users an opportunity to connect to our own infrastru
 2. Find **“Change Network”** on the bottom left-hand side of the menu, then **click on it**.
 3. Under **“Show Other Networks”**, click **“+Add Custom Node”** to bring up the **“Set Up Your Custom Node”** menu.
 4. In the **“Node Name”** field, write **Pocket Network Gateway**
-5. Keep the Network set to **ETH** \(a.k.a Ethereum\)
+5. Keep the Network set to **ETH** (Ethereum)
 6. Then, copy and paste in the Endpoint URL: `https://eth-mainnet.gateway.pokt.network/v1/5f46739e2164c49f99af2480`
 7. **Do not** check the HTTP Basic Authentication box
 8. Then, press the **“Save & Use Custom Node”** button
 9. Use Decentralized Infra
-

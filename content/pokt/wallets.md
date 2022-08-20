@@ -15,14 +15,14 @@ You can use the [official wallet web app](https://wallet.pokt.network) to create
 1. Click 'Create'.
 
 ![](/images/ClickCreate.png)
-2\. Enter a unique passphrase.
+2. Enter a unique passphrase.
 
 ![](/images/CreatePassword.png)
 {{% notice style="warning" %}}
 The passphrase unlocks/decrypts an encrypted version of the private key that is stored in a Key File. Make sure to store your passphrase safely, if you lose it you will not be able to unlock your Key File.
 {{% /notice %}}
 
-2\. Download the Key File by clicking the blue download icon and click Continue to open your account.
+3. Download the Key File by clicking the blue download icon and click Continue to open your account.
 
 ![](/images/CreateSaveKeyFile.png)
 If you accidentally click Back, as long as you downloaded your Key File and saved your passphrase, you will now be able to import your new wallet.
@@ -31,7 +31,7 @@ If you accidentally click Back, as long as you downloaded your Key File and save
 Make sure to store your Key File safely, if you lose it you will only be able to use the Private Key method to import your wallet anywhere. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase.
 {{% /notice %}}
 
-3\. Click “Reveal Private Key” then enter your passphrase again to reveal the Private Key for your wallet.
+4. Click “Reveal Private Key” then enter your passphrase again to reveal the Private Key for your wallet.
 
 ![](/images/ClickRevealKey.png)
 ![Private Key obfuscated for security](/images/CreateRevealPrivateKey.png)

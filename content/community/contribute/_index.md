@@ -14,7 +14,7 @@ description: How to contribute to the Pocket ecosystem.
 
 An RFP is a Request for Proposal. You would use this when you know that something is needed but you are unsure of exactly what the solution is or are unable to build it yourself. Posting an RFP should serve as a signal to other community members that there might be demand for their contributions.
 
-For example, this [Node Deployment Solutions RFP](https://forum.pokt.network/t/rfp-7-node-deployment-tools/819) which led to the successful PEP \(POKT grant\) for an automated deployment tool called Node Pilot.
+For example, this [Node Deployment Solutions RFP](https://forum.pokt.network/t/rfp-7-node-deployment-tools/819) which led to the successful PEP (POKT grant) for an automated deployment tool called Node Pilot.
 
 To submit an RFP, head to the [RFP forum category](https://forum.pokt.network/c/needs/proposal-requests/40) and click New Topic.
 

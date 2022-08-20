@@ -84,7 +84,7 @@ It can sometimes take longer than a minute for the DNS to propagate. So, be pati
 
 Now that we have a DNS record setup, we will look at using SSH to log in and continue the setup process.
 
-The [Secure Shell Protocol](https://en.wikipedia.org/wiki/Secure\_Shell) (SSH) is a secure way to connect to your Linode instance from a remote machine, like your local computer. We'll be using SSH to complete the remainder of the setup process.
+The [Secure Shell Protocol](https://en.wikipedia.org/wiki/Secure_Shell) (SSH) is a secure way to connect to your Linode instance from a remote machine, like your local computer. We'll be using SSH to complete the remainder of the setup process.
 
 ### SSH from Mac or Linux
 
@@ -150,7 +150,7 @@ For security reasons it's best not to use the `root` user. Instead, it's better 
 Also, by default, the Pocket CLI will place the data directory for the node in the user's home directory. So, when you create a new user, you'll want to make sure the home directory is on a volume that has plenty of room for the data directory.
 
 {{% notice style="warning" %}}
-At the time of writing, Pocket requires \~200GB for its blockchain data. The following user setup steps assumes that the location of your user's home directory is on a volume with enough room for the pocket data.
+At the time of writing, Pocket requires approximately 200GB of disk space for its blockchain data. The following user setup steps assumes that the location of your user's home directory is on a volume with enough room for the pocket data.
 {{% /notice %}}
 
 ### Creating a new user
@@ -188,7 +188,7 @@ One important thing to understand, is that without access to the ssh key, you wo
         ```bash
         ssh-keygen -t rsa -b 4096
         ```
-    * Enter file in which to save the key (\~/.ssh/id\_rsa)
+    * Enter file in which to save the key (`~/.ssh/id_rsa`)
     * Enter a passphrase (empty for no passphrase)
     * Enter same passphrase again
 
@@ -212,7 +212,7 @@ One important thing to understand, is that without access to the ssh key, you wo
     ```
 3.  Upload Key
 
-    Now we're going to upload the key so that we can use it to log into the pocket user. If you choose a different path for the ssh key, it's important to replace the \~/.ssh/id\_rsa with the key you used.
+    Now we're going to upload the key so that we can use it to log into the pocket user. If you choose a different path for the ssh key, it's important to replace the `~/.ssh/id_rsa` with the key you used.
 
     ```bash
     ssh-copy-id -i ~/.ssh/id_rsa pocket@pokt001.pokt.run
@@ -227,7 +227,7 @@ One important thing to understand, is that without access to the ssh key, you wo
     ssh pocket@pokt001.pokt.run
     ```
 
-    From there, we'll want to open the /etc/ssh/sshd\_config file to make some changes to the default configuration:
+    From there, we'll want to open the `/etc/ssh/sshd_config` file to make some changes to the default configuration:
 
     ```bash
     sudo nano /etc/ssh/sshd_config

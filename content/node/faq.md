@@ -215,7 +215,7 @@ This way is very manual and you would need to track your balance over time to un
 
 The good news is there are several options for tracking your node rewards such as [POKT ROKT](https://github.com/BenVanGithub/POKT-ROKT), which tracks the last 24 hours of earnings in its CLI dashboard, or [Sandwalker](https://sandwalker.sbrk.org/explorer) which tracks historical rewards by day and month.
 
-### Why don't I just connect my Pocket node to \[insert third-party provider here]?
+### Why don't I just connect my Pocket node to [insert third-party provider here]?
 
 On the surface, this seems like a great idea. Use a free tier of another service (e.g. Infura) and you don't have to pay for any blockchain data node costs.
 
@@ -242,7 +242,7 @@ Correct. However, this works against you in this scenario.
 
 Most third-party providers will have their servers in standard cloud regions situated around the world labeled such as East, West, EU, and Singapore. Load balancers are standard. For example, if a user is in Australia, they will be redirected to the nearest server in Singapore.
 
-The challenge with using a third-party provider for your blockchain data node is that, by default, your Pocket Node will not always be in the same data center or machine as the third-party blockchain data node. If your Pocket Node is in US West, while you may have lesser latency from users who are hitting those servers, your node will \*never\* be as fast as it could be.
+The challenge with using a third-party provider for your blockchain data node is that, by default, your Pocket Node will not always be in the same data center or machine as the third-party blockchain data node. If your Pocket Node is in US West, while you may have lesser latency from users who are hitting those servers, your node will *never* be as fast as it could be.
 
 Your node will likely be in a different datacenter, where even a couple of hops will add somewhere between 30ms - 50ms. This becomes exacerbated when a user is coming from US East or the EU. With a full node on US West, you're adding up to 200ms per request for these users.
 

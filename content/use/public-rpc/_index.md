@@ -47,7 +47,7 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | Ethereum Trace                                      | https://eth-trace-rpc.gateway.pokt.network            | 1          | ETH    |                                       |
 | Evmos                                               | https://evmos-rpc.gateway.pokt.network                | 9001       | EVMOS  | https://evm.evmos.org                 |
 | Fantom                                              | https://fantom-rpc.gateway.pokt.network               | 250        | FTM    | https://ftmscan.com                   |
-| [FUSE](https://youtu.be/sSg8QWgR\_T8)               | https://fuse-rpc.gateway.pokt.network                 | 122        | FUSE   | https://explorer.fuse.io              |
+| [FUSE](https://youtu.be/sSg8QWgR_T8)                | https://fuse-rpc.gateway.pokt.network                 | 122        | FUSE   | https://explorer.fuse.io              |
 | FUSE Archival                                       | https://fuse-archival-rpc.gateway.pokt.network        | 122        | FUSE   |                                       |
 | Gnosis Chain                                        | https://gnosischain-rpc.gateway.pokt.network          | 100        | xDAI   | https://blockscout.com/poa/xdai       |
 | Gnosis Chain Archival                               | https://gnosischain-archival-rpc.gateway.pokt.network | 100        | xDAI   |                                       |
