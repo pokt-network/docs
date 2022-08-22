@@ -49,7 +49,7 @@ being the first 5 lines of the file.
 ---
 title: Glossary
 menuTitle: Glossary
-weight: 10
+weight: 80
 ---
 ```
 
