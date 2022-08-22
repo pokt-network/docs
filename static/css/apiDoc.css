@@ -60,3 +60,19 @@
 .show {
   display: block;
 }
+
+.mobile {
+  margin: 10px;
+}
+
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}

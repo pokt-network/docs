@@ -28,25 +28,27 @@
         </div>
       </div>
     </div>
+    <div class="desktop">
     <elements-api id="docs" basePath={{ .Page.RelPermalink }}
     {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
     {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
     {{ end }}/>
+    </div>
+    <div class="mobile">
+    <elements-api id="docs-mobile" layout="stacked" basePath={{ .Page.RelPermalink }}
+    {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
+    {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
+    {{ end }}/>
+    </div>
   </body>
   <script>
     (async () => {
-        const docs = document.getElementById('docs');
-        const data = await fetch({{ .Params.spec_url }}).then(res => res.json());
-        console.log(data.servers)
-        data.servers = [{ "url": "https://{{ .Params.portal_prefix }}.gateway.pokt.network/v1/lb/{PortalID}",
-            "description": "Pocket Portal",
-            "variables": {
-                "PortalID": {
-                    "default": "REQUIRED",
-                    "description": "Found after registering an app with the Pocket Portal.",
-                }},
-        }];
-        docs.apiDescriptionDocument = JSON.stringify(data);
-       })();
+      const docs = document.getElementById("docs");
+      const mobile = document.getElementById("docs-mobile");
+      const doc = await getAPIDocument("{{ .Params.spec_url }}", "{{ .Params.portal_prefix }}" );
+
+      docs.apiDescriptionDocument = doc;
+      mobile.apiDescriptionDocument = doc;
+    })();
   </script>
 </html>
