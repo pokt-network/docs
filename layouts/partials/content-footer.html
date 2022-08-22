@@ -1,8 +1,20 @@
+{{- $output := partial "output-format.hugo" . }}
+{{- if eq $output "html" }}
 {{- if not (.Params.ignore_contents) }}
 {{- if .IsSection }}
-<h3>Section Contents</h3>
+<h2 id="section-contents">
+  Section Contents
+  <span class="anchor" title="Copy link to cipboard" data-clipboard-text="{{ .Permalink }}#section-contents">
+    <i class="fas fa-link fa-lg" ></i>
+  </span>
+</h2>
 <div>
-  {{ partial "recursive-section.html" . }}
+{{ partial "shortcodes/children.html" (dict
+  "context" .
+  "description" "true"
+  "containerstyle" "div"
+  "style" "h3"
+)}}
 </div>
 {{- end }}
 {{- end }}
@@ -35,4 +47,4 @@
   </div>
 {{- end }}
 </div>
-
+{{- end }}
