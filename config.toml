@@ -88,29 +88,50 @@ summaryLength = 20
   guessSyntax = false
 
 [[menu.shortcuts]]
-name = "API Docs"
+name = '<i class="far fa-file-code"></i> API Docs'
 url = "/api-docs/pokt"
 weight = 10
 
 [[menu.shortcuts]]
-name = "pocket-core"
+name = '<i class="fab fa-github"></i> pocket-core'
 url = "https://github.com/pokt-network/pocket-core/"
 weight = 20
 
 [[menu.shortcuts]]
-name = "Discord"
+name = '<i class="fab fa-discord"></i> Discord'
 url = "https://discord.gg/pokt"
 weight = 30
 
 [[menu.shortcuts]]
-name = "Forum"
+name = '<i class="fab fa-discourse"></i> Forum'
 url = "https://forum.pokt.network"
 weight = 40
 
 [[menu.shortcuts]]
-name = "pokt.network"
-url = "https://www.pokt.network"
+name = '<i class="fab fa-twitter"></i> Twitter'
+url = "https://twitter.com/poktnetwork"
 weight = 50
+
+[[menu.shortcuts]]
+name = '<i class="fab fa-youtube"></i> YouTube'
+url = "https://www.youtube.com/pocketnetwork"
+weight = 50
+
+[[menu.shortcuts]]
+name = '<i class="fab fa-twitch"></i> Twitch'
+url = "https://twitch.tv/poktnetwork"
+weight = 60
+
+
+[[menu.shortcuts]]
+name = '<i class="fas fa-blog"></i> Blog'
+url = "https://www.blog.pokt.network/"
+weight = 70
+
+[[menu.shortcuts]]
+name = '<i class="fas fa-home"></i> Pocket Network'
+url = "https://www.pokt.network"
+weight = 80
 
 
 [Languages]
