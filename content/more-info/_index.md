@@ -1,7 +1,7 @@
 ---
 title: More Information
 menuTitle: More Info
-weight: 90
+weight: 100
 ignore_contents: true
 aliases:
   - resources/contact-us
