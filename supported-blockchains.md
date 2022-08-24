@@ -14,6 +14,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
 | Boba                         | boba-mainnet         | 0048         |
 | DFKchain Subnet              | dfk-mainnet          | 03DF         |
+| Dogechain                    | dogechain-mainnet    | 0059         |
 | Evmos                        | evmos-mainnet        | 0046         |
 | Ethereum                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
@@ -30,6 +31,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Harmony Shard 0              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
 | Klaytn Mainnet               | klaytn-mainnet       | 0056         |
+| Metis                        | metis-mainnet        | 0058         |
 | Moonbeam                     | moonbeam-mainnet     | 0050         |
 | Moonriver                    | moonriver-mainnet    | 0051         |
 | NEAR                         | near-mainnet         | 0052         |
