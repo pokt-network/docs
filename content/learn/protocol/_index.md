@@ -3,10 +3,9 @@ title: Protocol
 menuTitle: Protocol
 weight: 20
 aliases:
-  - v0/protocol
-  - home/v0/protocol
-  - learn/protocol/README.md
-  - home/learn/protocol/README.md
+  - /v0/protocol
+  - /home/v0/protocol
+  - /home/learn/protocol
 description: Learn about the protocol that powers Pocket.
 ---
 

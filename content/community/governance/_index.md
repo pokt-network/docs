@@ -3,7 +3,7 @@ title: Governance
 menuTitle: Governance
 weight: 10
 aliases:
-    - home/community/governance/README.md
+  - /home/community/governance
 description: Learn about the Pocket DAO and how proposals are created and managed.
 ---
 

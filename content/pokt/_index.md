@@ -3,10 +3,9 @@ title: Get POKT
 menuTitle: Own POKT
 weight: 30
 aliases:
-    - buy-store-and-stake-pokt
-    - home/buy-store-and-stake-pokt
-    - pokt/README.md
-    - home/pokt/README.md
+  - /buy-store-and-stake-pokt
+  - /home/buy-store-and-stake-pokt
+  - /home/pokt
 description: POKT is the native cryptocurrency that powers Pocket.
 ---
 

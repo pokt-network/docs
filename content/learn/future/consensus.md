@@ -3,10 +3,9 @@ title: Consensus
 menuTitle: Consensus
 weight: 20
 aliases:
-  - v1/consensus
-  - home/v1/consensus
-  - learn/future/consensus.md
-  - home/learn/future/consensus.md
+  - /v1/consensus
+  - /home/v1/consensus
+  - /home/learn/future/consensus
 description: The Consensus module in v1 will replace Tendermint with a new consensus mechanism, as well as provide a blind, pseudorandom leader selection process, enabling more consistent block times and more effeicient use of resources.
 ---
 

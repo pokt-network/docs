@@ -2,6 +2,8 @@
 title: Node-Hosting Services
 menuTitle: Node-Hosting Services
 weight: 70
+aliases:
+  - /home/node/hosting-services
 description: How to have your node operated by a third-party.
 ---
 

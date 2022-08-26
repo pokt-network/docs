@@ -3,12 +3,10 @@ title: Gnosis Chain (xDAI)
 menuTitle: Gnosis Chain (xDAI)
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/xdai-metamask
-  - home/resources/public-rpc-endpoints/xdai-metamask
-  - use/public-rpc/gnosis-chain.md
-  - home/use/public-rpc/gnosis-chain.md
+  - /resources/public-rpc-endpoints/xdai-metamask
+  - /home/resources/public-rpc-endpoints/xdai-metamask
+  - /home/use/public-rpc/gnosis-chain
 description: How to add the Gnosis Chain in MetaMask with a Pocket-powered RPC Endpoint
-description: Add the Gnosis Chain network (formerly known as xDAI) in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
 

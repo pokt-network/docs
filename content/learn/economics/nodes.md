@@ -3,14 +3,13 @@ title: Node Economics
 menuTitle: Node Economics
 weight: 30
 aliases:
-  - v0/economics/pokt-token-economics/node-economics/economic-security
-  - home/v0/economics/pokt-token-economics/node-economics/economic-security
-  - v0/economics/pokt-token-economics/node-economics/cost-to-nodes
-  - home/v0/economics/pokt-token-economics/node-economics/cost-to-nodes
-  - v0/economics/pokt-token-economics/node-economics
-  - home/v0/economics/pokt-token-economics/node-economics
-  - learn/economics/nodes.md
-  - home/learn/economics/nodes.md
+  - /v0/economics/pokt-token-economics/node-economics/economic-security
+  - /home/v0/economics/pokt-token-economics/node-economics/economic-security
+  - /v0/economics/pokt-token-economics/node-economics/cost-to-nodes
+  - /home/v0/economics/pokt-token-economics/node-economics/cost-to-nodes
+  - /v0/economics/pokt-token-economics/node-economics
+  - /home/v0/economics/pokt-token-economics/node-economics
+  - /home/learn/economics/nodes
 description: An overview of Pocket Network node economics.
 ---
 

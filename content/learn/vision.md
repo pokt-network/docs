@@ -3,12 +3,11 @@ title: Vision
 menuTitle: Vision
 weight: 10
 aliases:
-  - resources/faq/product-comparisons
-  - home/resources/faq/product-comparisons
-  - v0/economics/decentralizing-infrastructure
-  - home/v0/economics/decentralizing-infrastructure
-  - learn/vision.md
-  - home/learn/vision.md
+  - /resources/faq/product-comparisons
+  - /home/resources/faq/product-comparisons
+  - /v0/economics/decentralizing-infrastructure
+  - /home/v0/economics/decentralizing-infrastructure
+  - /home/learn/vision
 description: Learn about how Pocket enables the decentralization of Web3 infrastructure.
 ---
 

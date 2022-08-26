@@ -3,10 +3,9 @@ title: Account Generation and Validation
 menuTitle: Account Generation and Validation
 weight: 10
 aliases:
-  - pokt-accounts-and-transactions/address-generation-and-validation
-  - home/pokt-accounts-and-transactions/address-generation-and-validation
-  - integrate/accounts-transactions/account-generation-validation.md
-  - home/integrate/accounts-transactions/account-generation-validation.md
+  - /pokt-accounts-and-transactions/address-generation-and-validation
+  - /home/pokt-accounts-and-transactions/address-generation-and-validation
+  - /home/integrate/accounts-transactions/account-generation-validation
 description: Generate and validate accounts on the Pocket blockchain.
 ---
 

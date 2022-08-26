@@ -4,10 +4,9 @@ menuTitle: Supported Blockchains
 weight: 20
 ignore_contents: true
 aliases:
-  - resources/references/supported-blockchains
-  - home/resources/references/supported-blockchains
-  - supported-blockchains.md
-  - home/supported-blockchains.md
+  - /resources/references/supported-blockchains
+  - /home/resources/references/supported-blockchains
+  - /home/supported-blockchains
 ---
 
 

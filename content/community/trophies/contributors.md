@@ -3,12 +3,11 @@ title: Governor/Contributors
 menuTitle: Contributors
 weight: 40
 aliases:
-  - paths/governor/claim-your-vote/governor-path
-  - home/paths/governor/claim-your-vote/governor-path
-  - paths/contributor
-  - home/paths/contributor
-  - community/trophies/contributors.md
-  - home/community/trophies/contributors.md
+  - /paths/governor/claim-your-vote/governor-path
+  - /home/paths/governor/claim-your-vote/governor-path
+  - /paths/contributor
+  - /home/paths/contributor
+  - /home/community/trophies/contributors
 description: Claim a vote in the DAO as a contributor.
 ---
 

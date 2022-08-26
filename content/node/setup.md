@@ -2,6 +2,8 @@
 title: Node Setup
 menuTitle: Pocket Node Setup
 weight: 20
+aliases:
+  - /home/node/setup
 description: This section will detail how to set up your Pocket node.
 ---
 

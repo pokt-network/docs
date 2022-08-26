@@ -3,10 +3,9 @@ title: Transaction Construction
 menuTitle: Transaction Construction
 weight: 20
 aliases:
-  - pokt-accounts-and-transactions/transaction-construction-and-offline-signature
-  - home/pokt-accounts-and-transactions/transaction-construction-and-offline-signature
-  - integrate/accounts-transactions/transaction-construction.md
-  - home/integrate/accounts-transactions/transaction-construction.md
+  - /pokt-accounts-and-transactions/transaction-construction-and-offline-signature
+  - /home/pokt-accounts-and-transactions/transaction-construction-and-offline-signature
+  - /home/integrate/accounts-transactions/transaction-construction
 description: Construct a transaction on the Pocket blockchain.
 ---
 

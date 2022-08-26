@@ -3,10 +3,9 @@ title: Connecting MetaMask to DFK Chain
 menuTitle: DFK Chain
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/dfk-chain-metamask
-  - home/resources/public-rpc-endpoints/dfk-chain-metamask
-  - use/public-rpc/dfk-chain.md
-  - home/use/public-rpc/dfk-chain.md
+  - /resources/public-rpc-endpoints/dfk-chain-metamask
+  - /home/resources/public-rpc-endpoints/dfk-chain-metamask
+  - /home/use/public-rpc/dfk-chain
 description: Add the DeFi Kingdoms blockchain subnet in MetaMask using a Pocket-powered RPC endpoint.
 ---
 

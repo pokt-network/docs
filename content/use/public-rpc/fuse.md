@@ -3,10 +3,9 @@ title: Fuse
 menuTitle: Fuse
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/fuse-metamask
-  - home/resources/public-rpc-endpoints/fuse-metamask
-  - use/public-rpc/fuse.md
-  - home/use/public-rpc/fuse.md
+  - /resources/public-rpc-endpoints/fuse-metamask
+  - /home/resources/public-rpc-endpoints/fuse-metamask
+  - /home/use/public-rpc/fuse
 description: Add the FUSE network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 

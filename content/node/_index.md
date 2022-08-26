@@ -3,10 +3,9 @@ title: Run Nodes
 menuTitle: Run Nodes
 weight: 60
 aliases:
-  - paths/node-runner
-  - home/paths/node-runner
-  - node/README.md
-  - home/node/README.md
+  - /paths/node-runner
+  - /home/paths/node-runner
+  - /home/node
 ---
 
 

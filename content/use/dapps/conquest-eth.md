@@ -3,10 +3,9 @@ title: Conquest.eth
 menuTitle: Conquest.eth
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/conquest.eth
-  - home/resources/public-rpc-endpoints/conquest.eth
-  - use/dapps/conquest-eth.md
-  - home/use/dapps/conquest-eth.md
+  - /resources/public-rpc-endpoints/conquest.eth
+  - /home/resources/public-rpc-endpoints/conquest.eth
+  - /home/use/dapps/conquest-eth
 description: Add the Görli network in MetaMask with a Pocket-powered RPC endpoint to explore the Conquest metaverse.
 ---
 

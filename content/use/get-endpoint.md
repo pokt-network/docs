@@ -3,14 +3,13 @@ title: Get An Endpoint
 menuTitle: Get an Endpoint
 weight: 10
 aliases:
-  - resources/faq/app-integration
-  - home/resources/faq/app-integration
-  - paths/app-developer/use-ethersjs
-  - home/paths/app-developer/use-ethersjs
-  - paths/app-developer
-  - home/paths/app-developer
-  - use/get-endpoint.md
-  - home/use/get-endpoint.md
+  - /resources/faq/app-integration
+  - /home/resources/faq/app-integration
+  - /paths/app-developer/use-ethersjs
+  - /home/paths/app-developer/use-ethersjs
+  - /paths/app-developer
+  - /home/paths/app-developer
+  - /home/use/get-endpoint
 description: Use the Pocket Portal to "mint" endpoints you can use in your decentralized applications to connect to the blockchain of your choice.
 ---
 

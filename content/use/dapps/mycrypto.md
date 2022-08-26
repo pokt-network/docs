@@ -3,10 +3,9 @@ title: MyCrypto
 menuTitle: MyCrypto
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/mycrypto
-  - home/resources/public-rpc-endpoints/mycrypto
-  - use/dapps/mycrypto.md
-  - home/use/dapps/mycrypto.md
+  - /resources/public-rpc-endpoints/mycrypto
+  - /home/resources/public-rpc-endpoints/mycrypto
+  - /home/use/dapps/mycrypto
 description: Add a Pocket-powered Ethereum RPC endpoint within your local MyCrypto application.
 ---
 

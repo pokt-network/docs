@@ -2,6 +2,8 @@
 title: Automated Deployments
 menuTitle: Automated Deployments
 weight: 60
+aliases:
+  - /home/node/automated-deployments
 description: Listing of services that can help you automate your node deployments.
 ---
 

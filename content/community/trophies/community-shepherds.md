@@ -3,12 +3,11 @@ title: Community Shepherds
 menuTitle: Community Shepherds
 weight: 30
 aliases:
-  - paths/governor/claim-your-vote/community-shepherd-path
-  - home/paths/governor/claim-your-vote/community-shepherd-path
-  - paths/shepherd
-  - home/paths/shepherd
-  - community/trophies/community-shepherds.md
-  - home/community/trophies/community-shepherds.md
+  - /paths/governor/claim-your-vote/community-shepherd-path
+  - /home/paths/governor/claim-your-vote/community-shepherd-path
+  - /paths/shepherd
+  - /home/paths/shepherd
+  - /home/community/trophies/community-shepherds
 description: Claim a vote in the DAO as a community shepherd.
 ---
 

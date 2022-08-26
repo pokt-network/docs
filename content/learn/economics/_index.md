@@ -3,12 +3,11 @@ title: Economics
 menuTitle: Economics
 weight: 30
 aliases:
-  - v0/economics/the-web3-infra-trap
-  - home/v0/economics/the-web3-infra-trap
-  - v0/economics
-  - home/v0/economics
-  - learn/economics/README.md
-  - home/learn/economics/README.md
+  - /v0/economics/the-web3-infra-trap
+  - /home/v0/economics/the-web3-infra-trap
+  - /v0/economics
+  - /home/v0/economics
+  - /home/learn/economics
 description: Learn about the economics of Pocket Network.
 ---
 

@@ -3,10 +3,9 @@ title: Persistence
 menuTitle: Persistence
 weight: 40
 aliases:
-  - v1/persistence
-  - home/v1/persistence
-  - learn/future/persistence.md
-  - home/learn/future/persistence.md
+  - /v1/persistence
+  - /home/v1/persistence
+  - /home/learn/future/persistence
 description: The Persistence module in v1 will include improvements such as moving to an SQL-based Tamper Proof Hybrid Mutable database, as well as decoupling the persistence layer to allow for a client-server architecture.
 ---
 

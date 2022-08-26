@@ -3,10 +3,9 @@ title: Rotki
 menuTitle: Rotki
 weight: 1
 aliases:
-  - resources/public-rpc-endpoints/rotki
-  - home/resources/public-rpc-endpoints/rotki
-  - use/dapps/rotki.md
-  - home/use/dapps/rotki.md
+  - /resources/public-rpc-endpoints/rotki
+  - /home/resources/public-rpc-endpoints/rotki
+  - /home/use/dapps/rotki
 description: Add a Pocket-powered Ethereum RPC endpoint within your local Rotki application.
 ---
 

@@ -2,6 +2,8 @@
 title: Manage POKT
 menuTitle: Manage POKT
 weight: 10
+aliases:
+  - /home/pokt/wallets
 description: Learn about the Pocket Wallet and how to store your POKT safely.
 ---
 

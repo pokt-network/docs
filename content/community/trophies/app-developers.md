@@ -3,10 +3,9 @@ title: App Developers
 menuTitle: App Developers
 weight: 10
 aliases:
-  - paths/governor/claim-your-vote/app-developer-path
-  - home/paths/governor/claim-your-vote/app-developer-path
-  - community/trophies/app-developers.md
-  - home/community/trophies/app-developers.md
+  - /paths/governor/claim-your-vote/app-developer-path
+  - /home/paths/governor/claim-your-vote/app-developer-path
+  - /home/community/trophies/app-developers
 description: Claim a vote in the DAO as an app developer.
 ---
 

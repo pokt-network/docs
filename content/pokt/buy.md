@@ -2,6 +2,8 @@
 title: Buy POKT
 menuTitle: Buy POKT
 weight: 20
+aliases:
+  - /home/pokt/buy
 description: POKT is available for purchase on multiple global exchanges and OTC markets.
 ---
 

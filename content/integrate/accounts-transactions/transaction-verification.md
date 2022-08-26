@@ -3,10 +3,9 @@ title: Transaction Verification
 menuTitle: Transaction Verification
 weight: 30
 aliases:
-  - pokt-accounts-and-transactions/deposit-processing-and-verification
-  - home/pokt-accounts-and-transactions/deposit-processing-and-verification
-  - integrate/accounts-transactions/transaction-verification.md
-  - home/integrate/accounts-transactions/transaction-verification.md
+  - /pokt-accounts-and-transactions/deposit-processing-and-verification
+  - /home/pokt-accounts-and-transactions/deposit-processing-and-verification
+  - /home/integrate/accounts-transactions/transaction-verification
 description: Verify a transaction on the Pocket blockchain.
 ---
 

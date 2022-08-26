@@ -3,10 +3,9 @@ title: Seeds
 menuTitle: Seeds
 weight: 40
 aliases:
-  - resources/references/seeds
-  - home/resources/references/seeds
-  - node/seeds.md
-  - home/node/seeds.md
+  - /resources/references/seeds
+  - /home/resources/references/seeds
+  - /home/node/seeds
 description: Seed nodes enable newly configured nodes to find peers on the network and store them in their local address book.
 ---
 

@@ -3,10 +3,9 @@ title: Glossary
 menuTitle: Glossary
 weight: 60
 aliases:
-  - v0/glossary
-  - home/v0/glossary
-  - learn/glossary.md
-  - home/learn/glossary.md
+  - /v0/glossary
+  - /home/v0/glossary
+  - /home/learn/glossary
 description: Reference for all terms that are specific to and used by Pocket.
 ---
 

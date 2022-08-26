@@ -3,10 +3,9 @@ title: Part 5 –  Going live
 menuTitle: Going live
 weight: 50
 aliases:
-  - paths/node-runner/zero-to-node/going-live
-  - home/paths/node-runner/zero-to-node/going-live
-  - node/tutorials/zero-to-node/going-live.md
-  - home/node/tutorials/zero-to-node/going-live.md
+  - /paths/node-runner/zero-to-node/going-live
+  - /home/paths/node-runner/zero-to-node/going-live
+  - /home/node/tutorials/zero-to-node/going-live
 description: Final steps for going live with your node. Part 5 of 5 in the Zero To Node tutorial.
 ---
 

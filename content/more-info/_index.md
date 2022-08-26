@@ -4,10 +4,9 @@ menuTitle: More Info
 weight: 100
 ignore_contents: true
 aliases:
-  - resources/contact-us
-  - home/resources/contact-us
-  - more-info.md
-  - home/more-info.md
+  - /resources/contact-us
+  - /home/resources/contact-us
+  - /home/more-info
 ---
 
 

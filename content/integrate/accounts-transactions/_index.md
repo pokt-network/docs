@@ -3,10 +3,9 @@ title: Accounts and Transactions
 menuTitle: Accounts and Transactions
 weight: 20
 aliases:
-  - pokt-accounts-and-transactions
-  - home/pokt-accounts-and-transactions
-  - integrate/accounts-transactions/README.md
-  - home/integrate/accounts-transactions/README.md
+  - /pokt-accounts-and-transactions
+  - /home/pokt-accounts-and-transactions
+  - /home/integrate/accounts-transactions
 description: Information on account generation and validation, transaction construction, and transaction validation.
 ---
 

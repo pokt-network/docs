@@ -3,14 +3,13 @@ title: Token Economics
 menuTitle: Token Economics
 weight: 10
 aliases:
-  - resources/references/pokt-denominations
-  - home/resources/references/pokt-denominations
-  - v0/economics/pokt-token-economics/token-staking
-  - home/v0/economics/pokt-token-economics/token-staking
-  - v0/economics/pokt-token-economics
-  - home/v0/economics/pokt-token-economics
-  - learn/economics/token.md
-  - home/learn/economics/token.md
+  - /resources/references/pokt-denominations
+  - /home/resources/references/pokt-denominations
+  - /v0/economics/pokt-token-economics/token-staking
+  - /home/v0/economics/pokt-token-economics/token-staking
+  - /v0/economics/pokt-token-economics
+  - /home/v0/economics/pokt-token-economics
+  - /home/learn/economics/token
 description: An overview of Pocket Network economics.
 ---
 

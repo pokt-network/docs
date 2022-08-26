@@ -3,10 +3,9 @@ title: Protocol Parameters
 menuTitle: Parameters
 weight: 50
 aliases:
-  - resources/references/protocol-parameters
-  - home/resources/references/protocol-parameters
-  - learn/protocol-parameters.md
-  - home/learn/protocol-parameters.md
+  - /resources/references/protocol-parameters
+  - /home/resources/references/protocol-parameters
+  - /home/learn/protocol-parameters
 description: List of all on-chain and relevant off-chain parameters that power Pocket Network.
 ---
 

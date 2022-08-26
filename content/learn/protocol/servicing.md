@@ -3,10 +3,9 @@ title: Servicing
 menuTitle: Servicing
 weight: 10
 aliases:
-  - v0/protocol/servicing
-  - home/v0/protocol/servicing
-  - learn/protocol/servicing.md
-  - home/learn/protocol/servicing.md
+  - /v0/protocol/servicing
+  - /home/v0/protocol/servicing
+  - /home/learn/protocol/servicing
 description: Learn about the Servicing Layer and how Sessions work in Pocket.
 ---
 

@@ -3,10 +3,9 @@ title: Node Runners
 menuTitle: Node Runners
 weight: 20
 aliases:
-  - paths/governor/claim-your-vote/node-runner-path
-  - home/paths/governor/claim-your-vote/node-runner-path
-  - community/trophies/node-runners.md
-  - home/community/trophies/node-runners.md
+  - /paths/governor/claim-your-vote/node-runner-path
+  - /home/paths/governor/claim-your-vote/node-runner-path
+  - /home/community/trophies/node-runners
 description: Claim a vote in the DAO as a node runner.
 ---
 

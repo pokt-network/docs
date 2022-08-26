@@ -3,7 +3,7 @@ title: Scholarships
 menuTitle: Scholarships
 weight: 10
 aliases:
-    - home/community/contribute/README.md
+  - /home/community/contribute/scholarships
 description: Information about scholarships and recipients.
 ---
 

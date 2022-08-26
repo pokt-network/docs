@@ -2,6 +2,8 @@
 title: SDKs
 menuTitle: SDKs
 weight: 10
+aliases:
+  - /home/integrate/sdk
 description: A list of SDKs for interacting with Pocket.
 ---
 

@@ -3,7 +3,7 @@ title: Contribute
 menuTitle: Contribute
 weight: 20
 aliases:
-  - home/community/contribute/README.md
+  - /home/community/contribute
 description: How to contribute to the Pocket ecosystem.
 ---
 

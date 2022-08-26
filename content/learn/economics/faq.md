@@ -3,10 +3,9 @@ title: Pricing & Economics FAQ
 menuTitle: FAQ
 weight: 50
 aliases:
-  - resources/faq/pricing-and-economics
-  - home/resources/faq/pricing-and-economics
-  - learn/economics/faq.md
-  - home/learn/economics/faq.md
+  - /resources/faq/pricing-and-economics
+  - /home/resources/faq/pricing-and-economics
+  - /home/learn/economics/faq
 description: Frequently asked questions on token economics, app/node staking, node profitability, dilution, and more.
 ---
 

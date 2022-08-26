@@ -3,10 +3,9 @@ title: Utility
 menuTitle: Utility
 weight: 10
 aliases:
-  - v1/utility
-  - home/v1/utility
-  - learn/future/utility.md
-  - home/learn/future/utility.md
+  - /v1/utility
+  - /home/v1/utility
+  - /home/learn/future/utility
 description: The Utility module in v1 will provide optimal quality and scalability for Web3 relays.
 ---
 

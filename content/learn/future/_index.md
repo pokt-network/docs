@@ -3,10 +3,9 @@ title: Future (v1)
 menuTitle: Future (v1)
 weight: 40
 aliases:
-  - v1/v1-overview
-  - home/v1/v1-overview
-  - learn/future/README.md
-  - home/learn/future/README.md
+  - /v1/v1-overview
+  - /home/v1/v1-overview
+  - /home/learn/future
 description: Learn about v1 and all of the upcoming improvements to the Pocket protocol.
 ---
 

@@ -3,10 +3,9 @@ title: Security
 menuTitle: Security
 weight: 20
 aliases:
-  - v0/protocol/security
-  - home/v0/protocol/security
-  - learn/protocol/security.md
-  - home/learn/protocol/security.md
+  - /v0/protocol/security
+  - /home/v0/protocol/security
+  - /home/learn/protocol/security
 description: Learn about how the protocol is able to ensure proper behavior in both nodes and applications.
 ---
 

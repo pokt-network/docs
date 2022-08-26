@@ -3,12 +3,11 @@ title: Trophies
 menuTitle: Trophies
 weight: 30
 aliases:
-  - paths/governor/claim-your-vote
-  - home/paths/governor/claim-your-vote
-  - paths/governor
-  - home/paths/governor
-  - community/trophies/README.md
-  - home/community/trophies/README.md
+  - /paths/governor/claim-your-vote
+  - /home/paths/governor/claim-your-vote
+  - /paths/governor
+  - /home/paths/governor
+  - /home/community/trophies
 description: Claim your vote in the DAO! The DAO onboarding process has been designed to assign governance powers to the most engaged, knowledgeable, and experienced members of the Pocket Network community.
 
 ---
