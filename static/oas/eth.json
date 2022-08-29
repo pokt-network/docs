@@ -1,5 +1,6 @@
 {
   "openapi": "3.0.0",
+	"servers": {},
   "info": {
     "title": "Ethereum JSON-RPC Specification",
     "description": "A specification of the standard interface for Ethereum clients.",
