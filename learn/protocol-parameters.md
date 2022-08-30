@@ -24,13 +24,13 @@ The minimum stake required of an app, denominated in [StakeDenom](protocol-param
 
 ### AppUnstakingTime
 
-**Current Value:** 1814400000000000
+**Current Value:** 1814000000000000
 
 The time, in nanoseconds, that an app must wait after initiating an unstake before they can use the POKT for anything else.
 
 ### BaseRelaysPerPOKT
 
-**Current Value:** 7014
+**Current Value:** 200000
 
 The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100.
 
@@ -136,7 +136,7 @@ Warning: Reaching MaxJailedBlocks will result in a node's entire stake being sla
 
 ### MaxValidators
 
-**Current Value:** 1,000
+**Current Value:** 1000
 
 The number of staked nodes that are eligible to be selected for producing blocks. Any staked nodes outside of the top `MaxValidators` staked validators will still be eligible to service relays.
 
@@ -150,7 +150,7 @@ The minimum proportion of the [SignedBlocksWindow](protocol-parameters.md#signed
 If SignedBlocksWindow is 10 and MinSignedPerWindow is 0.6, this means a node can miss up to 4 blocks out of every 10 blocks before it is jailed.
 {% endhint %}
 
-### ProposerAllocation
+### ProposerPercentage
 
 **Current Value:** 5
 
@@ -208,7 +208,7 @@ The time, in nanoseconds, that a node must wait after initiating an unstake befo
 
 ### ClaimExpiration
 
-**Current Value:** 120
+**Current Value:** 24
 
 The amount of time (in blocks) a node has to submit a proof for an already existing claim.
 
