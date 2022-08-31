@@ -31,6 +31,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Harmony Shard 0              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
 | Klaytn Mainnet               | klaytn-mainnet       | 0056         |
+| Meter                        | meter-mainnet        | 0057         |
 | Metis                        | metis-mainnet        | 0058         |
 | Moonbeam                     | moonbeam-mainnet     | 0050         |
 | Moonriver                    | moonriver-mainnet    | 0051         |
