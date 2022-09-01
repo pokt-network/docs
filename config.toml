@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Pocket Network'
 theme = 'relearn'
 googleAnalytics = '304969019'
-summaryLength = 20
+summaryLength = 35
 
 # Theme specific parameters
 [params]
@@ -69,7 +69,7 @@ summaryLength = 20
   # this can be overridden in the pages frontmatter
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Eg. can be "red", "blue", "green" or an array like [ "blue", "green" ].
-  themeVariant = "blue"
+  themeVariant = "pokt"
   # Change the title separator. Default to "::".
   titleSeparator = "-"
   # If set to true, the menu in the sidebar will be displayed in a collapsible tree view.
@@ -136,4 +136,4 @@ weight = 80
 
 [Languages]
 [Languages.en]
-landingPageName = "Welcome"
+landingPageName = "Welcome to Pokt"
