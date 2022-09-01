@@ -29,13 +29,13 @@
       </div>
     </div>
     <div class="desktop">
-    <elements-api id="docs" router="hash" basePath={{ .Page.RelPermalink }}
+	    <elements-api id="docs" logo="/logos/{{ .Params.logo }}" router="hash" basePath={{ .Page.RelPermalink }}
     {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
     {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
     {{ end }}/>
     </div>
     <div class="mobile">
-    <elements-api id="docs-mobile" router="hash" layout="stacked" basePath={{ .Page.RelPermalink }}
+	    <elements-api id="docs-mobile" logo="/logos/{{ .Params.logo }}" router="hash" layout="stacked" basePath={{ .Page.RelPermalink }}
     {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
     {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
     {{ end }}/>
