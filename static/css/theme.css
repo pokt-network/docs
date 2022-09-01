@@ -174,6 +174,7 @@ th {
 #sidebar ul.topics > li > a {
   font-size: 1.1rem;
   line-height: 2rem;
+  margin-left: 1rem;
 }
 
 #sidebar ul.topics > li > a b {
@@ -195,7 +196,7 @@ th {
 #sidebar ul.topics li > a {
   margin-left: -1rem;
   margin-right: -1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 1rem;
 }
 
@@ -395,9 +396,8 @@ th {
 }
 
 h1 {
-  font-weight: 200;
+  font-weight: 500;
   text-align: center;
-  text-transform: uppercase;
 }
 
 h2,
@@ -615,7 +615,7 @@ td {
   color: #fff;
   content: attr(aria-label);
   display: none;
-  font: normal normal 11px/1.5 "Work Sans", "Helvetica", "Tahoma", "Geneva",
+  font: normal normal 11px/1.5 "Manrope" "Helvetica", "Tahoma", "Geneva",
     "Arial", sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   letter-spacing: normal;
@@ -778,12 +778,12 @@ td {
 .nav,
 .print-link,
 .github-link {
-  border-left: thin solid rgba(134, 134, 134, 0.333);
   padding-left: 1rem;
   padding-right: 1rem;
+  font-weight: 400;
 }
 span.nav i {
-  color: rgba(134, 134, 134, 0.333);
+  color: rgba(134, 134, 134, 0.15);
 }
 
 .navigation,
@@ -799,7 +799,7 @@ span.nav i {
 }
 #toc-menu,
 #sidebar-toggle-span {
-  border-right: thin solid rgba(134, 134, 134, 0.333);
+  border-right: thin solid rgba(255, 255, 255, 0.8);
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -966,6 +966,7 @@ pre .copy-to-clipboard-button {
 }
 
 #homelinks {
+  text-align: center;
   border-bottom-style: solid;
   border-bottom-width: 4px;
   padding: 7px 0;
@@ -1021,6 +1022,7 @@ option {
 
 #body footer.footline {
   margin-top: 2rem;
+  margin-bottom: 12px;
 }
 
 .footline i {
@@ -1239,14 +1241,14 @@ h6 a {
 
 #body h2 {
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 2rem;
 }
 
 #body h3,
 #body .article-subheading {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 300;
   margin-top: 2rem;
 }
 

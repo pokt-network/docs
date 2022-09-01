@@ -51,7 +51,7 @@
   --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #1c90f3; /* Color of background for the active category (only) */
 
   --MENU-VISITED-color: #1c90f3; /* Color of 'page visited' icons in menu */
-  --MENU-SECTION-HR-color: #fff; /* Color of <hr> separator in menu */
+  --MENU-SECTION-HR-color: #202b32; /* Color of <hr> separator in menu */
 
   /* base styling for boxes */
   --BOX-CAPTION-color: rgba(255, 255, 255, 1); /* color of the title text */
