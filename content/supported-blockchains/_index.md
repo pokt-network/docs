@@ -25,7 +25,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Boba                         | boba-mainnet         | 0048         |
 | DFKchain Subnet              | dfk-mainnet          | 03DF         |
 | Dogechain                    | dogechain-mainnet    | 0059         |
-| Evmos                        | evmos-mainnet        | 0046         |
 | Ethereum                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
 | Ethereum Archival Trace      | eth-archival-trace   | 0028         |
@@ -33,6 +32,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Ethereum Kovan               | poa-kovan            | 0024         |
 | Ethereum Rinkeby             | eth-rinkeby          | 0025         |
 | Ethereum Ropsten             | eth-ropsten          | 0023         |
+| Evmos                        | evmos-mainnet        | 0046         |
 | Fantom                       | fantom-mainnet       | 0049         |
 | FUSE                         | fuse-mainnet         | 0005         |
 | FUSE Archival                | fuse-archival        | 000A         |
@@ -41,6 +41,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Harmony Shard 0              | harmony-0            | 0040         |
 | IoTeX                        | iotex-mainnet        | 0044         |
 | Klaytn Mainnet               | klaytn-mainnet       | 0056         |
+| Meter                        | meter-mainnet        | 0057         |
 | Metis                        | metis-mainnet        | 0058         |
 | Moonbeam                     | moonbeam-mainnet     | 0050         |
 | Moonriver                    | moonriver-mainnet    | 0051         |
