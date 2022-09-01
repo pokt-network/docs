@@ -1,4 +1,4 @@
-baseURL = 'https://hugo.dfntekic00dwz.amplifyapp.com/' #'https://docs.pokt.network/'
+baseURL = 'https://docs.pokt.network'
 languageCode = 'en-us'
 title = 'Pocket Network'
 theme = 'relearn'
