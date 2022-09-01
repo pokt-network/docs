@@ -1,0 +1,4 @@
+Name = "PEP"
+Description = """
+Pocket Ecosystem Proposal. This is submitted to the Pocket DAO to distribute funds to or form agreements with contributors to the Pocket Network ecosystem. PEP categories include: Imbursements, Reimbursements, Bounties, Transfers, and Agreements. Each PEP is given a unique number as a suffix (such as [PEP-13](https://forum.pokt.network/t/pep-13-poktscan-app/)).
+"""

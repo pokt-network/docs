@@ -1,0 +1,4 @@
+Name = "wPOKT"
+Description = """
+Wrapped POKT (wPOKT) is an ERC-20 token backed by the native POKT cryptocurrency on the Pocket Network blockchain and held by a set of POKT multisig signers for verification. wPOKT standardizes POKT to the ERC-20 standard, enabling better interoperability, greater liquidity, and access to smart contracts.
+"""

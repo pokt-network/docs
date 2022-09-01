@@ -1,0 +1,4 @@
+Name = "Remote Procedure Call (RPC)"
+Description = """
+Standardized process where one computer on a network is able to send a request to another computer on the network, to execute a command as if it were called locally from the computer. Many blockchains communicate by means of RPC.
+"""

@@ -1,0 +1,50 @@
+{{- $output := partial "output-format.hugo" . }}
+{{- if eq $output "html" }}
+{{- if not (.Params.ignore_contents) }}
+{{- if .IsSection }}
+<h2 id="section-contents">
+  Section Contents
+  <span class="anchor" title="Copy link to cipboard" data-clipboard-text="{{ .Permalink }}#section-contents">
+    <i class="fas fa-link fa-lg" ></i>
+  </span>
+</h2>
+<div>
+{{ partial "shortcodes/children.html" (dict
+  "context" .
+  "description" "true"
+  "containerstyle" "div"
+  "style" "h3"
+)}}
+</div>
+{{- end }}
+{{- end }}
+<hr>
+<div>
+{{- $showPrevNext := (and (not .Params.disableNextPrev) (not .Site.Params.disableNextPrev)) }}
+{{- if $showPrevNext }}
+  {{- $parent := .Parent }}
+  {{- $ispublished := true }}
+  {{- if $parent }}
+    {{- $ispublished = gt (int (len $parent.Permalink)) 0 }}
+  {{- end }}
+  <div style="float: right;">
+  {{- if and $ispublished ($.Scratch.Get "relearnNextPage") }}
+    {{- with ($.Scratch.Get "relearnNextPage") }}
+    <a class="nav nav-next" style=""href="{{.RelPermalink}}" title="{{.Title}} (&#129106;)">{{ .Title}}<i class="fas fa-chevron-right fa-fw"></i></a>
+    {{- end }}
+  {{- else }}
+     <span class="nav nav-next"><i class="fa fa-chevron-right fa-fw"></i></span>
+  {{- end }}
+  </div>
+  <div>
+  {{- if and $ispublished ($.Scratch.Get "relearnPrevPage") }}
+    {{- with ($.Scratch.Get "relearnPrevPage") }}
+    <a class="nav nav-prev" href="{{.RelPermalink}}" title="{{.Title}} (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i> {{ .Title}}</a>
+    {{- end}}
+  {{- else }}
+     <span class="nav nav-prev"><i class="fa fa-chevron-left fa-fw"></i></span>
+  {{- end}}
+  </div>
+{{- end }}
+</div>
+{{- end }}

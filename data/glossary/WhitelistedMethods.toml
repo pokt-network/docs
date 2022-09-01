@@ -1,0 +1,4 @@
+Name = "Whitelisted Methods"
+Description = """
+In the Pocket Portal, an exclusive list of smart contract methods that can be used when accessing an Application endpoint. Note that this is only available for EVM-compatible chains.
+"""

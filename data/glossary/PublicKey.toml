@@ -1,0 +1,4 @@
+Name = "Public Key"
+Description = """
+Unique identifier for a given Application that will allow you to inspect the Application on-chain.
+"""

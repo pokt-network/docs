@@ -1,0 +1,7 @@
+Name = "Application"
+Description = """
+Computer program that needs to read data from and/or send transactions to an external blockchain. Applications stake POKT into the Pocket Network Protocol in order to gain read/send access to the independent blockchain(s) that they need.
+
+Applications are paired with groups of independent blockchain service providers, selected from Pocket's decentralized network of thousands of service nodes. Applications can submit relays to the Servicers in this group to perform the needed read/send operations.
+"""
+

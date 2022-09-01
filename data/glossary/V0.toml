@@ -1,0 +1,4 @@
+Name = "v0"
+Description = """
+Current active iteration of the Pocket protocol. Often used in contrast to the upcoming v1 update.
+"""

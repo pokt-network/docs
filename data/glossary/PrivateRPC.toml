@@ -1,0 +1,4 @@
+Name = "Private RPC"
+Description = """
+RPC server that requires credentials for access.
+"""

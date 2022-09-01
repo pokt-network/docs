@@ -1,0 +1,6 @@
+Name = "USDRelayTargetRange"
+Value = "$0.00036–0.00059 per relay"
+ManagedBy = "Pocket Network Foundation"
+Description = """
+The range of USD/relay prices the DAO doesn’t want the real price of a relay to exceed, accounting for the USD price of POKT.
+"""

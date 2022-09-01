@@ -1,0 +1,4 @@
+Name = "Stickiness"
+Description = """
+A feature that lets you connect to the same node for a set period of time. With stickiness all the relays are sent to the same node, ensuring more consistent relays.
+"""

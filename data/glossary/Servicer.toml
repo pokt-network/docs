@@ -1,0 +1,4 @@
+Name = "Servicer"
+Description = """
+Any node which is eligible to serve RPC requests for Applications. By default, a node is a Servicer.
+"""

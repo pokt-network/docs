@@ -1,0 +1,8 @@
+{{ $child_pages := union .Sections .Pages }}
+<ul>
+  {{ range $child_pages.ByWeight }}
+  <li>
+	  <span><a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a> – {{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ if .Truncated }}...{{ end }}{{ end }}</span>
+  </li>
+  {{ end }}
+</ul>

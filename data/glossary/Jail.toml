@@ -1,0 +1,13 @@
+Name = "Jail"
+Description = """
+Situation where a Pocket node is denied the ability to serve relays.
+
+A node can be jailed for one of two reasons:
+
+1. A node is not actively participating in consensus, for reasons such as being offline. More technically, this may occur if the node fails to produce `min_signed_per_window` amount of blocks over a `signed_blocks_window`. When jailed because of this reason, a node is `Slashed` a `slash_fraction_downtime`% of their `Stake`.
+2. A node "double signs" a block. Double signing is when a Validator node submits multiple signatures for the same block, which makes it more difficult for the network to come to consensus. When jailed because of this reason, a node is `Slashed` a `slash_fraction_double_sign`% of their `Stake`.
+
+When a node becomes jailed, it remains in the `Staked` list of nodes, however it becomes ineligible to be selected for block production or to participate in Sessions. In order to become unjailed, the node must wait `downtime_jail_duration` nano-seconds, and then submit a `Node Unjail` transaction, which must then be approved.
+
+If a node is left jailed for `max_jailed_blocks` blocks, it will be `Force Unstaked`.
+"""

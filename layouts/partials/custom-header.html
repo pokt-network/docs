@@ -1,0 +1,17 @@
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/google_analytics.html" . }}
+{{ with (index (.Resources.ByType "image") 0) -}}
+{{- $image := . -}}
+{{- $image = $image.Fill "1200x630" -}}
+ <meta property="og:image" content="{{ $image.Permalink }}"/>
+ <meta property="og:image:secure_url" content="{{ $image.Permalink }}"/>
+ <meta property="og:image:width" content="{{ $image.Width }}"/>
+ <meta property="og:image:height" content="{{ $image.Height }}"/>
+ <meta name="twitter:image:src" content="{{ $image.Permalink }}"/>
+ {{- else -}}
+ <meta property="og:image" content="{{ site.Params.og_image | relURL }}"/>
+ <meta property="og:image:secure_url" content="{{ site.Params.og_image | absURL }}"/>
+ <meta name="twitter:image:src" content="{{ site.Params.og_image | absURL }}"/>
+{{- end }}
+<link rel="stylesheet" href="/css/pokt.css" />

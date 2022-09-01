@@ -1,0 +1,4 @@
+Name = "PUP"
+Description = """
+Parameter Update Proposal. This is submitted to the Pocket DAO to change the value of a given protocol parameter, either on-chain or in various tools or platforms. Each PUP is given a unique number as a suffix (such as [PUP-11](https://forum.pokt.network/t/pup-11-wagmi-inflation/))
+"""

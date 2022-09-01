@@ -1,0 +1,7 @@
+Name = "ApplicationStakeMinimum"
+Value = ""
+ManagedBy = "DAO"
+Description = """
+The minimum stake required of an app, denominated in [StakeDenom](protocol-parameters.md#stakedenom). This does not have the same economic security requirements as a node's [minimum stake](protocol-parameters.md#stakeminimum) because an app's access to the network (relay throughput) is already proportional to the stake.
+"""
+

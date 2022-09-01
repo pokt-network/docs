@@ -1,0 +1,4 @@
+Name = "Session Block"
+Description = """
+Some number of blocks, marking Session beginning/ends.
+"""

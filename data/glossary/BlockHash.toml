@@ -1,0 +1,4 @@
+Name = "Block Hash"
+Description = """
+SHA3-256 hash of a Block.
+"""

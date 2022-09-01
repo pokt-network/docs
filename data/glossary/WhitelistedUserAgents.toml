@@ -1,0 +1,4 @@
+Name = "Whitelisted User-Agents"
+Description = """
+In the Pocket Portal, an exclusive list of HTTP User-Agent request headers that are allowed to make requests to the endpoint.
+"""

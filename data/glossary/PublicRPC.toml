@@ -1,0 +1,4 @@
+Name = "Public RPC"
+Description = """
+RPC server that is accessible to the network without requiring credentials for access.
+"""

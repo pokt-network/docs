@@ -1,0 +1,19 @@
+Name = "Relay"
+Description = """
+Blockchain API request and response transmitted through the Pocket Network.
+
+A **Relay Request** is broken down into 3 sections:
+
+* Request Payload
+* Metadata
+* Proof (of Relay)
+
+A **Relay Response** is broken down into 2 sections:
+
+* Response Payload
+* Servicer Signature
+
+Requests are signed by the client of the Application and responses are signed by the servicing Validator.
+
+This one-to-one signature scheme enables the protocol to validate all parties that participate in the servicing cycle.
+"""
