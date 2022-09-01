@@ -7,6 +7,7 @@ summaryLength = 35
 
 # Theme specific parameters
 [params]
+  og_image = "/images/pocket_network_overview.png"
   # This controls whether submenus will be expanded (true), or collapsed (false) in the
   # menu; if no setting is given, the first menu level is set to false, all others to true;
   # this can be overridden in the pages frontmatter
