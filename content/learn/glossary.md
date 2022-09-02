@@ -170,7 +170,7 @@ Pocket v1 (or just "v1") is a [major planned overhaul of the Pocket Network prot
 
 Special nodes that are responsible for committing new blocks in the blockchain, in addition to Servicing. Validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each Validator's private key.
 
-Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerAllocation](/learn/protocol-parameters/#proposerallocation) parameter.
+Validators stake POKT into the protocol to participate in Servicing and Consensus, just like Servicers, but because they are able to be block proposers, they can earn a slightly higher reward amount, as determined by the [ProposerPercentage](/learn/protocol-parameters/#proposerpercentage) parameter.
 
 Only the top 1,000 Servicers ordered by total POKT staked are considered Validators.
 

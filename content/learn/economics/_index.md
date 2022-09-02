@@ -31,7 +31,7 @@ While paying upfront for infrastructure appears to be burdensome at first glance
 Node Providers also stake POKT but do so on a per-node basis. In exchange for servicing relays for applications, nodes are compensated in POKT. Unlike most traditional block rewards, Pocket Network’s is dynamic; POKT rewards are directly proportional to the number of relays and transaction fees in a given block. A node receives a certain amount of POKT per relay fulfilled and proved, minus certain percentages for both the block producer and the DAO.
 
 {{% notice style="info" %}}
-The current block producer percentage is called `ProposerAllocation`, and you can find the current value on the [Protocol Parameters](/learn/protocol-parameters/#proposerallocation) page.
+The current block producer percentage is called `ProposerPercentage`, and you can find the current value on the [Protocol Parameters](/learn/protocol-parameters/#proposerpercentage) page.
 
 Furthermore, the DAO allocation of block rewards is called `DAOAllocation`, and that also can be found on the [Protocol Parameters](/learn/protocol-parameters/#daoallocation) page.
 {{% /notice %}}
