@@ -32,7 +32,9 @@ Yes you can! Just make sure you have the necessary ports open to be able to succ
 
 ### How can I add more blockchains to my node?
 
-Unstake your node, add the new RelayChainIDs to your chains.json file, then restake your node.
+Add the new RelayChainIDs to your chains.json file, then run the stake command
+again for your node. Since you're already staked, running the command "updates"
+your staking configuration.
 
 [Find the RelayChainIDs here](/supported-blockchains).
 
