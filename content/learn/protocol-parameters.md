@@ -116,7 +116,7 @@ The number of blocks allowed before a Session tumbles.
 
 **Current Value:** 10
 
-The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerAllocation](#proposerallocation) for another beneficiary of the block reward.
+The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerPercentage](#proposerpercentage) for another beneficiary of the block reward.
 
 ### DAOOwner
 

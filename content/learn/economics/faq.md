@@ -29,9 +29,9 @@ Each time a block is validated, POKT is minted according to the [`RelaysToTokens
 
 This mint is then divided according to the following percentages:
 
-* `1 -(`[`ProposerAllocation`](/learn/protocol-parameters/#proposerallocation)` + `[`DAOAllocation`](/learn/protocol-parameters/#daoallocation)`" >}})` to all the nodes who did #1, proportional to the number of relays they did
-* [`ProposerAllocation`](/learn/protocol-parameters/#proposerallocation) to the node who validated the block (#2)
-* [`DAOAllocation`](/learn/protocol-parameters/#daoallocation) to the DAO
+* `100% - (`[`ProposerPercentage`](/learn/protocol-parameters/#proposerpercentage)` + `[`DAOAllocation`](/learn/protocol-parameters/#daoallocation)`)` to all the nodes who were Servicers, proportional to the number of relays they did.
+* [`ProposerPercentage`](/learn/protocol-parameters/#proposerpercentage) to the node that validated the block.
+* [`DAOAllocation`](/learn/protocol-parameters/#daoallocation) to the DAO.
 
 So what does this mean in practice?
 
@@ -41,7 +41,7 @@ Check out [these charts](https://c0d3r.org/NetworkCharts) to view the profitabil
 
 The minimum staking amount for nodes is determined by the [`StakeMinimum`](/learn/protocol-parameters/#stakeminimum) parameter.
 
-However, if a node stake falls below this minimum stake the entire stake will be burned by the protocol. Therefore, as a **best practice**, we **recommend staking an extra 7% to 10% buffer of POKT** above the minimum stake per node. This is to account for any unforeseen slashing events due to node misconfiguration, bad behavior, natural disaster, or potential accidents.
+However, as a **best practice**, we **recommend staking an extra 7% to 10% buffer of POKT** above the minimum stake per node. This is to account for any unforeseen slashing events due to node misconfiguration, bad behavior, natural disaster, or potential accidents.
 
 ## What determines my odds of being selected to validate a block?
 
@@ -51,23 +51,17 @@ The following formula:
 
 ## Is there an advantage to staking all of my POKT on one node?
 
-There is no advantage.
+Yes, up to a point.
 
-All nodes with the minimum stake have an equal chance of being selected to serve an app during a session. Therefore, to maximize the work you are being selected for, you should split your stake across as many nodes as possible, accounting for the minimum stake plus a buffer as described in [What is the minimum staking amount for a node?](#what-is-the-minimum-staking-amount-for-a-node)
+As of version 0.9.0, [PIP-22](https://forum.pokt.network/t/pip-22-stake-weighted-servicer-rewards/) introduced Stake-Weighted Servicer Rewards. This implementation seeks to reduce the infrastructure costs for node runners by allowing for rewards to be generated roughly proportional to the total amount of POKT staked.
 
-Similarly, tickets for block production are weighted according to POKT staked in comparison to the average, based on the formula [above](#what-determines-my-odds-of-being-selected-to-validate-a-block"), however it makes no difference to you whether this POKT is all staked on one node or across multiple.
+For example, if a node runner has four nodes with 15,000 POKT staked in each, the node runner could instead run one single node with 60,000 POKT and generate four times the previously-generated rewards for each relay served. Thus the node runner can reduce infrastructure costs by 75% while still generating the same rewards.
 
-## Why is the number of staked nodes growing faster than the number of staked apps?
-
-While it's true that the supply (nodes) of Pocket's two-sided market should respond to demand (apps), the important metric is the number of relays, not the number of staked apps.
-
-Nodes are paid proportionally to the relays they process, so if the number of staked apps remains constant while the relays the submit increases, the node supply will grow in response to growing revenue opportunities.
-
-Many apps use the [Pocket Portal](https://www.portal.pokt.network) to connect to the network, which stakes and integrates with [PocketJS](https://docs.pokt.network/js) on their behalf. The Dashboard can divide the throughput it has staked for across multiple URLs, which means we don't need to stake a new account for every new app that uses the Dashboard.
+There is a limit to this benefit though, as determined by the DAO, beyond which, any additional POKT staked will not incur any benefit. This is managed by the `ServicerStakeWeightCeiling` parameter.
 
 ## How do I buy POKT?
 
-Visit this [forum post](https://forum.pokt.network/t/secondary-markets-for-pokt/629).
+See [the section on managing POKT](/pokt/).
 
 ## What is the supply of POKT?
 
@@ -92,6 +86,7 @@ The vast majority of these tokens are non-transferable and subject to use restri
 This all results in the following circulating supply schedule:
 
 ![](/images/circulating-supply-schedule.jpg)
+
 ### Fully Diluted Supply
 
 While the initial total supply of POKT is 650M, Pocket Network uses minting to compensate nodes for performing work on the network. For this reason, POKT is permanently inflationary proportional to usage of the network, i.e. proportional to the number of relays being processed by nodes, but the total supply will be capped through a burning mechanism put in place by the DAO (more on this below).

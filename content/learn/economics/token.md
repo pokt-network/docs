@@ -48,10 +48,10 @@ The protocol limits the number of Relays an Application may access based on the 
 
 ### Node Staking
 
-Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [R.C.0.6.0](https://forum.pokt.network/t/pip-4-consensus-rule-change-0-6-0/834), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes (subject to change on DAO parameter vote) on the network. Validator Nodes can claim the block reward for submitting the block which is equal to the value of the [`ProposerAllocation`](/learn/protocol-parameters/#proposerallocation) parameter.
+Like with applications, when nodes invoke the `StakeNode()` function, the minimum staking period is 21 days. The minimum stake at launch required to become a Service Node is 15,000 POKT. This node stake keeps nodes honest and incentivized to provide high quality service. Additionally, a node sufficient stake allows nodes to participate in PoS consensus as a Validator Node. Per the changes in [R.C.0.6.0](https://forum.pokt.network/t/pip-4-consensus-rule-change-0-6-0/834), not all nodes are validators, but all validators are service nodes. To become a Validator Node, you must be in the top 1,000 node stakes (subject to change on DAO parameter vote) on the network. Validator Nodes can claim the block reward for submitting the block which is equal to the value of the [`ProposerPercentage`](/learn/protocol-parameters/#proposerpercentage) parameter.
 
 {{% notice style="danger" %}}
-While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of burning that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice. 
+While the Minimum Node Stake is 15,000 POKT, we highly recommend staking an amount greater than 15,000 the minimum in case of slashing that may be caused by misconfiguration. Node runners have reported a stake of 15,100 POKT is a best practice.
 {{% /notice %}}
 
 ## POKT Denominations

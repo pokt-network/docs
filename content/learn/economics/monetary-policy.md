@@ -26,7 +26,7 @@ For each Relay served and validated by the protocol, POKT is added to the next b
 | Participant | Parameter Name | Current Allocation |
 | :--- | :--- | :--- |
 | Service Nodes | N/A | 85% |
-| Block Producer | [ProposerAllocation](/learn/protocol-parameters/#proposerallocation) | 5% |
+| Block Producer | [ProposerPercentage](/learn/protocol-parameters/#proposerpercentage) | 5% |
 | DAO | [DAOAllocation](/learn/protocol-parameters/#daoallocation) | 10% |
 
 {{% notice style="info" %}}
@@ -34,7 +34,7 @@ Current values of these parameters (and all others) can be found on the [Protoco
 {{% /notice %}}
 
 {{% notice style="info" %}}
-The value for ProposerAllocation has recently changed. Please see [PUP-19](https://forum.pokt.network/t/pup-19-increase-validator-reward-from-1-to-5-immediately/3169/13) for details.
+The value for ProposerPercentage has recently changed. Please see [PUP-19](https://forum.pokt.network/t/pup-19-increase-validator-reward-from-1-to-5-immediately/3169/13) for details.
 {{% /notice %}}
 
 As part of the Proof-of-Stake consensus, each Service Node has a weighted chance of being selected to be the block producer for any given block based on the total amount staked for that given node. The block producer receives a portion of the entire block reward, as does the Pocket DAO, which provides continuous and sustainable funding for supporting the continued adoption and utility of Pocket Network.
