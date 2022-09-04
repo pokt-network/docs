@@ -14,7 +14,7 @@ description: Use the Pocket Portal to "mint" endpoints you can use in your decen
 ---
 
 
-In order to take advantage of Pocket's network of thousands of decentralized nodes, you need to create a endpoint that you can use in your application.
+In order to take advantage of Pocket's network of thousands of decentralized nodes, you need to create an endpoint that you can use in your application.
 
 You can do this using the **Pocket Portal**.
 
