@@ -73,4 +73,4 @@ Since nodes know the maximum amount of relays that the applications it's serving
 
 ## More Details
 
-Read more details about the [v1.0 Persistence module spec](https://docs.pokt.network/v1/persistence).
+Read more details about the [v1.0 Persistence module spec](https://github.com/pokt-network/pocket-network-protocol/).

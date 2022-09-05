@@ -81,4 +81,4 @@ Since Pocket Network isn't a blockchain built for arbitrary computation, and ins
 
 ## More Details
 
-Read more details about the [v1.0 Consensus module spec](https://docs.pokt.network/v1/consensus).
+Read more details about the [v1.0 Consensus module spec](https://github.com/pokt-network/pocket-network-protocol/).

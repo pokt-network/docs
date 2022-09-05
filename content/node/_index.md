@@ -17,4 +17,4 @@ Want to understand the economics of running a node before you dive in? Read abou
 
 Read our guide to decide whether you want your nodes to be operated with [custodial staking or non-custodial staking](/node/staking/).
 
-For a no-frills guide to commands, you should head over to the [Pocket Core docs](https://docs.pokt.network/core/).
+For a no-frills guide to commands, you should head over to [Pocket Core](https://github.com/pokt-network/pocket-core/) on GitHub.

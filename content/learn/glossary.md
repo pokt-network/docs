@@ -156,7 +156,7 @@ A feature that lets you connect to the same node for a set period of time. With 
 
 ## Trophy
 
-Achievement earned for proving knowledge of and participation in the Pocket Network ecosystem. These can be collected and used to earn a vote in the Pocket DAO. There are [four distinct paths to a vote](https://docs.pokt.network/home/community/trophies), each with different trophies: App Developers, Node Runners, Community Shepherds, and Governors/Contributors.
+Achievement earned for proving knowledge of and participation in the Pocket Network ecosystem. These can be collected and used to earn a vote in the Pocket DAO. There are [four distinct paths to a vote](/community/trophies/), each with different trophies: App Developers, Node Runners, Community Shepherds, and Governors/Contributors.
 
 ## v0
 
