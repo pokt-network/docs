@@ -38,7 +38,7 @@ The deterministic yet unpredictable properties of the block hash seed data in Se
 
 The Application Authentication Token is the key mechanism for Applications to balance the security of their stake and UX of clients during servicing. Through the AAT, the Application is able to sanction clients to access their throughput via **Digital Signature**. Future implementations of the AAT include enforcing a lifecycle through expiration and other _client access configurations_ such as Relay Chain specification.
 
-_Application Distribution Configuration_ is the recommended practice of distributing an Application 's throughput over multiple Application stakes (or identities) to ensure the highest level of data accuracy, uptime, and data privacy.
+_Application Distribution Configuration_ is the recommended practice of distributing an Application's throughput over multiple Application stakes (or identities) to ensure the highest level of data accuracy, uptime, and data privacy.
 
 _Client Side Validation_ is the recommended practice of redundantly sending the same request to multiple Validators. _CSV_ allows the client to come to a majority consensus on the Relay Responses. This configuration ensures the highest level of data accuracy and enables the Application to use the **Application Challenge Mechanism** of the protocol, where corresponding minority Validator(s) providing invalid data are economically penalized.
 
