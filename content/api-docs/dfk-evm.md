@@ -5,5 +5,5 @@ spec_url: /oas/dfk.json
 portal_prefix: avax-dfk
 logo: dfk.png
 ignore_api_path: true
-api_slug: /ext/bc/C/
+api_slug: /ext/bc/C/rpc/
 ---
