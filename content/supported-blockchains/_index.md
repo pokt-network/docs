@@ -23,7 +23,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Binance Smart Chain          | bsc-mainnet          | 0004         |
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
 | Boba                         | boba-mainnet         | 0048         |
-| DFKchain Subnet              | dfk-mainnet          | 03DF         |
+| DFKchain Subnet              | avax-dfk             | 03DF         |
 | Dogechain                    | dogechain-mainnet    | 0059         |
 | Ethereum                     | eth-mainnet          | 0021         |
 | Ethereum Archival            | eth-archival         | 0022         |
@@ -53,7 +53,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Polygon                      | poly-mainnet         | 0009         |
 | Polygon Archival             | poly-archival        | 000B         |
 | Polygon Mumbai               | polygon-mumbai       | 000F         |
-| Solana                       | sol-mainnet          | 0006         |
+| Solana                       | solana-mainnet       | 0006         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
 ## Pocket Testnet RelayChains
