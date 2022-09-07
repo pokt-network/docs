@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: Harmony
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: harmony-0
+logo: harmony.svg
 ignore_api_path: true
 ---

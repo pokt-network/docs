@@ -30,7 +30,7 @@
     </div>
     <div class="desktop">
 	    <elements-api id="docs" logo="/logos/{{ .Params.logo }}" router="hash" basePath={{ .Page.RelPermalink }}
-    {{ if isset .Params "ignore_api_path" }} isJSONRPC {{ end }}
+    {{ if isset .Params "ignore_api_path" }} isJSONRPC=true {{ end }}
     {{ if isset .Params "api_slug" }} jsonRPCSlug={{ .Params.api_slug }}
     {{ end }}/>
     </div>

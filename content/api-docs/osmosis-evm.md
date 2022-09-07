@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: Osmosis
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: osmosis-mainnet
+logo: osmosis.png
 ignore_api_path: true
 ---

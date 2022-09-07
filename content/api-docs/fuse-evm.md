@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: FUSE
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: fuse-mainnet
+logo: fuse.png
 ignore_api_path: true
 ---

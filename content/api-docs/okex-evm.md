@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: OKExChain
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: oec-mainnet
+logo: okex.png
 ignore_api_path: true
 ---

@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: Binace Smart Chain
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: bsc-mainnet
+logo: bsc.svg
 ignore_api_path: true
 ---

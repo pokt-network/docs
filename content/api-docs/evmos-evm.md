@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: Evmos
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: evmos-mainnet
+logo: evmos.svg
 ignore_api_path: true
 ---

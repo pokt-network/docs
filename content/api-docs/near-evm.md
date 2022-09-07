@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: NEAR
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: near-mainnet
+logo: near.svg
 ignore_api_path: true
 ---

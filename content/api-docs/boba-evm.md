@@ -1,8 +1,8 @@
 ---
 type: api-doc
-name: Ethereum
+name: Boba
 spec_url: /oas/eth.json
-portal_prefix: eth-mainnet
-logo: eth.svg
+portal_prefix: boba-mainnet
+logo: boba.svg
 ignore_api_path: true
 ---
