@@ -127,4 +127,4 @@ Finally, Fishermen will become truly trustless actors as the monitoring/enforcem
 
 ## More Details
 
-Read more details about the [v1.0 Utility module spec](https://docs.pokt.network/v1/utility).
+Read more details about the [v1.0 Utility module spec](https://github.com/pokt-network/pocket-network-protocol/).

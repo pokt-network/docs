@@ -72,4 +72,4 @@ The gossip protocol in the Consensus module is a specialized version of RainTree
 
 ## More Details
 
-Read more details about the [v1.0 Peer To Peer module spec](https://docs.pokt.network/v1/p2p).
+Read more details about the [v1.0 Peer To Peer module spec](https://github.com/pokt-network/pocket-network-protocol/).

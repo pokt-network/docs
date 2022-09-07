@@ -135,7 +135,7 @@ We could install Go using `apt`, but we want to get the latest stable version wh
 
 After you can verify that you have the latest stable version of Go, we're ready to install the Pocket software.
 
-We'll be downloading [Pocket Core](https://docs.pokt.network/core/) from GitHub and then compiling it with Go to get it fully installed.
+We'll be downloading [Pocket Core](https://github.com/pokt-network/pocket-core/) from GitHub and then compiling it with Go to get it fully installed.
 
 To download and install Pocket Core, do the following:
 
