@@ -109,9 +109,9 @@ If a Pocket Validator Node is left jailed for `max_jailed_blocks` blocks, it wil
 
 In order to participate in the network economic incentive mechanism, the Validator must first **Claim** and then **Prove** the completed work.
 
-### Burning for Bad Fraud Proofs
+### Burning for Bad Fraud Proofs (Replay Attack)
 
-If a Service Node submits a fraudulent Relay batch, 100% of their stake will be slashed.
+If a Service Node submits a fraudulent Relay batch by attempting a replay attack, the validator's stake will be slashed by [ReplayAttackBurn](https://docs.pokt.network/learn/protocol-parameters/#replayattackburnmultiplier) multipler
 
 ### Economic Incentives
 
