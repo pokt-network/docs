@@ -85,7 +85,7 @@ The initial amount of POKT needed to stake as a Service Node is not dynamic, but
 A Validator is jailed and subsequently slashed for not signing (or incorrectly signing) block proposals. More often than not, this is the reason why Validators are jailed.
 
 {{% notice style="danger" %}}
-If a Validator falls below the minimum stake (due to slashing) it will be forcibly removed by the protocol and all Staked Tokens burned. This feature of the protocol highlights the importance of staking 'well above' the minimum stake.
+If a Validator falls below the minimum stake (due to slashing), the protocol will forcibly unstake the validator and start the unstaking waiting period. This feature of the protocol highlights the importance of staking 'well above' the minimum stake.
 {{% /notice %}}
 
 ### Jailing Penalties
