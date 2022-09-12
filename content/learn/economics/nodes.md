@@ -111,7 +111,7 @@ In order to participate in the network economic incentive mechanism, the Validat
 
 ### Burning for Bad Fraud Proofs (Replay Attack)
 
-If a Service Node submits a fraudulent Relay batch by attempting a replay attack, the validator's stake will be slashed by [ReplayAttackBurn](https://docs.pokt.network/learn/protocol-parameters/#replayattackburnmultiplier) multipler
+If a Service Node submits a fraudulent Relay batch by attempting a replay attack, the validator's stake will be slashed by the factor specified in the [ReplayAttackBurnMultiplier](/learn/protocol-parameters/#replayattackburnmultiplier) parameter.
 
 ### Economic Incentives
 
