@@ -9,8 +9,8 @@ aliases:
 description: Add the Polygon network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube C0jDq20pBYQ >}}
 
-{{< youtube  >}}
 We have created a public Polygon RPC endpoint with up to 5M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 More details here:

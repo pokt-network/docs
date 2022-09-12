@@ -9,8 +9,8 @@ aliases:
 description: Add the IoTeX network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube XXzlplnOR7M >}}
 
-{{< youtube  >}}
 We have minted a public IoTeX RPC endpoint with up to 1M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for IoTeX, do the following:

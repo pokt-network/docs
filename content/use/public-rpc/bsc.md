@@ -9,8 +9,8 @@ aliases:
 description: Add the Binance Smart Chain (BSC) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube fLTvtBtOEg0 >}}
 
-{{< youtube  >}}
 We have created a public BSC RPC endpoint with up to 1M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for BSC, do the following:

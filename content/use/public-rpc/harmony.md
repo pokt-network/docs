@@ -9,8 +9,8 @@ aliases:
 description: Add the Harmony Mainnet Shard 0 network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube w9ZziTu0ROo >}}
 
-{{< youtube  >}}
 We have created a public Harmony RPC endpoint for applications and end-users to utilize!
 
 To get started connecting to Pocket's infrastructure for Harmony Mainnet Shard 0, do the following:&#x20;
