@@ -26,7 +26,8 @@ To change your endpoint in MetaMask, do the following, **filling in the fields f
 If you receive this error message from MetaMask `Invalid number. Enter a decimal or '0x'-prefixed hexadecimal number` then leave the optional fields blank.
 {{% /notice %}}
 
-{{< youtube =8ruuz3u2V2E&list=PLYpSL-5AOmwq4x0Kxw_p4v93mEYLmT5HJ >}}
+{{< youtube 8ruuz3u2V2E >}}
+
 ## Endpoints
 
 | Network Name                                        | RPC URL                                               | ChainID    | Symbol | Explorer URL                          |

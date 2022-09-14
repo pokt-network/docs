@@ -20,7 +20,7 @@ Pocket uses Proof-of-Stake (PoS) to secure the state machine and falls under the
 
 Service Nodes batch all requests received in a session to one Pocket blockchain transaction, a “Proof-of-Relay” that Applications can validate client-side and other nodes can validate in block production, removing the need for Applications to pay constant transaction fees for this work. Once those Proofs-of-Relays are validated by the network, a new block is confirmed, then POKT is minted and issued to the relevant Service Nodes as a reward for their work.
 
-Service Nodes are pseudo-randomly assigned to a Session. Every Service Node who has staked the required node security deposit has an equal chance of being chosen in every available Session within the protocol regardless of how much POKT they have staked. New Sessions get created every 25 blocks with a new, pseudo-random set of Service Nodes.
+Service Nodes are pseudo-randomly assigned to a Session. Every Service Node who has staked the required node security deposit has an equal chance of being chosen in every available Session within the protocol regardless of how much POKT they have staked. New Sessions get created every 4 blocks with a new, pseudo-random set of Service Nodes.
 
 ## Node Staking
 
@@ -109,9 +109,9 @@ If a Pocket Validator Node is left jailed for `max_jailed_blocks` blocks, it wil
 
 In order to participate in the network economic incentive mechanism, the Validator must first **Claim** and then **Prove** the completed work.
 
-### Burning for Bad Fraud Proofs
+### Burning for Bad Fraud Proofs (Replay Attack)
 
-If a Service Node submits a fraudulent Relay batch, 100% of their stake will be slashed.
+If a Service Node submits a fraudulent Relay batch by attempting a replay attack, the validator's stake will be slashed by the factor specified in the [ReplayAttackBurnMultiplier](/learn/protocol-parameters/#replayattackburnmultiplier) parameter.
 
 ### Economic Incentives
 

@@ -9,8 +9,8 @@ aliases:
 description: Add the Ethereum (ETH) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube 8ruuz3u2V2E >}}
 
-{{< youtube  >}}
 We have created a public Ethereum RPC endpoint with up to 10M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for Ethereum mainnet, do the following:
