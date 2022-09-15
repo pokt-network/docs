@@ -305,7 +305,6 @@ curl -X POST ^
 {{% /tab %}}
 {{< /tabs >}}
 
-
 Pocket also maintains API docs that include various methods to test out your specific Endpoint, by generating and sending requests to that Endpoint.
 
 To test out your Endpoint, navigate to the [API Docs](/api-docs/pokt/#/api-docs/pokt/) page for the Pocket blockchain, and click any of the queries on the left sidebar. For example, a simple request is to check the [block height](/api-docs/pokt/#/api-docs/pokt/operations/height_v1_query_height_post).
