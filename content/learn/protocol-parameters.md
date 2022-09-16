@@ -182,6 +182,38 @@ The amount of POKT, denominated in [StakeDenom](#stakedenom), that is minted as 
 
 Note that this value will change over time. Please see the section on [POKT inflation](/learn/economics/monetary-policy/#poktinflation) for more information.
 
+### ServicerStakeFloorMultiplier
+
+**Current Value:** 15000000000
+
+The "width" of a bin (in uPOKT) used when organizing nodes for [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards).
+
+All nodes with an amount of POKT staked that is both greater than the [StakeMinimum](#stakeminimum) and less than the value of this parameter will have the same reward multiplier. Nodes in subsequent multiples of this parameter (up to and including the [ServicerStakeWeightCeiling](#servicerstakeweightceiling)) will have additionally higher reward multipliers.
+
+### ServicerStakeFloorMultiplierExponent
+
+**Current Value:** 1
+
+Determines how rewards scale for each bin used when organizing nodes for [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards). 
+
+A value of 1 will cause the reward multiplier of the bins to scale linearly. Values greater than 1 will lead to higher bins having a non-linear greater reward multiplier, while values less than 1 will lead to higher bins having a non-linear lower reward multiplier.
+
+### ServicerStakeWeightCeiling
+
+**Current Value:** 60000000000
+
+Denotes the minimum value (in uPOKT) of the top bin, used when organizing nodes for [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards). Any node with an amount of staked POKT at or above this value will have the highest available reward multiplier. Staking any more POKT will not incur any greater rewards (except as a Validator).
+
+### ServicerStakeWeightMultiplier
+
+**Current Value:** 1.4687
+
+Offsets the increased reward emissions generated due to [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards).
+
+If the DAO determines that the amount of rewards generated is higher than desired, this will be set to an amount such that the reward multipliers of each of the bins are proportionally scaled down.
+
+This parameter will likely change often due to its role in managing inflation.
+
 ### SignedBlocksWindow
 
 **Current Value:** 10

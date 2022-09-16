@@ -147,10 +147,10 @@ These rewards multipliers are determined by organizing nodes of various stake am
 
 There are four on-chain parameters that determine how the reward multipliers are calculated:
 
-1. ``ServicerStakeFloorMultiplier``
-2. ``ServicerStakeWeightCeiling``
-3. ``ServicerStakeFloorMultiplierExponent``
-4. ``ServicerStakeWeightMultiplier``
+1. [ServicerStakeFloorMultiplier](/learn/protocol-parameters/#servicerstakefloormultiplier)
+2. [ServicerStakeWeightCeiling](/learn/protocol-parameters/#servicerstakeweightceiling)
+3. [ServicerStakeFloorMultiplierExponent](/learn/protocol-parameters/#servicerstakefloormultiplierexponent)
+4. [ServicerStakeWeightMultiplier](/learn/protocol-parameters/#servicerstakeweightmultiplier)
 
 While the names may seem cumbersome, they do come together in a fairly straightforward way, as described below.
 
@@ -161,17 +161,21 @@ This parameter denotes **the size (or width) of the bins**. The value here denot
 When this feature was first implemented, the value was equal to 15,000 POKT, meaning that a node could stake anywhere from (for example) 15,000 POKT to 29,999 POKT and still receive the same reward multiplier.
 
 {{% notice style="info" %}}
-The actual parameter is denoted in [uPOKT](http://localhost:1313/learn/economics/token/#pokt-denominations), but is listed here in POKT for easier comprehension.
+The actual parameter is denoted in [uPOKT](/learn/economics/token/#pokt-denominations), but is listed here in POKT for easier comprehension.
 {{% /notice %}}
 
 ### ServicerStakeWeightCeiling ("The Ceiling")
 
 This parameter denotes **the minimum value of the top bin**. Any amount staked higher than this value will not incur any greater reward.
 
+{{% notice style="info" %}}
+If the amount of POKT staked is higher than the Validator Threshold, the node will earn additional rewards due to being a Validator Node. That is unrelated to Stake-Weighted Servicer Rewards, however.
+{{% /notice %}}
+
 When this feature was first implemented, the value was equal to 60,000 POKT, meaning that a node that staked 60,000 or more POKT would always receive the largest multiplier of rewards.
 
 {{% notice style="info" %}}
-The actual parameter is denoted in [uPOKT](http://localhost:1313/learn/economics/token/#pokt-denominations), but is listed here in POKT for easier comprehension.
+The actual parameter is denoted in [uPOKT](/learn/economics/token/#pokt-denominations), but is listed here in POKT for easier comprehension.
 {{% /notice %}}
 
 The number of bins isn't a parameter, but can be inferred from the values of `ServicerStakeFloorMultiplier`, `ServicerStakeWeightCeiling`, and `StakeMinimum` as per the following:
@@ -190,7 +194,6 @@ $$
 $$
 ```
 
-
 The amounts of staked POKT for each bin can be determined from this as well.
 
 |Bin|Minimum|Maximum     |
@@ -202,7 +205,7 @@ The amounts of staked POKT for each bin can be determined from this as well.
 
 ### ServicerStakeFloorMultiplierExponent ("The Exponent")
 
-The next two parameters determine not the bins, but the multipliers that are applied to those bins to get the final reward multiplier.
+The next two parameters determine not the bins, but the multipliers that are applied to those bins to get the final reward multiplier
 
 This parameter determines how the rewards scale per each bin.
 
@@ -235,7 +238,7 @@ We can now calculate the reward multiplier for a relay on a node, given its amou
 
 ```math
 $$
-\text{Reward Amount} = \text{RelaysToTokensMultiplier }\times\text{Reward Multiplier}
+\text{Reward Amount} = \text{RelaysToTokensMultiplier}\times\text{Reward Multiplier}
 $$
 ```
 
