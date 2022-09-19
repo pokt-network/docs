@@ -43,7 +43,7 @@ Incentivizing the long tail of individuals running Service Nodes and keeping bar
 
 ## Optimal Deployment Strategy
 
-The optimal economic strategy for node operators is to replicate as many Service Nodes as they can with the amount of POKT they hold, thereby spreading out their POKT holdings. By dispersing their stake amongst many Service Nodes, node operators maximize their chances of being chosen in as many Sessions as possible, providing them with the opportunity to serve Relays within the network. These incentives promote further decentralization, redundancy and the number of nodes available for each blockchain network supported by Pocket. **To learn more about the optimal amount of service nodes and amount staked per node, refer to: [Is there an advantage to staking all of my POKT on one node?](https://docs.pokt.network/learn/economics/faq/#is-there-an-advantage-to-staking-all-of-my-pokt-on-one-node)**
+The optimal economic strategy for node operators is to replicate as many Service Nodes as they can with the amount of POKT they hold, thereby spreading out their POKT holdings. By dispersing their stake amongst many Service Nodes, node operators maximize their chances of being chosen in as many Sessions as possible, providing them with the opportunity to serve Relays within the network. These incentives promote further decentralization, redundancy and the number of nodes available for each blockchain network supported by Pocket. **To learn more about the optimal amount of service nodes and amount staked per node, refer to: [Is there an advantage to staking all of my POKT on one node?](/learn/economics/faq/#is-there-an-advantage-to-staking-all-of-my-pokt-on-one-node)**
 
 ## Cost to Nodes
 
