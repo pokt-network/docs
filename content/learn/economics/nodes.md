@@ -181,23 +181,27 @@ The actual parameter is denoted in [uPOKT](/learn/economics/token/#pokt-denomina
 The number of bins isn't a parameter, but can be inferred from the values of `ServicerStakeFloorMultiplier`, `ServicerStakeWeightCeiling`, and `StakeMinimum` as per the following:
 
 {{< math >}}
+
 $$
 \text{Number of bins} = \frac{(\text{ServicerStakeWeightCeiling} - \text{StakeMinimum})}{\text{ServicerStakeFloorMultiplier}} + 1
 $$
+
 {{< /math >}}
 
 Given the initial conditions supplied above, there are 4 bins.
 
 {{< math >}}
+
 $$
 \text{Number of bins} = \frac{(\text{60000} - \text{15000})}{\text{15000}} + 1 = 4
 $$
+
 {{< /math >}}
 
 The amounts of staked POKT for each bin can be determined from this as well.
 
 |Bin Number|Minimum|Maximum     |
-|----------|-------|-------     |
+|----------|-------|------------|
 |1         |15,000 |29,999      |
 |2         |30,000 |44,999      |
 |3         |45,000 |59,999      |
@@ -211,12 +215,12 @@ This parameter determines how the rewards scale per each bin.
 
 Assuming all else equal, with an exponent of 1 (the initial value when this feature was implemented) the bins would scale linearly:
 
-|Bin Number|Bin with Exponent             |Reward multiplier|
-|----------|------------------------------|-----------------|
-|1         |{{< math >}}$1^1${{< /math >}}|1x               |
-|2         |{{< math >}}$2^1${{< /math >}}|2x               |
-|3         |{{< math >}}$3^1${{< /math >}}|3x               |
-|4         |{{< math >}}$4^1${{< /math >}}|4x               |
+|Bin Number|Bin with Exponent               |Reward multiplier|
+|----------|--------------------------------|-----------------|
+|1         |{{< math >}} $1^1$ {{< /math >}}|1x               |
+|2         |{{< math >}} $2^1$ {{< /math >}}|2x               |
+|3         |{{< math >}} $3^1$ {{< /math >}}|3x               |
+|4         |{{< math >}} $4^1$ {{< /math >}}|4x               |
 
 Given the other initial conditions listed above, a node that has 30,000 POKT staked (Bin 2) would earn twice as many rewards for the same number of relays as a node that only has 15,000 POKT staked (Bin 1).
 
@@ -237,40 +241,50 @@ For example, if the way nodes are positioned in bins leads to an emission rate o
 We can now calculate the reward multiplier for a single relay on a node, given its amount of staked POKT:
 
 {{< math >}}
+
 $$
 \text{Reward Amount} = \text{RelaysToTokensMultiplier}\times\text{Reward Multiplier}
 $$
+
 {{< /math >}}
 
 {{< math >}}
+
 $$
 \text{Reward Multiplier} = \frac{\text{Bin Number} ^ \text{ServicerStakeFloorMultiplierExponent}}{\text{ServicerStakeWeightMultiplier}}
 $$
+
 {{< /math >}}
 
 where:
 
 {{< math >}}
+
 $$
 \text{Number of bins} = \frac{(\text{ServicerStakeWeightCeiling} - \text{StakeMinimum})}{\text{ServicerStakeFloorMultiplier}} + 1
 $$
+
 {{< /math >}}
 
-and the minimums of each Bin N {{< math >}}($\text{Bin } N_\text{min})${{< /math >}} are defined as:
+and the minimums of each Bin N {{< math >}} ( $\text{Bin } N_\text{min})$ {{< /math >}} are defined as:
 
 
 {{< math >}}
+
 $$
 \text{Bin } N_\text{min} = \text{StakeMinimum} + [(N - 1) \times \text{ServicerStakeFloorMultiplier}]
 $$
+
 {{< /math >}}
 
-so the node's Bin Number is {{< math >}}$N${{< /math >}} when the following is true:
+so the node's Bin Number is {{< math >}} $N$ {{< /math >}} when the following is true:
 
 {{< math >}}
+
 $$
 \text{Bin } N_\text{min} <= \text{Amount of POKT staked} < \text{Bin }(N+1)_\text{min}
 $$
+
 {{< /math >}}
 
 
@@ -286,18 +300,20 @@ We will also assume for all these examples that the StakeMinimum is 15,000 POKT,
 * `ServicerStakeWeightMultiplier` = 1
 
 {{< math >}}
+
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^1}{1}
 $$
+
 {{< /math >}}
 
 
-|Bin|Staked POKT    |Reward Multiplier                             |
-|---|---------------|----------------------------------------------|
-|1  |15,000 - 29,999|{{< math >}}$1^1 / 1 = 1\text{x}${{< /math >}}|
-|2  |30,000 - 44,999|{{< math >}}$2^1 / 1 = 2\text{x}${{< /math >}}|
-|3  |45,000 - 59,999|{{< math >}}$3^1 / 1 = 3\text{x}${{< /math >}}|
-|4  |60,000+        |{{< math >}}$4^1 / 1 = 4\text{x}${{< /math >}}|
+|Bin|Staked POKT    |Reward Multiplier                               |
+|---|---------------|------------------------------------------------|
+|1  |15,000 - 29,999|{{< math >}} $1^1 / 1 = 1\text{x}$ {{< /math >}}|
+|2  |30,000 - 44,999|{{< math >}} $2^1 / 1 = 2\text{x}$ {{< /math >}}|
+|3  |45,000 - 59,999|{{< math >}} $3^1 / 1 = 3\text{x}$ {{< /math >}}|
+|4  |60,000+        |{{< math >}} $4^1 / 1 = 4\text{x}$ {{< /math >}}|
 
 If we change the multiplier to 1.5:
 
@@ -307,17 +323,19 @@ If we change the multiplier to 1.5:
 * `ServicerStakeWeightMultiplier` = 1.5
 
 {{< math >}}
+
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^1}{1.5}
 $$
+
 {{< /math >}}
 
-|Bin|Staked POKT      |Reward Multiplier|
-|---|-----------------|-----------------|
-|1  |15,000 - 29,999  |{{< math >}}$1^1 / 1.5 = 0.67\text{x}${{< /math >}}|
-|2  |30,000 - 44,999  |{{< math >}}$2^1 / 1.5 = 1.33\text{x}${{< /math >}}|
-|3  |45,000 - 59,999  |{{< math >}}$3^1 / 1.5 = 2\text{x}${{< /math >}}   |
-|4  |60,000+          |{{< math >}}$4^1 / 1.5 = 2.67\text{x}${{< /math >}}|
+|Bin|Staked POKT      |Reward Multiplier                                    |
+|---|-----------------|-----------------------------------------------------|
+|1  |15,000 - 29,999  |{{< math >}} $1^1 / 1.5 = 0.67\text{x}$ {{< /math >}}|
+|2  |30,000 - 44,999  |{{< math >}} $2^1 / 1.5 = 1.33\text{x}$ {{< /math >}}|
+|3  |45,000 - 59,999  |{{< math >}} $3^1 / 1.5 = 2\text{x}$ {{< /math >}}   |
+|4  |60,000+          |{{< math >}} $4^1 / 1.5 = 2.67\text{x}$ {{< /math >}}|
 
 If we set the multiplier to 1.5 and change the exponent to 0.5:
 
@@ -327,17 +345,19 @@ If we set the multiplier to 1.5 and change the exponent to 0.5:
 * `ServicerStakeWeightMultiplier` = 1.5
 
 {{< math >}}
+
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^{0.5}}{1.5}
 $$
+
 {{< /math >}}
 
-|Bin|Staked POKT      |Reward Multiplier                                      |
-|---|-----------------|-------------------------------------------------------|
-|1  |15,000 - 29,999  |{{< math >}}$1^{0.5} / 1.5 = 0.67\text{x}${{< /math >}}|
-|2  |30,000 - 44,999  |{{< math >}}$2^{0.5} / 1.5 = 0.94\text{x}${{< /math >}}|
-|3  |45,000 - 59,999  |{{< math >}}$3^{0.5} / 1.5 = 1.15\text{x}${{< /math >}}|
-|4  |60,000+          |{{< math >}}$4^{0.5} / 1.5 = 1.33\text{x}${{< /math >}}|
+|Bin|Staked POKT      |Reward Multiplier                                        |
+|---|-----------------|---------------------------------------------------------|
+|1  |15,000 - 29,999  |{{< math >}} $1^{0.5} / 1.5 = 0.67\text{x}$ {{< /math >}}|
+|2  |30,000 - 44,999  |{{< math >}} $2^{0.5} / 1.5 = 0.94\text{x}$ {{< /math >}}|
+|3  |45,000 - 59,999  |{{< math >}} $3^{0.5} / 1.5 = 1.15\text{x}$ {{< /math >}}|
+|4  |60,000+          |{{< math >}} $4^{0.5} / 1.5 = 1.33\text{x}$ {{< /math >}}|
 
 {{% notice style="info" %}}
 For more information:
