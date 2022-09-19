@@ -141,7 +141,7 @@ For example, this could mean that a node runner who staked twice as much POKT mi
 Staking more POKT does not affect session selection in any way. A node with a higher stake will be selected in the same way as any other node, but when rewards are earned, they may be at a higher multiplier.
 {{% /notice %}}
 
-These rewards multipliers are determined by organizing nodes of various stake amounts into one of a few "bins" (or "tranches"). Roughly, the higher the stake, the "higher" the bin, and the greater the rewards. All nodes that are in the same bin will have the same reward multiplier, regardless of the specific amount of POKT staked.
+These rewards multipliers are determined by organizing nodes of various stake amounts into one of a few "bins" (or "tranches"). Roughly, the higher the stake, the higher the bin number, and the greater the rewards. All nodes that are in the same bin will have the same reward multiplier, regardless of the specific amount of POKT staked.
 
 <!-- Image needed -->
 
@@ -169,7 +169,7 @@ The actual parameter is denoted in [uPOKT](/learn/economics/token/#pokt-denomina
 This parameter denotes **the minimum value of the top bin**. Any amount staked higher than this value will not incur any greater reward.
 
 {{% notice style="info" %}}
-If the amount of POKT staked is higher than the Validator Threshold, the node will earn additional rewards due to being a Validator Node. That is unrelated to Stake-Weighted Servicer Rewards, however.
+If the amount of POKT staked is higher than the Validator Threshold, the node will earn additional rewards due to being a Validator Node. However, that is unrelated to Stake-Weighted Servicer Rewards.
 {{% /notice %}}
 
 When this feature was first implemented, the value was equal to 60,000 POKT, meaning that a node that staked 60,000 or more POKT would always receive the largest multiplier of rewards.
@@ -180,43 +180,43 @@ The actual parameter is denoted in [uPOKT](/learn/economics/token/#pokt-denomina
 
 The number of bins isn't a parameter, but can be inferred from the values of `ServicerStakeFloorMultiplier`, `ServicerStakeWeightCeiling`, and `StakeMinimum` as per the following:
 
-```math
+{{< math >}}
 $$
 \text{Number of bins} = \frac{(\text{ServicerStakeWeightCeiling} - \text{StakeMinimum})}{\text{ServicerStakeFloorMultiplier}} + 1
 $$
-```
+{{< /math >}}
 
 Given the initial conditions supplied above, there are 4 bins.
 
-```math
+{{< math >}}
 $$
 \text{Number of bins} = \frac{(\text{60000} - \text{15000})}{\text{15000}} + 1 = 4
 $$
-```
+{{< /math >}}
 
 The amounts of staked POKT for each bin can be determined from this as well.
 
-|Bin|Minimum|Maximum     |
-|---|-------|-------     |
-|1  |15,000 |29,999      |
-|2  |30,000 |44,999      |
-|3  |45,000 |59,999      | 
-|4  |60,000 |[No maximum]| 
+|Bin Number|Minimum|Maximum     |
+|----------|-------|-------     |
+|1         |15,000 |29,999      |
+|2         |30,000 |44,999      |
+|3         |45,000 |59,999      |
+|4         |60,000 |[No maximum]|
 
 ### ServicerStakeFloorMultiplierExponent ("The Exponent")
 
-The next two parameters determine not the bins, but the multipliers that are applied to those bins to get the final reward multiplier
+The next two parameters determine not the bins, but the multipliers that are applied to those bins to get the final reward multiplier.
 
 This parameter determines how the rewards scale per each bin.
 
 Assuming all else equal, with an exponent of 1 (the initial value when this feature was implemented) the bins would scale linearly:
 
-|Bin|Bin with Exponent|Reward multiplier|
-|---|-----------------|-----------------|
-|1  |1^1              |1x               |
-|2  |2^1              |2x               |
-|3  |3^1              |3x               |
-|4  |4^1              |4x               |
+|Bin Number|Bin with Exponent             |Reward multiplier|
+|----------|------------------------------|-----------------|
+|1         |{{< math >}}$1^1${{< /math >}}|1x               |
+|2         |{{< math >}}$2^1${{< /math >}}|2x               |
+|3         |{{< math >}}$3^1${{< /math >}}|3x               |
+|4         |{{< math >}}$4^1${{< /math >}}|4x               |
 
 Given the other initial conditions listed above, a node that has 30,000 POKT staked (Bin 2) would earn twice as many rewards for the same number of relays as a node that only has 15,000 POKT staked (Bin 1).
 
@@ -234,68 +234,70 @@ For example, if the way nodes are positioned in bins leads to an emission rate o
 
 ### Calculating the reward multiplier
 
-We can now calculate the reward multiplier for a relay on a node, given its amount of staked POKT:
+We can now calculate the reward multiplier for a single relay on a node, given its amount of staked POKT:
 
-```math
+{{< math >}}
 $$
 \text{Reward Amount} = \text{RelaysToTokensMultiplier}\times\text{Reward Multiplier}
 $$
-```
+{{< /math >}}
 
-```math
+{{< math >}}
 $$
-\text{Reward Multiplier} = \frac{\text{Bin Position} ^ \text{ServicerStakeFloorMultiplierExponent}}{\text{ServicerStakeWeightMultiplier}}
+\text{Reward Multiplier} = \frac{\text{Bin Number} ^ \text{ServicerStakeFloorMultiplierExponent}}{\text{ServicerStakeWeightMultiplier}}
 $$
-```
+{{< /math >}}
+
 where:
 
-```math
+{{< math >}}
 $$
 \text{Number of bins} = \frac{(\text{ServicerStakeWeightCeiling} - \text{StakeMinimum})}{\text{ServicerStakeFloorMultiplier}} + 1
 $$
-```
+{{< /math >}}
 
-and the minimums of each Bin N are defined as:
+and the minimums of each Bin N {{< math >}}($\text{Bin } N_\text{min})${{< /math >}} are defined as:
 
 
-```math
+{{< math >}}
 $$
 \text{Bin } N_\text{min} = \text{StakeMinimum} + [(N - 1) \times \text{ServicerStakeFloorMultiplier}]
 $$
-```
+{{< /math >}}
 
-so the node's Bin Position is Bin N when the following is true:
+so the node's Bin Number is {{< math >}}$N${{< /math >}} when the following is true:
 
-```math
+{{< math >}}
 $$
 \text{Bin } N_\text{min} <= \text{Amount of POKT staked} < \text{Bin }(N+1)_\text{min}
 $$
-```
+{{< /math >}}
+
 
 ### Examples of reward multipliers
 
 The following may be helpful in illustrating how the reward multiplier is calculated, and so will focus on the differences between the bins.
 
-We will also assume that the StakeMinimum is 15,000 POKT, as it has always been.
+We will also assume for all these examples that the StakeMinimum is 15,000 POKT, as it has always been.
 
 * `ServicerStakeFloorMultiplier` = 15,000 POKT
 * `ServicerStakeWeightCeiling` = 60,000 POKT
 * `ServicerStakeFloorMultiplierExponent` = 1
 * `ServicerStakeWeightMultiplier` = 1
 
-```math
+{{< math >}}
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^1}{1}
 $$
-```
+{{< /math >}}
 
 
-|Bin|Staked POKT    |Reward multiplier|
-|---|---------------|-----------------|
-|1  |15,000 - 29,999|1^1 / 1 = 1x     |
-|2  |30,000 - 44,999|2^1 / 1 = 2x     |
-|3  |45,000 - 59,999|3^1 / 1 = 3x     |
-|4  |60,000+        |4^1 / 1 = 4x     |
+|Bin|Staked POKT    |Reward Multiplier                             |
+|---|---------------|----------------------------------------------|
+|1  |15,000 - 29,999|{{< math >}}$1^1 / 1 = 1\text{x}${{< /math >}}|
+|2  |30,000 - 44,999|{{< math >}}$2^1 / 1 = 2\text{x}${{< /math >}}|
+|3  |45,000 - 59,999|{{< math >}}$3^1 / 1 = 3\text{x}${{< /math >}}|
+|4  |60,000+        |{{< math >}}$4^1 / 1 = 4\text{x}${{< /math >}}|
 
 If we change the multiplier to 1.5:
 
@@ -304,38 +306,38 @@ If we change the multiplier to 1.5:
 * `ServicerStakeFloorMultiplierExponent` = 1
 * `ServicerStakeWeightMultiplier` = 1.5
 
-```math
+{{< math >}}
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^1}{1.5}
 $$
-```
+{{< /math >}}
 
-|Bin|Staked POKT      |Reward multiplier|
+|Bin|Staked POKT      |Reward Multiplier|
 |---|-----------------|-----------------|
-|1  |15,000 - 29,999  |1^1 / 1.5 = 0.67x|
-|2  |30,000 - 44,999  |2^1 / 1.5 = 1.33x|
-|3  |45,000 - 59,999  |3^1 / 1.5 = 2x   |
-|4  |60,000+          |4^1 / 1.5 = 2.66x|
+|1  |15,000 - 29,999  |{{< math >}}$1^1 / 1.5 = 0.67\text{x}${{< /math >}}|
+|2  |30,000 - 44,999  |{{< math >}}$2^1 / 1.5 = 1.33\text{x}${{< /math >}}|
+|3  |45,000 - 59,999  |{{< math >}}$3^1 / 1.5 = 2\text{x}${{< /math >}}   |
+|4  |60,000+          |{{< math >}}$4^1 / 1.5 = 2.67\text{x}${{< /math >}}|
 
 If we set the multiplier to 1.5 and change the exponent to 0.5:
 
 * `ServicerStakeFloorMultiplier` = 15,000 POKT
 * `ServicerStakeWeightCeiling` = 60,000 POKT
-* `ServicerStakeFloorMultiplierExponent` = 1.5
-* `ServicerStakeWeightMultiplier` = 0.5
+* `ServicerStakeFloorMultiplierExponent` = 0.5
+* `ServicerStakeWeightMultiplier` = 1.5
 
-```math
+{{< math >}}
 $$
 \text{Reward multiplier} = \frac{\text{(Bin Position)}^{0.5}}{1.5}
 $$
-```
+{{< /math >}}
 
-|Bin|Staked POKT      |Reward multiplier  |
-|---|-----------------|-------------------|
-|1  |15,000 - 29,999  |1^0.5 / 1.5 = 0.66x|
-|2  |30,000 - 44,999  |2^0.5 / 1.5 = 0.94x|
-|3  |45,000 - 59,999  |3^0.5 / 1.5 = 1.15x|
-|4  |60,000+          |4^0.5 / 1.5 = 1.33x|
+|Bin|Staked POKT      |Reward Multiplier                                      |
+|---|-----------------|-------------------------------------------------------|
+|1  |15,000 - 29,999  |{{< math >}}$1^{0.5} / 1.5 = 0.67\text{x}${{< /math >}}|
+|2  |30,000 - 44,999  |{{< math >}}$2^{0.5} / 1.5 = 0.94\text{x}${{< /math >}}|
+|3  |45,000 - 59,999  |{{< math >}}$3^{0.5} / 1.5 = 1.15\text{x}${{< /math >}}|
+|4  |60,000+          |{{< math >}}$4^{0.5} / 1.5 = 1.33\text{x}${{< /math >}}|
 
 {{% notice style="info" %}}
 For more information:
