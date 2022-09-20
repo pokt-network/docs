@@ -206,7 +206,7 @@ Denotes the minimum value (in uPOKT) of the top bin, used when organizing nodes 
 
 ### ServicerStakeWeightMultiplier
 
-**Current Value:** 1.4687
+**Current Value:** 1.548
 
 Offsets the increased reward emissions generated due to [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards).
 
