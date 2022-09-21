@@ -54,6 +54,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Polygon Archival             | poly-archival        | 000B         |
 | Polygon Mumbai               | polygon-mumbai       | 000F         |
 | Solana                       | solana-mainnet       | 0006         |
+| Starknet Mainnet             | starknet-mainnet     | 0060         |
+| Starknet Testnet             | starknet-testnet     | 0061         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
 ## Pocket Testnet RelayChains
