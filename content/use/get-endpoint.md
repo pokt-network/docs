@@ -135,6 +135,10 @@ The Portal has overflow protection in case an App in the Always Free plan accide
 
 If your App doesn't hit the 250,000 relay cap, the tiers are identical; the only difference is that you will be asked to enter your payment information during the creation of the App (or during the Upgrade process).
 
+{{% notice style="info" %}}
+If you created an App prior to September 27, 2022, it will show up as "Legacy" instead of "Always Free" or "Pay As You Go". Your App will be grandfathered into a legacy free tier for a limited time, with no rate limiting put in place.
+{{% /notice %}}
+
 ### Calculate usage
 
 On the page where you create your app, there is a pricing calculator that allows you to estimate what the costs could be, given a certain number of relays per day.
