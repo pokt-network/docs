@@ -9,22 +9,22 @@ aliases:
 description: List of all on-chain and relevant off-chain parameters that power Pocket Network.
 ---
 
+This page contains a listing of all the on-chain parameters for Pocket Network, as well as their current values.
 
-## Off-Chain
+These parameters are sorted by module.
 
-### USDRelayTargetRange
+* [Application Module](#application-module)
+* [PoS (Node) Module](#pos-node-module)
+* [Pocket Core Module](#pocket-core-module)
+* [Governance Module](#governance-module)
+* [Auth Module](#auth-module)
+* [Off-chain parameters](#off-chain)
 
-**Current Value:** $0.00036–0.00059 per relay
 
-The range of USD/relay prices the DAO doesn’t want the real price of a relay to exceed, accounting for the USD price of POKT.
-
-### ReturnOnInvestmentTarget
-
-**Current Value:** 10 months
-
-How long the DAO wants it to take for the USD/relay price to be achieved, since the cost basis of a relay decreases over the lifetime of an app stake.
 
 ## Application Module
+
+These parameters control [staked applications](/learn/economics/apps) on the network.
 
 ### ApplicationStakeMinimum
 
@@ -44,25 +44,7 @@ The time, in nanoseconds, that an app must wait after initiating an unstake befo
 
 The number of relays that an app is entitled to for every POKT it stakes, multiplied by 100.
 
-The formula for calculating the `MaxRelays` an app is entitled to is
-
-```math
-$$
-MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
-$$
-```
-
-Where `BaseThroughput` is
-
-```math
-$$
-(BaseRelaysPerPOKT/100) * StakedPOKT
-$$
-```
-
-The `/100` is included in the formula to enable the DAO to make more granular adjustments, since the protocol is unable to use decimal numbers.
-
-In practice, this means if the `BaseRelaysPerPOKT` parameter is 100 then the baseline throughput that apps are entitled to is 1 relay per POKT.
+For example, if this parameter is `200000` then the throughput that apps are entitled to is 2,000 relays per POKT staked.
 
 ### MaxApplications
 
@@ -80,31 +62,22 @@ An app can only be configured for up to this many chains on one stake.
 
 **Current Value:** false
 
-The protocol may adjust an application's `MaxRelays` at the time of staking according to network-wide stake rates, where the ParticipationRate acts as a proxy for utilization of the network on a block by block basis.
+The protocol may adjust an application's `MaxRelays` at the time of staking according to network-wide stake rates.
 
-```math
-$$
-MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
-$$
-```
+The `ParticipationRate` is a proposed tool to dynamically adjust maximum relays for applications without the intervention of the DAO as network usage changes. `ParticipationRate` would act as a proxy for utilization of the network and would adjust an application's `MaxRelays` dynamically based on the growth or decline in network-wide stake rates.
 
-This parameter was set to `false` at genesis and will only be activated if the DAO decides.
+The `ParticipationRate` is not currently implemented, and as such, `ParticiapationRateOn` is set to `false`.
 
 ### StabilityAdjustment
 
 **Current Value:** 0
 
-The DAO may manually adjust an application's `MaxRelays` at the time of staking to correct for short-term fluctuations in the price of POKT, which may not be reflected in ParticipationRate.
+The DAO may manually adjust an application's `MaxRelays` at the time of staking to correct for short-term fluctuations in the price of POKT. When this parameter is set to `0`, no adjustment is being made.
 
-```math
-$$
-MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
-$$
-```
-
-When this parameter is set to `0`, no adjustment is being made.
 
 ## PoS (Node) Module
+
+These parameters relate to [staked nodes](/learn/economics/nodes) on the networ, including [how rewards are calculated](/learn/economics/monetary-policy).
 
 ### BlocksPerSession
 
@@ -117,12 +90,6 @@ The number of blocks allowed before a Session tumbles.
 **Current Value:** 10
 
 The DAO treasury earns this proportion of the total POKT block reward. Value is a percentage. See also [ProposerPercentage](#proposerpercentage) for another beneficiary of the block reward.
-
-### DAOOwner
-
-**Current Value:** a83172b67b5ffbfcb8acb95acc0fd0466a9d4bc4
-
-The account which has the permission to submit governance transactions on behalf of the DAO.
 
 ### DowntimeJailDuration
 
@@ -148,8 +115,8 @@ A node can only be configured for up to this many chains on one stake.
 
 The amount of time (in blocks) a node has to unjail before being force unstaked and slashed.
 
-{{% notice style="danger" %}}
-Warning: Reaching MaxJailedBlocks will result in a node's entire stake being slashed.
+{{% notice style="warning" %}}
+Warning: Reaching `MaxJailedBlocks` will result in a node's entire stake being slashed.
 {{% /notice %}}
 
 ### MaxValidators
@@ -254,7 +221,10 @@ The minimum stake required of a node, denominated in [StakeDenom](#stakedenom), 
 
 The time, in nanoseconds, that a node must wait after initiating an unstake before they can use the POKT for anything else.
 
+
 ## Pocket Core Module
+
+These parameters control the logic that has to do with how the proof and claim cycles for [servicers](/learn/protocol/servicing/) operate.
 
 ### ClaimExpiration
 
@@ -288,11 +258,12 @@ The number of nodes an app will be matched with in a session.
 
 ### SupportedBlockchains
 
-[List of currently supported blockchains](/supported-blockchains/)
+List of the RelayChainIDs for all of the [supported blockchains](/supported-blockchains/).
 
-Only blockchains with sybil-resistant demand from apps are whitelisted to generate revenue for nodes.
 
 ## Auth Module
+
+These parameters control how transactions are constructed.
 
 ### FeeMultiplier
 
@@ -311,3 +282,39 @@ The character limit of transaction memos.
 **Current Value:** 8
 
 The maximum number of signatures that a multi-sig account can have.
+
+
+## Governance Module
+
+These parameters control [governance](/community/governance/) on the Pocket Network.
+
+### ACL
+
+Access control list for updating the on-chain parameters. Currently all parameters are owned and managed by the [`DAOOwner`](#daoowner) address.
+
+### DAOOwner
+
+**Current Value:** a83172b67b5ffbfcb8acb95acc0fd0466a9d4bc4
+
+The account which has the permission to submit governance transactions on behalf of the DAO.
+
+### Upgrade
+
+A list consisting of the block height at which the most recent version of Pocket Core was activated, the block height of the previous version, and the features activated in this version.
+
+
+## Off-Chain parameters
+
+These parameters are not on-chain, but are relevant off-chain values that are targeted by the Pocket DAO.
+
+### USDRelayTargetRange
+
+**Current Value:** $0.00000361 per relay
+
+The target price per relay after a certain amount of usage (equal to the [`ReturnOnInvestmentTarget`](#returnoninvestmenttarget). After usage for this amount of time, your cost per relay will equal this amount. This parameter is set by the DAO.
+
+### ReturnOnInvestmentTarget
+
+**Current Value:** 24 months
+
+The desired time it takes for the [`USDRelayTargetRange`](#usdrelaytargetrange) price to be achieved, since the cost basis of a relay decreases over the lifetime of an app stake.
