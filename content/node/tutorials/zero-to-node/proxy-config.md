@@ -115,14 +115,14 @@ To configure nginx:
         error_log /var/log/nginx/reverse-error.log;
 
         location ~* ^/v1/client/(dispatch|relay|challenge|sim) {
-            proxy_pass http://127.0.0.1:8082;
+            proxy_pass http://127.0.0.1:8081;
             add_header Access-Control-Allow-Methods "POST, OPTIONS";
             allow all;
         }
 
         location = /v1 {
             add_header Access-Control-Allow-Methods "GET";
-            proxy_pass http://127.0.0.1:8082;
+            proxy_pass http://127.0.0.1:8081;
             allow all;
         }
     }
