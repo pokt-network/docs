@@ -1,0 +1,12 @@
+{{ $chains := index $.Site.Data.chains ( (index .Params 0) | lower) }}
+<ul>
+  {{ range $chain := $chains }}
+  <li>
+    <a
+      alt="{{ $chain.name | markdownify }} API Docs"
+      href="{{ $chain.docs_url }}"
+      >{{ $chain.name | markdownify}}</a
+    > – {{ $chain.prefix }}
+  </li>
+  {{ end }}
+</ul>

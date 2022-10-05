@@ -1,7 +1,7 @@
 ---
 title: Get An Endpoint
 menuTitle: Get An Endpoint
-weight: 20
+weight: 10
 aliases:
   - /resources/faq/app-integration
   - /home/resources/faq/app-integration

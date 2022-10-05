@@ -1,0 +1,85 @@
+evm:
+  - name: Avalanche – C-Chain
+    prefix: avax-mannet
+    id: 0003
+    docs_url: /api-docs/avalanche-c-chain-evm
+  - name: Binance Smart Chain
+    prefix: bsc-mainnet
+    id: 0004
+    docs_url: /api-docs/binance-smart-chain-evm
+  - name: Boba
+    prefix: boba-mainnet
+    id: 0048
+    docs_url: /api-docs/boba-evm
+  - name: DFKchain Subnet
+    prefix: avax-dfk
+    id: 03DF
+    docs_url: /api-docs/dfk-evm
+  - name: Dogechain
+    prefix: dogechain-mainnet
+    id: 0059
+    docs_url: /api-docs/dogechain-evm
+  - name: Ethereum
+    prefix: eth-mainnet
+    id: 0021
+    docs_url: /api-docs/ethereum
+  - name: Evmos
+    prefix: evmos-mainnet
+    id: 0046
+    docs_url: /api-docs/evmos-evm
+  - name: Fantom
+    prefix: fantom-mainnet
+    id: 0049
+    docs_url: /api-docs/fantom-evm
+  - name: FUSE
+    prefix: fuse-mainnet
+    id: 0005
+    docs_url: /api-docs/fuse-evm
+  - name: Gnosis Chain
+    prefix: gnosischain-mainnet
+    id: 0027
+    docs_url: /api-docs/gnosis-evm
+  - name: Harmony
+    prefix: harmony-0
+    id: 0040
+    docs_url: /api-docs/harmony-evm
+  - name: IoTeX
+    prefix: iotex-mainnet
+    id: 0044
+    docs_url: /api-docs/iotex-evm
+  - name: Klaytn
+    prefix: klaytn-mainnet
+    id: 0056
+    docs_url: /api-docs/klaytn-evm
+  - name: Meter
+    prefix: meter-mainnet
+    id: 0057
+    docs_url: /api-docs/meter-evm
+  - name: Metis
+    prefix: metis-mainnet
+    id: 0058
+    docs_url: /api-docs/metis-evm
+  - name: Moonbeam
+    prefix: moonbeam-mainnet
+    id: 0050
+    docs_url: /api-docs/moonbeam-evm
+  - name: Moonriver
+    prefix: moonriver-mainnet
+    id: 0051
+    docs_url: /api-docs/moonriver-evm
+  - name: OKExChain
+    prefix: oec-mainnet
+    id: 0047
+    docs_url: /api-docs/okex-evm
+  - name: Optimism
+    prefix: optimism-mainnet
+    id: 0053
+    docs_url: /api-docs/optimism-evm
+  - name: Polygon
+    prefix: poly-mainnet
+    id: 0009
+    docs_url: /api-docs/polygon-evm
+  - name: Swimmer
+    prefix: avax-cra
+    id: 03CB
+    docs_url: /api-docs/swimmer-evm
