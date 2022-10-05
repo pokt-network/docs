@@ -10,6 +10,7 @@ aliases:
   - /paths/app-developer
   - /home/paths/app-developer
   - /home/use/get-endpoint
+  - /use/get-endpoint
 description: Use the Pocket Portal to "mint" endpoints you can use in your decentralized applications to connect to the blockchain of your choice.
 ---
 
@@ -21,15 +22,15 @@ The [Pocket Portal](https://www.portal.pokt.network) is a gateway to a decentral
 
 In this way, the Pocket Portal provides similar functionality to more centralized API services, all while retaining the decentralization that Pocket Network is built on.
 
-The Portal has two usage tiers, an Always Free tier that allows for up to 250,000 relays per day, and a Pay As You Go tier that also offers relays beyond that with a nominal fee. 
+The Portal has two usage tiers, an Always Free tier that allows for up to 250,000 relays per day, and a Pay As You Go tier that also offers relays beyond that with a nominal fee.
 
 ![](/images/portal.png)
 
 **Jump to:**
 
-* [**Create an account**](#create-an-account)
-* [**Explore the Portal**](#explore-the-portal)
-* [**Test Your Endpoint**](#test-your-endpoint)
+- [**Create an account**](#create-an-account)
+- [**Explore the Portal**](#explore-the-portal)
+- [**Test Your Endpoint**](#test-your-endpoint)
 
 ## Create an account
 
@@ -37,8 +38,8 @@ To use the Pocket Portal, you must first create an account.
 
 The Portal accepts two different methods of account creation and authentication:
 
-* Using your email address
-* Using your [GitHub](https://github.com) account
+- Using your email address
+- Using your [GitHub](https://github.com) account
 
 {{% notice style="warning" %}}
 Once you create an account with one login method, you can't switch to another method with that account, so make sure you choose the method that works best for you.
@@ -92,7 +93,6 @@ You can also log in the Portal using your existing GitHub account.
 
 Continue below at [Explore the Portal](#explore-the-portal).
 
-
 ## Explore the Portal
 
 Once you've logged in, you'll be taken to the **Network** page (also known as the **Dashboard**).
@@ -111,8 +111,8 @@ To search for a specific chain and its details, the **Available Networks** secti
 
 Your Portal account is organized into Applications (Apps), which are subdivided into Endpoints.
 
-* An **App** is a project or container that allows you to view network throughput and relays across multiple blockchains.
-* An **Endpoint** is the RPC URL that connects to a specific blockchain via Pocket's network of decentralized nodes.
+- An **App** is a project or container that allows you to view network throughput and relays across multiple blockchains.
+- An **Endpoint** is the RPC URL that connects to a specific blockchain via Pocket's network of decentralized nodes.
 
 **Your account can contain a maximum of two Apps, and each App can contain any number of Endpoints for any number of chains.**
 
@@ -124,8 +124,8 @@ For many users, this is probably all you need. For others, especially with produ
 
 With both of these cases in mind, Pocket Portal offers two tiers: **Always Free** and **Pay As You Go**.
 
-* **Always Free**: Provides 250,000 relays per App per day, through any combination of Endpoints.
-* **Pay As You Go**: Also provides the same 250,000 relays per App per day, through any combination of Endpoints. However, should your App request more than this in a day, you will be charged a per-relay usage fee.
+- **Always Free**: Provides 250,000 relays per App per day, through any combination of Endpoints.
+- **Pay As You Go**: Also provides the same 250,000 relays per App per day, through any combination of Endpoints. However, should your App request more than this in a day, you will be charged a per-relay usage fee.
 
 You can always switch between tiers. If you are hitting your limits in the Always Free tier, you can Upgrade to the Pay As You Go tier. And if you don't need or want the extra daily relays, you can downgrade to the Always Free tier.
 
@@ -152,7 +152,6 @@ This is necessarily an estimate, as the way the relays vary over a period of tim
 {{% /notice %}}
 
 If your App uses less than 250,000 relays per day, across all of your Endpoints, you will not be charged.
-
 
 ### Create an App
 
@@ -186,7 +185,6 @@ Congratulations! You have created an App and are ready to start connecting to Po
 
 ![](/images/portal-apps.png)
 
-
 ### App Overview
 
 Clicking one of your Apps in the list takes you to the App Overview page.
@@ -197,10 +195,10 @@ The App Overview displays all the metrics associated with your App. The charts w
 
 You'll see key details:
 
-* **Endpoints**: List of Endpoints associated with the App, from the list of [supported blockchains](/supported-blockchains). Any number of Endpoints can be created for a given App. 
-* **Portal ID**: Unique identifier for the App. This string is included as part of the URL for each Endpoint.
-* **Secret Key**: Security feature for Apps. If "Private Secret Key Required" is selected in the [Security](#security) section, the Secret Key will need to be sent along with the request using HTTP Basic Authentication.
-* **Public Key**: Unique identifier for a given App that will allow you to inspect the App on-chain.
+- **Endpoints**: List of Endpoints associated with the App, from the list of [supported blockchains](/supported-blockchains). Any number of Endpoints can be created for a given App.
+- **Portal ID**: Unique identifier for the App. This string is included as part of the URL for each Endpoint.
+- **Secret Key**: Security feature for Apps. If "Private Secret Key Required" is selected in the [Security](#security) section, the Secret Key will need to be sent along with the request using HTTP Basic Authentication.
+- **Public Key**: Unique identifier for a given App that will allow you to inspect the App on-chain.
 
 ### Manage Endpoints
 
@@ -226,11 +224,10 @@ All Endpoints have a similar URL structure:
 https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>
 ```
 
-* The network prefix. You can find them on the list of [supported blockchains](/supported-blockchains) in the column **Portal API Prefix**. For example, Ethereum Mainnet is `eth-mainnet`.
-* The main URL (`gateway.pokt.network/v1/`)
-* If it's a load-balanced endpoint (and most of them are), it will also have the `/lb/` prefix.
-* The Portal ID, which is unique to your App.
-
+- The network prefix. You can find them on the list of [supported blockchains](/supported-blockchains) in the column **Portal API Prefix**. For example, Ethereum Mainnet is `eth-mainnet`.
+- The main URL (`gateway.pokt.network/v1/`)
+- If it's a load-balanced endpoint (and most of them are), it will also have the `/lb/` prefix.
+- The Portal ID, which is unique to your App.
 
 ### Requests
 
@@ -244,12 +241,12 @@ The **Security** page for a given App allows you to better secure your Endpoints
 
 ![](/images/portal-security.png)
 
-* **Private Secret Key Required**: When this is enabled every request sent to an Endpoint has to be sent using [HTTP Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) with your Secret Key to be accepted. (When using `curl`, you would add `--user :YOUR-SECRET-KEY`.)
-* **Approved Chains**: Limits the Endpoints to be used only with specific chains. This list need not be exactly the same as the list of Endpoints on the App Overview page.
-* **Whitelist User-Agents**: Limits requests to only the [HTTP User-Agents](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) specified. If a User-Agent not on the list attempts to connect to the Endpoint, the request will be blocked. If nothing is specified, all User-Agents will be accepted.
-* **Whitelist Origins**: Limits requests to only the [HTTP Origins](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin) specified. If an Origin not on the list is used in a request to the Endpoint, the request will be blocked. If nothing is specified, all Origins will be accepted. Wildcards are supported.
-* **Whitelist Contracts**: Limits requests to the smart contract addresses specified. If the Endpoint is used in a contract address not specified in the list, the request will be denied. Each contract address listed is chain-specific. If nothing is specified, all contract addresses on all chains will be valid.
-* **Whitelist Methods**: Limits requests to use specific RPC methods. If a request uses a method not on this list, the request will be denied. Each method listed is chain-specific. If nothing is specified, all methods on all chains will be valid.
+- **Private Secret Key Required**: When this is enabled every request sent to an Endpoint has to be sent using [HTTP Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) with your Secret Key to be accepted. (When using `curl`, you would add `--user :YOUR-SECRET-KEY`.)
+- **Approved Chains**: Limits the Endpoints to be used only with specific chains. This list need not be exactly the same as the list of Endpoints on the App Overview page.
+- **Whitelist User-Agents**: Limits requests to only the [HTTP User-Agents](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) specified. If a User-Agent not on the list attempts to connect to the Endpoint, the request will be blocked. If nothing is specified, all User-Agents will be accepted.
+- **Whitelist Origins**: Limits requests to only the [HTTP Origins](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin) specified. If an Origin not on the list is used in a request to the Endpoint, the request will be blocked. If nothing is specified, all Origins will be accepted. Wildcards are supported.
+- **Whitelist Contracts**: Limits requests to the smart contract addresses specified. If the Endpoint is used in a contract address not specified in the list, the request will be denied. Each contract address listed is chain-specific. If nothing is specified, all contract addresses on all chains will be valid.
+- **Whitelist Methods**: Limits requests to use specific RPC methods. If a request uses a method not on this list, the request will be denied. Each method listed is chain-specific. If nothing is specified, all methods on all chains will be valid.
 
 When making changes, be sure to click **Save** at the bottom of the page.
 
@@ -263,12 +260,12 @@ On this page, you can set up email alerts to be warned when you are approaching 
 
 There are four thresholds available for alerts. Each can be individually toggled:
 
-* 25% of 250,000 relays per day
-* 50% of 250,000 relays per day
-* 75% of 250,000 relays per day
-* 100% of 250,000 relays per day
+- 25% of 250,000 relays per day
+- 50% of 250,000 relays per day
+- 75% of 250,000 relays per day
+- 100% of 250,000 relays per day
 
-You can also see your weekly bandwidth usage on this page, including average, maximum, and minimum values. 
+You can also see your weekly bandwidth usage on this page, including average, maximum, and minimum values.
 
 When making any changes, be sure to click **Save Changes**.
 
@@ -292,20 +289,24 @@ For EVM-based chains such as Ethereum, you can refer to the official [JSON-RPC](
 
 {{< tabs >}}
 {{% tab name="macOS/Linux" %}}
+
 ```
 curl -X POST \\
 -H "Content-Type: application/json" \\
 --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \\
 "https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>"
 ```
+
 {{% /tab %}}
 {{% tab name="Windows" %}}
+
 ```
 curl -X POST ^
 -H "Content-Type: application/json" ^
 --data "{\"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_blockNumber\", \"params\": []}" ^
 "https://<NETWORK>.gateway.pokt.network/v1/lb/<YOUR-PORTAL-ID>"
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -317,10 +318,9 @@ To test out your Endpoint, navigate to the [API Docs](/api-docs/pokt/#/api-docs/
 
 Once on the page, enter your Portal ID in the box on the right and then click **Send API Request**. The response will be shown below.
 
-There are also code samples for various platforms available in the **Request Sample** box. You can copy these code samples and use them in your own test applications. 
+There are also code samples for various platforms available in the **Request Sample** box. You can copy these code samples and use them in your own test applications.
 
 ![](/images/portal-apidocsheightresponse.png)
-
 
 ### More questions?
 

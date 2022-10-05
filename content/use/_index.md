@@ -5,5 +5,3 @@ weight: 50
 aliases:
   - /home/use
 ---
-
-

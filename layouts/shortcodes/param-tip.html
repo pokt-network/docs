@@ -2,13 +2,13 @@
 {{ $param := index $module ( index .Params 1) }}
 <div class="tooltip">
   {{ if .Inner }}
-  {{ .Inner }}
+    {{ .Inner }}
   {{ else }}
-   {{ $param.Name | markdownify }}
-   {{ end }}
-   <span class="tooltiptext">
-	   <b>Value:</b> {{ $param.Value }}
-	   <p>{{ $param.Description }}</p>
-	   <b>Decided By:</b> {{ $param.ManagedBy }}
-   </span>
+    {{ $param.Name | markdownify }}
+  {{ end }}
+  <span class="tooltiptext">
+    <b>Value:</b> {{ $param.Value }}
+    <p>{{ $param.Description }}</p>
+    <b>Decided By:</b> {{ $param.ManagedBy }}
+  </span>
 </div>
