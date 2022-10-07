@@ -300,8 +300,24 @@ The account which has the permission to submit governance transactions on behalf
 
 ### Upgrade
 
-A list consisting of the block height at which the most recent version of Pocket Core was activated, the block height of the previous version, and the features activated in this version.
+**Current Value:**
 
+* Height: 68849
+* Version: 0.9.0
+* OldUpgradeHeight: 57616
+* Features:
+
+  * MREL: 69232
+  * NCUST: 0
+  * REDUP: 57620
+  * RSCAL: 69232
+
+An object describing the details of a protocol upgrade, consisting of the following fields:
+
+* Height: Specifies when the upgrade was applied
+* Version: The version that the upgrade brought
+* OldUpgradeHeight: Block height when the previous upgrade was last applied.
+* Features: A list of feature flags and the block heights at which they should be activated
 
 ## Off-Chain parameters
 
