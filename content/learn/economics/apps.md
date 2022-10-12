@@ -28,4 +28,17 @@ We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the
 
 The maximum relays an app is entitled to is related to the [`BaseRelaysPerPOKT`](/learn/protocol-parameters/#baserelaysperpokt) parameter. For example, if this parameter is `200000` then the throughput that apps are entitled to is 2,000 relays per POKT staked.
 
+
+Relays per staked POKT per session is calculated by:
+
+{{< math >}}
+
+$$
+\text{Relays per Staked POKT per session} = \frac{\text{POKT price in USD (30 day avg)}}{\text{USD Relay Target}\times\text{Sessions per Day}\times\text{Avg Days Per Month}\times\text{ReturnOnInvestmentTarget}}
+$$
+
+{{< /math >}}
+
+<!-- Define BaseThroughput in relationship to BaseRelaysPerPOKT -->
+
 The `BaseRelaysPerPOKT` will be updated at the discretion of the DAO.
