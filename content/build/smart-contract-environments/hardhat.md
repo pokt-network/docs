@@ -1,6 +1,8 @@
 ---
 title: Solidity & Vyper – Hardhat
 menuTitle: Solidty & Vyper – Hardhat
+aliases:
+  - /apps/smart-contract-environments/hardhat
 description: Hardhat is a highly extensible and modular TypeScript-based Ethereum development environment, with a mature Solidity debugging experience.
 weight: 10
 ---

@@ -11,6 +11,7 @@ aliases:
   - /home/paths/app-developer
   - /home/use/get-endpoint
   - /use/get-endpoint
+  - /apps/get-endpoint
 description: Use the Pocket Portal to "mint" endpoints you can use in your decentralized applications to connect to the blockchain of your choice.
 ---
 

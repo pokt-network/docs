@@ -2,6 +2,8 @@
 title: Quickstart
 menuTitle: Quickstart
 weight: 1
+aliases:
+  - /apps/quickstart
 description: Everything you need to get started using Pocket Network in your application.
 ---
 
