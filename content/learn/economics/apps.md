@@ -16,29 +16,74 @@ description: An overview of Pocket Network application economics.
 ---
 
 
-Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly-minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol (assuming they don't change their throughput), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain.
+Pocket Network is a developer-driven protocol, with demand from applications driving the rewards the service nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each relay that is created by an application results in the creation of newly-minted POKT as a reward for the service nodes facilitating such relays. Applications stake just once to access the protocol (assuming they don't change their throughput), using the native cryptocurrency POKT.
 
-The protocol limits the number of Relays an Application may access based on the number of POKT staked in relation to the Protocol Throttling Formula (as defined below). Once an Application stakes POKT, the Maximum Relays (`MaxRelays`) it can use is locked in perpetuity unless the Application re-stakes that POKT or their stake is burned.
+**Once an application stakes POKT, its maximum relay count is locked in perpetuity unless the application re-stakes that POKT or their stake is burned.**
 
 ## Calculating Throughput
 
-When Applications stake POKT, their rate for the number of Relays they may access (`MaxRelays`) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays.
+When applications stake POKT, their rate for the number of relays they may access (`MaxRelays`) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price applications must pay for relays.
 
-We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the real price borne by Applications is within a relatively stable and acceptable range. This $USDPerRelay Target is not an on-chain variable, but a publicly agreed price that the DAO will target with its monetary policy, by adjusting variables in the Protocol Throttling Formula.
+We aim to allow the market to find a USD Relay Target for POKT, to ensure the real price borne by applications is within a relatively stable and acceptable range. [This USD per Relay target is not an on-chain variable](/learn/protocol-parameters/#usdrelaytargetrange), but a publicly agreed price that the DAO will target with its monetary policy.
 
-The maximum relays an app is entitled to is related to the [`BaseRelaysPerPOKT`](/learn/protocol-parameters/#baserelaysperpokt) parameter. For example, if this parameter is `200000` then the throughput that apps are entitled to is 2,000 relays per POKT staked.
-
-
-Relays per staked POKT per session is calculated by:
+Relays per staked POKT for a given session is calculated by:
 
 {{< math >}}
 
 $$
-\text{Relays per Staked POKT per session} = \frac{\text{POKT price in USD (30 day avg)}}{\text{USD Relay Target}\times\text{Sessions per Day}\times\text{Avg Days Per Month}\times\text{ReturnOnInvestmentTarget}}
+\text{Relays per Staked POKT} = \frac{\text{POKT price in USD (30 day avg)}}{\text{USD Relay Target}\times\text{Sessions per day}\times\text{Avg days per month}\times\text{ReturnOnInvestmentTarget}}
 $$
 
 {{< /math >}}
 
-<!-- Define BaseThroughput in relationship to BaseRelaysPerPOKT -->
+For example, given a POKT price of $0.12, a USD Relay Target of $0.00000361 per relay, and a ReturnOnInvestmentTarget of 24 months:
 
-The `BaseRelaysPerPOKT` will be updated at the discretion of the DAO.
+{{< math >}}
+
+$$
+\text{Relays per Staked POKT} = \frac{\text{\$0.12}}{\text{\$0.00000361}\times\text{24}\times\text{30.42}\times\text{24 months}} \approx \text{1.90}
+$$
+
+{{< /math >}}
+
+{{% notice style="info" %}}
+The on-chain parameter [`BaseRelaysPerPOKT`](/learn/protocol-parameters/#baserelaysperpokt) is defined as the above Relays per Staked POKT multiplied by 100, so as to allow for more granularity on-chain. This parameter will be updated at the discretion of the DAO.
+{{% /notice %}}
+
+Another related value of importance is `BaseThroughput`. This is not an on-chain value, but instead a calculation of the total application stake, the total amount of relays your application receives after staking.
+
+The `BaseThroughput` for a given session is calculated as the product of the Relays per Staked POKT (defined above) and the total amount of POKT staked:
+
+{{< math >}}
+
+$$
+\text{BaseThroughput} = \text{Relays per Staked POKT}\times\text{Total Staked POKT}
+$$
+
+{{< /math >}}
+
+This value is constant for the life of the application stake, so regardless of whether the price of POKT or any other input value changes, the BaseThroughput will remain the same. You can think of this as the value that's locked in for the duration of the stake.
+
+From all this, **you can compute the amount of staked POKT required based on the daily average relays you expect your application to use**.
+
+{{< math >}}
+
+$$
+\text{Required Staked POKT} =  \frac{\text{Daily Average Relays Required}}{\text{Relays per Staked POKT} \times \text{Sessions per day}}
+$$
+
+{{< /math >}}
+
+For example, consider an application with a need for 1,200,000 relays per day. That corresponds to a per session relay count—or `BaseThroughput`—of 50,000 relays.
+
+Given a value of Relays per Staked POKT of 1.9 (so a `BaseRelaysPerPOKT` value of 190), the amount of POKT that would be required to be staked is:
+
+{{< math >}}
+
+$$
+\text{Required Staked POKT} =  \frac{\text{1,200,000 relays per day}}{\text{1.9} \times \text{24}} \approx \text{26,316 POKT}
+$$
+
+{{< /math >}}
+
+And recall that even if the price of POKT or any other values change, your initial stake of this amount would guarantee that daily average relay count of 1,200,000 for the duration of the application stake.
