@@ -17,6 +17,13 @@ For example, at the time of writing, a Pocket node requires a minimum of 500GB o
 
 LeanPocket is an optimization to the core client to allow nodes to share resources, significantly reducing resource requirements. This is a non-consensus-breaking change to the client.
 
+The following charts show the benefits of implementing LeanPocket in your node fleet, though individual results will vary.
+
+![Storage requirements: LeanPocket versus normal client](/images/leanpocket-storage-requirements.png)
+
+![RAM usage: LeanPocket versus normal client](/images/leanpocket-ram-usage.png)
+
+
 {{% notice style="info" %}}
 LeanPocket is specifically geared toward multiple nodes running on the same server. If you are running a single node, or wish to keep each of your nodes running on different servers, LeanPocket will not have any benefit or effect.
 {{% /notice %}}
