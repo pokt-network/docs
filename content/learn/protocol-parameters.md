@@ -18,7 +18,7 @@ These parameters are sorted by module.
 * [Pocket Core Module](#pocket-core-module)
 * [Governance Module](#governance-module)
 * [Auth Module](#auth-module)
-* [Off-chain parameters](#off-chain)
+* [Off-chain parameters](#off-chain-parameters)
 
 
 
@@ -315,9 +315,9 @@ The account which has the permission to submit governance transactions on behalf
 An object describing the details of a protocol upgrade, consisting of the following fields:
 
 * Height: Specifies when the upgrade was applied
-* Version: The version that the upgrade brought
-* OldUpgradeHeight: Block height when the previous upgrade was last applied.
-* Features: A list of feature flags and the block heights at which they should be activated
+* Version: Version that the upgrade brought
+* OldUpgradeHeight: Block height when the previous upgrade was last applied
+* Features: List of feature flags and the block heights at which they should be activated
 
 ## Off-Chain parameters
 
