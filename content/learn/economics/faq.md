@@ -69,7 +69,7 @@ See [the section on managing POKT](/pokt/).
 
 The initial supply of POKT is 650M, which is divided according to the following genesis distribution:
 
-![](/images/initial-distribution.jpg)
+![](/images/initial-distribution.png)
 The vast majority of these tokens are non-transferable and subject to use restrictions by the holders, starting from mainnet launch. __
 
 * **Private Sale 1/2:** one-year lockup and use restriction from the date of purchase. Those whose year had already expired pre-mainnet also agreed to an additional lockup according to the following schedule: 50% of tokens unlocked after 6 months, 100% of tokens unlocked after 12 months. 
@@ -85,7 +85,7 @@ The vast majority of these tokens are non-transferable and subject to use restri
 
 This all results in the following circulating supply schedule:
 
-![](/images/circulating-supply-schedule.jpg)
+![](/images/circulating-supply-schedule.png)
 
 ### Fully Diluted Supply
 
