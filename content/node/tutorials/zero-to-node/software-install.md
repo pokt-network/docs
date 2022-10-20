@@ -90,11 +90,11 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     ```
 2. Find the latest version of Go from https://golang.org/dl/ then download it with the following command. (Make sure to change the link below to point to the correct version of Go.)
     ```bash
-    wget https://dl.google.com/go/go1.17.7.linux-amd64.tar.gz
+    wget https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz
     ```
 3. Extract the archive:
     ```bash
-    sudo tar -xvf go1.17.7.linux-amd64.tar.gz
+    sudo tar -xvf go1.19.2.linux-amd64.tar.gz
     ```
 4. Set permissions on the extracted files:
     ```bash
@@ -116,20 +116,35 @@ We could install Go using `apt`, but we want to get the latest stable version wh
     source ~/.profile
     ```
 8. Verify the installation:
-    ```bash
-    go version
-    ```
-    You should see something like this:
-    ```bash
-    go version go1.17.7 linux/amd64
-    ```
-    Make sure the version number matches the version you downloaded. If the `go version` command doesn't work, try logging out and logging back in.
+   {{< tabs >}}
+   {{% tab name="Command" %}}
+   ```
+   go version
+   ```
+   {{% /tab %}}
+   {{% tab name="Response" %}}
+   ```
+   go version go1.19.2 linux/amd64
+   ```
+   {{% /tab %}}
+   {{< /tabs >}}
+   {{% notice style="info" %}}
+   Make sure the version number matches the version you downloaded. If the `go version` command doesn't work, try logging out and logging back in.
+   {{% /notice %}}
 9. Verify the `GOPATH` and `GOBIN` variables are set correctly:
-    ```bash
-    go env
-    ```
-    You should see the `GOPATH` and `GOBIN` variables set correctly.
-
+   {{< tabs >}}
+   {{% tab name="Command" %}}
+   ```bash
+   go env
+   ```
+   {{% /tab %}}
+   {{% tab name="Response" %}}
+   ```
+   GOPATH="/mnt/data/go"
+   GOBIN="/mnt/data/go/bin"
+   ```
+   {{% /tab %}}
+   {{< /tabs >}}
 
 ## Install Pocket
 
@@ -140,32 +155,47 @@ We'll be downloading [Pocket Core](https://github.com/pokt-network/pocket-core/)
 To download and install Pocket Core, do the following:
 
 1. Create a project directory:
-    ```bash
-    sudo mkdir -p $GOPATH/src/github.com/pokt-network
-    ```
+   ```bash
+   sudo mkdir -p $GOPATH/src/github.com/pokt-network
+   ```
 2. Change to the project directory:
-    ```bash
-    cd $GOPATH/src/github.com/pokt-network
-    ```
+   ```bash
+   cd $GOPATH/src/github.com/pokt-network
+   ```
 3. Clone the Pocket Core repository:
-    ```bash
-    sudo git clone https://github.com/pokt-network/pocket-core.git
-    ```
+   ```bash
+   sudo git clone https://github.com/pokt-network/pocket-core.git
+   ```
 4. Change to the code directory:
-    ```bash
-    cd pocket-core
-    ```
-5. Checkout the latest version. You can find the latest tag by going to https://github.com/pokt-network/pocket-core/tags.
-    ```bash
-    sudo git checkout tags/RC-0.8.2
-    ```
+   ```bash
+   cd pocket-core
+   ```
+5. Checkout the latest version. You can find the latest tag by going to https://github.com/pokt-network/pocket-core/tags:
+
+   ```bash
+   sudo git checkout tags/RC-0.9.1.1
+   ```
+   {{% notice style="info" %}}
+   You may see a warning about being in a "detached HEAD" state. This is normal.
+   {{% /notice %}}
+
 6. Build project code:
-    ```bash
-    go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
-    ```
+   ```bash
+   go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
+   ```
 7. Test that the build succeeded:
-    ```bash
-    pocket version
-    ```
+
+   {{< tabs >}}
+   {{% tab name="Command" %}}
+   ```
+   pocket version
+   ```
+   {{% /tab %}}
+   {{% tab name="Response" %}}
+   ```
+   AppVersion: RC-0.9.1.1
+   ```
+   {{% /tab %}}
+   {{< /tabs >}}
 
 That's it for the software installation. Now let's move on to the Pocket core configuration.

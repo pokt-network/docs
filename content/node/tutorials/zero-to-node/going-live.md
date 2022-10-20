@@ -122,7 +122,7 @@ As always, don't forget to change `pokt001.pokt.run` to the DNS name for your no
 This should return something like the following. This is the version of pocket-core that is running.
 
 ```bash
-"RC-0.8.2"
+"RC-0.9.1.1"
 ```
 
 
@@ -148,19 +148,19 @@ Also keep in mind that there is a cost for every transaction you send. At the mo
     ```
 3. Confirm the validator account has enough POKT. This should be at least 15,101 POKT. You'll want 15,100 to stake and a bit more for network fees:
     ```bash
-    pocket query balance {YourValidatorAddress}
+    pocket query balance [YOUR_VALIDATOR_ADDRESS]
     ```
 4. Stake your node, making sure to enter the correct details for your setup:
     ```bash
-    pocket nodes stake custodial {YourValidatorAddress} 15100000000 {ChainIDs} https://{hostname}:443 mainnet 10000 true
+    pocket nodes stake custodial [YOUR_VALIDATOR_ADDRESS] 15100000000 [CHAIN_IDS] https://[HOSTNAME]:443 mainnet 10000 true
     ```
 
 {{% notice style="info" %}}
-The `{ChainIDs}` placeholder should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only set up `0001`, but if you were relaying to multiple chains, each id would be separated by a comma. For example, `0001,0022,0040`.
+The `[CHAIN_IDS]` placeholder should be a list of relay chain IDs that are defined in your `~/.pocket/config/chains.json` file. In this guide we only set up `0001`, but if you were relaying to multiple chains, each id would be separated by a comma. For example, `0001,0022,0040`.
 {{% /notice %}}
 
 {{% notice style="info" %}}
-As of `RC-0.8.2` there are two staking methods: `custodial` and `non-custodial`. The custodial method is used in the example above.
+As of `RC-0.9.1.1` there are [two staking methods](/node/staking): `custodial` and `non-custodial`. The custodial method is used in the example above.
 {{% /notice %}}
 
 After you send the stake command, you'll be prompted for your `passphrase`, then you should see something like this:
@@ -180,7 +180,7 @@ The actual time it takes to stake will vary depending on when the last block was
 After you've staked your node, you can confirm it's live by running the following command:
 
 ```bash
-pocket query node {YourValidatorAddress}
+pocket query node [YOUR_VALIDATOR_ADDRESS]
 ```
 
 If you see something like the following, it just means your node is not live yet:
