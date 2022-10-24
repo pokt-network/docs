@@ -20,7 +20,7 @@ To create a new account on the POKT blockchain and export it:
 import { Pocket } from '@pokt-network/pocket-js'
 
 // PocketJS must always be initialized with at least one dispatcher.
-const POCKET_DISPATCHER = 'https://dispatch-1.nodes.pokt.network:4201'
+const POCKET_DISPATCHER = '<URL_TO_DISPATCH_NODE>'
 const pocket = new Pocket(POCKET_DISPATCHER)
 
 // The passphrase used to encrypt the private key while in memory:
@@ -61,7 +61,7 @@ To import an existing account using either the raw private key or the encrypted 
 import { Pocket } from '@pokt-network/pocket-js'
 
 // PocketJS must always be initialized with at least one dispatcher.
-const POCKET_DISPATCHER = 'https://dispatch-1.nodes.pokt.network:4201'
+const POCKET_DISPATCHER = '<URL_TO_DISPATCH_NODE>'
 const pocket = new Pocket(POCKET_DISPATCHER)
 
 // The passphrase used to encrypt the private key while in memory:
