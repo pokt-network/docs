@@ -49,6 +49,16 @@ const getAPIDocument = async (documentUrl, portalPrefix) => {
         },
       },
     },
+    {
+      url: "{ServerURL}",
+      description: "Custom Server",
+      variables: {
+        ServerURL: {
+          default: "http://localhost:8081",
+          description: "Full custom URL",
+        },
+      },
+    },
   ];
   return JSON.stringify(data);
 };
