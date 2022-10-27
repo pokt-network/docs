@@ -32,9 +32,28 @@ To get a certificate, we'll need to use the `certbot` command with the following
 
 Here's an example of how to request a certificate. Just replace `$HOSTNAME` with the DNS name of your node:
 
+{{< tabs >}}
+{{% tab name="Command" %}}
 ```bash
 sudo certbot --nginx --domain $HOSTNAME --register-unsafely-without-email --no-redirect --agree-tos
 ```
+{{% /tab %}}
+{{% tab name="Response" %}}
+```
+Obtaining a new certificate
+Performing the following challenges:
+http-01 challenge for pokt001.pokt.run
+Waiting for verification...
+Cleaning up challenges
+Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/default
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Congratulations! You have successfully enabled
+https://pokt001.pokt.run
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+```
+{{% /tab %}}
+{{< /tabs >}}
 
 The output from this command should confirm that the certificate was successfully registered.
 
@@ -43,14 +62,34 @@ The output from this command should confirm that the certificate was successfull
 To be sure, you'll also want to test that the certificate is working.
 
 There is a command that certbot provides to test your certificate. It's used for testing the auto-renewal of the certificate but it also confirms that the certificate is working. You can run it using the following command:
+
+{{< tabs >}}
+{{% tab name="Command" %}}
 ```bash
 sudo certbot renew --dry-run
 ```
+{{% /tab %}}
+{{% tab name="Response" %}}
+```
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+** DRY RUN: simulating 'certbot renew' close to cert expiry
+**          (The test certificates below have not been saved.)
+
+Congratulations, all renewals succeeded. The following certs have been renewed:
+  /etc/letsencrypt/live/pokt001.pokt.run/fullchain.pem (success)
+** DRY RUN: simulating 'certbot renew' close to cert expiry
+**          (The test certificates above have not been saved.)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+```
+{{% /tab %}}
+{{< /tabs >}}
+
+
 The resulting output should confirm that the certificate is working.
 
 ## Configure Nginx
 
-Nginx is a web server. We installed it in aprevious step but we need to do some additional configuration. 
+Nginx is a web server. We installed it in a previous step but we need to do some additional configuration.
 
 Nginx uses config files to define servers and routes for incoming requests. For Pocket nodes, nginx needs to relay public requests to a local HTTP server that pocket core is running. This is referred to as the proxy. We'll also need to proxy requests made by the Pocket CLI. For example, when we run the command `pocket query height`, the CLI makes an http request to the node's local HTTP server.
 
@@ -68,7 +107,7 @@ To configure nginx:
     ```bash
     sudo nano /etc/nginx/sites-available/pocket
     ```
-3. Add the following code but change the hostname values (`pokt001.pokt.run`) to your node's DNS hostname:
+3. Add the following code, making sure to change the hostname values (`pokt001.pokt.run`) to your node's DNS hostname in the three places found below:
     ```
     server {
         listen 80 default_server;

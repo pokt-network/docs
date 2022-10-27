@@ -200,4 +200,6 @@ In the Pocket Portal, an exclusive list of HTTP User-Agent request headers that 
 
 ## wPOKT
 
-Wrapped POKT (wPOKT) is an ERC-20 token backed by the native POKT cryptocurrency on the Pocket Network blockchain and held by a set of POKT multisig signers for verification. wPOKT standardizes POKT to the ERC-20 standard, enabling better interoperability, greater liquidity, and access to smart contracts.
+Wrapped POKT (wPOKT) is a proposed ERC-20 token backed by the native POKT cryptocurrency on the Pocket Network blockchain. Wrapped POKT would standardize POKT to the ERC-20 standard, enabling better interoperability, greater liquidity, and access to smart contracts.
+
+Wrapped POKT is not anticipated to be launched until after the release of the new [Pocket v1](/learn/future/) architecture.

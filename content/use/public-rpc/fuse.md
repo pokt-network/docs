@@ -9,8 +9,8 @@ aliases:
 description: Add the FUSE network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube sSg8QWgR_T8 >}}
 
-{{< youtube  >}}
 We have created a public Fuse RPC endpoint with up to 3M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for Fuse, do the following:

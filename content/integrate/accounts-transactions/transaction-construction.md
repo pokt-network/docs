@@ -25,11 +25,11 @@ const SENDER_PRIVATE_KEY = '...'
 const PASSPHRASE = 'foobar'
 
 // PocketJS must always be initialized with at least one dispatcher.
-const POCKET_DISPATCHER = 'https://dispatch-1.nodes.pokt.network:4201'
+const POCKET_DISPATCHER = '<URL_TO_DISPATCH_NODE>'
 
 // To send a transaction, you can use one of the public RPCs or
 // your own Pocket node.
-const POCKET_RPC = 'https://mainnet-1.nodes.pokt.network:4201'
+const POCKET_RPC = '<URL_TO_RPC_NODE>'
 
 const pocket = new Pocket(POCKET_DISPATCHER, POCKET_RPC)
 
@@ -81,7 +81,7 @@ const SENDER_PRIVATE_KEY = '...'
 const PASSPHRASE = 'foobar'
 
 // PocketJS must always be initialized with at least one dispatcher.
-const POCKET_DISPATCHER = 'https://dispatch-1.nodes.pokt.network:4201'
+const POCKET_DISPATCHER = '<URL_TO_DISPATCH_NODE>'
 const pocket = new Pocket(POCKET_DISPATCHER)
 
 // If you are using Pocket Mainnet, make sure to disable legacyCodec

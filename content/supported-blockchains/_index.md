@@ -36,6 +36,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Fantom                       | fantom-mainnet       | 0049         |
 | FUSE                         | fuse-mainnet         | 0005         |
 | FUSE Archival                | fuse-archival        | 000A         |
+| Goerli Archival              | goerli-archival      | 0063         |
 | Gnosis Chain                 | gnosischain-mainnet  | 0027         |
 | Gnosis Chain Archival        | gnosischain-archival | 000C         |
 | Harmony Shard 0              | harmony-0            | 0040         |
@@ -54,6 +55,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Polygon Archival             | poly-archival        | 000B         |
 | Polygon Mumbai               | polygon-mumbai       | 000F         |
 | Solana                       | solana-mainnet       | 0006         |
+| Starknet Mainnet             | starknet-mainnet     | 0060         |
+| Starknet Testnet             | starknet-testnet     | 0061         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
 
 ## Pocket Testnet RelayChains

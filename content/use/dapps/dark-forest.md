@@ -9,8 +9,8 @@ aliases:
 description: Add a Pocket-powered xDAI RPC endpoint in the Dark Forest blockchain game.
 ---
 
+{{< youtube jxfOc4XjJaw >}}
 
-{{< youtube  >}}
 We have issued an xDAI RPC endpoint that grants up to 50M requests per day (& 250 nodes per hour) just for Dark Forest players!
 
 To get started connecting to Pocket's node infrastructure for xDAI in Dark Forest, do the following:

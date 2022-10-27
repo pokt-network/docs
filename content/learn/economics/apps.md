@@ -16,102 +16,74 @@ description: An overview of Pocket Network application economics.
 ---
 
 
-## Important Initial Application Parameters
+Pocket Network is a developer-driven protocol, with demand from applications driving the rewards the service nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each relay that is created by an application results in the creation of newly-minted POKT as a reward for the service nodes facilitating such relays. Applications stake just once to access the protocol (assuming they don't change their throughput), using the native cryptocurrency POKT.
 
-| Item                            | Initial Parameter       |
-| ------------------------------- | ----------------------- |
-| Minimum Application Stake       | 1 POKT                  |
-| Minimum Unbonding Period (Apps) | 21 days                 |
-| BaseRelaysPerPOKT               | 1.67 relays per session |
-| Stability Adjustment            | 0                       |
-| Participation Rate Active       | False                   |
-| Block Time                      | 15 minutes              |
-| Session Time                    | 4 blocks (60 minutes)   |
-| Session Node Count              | 5 nodes                 |
-| Max Chains per Stake            | 15                      |
-
-## Application Economics
-
-Pocket Network is a developer-driven protocol, with demand from Applications driving the rewards the Service Nodes earn. Applications use Pocket Network to retrieve data and write state to and for their blockchain applications. Each Relay that is created by an Application results in the creation of newly-minted POKT as a reward for the Service Nodes facilitating such Relays. Applications stake just once to access the protocol (assuming they don't change their throughput), using the native cryptocurrency POKT which is tied for single-use to the Pocket blockchain.
-
-The protocol limits the number of Relays an Application may access based on the number of POKT staked in relation to the Protocol Throttling Formula (as defined below). Once an Application stakes POKT, the Maximum Relays (`MaxRelays`) it can use is locked in perpetuity unless the Application re-stakes that POKT or their stake is burned.
-
-Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays.
-
-We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the real price borne by Applications is within a relatively stable and acceptable range. This $USDPerRelay Target is not an on-chain variable, but a publicly agreed price that the DAO will target with its monetary policy, by adjusting variables in the Protocol Throttling Formula.
+**Once an application stakes POKT, its maximum relay count is locked in perpetuity unless the application re-stakes that POKT or their stake is burned.**
 
 ## Calculating Throughput
 
-When Applications stake POKT, their rate for the number of Relays they may access (MaxRelays) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors in the Protocol Throttling Formula. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price Applications must pay for Relays.
+When applications stake POKT, their rate for the number of relays they may access (`MaxRelays`) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price applications must pay for relays.
 
-We aim to allow the market to find a $USDPerRelay Target for POKT, to ensure the real price borne by Applications is within a relatively stable and acceptable range. This $USDPerRelay Target is not an on-chain variable, but a publicly agreed price that the DAO will target with its monetary policy, by adjusting variables in the Protocol Throttling Formula.
+We aim to allow the market to find a USD Relay Target for POKT, to ensure the real price borne by applications is within a relatively stable and acceptable range. [This USD per Relay target is not an on-chain variable](/learn/protocol-parameters/#usdrelaytargetrange), but a publicly agreed price that the DAO will target with its monetary policy.
 
-When Applications stake POKT, their rate for the number of Relays they may access (MaxRelays) is locked in for the entire length of the stake. We use the following simple formula to calculate the amount of Relays Applications are entitled to per Session.
+Relays per staked POKT for a given session is calculated by:
 
-```math
+{{< math >}}
+
 $$
-MaxRelays = StabilityAdjustment + (ParticipationRate * BaseThroughput)
+\text{Relays per Staked POKT} = \frac{\text{POKT price in USD (30 day avg)}}{\text{USD Relay Target}\times\text{Sessions per day}\times\text{Avg days per month}\times\text{ReturnOnInvestmentTarget}}
 $$
-```
 
-These three variables, `StabilityAdjustment`, `ParticipationRate`, and `BaseThroughput` aim to dynamically reflect POKT's usage and ensure that Applications will be able to enter the ecosystem adjusting to changes in the market price of POKT.
+{{< /math >}}
 
-To keep the real $USDPerRelay price as close to the $USDPerRelay Target as possible, the Protocol Throttling Formula multiplies `BaseThroughput` by the total `ParticipationRate` of the protocol to reflect any changes in demand for Relays, then the DAO will use the `StabilityAdjustment` in the short-term to correct deviations from the $USDPerRelay Target that are most likely attributed to short-term changes inherent in the random walk of the cryptocurrency/FOREX markets. If the StabilityAdjustment persists above/below zero without resetting, we can attribute the deviation from the $USDPerRelay Target to a more permanent change in POKT's market value, at which point the DAO will update BaseRelaysPerPOKT and reset StabilityAdjustment to zero.
+For example, given a POKT price of $0.12, a USD Relay Target of $0.00000361 per relay, and a ReturnOnInvestmentTarget of 24 months:
 
-Learn more about each variable below.
+{{< math >}}
 
-## Stability Adjustment
-
-The `StabilityAdjustment` parameter helps smooth out pricing for applications because there is a [menu cost](https://en.wikipedia.org/wiki/Menu_cost) associated with changing `BaseRelaysPerPOKT` too often. Applications will be reliant on a relatively stable real `$USDPerRelay` price to access throughput. Community resources and consistent communication will help them make decisions about how much POKT to stake at any given moment.
-
-Pocket's price target optimization problem will rely on off-chain data about a given currency's current exchange rate with POKT, e.g. using `$USDPerPOKT` to measure how close the real `$USDPerRelay` price is to the DAO's current `$USDPerRelay` Target. Short-term fluctuations will therefore be arbitrary depending on which currency has been chosen to anchor the DAO's price target against and what is happening day-to-day in the crypto and FOREX markets; today `$USDPerPOKT` might change by 5% but `€EURPerPOKT` only changes by 1%. It is important that we don't let short-term fluctuations impact the stability and accessibility of the network.
-
-We can therefore use the `StabilityAdjustment` to dynamically adjust the `MaxRelays` computed in the Protocol Throttling Formula, while only changing our “menu price” (`BaseRelaysPerPOKT`) when there is a long-term deviation that can be more assuredly attributed to long-term changes in POKT's value.
-
-The `StabilityAdjustment` will be updated at the discretion of the DAO.
-
-## Participation Rate
-
-Not implemented initially, the `ParticipationRate` is a tool to dynamically adjust max relays for applications without the intervention of the DAO as network usage changes. `ParticipationRate`acts as a proxy for utilization of the network and is reflected on a block by block basis, adjusting an Application’s `MaxRelays` dynamically based on the growth or decline in network-wide stake rates. Participation Rate is calculated by:
-
-```math
 $$
-ParticipationRate = (appStakedPOKT + nodeStakedPOKT) / TotalPOKT
+\text{Relays per Staked POKT} = \frac{\text{\$0.12}}{\text{\$0.00000361}\times\text{24}\times\text{30.42}\times\text{24 months}} \approx \text{1.90}
 $$
-```
 
-The StabilityAdjustment and BaseRelaysPerPOKT help calibrate the natural ParticipationRate. Changes to the $USDPerRelay Target will be made by the Pocket DAO using a proposal system similar to MakerDAO’s [Stability fee votes](https://community-development.makerdao.com/makerdao-mcd-faqs/faqs/stability-fee). 
+{{< /math >}}
 
-As the protocol matures, the market will dictate what price Applications should be paying for Relays, reflected by the Pocket DAO deciding on the $USDPerRelay Target. As the on-chain MaxRelays for Applications adjusts over time, existing Applications with locked-in rates for MaxRelays will be faced with two scenarios:
+{{% notice style="info" %}}
+The on-chain parameter [`BaseRelaysPerPOKT`](/learn/protocol-parameters/#baserelaysperpokt) is defined as the above Relays per Staked POKT multiplied by 100, so as to allow for more granularity on-chain. This parameter will be updated at the discretion of the DAO.
+{{% /notice %}}
 
-* In a downside scenario, where the rate for MaxRelays drops below an Application’s current locked-in rate, Applications are incentivized to keep their POKT staked to continue receiving throughput at an above market rate.
-* In an upside scenario, where the rate for MaxRelays rises above an Application’s current locked-in rate, Applications will be incentivized to unstake and restake their POKT to receive more Relays for the same amount of POKT.
+Another related value of importance is `BaseThroughput`. This is not an on-chain value, but instead a calculation of the total application stake, the total amount of relays your application receives after staking.
 
-Regardless of the scenario, applications are able to benefit from shifts in the market for POKT making the most of their stake. 
+The `BaseThroughput` for a given session is calculated as the product of the Relays per Staked POKT (defined above) and the total amount of POKT staked:
 
-## Base Throughput
+{{< math >}}
 
-BaseThroughput is the baseline number of Relays we aim for an Application to get per POKT staked, assuming no external factors influencing POKT. This is calculated as:
-
-```math
 $$
-BaseThroughput = BaseRelaysPerPOKT * StakedPOKT
+\text{BaseThroughput} = \text{Relays per Staked POKT}\times\text{Total Staked POKT}
 $$
-```
 
-`BaseRelaysPerPOKT` is a uint64, governed by the Pocket DAO, which describes the baseline number of Relays the Pocket DAO aims for each Application to receive per POKT staked. As a multiplier, changing this number more significantly impacts MaxRelays than changing `StabilityAdjustment`. For further granularity, `BaseRelaysPerPOKT` can be expressed as:
+{{< /math >}}
 
-```math
+This value is constant for the life of the application stake, so regardless of whether the price of POKT or any other input value changes, the BaseThroughput will remain the same. You can think of this as the value that's locked in for the duration of the stake.
+
+From all this, **you can compute the amount of staked POKT required based on the daily average relays you expect your application to use**.
+
+{{< math >}}
+
 $$
-BaseRelaysPerPOKT = BaseRelaysPerPOKTNumerator / BaseRelaysPerPOKTDenominator
+\text{Required Staked POKT} =  \frac{\text{Daily Average Relays Required}}{\text{Relays per Staked POKT} \times \text{Sessions per day}}
 $$
-```
 
-This allows the protocol to express decimals in the form of fractional integers, enabling more granularity for the BaseRelaysPerPOKT number.
+{{< /math >}}
 
-Due to the oracle problem, it is not possible to automatically adjust BaseRelaysPerPOKT based on the market price of POKT. The DAO will track indicators (such as ParticipationRate as well as the rate of change of new POKT being staked on the demand side), and adjust Pocket’s economic levers, as necessary, to ensure that Relays remain affordable for Applications.
+For example, consider an application with a need for 1,200,000 relays per day. That corresponds to a per session relay count—or `BaseThroughput`—of 50,000 relays.
 
-To keep the real `$USDPerRelay` price as close to the `$USDPerRelay` Target as possible, the Protocol Throttling Formula multiplies `BaseThroughput` by the total `ParticipationRate` of the protocol to reflect any changes in demand for Relays, then the DAO will use the `StabilityAdjustment` in the short-term to correct deviations from the `$USDPerRelay` Target that are most likely attributed to short-term changes inherent in the random walk of the cryptocurrency/FOREX markets. If the StabilityAdjustment persists above/below zero without resetting, we can attribute the deviation from the `$USDPerRelay` Target to a more permanent change in POKT’s market value, at which point the DAO will update `BaseRelaysPerPOKT` and reset `StabilityAdjustment` to zero.
+Given a value of Relays per Staked POKT of 1.9 (so a `BaseRelaysPerPOKT` value of 190), the amount of POKT that would be required to be staked is:
 
-The `BaseRelaysPerPOKT` will be updated at the discretion of the DAO.
+{{< math >}}
 
+$$
+\text{Required Staked POKT} =  \frac{\text{1,200,000 relays per day}}{\text{1.9} \times \text{24}} \approx \text{26,316 POKT}
+$$
+
+{{< /math >}}
+
+And recall that even if the price of POKT or any other values change, your initial stake of this amount would guarantee that daily average relay count of 1,200,000 for the duration of the application stake.

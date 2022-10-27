@@ -9,8 +9,8 @@ aliases:
 description: Add a Pocket-powered Ethereum RPC endpoint within your local MyCrypto application.
 ---
 
+{{< youtube LTVNN3SBuik >}}
 
-{{< youtube  >}}
 MyCrypto is an open-source, client-side tool for generating Ethereum wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. Developed by and for the community since 2015, they’re focused on building awesome products that put the power in people’s hands.
 
 This is why we want to give users an opportunity to connect to our own infrastructure!

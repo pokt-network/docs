@@ -9,8 +9,8 @@ aliases:
 description: Add the Avalanche (AVAX) network in MetaMask using a Pocket-powered RPC endpoint.
 ---
 
+{{< youtube 9SNGe2tfmmw >}}
 
-{{< youtube  >}}
 We have created a public Avalanche RPC endpoint with up to 1M requests per day to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for Avalanche C-Chain, do the following:

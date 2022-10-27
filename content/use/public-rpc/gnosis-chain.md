@@ -9,8 +9,8 @@ aliases:
 description: How to add the Gnosis Chain in MetaMask with a Pocket-powered RPC Endpoint
 ---
 
+{{< youtube 9nfL7l6YtkU >}}
 
-{{< youtube  >}}
 We have minted a public Gnosis RPC endpoint to give people who use Metamask the opportunity to connect to Pocket's decentralized, censorship-resistant infra.
 
 To get started connecting to Pocket's infrastructure for xDAI, do the following:
