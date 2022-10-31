@@ -12,37 +12,40 @@ This section will detail the hardware and software needed to run a Pocket node.
 
 ## Hardware
 
-**Hardware Requirements:** 4 CPU’s (or vCPU’s) | 16 GB RAM | 500GB Disk
+**Hardware Requirements:** 4 CPUs/vCPUs | 16 GB RAM | 500GB Disk
 
-{{% notice style="info" %}}
-These are just the hardware requirements for your Pocket node. You'll also need to run the full nodes of other blockchains, which may have their own hardware requirements that surpass Pocket's.
+{{% notice style="warning" %}}
+These are just the hardware requirements for your Pocket node. You'll also most likely be running the full nodes of other blockchains, which will have their own hardware requirements.
 {{% /notice %}}
 
 ## Software
 
-There are three ways to install the software you need to run Pocket Network.
+There are three ways to install the software you need to run Pocket Network:
 
-## Source
+* [Source](#source)
+* [Homebrew](#homebrew)
+* [Docker](#docker)
 
-Install your dependencies
+### Source
 
-* [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
+Install your dependencies:
+
+* [go](https://golang.org/doc/install), plus [go environment](https://golang.org/doc/gopath_code.html#Workspaces) environment variables `GOPATH` and `GOBIN`
 * [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Create source code directory
+Create source code directory:
 
-```
+```bash
 mkdir -p $GOPATH/src/github.com/pokt-network && cd $GOPATH/src/github.com/pokt-network
 ```
 
-Download the source code
+Download the source code of [Pocket core](https://github.com/pokt-network/pocket-core):
 
-```
+```bash
 git clone https://github.com/pokt-network/pocket-core.git && cd pocket-core
 ```
 
-Checkout the [latest release](https://github.com/pokt-network/pocket-core/releases)
+Checkout the [latest release](https://github.com/pokt-network/pocket-core/releases) of Pocket core:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -53,33 +56,33 @@ git checkout tags/<release tag>
 
 {{% tab name="Example" %}}
 ```
-git checkout tags/RC-0.8.2
+git checkout tags/RC-0.9.1.3
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-Make sure you have $GOPATH setup
+Make sure you have your $GOPATH environment variable set correctly:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
-```
+```bash
 echo $GOPATH
 ```
 {{% /tab %}}
 
-{{% tab name="Response (Mac)" %}}
-```
-/Users/<your username>/go
+{{% tab name="Sample Response" %}}
+```bash
+/home/<username>/go
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-Build your binary and put it in the $GOPATH/bin directory
+Build from source and place the build in the `$GOPATH/bin` directory:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
-```
-go build -o <$GOPATH/bin directory> <source code directory>/...
+```bash
+go build -o $GOPATH/bin/pocket <Source code directory>/...
 ```
 {{% /tab %}}
 
@@ -90,7 +93,7 @@ go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/a
 {{% /tab %}}
 {{< /tabs >}}
 
-Test your installation
+Test your installation:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -101,30 +104,31 @@ pocket version
 
 {{% tab name="Response" %}}
 ```
-> RC-0.8.2
+> RC-0.9.1.3
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% notice style="info" %}}
-Check your version number against the latest release [here](https://github.com/pokt-network/pocket-core/releases).
+You can find the latest release on the [Pocket Core GitHub pagee](https://github.com/pokt-network/pocket-core/releases).
 {{% /notice %}}
 
 ### Homebrew
 
-Install your dependencies
+You can also use [Homebrew](https://brew.sh) to build Pocket Core instead of building from source.
 
-* [go](https://golang.org/doc/install)
-* [go environment](https://golang.org/doc/gopath_code.html#Workspaces) GOPATH & GOBIN
+Install your dependencies:
+
+* [go](https://golang.org/doc/install), plus the [go environment](https://golang.org/doc/gopath_code.html#Workspaces) and the environment variables `GOPATH` and `GOBIN`
 * Homebrew ([Mac](https://brew.sh) or [Linux](https://docs.brew.sh/Homebrew-on-Linux))
 
-Install using Homebrew
+Install using Homebrew:
 
-```
+```bash
 brew tap pokt-network/pocket-core && brew install pokt-network/pocket-core/pocket
 ```
 
-Test your installation
+Test your installation:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -135,35 +139,45 @@ pocket version
 
 {{% tab name="Response" %}}
 ```
-> RC-0.8.2
+> RC-0.9.1.3
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Docker
 
-See [pokt-network/pocket-core-deployments](https://github.com/pokt-network/pocket-core-deployments)
+See [Pocket Core Deployments on GitHub](https://github.com/pokt-network/pocket-core-deployments) for details on how to install using Docker.
 
 ## Environment
 
 * **Reverse Proxy:** For SSL termination and request management
-* **Ports:** Expose Pocket RPC (Default :8081) and P2P port (Default: 26656)
-* **SSL Cert:** Required for **Validator's serviceURI**
+* **Ports:** Expose Pocket RPC (Default: 8081) and P2P port (Default: 26656)
+* **SSL Cert:** Required for validator's serviceURI
 
-### Set your Open Files Limit
+### Set open files limit
 
-```
+```bash
 ulimit -Sn 16384
 ```
 
-{{% notice style="warning" %}}
-This Open Files Limit is set based on the standard config provided with Pocket Core in `<datadir>/config/config.json`. If you modify your config, you will need to ensure that you modify your Open Files Limit too, according to the formula below.
+{{% notice style="info" %}}
+The value of `ulimit -Sn` should be set to greater than or equal to the sum of the following:
+
+* Maximum inbound peers
+* Maximum outbound peers
+* Maximum open connections
+* gRPC maximum open connections
+* Desired concurrent Pocket RPC connections
+* 100 × Constant number of Write-ahead Logging, database, and other open files
 {{% /notice %}}
 
-The required `ulimit` can be calculated using this formula:
 
-`({ulimit -Sn} >= {MaxNumInboundPeers} + {MaxNumOutboundPeers} + {GRPCMaxOpenConnections} + {MaxOpenConnections} + {Desired Concurrent Pocket RPC connections} + {100 (Constant number of wal, db and other open files)}`
+{{% notice style="warning" %}}
+This limit is set based on the standard configuration provided with Pocket Core in `<POCKET_DATADIR>/config/config.json`. If you modify your config, you will need to ensure that you modify your open files limit as well.
+{{% /notice %}}
 
-### Secure your Server
+### Secure your server
 
-Make sure the server that hosts your node is protected by up-to-date anti-virus and anti-malware software. Protect your node with a firewall but make sure to maintain login access for yourself and keep the above ports open.
+Make sure the server that hosts your node is protected by up-to-date anti-virus and anti-malware software, as well as a firewall.
+
+Your node's private key will be available in plaintext on the server, so your key is only as secure as your server.

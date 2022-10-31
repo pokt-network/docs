@@ -7,10 +7,9 @@ aliases:
 description: This section will detail how to set up your Pocket node.
 ---
 
+Once you have your [environment set up](/node/environment/), you are now ready to deploy your node.
 
-## Deploy Your Validator & Full Nodes
-
-### Create an account
+## Create an account
 
 An account is needed to participate at any level of the network.
 
@@ -38,9 +37,9 @@ Alternatively, you can create your account using the [Wallet app](https://wallet
 pocket accounts import-armored </path/to/ppk.json>
 ```
 
-### Backup the account
+## Backup the account
 
-Backup your private key to an encrypted and ASCII armored json file, to the specified `--path` , using the secure export command. After you hit enter, you will be prompted for the decrypt passphrase and an encryption passphrase for the exported account. You will also have the option to add a hint to help remember your passphrase.
+Backup your private key to an encrypted and ASCII armored JSON file, to the specified `--path` , using the `export` option. You will be prompted for the decrypt passphrase and an encryption passphrase for the exported account. You will also have the option to add a hint to help remember your passphrase.
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -51,7 +50,7 @@ pocket accounts export <address> --path <path>
 
 {{% tab name="Example" %}}
 ```
-pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path /$HOME/super-secret-dir
+pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path $HOME/super-secret-dir
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -63,48 +62,52 @@ Do not use your node's account as your personal account address. Since the node'
 Learn more about [securely managing your POKT accounts](/pokt/).
 
 
-### Fund the account
+## Fund the account
 
-To stake a Validator in Pocket Network, the account must have a balance above the **minimum stake**:
+To stake a node in Pocket Network, the account must have a balance above the minimum stake, which is 15,000 POKT (or 15,000,000,000 uPOKT).
 
-`15,000 POKT` or `15,000,000,000 uPOKT`
-
-{{% notice style="danger" %}}
-The absolute minimum node stake (15,000 POKT) is not _practical_ for real-world usage. 15,100 is a reasonable buffer against operational slashes which can occur on _seemingly properly_ configured nodes as well as misconfigured and misbehaving ones.
+{{% notice style="warning" %}}
+We recommend staking more than the absolute minimum node stake of 15,000 POKT (such as 15,100) as a reasonable buffer against operational slashes which can occur on even properly configured nodes as well as misconfigured and misbehaving ones. If slashes cause your node stake to drop below 15,000, you node will be forcibly unstaked.
 {{% /notice %}}
 
 Send POKT with the following command:
 
-```
-pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 ""
+```bash
+pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "tx message"
 ```
 
-You won't be able to send POKT using your CLI until you have a Validator set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
+You won't be able to send POKT using the command line until you have your node set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
 
 If you're using the testnet, you can fund your account using the [Testnet Faucet](https://faucet.pokt.network).
 
-### Set the account as Validator
+## Set the account operator
 
 ```
 pocket accounts set-validator <address>
 ```
 
 {{% notice style="info" %}}
-Check that it worked with `pocket accounts get-validator`
+Check that the command was successful with `pocket accounts get-validator`
 {{% /notice %}}
 
-### Set Relay Chains
+## Set Relay Chains
 
-A Relay Chain is the blockchain that Validators are running full nodes for in service of Applications. Apps access Relay Chains through the `serviceURI`, the endpoint where Validators publicly expose the Pocket API.
+A Relay Chain is a blockchain that a Pocket node connects to or runs in order to service applications. Applications access Relay Chains through the `serviceURI`, the endpoint where nodes publicly expose the Pocket API. You can view a [list of all the Relay Chains that Pocket supports](/supported-blockchains/).
 
-{{< tabs >}}
-{{% tab name="Command" %}}
-```
+Once you have your Relay Chains properly configured, you can set up your node to serve requests to those Relay Chains via the `generate-chains` command. Relay Chains are referenced through a four digit ID (example: 0021 for Ethereum Mainnet).
+
+{{% notice style="info" %}}
+Relay Chain IDs can be found [here](/supported-blockchains/).
+{{% /notice %}}
+
+```bash
 pocket util generate-chains
 ```
-{{% /tab %}}
 
-{{% tab name="Response" %}}
+A wizard will step you through the process of adding each Relay Chain ID, and will output a `$HOME/.pocket/config/chains.json` file when done.
+
+If you were only servicing Pocket nodes, the response would look like this:
+
 ```
 > Enter the chain of the network identifier:
 <Relay Chain ID> (Example: 0001)
@@ -113,39 +116,33 @@ pocket util generate-chains
 Would you like to enter another network identifier? (y/n)
 n
 ```
-{{% /tab %}}
-{{< /tabs >}}
 
-{{% notice style="info" %}}
-RelayChainIDs can be found [here](/supported-blockchains/).
-{{% /notice %}}
-
-### Setup the Genesis Configuration File
+## Setup the Genesis Configuration File
 
 Genesis files can be found here:
 
 * [Mainnet Genesis File](https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json)
 * [Testnet Genesis File](https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json)
 
-The appropriate genesis file should be placed at `$HOME/.pocket/config/genesis.json`
+The appropriate genesis file should be placed at `.pocket/config/genesis.json`
 
 {{< tabs >}}
 {{% tab name="Mainnet Setup" %}}
 ```
-mkdir -p "$HOME"/.pocket/config
-curl -o "$HOME"/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
+mkdir -p $HOME/.pocket/config
+curl -o $HOME/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
 ```
 {{% /tab %}}
 
 {{% tab name="Testnet Setup" %}}
 ```
-mkdir -p "$HOME"/.pocket/config
-curl -o "$HOME"/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
+mkdir -p $HOME/.pocket/config
+curl -o $HOME/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-### Test your node
+## Test your node
 
 Test that your node is configured correctly by simulating a relay.
 
@@ -159,28 +156,22 @@ Then send a curl request to your validator URL `http://<your node>:<your pocket 
 curl -X POST --data '{"relay_network_id":"<relay chain ID from chains.json>","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' <your node URL>:8081/v1/client/sim
 ```
 
-{{% notice style="success" %}}
-`200 OK` – your transaction has gone through
-{{% /notice %}}
+If successful, you'll see a `200 OK` response. If you see a `400 Bad Request`, you either have incorrect/missing parameters in the request or bad formatting in the data field.
 
-{{% notice style="danger" %}}
-`400 Bad Request` – you either have incorrect/missing parameters in the request or bad formatting in the data field
-{{% /notice %}}
+Finally, stop your node with `Ctrl-C`. If you don't, you'll be leaving --simulateRelay running, which means anyone will have unfiltered access to your node.
 
-Finally, stop your node. If you don't, you'll be leaving --simulateRelay running, which means anyone will have unfiltered access to your node.
-
-### Download the Latest Snapshot
+## Download snapshot
 
 Downloading from the latest snapshot will drastically shorten the time it takes to sync the blockchain. The easiest way is by downloading with `wget` and extracting the archive as it downloads.
 
 ```
-mkdir -p "$HOME"/.pocket/data
-wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C "$HOME"/.pocket/data
+mkdir -p $HOME/.pocket/data
+wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C $HOME/.pocket/data
 ```
 
 Other options for downloading the latest snapshot can be found in the [pocket-snapshotter repo](https://github.com/pokt-foundation/pocket-snapshotter).
 
-### Sync the blockchain
+## Sync the blockchain
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -202,9 +193,9 @@ See the section on [seeds](/node/seeds/) for more details.
 Ensure the node is all the way synced before proceeding to the next step.
 {{% /notice %}}
 
-### Stake the Validator
+## Stake the node
 
-Stake the account to participate in the Network as a Validator. Staking a Validator locks up POKT tokens that can be burned as a security mechanism for bad acting.
+Stake the account to participate in the network. Staking as a servicer node locks up POKT tokens that can be burned as a security mechanism for bad acting.
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -224,7 +215,7 @@ pocket nodes stake custodial 3ee61299d5bbbd2974cddcc194d9b547c7629546 2000000000
 Read more about [custodial versus non-custodial staking](/node/staking/).
 {{% /notice %}}
 
-**You should leave 1 POKT liquid (unstaked) to pay the transaction fees for your node's claim and proof transactions.**
+**You should at least 1 POKT unstaked to pay the transaction fees for your node's claim and proof transactions.**
 
 All node runners must always maintain a liquid (unstaked) balance of at least 0.02 POKT in order to submit the claim and proof transactions (which each have a transaction fee of 0.01 POKT) that generate their rewards. If a node successfully submits both the claim and proof, they will earn enough POKT to submit the next claims and proofs, and so on. However, if a node falls below a liquid balance of 0.02 POKT, their revenue will be halted.
 
@@ -238,140 +229,6 @@ If you manage to successfully submit the claim transaction, you then have 120 bl
 Pre-staking is the act of a node runner staking on a RelayChainID prior to spinning up the RelayChain node. This behavior has an extremely negative impact on the quality of service for new chains due to apps being matched in sessions with Pocket nodes that don't actually have RelayChain nodes connected to them. If you do this, your node will be challenged and slashed. You should always deploy your RelayChain node and simulate relays before staking your Pocket node for the RelayChainID.
 {{% /notice %}}
 
-{{% notice style="danger" %}}
-If your stake falls below `15,000 POKT` your node will be force-unstake burned. We recommend having a buffer above the 15,000 minimum (e.g. 15,100-16,000) so that minor slashing doesn't result in loss of the entire stake.
-{{% /notice %}}
-
-{{% notice style="success" %}}
-
-** Achievement Unlocked**
-
-If you staked your node successfully, you just earned your first trophy, which can help you ultimately earn a vote in the DAO. Learn more about how to [claim your vote](/community/trophies/).
-{{% /notice %}}
-
-## Upgrade Your Node
-
-### Release-specific Changes
-
-Each release may have specific modifications you need to make. This is just a general guideline for the steps you'll typically take to upgrade your node. Check the [release notes](https://github.com/pokt-network/pocket-core/releases) for release-specific details.
-
-### 1. Shutdown Pocket Core
-
-Stop your Pocket Core instance running by submitting the shutdown command.
-
-```
-pocket stop
-```
-
-{{% notice style="warning" %}}
-Once you shutdown Pocket Core, you will have 4 blocks (60 minutes) to complete the upgrade and start Pocket Core again before your node gets jailed for downtime.
-{{% /notice %}}
-
-### 2. Backup Your Blockchain Data
-
-Backing up your blockchain data will ensure a faster resync when you restart your node.
-
-Navigate inside your `$HOME/.pocket/` dir and save `data/` (the entire directory):
-
-```
-cp -r ~/.pocket/data ~/backup/data
-```
-
-In the event of a corrupted database you can delete the bad data `rm -r ~/.pocket/data` and replace it with your backup `cp -r ~/backup/data ~/.pocket/data`.
-
 {{% notice style="info" %}}
-If you don't have a backup, a temporary backup datadir may be provided alongside a release.
+Staking a node successfully will earn you a trophy which can help you ultimately earn a vote in the DAO. Learn more about how to [claim your vote](/community/trophies/).
 {{% /notice %}}
-
-### 3. Ensure the Latest Golang Version
-
-Check your golang version. The release notes will specify which version it should be.
-
-```
-go version
-```
-
-If you need to upgrade, use [this guide](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753).
-
-Alternatively, if you use `g`, you can just run
-
-```
-sudo apt-get update
-g install <version number>
-```
-
-### 4. Rebuild or Upgrade Your Binary
-
-#### Source
-
-Navigate into `pocket-core` directory
-
-```
-cd ~/go/src/github.com/pokt-network/pocket-core
-```
-
-Checkout the [latest release](https://github.com/pokt-network/pocket-core/releases)
-
-```
-git pull
-git checkout tags/<release tag>
-```
-
-Rebuild the binary
-
-```
-go build -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
-```
-
-#### Homebrew
-
-Pull the latest tap
-
-```
-brew upgrade pokt-network/pocket-core/pocket
-```
-
-#### Docker
-
-Pull the latest container image
-
-{{< tabs >}}
-{{% tab name="Option 1" %}}
-```
-docker pull poktnetwork/pocket-core:RC-0.8.2
-```
-{{% /tab %}}
-
-{{% tab name="Option 2" %}}
-```
-docker pull poktnetwork/pocket:RC-0.8.2
-```
-{{% /tab %}}
-{{< /tabs >}}
-
-### 5. Upgrade Your config.json
-
-Run the update-configs command, which creates a new config file (`DATADIR/config/config.json`) and backs up the old config file (`DATADIR/config/config.json.bk`).
-
-```
-pocket util update-configs
-```
-
-You'll need to manually compare your backup file with the new file to copy over your personal config details.
-
-### 6. Start Pocket
-
-Start `pocket` running again.
-
-```
-pocket start
-```
-
-## Earn Trophies, Join the DAO
-
-You can earn a vote in the DAO and help shape the future of Pocket Network, including deciding which ecosystem tooling our treasury supports and how we configure important on-chain parameters such as node revenue.
-
-Once you've staked your node successfully, join our [Discord](https://discord.gg/pokt) and report this in the [🏆trophies](https://discord.com/channels/553741558869131266/763504639299289138) channel.
-
-This is your first trophy on the path to [earning a vote in the DAO](/community/trophies/). Learn more on the [Node Runners](/community/trophies/node-runners/) page.
-
