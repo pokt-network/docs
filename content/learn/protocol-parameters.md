@@ -143,7 +143,7 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 ### RelaysToTokensMultiplier
 
-**Current Value:** 1077
+**Current Value:** 832
 
 The amount of POKT, denominated in [StakeDenom](#stakedenom), that is minted as block rewards per relay.
 
@@ -173,7 +173,7 @@ Denotes the minimum value (in uPOKT) of the top bin, used when organizing nodes 
 
 ### ServicerStakeWeightMultiplier
 
-**Current Value:** 1.693
+**Current Value:** 1.734
 
 Offsets the increased reward emissions generated due to [Stake-Weighted Servicer Rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards).
 
