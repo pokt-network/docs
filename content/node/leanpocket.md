@@ -61,7 +61,13 @@ To enable LeanPocket:
 
 5. If you run a script that starts the Pocket service, add `--keybase=false` to the `pocket start` command.
 
-6. Restart your Pocket service, making sure to add the `--keybase=false` option.
+6. Edit your proxy settings such that the `/v1` endpoint is publicly accessible for every one of your nodes.
+
+   {{% notice style="warning" %}}
+   Failure to do this will prevent your nodes from broadcasting the correct version, which will interfere with consensus-related upgrades. When properly configured, all of your nodes should output the current version of Pocket Core on the `/v1` endpoint.
+   {{% /notice %}}
+
+7. Restart your Pocket service, making sure to add the `--keybase=false` option.
 
 ## Tips
 
