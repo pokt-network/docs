@@ -20,6 +20,13 @@ Pocket Network is a developer-driven protocol, with demand from applications dri
 
 **Once an application stakes POKT, its maximum relay count is locked in perpetuity unless the application re-stakes that POKT or their stake is burned.**
 
+{{% notice style="info" %}}
+Direct application staking isn't currently available. We aim to implement this feature in the beginning of 2023.
+
+Currently, the way to connect Pocket to your applications is through the [Pocket Portal](https://www.portal.pokt.network/). You can mint an Endpoint in the Portal for any [supported blockchains](/supported-blockchains/) which you can then use in your dApps. You can get up to 250,000 relays per day for free, with other paid options available. [Read more about the Portal.](/build/get-endpoint/)
+{{% /notice %}}
+
+
 ## Calculating Throughput
 
 When applications stake POKT, their rate for the number of relays they may access (`MaxRelays`) is locked in for the entire length of the stake. Due to the oracle problem, the protocol cannot infer external factors that might influence the market price of POKT, or therefore account for these factors. This introduces a risk to the demand side of the protocol, where fluctuations in the market price of POKT may affect the price applications must pay for relays.
