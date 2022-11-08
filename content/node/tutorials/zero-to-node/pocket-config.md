@@ -14,7 +14,7 @@ This section will help you configure your instance of Pocket.
 
 ## Download snapshot
 
-Rather than synchronizing your Pocket node from block zero (which could take weeks), you can use a snapshot. A snapshot of the Pocket blockchain is taken every 12 hours and can be downloaded using the instructions on the [Pocket Snapshots Repository](https://github.com/pokt-network/pocket-snapshots) page. 
+Rather than synchronizing your Pocket node from block zero (which could take weeks), you can use a snapshot. A snapshot of the Pocket blockchain is taken every 12 hours and can be downloaded using the instructions on the [Pocket Snapshots Repository](https://github.com/pokt-foundation/pocket-snapshotter) page.
 
 {{% notice style="info" %}}
 As of this writing, the snapshots are refreshed every 12 hours. In the GitHub repo you can look at when the `README.md` file was last updated to determine when the last snapshot was taken. It's best to download the snapshot that is less than a few hours old.
