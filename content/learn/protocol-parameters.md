@@ -143,7 +143,7 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 ### RelaysToTokensMultiplier
 
-**Current Value:** 832
+**Current Value:** 719
 
 The amount of POKT, denominated in [StakeDenom](#stakedenom), that is minted as block rewards per relay.
 
@@ -302,13 +302,13 @@ The account which has the permission to submit governance transactions on behalf
 
 **Current Value:**
 
-* Height: 68849
-* Version: 0.9.0
-* OldUpgradeHeight: 57616
+* Height: 74616
+* Version: 0.9.1.1
+* OldUpgradeHeight: 74540
 * Features:
 
   * MREL: 69232
-  * NCUST: 0
+  * NCUST: 74620
   * REDUP: 57620
   * RSCAL: 69232
 
