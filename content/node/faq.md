@@ -86,6 +86,10 @@ source ~/.bashrc
 
 To opt out of being selected for work, you should deliberately jail your node, which lets the network know you are not ready to receive any relays. Once the machine is back up and running, you can unjail your node again.
 
+### Can I change the output address for my node when doing non-custodial staking?
+
+You can't edit an existing output address for your node stake. You will have to instead unstake your node and then restake with a different output address. Keep in mind that when you unstake, your staked POKT will be sent to the output address you originally set when staking your node, so make sure you have access to that account. [Learn more about non-custodial staking.](/node/staking/)
+
 
 ## Node Troubleshooting
 
