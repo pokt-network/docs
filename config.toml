@@ -2,7 +2,7 @@ baseURL = 'https://docs.pokt.network'
 languageCode = 'en-us'
 title = 'Pocket Network'
 theme = 'relearn'
-googleAnalytics = '304969019'
+googleAnalytics = 'G-GNTDZXJPH0'
 summaryLength = 35
 
 # Theme specific parameters
