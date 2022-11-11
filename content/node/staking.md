@@ -1,5 +1,5 @@
 ---
-title: Custodial and Non-Sustodial Staking
+title: Custodial and Non-Custodial Staking
 menuTitle: Custodial and Non-Custodial Staking
 weight: 30
 aliases:
