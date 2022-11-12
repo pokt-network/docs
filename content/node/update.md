@@ -96,13 +96,13 @@ Pull the latest container image:
 {{< tabs >}}
 {{% tab name="Option 1" %}}
 ```
-docker pull poktnetwork/pocket-core:RC-0.9.1.3
+docker pull poktnetwork/pocket-core:{{< pocket-version >}}
 ```
 {{% /tab %}}
 
 {{% tab name="Option 2" %}}
 ```
-docker pull poktnetwork/pocket:RC-0.9.1.3
+docker pull poktnetwork/pocket:{{< pocket-version >}}
 ```
 {{% /tab %}}
 {{< /tabs >}}

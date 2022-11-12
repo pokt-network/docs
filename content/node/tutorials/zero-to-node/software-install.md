@@ -173,7 +173,7 @@ To download and install Pocket Core, do the following:
 5. Checkout the latest version. You can find the latest tag by going to https://github.com/pokt-network/pocket-core/tags:
 
    ```bash
-   sudo git checkout tags/RC-0.9.1.1
+   sudo git checkout tags/{{< pocket-version >}}
    ```
    {{% notice style="info" %}}
    You may see a warning about being in a "detached HEAD" state. This is normal.
@@ -193,7 +193,7 @@ To download and install Pocket Core, do the following:
    {{% /tab %}}
    {{% tab name="Response" %}}
    ```
-   AppVersion: RC-0.9.1.1
+   AppVersion: {{< pocket-version >}}
    ```
    {{% /tab %}}
    {{< /tabs >}}

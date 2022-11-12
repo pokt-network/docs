@@ -55,8 +55,8 @@ git checkout tags/<release tag>
 {{% /tab %}}
 
 {{% tab name="Example" %}}
-```
-git checkout tags/RC-0.9.1.3
+```bash
+git checkout tags/{{< pocket-version >}}
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -104,7 +104,7 @@ pocket version
 
 {{% tab name="Response" %}}
 ```
-> RC-0.9.1.3
+AppVersion: {{< pocket-version >}}
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -139,7 +139,7 @@ pocket version
 
 {{% tab name="Response" %}}
 ```
-> RC-0.9.1.3
+AppVersion: {{< pocket-version >}}
 ```
 {{% /tab %}}
 {{< /tabs >}}

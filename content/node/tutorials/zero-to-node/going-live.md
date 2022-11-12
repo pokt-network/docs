@@ -119,10 +119,10 @@ curl https://pokt001.pokt.run:8081/v1
 As always, don't forget to change `pokt001.pokt.run` to the DNS name for your node.
 {{% /notice %}}
 
-This should return something like the following. This is the version of pocket-core that is running.
+This should return the following. This is the version of pocket-core that is running.
 
 ```bash
-"RC-0.9.1.1"
+"{{< pocket-version >}}"
 ```
 
 
@@ -160,7 +160,7 @@ The `[CHAIN_IDS]` placeholder should be a list of relay chain IDs that are defin
 {{% /notice %}}
 
 {{% notice style="info" %}}
-As of `RC-0.9.1.1` there are [two staking methods](/node/staking): `custodial` and `non-custodial`. The custodial method is used in the example above.
+As of `RC-0.9.1.3` there are [two staking methods](/node/staking): `custodial` and `non-custodial`. The custodial method is used in the example above.
 {{% /notice %}}
 
 After you send the stake command, you'll be prompted for your `passphrase`, then you should see something like this:
