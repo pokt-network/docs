@@ -1,1 +1,1 @@
-{{ .Site.Data.versions.pocketCore }}
+{{ range getJSON "https://api.github.com/repos/pokt-network/pocket-core/tags?per_page=1" }}{{.name}}{{end}}
