@@ -68,11 +68,11 @@ Navigate into `pocket-core` directory
 cd ~/go/src/github.com/pokt-network/pocket-core
 ```
 
-Checkout the [latest release](https://github.com/pokt-network/pocket-core/releases)
+Check out the [latest release](https://github.com/pokt-network/pocket-core/releases):
 
 ```
 git pull
-git checkout tags/<release tag>
+git checkout tags/{{< pocket-version >}}
 ```
 
 Rebuild the binary:
