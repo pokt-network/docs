@@ -138,3 +138,6 @@ weight = 80
 [Languages]
 [Languages.en]
 landingPageName = "Welcome to Pocket"
+
+# In case we get errors trying to download data
+ignoreErrors = ["error-remote-getjson"]
