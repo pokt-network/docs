@@ -152,7 +152,7 @@ Also keep in mind that there is a cost for every transaction you send. At the mo
     ```
 4. Stake your node, making sure to enter the correct details for your setup:
     ```bash
-    pocket nodes stake custodial [YOUR_VALIDATOR_ADDRESS] 15100000000 [CHAIN_IDS] https://[HOSTNAME]:443 mainnet 10000 true
+    pocket nodes stake custodial [YOUR_VALIDATOR_ADDRESS] 15100000000 [CHAIN_IDS] https://[HOSTNAME]:443 mainnet 10000 false
     ```
 
 {{% notice style="info" %}}
