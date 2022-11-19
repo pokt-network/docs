@@ -103,6 +103,10 @@ Any Pocket node command successfully issued (for example, to adjust the stake) w
 
 If you wish to change your output address, you can first unstake the node, and the rewards will be sent to that address. Then you can restake the node with a new output address.
 
+{{% notice style="info" %}}
+Make sure the operator account has some POKT left after staking, as it will still be responsible for ongoing claim and proof transactions, which each carry a 0.01 POKT transaction fee.
+{{% /notice %}}
+
 ## More information
 
 * [PIP-9 Consensus Rule Change](https://forum.pokt.network/t/pip-9-consensus-rule-change-rc-0-8-0/1351)
