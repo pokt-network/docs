@@ -34,7 +34,7 @@ In addition, this output account has much the same authority over the node as th
 {{% notice style="warning" %}}
 **The output account can't be changed after staking**, so it is vitally important to both make sure your output account is set correctly in the staking command, as well as to ensure access (keys) to that output account address.
 
-**Failure to do both of these tasks will result in all rewards and staked funds being sent to an inaccessible account.**
+**Failure to do both of these tasks will result in all rewards and staked funds being sent to an inaccessible account and lost forever!**
 {{% /notice %}}
 
 ![](/images/non-custodial-staking.png)
