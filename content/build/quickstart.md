@@ -38,7 +38,7 @@ Libraries](/apps/libraries/)**.
 If you're a smart contract developer needing access to live chains in your
 development environment, a collection of how to of examples of how to leverage
 your Portal endpoint can be found under **[Smart Contract
-Enviornments](/apps/smart-contract-environments/)**.
+Environments](/apps/smart-contract-environments/)**.
 
 ### Interacting Directly with the Chain
 
