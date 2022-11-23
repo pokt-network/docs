@@ -1,22 +1,28 @@
 ---
-title: Manage POKT
-menuTitle: Manage POKT
+title: POKT Wallets
+menuTitle: POKT Wallets
 weight: 10
 aliases:
   - /home/pokt/wallets
-description: Learn about the Pocket Wallet and how to store your POKT safely.
+description: Learn about POKT-compatible wallets and how to store your POKT safely.
 ---
-
 
 Before buying any POKT, you should first ensure that you know how to store it safely.
 
-## Create Wallet
+In this section, we'll describe how to store and manage your POKT.
 
-You can use the [official wallet web app](https://wallet.pokt.network) to create your wallet. _Note: desktop and Ledger apps are in development. This documentation will be updated when they are available to use._
+## Pocket Wallet
 
-1. Click 'Create'.
+You can use the [official wallet web app](https://wallet.pokt.network) to create and manage your wallet.
+
+### Create wallet
+
+To create a POKT wallet with the official Pocket wallet web app You can use the [official wallet web app](https://wallet.pokt.network) to create your wallet.
+
+1. Click "Create".
 
 ![](/images/ClickCreate.png)
+
 2. Enter a unique passphrase.
 
 ![](/images/CreatePassword.png)
@@ -33,7 +39,7 @@ If you accidentally click Back, as long as you downloaded your Key File and save
 Make sure to store your Key File safely, if you lose it you will only be able to use the Private Key method to import your wallet anywhere. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase.
 {{% /notice %}}
 
-4. Click “Reveal Private Key” then enter your passphrase again to reveal the Private Key for your wallet.
+4. Click "Reveal Private Key" then enter your passphrase again to reveal the Private Key for your wallet.
 
 ![](/images/ClickRevealKey.png)
 ![Private Key obfuscated for security](/images/CreateRevealPrivateKey.png)
@@ -41,11 +47,11 @@ Make sure to store your Key File safely, if you lose it you will only be able to
 Store your Private Key safely. This will be a second method for you to import your wallet in the event that you lose your Key File or passphrase. However, this is also less secure than the Key File since the Key File is encrypted by your passphrase.
 {{% /notice %}}
 
-{{% notice style="danger" %}}
+{{% notice style="warning" %}}
 Never reveal your Private Key to anyone. If someone has access to your Private Key, they have full access to all the funds. The only application that should ever need access to your Private Key is a wallet.
 {{% /notice %}}
 
-## Backup Wallet
+### Backup wallet
 
 It is important that you back up your Key File, passphrase, and private key securely. There are two considerations when choosing a backup method:
 
@@ -55,7 +61,7 @@ It is important that you back up your Key File, passphrase, and private key secu
 The most secure way to prevent theft is to store your Key File, passphrase, and private key on a USB drive (or other secure external drive), disconnected from any online "cloud" service or internet-connected computer that can be hacked.
 
 {{% notice style="info" %}}
-POKT will soon have Ledger support, which provides a little more advanced functionality than a USB drive, but there is no ETA on this.
+POKT is planned to have Ledger support soon, which will provide more advanced functionality than a USB drive.
 {{% /notice %}}
 
 For extra-secure theft prevention, you should split the Key File, passphrase and private key across separate drives and password-protect these drives so that anyone who gets their hands on a drive can't access the contents. For extra loss prevention, you should make multiple copies of these drives and store them in different locations, such as a personal safe, the safe of a trusted family member, and a bank safety deposit box.
@@ -66,12 +72,12 @@ Once you have created your backups, delete all traces of the Key File, passphras
 For more convenience, you may consider using a password manager that can store encrypted files. Just be mindful that you risk theft if your master password is compromised and you risk loss if you forget your master password.
 {{% /notice %}}
 
-## Import Wallet
+### Import wallet
 
 The [official wallet web app](https://wallet.pokt.network) has two methods of importing your wallet. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase.
 
 ![](/images/ClickImport.png)
-### Key File Import
+#### Key File import
 
 Click Select File then choose your `keyfile.json` from your local file explorer.
 
@@ -80,7 +86,7 @@ Enter your Key File passphrase, which you specified when creating the wallet.
 Click Import.
 
 ![](/images/ImportKeyFile.png)
-### Private Key Import
+#### Private key import
 
 Enter your Private Key.
 
