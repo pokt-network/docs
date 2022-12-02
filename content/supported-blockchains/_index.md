@@ -18,7 +18,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 
 | Name                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
-| Algorand                     | algo-mainnet         | 0029         |
 | Avalanche                    | avax-mainnet         | 0003         |
 | Binance Smart Chain          | bsc-mainnet          | 0004         |
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
