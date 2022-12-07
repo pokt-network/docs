@@ -104,13 +104,18 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ## SendWallet
 
-[SendWallet](https://sendwallet.net) is a browser extension available for Chrome and Firefox. It is similar to MetaMask in that it generates keys based on a mnemonic phrase ("hierarchical deterministic"). One mnemonic phrase can generate many wallets.
+[SendWallet](https://sendwallet.net/) is a Pocket Network wallet run by the community. SendWallet makes it easy to send and receive POKT on the Pocket Network. SendWallet can also stake your POKT on Pocket Network without running a Pocket Network node.
 
-SendWallet supports creating or importing POKT wallets in the following ways:
+![](/images/sendwallet.jpg)
 
-* Generate a new mnemonic phrase
-* Import an existing mnemonic phrase
+SendWallet features:
+
 * Import using the Key File from a Pocket Wallet
 * Import using a private key
+* Generate multiple wallet addresses with one account
+* Recovery phrase to recover wallet
+* Full screen option
 
-To learn more about how to use SendWallet, [see the SendWallet documentation](https://docs.sendwallet.net).
+You can try SendWallet by downloading the browser extension for [Chrome](https://chrome.google.com/webstore/detail/sendwallet/adganlhbinonbpfiehjjpmklkbghkaio?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/sendwallet/).
+
+For more information on how to use SendWallet, see the [SendWallet documentation](https://docs.sendwallet.net/).
