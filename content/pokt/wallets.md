@@ -9,7 +9,15 @@ description: Learn about POKT-compatible wallets and how to store your POKT safe
 
 Before buying any POKT, you should first ensure that you know how to store it safely.
 
-In this section, we'll describe how to store and manage your POKT.
+In this section, we'll describe two different wallets that can store and manage POKT:
+
+* [Pocket Wallet](#pocket-wallet) (Official)
+* [SendWallet](#sendwallet)
+
+{{% notice style="info" %}}
+Ledger apps are in development. This documentation will be updated when they are available to use.
+{{% /notice %}}
+
 
 ## Pocket Wallet
 
@@ -93,3 +101,21 @@ Enter your Private Key.
 Create a temporary passphrase that will secure your session until you log out of the wallet. This is a measure to prevent anyone with access to your computer from stealing your funds.
 
 ![](/images/ImportPrivateKey.png)
+
+## SendWallet
+
+[SendWallet](https://sendwallet.net/) is a Pocket Network wallet run by the community. SendWallet makes it easy to send and receive POKT on the Pocket Network. SendWallet can also stake your POKT on Pocket Network without running a Pocket Network node.
+
+![](/images/sendwallet.jpg)
+
+SendWallet features:
+
+* Import using the Key File from a Pocket Wallet
+* Import using a private key
+* Generate multiple wallet addresses with one account
+* Recovery phrase to recover wallet
+* Full screen option
+
+You can try SendWallet by downloading the browser extension for [Chrome](https://chrome.google.com/webstore/detail/sendwallet/adganlhbinonbpfiehjjpmklkbghkaio?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/sendwallet/).
+
+For more information on how to use SendWallet, see the [SendWallet documentation](https://docs.sendwallet.net/).
