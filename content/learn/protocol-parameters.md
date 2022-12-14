@@ -11,6 +11,76 @@ description: List of all on-chain and relevant off-chain parameters that power P
 
 This page contains a listing of all the on-chain parameters for Pocket Network and their current values, as well as some relevant off-chain parameters.
 
+These parameters are sorted by module. You can find a description of each parameter by clicking on the parameter name.
+
+
+## Parameter values
+
+**Application Module** ([details](#application-module))
+|Parameter|Value|
+|---|---|
+|[ApplicationStakeMinimum](#applicationstakeminimum)|{{< get-param "application/ApplicationStakeMinimum" >}}|
+|[AppUnstakingTime](#appunstakingtime)|{{< get-param "application/AppUnstakingTime" >}}| 
+|[BaseRelaysPerPOKT](#baserelaysperpokt)|{{< get-param "application/BaseRelaysPerPOKT" >}}|
+|[MaxApplications](#maxapplications)|{{< get-param "application/MaxApplications" >}}|
+|[MaximumChains](#maximumchains)|{{< get-param "application/MaximumChains" >}}|
+|[ParticipationRateOn](#participationrateon)|{{< get-param "application/ParticipationRateOn" >}}|
+|[StabilityAdjustment](#stabilityadjustment)|{{< get-param "application/StabilityAdjustment" >}}|
+
+**PoS (Node) Module** ([details](#pos-node-module))
+|Parameter|Value|
+|---|---|
+|[BlocksPerSession](#blockspersession)|{{< get-param "pos/BlocksPerSession" >}}|
+|[DAOAllocation](#daoallocation)|{{< get-param "pos/DAOAllocation" >}}|
+|[DowntimeJailDuration](#downtimejailduration)|{{< get-param "pos/DowntimeJailDuration" >}}|
+|[MaxEvidenceAge](#maxevidenceage)|{{< get-param "pos/MaxEvidenceAge" >}}|
+|[MaximumChains](#maximumchains)|{{< get-param "pos/MaximumChains" >}}|
+|[MaxJailedBlocks](#maxjailedblocks)|{{< get-param "pos/MaxJailedBlocks" >}}|
+|[MaxValidators](#maxvalidators)|{{< get-param "pos/MaxValidators" >}}|
+|[MinSignedPerWindow](#minsignedperwindow)|{{< get-param "pos/MinSignedPerWindow" >}}|
+|[ProposerPercentage](#proposerpercentage)|{{< get-param  "pos/ProposerPercentage" >}}|
+|[RelaysToTokensMultiplier](#relaystotokensmultiplier)|{{< get-param "pos/RelaysToTokensMultiplier" >}}|
+|[ServicerStakeFloorMultiplier](#servicerstakefloormultiplier)|{{< get-param "pos/ServicerStakeFloorMultiplier" >}}|
+|[ServicerStakeFloorMultiplierExponent](#servicerstakefloormultiplierexponent)|{{< get-param "pos/ServicerStakeFloorMultiplierExponent" >}}|
+|[ServicerStakeWeightCeiling](#servicerstakeweightceiling)|{{< get-param "pos/ServicerStakeWeightCeiling" >}}|
+|[ServicerStakeWeightMultiplier](#servicerstakeweightmultiplier)|{{< get-param "pos/ServicerStakeWeightMultiplier" >}}|
+|[SignedBlocksWindow](#signedblockswindow)|{{< get-param "pos/SignedBlocksWindow" >}}|
+|[SlashFractionDoubleSign](#slashfractiondoublesign)|{{< get-param "pos/SlashFractionDoubleSign" >}}|
+|[SlashFractionDowntime](#slashfractiondowntime)|{{< get-param "pos/SlashFractionDowntime" >}}|
+|[StakeDenom](#stakedenom)|{{< get-param "pos/StakeDenom" >}}|
+|[StakeMinimum](#stakeminimum)|{{< get-param "pos/StakeMinimum" >}}|
+|[UnstakingTime](#unstakingtime)|{{< get-param "pos/UnstakingTime" >}}|
+
+**Pocket Core Module** ([details](#pocket-core-module))
+|Parameter|Value|
+|---|---|
+|[ClaimExpiration](#claimexpiration)|{{< get-param "pocketcore/ClaimExpiration" >}}|
+|[ClaimSubmissionWindow](#claimsubmissionwindow)|{{< get-param "pocketcore/ClaimSubmissionWindow" >}}|
+|[MinimumNumberOfProofs](#minimumnumberofproofs)|{{< get-param "pocketcore/MinimumNumberOfProofs" >}}|
+|[ReplayAttackBurnMultiplier](#replayattackburnmultiplier)|{{< get-param "pocketcore/ReplayAttackBurnMultiplier" >}}|
+|[SupportedBlockchains](#supportedblockchains)|*See description*|
+|[SessionNodeCount](#sessionnodecount)|{{< get-param "pocketcore/SessionNodeCount" >}}|
+
+**Auth Module** ([details](#auth-module))
+|Parameter|Value|
+|---|---|
+|[FeeMultipliers](#feemultipliers)|1|<!-- Hardcoding -->
+|[MaxMemoCharacters](#maxmemocharacters)|{{< get-param "auth/MaxMemoCharacters" >}}|
+|[TxSigLimit](#txsiglimit)|{{< get-param "auth/TxSigLimit" >}}|
+
+**Governance Module** ([details](#governance-module))
+|Parameter|Value|
+|---|---|
+|[ACL](#acl)|*See description*|
+|[DAOOwner](#daoowner)|{{< get-param "gov/daoOwner" >}}|
+|[Upgrade](#upgrade)|*See description*|
+
+**Off-chain parameters** ([details](#off-chain-parameters))
+|Parameter|Value|
+|---|---|
+|[ReturnOnInvestmentTarget](#returnoninvestmenttarget)|24 months|
+|[USDRelayTargetRange](#usdrelaytargetrange)|$0.00000361 per relay|
+
 
 ## Application Module
 
