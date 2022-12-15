@@ -1,6 +1,6 @@
 ---
-title: Contributing to the Documentation
-menuTitle: Contributing
+title: Contribute to the Docs
+menuTitle: Contribute to the Docs 
 weight: 90
 description: How to get started contributing to the documentation.
 ---
