@@ -56,7 +56,7 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | Klaytn                                              | https://klaytn-rpc.gateway.pokt.network               | 8217       | KLAY   | https://scope.klaytn.com              |
 | Moonbeam                                            | https://moonbeam-rpc.gateway.pokt.network             | 1284       | GLMR   | https://moonscan.io                   |
 | Moonriver                                           | https://moonriver-rpc.gateway.pokt.network            | 1285       | MOVR   | https://moonriver.moonscan.io         |
-| NEAR                                                | https://near-rpc.gateway.pokt.network                 |            | NEAR   | https://www.nearscan.org              |
+| NEAR                                                | https://near-rpc.gateway.pokt.network                 |            | NEAR   | https://www.nearblocks.io             |
 | OKXChain                                            | https://okc-rpc.gateway.pokt.network                  | 66         | OKT    | https://www.oklink.com/en/okc         |
 | Optimism                                            | https://optimism-rpc.gateway.pokt.network             | 10         | ETH    | https://optimistic.etherscan.io       |
 | Osmosis                                             | https://osmosis-rpc.gateway.pokt.network              |            | OSMO   | https://www.mintscan.io/osmosis       |
