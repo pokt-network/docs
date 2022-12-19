@@ -1,0 +1,39 @@
+<!-- This shortcode takes a protocol parameter as an argument and returns its current on-chain value -->
+
+<!-- Using Portal ID from Sales -->
+{{ $postResponse := resources.GetRemote "https://mainnet.gateway.pokt.network/v1/lb/73b7b4e8bcf5e5a930dbe40a/v1/query/allParams"  (dict
+    "method" "post"
+    "body" `{"height": 0}`
+    "headers" (dict
+        "Content-Type" "application/json"
+    )
+) | transform.Unmarshal }}
+
+<!-- Read argument passed into the shortcode -->
+{{$param := .Get 0 }}
+
+<!-- Scratch var for access outside of range loops -->
+{{ $scr := newScratch }}
+
+{{ range $elemGroup := $postResponse }}
+
+  {{ range $elemVals := $elemGroup }}
+
+    {{ range $key, $value := $elemVals }}
+
+      {{ if eq ($scr.Get "nextval") "1" }} <!-- Did we previously find the param we were looking for? -->
+        {{ $value }}
+        {{ $scr.Set "nextval" "0" }} <!-- Zero out that flag now that we displayed the param -->
+      {{ end }}
+
+      {{ if eq $value $param }}
+        {{ $scr.Set "nextval" "1" }} <!-- Setting a flag to output the next value we find -->
+      {{ end }}
+
+    {{ end }}
+
+  {{ end }}
+
+{{ end }}
+
+
