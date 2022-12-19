@@ -90,6 +90,11 @@ To opt out of being selected for work, you should deliberately jail your node, w
 
 You can't edit an existing output address for your node stake. You will have to instead unstake your node and then restake with a different output address. Keep in mind that when you unstake, your staked POKT will be sent to the output address you originally set when staking your node, so make sure you have access to that account. [Learn more about non-custodial staking.](/node/staking/)
 
+### Why don't I see a transaction on the blockchain when I unstake my non-custodial node? How do I know my POKT is being sent to the output address?
+
+Unstaking a node will not yield a separate transaction on the blockchain, so to verify that the POKT was sent to the output address, you will need to query the blockchain manually. [Learn more](/node/staking/#unstaking).
+
+
 
 ## Node Troubleshooting
 

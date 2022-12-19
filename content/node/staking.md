@@ -110,6 +110,34 @@ If you wish to change your output address, you can first unstake the node, and t
 Make sure the operator account has some POKT left after staking, as it will still be responsible for ongoing claim and proof transactions, which each carry a 0.01 POKT transaction fee.
 {{% /notice %}}
 
+## Unstaking
+
+The unstaking process is the same using custodial or non-custodial staking.
+
+{{< tabs >}}
+{{% tab name="Command" %}}
+```bash
+pocket nodes unstake <operatorAddr> <fromAddr> <networkID> <fee> <isBefore8.0>
+```
+{{% /tab %}}
+{{% tab name="Example" %}}
+```bash
+pocket nodes unstake 0123456789012345678901234567890123456789 0123456789012345678901234567890123456789 mainnet 10000 false
+```
+{{% /tab %}}
+{{< /tabs >}}
+
+During the unstaking process, a transaction is not generated when sending the staked POKT to the output address. This is intended behavior, and is similar to how proofs work on the blockchain.
+
+{{% notice style="info" %}}
+This lack of transaction happens regardless of whether you are using custodial or non-custodial staking, but in the case of custodial staking, there is no ambiguity on where the staked POKT is being sent.
+{{% /notice %}}
+
+In order to verify that your POKT is where it should be, we recommend querying the blockchain directly, instead of relying on a block explorer service that may not interpret the results accurately.
+
+You can use the interactive [API Docs](https://docs.pokt.network/api-docs/) to query the balance for an address at a given block height. [Try it here](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/balance_v1_query_balance_post).
+
+
 ## More information
 
 * [PIP-9 Consensus Rule Change](https://forum.pokt.network/t/pip-9-consensus-rule-change-rc-0-8-0/1351)
