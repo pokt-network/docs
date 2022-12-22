@@ -5,27 +5,26 @@ weight: 90
 description: How to get started contributing to the documentation.
 ---
 
-If you've never worked with these kinds of tools before, that's okay. The
-following pages are dedicated to walking you through how to accomplish all of
-these steps without assuming you've ever done this before.
+We encourage community contributions to our documentation. Help us improve!
 
-We understand that the people who have a lot of valuable insight and
-information very often aren't software developers, and we took this into
-consideration when selecting the technologies we did. We specifically focused
-on selecting the most accessible tools for someone who has never done any of
-these steps in the past.
+If you see something in these pages that is incorrect or outdated, or if there is a section that's missing that you would like to author, our goal is to empower you to help make these changes and additions.
 
-## The Short Version
+This section will show you how to make changes to this documentation.
+
+ If you have experience with editing documentation stored in a repo on GitHub, the Quick setup (below) will probably be sufficient. For everyone else, please read the full [Contributors Guide](/contributing/guide/).
+
+
+## Quick setup
 
 If you do have a basic familiarity around using command line tools and GitHub,
 then the process can be summarized down to the following steps.
 
-1. Clone/fork this repository.
-2. [Install hugo](https://gohugo.io/getting-started/installing/); Make sure the version is **0.93 or newer**.
-3. From the root of the repository, run `hugo serve`, and open <http://127.0.0.1:1313> in a browser.
-4. From a text editor, make any desired changes to the file(s) in `content/`.
-5. As you edit, save the changes to the file to see the changes in your browser.
-6. When you have the desired result, submit a pull request of the changes.
+1. [Install Hugo](https://gohugo.io/getting-started/installing/); Make sure the version is **0.93 or newer**.
+2. Clone/fork [the docs repository](https://github.com/pokt-foundation/docs).
+3. From the root of the repository, run `hugo serve`, and open <http://localhost:1313> in a browser.
+4. In a text editor, make any desired changes to the Markdown files inside the `content/` directory.
+5. Save the files as you edit and the changes will be displayed in realtime in your browser.
+6. When you have the desired result, commit your changes to a new branch and submit a [pull request](https://github.com/pokt-foundation/docs/pulls).
+7. A member of the Pocket team will review the Pull Request, and may ask you to submit some revisions. If all looks good, your changes will be committed to the repo.
 
-If this is too condensed, the rest of the pages in this cover all of these
-steps in more detail.
+If you need more details about this process, please read the full [Contributors Guide](/contributing/guide/).
