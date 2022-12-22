@@ -25,7 +25,7 @@ cd docs
 hugo serve
 ```
 
-4. View the built docs in your browser at http://localhost:1131.
+4. View the built docs in your browser at http://localhost:1313.
 
 When any content changes are made to the repo, they will automatically be reflected on this local site.
 
