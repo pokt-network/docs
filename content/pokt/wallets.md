@@ -9,13 +9,13 @@ description: Learn about POKT-compatible wallets and how to store your POKT safe
 
 Before buying any POKT, you should first ensure that you know how to store it safely.
 
-In this section, we'll describe two different wallets that can store and manage POKT:
+In this section, we'll describe some different wallets that can store and manage POKT:
 
 * [Pocket Wallet](#pocket-wallet) (Official)
 * [SendWallet](#sendwallet)
 
 {{% notice style="info" %}}
-Ledger apps are in development. This documentation will be updated when they are available to use.
+Ledger support and additional wallets are in development and will be available soon.
 {{% /notice %}}
 
 
@@ -104,7 +104,7 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ## SendWallet
 
-[SendWallet](https://sendwallet.net/) is a Pocket Network wallet run by the community. SendWallet makes it easy to send and receive POKT on the Pocket Network. SendWallet can also stake your POKT on Pocket Network without running a Pocket Network node.
+[SendWallet](https://sendwallet.net/) is a browser-based Pocket Network wallet built by [SendNodes](https://sendnodes.io). SendWallet can also optionally let you to stake your POKT through SendNodes without needing to run a Pocket Network node.
 
 ![](/images/sendwallet.jpg)
 
