@@ -7,7 +7,7 @@ aliases:
 description: This section will detail how to update your existing Pocket node when a new version is released.
 ---
 
-It is very important, both for network security and for performance of your own node, to keep your node up-to-date with the latest version of the Pocket software. The following steps will show you how to update your node.
+It is very important, both for network security and for performance of your own node, to keep your Pocket node up-to-date with the latest version of the Pocket software. The following steps will show you how to update your Pocket node.
 
 ## Release-specific changes
 

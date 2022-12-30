@@ -1,5 +1,5 @@
 ---
-title: Node Setup
+title: Pocket Node Setup
 menuTitle: Pocket Node Setup
 weight: 20
 aliases:
