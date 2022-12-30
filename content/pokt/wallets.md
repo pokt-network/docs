@@ -104,7 +104,7 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ## SendWallet
 
-[SendWallet](https://sendwallet.net/) is a browser-based Pocket Network wallet built by [SendNodes](https://sendnodes.io). SendWallet can also optionally let you to stake your POKT through SendNodes without needing to run a Pocket Network node.
+[SendWallet](https://sendwallet.net/) is a browser-based Pocket Network wallet built by [SendNodes](https://sendnodes.io).
 
 ![](/images/sendwallet.jpg)
 
