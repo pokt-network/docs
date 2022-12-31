@@ -139,6 +139,8 @@ The proposal extends the reduction of the emission rate over an additional five 
 
 ### Reward recalculations by date
 
+{{% expand title="Click to display table" %}}
+
 | Date         | Target inflation rate | Target daily emission rate | Approx. 30-day trailing avg. of daily relays | Mint rate | RelaysToTokensMultiplier |
 | :----------- | :-------------------- | :------------------------- | :------------------------------------------- | :-------- | :----------------------- |
 | [Initial]    | N/A                   | N/A                        | N/A                                          | 0.010000  | 10000                    |
@@ -155,3 +157,5 @@ The proposal extends the reduction of the emission rate over an additional five 
 | Oct 28, 2022 | 26.41%                | 1,000,000                  | 1.20B                                        | 0.000832  | 832                      |
 | Nov 8, 2022  | 23.24%                | 880,000                    | 1.22B                                        | 0.000719  | 719                      |
 | Dec 1, 2022  | 20.6%                 | 780,000                    | 1.07B                                        | 0.000730  | 730                      |
+
+{{% /expand %}}
