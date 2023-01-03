@@ -158,5 +158,6 @@ The proposal extends the reduction of the emission rate over an additional five 
 | Nov 8, 2022  | 23.24%                | 880,000                    | 1.22B                                        | 0.000719  | 719                      |
 | Dec 1, 2022  | 20.6%                 | 780,000                    | 1.07B                                        | 0.000730  | 730                      |
 | Dec 24, 2022 | 20.6%                 | 780,000                    | 1.148B                                       | 0.000680  | 680                      |
+| Jan 2, 2023  | 16.68%                | 690,000                    | 1.20B                                        | 0.000574  | 574                      |
 
 {{% /expand %}}
