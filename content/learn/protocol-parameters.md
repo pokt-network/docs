@@ -1,6 +1,6 @@
 ---
 title: Protocol Parameters
-menuTitle: Parameters
+menuTitle: Protocol Parameters
 weight: 50
 aliases:
   - /resources/references/protocol-parameters
@@ -207,7 +207,7 @@ Block proposers earn this proportion of the total POKT block reward. Value is a 
 
 The amount of POKT, denominated in [StakeDenom](#stakedenom), that is minted as block rewards per relay.
 
-Note that this value will change over time. Please see the section on [POKT inflation](/learn/economics/monetary-policy/#poktinflation) for more information.
+Note that this value will change over time. Please see the section on [POKT inflation](/learn/economics/monetary-policy/#pokt-inflation) for more information.
 
 ### ServicerStakeFloorMultiplier
 

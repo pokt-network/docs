@@ -109,6 +109,8 @@ A WAGMI target of 100% was implemented on Feb 28, 2022, which corresponds to a p
 
 WAGMI targets were stepped down to 50% over the following five months as follows:
 
+{{% expand title="Click to display table" %}}
+
 | Date | WAGMI Target Inflation Rate |
 | :--- | :--- |
 | Feb 28, 2022 | 100% |
@@ -117,6 +119,8 @@ WAGMI targets were stepped down to 50% over the following five months as follows
 | May 25, 2022 | 70% |
 | Jun 24, 2022 | 60% |
 | Jul 24, 2022 | 50% |
+
+{{% /expand %}}
 
 The per-node reward (also known by its parameter value [RelaysToTokensMultiplier](/learn/protocol-parameters/#relaystotokensmultiplier) is calculated using:
 
