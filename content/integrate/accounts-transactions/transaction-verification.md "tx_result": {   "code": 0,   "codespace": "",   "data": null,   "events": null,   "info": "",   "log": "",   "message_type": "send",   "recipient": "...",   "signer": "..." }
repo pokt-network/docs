@@ -1,4 +1,14 @@
----
+"tx_result": {
+  "code": 0,
+  "codespace": "",
+  "data": null,
+  "events": null,
+  "info": "",
+  "log": "",
+  "message_type": "send",
+  "recipient": "...",
+  "signer": "..."
+}---
 title: Transaction Verification
 menuTitle: Transaction Verification
 weight: 30
