@@ -1,4 +1,37 @@
----
+---import { Pocket } from '@pokt-network/pocket-js'
+
+// PocketJS must always be initialized with at least one dispatcher.
+const POCKET_DISPATCHER = '<URL_TO_DISPATCH_NODE>'
+const pocket = new Pocket(POCKET_DISPATCHER)
+
+// The passphrase used to encrypt the private key while in memory:
+const PASSPHRASE = 'foobar'
+const account = await pocket.keybase.createAccount(PASSPHRASE)
+
+// The result of successful account creation:
+console.log(account)
+
+// Using the exportAccount function, you can obtain a plaintext private key.
+const exportedAccountPrivateKey = await pocket.keybase.exportAccount(
+  account.address.toString('hex'),
+  PASSPHRASE
+)
+
+// This plaintext private key should be encrypted before storage.
+console.log(exportedAccountPrivateKey.toString('hex'))
+
+// You can also export an encrypted JSON version of the same private key.
+// The passphrase used to encrypt this JSON file is separate from the 
+// previous PASSPHRASE.
+const exportedPPK = await pocket.keybase.exportPPK(
+  exportedAccountPrivateKey,
+  // The PPK passphrase used to encrypt the JSON file
+  'foo',
+  // A hint for the PPK passphrase
+  'what comes before bar'
+)
+
+console.log(exportedPPK)
 title: Account Generation and Validation
 menuTitle: Account Generation and Validation
 weight: 10
