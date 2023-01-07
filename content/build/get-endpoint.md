@@ -19,7 +19,7 @@ In order to take advantage of Pocket's network of thousands of decentralized nod
 
 You can create your own using the **Pocket Portal**.
 
-The [Pocket Portal](https://www.portal.pokt.network) is a gateway to a decentralized RPC network, where developers can create ("mint") blockchain network endpoints for use in their applications. Portal users can also monitor network performance and configure custom security features around their endpoint.
+The [Pocket Portal](https://www.portal.pokt.network/?utm_medium=cta&utm_source=docs&utm_campaign=portal-growth&utm_content=build-get) is a gateway to a decentralized RPC network, where developers can create ("mint") blockchain network endpoints for use in their applications. Portal users can also monitor network performance and configure custom security features around their endpoint.
 
 In this way, the Pocket Portal provides similar functionality to more centralized API services, all while retaining the decentralization that Pocket Network is built on.
 
@@ -325,4 +325,4 @@ There are also code samples for various platforms available in the **Request Sam
 
 ### More questions?
 
-If you have more questions about the Portal, please see the [Portal FAQ](https://www.portal.pokt.network/faq). And you can always reach out to the team on [Discord](https://discord.gg/pokt).
+If you have more questions about the Portal, please see the [Portal FAQ](https://www.portal.pokt.network/faq?utm_medium=cta&utm_source=docs&utm_campaign=portal-growth&utm_content=build-get). And you can always reach out to the team on [Discord](https://discord.gg/pokt).

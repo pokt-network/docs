@@ -20,9 +20,9 @@ Pocket supports dozens of blockchains, with more being added all the time.
 
 ### Use Pocket Network's RPC
 
-Using Pocket Network is as easy as any other RPC. If you're already using a centralized RPC provider, the [Pocket Portal](https://portal.pokt.network) will be a familiar interface, and is where we recommend everyone get started.
+Using Pocket Network is as easy as any other RPC. If you're already using a centralized RPC provider, the [Pocket Portal](https://www.portal.pokt.network/?utm_medium=cta&utm_source=docs&utm_campaign=portal-growth&utm_content=home) will be a familiar interface, and is where we recommend everyone get started.
 
-* [Start at the Pocket Portal](https://portal.pokt.network)
+* [Start at the Pocket Portal](https://www.portal.pokt.network/?utm_medium=cta&utm_source=docs&utm_campaign=portal-growth&utm_content=home)
 * [Get a public RPC URL for your wallet](/use/public-rpc/)
 * [Create a private RPC URL for your DApp](/use/get-endpoint/)
 
