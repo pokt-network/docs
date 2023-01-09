@@ -282,7 +282,7 @@ This happens when an address is also a [Validator](/learn/glossary/#validator). 
 
 This is inherited behavior from Tendermint and the [Cosmos SDK](https://docs.cosmos.network/v0.45/modules/distribution/01_concepts.html), from which Pocket was originally derived. It is considered "core business logic" for the chain, and therefore does not need to be a transaction. That said, there are plans to change this behavior [in v1](/learn/future/) to increase transparency and visibility into block rewards.
 
-To see how this works, take the address `85efd04b9bad9da612ee2f80db9b62bb413e32fb`. At block height 4406, the balance for that address was 1848.257793 POKT, as you can test below using cURL (or by [using the API docs](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/balance_v1_query_balance_post)):
+To see how this works, take the address `85efd04b9bad9da612ee2f80db9b62bb413e32fb`. At block height 4406, the balance for that address was 1848.257793 POKT, as you can test below using cURL (or [using the API docs](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/balance_v1_query_balance_post)):
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -318,15 +318,13 @@ curl -H "Content-Type: application/json" -d '{"height": 4407, "address": "85efd0
 {{% /tab %}}
 {{< /tabs >}}
 
-<!--
+You can verify that there are no transactions associated with that address in block 4406.
 
-You can verify that there are no transactions associated with that address in block 4406:
+{{% notice style="note" %}}
+There isn't a straighforward way to do this natively within Pocket at the moment. You would have to [query all of the transactions for a given block](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/block_txs_v1_query_blocktxs_post) and then search through them for the address in question. We plan to make this easier in the future.
+{{% /notice %}}
 
-NEED CODE
-
--->
-
-However, you can also see that this address was the proposer for block 4406:
+Finally, you can see that this address was the proposer for block 4406:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
@@ -341,4 +339,4 @@ curl -H "Content-Type: application/json" -d '{"height": 4406}' -X POST https://m
 {{% /tab %}}
 {{< /tabs >}}
 
-So the balance is altered, but without a visible transaction.
+So in this case, the balance of the address is altered, but without a visible transaction.
