@@ -28,9 +28,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Ethereum Archival            | eth-archival         | 0022         |
 | Ethereum Archival Trace      | eth-archival-trace   | 0028         |
 | Ethereum Goerli              | eth-goerli           | 0026         |
-| Ethereum Kovan               | poa-kovan            | 0024         |
-| Ethereum Rinkeby             | eth-rinkeby          | 0025         |
-| Ethereum Ropsten             | eth-ropsten          | 0023         |
 | Evmos                        | evmos-mainnet        | 0046         |
 | Fantom                       | fantom-mainnet       | 0049         |
 | FUSE                         | fuse-mainnet         | 0005         |
