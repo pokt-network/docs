@@ -1,6 +1,6 @@
 ---
-title: Node FAQ
-menuTitle: Node FAQ
+title: Pocket Node FAQ
+menuTitle: Pocket Node FAQ
 weight: 90
 aliases:
   - /resources/faq/node-troubleshooting
@@ -10,11 +10,41 @@ aliases:
   - /paths/node-runner/maximize-your-pokt-earnings
   - /home/paths/node-runner/maximize-your-pokt-earnings
   - /home/node/faq
-description: Frequently asked questions about running nodes.
+description: Frequently asked questions about running Pocket nodes.
 ---
 
 
-The following pages contains common questions regarding running nodes.
+The following sections contain common questions regarding running Pocket nodes.
+
+**Node Configuration**
+* [Does my blockchain node need to be synced before I start my Pocket node?](#does-my-blockchain-node-need-to-be-synced-before-i-start-my-pocket-node)
+* [How many blockchains can one node support?](#how-many-blockchains-can-one-node-support)
+* [Can I add a load balancer address in my chains.json if I have multiple blockchains under one domain?](#can-i-add-a-load-balancer-address-in-my-chainsjson-if-i-have-multiple-blockchains-under-one-domain)
+* [How can I add more blockchains to my node?](#how-can-i-add-more-blockchains-to-my-node)
+* [Can I continue earning POKT while I'm unstaking?](#can-i-continue-earning-pokt-while-im-unstaking)
+* [Do each of my nodes need a unique IP address?](#do-each-of-my-nodes-need-a-unique-ip-address)
+* [How do I set my ulimit?](#how-do-i-set-my-ulimit)
+* [What do I do if my node needs to go down for an extended period, such as during a machine migration?](#what-do-i-do-if-my-node-needs-to-go-down-for-an-extended-period-such-as-during-a-machine-migration)
+* [Can I change the output address for my node when doing non-custodial staking?](#can-i-change-the-output-address-for-my-node-when-doing-non-custodial-staking)
+* [Why don't I see a transaction on the blockchain when I unstake my non-custodial node? How do I know my POKT is being sent to the output address?](#why-dont-i-see-a-transaction-on-the-blockchain-when-i-unstake-my-non-custodial-node-how-do-i-know-my-pokt-is-being-sent-to-the-output-address)
+
+**Node Troubleshooting**
+* [Why is my node not earning POKT?](#why-is-my-node-not-earning-pokt)
+* [How do I check my Pocket node status?](#how-do-i-check-my-pocket-node-status)
+* [I keep getting "too many open files" when my node is syncing? What does this mean?](#i-keep-getting-too-many-open-files-when-my-node-is-syncing-what-does-this-mean)
+* [Why does my node keep crashing?](#why-does-my-node-keep-crashing)
+* [Will my node be slashed for downtime?](#will-my-node-be-slashed-for-downtime)
+
+**Maximizing your Pocket rewards**
+* [My node is functional but doesn't seem to be earning POKT - is it configured incorrectly?](#my-node-is-functional-but-doesnt-seem-to-be-earning-pokt---is-it-configured-incorrectly)
+* [Conversely, how will I know if my node is working correctly?](#conversely-how-will-i-know-if-my-node-is-working-correctly)
+* [When will I find out if I have made POKT rewards?](#when-will-i-find-out-if-i-have-made-pokt-rewards)
+* [Why don't I just connect my Pocket node to \[insert third-party provider here\]?](#why-dont-i-just-connect-my-pocket-node-to-insert-third-party-provider-here)
+* [Why wouldn't I make enough POKT with a third-party?](#why-wouldnt-i-make-enough-pokt-with-a-third-party)
+* [Aren't there data centers around the world for this exact reason?](#arent-there-data-centers-around-the-world-for-this-exact-reason)
+* [Why does the latency matter?](#why-does-the-latency-matter)
+* [Then how can I maximize my node revenue?](#then-how-can-i-maximize-my-node-revenue)
+
 
 ## Node Configuration
 
@@ -178,7 +208,7 @@ Make sure your node meets the minimum hardware requirements for both a Pocket no
 
 There are negligible burns at this stage of the network, determined by the [`SlashFractionDowntime`](/learn/protocol-parameters/#slashfractiondowntime) parameter. As the network matures, the rate will probably be increased to push for better service.
 
-## Maximizing your Pocket earnings
+## Maximizing your Pocket rewards
 
 So you've spun up your Pocket node but you're not earning as much as you thought you would. On this page, we debunk some common misconceptions and explain how to maximize your earnings.
 
