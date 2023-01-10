@@ -1,7 +1,7 @@
 ---
 title: Seeds
 menuTitle: Seeds
-weight: 40
+weight: 80
 aliases:
   - /resources/references/seeds
   - /home/resources/references/seeds

@@ -1,7 +1,7 @@
 ---
 title: Updating Your Node
 menuTitle: Updating Your Node
-weight: 25
+weight: 50
 aliases:
   - /home/node/setup
 description: This section will detail how to update your existing Pocket node when a new version is released.

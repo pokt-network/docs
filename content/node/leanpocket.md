@@ -1,7 +1,7 @@
 ---
 title: LeanPocket
 menuTitle: LeanPocket
-weight: 35
+weight: 40
 description: Run multiple nodes on the same hardware without scaling your resource requirements.
 ---
 
