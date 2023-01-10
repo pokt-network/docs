@@ -78,8 +78,6 @@ You need a dedicated domain for each node, but the nodes can be on the same mach
 
 ### How do I set my ulimit?
 
-#### Where to set the `ulimit`
-
 As a best practice, do not use `root` to run the pocket process. When you set the `ulimit` for your instance, it's important to set it in the user profile that is running the `pocket-core` instance.
 
 {{% notice style="warning" %}}
@@ -87,8 +85,6 @@ Make sure that you're setting the ulimit for the specific account that's running
 
 Configuring the ulimit system-wide might vary depending on your OS. Here's a basic tutorial on [increasing the open files limit on Linux](https://rtcamp.com/tutorials/linux/increase-open-files-limit/).
 {{% /notice %}}
-
-#### How to calculate the `ulimit`
 
 To calculate the `ulimit`, you will have to define a few parameters as shown below:
 
@@ -123,7 +119,6 @@ You can't edit an existing output address for your node stake. You will have to 
 ### Why don't I see a transaction on the blockchain when I unstake my non-custodial node? How do I know my POKT is being sent to the output address?
 
 Unstaking a node will not yield a separate transaction on the blockchain, so to verify that the POKT was sent to the output address, you will need to query the blockchain manually. [Learn more](/node/staking/#unstaking).
-
 
 
 ## Node Troubleshooting
@@ -193,16 +188,10 @@ This means that your `ulimit` is set too low on your node. Find instructions on 
 
 Your node can crash due to the following reasons:
 
-1. Having too many open files
-2. Resource limitations
+1. **Having too many open files:** Make sure your `ulimit` is set correctly on your user profile. Find instructions on how to set your `ulimit` above.
+2. **Resource limitations:** Make sure your node meets the minimum hardware requirements for both a Pocket node and the blockchain nodes you're servicing. Details are above on this page.
 
-#### Too Many Open Files
 
-Make sure your `ulimit` is set correctly on your user profile. Find instructions on how to set your `ulimit` above.
-
-#### Resource Limitations
-
-Make sure your node meets the minimum hardware requirements for both a Pocket node and the blockchain nodes you're servicing. Details are above on this page.
 
 ### Will my node be slashed for downtime?
 
