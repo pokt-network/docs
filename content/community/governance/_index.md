@@ -21,5 +21,5 @@ You don’t need a vote in the DAO to submit proposals or participate in discuss
 
 To learn how to submit a proposal to the DAO, [see the section on proposals](/community/governance/proposals/).
 
-All approved decisions get submitted to the blockchain by the Pocket Network Foundation, which is fully accountable to the DAO. To learn more about how this is, read the [DAO Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md) and the Foundation's [Articles of Association](https://github.com/pokt-foundation/governance/blob/master/foundation/Pocket-Network-Foundation-Articles-of-Association-Highlighted.pdf).
+All approved decisions get submitted to the blockchain by the Pocket Network Foundation, which is fully accountable to the DAO. To learn more about how this is, read the [DAO Constitution](https://github.com/pokt-foundation/governance/blob/master/constitution/constitution.md) and the Foundation's [Articles of Association](https://github.com/pokt-foundation/governance/blob/master/foundation/PNF%20Articles%20Jan-2023%20Highlighted.pdf).
 
