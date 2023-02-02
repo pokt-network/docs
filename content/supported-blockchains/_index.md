@@ -18,6 +18,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 
 | Name                         | Portal API Prefix    | RelayChainID |
 | ---------------------------- | -------------------- | ------------ |
+| Arbitrum One                 | arbitrum-one         | 0066         |
 | Avalanche                    | avax-mainnet         | 0003         |
 | Binance Smart Chain          | bsc-mainnet          | 0004         |
 | Binance Smart Chain Archival | bsc-archival         | 0010         |
@@ -54,7 +55,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Starknet Mainnet             | starknet-mainnet     | 0060         |
 | Starknet Testnet             | starknet-testnet     | 0061         |
 | Swimmer Network Mainnet      | avax-cra             | 03CB         |
-| Arbitrum One                 | arbitrum-one         | 0066         |
 ## Pocket Testnet RelayChains
 
 The following table shows the full list of currently-supported blockchains on the Pocket Testnet.
