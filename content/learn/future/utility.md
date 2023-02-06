@@ -52,7 +52,7 @@ Fishermen compile these samples into test scores for each Servicer, which are av
 
 #### v0 – Quantity-based
 
-89% of v0 block rewards are distributed to Servicers proportional to the volume of relays they served. This means Pocket Network’s incentives currently optimize for the quantity of work done, not the quality of work done.
+85% of v0 block rewards are distributed to Servicers proportional to the volume of relays they served. This means Pocket Network’s incentives currently optimize for the quantity of work done, not the quality of work done.
 
 #### v1.0 – Quality-based
 
