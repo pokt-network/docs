@@ -104,7 +104,7 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ### Now supporting Unstoppable Domains in the POKT Wallet.
 
-Users can now send transactions with an Unstoppable Domain that is linked to a POKT Wallet address. Create an Unstoppable Domain for your wallet [here](https://unstoppabledomains.com/).
+Users can now send transactions to an Unstoppable Domain from a POKT Wallet address. Create an Unstoppable Domain for your wallet [here](https://unstoppabledomains.com/).
 
 For guidance on how to send a transaction with a UD, check out this video:
 
