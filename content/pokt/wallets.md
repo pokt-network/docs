@@ -102,6 +102,14 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ![](/images/ImportPrivateKey.png)
 
+### Now supporting Unstoppable Domains in the POKT Wallet.
+
+Users can now send transactions with an Unstoppable Domain that is linked to a POKT Wallet address. Create an Unstoppable Domain for your wallet [here](https://unstoppabledomains.com/).
+
+For guidance on how to send a transaction with a UD, check out this video:
+
+{{< video "https://docs.pokt.network/videos/unstoppable-domains-demo.mp4" >}}
+
 ## SendWallet
 
 [SendWallet](https://sendwallet.net/) is a browser-based Pocket Network wallet built by [SendNodes](https://sendnodes.io).
