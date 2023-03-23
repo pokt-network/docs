@@ -1,6 +1,6 @@
 ---
 type: api-doc
-name: Binance Smart Chain
+name: BNB Smart Chain
 spec_url: /oas/bsc.json
 portal_prefix: bsc-mainnet
 logo: bsc.svg

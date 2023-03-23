@@ -34,8 +34,8 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | --------------------------------------------------- | ----------------------------------------------------- | ---------- | ------ | ------------------------------------- |
 | Algorand                                            | https://algo-mainnet-rpc.gateway.pokt.network         |            | ALGO   | https://algoexplorer.io               |
 | [Avalanche](https://youtu.be/9SNGe2tfmmw)           | https://avax-rpc.gateway.pokt.network                 | 43114      | AVAX   | https://cchain.explorer.avax.network  |
-| [Binance Smart Chain](https://youtu.be/fLTvtBtOEg0) | https://bsc-rpc.gateway.pokt.network                  | 56         | BNB    | https://bscscan.com                   |
-| Binance Smart Chain Archival                        | https://bsc-archival-rpc.gateway.pokt.network         | 56         | BNB    |                                       |
+| [BNB Smart Chain](https://youtu.be/fLTvtBtOEg0)     | https://bsc-rpc.gateway.pokt.network                  | 56         | BNB    | https://bscscan.com                   |
+| BNB Smart Chain Archival                            | https://bsc-archival-rpc.gateway.pokt.network         | 56         | BNB    |                                       |
 | Boba                                                | https://boba-rpc.gateway.pokt.network                 | 288        | ETH    | https://blockexplorer.boba.network    |
 | DFK Chain                                           | https://avax-dfk-rpc.gateway.pokt.network             | 53935      | JEWEL  | https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer         |
 | [Ethereum](https://youtu.be/8ruuz3u2V2E)            | https://eth-rpc.gateway.pokt.network                  | 1          | ETH    | https://etherscan.io                  |
