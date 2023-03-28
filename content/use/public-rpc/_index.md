@@ -32,7 +32,7 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 
 | Network Name                                        | RPC URL                                               | ChainID    | Symbol | Explorer URL                          |
 | --------------------------------------------------- | ----------------------------------------------------- | ---------- | ------ | ------------------------------------- |
-| Algorand                                            | https://algo-mainnet-rpc.gateway.pokt.network         |            | ALGO   | https://algoexplorer.io               |
+| Arbitrum                                            | https://arbitrum-rpc.gateway.pokt.network             | 42161      | ARB    | https://arbiscan.io                   |
 | [Avalanche](https://youtu.be/9SNGe2tfmmw)           | https://avax-rpc.gateway.pokt.network                 | 43114      | AVAX   | https://cchain.explorer.avax.network  |
 | [BNB Smart Chain](https://youtu.be/fLTvtBtOEg0)     | https://bsc-rpc.gateway.pokt.network                  | 56         | BNB    | https://bscscan.com                   |
 | BNB Smart Chain Archival                            | https://bsc-archival-rpc.gateway.pokt.network         | 56         | BNB    |                                       |
