@@ -64,5 +64,6 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | [Polygon](https://youtu.be/C0jDq20pBYQ)             | https://poly-rpc.gateway.pokt.network                 | 137            | MATIC  | https://polygonscan.com               |
 | Polygon Archival                                    | https://poly-archival-rpc.gateway.pokt.network        | 137            | MATIC  |                                       |
 | Polygon Mumbai                                      | https://polygon-mumbai-rpc.gateway.pokt.network       | 80001          | MATIC  |                                       |
+| Polygon zkEVM                                       | https://zkevm-polygon-mainnet-rpc.gateway.pokt.network| 1101           | ETH    | https://zkevm.polygonscan.com/        |
 | Solana                                              | https://solana-mainnet-rpc.gateway.pokt.network       |                | SOL    |                                       |
 | Swimmer Network Mainnet                             | https://avax-cra-rpc.gateway.pokt.network             | 73772          | TUS    | https://explorer.swimmer.network      |
