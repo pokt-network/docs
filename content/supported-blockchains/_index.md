@@ -21,7 +21,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Arbitrum One                 | arbitrum-one            | 0066         |
 | Avalanche                    | avax-mainnet            | 0003         |
 | BNB Smart Chain              | bsc-mainnet             | 0004         |
-| BNB Smart Chain Archival     | bsc-archival            | 0010         |
 | Boba                         | boba-mainnet            | 0048         |
 | Celo                         | celo-mainnet            | 0065         |
 | DFKchain Subnet              | avax-dfk                | 03DF         |
