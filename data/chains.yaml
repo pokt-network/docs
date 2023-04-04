@@ -3,10 +3,10 @@ evm:
     prefix: avax-mannet
     id: 0003
     docs_url: /api-docs/avalanche-c-chain-evm
-  - name: Binance Smart Chain
+  - name: BNB Smart Chain
     prefix: bsc-mainnet
     id: 0004
-    docs_url: /api-docs/binance-smart-chain-evm
+    docs_url: /api-docs/bnb-smart-chain-evm
   - name: Boba
     prefix: boba-mainnet
     id: 0048

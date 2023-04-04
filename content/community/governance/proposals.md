@@ -58,6 +58,15 @@ PEP votes will last 7 days and pass with Majority Approval (50% yes votes by par
 
 To submit a PEP, head to the forum [here](https://forum.pokt.network/c/governance/pep/29), then click New Topic to generate a template for your proposal.
 
+{{% notice style="info" %}}
+Does the DAO hold non-POKT tokens?
+
+The DAO also holds non-POKT tokens as a result of token swaps and airdrops. Since the Pocket Network blockchain is not EVM-compatible, these assets are custodied by the Pocket Network Foundation in multi-sig accounts.
+
+You can see these accounts below:
+* [Arbitrum - 0xd499168E0955B9eBDCCF4cb947aF2989D82EDEA5](https://arbiscan.io/address/0xd499168E0955B9eBDCCF4cb947aF2989D82EDEA5)
+{{% /notice %}}
+
 ## PUP – Parameter Update Proposal
 
 **Parameter Update Proposals (PUPs)** include any proposals to modify the value of the [protocol parameters](/learn/protocol-parameters/).
