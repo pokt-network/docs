@@ -27,6 +27,7 @@ The following sections contain common questions regarding running Pocket nodes.
 * [What do I do if my node needs to go down for an extended period, such as during a machine migration?](#what-do-i-do-if-my-node-needs-to-go-down-for-an-extended-period-such-as-during-a-machine-migration)
 * [Can I change the output address for my node when doing non-custodial staking?](#can-i-change-the-output-address-for-my-node-when-doing-non-custodial-staking)
 * [Why don't I see a transaction on the blockchain when I unstake my non-custodial node? How do I know my POKT is being sent to the output address?](#why-dont-i-see-a-transaction-on-the-blockchain-when-i-unstake-my-non-custodial-node-how-do-i-know-my-pokt-is-being-sent-to-the-output-address)
+* [Where do my staked funds go when I send a stake command?](#where-do-my-staked-funds-go-when-i-send-a-stake-command)
 
 **Node Troubleshooting**
 * [Why is my node not earning POKT?](#why-is-my-node-not-earning-pokt)
@@ -120,6 +121,38 @@ You can't edit an existing output address for your node stake. You will have to 
 
 Unstaking a node will not yield a separate transaction on the blockchain, so to verify that the POKT was sent to the output address, you will need to query the blockchain manually. [Learn more](/node/staking/#unstaking).
 
+### Where do my staked funds go when I send a stake command?
+
+When you send a stake command, your funds are moved to one of the protocol-owned account addresses responsible for managing aggregated staked funds, known as pools. There are separate pool addresses for staked nodes and apps.
+
+#### Staked Nodes Pool Address:
+
+Pool Name: nodeTypes.StakedPoolName
+
+Address: 8ef97b488e66a2b2e89a3b4999549816768910fb
+
+#### Staked Apps Pool Address:
+
+Pool Name: appTypes.StakedPoolName 
+
+Address: 63533fb8f43b4883a1f37265f1561ce7b1c6c307
+
+Example of a pool:
+
+```code
+{
+    "app_staked": "6115776140835",
+    "dao": "85404378779681",
+    "node_staked": "888675724041371",
+    "total": "1577387511505541",
+    "total_staked": "980195878961887",
+    "total_unstaked": "597191632543654"
+}
+```
+
+The funds remain in the pool during the staking period. When you initiate an unstaking process, the funds are moved back from the pool to your staking account.
+
+To check the pool balances, query pocket query supply using the [CLI](https://docs.pokt.network/node/tutorials/zero-to-node/software-install/#install-dependencies). 
 
 ## Node Troubleshooting
 
