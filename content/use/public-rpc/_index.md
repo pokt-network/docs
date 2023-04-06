@@ -53,10 +53,12 @@ If you receive this error message from MetaMask `Invalid number. Enter a decimal
 | Gnosis Chain Archival                               | https://gnosischain-archival-rpc.gateway.pokt.network | 100            | xDAI   |                                       |
 | [Harmony Shard 0](https://youtu.be/w9ZziTu0ROo)     | https://harmony-0-rpc.gateway.pokt.network            | 1666600000     | ONE    | https://explorer.harmony.one          |
 | IoTeX                                               | https://iotex-rpc.gateway.pokt.network                | 4689           | IOTX   | https://iotexscan.io                  |
+| Kava Mainnet                                        | https://kava-rpc.gateway.pokt.network                 | 2222           | KAVA   | https://explorer.kava.io/             |
 | Klaytn                                              | https://klaytn-rpc.gateway.pokt.network               | 8217           | KLAY   | https://scope.klaytn.com              |
 | Moonbeam                                            | https://moonbeam-rpc.gateway.pokt.network             | 1284           | GLMR   | https://moonscan.io                   |
 | Moonriver                                           | https://moonriver-rpc.gateway.pokt.network            | 1285           | MOVR   | https://moonriver.moonscan.io         |
 | NEAR                                                | https://near-rpc.gateway.pokt.network                 |                | NEAR   | https://www.nearblocks.io             |
+| Oasys Mainnet                                       | https://oasys-rpc.gateway.pokt.network                | 248            | OAS    | https://explorer.oasys.games/         |
 | OKXChain                                            | https://okc-rpc.gateway.pokt.network                  | 66             | OKT    | https://www.oklink.com/en/okc         |
 | Optimism                                            | https://optimism-rpc.gateway.pokt.network             | 10             | ETH    | https://optimistic.etherscan.io       |
 | Osmosis                                             | https://osmosis-rpc.gateway.pokt.network              |                | OSMO   | https://www.mintscan.io/osmosis       |
