@@ -4,17 +4,17 @@ menuTitle: Trustless Third Party Staking
 weight: 30
 aliases:
   - /home/node/trustlessStaking
-description: Trustless Third Party Staking utilizes the protocol's non-custodial staking feature to stake pokt without handing over custody of tokens to the Node Operator at any stage.
+description: Trustless Third Party Staking utilizes the protocol's non-custodial staking feature to stake POKT without handing over custody of tokens to the Node Operator at any stage.
 ---
 
-Trustless Third Party Staking utilizes the protocol's non-custodial staking feature to stake pokt without handing over custody of tokens to the Node Operator at any stage. With this method, Node Operators have no ability to steal either the stake or the rewards. Clients can also unstake without any intervention of the node operator and get their funds back.
+Trustless Third Party Staking utilizes the protocol's non-custodial staking feature to stake POKT without handing over custody of tokens to the Node Operator at any stage. With this method, Node Operators have no ability to steal either the stake or the rewards. Clients can also unstake without any intervention of the node operator and get their funds back.
 
 **Before proceeding, consult with your preferred Node Operator to verify if they support this method of staking.**
 
 This document demonstrates how to stake a node with 15k tokens and later upstake it to 60k. 
 Initially staking with 15k minimizes potential losses resulting from mistakes (e.g., typing incorrect output addresses or public keys). 
 
-Non-Custodial Staking method requires the following addresses/wallets
+The Non-Custodial Staking method requires the following addresses/wallets
 
 **Output Address**
 This is a wallet address that holds your funds and where staking rewards will be sent. 
@@ -39,7 +39,7 @@ A 30k pocket node will earn the same as two 15k nodes for instance. It is a good
 More Info: [stake-weighted-servicer-rewards](/learn/economics/nodes/#stake-weighted-servicer-rewards)
 
 
-**Viewing Non-Custodial Staking on Poktscan**
+**Viewing Non-Custodial Staking on POKTScan**
 
 https://poktscan.com/node/bab0bc034cbf4ae82a5069b677e8c2f39098e361
 ![](/images/poktscan-noncustodial.png)
@@ -68,7 +68,7 @@ Notice there is a balance of 36.57 present. The node requires some POKT to pay f
 ## Preparing the Output Address
 
 1. Login to your  output address using the pocket official wallet below. Note down the password used to create the wallet. https://wallet.pokt.network/
-2. **IMPORTANT:** Backup the keyfile.json using “export keyfile” and the password. Lose this and you will lose your funds. Then send 15011 tokens to this address. 15010 will be staked, leaving one for transaction fees.(Each transaction costs 0.01 pokt at the time this doc is written)
+2. **IMPORTANT:** Backup the keyfile.json using “export keyfile” and the password. Lose this and you will lose your funds. Then send 15011 tokens to this address. 15010 will be staked, leaving one for transaction fees.(Each transaction costs 0.01 POKT at the time this doc is written)
  
 ![](/images/wallet.png)
 
@@ -86,10 +86,10 @@ Notice there is a balance of 36.57 present. The node requires some POKT to pay f
 
 ![](/images/wallet-staking.png)
 
-4. Hit the Stake Node Button and verify your stake on poktscan in 15-20 minutes.
+4. Hit the Stake Node Button and verify your stake on POKTScan in 15-20 minutes.
 
 ***Checklist***
-- [ ] I verified that the node is staked non-custodial on poktscan at the url https://poktscan.com/node/\<myoperatoraddress\> and it is showing the correct output address.
+- [ ] I verified that the node is staked non-custodial on POKTScan at the url https://poktscan.com/node/\<myoperatoraddress\> and it is showing the correct output address.
    
 
 ## Managing Non-Custodial Nodes (Upstake)
@@ -113,7 +113,7 @@ Unstaking by either account sends staked funds to the output address at the end 
 The output address cannot be changed once staked; ensure it's correct and backed up.
 
 **How to verify that the output address is receiving the rewards?**
-Verify the output address is receiving rewards by checking its balance increase on poktscan.
+Verify the output address is receiving rewards by checking its balance increase on POKTScan.
 
 **Can the operator change the chains or service url?**
 The operator can change chains or the service URL; consult your node operator or POKTScan for the latest information before upstaking.
