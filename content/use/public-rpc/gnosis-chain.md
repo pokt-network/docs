@@ -20,7 +20,7 @@ To get started connecting to Pocket's infrastructure for xDAI, do the following:
 3. Within the New RPC URL field, copy and paste this endpoint URL `https://gnosischain-rpc.gateway.pokt.network/`
 4. Put the hexadecimal **0x64** in the ChainID field
 5. Write **XDAI** as the Symbol
-6. Add `https://blockscout.com/poa/xdai` as the Block Explorer URL
+6. Add `https://gnosisscan.io/` as the Block Explorer URL
 7. Don’t forget to save
 
 
