@@ -16,22 +16,22 @@ You can use the `--seeds` flag when starting the Pocket process to set the seeds
 ## Mainnet
 
 1. ```
-   cf45d7285ae77d2d9b2bdda0420041a77efd3178@seed1.mainnet.pokt.network:20656
+   7c0d7ec36db6594c1ffaa99724e1f8300bbd52d0@seed1.mainnet.pokt.network:26662
    ```
 2. ```
-   c63bac5a7bd64db0fe1be61fa2287d73aec56ca9@seed2.mainnet.pokt.network:21656
+   cdcf936d70726dd724e0e6a8353d8e5ba5abdd20@seed2.mainnet.pokt.network:26663
    ```
 3. ```
-   c2c8f762583403134da743d6dfbec4f7228873db@seed3.mainnet.pokt.network:22856
+   74b4322a91c4a7f3e774648d0730c1e610494691@seed3.mainnet.pokt.network:26662
    ```
 4. ```
-   908ef93ff62379875942171997249e7d9e01cddc@seed4.mainnet.pokt.network:23856
+   b3235089ff302c9615ba661e13e601d9d6265b15@seed4.mainnet.pokt.network:26663
    ```
 
 To start Pocket Core on mainnet, using all the above seeds:
 
 ```text
-pocket start --seeds="cf45d7285ae77d2d9b2bdda0420041a77efd3178@seed1.mainnet.pokt.network:20656,c63bac5a7bd64db0fe1be61fa2287d73aec56ca9@seed2.mainnet.pokt.network:21656,c2c8f762583403134da743d6dfbec4f7228873db@seed3.mainnet.pokt.network:22856,908ef93ff62379875942171997249e7d9e01cddc@seed4.mainnet.pokt.network:23856" --mainnet
+pocket start --seeds="7c0d7ec36db6594c1ffaa99724e1f8300bbd52d0@seed1.mainnet.pokt.network:26662,cdcf936d70726dd724e0e6a8353d8e5ba5abdd20@seed2.mainnet.pokt.network:26663,74b4322a91c4a7f3e774648d0730c1e610494691@seed3.mainnet.pokt.network:26662,b3235089ff302c9615ba661e13e601d9d6265b15@seed4.mainnet.pokt.network:26663" --mainnet
 ```
 
 ## Testnet
