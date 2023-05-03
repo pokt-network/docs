@@ -64,7 +64,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Polygon Matic Archival                      | poly-archival             | 000B
 | Polygon Mumbai                              | polygon-mumbai            | 000F 
 | Ropsten                                     | eth-ropsten               | 0023 
-| Scroll testnet                              | scroll-testnet            | 0075 
+| Scroll Testnet                              | scroll-testnet            | 0075 
 | Solana                                      | solana-mainnet            | 0006 
 | Starknet Mainnet                            | starknet-mainnet          | 0060
 | Starknet Testnet                            | starknet-testnet          | 0061
