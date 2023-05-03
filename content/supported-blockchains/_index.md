@@ -16,53 +16,62 @@ Pocket can be made to work with any network/blockchain (RelayChain) that uses th
 
 The following table shows the full list of supported, reward-generating RelayChains. This list should be identical to the [`SupportedBlockchains`](/learn/protocol-parameters/#supportedblockchains) parameter.
 
-| Name                         | Portal API Prefix      | RelayChainID |
-| ---------------------------- | --------------------   | ------------ |
-| Arbitrum One                 | arbitrum-one           | 0066         |
-| Avalanche                    | avax-mainnet           | 0003         |
-| Binance Smart Chain          | bsc-mainnet            | 0004         |
-| Binance Smart Chain Archival | bsc-archival           | 0010         |
-| Boba                         | boba-mainnet           | 0048         |
-| Celo                         | celo-mainnet           | 0065         |
-| DFKchain Subnet              | avax-dfk               | 03DF         |
-| Dogechain                    | dogechain-mainnet      | 0059         |
-| Ethereum                     | eth-mainnet            | 0021         |
-| Ethereum Archival            | eth-archival           | 0022         |
-| Ethereum Archival Trace      | eth-archival-trace     | 0028         |
-| Ethereum Goerli              | eth-goerli             | 0026         |
-| Evmos                        | evmos-mainnet          | 0046         |
-| Fantom                       | fantom-mainnet         | 0049         |
-| FUSE                         | fuse-mainnet           | 0005         |
-| FUSE Archival                | fuse-archival          | 000A         |
-| Goerli Archival              | goerli-archival        | 0063         |
-| Gnosis Chain                 | gnosischain-mainnet    | 0027         |
-| Gnosis Chain Archival        | gnosischain-archival   | 000C         |
-| Harmony Shard 0              | harmony-0              | 0040         |
-| IoTeX                        | iotex-mainnet          | 0044         |
-| Kava Mainnet                 | kava-mainnet           | 0071         |
-| Kava Mainnet Archival        | kava-mainnet-archival  | 0072         |
-| Klaytn Mainnet               | klaytn-mainnet         | 0056         |
-| Meter                        | meter-mainnet          | 0057         |
-| Metis                        | metis-mainnet          | 0058         |
-| Moonbeam                     | moonbeam-mainnet       | 0050         |
-| Moonriver                    | moonriver-mainnet      | 0051         |
-| NEAR                         | near-mainnet           | 0052         |
-| Oasys Mainnet                | oasys-mainnet          | 0070         |
-| Oasys Mainnet Archival       | oasys-mainnet-archival | 0069         |
-| OKExChain                    | oec-mainnet            | 0047         |
-| Optimism                     | optimism-mainnet       | 0053         |
-| Osmosis Mainnet              | osmosis-mainnet        | 0054         |
-| Pocket Network               | mainnet                | 0001         |
-| Polygon                      | poly-mainnet           | 0009         |
-| Polygon Archival             | poly-archival          | 000B         |
-| Polygon Mumbai               | polygon-mumbai         | 000F         |
-| Polygon zkEVM Mainnet        | polygon-zkevm-mainnet  | 0074         |
-| Solana                       | solana-mainnet         | 0006         |
-| Starknet Mainnet             | starknet-mainnet       | 0060         |
-| Starknet Testnet             | starknet-testnet       | 0061         |
-| Swimmer Network Mainnet      | avax-cra               | 03CB         |
-| Velas                        | velas-mainnet          | 0067         |
-| Velas Archival               | velas-mainnet-archival | 0068         |
+| Name                                        | Portal API Prefix         | RelayChainID |
+| ------------------------------------------- | ------------------------- | ------------ |
+| AVAX                                        | avax-mainnet              | 0003 
+| AVAX Archival                               | avax-archival             | 00A3 
+| AVAX_CRA                                    | avax-cra                  | 03CB 
+| AVAX_DFK                                    | avax-dfk                  | 03DF 
+| Algorand Archival                           | algo-archival             | 000D 
+| Algorand Mainnet                            | algo-mainnet              | 0029 
+| Arbitrum One                                | arbitrum-one              | 0066 
+| BOBA Mainnet                                | boba-mainnet              | 0048 
+| Binance Smart Chain                         | bsc-mainnet               | 0004 
+| Binance Smart Chain (Archival)              | bsc-archival              | 0010
+| Celo mainnet                                | celo-mainnet              | 0065 
+| Dogechain Mainnet                           | dogechain-mainnet         | 0059
+| Ethereum Mainnet                            | eth-mainnet               | 0021 
+| Ethereum Mainnet Archival                   | eth-archival              | 0022
+| Ethereum Mainnet Archival with trace calls  | eth-trace                 | 0028
+| Ethereum Mainnet High Gas                   | ethereum-mainnet-high-gas | 0062
+| Evmos Mainnet                               | evmos-mainnet             | 0046 
+| Fantom Mainnet                              | fantom-mainnet            | 0049 
+| Fuse                                        | fuse-mainnet              | 0005 
+| Fuse Archival                               | fuse-archival             | 000A 
+| Gnosis Chain Archival                       | poa-xdai-archival         | 000C
+| Gnosis Chain Mainnet                        | poa-xdai                  | 0027 
+| Goerli                                      | eth-goerli                | 0026 
+| Goerli Archival                             | goerli-archival           | 0063 
+| Harmony Shard 0                             | harmony-0                 | 0040 
+| IoTeX Mainnet                               | iotex-mainnet             | 0044 
+| KAVA mainnet archival                       | kava-mainnet-archival     | 0072
+| Kava mainnet                                | kava-mainnet              | 0071 
+| Klaytn Mainnet                              | klaytn-mainnet            | 0056 
+| Kovan                                       | poa-kovan                 | 0024 
+| Meter Mainnet                               | meter-mainnet             | 0057 
+| Metis Mainnet                               | metis-mainnet             | 0058 
+| Moonbeam Mainnet                            | moonbeam-mainnet          | 0050
+| Moonriver Mainnet                           | moonriver-mainnet         | 0051
+| NEAR Mainnet                                | near-mainnet              | 0052 
+| OKC Mainnet                                 | oKc-mainnet               | 0047 
+| Oasys mainnet                               | oasys-mainnet             | 0070 
+| Oasys mainnet archival                      | oasys-mainnet-archival    | 0069
+| Optimism Mainnet                            | optimism-mainnet          | 0053
+| Osmosis Mainnet                             | osmosis-mainnet           | 0054 
+| POLYGON ZKEVM mainnet                       | polygon-zkevm-mainnet     | 0074
+| Pocket Network Mainnet                      | mainnet                   | 0001 
+| Polygon Matic                               | poly-mainnet              | 0009 
+| Polygon Matic Archival                      | poly-archival             | 000B
+| Polygon Mumbai                              | polygon-mumbai            | 000F 
+| Ropsten                                     | eth-ropsten               | 0023 
+| Scroll testnet                              | scroll-testnet            | 0075 
+| Solana                                      | solana-mainnet            | 0006 
+| Starknet Mainnet                            | starknet-mainnet          | 0060
+| Starknet Testnet                            | starknet-testnet          | 0061
+| Sui mainnet                                 | sui-mainnet               | 0076 
+| Velas Mainnet                               | velas-mainnet             | 0067 
+| Velas Mainnet Archival                      | velas-mainnet-archival    | 0068
+
 
 ## Pocket Testnet RelayChains
 
