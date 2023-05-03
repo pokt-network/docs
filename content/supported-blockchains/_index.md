@@ -28,7 +28,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | BOBA Mainnet                                | boba-mainnet              | 0048 
 | Binance Smart Chain                         | bsc-mainnet               | 0004 
 | Binance Smart Chain (Archival)              | bsc-archival              | 0010
-| Celo mainnet                                | celo-mainnet              | 0065 
+| Celo Mainnet                                | celo-mainnet              | 0065 
 | Dogechain Mainnet                           | dogechain-mainnet         | 0059
 | Ethereum Mainnet                            | eth-mainnet               | 0021 
 | Ethereum Mainnet Archival                   | eth-archival              | 0022
@@ -44,8 +44,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Goerli Archival                             | goerli-archival           | 0063 
 | Harmony Shard 0                             | harmony-0                 | 0040 
 | IoTeX Mainnet                               | iotex-mainnet             | 0044 
-| KAVA mainnet archival                       | kava-mainnet-archival     | 0072
-| Kava mainnet                                | kava-mainnet              | 0071 
+| KAVA Mainnet Archival                       | kava-mainnet-archival     | 0072
+| Kava Mainnet                                | kava-mainnet              | 0071 
 | Klaytn Mainnet                              | klaytn-mainnet            | 0056 
 | Kovan                                       | poa-kovan                 | 0024 
 | Meter Mainnet                               | meter-mainnet             | 0057 
@@ -54,11 +54,11 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Moonriver Mainnet                           | moonriver-mainnet         | 0051
 | NEAR Mainnet                                | near-mainnet              | 0052 
 | OKC Mainnet                                 | oKc-mainnet               | 0047 
-| Oasys mainnet                               | oasys-mainnet             | 0070 
-| Oasys mainnet archival                      | oasys-mainnet-archival    | 0069
+| Oasys Mainnet                               | oasys-mainnet             | 0070 
+| Oasys Mainnet Archival                      | oasys-mainnet-archival    | 0069
 | Optimism Mainnet                            | optimism-mainnet          | 0053
 | Osmosis Mainnet                             | osmosis-mainnet           | 0054 
-| POLYGON ZKEVM mainnet                       | polygon-zkevm-mainnet     | 0074
+| POLYGON ZKEVM Mainnet                       | polygon-zkevm-mainnet     | 0074
 | Pocket Network Mainnet                      | mainnet                   | 0001 
 | Polygon Matic                               | poly-mainnet              | 0009 
 | Polygon Matic Archival                      | poly-archival             | 000B
@@ -68,7 +68,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Solana                                      | solana-mainnet            | 0006 
 | Starknet Mainnet                            | starknet-mainnet          | 0060
 | Starknet Testnet                            | starknet-testnet          | 0061
-| Sui mainnet                                 | sui-mainnet               | 0076 
+| Sui Mainnet                                 | sui-mainnet               | 0076 
 | Velas Mainnet                               | velas-mainnet             | 0067 
 | Velas Mainnet Archival                      | velas-mainnet-archival    | 0068
 
