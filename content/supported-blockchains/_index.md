@@ -72,7 +72,6 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Velas Mainnet                               | velas-mainnet             | 0067 
 | Velas Mainnet Archival                      | velas-mainnet-archival    | 0068
 
-
 ## Pocket Testnet RelayChains
 
 The following table shows the full list of currently-supported blockchains on the Pocket Testnet.
