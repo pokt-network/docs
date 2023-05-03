@@ -18,10 +18,12 @@ The following table shows the full list of supported, reward-generating RelayCha
 
 | Name                         | Portal API Prefix      | RelayChainID |
 | ---------------------------- | --------------------   | ------------ |
+| Arbitrum One                 | arbitrum-one           | 0066         |
 | Avalanche                    | avax-mainnet           | 0003         |
 | Binance Smart Chain          | bsc-mainnet            | 0004         |
 | Binance Smart Chain Archival | bsc-archival           | 0010         |
 | Boba                         | boba-mainnet           | 0048         |
+| Celo                         | celo-mainnet           | 0065         |
 | DFKchain Subnet              | avax-dfk               | 03DF         |
 | Dogechain                    | dogechain-mainnet      | 0059         |
 | Ethereum                     | eth-mainnet            | 0021         |
@@ -37,7 +39,7 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Gnosis Chain Archival        | gnosischain-archival   | 000C         |
 | Harmony Shard 0              | harmony-0              | 0040         |
 | IoTeX                        | iotex-mainnet          | 0044         |
-| Kava mainnet                 | kava-mainnet           | 0071         |
+| Kava Mainnet                 | kava-mainnet           | 0071         |
 | Kava Mainnet Archival        | kava-mainnet-archival  | 0072         |
 | Klaytn Mainnet               | klaytn-mainnet         | 0056         |
 | Meter                        | meter-mainnet          | 0057         |
@@ -59,6 +61,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Starknet Mainnet             | starknet-mainnet       | 0060         |
 | Starknet Testnet             | starknet-testnet       | 0061         |
 | Swimmer Network Mainnet      | avax-cra               | 03CB         |
+| Velas                        | velas-mainnet          | 0067         |
+| Velas Archival               | velas-mainnet-archival | 0068         |
 
 ## Pocket Testnet RelayChains
 
