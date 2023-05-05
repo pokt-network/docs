@@ -35,8 +35,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Fantom Mainnet                              | fantom-mainnet            | 0049
 | Fuse                                        | fuse-mainnet              | 0005
 | Fuse Archival                               | fuse-archival             | 000A
-| Gnosis Chain Archival                       | poa-xdai-archival         | 000C
 | Gnosis Chain Mainnet                        | poa-xdai                  | 0027
+| Gnosis Chain Archival                       | poa-xdai-archival         | 000C
 | Goerli                                      | eth-goerli                | 0026
 | Goerli Archival                             | goerli-archival           | 0063
 | Harmony Shard 0                             | harmony-0                 | 0040
