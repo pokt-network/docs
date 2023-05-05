@@ -18,13 +18,9 @@ The following table shows the full list of supported, reward-generating RelayCha
 
 | Name                                        | Portal API Prefix         | RelayChainID |
 | ------------------------------------------- | ------------------------- | ------------ |
-| Algorand Archival                           | algo-archival             | 000D
-| Algorand Mainnet                            | algo-mainnet              | 0029
 | Arbitrum One                                | arbitrum-one              | 0066
 | AVAX                                        | avax-mainnet              | 0003
 | AVAX Archival                               | avax-archival             | 00A3
-| AVAX_CRA                                    | avax-cra                  | 03CB
-| AVAX_DFK                                    | avax-dfk                  | 03DF
 | BOBA Mainnet                                | boba-mainnet              | 0048
 | Binance Smart Chain                         | bsc-mainnet               | 0004
 | Binance Smart Chain (Archival)              | bsc-archival              | 0010
@@ -39,8 +35,8 @@ The following table shows the full list of supported, reward-generating RelayCha
 | Fantom Mainnet                              | fantom-mainnet            | 0049
 | Fuse                                        | fuse-mainnet              | 0005
 | Fuse Archival                               | fuse-archival             | 000A
-| Gnosis Chain Archival                       | poa-xdai-archival         | 000C
 | Gnosis Chain Mainnet                        | poa-xdai                  | 0027
+| Gnosis Chain Archival                       | poa-xdai-archival         | 000C
 | Goerli                                      | eth-goerli                | 0026
 | Goerli Archival                             | goerli-archival           | 0063
 | Harmony Shard 0                             | harmony-0                 | 0040
