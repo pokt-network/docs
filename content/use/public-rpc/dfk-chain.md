@@ -27,7 +27,7 @@ There are two ways to connect your MetaMask wallet to DFK Chain. Choose whicheve
 1. In MetaMask, click the **Networks** drop-down menu, then select **Custom RPC**.
 2. Under the **Network Name** field, type **DFK Chain POKT**.
 3. Within the **New RPC URL** field, copy and paste this endpoint URL:
-   * `https://avax-dfk.gateway.pokt.network/v1/lb/6244818c00b9f0003ad1b619//ext/bc/q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi/rpc`
+   * `https://avax-dfk.gateway.pokt.network/v1/lb/6244818c00b9f0003ad1b619/ext/bc/q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi/rpc`
 4. In the **ChainID** field, type **53935**.
 5. For the **Symbol**, type **JEWEL**.
 6. For the Block Explorer URL, add `https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer`. 
