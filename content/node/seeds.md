@@ -37,31 +37,20 @@ pocket start --seeds="7c0d7ec36db6594c1ffaa99724e1f8300bbd52d0@seed1.mainnet.pok
 ## Testnet
 
 1. ```
-   3487f08b9e915f347eb4372b406326ffbf13d82c@testnet-seed-1.nodes.pokt.network:4301
+   d90094952a3a67a99243cca645cdd5bd55fe8d27@seed1.testnet.pokt.network:26668
    ```
 2. ```
-   27f4295d1407d9512a25d7f2ea91d1a415660c16@testnet-seed-2.nodes.pokt.network:4302
+   2a5258dcdbaa5ca6fd882451f5a725587427a793@seed2.testnet.pokt.network:26669
    ```
 3. ```
-   0beb1a93fe9ce2a3b058b98614f1ed0f5ad664d5@testnet-seed-3.nodes.pokt.network:4303
+   a37baa84a53f2aab1243986c1cd4eff1591e50d0@seed3.testnet.pokt.network:26668
    ```
 4. ```
-   8fd656162dbbe0402f3cef111d3ad8d2723eef8e@testnet-seed-4.nodes.pokt.network:4304
+   fb18401cf435bd24a2e8bf75ea7041afcf122acf@seed4.testnet.pokt.network:26669
    ```
-5. ```
-   80100476b67fea2e94c6b2f72e40cf8f6062ed21@testnet-seed-5.nodes.pokt.network:4305
-   ```
-6. ```
-   370edf0882e094e83d4087d5f8801bbf24f5d931@testnet-seed-6.nodes.pokt.network:4306
-   ```
-7. ```
-   57aff5a049846d14e2dcc06fdcc241d7ebe6a3eb@testnet-seed-7.nodes.pokt.network:4307
-   ```
-8. ```
-   545fb484643cf2efbcf01ee2b7bc793ef275cd84@testnet-seed-8.nodes.pokt.network:4308
-   ```
+
 To start Pocket Core on testnet, using all the above seeds:
 
 ```text
-pocket start --seeds="<seed1>,<seed2>,<etc>" --testnet
+pocket start --seeds="d90094952a3a67a99243cca645cdd5bd55fe8d27@seed1.testnet.pokt.network:26668,2a5258dcdbaa5ca6fd882451f5a725587427a793@seed2.testnet.pokt.network:26669,a37baa84a53f2aab1243986c1cd4eff1591e50d0@seed3.testnet.pokt.network:26668,fb18401cf435bd24a2e8bf75ea7041afcf122acf@seed4.testnet.pokt.network:26669" --testnet
 ```
