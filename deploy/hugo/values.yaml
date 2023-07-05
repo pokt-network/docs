@@ -33,6 +33,7 @@ hugo:
               cd /data/src
               git checkout $GIT_BRANCH
               git pull
+              git status
               hugo config --source=/data/src --config=config.toml
           volumeMounts:
             - name: hugo-data
