@@ -29,9 +29,10 @@ hugo:
               if [ ! -d /data/src ]; then
                 echo "Cloning the repo"
                 git clone --recursive $GIT_URL /data/src
-                git checkout $GIT_BRANCH
               fi
               cd /data/src
+              git checkout $GIT_BRANCH
+              git pull
               hugo config --source=/data/src --config=config.toml
           volumeMounts:
             - name: hugo-data
