@@ -16,22 +16,22 @@ hugo:
           image:
             repository: pocketfoundation/hugo
             tag: "latest"
-        env:
-          - name: SITE_REPO_URL
-            value: "https://github.com/pokt-foundation/docs.git"
-        command:
-          - 'sh'
-          - '-c'
-          - |
-            if [ ! -d /data/src ]; then
-              echo "Cloning the repo"
-              git clone --recursive $SITE_REPO_URL /data/src
-            fi
-            cd /data/src
-            hugo config
-        volumeMounts:
-          - name: hugo-data
-            mountPath: /data
+          env:
+            - name: SITE_REPO_URL
+              value: "https://github.com/pokt-foundation/docs.git"
+          command:
+            - 'sh'
+            - '-c'
+            - |
+              if [ ! -d /data/src ]; then
+                echo "Cloning the repo"
+                git clone --recursive $SITE_REPO_URL /data/src
+              fi
+              cd /data/src
+              hugo config
+          volumeMounts:
+            - name: hugo-data
+              mountPath: /data
 
       containers:
         hugo:
