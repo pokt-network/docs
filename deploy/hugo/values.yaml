@@ -7,10 +7,11 @@ hugo:
         minReplicas: 2
         maxReplicas: 5
         targetCPUUtilizationPercentage: 70
-      volumeClaimTemplates:
-        size: 1Gi
-        storageClassName: standard-rwo
-        volumeMountPath: /data
+      persistence:
+        volumeClaimTemplates:
+          size: 1Gi
+          storageClassName: standard-rwo
+          volumeMountPath: /data
       initContainers:
         get-repo:
           image:
@@ -28,7 +29,8 @@ hugo:
                 git clone --recursive $SITE_REPO_URL /data/src
               fi
               cd /data/src
-              hugo config --source=/data/src --config=config.toml
+              hugo config --source=/data/src
+              #--config=config.toml
           volumeMounts:
             - name: hugo-data
               mountPath: /data
@@ -40,11 +42,11 @@ hugo:
             tag: "latest"
           workingDir: "/data/src"
           command:
-          - sleep
-          - "1000000"
-          # args:
-          #   - server
-          #   - --source=/data/src
+          # - sleep
+          # - "1000000"
+          args:
+            - server
+            - --source=/data/src
           #   - --config=config.toml
           # resources:
           #   limits:
