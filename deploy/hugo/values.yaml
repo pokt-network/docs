@@ -84,23 +84,12 @@ hugo:
                 #     hosts:
                 #       - "docs.pokt.network"
 
-          # readinessProbe:
-          #   initialDelaySeconds: 30
-          #   failureThreshold: 6
-          #   httpGet:
-          #     path: /healthz
-          #     port: 8090
-          #     scheme: HTTP
-          # livenessProbe:
-          #   failureThreshold: 6
-          #   httpGet:
-          #     path: /healthz
-          #     port: 8090
-          #     scheme: HTTP
+          livenessProbe:
+            tcpSocket:
+              port: 1313
   global:
     imagePullPolicy: Always    #* To always get the newest available "latest"
     serviceAccount:
-      # create: false              # It's created with gcp-iam-externalsecrets
       name: hugo
     securityContext:
       fsGroup: 1001
