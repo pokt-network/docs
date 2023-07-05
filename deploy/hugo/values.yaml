@@ -28,7 +28,7 @@ hugo:
                 git clone --recursive $SITE_REPO_URL /data/src
               fi
               cd /data/src
-              hugo config
+              hugo config --source=/data/src --config=config.toml
           volumeMounts:
             - name: hugo-data
               mountPath: /data
@@ -41,6 +41,8 @@ hugo:
           workingDir: "/data/src"
           args:
             - server
+            - --source=/data/src
+            - --config=config.toml
           # resources:
           #   limits:
           #     cpu: 4Gi
