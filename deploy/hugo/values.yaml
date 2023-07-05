@@ -28,7 +28,8 @@ hugo:
             - |
               if [ ! -d /data/src ]; then
                 echo "Cloning the repo"
-                git clone --branch $GIT_BRANCH --recursive $GIT_URL /data/src
+                git clone --recursive $GIT_URL /data/src
+                git checkout $GIT_BRANCH
               fi
               cd /data/src
               hugo config --source=/data/src --config=config.toml
