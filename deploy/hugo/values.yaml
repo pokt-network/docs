@@ -1,0 +1,109 @@
+hugo:
+  # fullnameOverride: hugo
+  deployments:
+    hugo:
+      horizontalPodAutoscaler:
+        enabled: true
+        minReplicas: 2
+        maxReplicas: 5
+        targetCPUUtilizationPercentage: 70
+      volumeClaimTemplates:
+        size: 1Gi
+        storageClassName: standard-rwo
+        volumeMountPath: /data
+      initContainers:
+        get-repo:
+          image:
+            repository: pocketfoundation/hugo
+            tag: "latest"
+        env:
+          - name: SITE_REPO_URL
+            value: "https://github.com/pokt-foundation/docs.git"
+        command:
+          - 'sh'
+          - '-c'
+          - |
+            if [ ! -d /data/src ]; then
+              echo "Cloning the repo"
+              git clone --recursive $SITE_REPO_URL /data/src
+            fi
+            cd /data/src
+            hugo config
+        volumeMounts:
+          - name: hugo-data
+            mountPath: /data
+
+      containers:
+        hugo:
+          image:
+            repository: pocketfoundation/hugo
+            tag: "latest"
+          workingDir: "/data/src"
+          args:
+            - server
+          # resources:
+          #   limits:
+          #     cpu: 4Gi
+          #     memory: 4Gi
+          #   requests:
+          #     cpu: 1Gi
+          #     memory: 2Gi
+
+          # envFrom:
+          #   - secretRef:
+          #       name: 
+
+          ports:
+            - name: http
+              port: 1313
+              protocol: TCP
+              service:
+                type: ClusterIP
+                annotations:
+                  cloud.google.com/neg: '{"ingress": true}'
+              ingress:
+                annotations:
+                  kubernetes.io/ingress.class: "gce"
+                  kubernetes.io/ingress.global-static-ip-name: "docs-vip" #* `docs-vip` is created with TF
+                  networking.gke.io/managed-certificates: hugo-ssl-cert
+                hosts:
+                  - host: "docs.portal.pokt.network"
+                    paths:
+                      - path: /
+                        pathType: Prefix
+                # tls:
+                #   - secretName: pub-tls
+                #     hosts:
+                #       - "docs.pokt.network"
+
+          # readinessProbe:
+          #   initialDelaySeconds: 30
+          #   failureThreshold: 6
+          #   httpGet:
+          #     path: /healthz
+          #     port: 8090
+          #     scheme: HTTP
+          # livenessProbe:
+          #   failureThreshold: 6
+          #   httpGet:
+          #     path: /healthz
+          #     port: 8090
+          #     scheme: HTTP
+  global:
+    imagePullPolicy: Always    #* To always get the newest available "latest"
+    serviceAccount:
+      # create: false              # It's created with gcp-iam-externalsecrets
+      name: hugo
+    securityContext:
+      fsGroup: 1001
+      runAsUser: 1001
+      runAsGroup: 1001
+
+  additionalManifests:
+    - kind: ManagedCertificate
+      apiVersion: networking.gke.io/v1
+      metadata:
+        name: hugo-ssl-cert
+      spec:
+        domains:
+          - docs.portal.pokt.network
