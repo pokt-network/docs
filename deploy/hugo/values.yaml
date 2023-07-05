@@ -49,6 +49,8 @@ hugo:
             - server
             - --source=/data/src
             - --config=config.toml
+            - --bind=0.0.0.0
+            - --poll=60s
           # resources:
           #   limits:
           #     cpu: 4Gi
