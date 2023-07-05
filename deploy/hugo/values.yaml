@@ -39,10 +39,13 @@ hugo:
             repository: pocketfoundation/hugo
             tag: "latest"
           workingDir: "/data/src"
-          args:
-            - server
-            - --source=/data/src
-            - --config=config.toml
+          command:
+          - sleep
+          - "1000000"
+          # args:
+          #   - server
+          #   - --source=/data/src
+          #   - --config=config.toml
           # resources:
           #   limits:
           #     cpu: 4Gi
