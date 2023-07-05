@@ -18,19 +18,20 @@ hugo:
             repository: pocketfoundation/hugo
             tag: "latest"
           env:
-            - name: SITE_REPO_URL
+            - name: GIT_URL
               value: "https://github.com/pokt-foundation/docs.git"
+            - name: GIT_BRANCH
+              value: "deploy-with-argocd"                   
           command:
             - 'sh'
             - '-c'
             - |
               if [ ! -d /data/src ]; then
                 echo "Cloning the repo"
-                git clone --recursive $SITE_REPO_URL /data/src
+                git clone --branch $GIT_BRANCH --recursive $GIT_URL /data/src
               fi
               cd /data/src
-              hugo config --source=/data/src
-              #--config=config.toml
+              hugo config --source=/data/src --config=config.toml
           volumeMounts:
             - name: hugo-data
               mountPath: /data
@@ -47,7 +48,7 @@ hugo:
           args:
             - server
             - --source=/data/src
-          #   - --config=config.toml
+            - --config=config.toml
           # resources:
           #   limits:
           #     cpu: 4Gi
