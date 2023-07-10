@@ -43,7 +43,7 @@ nginx:
         nginx:
           image:
             repository: ghcr.io/pokt-foundation/docs
-            tag: "deploy-with-argocd"
+            tag: sha-4512415
           # workingDir: "/data/src"
           # command:
           # # - sleep
