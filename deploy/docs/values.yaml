@@ -9,15 +9,15 @@ nginx:
     annotations:
       cloud.google.com/neg: '{"ingress": true}'
 
-  ingress:
-    enabled: true
-    annotations:
-      kubernetes.io/ingress.class: "gce"
-      kubernetes.io/ingress.global-static-ip-name: "34.82.230.73" #* `docs-vip` is created with TF
-      networking.gke.io/managed-certificates: docs-ssl-cert
-    pathType: Prefix
-    hostname: docs-network.portal.pokt.network
-    path: /
+  # ingress:
+  #   enabled: true
+  #   annotations:
+  #     kubernetes.io/ingress.class: "gce"
+  #     kubernetes.io/ingress.global-static-ip-name: "docs-vip" #* `docs-vip` is created with TF
+  #     networking.gke.io/managed-certificates: docs-ssl-cert
+  #   pathType: Prefix
+  #   hostname: docs-network.portal.pokt.network
+  #   path: /
 
   extraDeploy:
     - kind: ManagedCertificate
