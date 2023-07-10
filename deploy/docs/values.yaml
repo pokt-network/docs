@@ -19,11 +19,11 @@ nginx:
     hostname: docs-network.portal.pokt.network
     path: /
 
-  extraDeploy:
-    - kind: ManagedCertificate
-      apiVersion: networking.gke.io/v1
-      metadata:
-        name: docs-ssl-cert
-      spec:
-        domains:
-          - docs-network.portal.pokt.network
+  # extraDeploy:
+  #   - kind: ManagedCertificate
+  #     apiVersion: networking.gke.io/v1
+  #     metadata:
+  #       name: docs-ssl-cert
+  #     spec:
+  #       domains:
+  #         - docs-network.portal.pokt.network
