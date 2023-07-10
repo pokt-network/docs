@@ -43,7 +43,7 @@ nginx:
         nginx:
           image:
             repository: ghcr.io/pokt-foundation/docs
-            tag: "latest"
+            tag: "deploy-with-argocd"
           # workingDir: "/data/src"
           # command:
           # # - sleep
