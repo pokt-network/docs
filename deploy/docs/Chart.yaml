@@ -7,4 +7,4 @@ dependencies:
 - name: universal-helm
   repository: https://pokt-foundation.github.io/charts
   version: "0.0.14"
-  alias: hugo
+  alias: nginx

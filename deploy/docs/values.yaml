@@ -1,0 +1,111 @@
+nginx:
+  # fullnameOverride: hugo
+  deployments:
+    nginx:
+      horizontalPodAutoscaler:
+        enabled: true
+        minReplicas: 1
+        maxReplicas: 5
+        targetCPUUtilizationPercentage: 80
+      # persistence:
+      #   volumeClaimTemplates:
+      #     size: 1Gi
+      #     storageClassName: standard-rwo
+      #     volumeMountPath: /data
+      # initContainers:
+      #   get-repo:
+      #     image:
+      #       repository: pocketfoundation/hugo
+      #       tag: "latest"
+      #     env:
+      #       - name: GIT_URL
+      #         value: "https://github.com/pokt-foundation/docs.git"
+      #       - name: GIT_BRANCH
+      #         value: "deploy-with-argocd"                   
+      #     command:
+      #       - 'sh'
+      #       - '-c'
+      #       - |
+      #         if [ ! -d /data/src ]; then
+      #           echo "Cloning the repo"
+      #           git clone --recursive $GIT_URL /data/src
+      #         fi
+      #         cd /data/src
+      #         git checkout $GIT_BRANCH
+      #         git pull
+      #         git status
+      #         hugo config --source=/data/src --config=config.toml
+      #     volumeMounts:
+      #       - name: hugo-data
+      #         mountPath: /data
+
+      containers:
+        nginx:
+          image:
+            repository: ghcr.io/pokt-foundation/docs
+            tag: "latest"
+          # workingDir: "/data/src"
+          # command:
+          # # - sleep
+          # # - "1000000"
+          # args:
+          #   - server
+          #   - --source=/data/src
+          #   - --config=config.toml
+          #   - --bind=0.0.0.0
+          #   - --poll=60s
+          # resources:
+          #   limits:
+          #     cpu: 4Gi
+          #     memory: 4Gi
+          #   requests:
+          #     cpu: 1Gi
+          #     memory: 2Gi
+
+          # envFrom:
+          #   - secretRef:
+          #       name: 
+
+          ports:
+            - name: http
+              port: 80
+              protocol: TCP
+              service:
+                type: ClusterIP
+                annotations:
+                  cloud.google.com/neg: '{"ingress": true}'
+              ingress:
+                annotations:
+                  kubernetes.io/ingress.class: "gce"
+                  kubernetes.io/ingress.global-static-ip-name: "docs-vip" #* `docs-vip` is created with TF
+                  networking.gke.io/managed-certificates: docs-ssl-cert
+                hosts:
+                  - host: "docs-network.portal.pokt.network"
+                    paths:
+                      - path: /
+                        pathType: Prefix
+                # tls:
+                #   - secretName: pub-tls
+                #     hosts:
+                #       - "docs.pokt.network"
+
+          livenessProbe:
+            tcpSocket:
+              port: 80
+  global:
+    imagePullPolicy: Always    #* To always get the newest available "latest"
+    serviceAccount:
+      name: nginx
+    securityContext:
+      fsGroup: 1001
+      runAsUser: 1001
+      runAsGroup: 1001
+
+  additionalManifests:
+    - kind: ManagedCertificate
+      apiVersion: networking.gke.io/v1
+      metadata:
+        name: docs-ssl-cert
+      spec:
+        domains:
+          - docs-network.portal.pokt.network
