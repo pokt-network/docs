@@ -2,7 +2,7 @@ nginx:
   image:
     registry: ghcr.io
     repository: pokt-foundation/docs
-    tag: sha-4512415
+    tag: sha-4512415  #* The tag will updated on the fly by Argo image updater
 
   service:
     type: ClusterIP
