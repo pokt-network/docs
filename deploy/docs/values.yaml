@@ -17,7 +17,7 @@ nginx:
       kubernetes.io/ingress.allow-http: "false"
       networking.gke.io/managed-certificates: docs-ssl-cert
     pathType: Prefix
-    hostname: docs-network.portal.pokt.network
+    hostname: docs.portal.pokt.network
     path: /
 
   extraDeploy:
