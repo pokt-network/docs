@@ -78,7 +78,7 @@ pocket accounts send-tx <fromAddr> <toAddr> <uPOKT amount> mainnet 10000 "tx mes
 
 You won't be able to send POKT using the command line until you have your node set up. Until then, you can use the [Wallet app](https://wallet.pokt.network).
 
-If you're using the testnet, you can fund your account using the [Testnet Faucet](https://faucet.pokt.network).
+If you're using the testnet, you can fund your account using the [Testnet Faucet](https://faucet.testnet.pokt.network).
 
 ## Set the account operator
 
