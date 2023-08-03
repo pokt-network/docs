@@ -14,7 +14,7 @@ Trustless Third Party Staking utilizes the protocol's non-custodial staking feat
 This document demonstrates how to stake a node with 15k tokens and later upstake it to 60k. 
 Initially staking with 15k minimizes potential losses resulting from mistakes (e.g., typing incorrect output addresses or public keys). 
 
-The Non-Custodial Staking method requires the following addresses/wallets
+The Non-Custodial Staking method requires the following addresses/wallets.
 
 **Output Address**
 This is a wallet address that holds your funds and where staking rewards will be sent. 
@@ -24,10 +24,10 @@ Output wallet can be created and accessed here: https://wallet.pokt.network
 
 **Operator Address**
 Created by the Node Operator, this address is used to manage and run your node. The Node Operator, using the key of the operator address, shares the responsibility 
-for editing the Domain and Chains with the Output Address. However, the Operator Address cannot control the funds; only the Output Address has this capability
+for editing the Domain and Chains with the Output Address. However, the Operator Address cannot control the funds; only the Output Address has this capability.
 
 
-The very first stake initiated from the output address establishes a link between the operator address and the output address.The Node Operator can then start running your node using the operator address. Any node rewards will be sent to the output address. Additionally, if unstaked, the unstaked funds will also go to the output address. An output address can be linked to multiple operator addresses
+The very first stake initiated from the output address establishes a link between the operator address and the output address.The Node Operator can then start running your node using the operator address. Any node rewards will be sent to the output address. Additionally, if unstaked, the unstaked funds will also go to the output address. An output address can be linked to multiple operator addresses.
 
 ## Introduction
 
@@ -106,20 +106,20 @@ Notice there is a balance of 36.57 present. The node requires some POKT to pay f
 ![](/images/wallet-unstaking.png)
 
 ## FAQs
-**If the node operator unstakes from the operator keys where will the staked funds go?**
+**If the node operator unstakes from the operator keys, where will the staked funds go?**
 Unstaking by either account sends staked funds to the output address at the end of the 21 day unbonding period.
 
 **Can the output address be changed once staked?**
-The output address cannot be changed once staked; ensure it's correct and backed up.
+Yes, the output address can be changed if the stake transaction is signed by the current output address.  This means Client can change the output address, but Node Operator can't.
 
 **How to verify that the output address is receiving the rewards?**
-Verify the output address is receiving rewards by checking its balance increase on POKTScan.
+Verify the output address is receiving rewards by checking its balance increase.
 
 **Can the operator change the chains or service url?**
-The operator can change chains or the service URL; consult your node operator or POKTScan for the latest information before upstaking.
+Yes, the operator can change chains or the service URL; consult your node operator or POKTScan for the latest information before upstaking.
 
 **Can I reuse the output address for another operator address?**
-You can reuse the output address for another operator address; rewards and unstaked funds from both operators will be sent to the output address.
+Yes, you can reuse the output address for another operator address; rewards and unstaked funds from both operators will be sent to the output address.
 
 **If all rewards end up in the output account, how does the node operator get their reward share?**
 Node operators can't access your rewards; you must send their share manually.
