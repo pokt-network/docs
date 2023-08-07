@@ -135,9 +135,9 @@ Before You Start, Make Sure:
 - If asked, follow the onscreen instructions and Allow Ledger Manager.
 - Find Pocket in the app catalog.
 - Click the Install button.
-- - An installation window will appear.
-- - Your device will display Processing…
-- - The app installation is confirmed.
+  - An installation window will appear.
+  - Your device will display Processing…
+  - The app installation is confirmed.
 - Close Ledger Live
 
 ### Connecting to Pocket Wallet
@@ -149,9 +149,7 @@ Before You Start, Make Sure:
 
 ### Signing Transactions with Ledger
 - Transactions generated in the Pocket Wallet must be signed using the Nano device buttons.
-- The Ledger app provides a series of prompts which can be used to verify the transaction details.
-- Once signed, the transaction will be submitted to the chain the same as a transaction signed with any of the other methods.
-
+- The Ledger app provides a series of prompts which can be used to verify the transaction details prior to signing or rejecting.
 
 ## SendWallet
 
