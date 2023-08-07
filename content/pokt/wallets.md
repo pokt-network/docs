@@ -12,6 +12,7 @@ Before buying any POKT, you should first ensure that you know how to store it sa
 In this section, we'll describe some different wallets that can store and manage POKT:
 
 * [Pocket Wallet](#pocket-wallet) (Official)
+* [Pocket Ledger Wallet](#pocket-ledger-wallet)
 * [SendWallet](#sendwallet)
 
 {{% notice style="info" %}}
@@ -82,7 +83,7 @@ For more convenience, you may consider using a password manager that can store e
 
 ### Import wallet
 
-The [official wallet web app](https://wallet.pokt.network) has two methods of importing your wallet. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase.
+The [official wallet web app](https://wallet.pokt.network) has three methods of importing your wallet. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase. 
 
 ![](/images/ClickImport.png)
 #### Key File import
@@ -102,6 +103,16 @@ Create a temporary passphrase that will secure your session until you log out of
 
 ![](/images/ImportPrivateKey.png)
 
+#### Ledger wallet import
+
+Click Connect.
+
+Select the account index you would like to use in Pocket Wallet.
+
+Click Unlock.
+
+![](/images/ImportLedgerAccount.png)
+
 ### Now supporting Unstoppable Domains in the POKT Wallet.
 
 Users can now send transactions to an Unstoppable Domain from a POKT Wallet address. Create an Unstoppable Domain for your wallet [here](https://unstoppabledomains.com/).
@@ -109,6 +120,38 @@ Users can now send transactions to an Unstoppable Domain from a POKT Wallet addr
 For guidance on how to send a transaction with a UD, check out this video:
 
 {{< video "https://docs.pokt.network/videos/unstoppable-domains-demo.mp4" >}}
+
+## Pocket Ledger Wallet
+
+Before You Start, Make Sure:
+- You’ve [initialized](https://support.ledgerwallet.com/hc/en-us/articles/360000613793) your Ledger Device.
+- The latest [Nano firmware](https://support.ledgerwallet.com/hc/en-us/articles/360002731113) is installed.
+- Ledger Live is [ready to use](https://support.ledger.com/hc/en-us/articles/4404389606417-Download-and-install-Ledger-Live).
+- The latest version of the [Pocket Nano app](https://github.com/ledgerhq/app-pocket) is installed.
+
+### Install the Pocket App
+- Open the Manager in Ledger Live.
+- Connect and unlock your Ledger Device.
+- If asked, follow the onscreen instructions and Allow Ledger Manager.
+- Find Pocket in the app catalog.
+- Click the Install button.
+- - An installation window will appear.
+- - Your device will display Processing…
+- - The app installation is confirmed.
+- Close Ledger Live
+
+### Connecting to Pocket Wallet
+- Connect and unlock your Ledger Device.
+- Open the Pocket App on your Ledger Device.
+- Open the [Pocket Wallet](#pocket-wallet) in a browser.
+- Follow [Account Import](#ledger-wallet-import) instructions above.
+- Use the Pocket Wallet as normal.
+
+### Signing Transactions with Ledger
+- Transactions generated in the Pocket Wallet must be signed using the Nano device buttons.
+- The Ledger app provides a series of prompts which can be used to verify the transaction details.
+- Once signed, the transaction will be submitted to the chain the same as a transaction signed with any of the other methods.
+
 
 ## SendWallet
 
