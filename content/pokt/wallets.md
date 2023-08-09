@@ -83,7 +83,7 @@ For more convenience, you may consider using a password manager that can store e
 
 ### Import wallet
 
-The [official wallet web app](https://wallet.pokt.network) has three methods of importing your wallet. The Key File is the more secure method of importing your wallet since it is encrypted by your passphrase. 
+The [official wallet web app](https://wallet.pokt.network) has three methods of importing your wallet. The Key File is a more secure method of importing your wallet than the Private Key, since the Key File is encrypted by your passphrase. 
 
 ![](/images/ClickImport.png)
 #### Key File import
