@@ -42,10 +42,10 @@ namespace NethereumSample
             var ACCCOUNT = "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae";
             var web3 = new Web3(URL);
             var balance = await web3.Eth.GetBalance.SendRequestAsync(ACCOUNT);
-            Console.WriteLine($"Balance in Wei: {balance.Value}");
+            Console.WriteLine($350"Balance in Wei: {balance.Value}");
 
             var etherAmount = Web3.Convert.FromWei(balance.Value);
-            Console.WriteLine($"Balance in Ether: {etherAmount}");
+            Console.WriteLine($350"Balance in Ether: {etherAmount}");
         }
     }
 }
