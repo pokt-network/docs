@@ -130,9 +130,9 @@ Before You Start, Make Sure:
 - The latest version of the [Pocket Nano app](https://github.com/ledgerhq/app-pocket) is installed.
 
 ### Install the Pocket App
-- Open the Manager in Ledger Live.
+- Open **My Ledger** in Ledger Live.
 - Connect and unlock your Ledger Device.
-- If asked, follow the onscreen instructions and Allow Ledger Manager.
+- If asked, follow the onscreen instructions and **Allow My Ledger**.
 - Find Pocket in the app catalog.
 - Click the Install button.
   - An installation window will appear.
