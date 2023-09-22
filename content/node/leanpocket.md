@@ -78,6 +78,7 @@ To enable LeanPocket:
   ```
   pocket accounts get-validators
   ```
+  
 * You can add metadata to your `lean_node_keys.json` file for organizational purposes:
 
   ```

@@ -148,7 +148,7 @@ Example of a pool:
 
 The funds remain in the pool during the staking period. When you initiate an unstaking process, the funds are moved back from the pool to your staking account.
 
-To check the pool balances, query ```pocket query supply``` using the [CLI](https://docs.pokt.network/node/tutorials/zero-to-node/software-install/#install-dependencies).
+To check the pool balances, query `pocket query supply` using the [CLI](https://docs.pokt.network/node/tutorials/zero-to-node/software-install/#install-dependencies).
 
 
 ## Node Troubleshooting
@@ -335,17 +335,21 @@ To see how this works, take the address `85efd04b9bad9da612ee2f80db9b62bb413e32f
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 curl -H "Content-Type: application/json" -d '{"height": 4406, "address": "85efd04b9bad9da612ee2f80db9b62bb413e32fb"}' -X POST https://mainnet-1.nodes.pokt.network:4201/v1/query/balance
 
 ```
+
 {{% /tab %}}
 {{% tab name="Response" %}}
+
 ```
 {
  "balance": 1848257793
 }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -354,16 +358,20 @@ But for the subsequent block, the balance was 1853.342684 POKT:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 curl -H "Content-Type: application/json" -d '{"height": 4407, "address": "85efd04b9bad9da612ee2f80db9b62bb413e32fb"}' -X POST https://mainnet-1.nodes.pokt.network:4201/v1/query/balance
 ```
+
 {{% /tab %}}
 {{% tab name="Response" %}}
+
 ```
 {
  "balance": 1853342684
 }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -377,14 +385,18 @@ Finally, you can see that this address was the proposer for block 4406:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 curl -H "Content-Type: application/json" -d '{"height": 4406}' -X POST https://mainnet-1.nodes.pokt.network:4201/v1/query/block | jq '.block.header.proposer_address'
 ```
+
 {{% /tab %}}
 {{% tab name="Response" %}}
+
 ```
 "85EFD04B9BAD9DA612EE2F80DB9B62BB413E32FB"
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 

@@ -15,17 +15,21 @@ An account is needed to participate at any level of the network.
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket accounts create
 ```
+
 {{% /tab %}}
 
 {{% tab name="Response" %}}
+
 ```
 > Enter Passphrase
 > Account generated successfully:
 > Address: <address>
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -43,15 +47,19 @@ Backup your private key to an encrypted and ASCII armored JSON file, to the spec
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket accounts export <address> --path <path>
 ```
+
 {{% /tab %}}
 
 {{% tab name="Example" %}}
+
 ```
 pocket accounts export 59f08710afbad0e20352340780fdbf4e47622a7c --path $HOME/super-secret-dir
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -128,17 +136,21 @@ The appropriate genesis file should be placed at `.pocket/config/genesis.json`
 
 {{< tabs >}}
 {{% tab name="Mainnet Setup" %}}
+
 ```
 mkdir -p $HOME/.pocket/config
 curl -o $HOME/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
 ```
+
 {{% /tab %}}
 
 {{% tab name="Testnet Setup" %}}
+
 ```
 mkdir -p $HOME/.pocket/config
 curl -o $HOME/.pocket/config/genesis.json https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -175,15 +187,19 @@ Other options for downloading the latest snapshot can be found in the [pocket-sn
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket start --seeds=<seeds> --mainnet
 ```
+
 {{% /tab %}}
 
 {{% tab name="Example" %}}
+
 ```
 pocket start --seeds="64c91701ea98440bc3674fdb9a99311461cdfd6f@node1.mainnet.pokt.network:21656" --mainnet
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -199,15 +215,19 @@ Stake the account to participate in the network. Staking as a servicer node lock
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket nodes stake custodial <address> <amount> <relay_chains> <serviceURI> mainnet 10000 false
 ```
+
 {{% /tab %}}
 
 {{% tab name="Example" %}}
+
 ```
 pocket nodes stake custodial 3ee61299d5bbbd2974cddcc194d9b547c7629546 20000000000 0001,0002 https://pokt.rocks:443 mainnet 10000 true
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 

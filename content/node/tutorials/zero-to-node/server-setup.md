@@ -148,6 +148,7 @@ To set the server hostname use the following steps:
     ```bash
     nano /etc/hostname
     ```
+
 2. Change the `localhost` value to the fully qualified hostname of your node (for example, `pokt001.pokt.run`).
 3. Save the file with `Ctrl+O` and then `Enter`.
 4. Exit nano with `Ctrl+X`.
@@ -156,6 +157,7 @@ To set the server hostname use the following steps:
     ```bash
     reboot
     ```
+
 6. Wait for the server to reboot then ssh back in as the `root` user before continuing on.
 
 ## Create a Pocket user account
@@ -169,6 +171,7 @@ To create a new user, enter the following commands:
     ```bash
     useradd -m -g sudo -s /bin/bash pocket && passwd pocket
     ```
+
 2.  For the rest of this guide, we'll be using the `pocket` user. So now that the `pocket` user is created, you can switch from using `root` to the `pocket` user with the following command:
 
     ```bash
@@ -182,11 +185,14 @@ Next we want to mount the secondary storage volume that we created in a previous
 1. Verify that the volume is attached to your instance.
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```
    sudo fdisk -l
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    Disk /dev/sdc: 800 GiB, 858993459200 bytes, 1677721600 sectors
    Disk model: Volume
@@ -194,46 +200,57 @@ Next we want to mount the secondary storage volume that we created in a previous
    Sector size (logical/physical): 512 bytes / 512 bytes
    I/O size (minimum/optimal): 512 bytes / 512 bytes
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
 2. Create a new partition. If the previous command shows a file path different from `/dev/sdc`, use that instead in the commands below:
+
    ```
    sudo mkfs.ext4 /dev/sdc
    ```
 
 3. Create a new mount point:
+
    ```
    sudo mkdir /mnt/data
    ```
 
 4. Mount the new partition:
+
    ```
    sudo mount /dev/sdc /mnt/data
    ```
+
 5. Verify that the partition was created by running the following command:
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```
    sudo lsblk -o NAME,PATH,SIZE,FSAVAIL,FSUSE%,MOUNTPOINT
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    NAME PATH       SIZE FSAVAIL FSUSE% MOUNTPOINT
    sda  /dev/sda 319.5G  289.5G     3% /
    sdb  /dev/sdb   512M                [SWAP]
    sdc  /dev/sdc   800G    328G    53% /mnt/data
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
 6. Set the volume to be mounted automatically. Open `/etc/fstab`:
+
    ```
    sudo nano /etc/fstab
    ```
 
 7. Add the following line to the bottom of the file:
+
    ```
    /dev/sdc /mnt/data ext4 defaults,noatime,nofail 0 2
    ```
@@ -274,6 +291,7 @@ One important thing to understand, is that without access to the ssh key, you wo
         ```bash
         ssh-keygen -t rsa -b 4096
         ```
+
     * Enter file in which to save the key (`~/.ssh/id_rsa`)
     * Enter a passphrase (empty for no passphrase)
     * Enter same passphrase again
@@ -296,6 +314,7 @@ One important thing to understand, is that without access to the ssh key, you wo
     |   . +o.*+.      |
     +----[SHA256]-----+
     ```
+
 3.  **Upload Key**
 
     Now we're going to upload the key so that we can use it to log into the pocket user. If you choose a different path for the ssh key, it's important to replace the `~/.ssh/id_rsa` with the key you used.
@@ -338,20 +357,25 @@ One important thing to understand, is that without access to the ssh key, you wo
     ```bash
     sudo systemctl restart sshd.service
     ```
+
 5. **Verify Everything Works**
 
    The last step is to log out of the server, and try logging back in. If you're no longer prompted for a password, then everything is working as expected.
 
    {{< tabs >}}
    {{% tab name="Windows" %}}
+
    ```
    ssh -i C:\Users\<USER>\.ssh\id_rsa -l pocket pokt001.pokt.run
    ```
+
    {{% /tab %}}
    {{% tab name="Linux/macOS" %}}
+
    ```
    ssh -i ~\.ssh\id_rsa pocket@pokt001.pokt.run
    ```
+   
    {{% /tab %}}
    {{< /tabs >}}
 

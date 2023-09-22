@@ -55,14 +55,18 @@ The command for staking a node was updated when non-custodial staking was activa
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 pocket nodes stake custodial <operatorAddress> <amount> <relayChainIDs> <serviceURI> <networkID> <fee> <isBefore8.0>
 ```
+
 {{% /tab %}}
 {{% tab name="Example" %}}
+
 ```bash
 pocket nodes stake custodial 0123456789012345678901234567890123456789 15100000000 0001,0021 https://pokt.rocks:443 mainnet 10000 false
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -71,14 +75,18 @@ pocket nodes stake custodial 0123456789012345678901234567890123456789 1510000000
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 pocket nodes stake non-custodial <operatorPublicKey> <outputAddress> <amount> <RelayChainIDs> <serviceURI> <networkID> <fee> <isBefore8.0>
 ```
+
 {{% /tab %}}
 {{% tab name="Example" %}}
+
 ```bash
 pocket nodes stake non-custodial 0123456789012345678901234567890123456789012345678901234567890123 0123456789012345678901234567890123456789 15100000000 0001,0021 https://pokt.rocks:443 mainnet 10000 false
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -114,14 +122,18 @@ The unstaking process is the same using custodial or non-custodial staking.
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 pocket nodes unstake <operatorAddr> <fromAddr> <networkID> <fee> <isBefore8.0>
 ```
+
 {{% /tab %}}
 {{% tab name="Example" %}}
+
 ```bash
 pocket nodes unstake 0123456789012345678901234567890123456789 0123456789012345678901234567890123456789 mainnet 10000 false
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
