@@ -15,12 +15,12 @@ description: Guidance for bridging your POKT to Ethereum & back.
 
 Before getting started, note that the end-to-end wrapping process is expected to take ~30 mins, and that minting wPOKT will cost gas (in ETH).
 
-- Prepare to wrap your POKT by connecting SendWallet to the bridge. If you don’t have SendWallet yet, you can download it [here](https://www.sendwallet.net/).
+- Prepare to wrap your POKT by connecting Ledger or SendWallet to the bridge. If you don’t have a Ledger wallet yet, see [here](https://support.ledger.com/hc/en-us/articles/12976051037853-Pocket-POKT-?docs=true) for the docs. And if you want to use SendWallet yet, you can download it [here](https://www.sendwallet.net/).
 - Prepare to mint your wPOKT by connecting your Ethereum wallet. Make sure your Ethereum wallet has some ETH for gas fees. If you don’t have enough gas, the bridge app will tell you.
 - You will not be able to initiate the wrap transaction until you have connected both wallets.
 
  {{% notice style="note" %}}
-You will be required to sign 2 transactions, first to deposit your POKT and then to mint your wPOKT. We recommend you keep the modal open and stay in the app until both transactions have been confirmed. If  you leave the app before both transactions complete, it will remain pending until you return and finish them. 
+You will be required to sign 2 transactions, first to deposit your POKT and then to mint your wPOKT. We recommend you keep the modal open and stay in the app until both transactions have been confirmed. If you leave the app before both transactions complete, it will remain pending until you return and finish them. 
 
 If you're wondering why wPOKT isn't in your wallet after 30 minutes, double check you've completed both transactions.
 {{% /notice %}}   
@@ -33,7 +33,7 @@ If you're wondering why wPOKT isn't in your wallet after 30 minutes, double chec
 ### Why haven’t I received my wPOKT yet?
 
 - **Are you looking in the right place?** First check that you’re looking at the correct blockchain. wPOKT lives on the Ethereum blockchain, so you will not see wPOKT in your Ethereum wallet unless you are connected to the Ethereum RPC. You can easily connect your wallet to the Ethereum RPC via Pocket Network using this [site](https://rpclist.info/). To cross-check, you can also search your ETH wallet address on [Etherescan](https://etherscan.io/) to see if the wPOKT balance appears there.
-- **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hourIf it has not been 30 minutes or it has only recently turned 30 mins, please try waiting a little longer.
+- **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hour.
 
 If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [discord](https://discord.gg/pokt).
 
