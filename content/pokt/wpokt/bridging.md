@@ -30,6 +30,10 @@ If you're wondering why wPOKT isn't in your wallet after 30 minutes, double chec
 
 ### What wallets are approved for wrapping POKT?
 
+You can use:
+- [Ledger](https://docs.pokt.network/pokt/wallets/#pocket-ledger-wallet)
+- [sendwallet](https://sendwallet.net)
+
 ### Why haven’t I received my wPOKT yet?
 
 - **Are you looking in the right place?** First check that you’re looking at the correct blockchain. wPOKT lives on the Ethereum blockchain, so you will not see wPOKT in your Ethereum wallet unless you are connected to the Ethereum RPC. You can easily connect your wallet to the Ethereum RPC via Pocket Network using this [site](https://rpclist.info/). To cross-check, you can also search your ETH wallet address on [Etherescan](https://etherscan.io/) to see if the wPOKT balance appears there.
