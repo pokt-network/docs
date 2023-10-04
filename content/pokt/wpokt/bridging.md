@@ -15,7 +15,10 @@ description: Guidance for bridging your POKT to Ethereum & back.
 
 Before getting started, note that the end-to-end wrapping process is expected to take ~30 mins, and that minting wPOKT will cost gas (in ETH).
 
-- Prepare to wrap your POKT by connecting Ledger or SendWallet to the bridge. If you don’t have a Ledger wallet yet, see [here](https://support.ledger.com/hc/en-us/articles/12976051037853-Pocket-POKT-?docs=true) for the docs. And if you want to use SendWallet, you can download it [here](https://www.sendwallet.net/).
+- Prepare to wrap your POKT by connecting Ledger, SendWallet, or NodeWallet to the bridge. If you don’t have one of these wallets, click below for more info:
+  - [Ledger wallet](https://support.ledger.com/hc/en-us/articles/12976051037853-Pocket-POKT-?docs=true)
+  - [SendWallet](https://www.sendwallet.net/)
+  - [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
 - Prepare to mint your wPOKT by connecting your Ethereum wallet. Make sure your Ethereum wallet has some ETH for gas fees. If you don’t have enough gas, the bridge app will tell you.
 - You will not be able to initiate the wrap transaction until you have connected both wallets.
 - Specify the amount of POKT tokens to wrap into wPOKT tokens, then click Wrap.
@@ -33,6 +36,7 @@ If you're wondering why wPOKT isn't in your wallet after 30 minutes, double chec
 You can use:
 - [Ledger](https://docs.pokt.network/pokt/wallets/#pocket-ledger-wallet)
 - [sendwallet](https://sendwallet.net)
+- [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
 
 ### Why haven’t I received my wPOKT yet?
 
@@ -47,7 +51,7 @@ If you have confirmed you’re looking in the right place and you have waited a 
 Before getting started, note that the end-to-end unwrapping process is expected to take ~30 mins.
 
 - Prepare to burn your wPOKT by connecting your Ethereum wallet to the bridge. Make sure your Ethereum wallet has some ETH for gas fees. If you don’t have enough gas, the bridge app will tell you.
-- Prepare to unwrap your POKT by connecting your SendWallet or Ledger.
+- Prepare to unwrap your POKT by connecting your Ledger, SendWallet, or NodeWallet.
 - You will not be able to initiate the unwrap transaction until you have connected both wallets.
 - Specify the amount of wPOKT tokens to unwrap into POKT tokens, then click Unwrap.
 - After ~30 minutes, you should receive your POKT.
