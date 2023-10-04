@@ -125,7 +125,6 @@ For guidance on how to send a transaction with a UD, check out this video:
 
 Before You Start, Make Sure:
 - You’ve [initialized](https://support.ledgerwallet.com/hc/en-us/articles/360000613793) your Ledger Device.
-- The latest [Nano firmware](https://support.ledgerwallet.com/hc/en-us/articles/360002731113) is installed.
 - Ledger Live is [ready to use](https://support.ledger.com/hc/en-us/articles/4404389606417-Download-and-install-Ledger-Live).
 - The latest version of the [Pocket Nano app](https://github.com/ledgerhq/app-pocket) is installed.
 

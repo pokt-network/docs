@@ -29,4 +29,6 @@ Enabling these benefits has the potential to unlock financial legos, such as str
 
 While the price for wPOKT may diverge from the price of POKT from time to time, as a result of market pressures on supply and demand wherever wPOKT and POKT are each traded - for example, on Uniswap for wPOKT and Gate/Kucoin for POKT - you will always be able to swap each wPOKT token for one POKT token, and vice-versa. This is because to mint wPOKT, POKT is first locked in the bridge vault and the corresponding amount of wPOKT is minted, so that the wPOKT token supply exactly equals the number of locked POKT. When wPOKT is swapped back for POKT, the wPOKT is burned, maintaining the 1:1 relationship.
 
+### How do I wrap my POKT?
 
+Head over to the [wPOKT bridge](https://wpokt.network/), and see the bridging FAQ below for any questions. 
