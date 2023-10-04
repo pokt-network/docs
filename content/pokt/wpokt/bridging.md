@@ -44,7 +44,7 @@ You can use:
 - **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hour.
 - **Have you added the wPOKT token address to MetaMask?** If your MetaMask wallet isn't auto-populating the wPOKT address, you'll need to add it manually. Follow instructions [here](https://support.metamask.io/hc/en-us/articles/360015489031-How-to-display-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H). The wPOKT address is 0x67f4c72a50f8df6487720261e188f2abe83f57d7 and it should autopopulate once it's pasted in. 
 
-If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [discord](https://discord.com/channels/553741558869131266/1159177817574088724).
+If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [Discord server](https://discord.com/channels/553741558869131266/1159177817574088724).
 
 ### How can I unwrap my wPOKT back to POKT?
 
