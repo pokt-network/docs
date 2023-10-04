@@ -171,7 +171,7 @@ For more information on how to use SendWallet, see the [SendWallet documentation
 
 ## NodeWallet
 
-[NodeWallet]([https://sendwallet.net/](https://docs.decentralizedauthority.com/nodewallet) is an open source, browser-based Pocket Network wallet built by Decentralized Authority, the team behind [Node Pilot](https://nodepilot.tech). NodeWallet was started as a [priority project](https://forum.pokt.network/t/allocated-priority-new-wallet/4657/5?u=shane) from the Pocket Network Foundation.
+[NodeWallet]([https://sendwallet.net/](https://docs.decentralizedauthority.com/nodewallet) is an open source, browser-based Pocket Network wallet built by Decentralized Authority, the team behind [Node Pilot](https://nodepilot.tech). NodeWallet was started as a [Pocket Open Priority (POP)](https://forum.pokt.network/t/allocated-priority-new-wallet/4657/5?u=shane) project from the Pocket Network Foundation.
 
 ![NodeWallet](https://github.com/pokt-foundation/docs/assets/15126267/e656a785-8ec9-4bf4-9288-5fa2e10ec13c)
 
@@ -180,7 +180,7 @@ NodeWallet features:
 * Universal Seed Phrase Importer (Import seed phrases from other popular wallets, so you don't need a POKT specific seed phrase for POKT addresses)
 * Key file and private key importer
 * Generate multiple wallet addresses with one account
-* [wPOKT Bridge](https://wpokt.network/) compatable
+* [wPOKT Bridge](https://wpokt.network/) compatible
 * [Open source](https://github.com/decentralized-authority/nodewallet) with plugin design to make it contributor friendly for adding features and expanding to other networks
 * Utilizes [argon2](https://tutanota.com/blog/best-encryption-with-kdf) + AES-256 GCM for quantum secure encryption
 
