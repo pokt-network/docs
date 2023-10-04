@@ -25,19 +25,26 @@ As of this writing, the snapshots are refreshed every 12 hours. In the GitHub re
 To download the most recent snapshot:
 
 1. Create a `screen` instance:
+
    ```bash
    screen
    ```
+
    Press `Enter` to get back to a prompt.
 2. Change into the `.pocket` directory.
+
    ```bash
    cd ~/.pocket
    ```
+
 3. Create a directory named `data` and change into it:
+
    ```bash
    mkdir data && cd data
    ```
+
 4. Download the latest snapshot using the following command:
+
    ```bash
    wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar xvfz -
    ```
@@ -128,6 +135,7 @@ To create a new config file:
    ```bash
    echo $(pocket util print-configs) | jq '.tendermint_config.P2P.Seeds = "03b74fa3c68356bb40d58ecc10129479b159a145@seed1.mainnet.pokt.network:20656,64c91701ea98440bc3674fdb9a99311461cdfd6f@seed2.mainnet.pokt.network:21656,0057ee693f3ce332c4ffcb499ede024c586ae37b@seed3.mainnet.pokt.network:22856,9fd99b89947c6af57cd0269ad01ecb99960177cd@seed4.mainnet.pokt.network:23856,1243026603e9073507a3157bc4de99da74a078fc@seed5.mainnet.pokt.network:24856,6282b55feaff460bb35820363f1eb26237cf5ac3@seed6.mainnet.pokt.network:25856,3640ee055889befbc912dd7d3ed27d6791139395@seed7.mainnet.pokt.network:26856,1951cded4489bf51af56f3dbdd6df55c1a952b1a@seed8.mainnet.pokt.network:27856,a5f4a4cd88db9fd5def1574a0bffef3c6f354a76@seed9.mainnet.pokt.network:28856,d4039bd71d48def9f9f61f670c098b8956e52a08@seed10.mainnet.pokt.network:29856,5c133f07ed296bb9e21e3e42d5f26e0f7d2b2832@poktseed100.chainflow.io:26656"' | jq '.pocket_config.rpc_timeout = 15000' | jq '.pocket_config.rpc_port = "8082"' | jq '.pocket_config.remote_cli_url = "http://localhost:8082"' | jq . > ~/.pocket/config/config.json
    ```
+
    {{% notice style="warning" %}}
    This is a long command! Make sure you've copied it completely.
    {{% /notice %}}
@@ -136,11 +144,14 @@ To create a new config file:
 
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```bash
    cat ~/.pocket/config/config.json
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    {
      "tendermint_config": {
@@ -161,6 +172,7 @@ To create a new config file:
    ...
    ...
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
@@ -182,13 +194,17 @@ pocket util generate-chains
 This will prompt you for the following information:
 
 * Enter the ID of the Pocket Network RelayChain ID:
+
   ```
   0001
   ```
+
 * Enter the URL of the local network identifier.
+
   ```
   http://127.0.0.1:8082/
   ```
+
 * When you're prompted to add another chain, enter `n` for now.
 
 {{% notice style="info" %}}
@@ -205,10 +221,13 @@ When you start a Pocket node for the first time, it will need to find other node
 To create a JSON file with the genesis information:
 
 1. Change to the `.pocket/config` directory:
+
     ```bash
     cd ~/.pocket/config
     ```
+
 2. Use the following command to get the `genesis.json` file from GitHub:
+
     ```bash
     wget https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json genesis.json
     ```
@@ -220,14 +239,19 @@ Ubuntu and other UNIX-like systems have a `ulimit` shell command that's used to 
 ### Increasing the ulimit
 
 1. Before increasing the ulimit, you can check the current ulimit with the following command:
+
     ```bash
     ulimit -n
     ```
+
 2. Increase the ulimit to 16384. The `-Sn` option is for setting the soft limit on the number of open files:
+
     ```bash
     ulimit -Sn 16384
     ```
+
 3. Check the new ulimit to confirm that it was set correctly. The `-n` option is for getting the limit for just the number of open files:
+
     ```bash
     ulimit -n
     ```
@@ -237,13 +261,17 @@ Ubuntu and other UNIX-like systems have a `ulimit` shell command that's used to 
 Using the above method for setting the `ulimit` only keeps the change in effect for the current session. To permanently set the ulimit, you can do the following:
 
 1. Open the `/etc/security/limits.conf` file.
+
     ```bash
     sudo nano /etc/security/limits.conf
     ```
+
 2. Add the following line to the bottom of the file:
+
     ```bash
     pocket           soft    nofile          16384
     ```
+
 3. Save the file with `Ctrl+O` and then `Enter`.
 4. Exit nano with `Ctrl+X`.
 
@@ -259,10 +287,13 @@ Next, we'll configure the Pocket service using [systemd](https://en.wikipedia.or
 To setup a systemd service for Pocket, do the following:
 
 1. Open nano and create a new file called `pocket.service`:
+
    ```bash
    sudo nano /etc/systemd/system/pocket.service
    ```
+
 2. Add the following lines to the file:
+
    ```ini
    [Unit]
    Description=Pocket service
@@ -278,43 +309,57 @@ To setup a systemd service for Pocket, do the following:
    [Install]
    WantedBy=default.target
    ```
+
 3. Make sure the `User` is set to the user that will run the Pocket service.
 4. Make sure the `ExecStart` and `ExecStop` paths are set to the path for the Pocket binary.
 5. Save the file with `Ctrl+O` and then `return`.
 6. Exit nano with `Ctrl+X`.
 7. Reload the service files to include the pocket service:
+
    ```bash
    sudo systemctl daemon-reload
    ```
+
 8. Start the pocket service:
+
    ```bash
    sudo systemctl start pocket.service
    ```
+
 9. Verify the service is running:
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```bash
    sudo systemctl status pocket.service
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    pocket.service - Pocket service
      Loaded: loaded (/etc/systemd/system/pocket.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2022-10-07 00:07:05 UTC; 1 weeks 0 days ago
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
 10. Stop the pocket service:
+
     ```bash
     sudo systemctl stop pocket.service
     ```
+
 11. Verify the service is stopped:
+
     ```bash
     sudo systemctl status pocket.service
     ```
+
 12. Set the service to start on boot:
+
     ```bash
     sudo systemctl enable pocket.service
     ```
@@ -322,18 +367,23 @@ To setup a systemd service for Pocket, do the following:
 13. Verify the service is set to start on boot:
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```bash
    sudo systemctl list-unit-files --type=service | grep pocket.service
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    pocket.service                             enabled         enabled
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
 14. Start the pocket service:
+
     ```bash
     sudo systemctl start pocket.service
     ```
@@ -341,14 +391,19 @@ To setup a systemd service for Pocket, do the following:
 ### Other systemctl commands
 
 * Restart the Pocket service:
+
   ```bash
   sudo systemctl restart pocket.service
   ```
+
 * Prevent the service from starting on boot:
+
   ```bash
   sudo systemctl disable pocket.service
   ```
+
 * View mounted volumes:
+
   ```bash
   sudo systemctl list-units --type=mount
   ```
@@ -386,6 +441,7 @@ And when you're done with your `screen` instance, you can exit out of it:
 ```
 exit
 ```
+
 {{% /notice %}}
 
 

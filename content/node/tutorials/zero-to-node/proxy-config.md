@@ -34,11 +34,14 @@ Here's an example of how to request a certificate. Just replace `$HOSTNAME` with
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 sudo certbot --nginx --domain $HOSTNAME --register-unsafely-without-email --no-redirect --agree-tos
 ```
+
 {{% /tab %}}
 {{% tab name="Response" %}}
+
 ```
 Obtaining a new certificate
 Performing the following challenges:
@@ -52,6 +55,7 @@ Congratulations! You have successfully enabled
 https://pokt001.pokt.run
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -65,11 +69,14 @@ There is a command that certbot provides to test your certificate. It's used for
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 sudo certbot renew --dry-run
 ```
+
 {{% /tab %}}
 {{% tab name="Response" %}}
+
 ```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ** DRY RUN: simulating 'certbot renew' close to cert expiry
@@ -81,6 +88,7 @@ Congratulations, all renewals succeeded. The following certs have been renewed:
 **          (The test certificates above have not been saved.)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -100,14 +108,19 @@ The nginx configuration files we're interested in are located in the `/etc/nginx
 To configure nginx:
 
 1. Confirm the name of your SSL certificate:
+
     ```bash
     sudo ls /etc/letsencrypt/live/
     ```
+
 2. Create a new config file with nano:
+
     ```bash
     sudo nano /etc/nginx/sites-available/pocket
     ```
+
 3. Add the following code, making sure to change the hostname values (`pokt001.pokt.run`) to your node's DNS hostname in the three places found below:
+
     ```
     server {
         listen 80 default_server;
@@ -166,21 +179,29 @@ To configure nginx:
         }
     }
     ```
+
 4. Save the change with `Ctrl+O`.
 5. Exit nano with `Ctrl+X`.
 6. Stop nginx with:
+
     ```bash
     sudo systemctl stop nginx
     ```
+
 7. Disable the default configuration:
+
     ```bash
     sudo rm /etc/nginx/sites-enabled/default
     ```
+
 8. Enable our new configuration:
+
     ```bash
     sudo ln -s /etc/nginx/sites-available/pocket /etc/nginx/sites-enabled/pocket
     ```
+
 9. Start nginx:
+
     ```bash
     sudo systemctl start nginx
     ```
@@ -204,35 +225,43 @@ For running a Pocket node, you'll need to open the following ports:
 To use UFW to configure the firewall:
 
 1. Enable UFW. When prompted, press `y` to confirm:
+
     ```bash
     sudo ufw enable
     ```
+
 2. Set the default to deny all incoming connections:
+
     ```bash
     sudo ufw default deny
     ```
 
 3. Allow the SSH port:
+
     ```bash
     sudo ufw allow ssh
     ```
 
 4. Allow port 80:
+
     ```bash
     sudo ufw allow 80
     ```
 
 5. Allow port 443:
+
     ```bash
     sudo ufw allow 443
     ```
 
 6. Allow port 8081:
+
     ```bash
     sudo ufw allow 8081
     ```
 
 7. Allow port 26656:
+
     ```bash
     sudo ufw allow 26656
     ```

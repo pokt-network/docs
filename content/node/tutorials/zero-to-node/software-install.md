@@ -22,10 +22,13 @@ At this point you should be logged in via SSH as the `pocket` user that we set u
 ### Updating system packages
 
 1. Update the repository index with the following command:
+
     ```bash
     sudo apt update
     ```
+
 2. Update the distribution with the following command:
+
     ```bash
     sudo apt dist-upgrade -y
     ```
@@ -43,36 +46,43 @@ sudo apt-get install git -y
 ```
 
 #### build tools
+
 ```bash
 sudo apt-get install build-essential -y
 ```
 
 #### curl
+
 ```bash
 sudo apt-get install curl -y
 ```
 
 #### file
+
 ```bash
 sudo apt-get install file -y
 ```
 
 #### nginx
+
 ```bash
 sudo apt install nginx -y
 ```
 
 #### certbot
+
 ```bash
 sudo apt install certbot -y
 ```
 
 #### python3-certbot-nginx
+
 ```bash
 sudo apt-get install python3-certbot-nginx -y
 ```
 
 #### jq
+
 ```bash
 sudo apt install jq -y
 ```
@@ -85,47 +95,62 @@ After installing the dependencies, there is one more dependency we'll need to ad
 We could install Go using `apt`, but we want to get the latest stable version which probably isn't available by default in the `apt` repository. So, we'll use the steps below to install Go.
 
 1. Make sure you're in the pocket home directory.
+
     ```bash
     cd ~
     ```
 2. Find the latest version of Go from https://golang.org/dl/ then download it with the following command. (Make sure to change the link below to point to the correct version of Go.)
+
     ```bash
     wget https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz
     ```
+
 3. Extract the archive:
+
     ```bash
     sudo tar -xvf go1.19.2.linux-amd64.tar.gz
     ```
+
 4. Set permissions on the extracted files:
+
     ```bash
     sudo chown -R pocket ./go
     ```
+
 5. Add Go to the `PATH`:
+
     ```bash
     echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.profile
     ```
+
 6. Set the `GOPATH` and `GOBIN` environment variables:
+
     ```bash
     echo 'export GOPATH=$HOME/go' >> ~/.profile
-    ```
-    ```bash
     echo 'export GOBIN=$HOME/go/bin' >> ~/.profile
     ```
+
 7. Reload your `.profile`:
+
     ```bash
     source ~/.profile
     ```
+
 8. Verify the installation:
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```
    go version
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    go version go1.19.2 linux/amd64
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
    {{% notice style="info" %}}
@@ -134,15 +159,19 @@ We could install Go using `apt`, but we want to get the latest stable version wh
 9. Verify the `GOPATH` and `GOBIN` variables are set correctly:
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```bash
    go env
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    GOPATH="/mnt/data/go"
    GOBIN="/mnt/data/go/bin"
    ```
+
    {{% /tab %}}
    {{< /tabs >}}
 
@@ -155,46 +184,61 @@ We'll be downloading [Pocket Core](https://github.com/pokt-network/pocket-core/)
 To download and install Pocket Core, do the following:
 
 1. Create a project directory:
+
    ```bash
    sudo mkdir -p $GOPATH/src/github.com/pokt-network
    ```
+
 2. Change to the project directory:
+
    ```bash
    cd $GOPATH/src/github.com/pokt-network
    ```
+
 3. Clone the Pocket Core repository:
+
    ```bash
    sudo git clone https://github.com/pokt-network/pocket-core.git
    ```
+
 4. Change to the code directory:
+
    ```bash
    cd pocket-core
    ```
+
 5. Checkout the latest version. You can find the latest tag by going to https://github.com/pokt-network/pocket-core/tags:
 
    ```bash
    sudo git checkout tags/{{< pocket-version >}}
    ```
+
    {{% notice style="info" %}}
    You may see a warning about being in a "detached HEAD" state. This is normal.
    {{% /notice %}}
 
 6. Build project code:
+
    ```bash
    go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
    ```
+
 7. Test that the build succeeded:
 
    {{< tabs >}}
    {{% tab name="Command" %}}
+
    ```
    pocket version
    ```
+
    {{% /tab %}}
    {{% tab name="Response" %}}
+
    ```
    AppVersion: {{< pocket-version >}}
    ```
+   
    {{% /tab %}}
    {{< /tabs >}}
 

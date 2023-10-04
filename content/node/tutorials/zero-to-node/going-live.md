@@ -139,18 +139,25 @@ If you're using the Pocket CLI to fund an account, keep in mind that the CLI use
 Also keep in mind that there is a cost for every transaction you send. At the moment, that cost is a flat fee of 0.01 POKT, or 10000 uPOKT, but this may be subject to change.
 
 1. List your accounts:
+
    ```bash
    pocket accounts list
    ```
+
 2. Confirm the validator account is set:
+
     ```bash
     pocket accounts get-validator
     ```
+
 3. Confirm the validator account has enough POKT. This should be at least 15,101 POKT. You'll want 15,100 to stake and a bit more for network fees:
+
     ```bash
     pocket query balance [YOUR_VALIDATOR_ADDRESS]
     ```
+
 4. Stake your node, making sure to enter the correct details for your setup:
+
     ```bash
     pocket nodes stake custodial [YOUR_VALIDATOR_ADDRESS] 15100000000 [CHAIN_IDS] https://[HOSTNAME]:443 mainnet 10000 false
     ```

@@ -49,15 +49,19 @@ Checkout the [latest release](https://github.com/pokt-network/pocket-core/releas
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 git checkout tags/<release tag>
 ```
+
 {{% /tab %}}
 
 {{% tab name="Example" %}}
+
 ```bash
 git checkout tags/{{< pocket-version >}}
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -65,15 +69,19 @@ Make sure you have your $GOPATH environment variable set correctly:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 echo $GOPATH
 ```
+
 {{% /tab %}}
 
 {{% tab name="Sample Response" %}}
+
 ```bash
 /home/<username>/go
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -81,15 +89,19 @@ Build from source and place the build in the `$GOPATH/bin` directory:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```bash
 go build -o $GOPATH/bin/pocket <Source code directory>/...
 ```
+
 {{% /tab %}}
 
 {{% tab name="Example" %}}
+
 ```
 go build -o $GOPATH/bin/pocket $GOPATH/src/github.com/pokt-network/pocket-core/app/cmd/pocket_core/main.go
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -97,15 +109,19 @@ Test your installation:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket version
 ```
+
 {{% /tab %}}
 
 {{% tab name="Response" %}}
+
 ```
 AppVersion: {{< pocket-version >}}
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -132,15 +148,19 @@ Test your installation:
 
 {{< tabs >}}
 {{% tab name="Command" %}}
+
 ```
 pocket version
 ```
+
 {{% /tab %}}
 
 {{% tab name="Response" %}}
+
 ```
 AppVersion: {{< pocket-version >}}
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
