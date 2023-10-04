@@ -35,7 +35,7 @@ If you're wondering why wPOKT isn't in your wallet after 30 minutes, double chec
 
 You can use:
 - [Ledger](https://docs.pokt.network/pokt/wallets/#pocket-ledger-wallet)
-- [sendwallet](https://sendwallet.net)
+- [SendWallet](https://sendwallet.net)
 - [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
 
 ### Why haven’t I received my wPOKT yet?
