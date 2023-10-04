@@ -36,16 +36,16 @@ The Portal is a service that builds on the Pocket Network, managing app stakes o
 
 We have considered a world in which other people deploy their own Portals and compete to provide the best layer-2 quality enforcement. However, we realized that Portals would fall to the tragedy of the commons; they are simultaneously expensive to run and inherently altruistic. The only way this could be resolved off-chain is through economies of scale and extractive pricing. Sound familiar? If we went down this route, we would no longer be solving the incentive problem we saw in the full node ecosystem, we’d simply be pushing it further up the stack.
 
-To solve this in a manner compatible with our trustless vision, the protocol needs to directly incentivize actors on-chain to enforce quality according to a standardized ruleset. Enter the Fishermen. These are a new set of actors who can disguise themselves as Apps and sample the quality provided by Servicers.
+To solve this in a manner compatible with our trustless vision, the protocol needs to directly incentivize actors on-chain to enforce quality according to a standardized ruleset. Enter the Watchers. These are a new set of actors who can disguise themselves as Apps and sample the quality provided by Servicers.
 
-Fishermen measure the quality of relays across three key metrics according to a standardized sampling protocol:
+Watchers measure the quality of relays across three key metrics according to a standardized sampling protocol:
 
-* **Availability:** Since Fishermen, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
-* **Latency:** The time it takes for the Fisherman to receive a signed response from the Servicer (i.e. Round Trip Time) is another metric that is tracked. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
-* **Consistency:** In addition to time-based sampling, it is mandatory for Fishermen to sample all Servicers in a session at once. The Fishermen can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
+* **Availability:** Since Watchers, Apps, and Servicers are all time-synced according to the session protocol, time-based sampling can be used to assess the availability of the Servicer. If no signed response can be collected from a Servicer, a null sample is recorded for the sample time slot. The more null samples the worse the Servicer’s availability score.
+* **Latency:** The time it takes for the Watcher to receive a signed response from the Servicer (i.e. Round Trip Time) is another metric that is tracked. Due to normal variances in latency to be expected from the varying geographical distance between Apps and Servicers, these metrics are used to disincentivize high-average latency rather than explicitly rewarding the highest-performing Servicers.
+* **Consistency:** In addition to time-based sampling, it is mandatory for Watchers to sample all Servicers in a session at once. The Watchers can then compare responses and measure data consistency without needing their own comparative Web3 datasource.
 
-![The Fisherman sends sampling requests to all Servicers to collect data about all 3 quality metrics](/images/Fisherman1.png)
-Fishermen compile these samples into test scores for each Servicer, which are averaged out across Fishermen over time, ultimately determining the proportion of block rewards that Servicers receive. Fishermen are not incentivized to influence test scores because they are paid based on the quantity and completeness of their reports, not the content of the metrics being reported.
+![The Watcher sends sampling requests to all Servicers to collect data about all 3 quality metrics](/images/Watcher1.png)
+Watchers compile these samples into test scores for each Servicer, which are averaged out across Watchers over time, ultimately determining the proportion of block rewards that Servicers receive. Watchers are not incentivized to influence test scores because they are paid based on the quantity and completeness of their reports, not the content of the metrics being reported.
 
 ![Utility V1 High Level Overview](/images/utility-v1.png)
 ### Quality Incentives
@@ -56,7 +56,7 @@ Fishermen compile these samples into test scores for each Servicer, which are av
 
 #### v1.0 – Quality-based
 
-v1.0 prioritizes quality over quantity; block rewards are distributed to Servicers according to the aggregate test scores submitted by Fishermen.
+v1.0 prioritizes quality over quantity; block rewards are distributed to Servicers according to the aggregate test scores submitted by Watchers.
 
 The total salary for Servicers is still proportional to the volume of relays performed on aggregate. However, this is divided between Servicers in proportion to their test scores. Each Servicer above the MinimumReportCardThreshold is eligible for an equal salary from the total pool for their RelayChain or GeoZone but has their allocation burned by the difference between their ReportCard% and 100%.
 
@@ -82,9 +82,9 @@ If Pocket Network is to grow to serve quadrillions of relays, the relay proof li
 
 Work payments in v1.0 are optimistic, more like a salary compared to v0’s unit-based payments.
 
-The total salary pool is still proportional to the volume of relays performed on aggregate. To determine the size of this total available reward, Fishermen probabilistically estimate volume using probabilistic hash collisions rather than counting up (and proving) every relay.
+The total salary pool is still proportional to the volume of relays performed on aggregate. To determine the size of this total available reward, Watchers probabilistically estimate volume using probabilistic hash collisions rather than counting up (and proving) every relay.
 
-The Fishermen samples themselves are also optimistic. Fishermen only need to submit test scores on a pseudorandom schedule and only need to verify a single pseudorandomly selected non-null sample. Since the Fishermen (and Servicers) can’t predict which test scores will be submitted or which samples will need to be verified, the monitoring system remains a secure deterrent of bad behavior while avoiding the cost that would come from validating every test score.
+The Watchers samples themselves are also optimistic. Watchers only need to submit test scores on a pseudorandom schedule and only need to verify a single pseudorandomly selected non-null sample. Since the Watchers (and Servicers) can’t predict which test scores will be submitted or which samples will need to be verified, the monitoring system remains a secure deterrent of bad behavior while avoiding the cost that would come from validating every test score.
 
 ![](/images/Test1.png)
 ![We only need to submit a subset of test scores and prove a subset of samples](/images/Test2.png)
@@ -105,25 +105,25 @@ We have already begun moving away from this model with the separation of Validat
 
 We have already agreed that Servicers shouldn’t need to validate proofs. Taking this a step further, why should they need to prove their own work? In v0, Servicers must constantly store claims and proofs if they want to get paid, which presents a computational burden that distracts them from optimizing on their most important tasks: relaying RPC requests.
 
-In v1.0, we are more explicitly separating actors according to their tasks. We are introducing the Fisherman, whose sole responsibility is to prove the quality of work done. This narrows the scope of Servicer work to just performing relays, which should make it cheaper to perform relays and thus dramatically enhance the efficiency of the network’s core task.
+In v1.0, we are more explicitly separating actors according to their tasks. We are introducing the Watcher, whose sole responsibility is to prove the quality of work done. This narrows the scope of Servicer work to just performing relays, which should make it cheaper to perform relays and thus dramatically enhance the efficiency of the network’s core task.
 
 ## v1.0 Utility Roadmap
 
 ### 1. Proto-Fish
 
-We will begin live-testing the Fisherman sampling methods in v0, using the Portal as a low-risk supervised environment.
+We will begin live-testing the Watcher sampling methods in v0, using the Portal as a low-risk supervised environment.
 
 ### 2. Castaway
 
-When v1.0 launches, we will begin with a single DAO-governed Fisherman. This will enable us to adopt all the benefits of v1.0, with the Fisherman actor being the only trusted actor in the network.
+When v1.0 launches, we will begin with a single DAO-governed Watcher. This will enable us to adopt all the benefits of v1.0, with the Watcher actor being the only trusted actor in the network.
 
-### 3. Fishermen
+### 3. Watchers
 
-We will then transition to a multi-Fisherman model, wherein DAO governance can appoint and remove Fishermen, burning them to penalize bad behavior.
+We will then transition to a multi-Watcher model, wherein DAO governance can appoint and remove Watchers, burning them to penalize bad behavior.
 
 ### 4. Cast-Net
 
-Finally, Fishermen will become truly trustless actors as the monitoring/enforcement of their behavior is moved entirely on-chain.
+Finally, Watchers will become truly trustless actors as the monitoring/enforcement of their behavior is moved entirely on-chain.
 
 ## More Details
 

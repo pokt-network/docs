@@ -64,7 +64,7 @@ To be 100% certain that all functional nodes received the message, the Double-Da
 
 ### v0 – Everyone Communicates Everything
 
-In the current system, all nodes communicate any information to all other nodes regardless of whether the information is relevant to that node. This means that Servicers must actively listen and share information about the consensus process, despite the fact that they are not participating. In networks that primarily consist of Validators, this doesn’t cause many issues, but since Pocket Network contains other specialized actors such as Servicers and Fishermen, scaling these actors should not impact the communication of processes irrelevant to their input. If we don’t scale actor communication independently, scaling Servicers and Fishermen will slow down consensus, resulting in longer block times.
+In the current system, all nodes communicate any information to all other nodes regardless of whether the information is relevant to that node. This means that Servicers must actively listen and share information about the consensus process, despite the fact that they are not participating. In networks that primarily consist of Validators, this doesn’t cause many issues, but since Pocket Network contains other specialized actors such as Servicers and Watchers, scaling these actors should not impact the communication of processes irrelevant to their input. If we don’t scale actor communication independently, scaling Servicers and Watchers will slow down consensus, resulting in longer block times.
 
 ### v1.0 – Restricted to Relevant Parties
 
