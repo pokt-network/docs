@@ -16,10 +16,6 @@ In this section, we'll describe some different wallets that can store and manage
 * [SendWallet](#sendwallet)
 * [NodeWallet](#nodewallet)
 
-{{% notice style="info" %}}
-Ledger support and additional wallets are in development and will be available soon.
-{{% /notice %}}
-
 
 ## Pocket Wallet
 
