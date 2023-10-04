@@ -60,8 +60,8 @@ Before getting started, note that the end-to-end unwrapping process is expected 
 If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our discord: 
 discord.gg/pokt
 
-### Why does the bridge take ~30 mins?
+### Why does the bridge take up to 30 mins?
 
 - **Pocket Network block times.** Pocket Network blocks complete every 15 minutes. Depending on when you sign the transaction, it may take up to 15 minutes for your transaction to appear on-chain.
-- **Bridge validation time.** The wPOKT bridge verifies your request between chains. It takes a few minutes to reach consensus and start a transaction on-chain.
+- **Bridge validation time.** The wPOKT bridge verifies your request between chains. It takes up to 10 minutes to reach consensus and start a transaction on-chain.
 - **Ethereum block times.** Ethereum blocks complete every 12 seconds. For large balances, it is common to wait for up to 32 blocks before proceeding with a transaction.
