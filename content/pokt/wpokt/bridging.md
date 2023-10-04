@@ -38,6 +38,7 @@ You can use:
 
 - **Are you looking in the right place?** First check that you’re looking at the correct blockchain. wPOKT lives on the Ethereum blockchain, so you will not see wPOKT in your Ethereum wallet unless you are connected to the Ethereum RPC. You can easily connect your wallet to the Ethereum RPC via Pocket Network using this [site](https://rpclist.info/). To cross-check, you can also search your ETH wallet address on [Etherescan](https://etherscan.io/) to see if the wPOKT balance appears there.
 - **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hour.
+- **Have you added the wPOKT token address to MetaMask?** If your MetaMask wallet isn't auto-populating the wPOKT address, you'll need to add it manually. Follow instructions [here](https://support.metamask.io/hc/en-us/articles/360015489031-How-to-display-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H). The wPOKT address is 0x67f4c72a50f8df6487720261e188f2abe83f57d7 and it should autopopulate once it's pasted in. 
 
 If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [discord](https://discord.gg/pokt).
 
