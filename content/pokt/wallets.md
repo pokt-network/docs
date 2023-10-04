@@ -14,6 +14,7 @@ In this section, we'll describe some different wallets that can store and manage
 * [Pocket Wallet](#pocket-wallet) (Official)
 * [Pocket Ledger Wallet](#pocket-ledger-wallet)
 * [SendWallet](#sendwallet)
+* [NodeWallet](#nodewallet)
 
 {{% notice style="info" %}}
 Ledger support and additional wallets are in development and will be available soon.
@@ -167,3 +168,22 @@ SendWallet features:
 You can try SendWallet by downloading the browser extension for [Chrome](https://chrome.google.com/webstore/detail/sendwallet/adganlhbinonbpfiehjjpmklkbghkaio?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/sendwallet/).
 
 For more information on how to use SendWallet, see the [SendWallet documentation](https://docs.sendwallet.net/).
+
+## NodeWallet
+
+[NodeWallet]([https://sendwallet.net/](https://docs.decentralizedauthority.com/nodewallet) is an open source, browser-based Pocket Network wallet built by Decentralized Authority, the team behind [Node Pilot](https://nodepilot.tech). NodeWallet was started as a [priority project](https://forum.pokt.network/t/allocated-priority-new-wallet/4657/5?u=shane) from the Pocket Network Foundation.
+
+![NodeWallet](https://github.com/pokt-foundation/docs/assets/15126267/e656a785-8ec9-4bf4-9288-5fa2e10ec13c)
+
+NodeWallet features:
+
+* Universal Seed Phrase Importer (Import seed phrases from other popular wallets, so you don't need a POKT specific seed phrase for POKT addresses)
+* Key file and private key importer
+* Generate multiple wallet addresses with one account
+* [wPOKT Bridge](https://wpokt.network/) compatable
+* [Open source](https://github.com/decentralized-authority/nodewallet) with plugin design to make it contributor friendly for adding features and expanding to other networks
+* Utilizes [argon2](https://tutanota.com/blog/best-encryption-with-kdf) + AES-256 GCM for quantum secure encryption
+
+You can try NodeWallet by downloading the browser extension [here](https://docs.decentralizedauthority.com/nodewallet/install-on-chrome).
+
+For more information on how to use NodeWallet, see the [NodeWallet documentation](https://docs.decentralizedauthority.com/nodewallet).
