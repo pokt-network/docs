@@ -173,7 +173,7 @@ For more information on how to use SendWallet, see the [SendWallet documentation
 
 [NodeWallet]([https://sendwallet.net/](https://docs.decentralizedauthority.com/nodewallet) is an open source, browser-based Pocket Network wallet built by Decentralized Authority, the team behind [Node Pilot](https://nodepilot.tech). NodeWallet was started as a [Pocket Open Priority (POP)](https://forum.pokt.network/t/allocated-priority-new-wallet/4657/5?u=shane) project from the Pocket Network Foundation.
 
-![NodeWallet]([https://github.com/pokt-foundation/docs/assets/15126267/e656a785-8ec9-4bf4-9288-5fa2e10ec13c](https://nodepilot.tech/wp-content/uploads/2023/10/NodeWallet-Splash.png)
+![NodeWallet](https://nodepilot.tech/wp-content/uploads/2023/10/NodeWallet-Splash.png)
 
 NodeWallet features:
 
