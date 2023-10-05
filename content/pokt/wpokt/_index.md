@@ -31,4 +31,4 @@ While the price for wPOKT may diverge from the price of POKT from time to time, 
 
 ### How do I wrap my POKT?
 
-Head over to the [wPOKT bridge](https://wpokt.network/), and see the bridging FAQ below for any questions. 
+Head over to the [wPOKT bridge](https://wpokt.network/), check out the bridging tutorial below, or refer to the bridging FAQ for any questions. 
