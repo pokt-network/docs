@@ -18,10 +18,10 @@ Written by [POKT News](https://twitter.com/PoktNews/status/1709884757973037221).
 ## Video Walkthroughs
 
 ### Bridging Process
-https://github.com/pokt-foundation/docs/assets/6369871/3a44e15c-627a-43da-ae25-63e612fe9072
+{{< video "https://docs.pokt.network/videos/wpokt_bridging.mp4" >}}
 
 ### Minting Process
-https://github.com/pokt-foundation/docs/assets/6369871/2045678b-2dfb-44ae-8c3a-3baa751fa6d2
+{{< video "https://docs.pokt.network/videos/wpokt_minting.mp4" >}}
 
 ## Written Guide to wrapping $POKT
 
@@ -30,7 +30,7 @@ For this tutorial, we'll use a Ledger Nano S for POKT and MetaMask for the wPOKT
 1. Go to [http://wpokt.network](http://wpokt.network) and connect your Pocket Wallet using your Ledger.
     
 
-https://github.com/pokt-foundation/docs/assets/6369871/4b6565bb-4d19-402c-9551-c7d39a2eab78
+{{< video "https://docs.pokt.network/videos/01-POKT.mp4" >}}
     
 2. Then, connect your Ethereum Wallet, we’re using MetaMask. 
     
