@@ -18,4 +18,4 @@ POKT is the native cryptocurrency that powers Pocket. In this section, we'll go 
 * [Manage POKT](/pokt/wallets/)
 * [Buy POKT](/pokt/buy/)
 * [Stake POKT](/pokt/stake/)
-* [Wrapped POKT](/pokt/wrapped-pokt/_index.md)
+* [Wrapped POKT](/pokt/wpokt/)
