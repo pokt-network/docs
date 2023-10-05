@@ -35,15 +35,16 @@ If you're wondering why wPOKT isn't in your wallet after 30 minutes, double chec
 
 You can use:
 - [Ledger](https://docs.pokt.network/pokt/wallets/#pocket-ledger-wallet)
-- [sendwallet](https://sendwallet.net)
+- [SendWallet](https://sendwallet.net)
 - [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
 
 ### Why haven’t I received my wPOKT yet?
 
 - **Are you looking in the right place?** First check that you’re looking at the correct blockchain. wPOKT lives on the Ethereum blockchain, so you will not see wPOKT in your Ethereum wallet unless you are connected to the Ethereum RPC. You can easily connect your wallet to the Ethereum RPC via Pocket Network using this [site](https://rpclist.info/). To cross-check, you can also search your ETH wallet address on [Etherescan](https://etherscan.io/) to see if the wPOKT balance appears there.
 - **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hour.
+- **Have you added the wPOKT token address to MetaMask?** If your MetaMask wallet isn't auto-populating the wPOKT address, you'll need to add it manually. Follow instructions [here](https://support.metamask.io/hc/en-us/articles/360015489031-How-to-display-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H). The wPOKT address is 0x67f4c72a50f8df6487720261e188f2abe83f57d7 and it should autopopulate once it's pasted in. 
 
-If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [discord](https://discord.gg/pokt).
+If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our [Discord server](https://discord.com/channels/553741558869131266/1159177817574088724).
 
 ### How can I unwrap my wPOKT back to POKT?
 
@@ -63,8 +64,8 @@ Before getting started, note that the end-to-end unwrapping process is expected 
 If you have confirmed you’re looking in the right place and you have waited a little longer, but you still do not see your tokens, please contact us for support on our discord: 
 discord.gg/pokt
 
-### Why does the bridge take ~30 mins?
+### Why does the bridge take up to 30 mins?
 
 - **Pocket Network block times.** Pocket Network blocks complete every 15 minutes. Depending on when you sign the transaction, it may take up to 15 minutes for your transaction to appear on-chain.
-- **Bridge validation time.** The wPOKT bridge verifies your request between chains. It takes a few minutes to reach consensus and start a transaction on-chain.
+- **Bridge validation time.** The wPOKT bridge verifies your request between chains. It takes up to 10 minutes to reach consensus and start a transaction on-chain.
 - **Ethereum block times.** Ethereum blocks complete every 12 seconds. For large balances, it is common to wait for up to 32 blocks before proceeding with a transaction.
