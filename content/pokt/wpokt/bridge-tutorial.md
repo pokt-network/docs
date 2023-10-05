@@ -35,7 +35,7 @@ For this tutorial, we'll use a Ledger Nano S for POKT and MetaMask for the wPOKT
 2. Then, connect your Ethereum Wallet, we’re using MetaMask. 
     
 
-https://github.com/pokt-foundation/docs/assets/6369871/42d77a5c-df1b-4052-b45b-9dab81366e31
+{{< video "https://docs.pokt.network/videos/02-mm.mp4" >}}
     
    Once connected, you should see both your POKT and wPOKT (if any) balances.
     ![3-balances](https://github.com/pokt-foundation/docs/assets/6369871/d79fa309-b5a2-49b5-ac52-c35d4f23ab08)
@@ -45,7 +45,7 @@ https://github.com/pokt-foundation/docs/assets/6369871/42d77a5c-df1b-4052-b45b-9
     Input the amount of POKT you want to wrap. Click ‘Wrap’ and follow the prompt to sign and approve the transaction on your ledger. 
     
 
-https://github.com/pokt-foundation/docs/assets/6369871/87b96b22-553e-4801-868a-f601a0348021
+{{< video "https://docs.pokt.network/videos/03-wrap.mp4" >}}
 
     
 4. Transactions (Txs) on the POKT network take up to 15 minutes to confirm, so we wait. 🧘
