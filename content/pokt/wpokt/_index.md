@@ -16,6 +16,10 @@ description: Wrapped POKT (wPOKT) links the Ethereum and POKT ecosystems, provid
 
 Wrapped POKT (wPOKT) is an Ethereum ERC-20 token backed 1:1 by POKT.
 
+This the correct token contract:
+- [Etherscan](https://etherscan.io/token/0x67F4C72a50f8Df6487720261E188F2abE83F57D7)
+- [Coingecko](https://www.coingecko.com/en/coins/wrapped-pokt)
+
 ### What are the benefits of wPOKT?
 
 By having a representation of POKT in the Ethereum ecosystem, we enable:
