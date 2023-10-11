@@ -1,7 +1,7 @@
 ---
 title: FAQ - wPOKT Bridging
 menuTitle: Bridging FAQ
-weight: 20
+weight: 10
 aliases:
   - /home/pokt
   - /home/pokt/wpokt
