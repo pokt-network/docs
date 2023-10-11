@@ -13,6 +13,12 @@ aliases:
 description: Guidance for liquidity pool staking for you wrapped POKT.
 ---
 
+### Where can I find the Uniswap Liquidity Pool?
+
+https://v2.info.uniswap.org/pair/0xa7fd8ff8f4cada298286d3006ee8f9c11e2ff84e
+
+<img width="1424" alt="image" src="https://github.com/pokt-foundation/docs/assets/6369871/a662d3a6-0a5d-4f49-94e8-e1c8e2d583b0">
+
 ### How does providing liquidity for wPOKT work?
 
 Providing liquidity for wPOKT will be done through Uniswap v2, an automated market maker on Ethereum. In taking a liquidity provider (LP) position in Uniswap v2, you are providing both wPOKT and ETH in equal portions of USD value and putting them into a constantly rebalancing 50/50 basket, rebalancing in line with market price movements. For wPOKT, Uniswap v2 was chosen over the more recently deployed Uniswap v3, as v3 requires a much more active process of dynamically adjusting price ranges to provide liquidity, limiting community participation as LPs. Uniswap Liquidity providers help improve the liquidity of wPOKT while allowing LPs to earn Uniswap trading fees and POKT liquidity incentives provided by the DAO. You can learn more about how Uniswap works here - [Uniswap 101](https://blog.uniswap.org/what-is-uniswap).
