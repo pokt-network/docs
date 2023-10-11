@@ -26,7 +26,7 @@ The wPOKT/ETH liquidity pool on Uniswap is now open.
 
 LP incentives are live at 10am EST on Thursday October 12th.
 
-There will be an advantage to being in early, so it's best to get set up ahead of time.
+2, 855, 445 POKT will be distributed block-by-block over 90 days
 
 If you want to participate, here's your step-by-step guide.
 ![F8A3UGPbYAAHrp_](https://github.com/pokt-foundation/docs/assets/6369871/e164366f-8685-42de-a30a-0c8f66edebc1)
