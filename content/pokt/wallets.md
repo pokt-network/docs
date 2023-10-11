@@ -11,7 +11,7 @@ Before buying any POKT, you should first ensure that you know how to store it sa
 
 In this section, we'll describe some different wallets that can store and manage POKT:
 
-* [Pocket Wallet](#pocket-wallet) (Official)
+* [Pocket Wallet](#pocket-wallet)
 * [Pocket Ledger Wallet](#pocket-ledger-wallet)
 * [SendWallet](#sendwallet)
 * [NodeWallet](#nodewallet)

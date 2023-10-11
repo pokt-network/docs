@@ -1,7 +1,7 @@
 ---
 title: FAQ - wPOKT Bridging
 menuTitle: Bridging FAQ
-weight: 20
+weight: 10
 aliases:
   - /home/pokt
   - /home/pokt/wpokt
@@ -13,9 +13,11 @@ description: Guidance for bridging your POKT to Ethereum & back.
 
 ### How can I swap my POKT for wPOKT?
 
-Before getting started, note that the end-to-end wrapping process is expected to take ~30 mins, and that minting wPOKT will cost gas (in ETH).
+**Before getting started, note that the end-to-end wrapping process is expected to take ~30 mins, and that minting wPOKT will cost gas (in ETH).**
 
-- Prepare to wrap your POKT by connecting Ledger, SendWallet, or NodeWallet to the bridge. If you don’t have one of these wallets, click below for more info:
+Prepare to wrap your POKT by connecting Ledger, SendWallet, or NodeWallet to the bridge. The official POKT wallet does not have built in support for wPOKT, but you can import the official wallet to any of the supported options. See the specific wallet's documentation for instructions on How-To import.
+
+- If you don’t have a wallet, you can learn more about your wrapping POKT wallet options below:
   - [Ledger wallet](https://support.ledger.com/hc/en-us/articles/12976051037853-Pocket-POKT-?docs=true)
   - [SendWallet](https://www.sendwallet.net/)
   - [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
@@ -38,8 +40,12 @@ You can use:
 - [SendWallet](https://sendwallet.net)
 - [NodeWallet](https://docs.decentralizedauthority.com/nodewallet)
 
+What about the official POKT Wallet?
+- The official POKT wallet does not have built in support for wPOKT, but you can import the official wallet to any of the supported options. See the specific wallet's documentation for instructions on How-To import.
+
 ### Why haven’t I received my wPOKT yet?
 
+- **Where did my minting pop-up go?** If you navigate away, the pop-up will disappear until the 2nd transaction is ready to be minted. If it's not appearing, try refreshing your browser after the 30m waiting period. 
 - **Are you looking in the right place?** First check that you’re looking at the correct blockchain. wPOKT lives on the Ethereum blockchain, so you will not see wPOKT in your Ethereum wallet unless you are connected to the Ethereum RPC. You can easily connect your wallet to the Ethereum RPC via Pocket Network using this [site](https://rpclist.info/). To cross-check, you can also search your ETH wallet address on [Etherescan](https://etherscan.io/) to see if the wPOKT balance appears there.
 - **Have you waited long enough?** An end-to-end wrapping of POKT is expected to take approximately 30 minutes. In some cases, it may take up to an hour.
 - **Have you added the wPOKT token address to MetaMask?** If your MetaMask wallet isn't auto-populating the wPOKT address, you'll need to add it manually. Follow instructions [here](https://support.metamask.io/hc/en-us/articles/360015489031-How-to-display-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H). The wPOKT address is 0x67f4c72a50f8df6487720261e188f2abe83f57d7 and it should autopopulate once it's pasted in. 
@@ -48,7 +54,7 @@ If you have confirmed you’re looking in the right place and you have waited a 
 
 ### How can I unwrap my wPOKT back to POKT?
 
-Before getting started, note that the end-to-end unwrapping process is expected to take ~30 mins.
+Before getting started, note that the end-to-end unwrapping process is expected to take upwards of 30 mins.
 
 - Prepare to burn your wPOKT by connecting your Ethereum wallet to the bridge. Make sure your Ethereum wallet has some ETH for gas fees. If you don’t have enough gas, the bridge app will tell you.
 - Prepare to unwrap your POKT by connecting your Ledger, SendWallet, or NodeWallet.
