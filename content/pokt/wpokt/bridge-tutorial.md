@@ -1,7 +1,7 @@
 ---
 title: Tutorial - wPOKT Bridging
 menuTitle: Bridging Walkthrough
-weight: 15
+weight: 20
 aliases:
   - /home/pokt
   - /home/pokt/wpokt
@@ -14,6 +14,13 @@ description: How-to for bridging your POKT to Ethereum & back.
 # wPOKT Bridging Guides
 
 Written by [POKT News](https://twitter.com/PoktNews/status/1709884757973037221).
+
+{{% notice style="note" %}}
+You will be required to sign 2 transactions, first to deposit your POKT and then to mint your wPOKT. We recommend you keep the modal open and stay in the app until both transactions have been confirmed. If you leave the app before both transactions complete, it will remain pending until you return and finish them. 
+
+Make sure to read the FAQ before attempting to bridge, many common questions are answered there: https://docs.pokt.network/pokt/wpokt/bridging/
+{{% /notice %}} 
+
 
 ## Video Walkthroughs
 
