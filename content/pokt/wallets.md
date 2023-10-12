@@ -180,6 +180,6 @@ NodeWallet features:
 * [Open source](https://github.com/decentralized-authority/nodewallet) with plugin design to make it contributor friendly for adding features and expanding to other networks
 * Utilizes [argon2](https://tutanota.com/blog/best-encryption-with-kdf) + AES-256 GCM for quantum secure encryption
 
-You can try NodeWallet by downloading the browser extension [here](https://docs.decentralizedauthority.com/nodewallet/install-on-chrome).
+Install NodeWallet directly from the Chrome Store [here](https://chrome.google.com/webstore/detail/nodewallet/ilibmadejjooogcniiomgdgbojkmlbim).
 
 For more information on how to use NodeWallet, see the [NodeWallet documentation](https://docs.decentralizedauthority.com/nodewallet).
