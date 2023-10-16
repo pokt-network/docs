@@ -13,6 +13,24 @@ aliases:
 description: Guidance for liquidity pool staking for your wrapped POKT.
 ---
 
+### What are the relevant addresses for the token, the pool, and the DAO's SAFE? 
+
+The wPOKT token contract address is 0x67F4C72a50f8Df6487720261E188F2abE83F57D7
+
+See it on Etherscan [here](https://etherscan.io/token/0x67f4c72a50f8df6487720261e188f2abe83f57d7). 
+
+The wPOKT/wETH pool address is 0xa7fd8ff8f4cADa298286D3006ee8f9c11E2Ff84E
+
+You can go straight to the pool on Uniswap [here](https://v2.info.uniswap.org/pair/0xa7fd8ff8f4cada298286d3006ee8f9c11e2ff84e).
+
+The staking contract address is 0x3893b6deB66A8BFEBda3333103064668F89Bf9DD
+
+The wPOKT mint controller address is 0x0d006D9e862B362180eb602e5973Fd1fdb6f78dd
+
+The DAO's SAFE address for wPOKT is 0x2f16615234827eE4dF14d02d40C24E6a258dD360
+
+As a reminder, the DAO's ERA Allocation SAFE address is 0x7bAAf6cAEE858929a68a98a70a428b8BEB4d4093
+
 ### How much can I earn as an LP for wPOKT?
 The return from being an LP for the wPOKT-ETH pool will depend on the price of POKT and ETH over time, the volume and trading fees earned by the pool over time and the value of the wPOKT liquidity incentives. All LP returns are proportional to their share of the pool.
 
