@@ -25,42 +25,27 @@ To change your endpoint in MetaMask, do the following, **filling in the fields f
 If you receive this error message from MetaMask `Invalid number. Enter a decimal or '0x'-prefixed hexadecimal number` then leave the optional fields blank.
 {{% /notice %}}
 
-{{< loom 16182cc4d64d407fbca65f1162ac8fce "#loom-wrapper" >}}
+{{< loom aca2b49e68434ef1ba89740de9e513f4 >}}
 
 ## Endpoints
 
-| Network Name                         | New Endpoint                                                                              | ChainID | Symbol | Explorer URL                                                  |
-| ------------------------------------ | ----------------------------------------------------------------------------------------- | ------- | ------ | ------------------------------------------------------------- |
-| Arbitrum                             | https://arb-pokt.nodies.app                                                               | 42161   | ARB    | https://arbiscan.io                                           |
-| Avalanche Core                       | https://avax-pokt.nodies.app                                                              | 43114   | AVAX   | https://cchain.explorer.avax.network                          |
-| Avalanche C-chain                    | https://avax-pokt.nodies.app/ext/bc/C/rpc                                                 |         |        |                                                               |
-| Avalanche DFK                        | https://avax-pokt.nodies.app/ext/bc/q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi/rpc |         |        |                                                               |
-| BNB Smart Chain                      | https://bsc-pokt.nodies.app                                                               | 56      | BNB    | https://bscscan.com                                           |
-| DFK Chain                            |                                                                                           | 53935   | JEWEL  | https://subnets.avax.network/defi-kingdoms/dfk-chain/explorer |
-| Ethereum                             | https://eth-pokt.nodies.app                                                               | 1       | ETH    | https://etherscan.io                                          |
-| Ethereum Archival                    |                                                                                           | 1       | ETH    |                                                               |
-| Ethereum Goerli                      |                                                                                           | 5       | ETH    | https://goerli.etherscan.io                                   |
-| Ethereum Kovan                       |                                                                                           | 42      | ETH    | https://kovan.etherscan.io                                    |
-| Ethereum Rinkeby                     |                                                                                           | 4       | ETH    | https://rinkeby.etherscan.io                                  |
-| Ethereum Ropsten                     |                                                                                           | 3       | ETH    | https://ropsten.etherscan.io                                  |
-| Ethereum Trace                       |                                                                                           | 1       | ETH    |                                                               |
-| Evmos                                | https://evmos-pokt.nodies.app                                                             | 9001    | EVMOS  | https://evm.evmos.org                                         |
-| Fantom                               | https://fantom-pokt.nodies.app                                                            | 250     | FTM    | https://ftmscan.com                                           |
-| [FUSE](https://youtu.be/sSg8QWgR_T8) | https://fuse-pokt.nodies.app                                                              | 122     | FUSE   | https://explorer.fuse.io                                      |
-| Gnosis Chain                         | https://gnosis-pokt.nodies.app                                                            | 100     | xDAI   | https://blockscout.com/poa/xdai                               |
-| Gnosis Chain Archival                |                                                                                           | 100     | xDAI   |                                                               |
-| Kava Mainnet                         | https://kava-pokt.nodies.app                                                              | 2222    | KAVA   | https://explorer.kava.io/                                     |
-| Klaytn                               | https://klaytn-pokt.nodies.app                                                            | 8217    | KLAY   | https://scope.klaytn.com                                      |
-| Metis                                | https://metis-pokt.nodies.app                                                             |         |        |                                                               |
-| Moonbeam                             |                                                                                           | 1284    | GLMR   | https://moonscan.io                                           |
-| Moonriver                            |                                                                                           | 1285    | MOVR   | https://moonriver.moonscan.io                                 |
-| NEAR                                 |                                                                                           |         | NEAR   | https://www.nearblocks.io                                     |
-| Oasys Mainnet                        |                                                                                           | 248     | OAS    | https://explorer.oasys.games/                                 |
-| Optimism                             | https://op-pokt.nodies.app                                                                | 10      | ETH    | https://optimistic.etherscan.io                               |
-| Optimism Sepolia                     | https://op-sepolia-pokt.nodies.app                                                        |         |        |                                                               |
-| Osmosis                              |                                                                                           |         | OSMO   | https://www.mintscan.io/osmosis                               |
-| Pocket Network                       |                                                                                           |         | POKT   | https://explorer.pokt.network                                 |
-| Polygon                              | https://polygon-pokt.nodies.app                                                           | 137     | MATIC  | https://polygonscan.com                                       |
-| Polygon Mumbai                       | https://polygon-mumbai-pokt.nodies.app                                                    |         |        |                                                               |
-| Polygon zkEVM                        |                                                                                           | 1101    | ETH    | https://zkevm.polygonscan.com/                                |
-| Harmony                              | https://hmyone-pokt.nodies.app                                                            |         |        |                                                               |
+| Network Name      | New Endpoint                                                                                          | ChainID | Symbol | Explorer    | URL                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------- | ------- | ------ | ----------- | -------------------------------------------------------------------- |
+| Arbitrum          | [arb-pokt.nodies.app](https://arb-pokt.nodies.app)                                                    | 42161   | ARB    | Arbiscan    | [arbiscan.io](https://arbiscan.io)                                   |
+| Avalanche Core    | [avax-pokt.nodies.app](https://avax-pokt.nodies.app)                                                  | 43114   | AVAX   | CChain      | [cchain.explorer.avax.network](https://cchain.explorer.avax.network) |
+| Avalanche C-chain | [https://avax-pokt.nodies.app/ext/bc/C/](https://avax-pokt.nodies.app/ext/bc/C/rpc)                   |         |        |             |                                                                      |
+| Avalanche DFK     | [Endpoint](https://avax-pokt.nodies.app/ext/bc/q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi/rpc) |         |        |             |                                                                      |
+| BNB Smart Chain   | [bsc-pokt.nodies.app](https://bsc-pokt.nodies.app)                                                    | 56      | BNB    | Bscscan     | [bscscan.com](https://bscscan.com)                                   |
+| Ethereum          | [eth-pokt.nodies.app](https://eth-pokt.nodies.app)                                                    | 1       | ETH    | Etherscan   | [etherscan.io](https://etherscan.io)                                 |
+| Evmos             | [evmos-pokt.nodies.app](https://evmos-pokt.nodies.app)                                                | 9001    | EVMOS  | EVM         | [evm.evmos.org](https://evm.evmos.org)                               |
+| Fantom            | [fantom-pokt.nodies.app](https://fantom-pokt.nodies.app)                                              | 250     | FTM    | Ftmscan     | [ftmscan.com](https://ftmscan.com)                                   |
+| FUSE              | [fuse-pokt.nodies.app](https://fuse-pokt.nodies.app)                                                  | 122     | FUSE   | Explorer    | [explorer.fuse.io](https://explorer.fuse.io)                         |
+| Gnosis Chain      | [gnosis-pokt.nodies.app](https://gnosis-pokt.nodies.app)                                              | 100     | xDAI   | Blockscout  | [blockscout.com/poa/xdai](https://blockscout.com/poa/xdai)           |
+| Kava Mainnet      | [kava-pokt.nodies.app](https://kava-pokt.nodies.app)                                                  | 2222    | KAVA   | Explorer    | [explorer.kava.io](https://explorer.kava.io/)                        |
+| Klaytn            | [klaytn-pokt.nodies.app](https://klaytn-pokt.nodies.app)                                              | 8217    | KLAY   | Scope       | [scope.klaytn.com](https://scope.klaytn.com)                         |
+| Metis             | [metis-pokt.nodies.app](https://metis-pokt.nodies.app)                                                |         |        |             |                                                                      |
+| Optimism          | [op-pokt.nodies.app](https://op-pokt.nodies.app)                                                      | 10      | ETH    | Optimistic  | [optimistic.etherscan.io](https://optimistic.etherscan.io)           |
+| Optimism Sepolia  | [op-sepolia-pokt.nodies.app](https://op-sepolia-pokt.nodies.app)                                      |         |        |             |                                                                      |
+| Polygon           | [polygon-pokt.nodies.app](https://polygon-pokt.nodies.app)                                            | 137     | MATIC  | Polygonscan | [polygonscan.com](https://polygonscan.com)                           |
+| Polygon Mumbai    | [polygon-mumbai-pokt.nodies.app](https://polygon-mumbai-pokt.nodies.app)                              |         |        |             |                                                                      |
+| Harmony           | [hmyone-pokt.nodies.app](https://hmyone-pokt.nodies.app)                                              |         |        |             |                                                                      |

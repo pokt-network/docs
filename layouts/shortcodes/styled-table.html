@@ -1,0 +1,18 @@
+<style>
+  .styled-table {
+    width: 100%;
+  }
+  .styled-table th, .styled-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  .styled-table td {
+    word-break: break-word;
+  }
+</style>
+
+<div class="styled-table">
+  {{ .Inner | markdownify }}
+</div>
