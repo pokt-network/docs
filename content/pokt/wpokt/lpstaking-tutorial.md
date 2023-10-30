@@ -61,7 +61,7 @@ Then hit 'Approve'.
 
 You'll need to set a spending cap for your wPOKT.
 
-Uniswap suggests one, but feel free to adjust.
+Uniswap suggests one, but we [recommend adjusting]([url](https://support.metamask.io/hc/en-us/articles/6055177143579-How-to-customize-token-approvals-with-a-spending-cap)) to match your commitment to the pool.
 
 ![5](https://github.com/pokt-foundation/docs/assets/6369871/991dfdb6-833e-4e8c-ab41-feb098b25490)
 
