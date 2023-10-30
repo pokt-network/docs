@@ -6,7 +6,7 @@ aliases:
   - /resources/public-rpc-endpoints/replace-existing-endpoint
   - /home/resources/public-rpc-endpoints/replace-existing-endpoint
   - /home/use/public-rpc/endpoint-replacement
-description: Add the Avalanche (AVAX) network in MetaMask using a Pocket-powered RPC endpoint.
+description: This guide provides step-by-step instructions on how to replace an existing POKT endpoint in your MetaMask app, ensuring you're connected to the updated and active endpoints for continued interaction with the POKT Network.
 ---
 
 {{% notice style="info" %}}

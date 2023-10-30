@@ -25,7 +25,7 @@ To change your endpoint in MetaMask, do the following, **filling in the fields f
 If you receive this error message from MetaMask `Invalid number. Enter a decimal or '0x'-prefixed hexadecimal number` then leave the optional fields blank.
 {{% /notice %}}
 
-{{< loom 16182cc4d64d407fbca65f1162ac8fce "#player-wrapper" >}}
+{{< loom 16182cc4d64d407fbca65f1162ac8fce "#loom-wrapper" >}}
 
 ## Endpoints
 
