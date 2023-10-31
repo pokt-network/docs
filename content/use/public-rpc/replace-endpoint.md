@@ -24,15 +24,11 @@ Navigate to the Network area in your MetaMask app
 1. Click on the settings icon in the bottom right hand corner of your MetaMask application.
 2. Select the `Networks` option.
 
-{{< loom e407b5dcdb6c4772a101707b94b32732 >}}
-
 **On Desktop:**
 
 1. Click on the three dots in the top right hand corner of your MetaMask application.
 2. Select the `Settings` option.
 3. Scroll down and select the `Networks` option.
-
-{{< loom aca2b49e68434ef1ba89740de9e513f4 >}}
 
 ### Step 2:
 
@@ -46,7 +42,18 @@ Replace the text in the RPC URL field with the updated text from the table below
 
 Save your settings. _Don't forget to hit `Save`._
 
+## Visual Instructions
+
+**On Desktop:**
+
+{{< loom 3c62177e509c44fbac9f447346bc4d3f >}}
+
 ![Desktop](https://www.pokt.network/wp-content/uploads/2023/10/On-Desktop.png)
+
+**On Mobile:**
+
+{{< loom e407b5dcdb6c4772a101707b94b32732 >}}
+
 ![Mobile](https://www.pokt.network/wp-content/uploads/2023/10/MM-Mobile-1536x1135.png)
 
 ## Endpoints
