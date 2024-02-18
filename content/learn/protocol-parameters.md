@@ -137,7 +137,7 @@ The DAO may manually adjust an application's `MaxRelays` at the time of staking 
 
 ## PoS (Node) Module
 
-These parameters relate to [staked nodes](/learn/economics/nodes) on the networ, including [how rewards are calculated](/learn/economics/monetary-policy).
+These parameters relate to [staked nodes](/learn/economics/nodes) on the network, including [how rewards are calculated](/learn/economics/monetary-policy).
 
 ### BlocksPerSession
 
