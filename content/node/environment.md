@@ -110,7 +110,7 @@ AppVersion: {{< pocket-version >}}
 {{< /tabs >}}
 
 {{% notice style="info" %}}
-You can find the latest release on the [Pocket Core GitHub pagee](https://github.com/pokt-network/pocket-core/releases).
+You can find the latest release on the [Pocket Core GitHub page](https://github.com/pokt-network/pocket-core/releases).
 {{% /notice %}}
 
 ### Homebrew

@@ -51,7 +51,7 @@ We posit that application-specific blockchains like Pocket Network have the abil
 Pocket achieves this through an incentive design that rewards Service Nodes for collectively achieving economies of scale:
 
 1. Load balancing at the protocol level incentivizes decentralization and minimizes the need for buffers
-2. Staking and inflation enables more efficient resource allocation
+2. Staking and inflation enable more efficient resource allocation
 3. Low marginal costs reduce barriers to entry, allowing anyone to participate at any scale
 
 ### Load balancing at the protocol level
@@ -72,7 +72,7 @@ Pocket's staking and inflation mechanisms enable a more efficient resource alloc
 
 ### Low marginal costs and participation
 
-The marginal cost of running an individual Service Node is only as high as your electricity and bandwidth costs, ensuring a low barrier to entry for new Service Node operators. Because work is load balanced evenly across the protocol, the stake, size, or capabilities of the Service Node does not increase the probability of receiving work, which enables hobbyists and small providers to participate and contribute alongside major infrastructure providers. As smaller Service Node operators scale up, they can then choose to bear the costs of hardware, equipment, and salaries needed to add more Service Nodes to their operation.
+The marginal cost of running an individual Service Node is only as high as your electricity and bandwidth costs, ensuring a low barrier to entry for new Service Node operators. Because work is load balanced evenly across the protocol, the stake, size, or capabilities of the Service Node do not increase the probability of receiving work, which enables hobbyists and small providers to participate and contribute alongside major infrastructure providers. As smaller Service Node operators scale up, they can then choose to bear the costs of hardware, equipment, and salaries needed to add more Service Nodes to their operation.
 
 While the bulk of work will most likely be serviced by professional infrastructure providers, Pocket also enables a long tail of individuals to participate and increase the resilience of the protocol, with potential for upward mobility for those who choose to purchase more Service Nodes.
 

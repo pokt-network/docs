@@ -67,7 +67,7 @@ Learn more about [securely managing your POKT accounts](/pokt/).
 To stake a node in Pocket Network, the account must have a balance above the minimum stake, which is 15,000 POKT (or 15,000,000,000 uPOKT).
 
 {{% notice style="warning" %}}
-We recommend staking more than the absolute minimum node stake of 15,000 POKT (such as 15,100) as a reasonable buffer against operational slashes which can occur on even properly configured nodes as well as misconfigured and misbehaving ones. If slashes cause your node stake to drop below 15,000, you node will be forcibly unstaked.
+We recommend staking more than the absolute minimum node stake of 15,000 POKT (such as 15,100) as a reasonable buffer against operational slashes which can occur on even properly configured nodes as well as misconfigured and misbehaving ones. If slashes cause your node stake to drop below 15,000, your node will be forcibly unstaked.
 {{% /notice %}}
 
 Send POKT with the following command:

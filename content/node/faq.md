@@ -370,7 +370,7 @@ curl -H "Content-Type: application/json" -d '{"height": 4407, "address": "85efd0
 You can verify that there are no transactions associated with that address in block 4406.
 
 {{% notice style="note" %}}
-There isn't a straighforward way to do this natively within Pocket at the moment. You would have to [query all of the transactions for a given block](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/block_txs_v1_query_blocktxs_post) and then search through them for the address in question. We plan to make this easier in the future.
+There isn't a straightforward way to do this natively within Pocket at the moment. You would have to [query all of the transactions for a given block](https://docs.pokt.network/api-docs/pokt/#/api-docs/pokt/operations/block_txs_v1_query_blocktxs_post) and then search through them for the address in question. We plan to make this easier in the future.
 {{% /notice %}}
 
 Finally, you can see that this address was the proposer for block 4406:
