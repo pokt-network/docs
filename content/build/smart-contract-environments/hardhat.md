@@ -1,6 +1,6 @@
 ---
 title: Solidity & Vyper – Hardhat
-menuTitle: Solidty & Vyper – Hardhat
+menuTitle: Solidity & Vyper – Hardhat
 aliases:
   - /apps/smart-contract-environments/hardhat
 description: Hardhat is a highly extensible and modular TypeScript-based Ethereum development environment, with a mature Solidity debugging experience.
@@ -30,7 +30,7 @@ require("@nomicfoundation/hardhat-toolbox");
 
 const PORTAL_ID = "<PORTAL-ID>";
 
-// Replace these privates key with your respective account private key
+// Replace these private keys with your respective account private key
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
 // Beware: NEVER put real Ether into testing accounts
