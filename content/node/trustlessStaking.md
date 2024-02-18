@@ -27,7 +27,7 @@ Created by the Node Operator, this address is used to manage and run your node. 
 for editing the Domain and Chains with the Output Address. However, the Operator Address cannot control the funds; only the Output Address has this capability.
 
 
-The very first stake initiated from the output address establishes a link between the operator address and the output address.The Node Operator can then start running your node using the operator address. Any node rewards will be sent to the output address. Additionally, if unstaked, the unstaked funds will also go to the output address. An output address can be linked to multiple operator addresses.
+The very first stake initiated from the output address establishes a link between the operator address and the output address. The Node Operator can then start running your node using the operator address. Any node rewards will be sent to the output address. Additionally, if unstaked, the unstaked funds will also go to the output address. An output address can be linked to multiple operator addresses.
 
 ## Introduction
 
@@ -68,7 +68,7 @@ Notice there is a balance of 36.57 present. The node requires some POKT to pay f
 ## Preparing the Output Address
 
 1. Login to your  output address using the pocket official wallet below. Note down the password used to create the wallet. https://wallet.pokt.network/
-2. **IMPORTANT:** Backup the keyfile.json using “export keyfile” and the password. Lose this and you will lose your funds. Then send 15011 tokens to this address. 15010 will be staked, leaving one for transaction fees.(Each transaction costs 0.01 POKT at the time this doc is written)
+2. **IMPORTANT:** Backup the keyfile.json using “export keyfile” and the password. Lose this and you will lose your funds. Then send 15011 tokens to this address. 15010 will be staked, leaving one for transaction fees. (Each transaction costs 0.01 POKT at the time this doc is written)
  
 ![](/images/wallet.png)
 
